@@ -95,6 +95,91 @@ class RetrievalCandidates:
     strategy_version: str                   # 검색 전략 버전
 
 
+@dataclass(frozen=True)
+class ContextExpansionConfig:
+    """N-02 개발 기본값. 길이 단위는 토큰이 아닌 원문 Unicode 문자이다."""
+    before_chars: int = 200
+    after_chars: int = 200
+    max_total_chars: int = 12000
+
+    def __post_init__(self) -> None:
+        for name in ("before_chars", "after_chars", "max_total_chars"):
+            value = getattr(self, name)
+            if type(value) is not int:
+                raise TypeError(f"{name}은 정수여야 합니다.")
+            if value < (1 if name == "max_total_chars" else 0):
+                raise ValueError(f"{name}의 길이 설정이 올바르지 않습니다.")
+
+
+@dataclass
+class SourceSpan:
+    """검색 가공문이 아닌 원본 블록의 문자 구간. end_char는 미포함이다."""
+    block_id: str
+    pdf_page: int
+    start_char: int
+    end_char: int
+    text: str
+    source_locator: dict
+    extraction_method: str = "unknown"
+    verification_status: str = "unverified"
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.block_id, str) or not self.block_id.strip():
+            raise ValueError("원문 블록 ID가 필요합니다.")
+        if type(self.pdf_page) is not int or self.pdf_page < 1:
+            raise ValueError("PDF 페이지는 양의 정수여야 합니다.")
+        if (type(self.start_char) is not int or type(self.end_char) is not int
+                or not 0 <= self.start_char < self.end_char):
+            raise ValueError("원문 문자 구간이 올바르지 않습니다.")
+        if not isinstance(self.text, str) or len(self.text) != self.end_char - self.start_char:
+            raise ValueError("원문 구간 길이와 텍스트 길이가 다릅니다.")
+        if not isinstance(self.source_locator, dict):
+            raise TypeError("원문 위치는 딕셔너리여야 합니다.")
+        for value in (self.extraction_method, self.verification_status):
+            if not isinstance(value, str) or not value.strip():
+                raise ValueError("추출 방법과 검증 상태는 비어 있지 않은 문자열이어야 합니다.")
+
+
+@dataclass
+class EvidenceAnchor:
+    """확장·병합된 근거가 어느 검색 후보에서 시작했는지 보존한다.
+
+    여러 페이지 청크는 각 페이지의 원문 구간을 해당 근거 항목에 나누어 보존한다.
+    """
+    chunk_id: str
+    rank: int
+    text: str
+    source_spans: list[SourceSpan]
+
+
+@dataclass
+class EvidenceItem:
+    """같은 문서·버전·페이지 안에서 겹치는 문맥을 합친 근거 한 건."""
+    evidence_id: str
+    document_id: str
+    document_version: str
+    pdf_pages: list[int]
+    text: str
+    source_spans: list[SourceSpan]
+    anchors: list[EvidenceAnchor]
+    verification_status: str
+    reconstruction_match: bool = True
+
+
+@dataclass
+class EvidenceBundle:
+    """N-04에 전달할 근거. 검색 점수와 추출 정확도 검증을 혼동하지 않는다."""
+    request_ref: str
+    items: list[EvidenceItem]
+    config: ContextExpansionConfig
+    char_count: int
+    requested_candidates: int
+    resolved_candidates: int
+    skipped_chunk_ids: list[str]
+    budget_limited: bool
+    context_strategy_version: str = "fixed-page-window-v1"
+
+
 @dataclass
 class StepDiagnostic:
     status: StepStatus

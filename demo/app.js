@@ -43,14 +43,20 @@ function setMetadata(source) {
     ['검색 순위 / BM25 점수', `${source.rank}위 / ${source.score.toFixed(6)} (확률이 아닙니다)`],
     ['PDF 물리 페이지', source.pages.join(', ') + ' (인쇄 쪽번호와 다를 수 있음)'],
     ['원문 연결', `블록 구간 ${source.source_spans.length}개 · 복원 일치`],
-    ['해당 페이지 전체 블록', source.page_block_count + '개 (현재는 주변 블록 확장 없이 청크 구간만 사용)'],
+    ['문맥 보강', `원래 청크 ${source.text.length}자 → 주변 문맥 포함 ${source.context_text.length}자`],
+    ['근거 항목 ID', source.evidence_ids.join(', ')],
+    ['연결된 검색 청크 수', source.context_chunk_ids.length + '개 (같은 페이지의 겹치는 문맥은 병합)'],
+    ['문맥 정책', `앞 ${info.context_config.before_chars}자 / 뒤 ${info.context_config.after_chars}자 · 전체 ${info.context_config.max_total_chars}자 상한`],
+    ['해당 페이지 전체 블록', source.page_block_count + '개'],
     ['추출 정확도 검증 상태', source.verification_status + ' · 인식 정확도 미검증'],
+    ['보강 문맥의 추출 상태', source.context_verification_status + ' · N-02에서 사실 검증하지 않음'],
     ['검색 방식', info.tokenizer + ' / BM25'],
   ];
   for (const [label, value] of fields) {
     $('metadata').append(element('dt', label), element('dd', String(value)));
   }
   $('raw-json').textContent = JSON.stringify(response.retrieval, null, 2);
+  $('context-json').textContent = JSON.stringify(response.source_context, null, 2);
 }
 function loadPreview() {
   const version = ++imageVersion;
@@ -94,9 +100,9 @@ function selectSource(source, card) {
   $('page-select').replaceChildren(...source.pages.map(p => {
     const option = element('option', String(p)); option.value = p; return option;
   }));
-  $('source-text').textContent = source.text;
+  $('source-text').textContent = source.context_text;
   $('source-blocks').replaceChildren();
-  source.source_spans.forEach((span, i) => {
+  source.context_source_spans.forEach((span, i) => {
     const details = element('details');
     details.append(element('summary', `${i + 1}. ${span.block_id.split(':').slice(-2).join(':')} · 문자 ${span.start_char}–${span.end_char}`), element('pre', span.text));
     $('source-blocks').append(details);
@@ -123,11 +129,16 @@ function renderResults(data) {
     notice(diagnostics.map(d => `${d.error_code}: ${d.reason}`).join('\n'), true);
     return;
   }
+  if (data.source_context?.status === 'error') {
+    notice('원문 조회 오류: ' + Object.values(data.source_context.diagnostics)
+      .filter(d => d.status === 'failed').map(d => d.error_code + ': ' + d.reason).join(' / '), true);
+    return;
+  }
   if (!data.sources.length) {
     notice('이번 검색에서는 관련 청크를 찾지 못했습니다. 검색어를 바꿔보세요. 문서에 해당 내용이 없다는 뜻은 아닙니다.');
     return;
   }
-  notice('');
+  notice(data.source_context?.status === 'partial' ? '일부 원문 조회가 누락되었습니다. 확보한 근거만 표시합니다.' : '');
   data.sources.forEach(source => {
     const card = element('button', undefined, 'result-card');
     card.type = 'button'; card.setAttribute('aria-pressed', 'false');

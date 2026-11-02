@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-02",
+  "scope": "N-02 fixed-page-window-v1; local PyMuPDF text input; no model calls",
+  "unit_tests": {
+    "n02": 34,
+    "bm25": 5,
+    "contracts": 7,
+    "rag_data": 10,
+    "total": 56
+  },
+  "real_data": {
+    "all_candidates": 180,
+    "all_resolved": 180,
+    "merged_evidence_count": 115,
+    "unique_context_chars": 102884,
+    "sample_pages": [
+      109,
+      110,
+      105
+    ],
+    "page10_anchor_chars": 515,
+    "page10_expanded_chars": 715
+  },
+  "browser": {
+    "checks": [
+      "actual 180 chunks / 3105 blocks",
+      "N01 real page ranking 109 / 110 / 105",
+      "original BM25 score preserved",
+      "three sources exactly reconstructed",
+      "blank query contract error",
+      "no match returns zero candidates",
+      "invalid top-k rejected",
+      "unknown source preview rejected",
+      "cross-origin search rejected",
+      "foreign Host rejected",
+      "only frontend assets served",
+      "three result cards visible",
+      "selected PDF 109 visible",
+      "candidate selection changes PDF to 110",
+      "highlight can be disabled",
+      "enlarged preview opens",
+      "full reconstructed text shown",
+      "source spans expandable",
+      "N01 raw JSON available",
+      "JSON export matches real sources",
+      "N02 typed bundle is exported",
+      "N02 raw JSON is available in details",
+      "real query includes expanded context",
+      "expanded context displayed exactly",
+      "context span list matches bundle view",
+      "context length and policy visible",
+      "blank error clears stale results",
+      "empty search wording does not assert absence in document",
+      "reset clears history and results",
+      "mobile has no horizontal overflow",
+      "no external browser requests",
+      "no browser JavaScript exceptions"
+    ],
+    "errors": [],
+    "external": [],
+    "passed": 32
+  },
+  "limitations": [
+    "Not retrieval accuracy or PDF recognition accuracy evaluation",
+    "No answer generation or semantic claim verification",
+    "Character budget applies to merged evidence text, not serialized JSON or LLM tokens"
+  ]
+}

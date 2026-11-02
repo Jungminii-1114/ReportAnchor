@@ -38,9 +38,9 @@
   <div id="evidence" hidden>
     <div class="evidence-title"><strong id="source-title"></strong><span id="source-page" class="pill"></span></div>
     <div class="tabs" role="tablist" aria-label="원문 보기"><button class="active" role="tab" aria-selected="true" data-tab="pdf">PDF 원문</button><button role="tab" aria-selected="false" data-tab="text">추출 텍스트</button><button role="tab" aria-selected="false" data-tab="metadata">상세 정보</button></div>
-    <div id="pdf-pane" class="tab-pane"><div class="pdf-toolbar"><label>페이지 <select id="page-select" aria-label="PDF 페이지"></select></label><label><input id="highlight" type="checkbox" checked> 근거 영역 표시</label><button id="zoom" class="text-button">확대 ↗</button></div><div class="pdf-canvas"><p id="pdf-status" role="status"></p><img id="pdf-image" alt="선택한 근거의 원본 PDF 페이지" hidden></div><p class="caption">초록 영역은 참조된 블록 전체입니다. 문자 단위의 정확한 강조 표시는 아닙니다.</p></div>
-    <div id="text-pane" class="tab-pane" hidden><div class="source-notice"><strong>블록 → 청크 복원 일치</strong><span>저장된 텍스트의 연결 상태를 확인한 결과이며, PDF 인식 정확도를 보증하지 않습니다.</span></div><pre id="source-text"></pre><h3 class="small-title">사용된 원본 블록 구간</h3><div id="source-blocks"></div></div>
-    <div id="metadata-pane" class="tab-pane" hidden><dl id="metadata"></dl><details><summary>N-01 응답 JSON 보기</summary><pre id="raw-json"></pre></details></div>
+    <div id="pdf-pane" class="tab-pane"><div class="pdf-toolbar"><label>페이지 <select id="page-select" aria-label="PDF 페이지"></select></label><label><input id="highlight" type="checkbox" checked> 근거 영역 표시</label><button id="zoom" class="text-button">확대 ↗</button></div><div class="pdf-canvas"><p id="pdf-status" role="status"></p><img id="pdf-image" alt="선택한 근거의 원본 PDF 페이지" hidden></div><p class="caption">초록 영역은 검색 청크가 참조한 블록 전체입니다. 추가 문맥은 추출 텍스트 탭에서 확인할 수 있습니다.</p></div>
+    <div id="text-pane" class="tab-pane" hidden><div class="source-notice"><strong>원문 복원 · 고정 길이 문맥 보강</strong><span>앞뒤 문맥과 겹치는 구간을 원문 참조로 연결했습니다. PDF 인식 정확도나 답변의 사실성을 검증한 결과는 아닙니다.</span></div><pre id="source-text"></pre><h3 class="small-title">문맥 보강에 사용된 원본 블록 구간</h3><div id="source-blocks"></div></div>
+    <div id="metadata-pane" class="tab-pane" hidden><dl id="metadata"></dl><details><summary>N-01 응답 JSON 보기</summary><pre id="raw-json"></pre></details><details><summary>N-02 EvidenceBundle JSON 보기</summary><pre id="context-json"></pre></details></div>
   </div>
 </section>
 </main>

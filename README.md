@@ -8,7 +8,7 @@
 
 > Find the evidence a review needs, inspect it in the original report, and distinguish supported findings from unresolved conditions.
 
-**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, and a local source-inspection UI. Answer generation, claim verification, and the complete agent workflow are planned. Implemented features and MVP designs are distinguished below.
+**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, fixed-length source-context expansion, and a local source-inspection UI. Answer generation, claim verification, and the complete agent workflow are planned. Implemented features and MVP designs are distinguished below.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ ReportAnchor began as an attempt to connect **repeated evidence search, source r
 
 - **PDF text extraction and chunking:** Extract native text, blocks, page numbers, and coordinates with PyMuPDF, then construct searchable chunks. OCR, table-structure interpretation, and HWP support are not completed in this extraction demo.
 - **Korean BM25 retrieval:** Apply the same Kiwi tokenization policy to documents and queries, returning ranked chunks and retrieval scores.
-- **Traceable source reconstruction:** Preserve document versions, block IDs, character spans, and PDF locations; reconstruct each chunk from the original blocks and check equality.
+- **Traceable source context:** Reconstruct chunks from original blocks, expand nearby text within the same page, and merge overlapping windows while preserving document versions, block IDs, character spans, and PDF locations. N-02 returns a typed `EvidenceBundle` with scope, integrity, and text-budget checks.
 - **Local source-inspection UI:** View document settings, ranked results, and the source PDF side by side. Inspect referenced block regions, extracted text, and the N-01 response JSON, or download the result.
 
 ![ReportAnchor retrieval results beside the source PDF](docs/images/rag-demo-source-context.png)
@@ -50,7 +50,7 @@ The latest JS design follows **request intake and routing → one task-specific 
 | **T-02 · Criteria Review** | Check explicit user-provided review criteria | Criterion-level findings, evidence, and reasons |
 | **T-03 · Comparative Analysis** | Compare documents, periods, or indicators | Comparability checks, quantitative or qualitative differences, sources, and limitations |
 
-Planned components include **hybrid parser/VLM document processing**, **Dense + BM25 + RRF with optional reranking**, **claim, numerical, and citation checks**, and **harness-managed execution status, budgets, and artifacts**. Initial N-02 context expansion uses a fixed-length policy; expansion based on table, header, and footnote relationships is a later improvement.
+Planned components include **hybrid parser/VLM document processing**, **Dense + BM25 + RRF with optional reranking**, **claim, numerical, and citation checks**, and **harness-managed execution status, budgets, and artifacts**. N-02 fixed-length context expansion is implemented in the current text demo; expansion based on table, header, and footnote relationships remains a later improvement.
 
 The agent follows predefined steps and branches. Retrieval retry conditions and limits remain to be finalized. A failed search must not be treated as proof that the document lacks the information, and insufficient evidence must be distinguished from execution failure. Standalone Claim Verification (T-04) and Document Summary (T-05) remain future candidates outside the three-task MVP.
 
@@ -60,7 +60,7 @@ Design references: [JS Query Agent MVP](https://github.com/Jungminii-1114/Report
 
 ### 1. Prepare the code and environment
 
-These instructions target the **JM development version containing the RAG demo**. As checked on November 2, 2026, the remote JM branch does not yet include the new local RAG and web-demo files. A fresh clone alone cannot run the demo until those implementation changes are included. An existing local working tree containing them can be used directly.
+These instructions target the **JM development version containing the RAG demo**. Use a checkout containing `scripts/run_rag_demo.py` and the `rag/` package. An existing local working tree can be used directly.
 
 For a new checkout, select the JM branch. If you already have the development folder, use it instead of cloning again.
 
@@ -130,3 +130,5 @@ For example, compare the contribution-funding row on PDF page 109: **2024: 2,607
 **Reconstruction match** means that the stored block spans reproduce the chunk text. It does not establish PDF extraction accuracy, correct table structure, or factual answer generation. N-03 claim verification is not implemented yet.
 
 The November 2, 2026 record of 26 web/API checks and 12 existing BM25/contract tests is described in the [demo check record](docs/reports/rag-demo-ui-checks.json) and [source-inspection guide](docs/rag-demo-ui.md). These are functional checks, not retrieval-accuracy evaluations.
+
+For the completed N-02 context contract, CLI options, and node order, see the [source-context guide](docs/n02-source-context.md). The [N-02 validation record](docs/reports/n02-validation.json) covers the new implementation separately from the original demo checks.

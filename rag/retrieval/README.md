@@ -33,11 +33,11 @@ T-01(Document QA)은 문서에 대한 특정 질문을 원문 근거와 함께 �
 | 순서 | Small Node / 파일 | 역할 | 입력 | 목표 반환 업무 데이터 | 현재 구현 범위 |
 | --- | --- | --- | --- | --- | --- |
 | ① | **N-01** [`retrieve_evidence.py`](../nodes/retrieve_evidence.py) | 질문에 관련된 청크 후보 검색 | `RetrievalRequest`, 준비된 `BM25Retriever`, 선택적 `index_ref`, `top_k` | `RetrievalCandidates`를 담은 `NodeResult` | 검색 호출·후보 변환·공통 반환 및 빈 검색 문구 검사 구현. 요청 문서 범위·버전 강제는 아직 미구현 |
-| ② | **N-02** [`get_source_context.py`](../nodes/get_source_context.py) | 후보를 원문·블록·페이지·좌표와 연결하고 필요한 문맥 보강 | 검색 후보, 원문 청크 조회표, 블록 조회표 등 | **계획:** `EvidenceBundle` | 청크 조회·문서/버전 대조·블록 기반 원문 복원·첫 연결 페이지의 블록 조회 구현. CLI는 확인 결과 출력. Bundle 계약·반환과 문맥 선택은 미구현 |
+| ② | **N-02** [`get_source_context.py`](../nodes/get_source_context.py) | 후보를 원문·블록·페이지·좌표와 연결하고 필요한 문맥 보강 | 검색 후보, 원문 청크 조회표, 블록 조회표 등 | `NodeResult[EvidenceBundle]` | 허용 문서·버전 검사, 원문 복원, 페이지 안 고정 길이 확장, 겹침 병합, 전체 문자 예산, 부분 실패와 공통 JSON 반환 구현 |
 | ③ | **N-04** [`draft_answer.py`](../nodes/draft_answer.py) | 확보한 근거만 이용해 답변 초안 작성 | **계획:** 질문 + `EvidenceBundle` | **계획:** `ReviewDraft` | 역할 표시만 있으며 실행 로직 없음 |
 | ④ | **N-03** [`verify_grounding.py`](../nodes/verify_grounding.py) | 답변의 주장·숫자·인용이 근거와 맞는지 검사 | **계획:** 초안 + 근거 묶음 | **계획:** `VerificationReport` | 역할 표시만 있으며 실행 로직 없음 |
 
-`EvidenceBundle`, `ReviewDraft`, `VerificationReport`는 목표 개념명이다. 현재 `contracts.py`에 해당 클래스가 구현되어 있다는 의미가 아니다. N-02도 아직 이 계약 객체를 반환하지 않는다.
+`EvidenceBundle`과 문맥·출처 타입은 현재 JM의 `contracts.py`에 구현되어 있다. `ReviewDraft`, `VerificationReport`는 후속 목표 개념명이며 아직 실행 타입·로직이 구현되지 않았다. N-02 상세 계약은 [원문 문맥 조회 안내](../../docs/n02-source-context.md)에 있다.
 
 상위 요청 라우팅 N-10과 결과 전달 N-11은 이 네 노드 바깥의 공통 단계이다. 현재 파일들이 존재한다는 사실만으로 전체 T-01이 연결·완료된 것은 아니다.
 
@@ -55,7 +55,8 @@ flowchart TD
     R --> N2["N-02: 원문 조회·복원"]
     C --> N2
     K["blocks.jsonl"] --> N2
-    N2 -. "향후 Bundle 반환·연결" .-> N4["N-04: 답변 초안"]
+    N2 --> EB["NodeResult의 data: EvidenceBundle"]
+    EB -. "향후 연결" .-> N4["N-04: 답변 초안"]
     N4 -. "향후 연결" .-> N3["N-03: 주장·인용 검증"]
 ```
 
@@ -175,6 +176,9 @@ retrieve_evidence(
 | `RetrievalCandidates` | 요청 참조, 후보 목록, 색인 참조, 전략 버전 | N-01 업무 데이터 |
 | `StepDiagnostic` | 단계 상태·오류 코드·사유·재시도 가능 여부·개수 | 내부 단계 진단 |
 | `NodeResult[T]` | 노드 상태, 업무 데이터, 진단, 결과 코드 | 공통 반환 포장 |
+| `ContextExpansionConfig` | 앞·뒤 문자 수와 전체 근거 본문 상한 | N-02 설정 |
+| `SourceSpan` / `EvidenceAnchor` | 원본 블록 구간 / 원래 검색된 청크·순위 | N-02 출처 |
+| `EvidenceItem` / `EvidenceBundle` | 병합된 문맥과 앵커 / 전체 근거·진단 요약 | N-02 업무 데이터 |
 
 `NodeResult[RetrievalCandidates]`는 "공통 포장의 `data`에 검색 후보 묶음이 들어간다"는 의미이다.
 
@@ -187,24 +191,26 @@ retrieve_evidence(
 
 계약의 일부 타입에는 실행 시 검증이 있지만 모든 필드·상태 조합을 자동 검증하는 것은 아니다. 특히 `document_scope`를 선언하는 것과 실제 검색 범위를 제한하는 것은 별도 작업이다.
 
-## 7. N-02: 후보 ID를 원문에 연결
+## 7. N-02: 원문 문맥 조회와 EvidenceBundle
 
-현재는 여러 보조 함수와 확인용 CLI로 구성된다. 다음 표는 **실제 함수 반환값**이다.
+현재 함수는 `get_source_context(retrieval, chunk_lookup, block_lookup, *, document_scope, config=None)`이다. 파일을 재로딩하거나 화면에 출력하지 않고 `NodeResult[EvidenceBundle]`을 반환한다.
 
-| 함수 | 입력 | 현재 반환 | 역할 |
-| --- | --- | --- | --- |
-| `build_chunk_lookup(chunks)` | 청크 목록 | `dict[str, dict]` | 청크 ID → 청크 조회표. 중복 ID 거부 |
-| `lookup_chunk(chunk_id, chunk_lookup)` | 청크 ID·조회표 | 청크 `dict` | 해당 청크 조회. 없으면 오류 |
-| `get_source_for_candidate(candidate, chunk_lookup)` | 후보·청크 조회표 | 원문 청크 `dict` | ID로 조회 후 문서·버전 대조 |
-| `load_block_lookup(path)` | `blocks.jsonl` 경로 | `dict[str, dict]` | 블록 ID → 원본 블록 조회표 |
-| `reconstruct_chunk_text(source_chunk, block_lookup)` | 청크·블록 조회표 | 복원한 `str` | `source_spans`의 문자 구간을 원본 블록에서 꺼내 줄바꿈으로 연결 |
-| `group_blocks_by_page(block_lookup)` | 블록 조회표 | `dict[tuple[str, str, int], list[dict]]` | `(문서 ID, 버전, 페이지)` → 해당 페이지 블록 목록 |
+| 함수 | 역할 |
+| --- | --- |
+| `build_chunk_lookup` / `lookup_chunk` | 청크 ID로 조회하고 중복·누락을 확인 |
+| `load_block_lookup` / `group_blocks_by_page` | 블록 조회표와 문서·버전·페이지별 저장 순서 유지 |
+| `get_source_for_candidate` / `reconstruct_chunk_text` | 후보와 원문 ID·버전·페이지·좌표·문자 구간 대조 및 청크 복원 |
+| `get_source_context` | 허용 범위 검사 → 복원 → 고정 길이 문맥 → 겹침 병합 → 예산 적용 → 공통 결과 반환 |
 
-현재 CLI는 N-01 JSON의 `data.candidates`를 읽고 후보 객체를 만든 다음, 원문을 조회·복원해 청크 `text`와 같은지 검사한다. 이어 `pdf_pages[0]`의 페이지 블록을 찾아 개수와 원문 미리보기를 출력한다. 현재 청킹은 페이지 경계를 넘지 않지만, 향후 여러 페이지 청크를 지원하면 이 부분을 확장해야 한다.
+개발 기본 설정은 앞 200자·뒤 200자, 전체 근거 본문 12,000자이다. 토큰 수가 아니라 원문 Unicode 문자 수이며 팀 전체의 최종 확정 값은 아니다. 같은 문서·버전·페이지 안에서만 확장한다. 여러 페이지 청크는 페이지별 근거로 분리한다.
 
-**같은 페이지의 모든 블록을 찾는 것과 필요한 주변 문맥을 고르는 것은 다르다.** 현재는 후보 페이지 블록 목록을 조회하는 단계이다. MVP의 다음 작업은 같은 문서·버전·페이지 안에서 앞뒤 고정 길이 문맥을 선택하고 `EvidenceBundle`을 반환하는 것이다. 제목·표 헤더·단위·각주를 의미에 맞게 선택하는 구조 기반 확장은 후속 고도화 대상이다.
+같은 페이지에서 겹치는 문맥은 `EvidenceItem` 하나로 병합하되 원래 검색 후보는 `anchors`에 남긴다. 따라서 후보 수와 근거 항목 수가 같지 않을 수 있다. 전체 문자 예산을 넘으면 확장을 먼저 생략하며, 후보 원문 자체를 담지 못하면 부분 문자열을 몰래 자르는 대신 후보를 제외하고 진단한다.
 
-문자 구간을 복원해 일치시켰다는 결과는 "저장한 블록과 청크가 같다"는 의미이다. OCR/VLM이 원본 PDF를 정확히 읽었는지, 표의 값과 헤더가 올바르게 연결됐는지까지 보증하지 않는다.
+원문 누락 등 일부 후보 실패는 안전한 근거를 보존한 `partial`로 반환한다. 문서·버전·좌표·원문 구간 무결성 오류는 `error`, `data=null`로 차단한다. 정상적인 빈 후보 입력은 `success`와 빈 묶음, `outcome="no_candidates"`이다.
+
+**문맥 확장은 구조 추론이나 사실 검증이 아니다.** 표 헤더·각주를 의미적으로 찾아 붙이는 기능은 후속 고도화 대상이다. 원문 블록의 추출 검증 상태를 그대로 전달하며 여러 상태가 섞이면 `mixed`로 표시한다.
+
+[설정·반환 필드·CLI·웹 연결·오류 정책](../../docs/n02-source-context.md)
 
 ## 8. CLI와 노드 함수의 차이
 
@@ -230,14 +236,16 @@ python -m rag.nodes.retrieve_evidence \
   --query "2025년 출연금 예산" \
   --top-k 5 > retrieval_result.json
 
-# 3. N-01 후보를 원문 블록과 대조
+# 3. N-01 후보의 원문·문맥을 공통 JSON으로 반환
 python -m rag.nodes.get_source_context \
   --chunks "/실제/데이터/경로/chunks.jsonl" \
   --retrieval-result retrieval_result.json \
-  --blocks "/실제/추출/경로/blocks.jsonl"
+  --blocks "/실제/추출/경로/blocks.jsonl" \
+  --before-chars 200 --after-chars 200 --max-total-chars 12000 \
+  > source_context_result.json
 ```
 
-BM25 CLI 출력은 사람 확인용 텍스트이고, N-01 CLI 출력은 공통 결과 JSON이다. N-02 CLI는 현재 원문 대조 결과를 화면에 출력하며 Bundle JSON을 저장하지 않는다. CLI의 상대 입력 경로는 현재 작업 디렉터리 기준이다.
+BM25 CLI 출력은 사람 확인용 텍스트이고, N-01 CLI 출력은 공통 결과 JSON이다. N-02 CLI도 공통 JSON만 출력하므로 파일로 저장할 수 있다. 오류 결과의 종료 코드는 2이다. CLI의 상대 입력 경로는 현재 작업 디렉터리 기준이다.
 
 ## 9. 웹 데모에서 검색 결과와 원문 확인
 
@@ -273,9 +281,9 @@ python scripts/run_rag_demo.py \
 3. 1위 카드를 선택하고 오른쪽 `PDF 원문`에서 109페이지와 초록색 참조 영역을 확인한다.
 4. `추출 텍스트`에서 청크 전체 내용과 펼쳐 볼 수 있는 원본 블록의 문자 구간을 대조한다. 예를 들어 109페이지 출연금 행의 **2024년 2,607 / 2025년 2,638 / 증감 31백만원**이 PDF 화면과 추출 텍스트에서 대응되는지 확인한다.
 5. `상세 정보`에서 청크 ID·문서 버전·페이지·N-01 응답 JSON을 확인한다. 다른 카드를 선택했을 때 원문도 해당 페이지로 바뀌어야 한다.
-6. `JSON 저장`으로 검색 계약 응답(`retrieval`)과 연결된 원문(`sources`)을 함께 보관할 수 있다. `sources`는 웹 데모용 응답이며 정식 `EvidenceBundle` 계약은 아니다.
+6. `JSON 저장`으로 N-01 응답(`retrieval`)과 정식 N-02 응답(`source_context`)을 보관할 수 있다. `source_context.data`가 `EvidenceBundle`이며 `sources`는 화면 호환을 위한 후보별 뷰이다. `추출 텍스트`에는 보강 문맥을 표시하고, `상세 정보`에는 N-02 JSON·문맥 길이·근거 ID도 표시한다.
 
-**화면에서 원문을 대조하는 기능과 N-03의 자동 주장 검증은 별개이다.** 현재 PDF 강조는 참조한 블록 전체의 bbox이며, 일부 문자만 사용한 경우에도 블록 전체를 표시한다. `복원 일치`는 저장된 텍스트의 연결 검사이고, 표 구조 인식이나 질문에 대한 답의 정확성을 자동 검증한 결과는 아니다.
+**화면에서 원문을 대조하는 기능과 N-03의 자동 주장 검증은 별개이다.** 현재 PDF 강조는 원래 검색 청크가 참조한 블록 전체의 bbox이며, 추가 문맥은 추출 텍스트에서 확인한다. 일부 문자만 사용한 경우에도 블록 전체를 표시한다. `복원 일치`는 저장된 텍스트의 연결 검사이고, 표 구조 인식이나 질문에 대한 답의 정확성을 자동 검증한 결과는 아니다.
 
 ### 확인된 결과와 검증 범위
 
@@ -296,6 +304,8 @@ python scripts/run_rag_demo.py \
 
 데모의 `index_refs.bm25`는 청크 파일 SHA-256을 바탕으로 한 참조이다. 토큰화 코드·패키지 버전·검색 파라미터까지 포함하는 완전한 색인 버전 관리와는 구분해야 한다. 또한 데모 서버의 한 문서 제한과 입력 검사는 정식 N-01의 요청 범위·버전 강제 검증을 대신하지 않는다.
 
+N-02 완성 후의 [추가 검사 기록](../../docs/reports/n02-validation.json)에는 N-02 단위·CLI 34개, 기존 테스트 22개, 웹·API 32개 통과와 실제 180개 청크의 원문 연결 결과를 기록했다. 이는 아래의 기존 26개 초기 웹 검사와 구분되는 후속 기록이다.
+
 ## 10. 상태 해석과 후속 개발
 
 | 관찰한 결과 | 의미 | 아직 말할 수 없는 것 |
@@ -305,7 +315,7 @@ python scripts/run_rag_demo.py \
 | 원문 복원 일치 | 저장한 블록·구간과 청크 내용이 일치 | OCR·VLM 인식 정확성 |
 | `verification_status="unverified"` | 추출 내용의 검증 상태가 미확인 | 검색 성공만으로 verified로 변경 불가 |
 
-후속 개발은 N-01 범위·버전 검증 및 오류 정책 정리, N-02 문맥 선택·Bundle 계약, N-04 답변 생성, N-03 주장·인용 검증, T-01/하네스 통합 순서로 연결한다. Dense·Hybrid 등은 같은 질문·정답 근거 집합으로 BM25 기준선과 비교하며 도입한다.
+N-02는 현재 PyMuPDF 텍스트 입력·문서/버전 범위의 MVP를 구현했다. 후속 개발은 N-01 범위·버전 검증 및 오류 정책 보완, N-04 답변 생성, N-03 주장·인용 검증, T-01/하네스 통합으로 연결한다. `search.py`는 현재 존재하지 않으며 검색은 `bm25.py`와 N-01이 맡는다. Dense·Hybrid 등은 같은 질문·정답 근거 집합으로 BM25 기준선과 비교하며 도입한다.
 
 ## 11. 관련 코드와 설명
 
@@ -314,15 +324,16 @@ python scripts/run_rag_demo.py \
 - [현재 청킹 규칙·입출력 설명](../../docs/rag-data-preparation.md)
 - [BM25와 계약 연결 점검 스크립트](../../scripts/check_bm25_contracts.py): 개발용 점검이며 정식 N-01 구현이나 검색 정확도 평가를 대신하지 않음
 - [로컬 웹 데모 실행·원문 확인 안내](../../docs/rag-demo-ui.md)
+- [N-02 구현 계약과 실행 순서](../../docs/n02-source-context.md)
 
 이 문서는 현재 저장된 코드와 2026-11-02의 웹 데모 검사 기록을 대조한 안내이다. 웹 표시·원문 연결 확인은 검색 정확도나 생성 성능 평가와 별개이다.
 
 ## 12. T-01 구현까지 남은 Node 체크리스트
 
-체크 기준은 **노드 전체의 완료 여부**이다. N-01·N-02의 기본 기능과 웹 연결은 이미 동작하지만, 남은 계약·예외 처리가 있으므로 부분 구현 상태이다. 아래 순서는 실제 실행 순서인 N-01 → N-02 → N-04 → N-03 기준이다.
+체크 기준은 **현재 합의한 입력 범위의 MVP 구현·검증 여부**이다. N-02는 고정 길이 문맥·반환·오류 처리를 마쳤고, N-01은 범위·예외 처리가 남아 부분 구현 상태이다. 최종 Parser/VLM·하네스 계약 합의는 통합 단계에 남아 있다. 아래 순서는 실제 실행 순서인 N-01 → N-02 → N-04 → N-03 기준이다.
 
 - [ ] **N-01 `retrieve_evidence` 마무리 — 부분 구현:** 요청의 문서·버전 범위를 검색 전에 강제하고, 색인·검색 프로필 대응 및 예외의 공통 오류 반환 정책을 정리한다. BM25 검색·후보 변환·빈 검색어 검사는 구현된 상태이다.
-- [ ] **N-02 `get_source_context` 마무리 — 부분 구현:** 같은 문서·버전·페이지 안에서 고정 길이의 앞뒤 문맥을 선택하고, 길이 제한·중복 구간 처리를 정의해 정식 `EvidenceBundle` 계약과 공통 결과로 반환한다. 후보 조회·문서/버전 대조·블록 원문 복원·페이지별 블록 그룹화는 구현된 상태이다.
+- [x] **N-02 `get_source_context` — 현재 입력의 MVP 완료:** 고정 길이 문맥, 출처 보존, 겹침 병합, 문자 예산, `EvidenceBundle`, 범위·무결성 오류 차단, 부분 실패, JSON CLI·웹 연결 및 테스트를 구현했다.
 - [ ] **N-04 `draft_answer` 구현 — 미구현:** 질문과 근거 묶음으로 답변 초안을 생성하고, 주장별 근거 참조를 남긴다. 근거가 부족하면 추측하는 대신 부족 상태를 표현하도록 한다.
 - [ ] **N-03 `verify_grounding` 구현 — 미구현:** 인용·근거 ID·문서 범위·숫자·연도·단위를 검사하고, 의미적 정합성 평가와 구분해 결과를 반환한다. 검증 상태와 답변 제공 조건도 함께 정의한다.
 - [ ] **T-01 실행부·하네스 통합:** 네 노드를 순서대로 연결하고 빈 근거·부분 실패·검증 실패의 처리와 최종 반환 형식을 합의한다. N-10 요청 라우팅·N-11 결과 전달은 T-01 바깥의 공통 단계이므로 하네스 담당자와 연동 경계를 정한다.

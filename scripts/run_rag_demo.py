@@ -22,11 +22,12 @@ from uuid import uuid4
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from rag.contracts import DocumentRef, RetrievalRequest
+from rag.contracts import ContextExpansionConfig, DocumentRef, RetrievalRequest
 from rag.nodes.retrieve_evidence import retrieve_evidence
 from rag.nodes.get_source_context import (
     build_chunk_lookup, get_source_for_candidate, load_block_lookup,
     reconstruct_chunk_text, group_blocks_by_page,
+    get_source_context,
 )
 from rag.retrieval.bm25 import BM25Retriever, load_chunks
 from rag.retrieval.tokenizer import tokenize, TOKENIZER_VERSION
@@ -34,7 +35,8 @@ from rag.retrieval.tokenizer import tokenize, TOKENIZER_VERSION
 
 class Demo:
     def __init__(self, chunks_path: Path, blocks_path: Path, pdf: Path | None,
-                 pdf_python: Path | None = None):
+                 pdf_python: Path | None = None, context_config: ContextExpansionConfig | None = None):
+        self.context_config = context_config or ContextExpansionConfig()
         self.chunks = load_chunks(chunks_path)
         self.lookup = build_chunk_lookup(self.chunks)
         self.blocks = load_block_lookup(blocks_path)
@@ -75,7 +77,7 @@ class Demo:
                     page_count=max(pages), indexed_count=len(self.retriever.chunks),
                     pdf_available=bool(self.pdf), tokenizer=TOKENIZER_VERSION,
                     pdf_name=self.pdf.name if self.pdf else None,
-                    capabilities=['BM25', 'N-01', 'N-02'],
+                    capabilities=['BM25', 'N-01', 'N-02'], context_config=asdict(self.context_config),
                     limitations=['답변 생성·의미 검증은 미구현'])
 
     def search(self, query: str, top_k: int):
@@ -91,8 +93,19 @@ class Demo:
                                        index_ref=self.index_ref, top_k=top_k)
             tokens = tokenize(query)
         sources = []
+        context_result = None
         if result.data:
+            context_result = get_source_context(result.data, self.lookup, self.blocks,
+                document_scope=request.document_scope, config=self.context_config)
+            context_by_chunk = {}
+            if context_result.data:
+                for item in context_result.data.items:
+                    for anchor in item.anchors:
+                        context_by_chunk.setdefault(anchor.chunk_id, []).append(item)
             for candidate in result.data.candidates:
+                context_items = context_by_chunk.get(candidate.chunk_id)
+                if not context_items:
+                    continue
                 chunk = get_source_for_candidate(candidate, self.lookup)
                 text = reconstruct_chunk_text(chunk, self.blocks)
                 if text != chunk['text']:
@@ -110,10 +123,17 @@ class Demo:
                     matched_tokens=sorted(set(tokens) & set(tokenize(chunk['search_text']))),
                     reconstruction_match=True, verification_status=chunk.get('verification_status', 'unverified'),
                     source_spans=spans,
+                    context_text='\n\n'.join(item.text for item in context_items),
+                    context_source_spans=[asdict(s) for item in context_items for s in item.source_spans],
+                    evidence_ids=[item.evidence_id for item in context_items],
+                    context_chunk_ids=sorted({a.chunk_id for item in context_items for a in item.anchors}),
+                    context_verification_status=(context_items[0].verification_status
+                        if len({item.verification_status for item in context_items}) == 1 else 'mixed'),
                     page_block_count=sum(len(self.page_blocks.get((self.doc_id, self.version, p), []))
                                          for p in chunk['pdf_pages']),
                 ))
         return dict(query=query, query_tokens=tokens, retrieval=asdict(result), sources=sources,
+                    source_context=asdict(context_result) if context_result else None,
                     elapsed_ms=round((time.perf_counter() - started) * 1000, 1))
 
     @lru_cache(maxsize=24)
@@ -212,11 +232,15 @@ def main():
     parser.add_argument('--pdf', type=Path)
     parser.add_argument('--pdf-python', type=Path, help='PyMuPDF가 설치된 Python (별도 환경도 가능)')
     parser.add_argument('--port', type=int, default=8765)
+    parser.add_argument('--before-chars', type=int, default=200)
+    parser.add_argument('--after-chars', type=int, default=200)
+    parser.add_argument('--max-total-chars', type=int, default=12000)
     args = parser.parse_args()
     print('청크·원문 검사 및 BM25 인덱스를 준비합니다…', flush=True)
     demo = Demo(args.chunks.expanduser().resolve(), args.blocks.expanduser().resolve(),
                 args.pdf.expanduser().resolve() if args.pdf else None,
-                args.pdf_python.expanduser().resolve() if args.pdf_python else None)
+                args.pdf_python.expanduser().resolve() if args.pdf_python else None,
+                ContextExpansionConfig(args.before_chars, args.after_chars, args.max_total_chars))
     server = ThreadingHTTPServer(('127.0.0.1', args.port), make_handler(demo))
     server.daemon_threads = True
     print(f'ReportAnchor: http://127.0.0.1:{server.server_port} (종료: Ctrl+C)', flush=True)
