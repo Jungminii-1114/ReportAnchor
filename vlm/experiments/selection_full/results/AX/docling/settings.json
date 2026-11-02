@@ -1,0 +1,13 @@
+{
+  "pipeline": "standard",
+  "ocr": "easyocr",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "picture_classification": true,
+  "picture_description": false,
+  "docling_version": "2.145.0",
+  "page_scope": "all",
+  "sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c"
+}

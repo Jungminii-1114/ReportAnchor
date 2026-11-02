@@ -1,0 +1,190 @@
+{
+  "document": "ETRI",
+  "pdf_page": 7,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          789.0,
+          180.0,
+          1109.0,
+          317.0
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          39.33756738705959,
+          54.59957799627932,
+          527.0420014119568,
+          664.043734795266
+        ],
+        "decision": "review_required",
+        "reason": [
+          "docling_picture_class_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.43201538920402527,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          },
+          {
+            "confidence": 0.3462197780609131,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "screenshot_from_computer"
+          }
+        ]
+      },
+      {
+        "bbox": [
+          665.6261554939019,
+          77.45675635107523,
+          1148.8432300019924,
+          663.6521939122626
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_nonphotographic_picture_type"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.7897792458534241,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "bar_chart"
+          },
+          {
+            "confidence": 0.07506569474935532,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          39.33756738705959,
+          54.59957799627932,
+          527.0420014119568,
+          664.043734795266
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.43201538920402527,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          },
+          {
+            "confidence": 0.3462197780609131,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "screenshot_from_computer"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0007_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 7,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 7,
+          "bbox": [
+            39.33756738705959,
+            54.59957799627932,
+            527.0420014119568,
+            664.043734795266
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          665.6261554939019,
+          77.45675635107523,
+          1148.8432300019924,
+          663.6521939122626
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "quantitative_or_flow_picture"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.7897792458534241,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "bar_chart"
+          },
+          {
+            "confidence": 0.07506569474935532,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0007_r002",
+        "context": [
+          {
+            "text": "과제수행실적 Project Status",
+            "bbox": [
+              662.6666666666666,
+              48.00003027343746,
+              825.3333333333334,
+              73.66669694010409
+            ],
+            "source_ref": "#/texts/30"
+          }
+        ],
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 7,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 7,
+          "bbox": [
+            665.6261554939019,
+            77.45675635107523,
+            1148.8432300019924,
+            663.6521939122626
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

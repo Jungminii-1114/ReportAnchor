@@ -1,0 +1,942 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 41.666666666666664,
+            "t": 725.181,
+            "r": 107.66666666666667,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 682.8476666666667,
+            "r": 344.6666666666667,
+            "b": 622.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "6G 준비 에이블 맨 , 하늘 바다 우주까지 연결하다",
+      "text": "6G 준비 에이블 맨 , 하늘 바다 우주까지 연결하다",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 613.8476666666668,
+            "r": 192.66666666666666,
+            "b": 600.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "송영근 미래전락연구실 책임연구원",
+      "text": "송영근 미래전락연구실 책임연구원"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 170.0,
+            "t": 341.8476666666667,
+            "r": 205.33333333333334,
+            "b": 327.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "전락적",
+      "text": "전락적"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 161.66666666666666,
+            "t": 327.8476666666667,
+            "r": 213.0,
+            "b": 311.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "자원 배분",
+      "text": "자원 배분"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 134.0,
+            "t": 272.8476666666667,
+            "r": 250.0,
+            "b": 224.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "시장 주도 발전이 가능한 전락적 자원 배분 체계가 필수",
+      "text": "시장 주도 발전이 가능한 전락적 자원 배분 체계가 필수"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 98.33333333333333,
+            "t": 73.84766666666667,
+            "r": 163.66666666666666,
+            "b": 63.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면",
+      "text": "QR코드트 스랜하시면"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 688.5143333333334,
+            "r": 723.3333333333334,
+            "b": 675.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "ICT전락연구소",
+      "text": "ICT전락연구소"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 767.0,
+            "t": 654.8476666666667,
+            "r": 933.0,
+            "b": 641.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "(ABLE-MAN)' 프로적트록 준비하고 있다",
+      "text": "(ABLE-MAN)' 프로적트록 준비하고 있다"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 676.3333333333334,
+            "t": 355.51433333333335,
+            "r": 870.6666666666666,
+            "b": 341.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "전 세계 어디서든 끊김 없는 인터넷 기술 개발 착수",
+      "text": "전 세계 어디서든 끊김 없는 인터넷 기술 개발 착수",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 677.0,
+            "t": 318.18100000000004,
+            "r": 696.3333333333334,
+            "b": 306.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "도전",
+      "text": "도전",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 247.51433333333335,
+            "r": 899.0,
+            "b": 217.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "올 줄이고 실시간 의사결정올 가능하게 하는 위성 엿지 컴퓨팅 등이 대표적이다",
+      "text": "올 줄이고 실시간 의사결정올 가능하게 하는 위성 엿지 컴퓨팅 등이 대표적이다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 665.0,
+            "t": 175.5143333333334,
+            "r": 899.0,
+            "b": 108.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            133
+          ]
+        }
+      ],
+      "orig": "구 분야라 할 수 있다 이러한 기술이 실현되면 산속 사막 심해 비 행기 우주 등 어떤 환경에서도 끊김 없는 통신이 가능해진다 또한 지율주행 자동차 스마트 공장 로봇 Al 기술이 한층 더 고도화되어 우리의 삶이 더욱 편리하고 안전해질 것이다",
+      "text": "구 분야라 할 수 있다 이러한 기술이 실현되면 산속 사막 심해 비 행기 우주 등 어떤 환경에서도 끊김 없는 통신이 가능해진다 또한 지율주행 자동차 스마트 공장 로봇 Al 기술이 한층 더 고도화되어 우리의 삶이 더욱 편리하고 안전해질 것이다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 84.84766666666678,
+            "r": 898.3333333333334,
+            "b": 53.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "물류 분아에서는 글로 벌 공급망 최적화 시스템올 구현할 수 있다 또한 도심 항공 모빌리터",
+      "text": "물류 분아에서는 글로 벌 공급망 최적화 시스템올 구현할 수 있다 또한 도심 항공 모빌리터"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 355.51433333333335,
+            "r": 1089.6666666666667,
+            "b": 306.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "(UAM) 분아에서는 자율비행 관제 시스템올 통신 능해질 전망이다",
+      "text": "(UAM) 분아에서는 자율비행 관제 시스템올 통신 능해질 전망이다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 301.51433333333335,
+            "r": 1150.3333333333333,
+            "b": 161.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            256
+          ]
+        }
+      ],
+      "orig": "지금까지 위성통신 시장은 미국과 유렵이 주도해 앓다 연구원은 '에 이불 맨' 프로적트록 통해 우리나라만의 K-위성K-satellite) 시스템 올 개발해 글로벌 우주통신 시장의 기술 선도자로 도약하고자 한다 연구원은 올해 2월까지 투자 타당성 분석 및 산업체 의견수력올 마 첫고 올해 3월 이후 상세 기술 기획올 본격 추진할 계획이다 이름 위해 산업계 학계 연구기관의 전문가들이 참여하는 '초공간 네트위 로정부와 기업에 새로운 기술 활용방안올 제안할 예정이다",
+      "text": "지금까지 위성통신 시장은 미국과 유렵이 주도해 앓다 연구원은 '에 이불 맨' 프로적트록 통해 우리나라만의 K-위성K-satellite) 시스템 올 개발해 글로벌 우주통신 시장의 기술 선도자로 도약하고자 한다 연구원은 올해 2월까지 투자 타당성 분석 및 산업체 의견수력올 마 첫고 올해 3월 이후 상세 기술 기획올 본격 추진할 계획이다 이름 위해 산업계 학계 연구기관의 전문가들이 참여하는 '초공간 네트위 로정부와 기업에 새로운 기술 활용방안올 제안할 예정이다"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 157.5143333333334,
+            "r": 1149.0,
+            "b": 144.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "연구진은 '에이블 맨' 프로제트름 통해 6G 시대의 핵심기술올 선점",
+      "text": "연구진은 '에이블 맨' 프로제트름 통해 6G 시대의 핵심기술올 선점"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 102.84766666666678,
+            "r": 1149.0,
+            "b": 54.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "또한 앞으로 연구진은 수요자 및 관련 산업체의 의견올 적극 수렵 해 실생활과 산업 현장에서 효과적으로 활용월 수 잇는 기술을 개발 하는 데 주력할 것이다",
+      "text": "또한 앞으로 연구진은 수요자 및 관련 산업체의 의견올 적극 수렵 해 실생활과 산업 현장에서 효과적으로 활용월 수 잇는 기술을 개발 하는 데 주력할 것이다"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 1114.0,
+            "t": 39.18100000000004,
+            "r": 1149.3333333333333,
+            "b": 29.847666666666782,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "62 63",
+      "text": "62 63"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.5827383995056152,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.317181259393692,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.06218365952372551,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.018441861495375633,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0034758506808429956,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.0026687646750360727,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.002209251280874014,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0021169870160520077,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.0018707270501181483,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.001281886943615973,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.000859910505823791,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.0008011380559764802,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.0007248030160553753,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.000714719295501709,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.0006318938103504479,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.00040485619683749974,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.0003938328009098768,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 0.0003642390947788954,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.00029872628510929644,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.00024647414102219045,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.00021077696874272078,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 9.701414819573984e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 3.9099028072087094e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 3.6360779631650075e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 6.037723778717918e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 1.335530555479636e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 36.08137093743389,
+            "t": 697.5264020863087,
+            "r": 529.2071986431439,
+            "b": 35.85104892357356,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.5827383995056152
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.317181259393692
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.06218365952372551
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.018441861495375633
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0034758506808429956
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0026687646750360727
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.002209251280874014
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.0021169870160520077
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.0018707270501181483
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.001281886943615973
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.000859910505823791
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.0008011380559764802
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.0007248030160553753
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.000714719295501709
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.0006318938103504479
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.00040485619683749974
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 0.0003938328009098768
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.0003642390947788954
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.00029872628510929644
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.00024647414102219045
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.00021077696874272078
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 9.701414819573984e-05
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 3.9099028072087094e-05
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 3.6360779631650075e-05
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 6.037723778717918e-06
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 1.335530555479636e-06
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "32": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 32
+    }
+  }
+}

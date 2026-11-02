@@ -1,0 +1,250 @@
+{
+  "document": "ETRI",
+  "pdf_page": 1,
+  "page_size": [
+    1211.81005859375,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          0.0,
+          0.0,
+          428.08721923828125,
+          393.8835754394531
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          427.2677001953125,
+          0.0,
+          570.68505859375,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          605.5149536132812,
+          0.0,
+          1034.53759765625,
+          393.8835754394531
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          1033.7181396484375,
+          0.0,
+          1211.81005859375,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          0.0,
+          393.06402587890625,
+          428.08721923828125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          605.5149536132812,
+          393.06402587890625,
+          1034.53759765625,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          650.0,
+          639.0,
+          1169.0,
+          716.0
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          230.13130656956838,
+          366.07398949375556,
+          364.2292693527775,
+          383.9452823119062
+        ],
+        "decision": "review_required",
+        "reason": [
+          "docling_picture_class_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.46775898337364197,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          },
+          {
+            "confidence": 0.19344870746135712,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          }
+        ]
+      },
+      {
+        "bbox": [
+          597.2072670400889,
+          30.57902190396635,
+          1177.1905500627272,
+          655.5174473668362
+        ],
+        "decision": "review_required",
+        "reason": [
+          "docling_picture_class_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.41665199398994446,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          },
+          {
+            "confidence": 0.21506014466285706,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "line_chart"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          230.13130656956838,
+          366.07398949375556,
+          364.2292693527775,
+          383.9452823119062
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.46775898337364197,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          },
+          {
+            "confidence": 0.19344870746135712,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0001_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 1,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 1,
+          "bbox": [
+            230.13130656956838,
+            366.07398949375556,
+            364.2292693527775,
+            383.9452823119062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          597.2072670400889,
+          30.57902190396635,
+          1177.1905500627272,
+          655.5174473668362
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.41665199398994446,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          },
+          {
+            "confidence": 0.21506014466285706,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "line_chart"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0001_r002",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 1,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 1,
+          "bbox": [
+            597.2072670400889,
+            30.57902190396635,
+            1177.1905500627272,
+            655.5174473668362
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

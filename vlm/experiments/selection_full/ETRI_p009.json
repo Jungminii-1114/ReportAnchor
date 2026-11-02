@@ -1,0 +1,178 @@
+{
+  "document": "ETRI",
+  "pdf_page": 9,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          0.0,
+          0.0,
+          1190.550048828125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          38.04305469887683,
+          50.4089222357527,
+          527.9140472873331,
+          663.7479147447627
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_nonphotographic_picture_type"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.6324582695960999,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "bar_chart"
+          },
+          {
+            "confidence": 0.1581718921661377,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          }
+        ]
+      },
+      {
+        "bbox": [
+          660.6267634086704,
+          50.062486746630725,
+          1144.2975848680778,
+          663.3117447857147
+        ],
+        "decision": "review_required",
+        "reason": [
+          "docling_picture_class_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.5585032105445862,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "bar_chart"
+          },
+          {
+            "confidence": 0.2934439480304718,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "screenshot_from_computer"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          38.04305469887683,
+          50.4089222357527,
+          527.9140472873331,
+          663.7479147447627
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "quantitative_or_flow_picture"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.6324582695960999,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "bar_chart"
+          },
+          {
+            "confidence": 0.1581718921661377,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0009_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            38.04305469887683,
+            50.4089222357527,
+            527.9140472873331,
+            663.7479147447627
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          660.6267634086704,
+          50.062486746630725,
+          1144.2975848680778,
+          663.3117447857147
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.5585032105445862,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "bar_chart"
+          },
+          {
+            "confidence": 0.2934439480304718,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "screenshot_from_computer"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0009_r002",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            660.6267634086704,
+            50.062486746630725,
+            1144.2975848680778,
+            663.3117447857147
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

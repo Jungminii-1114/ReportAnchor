@@ -1,0 +1,147 @@
+{
+  "document": "ETRI",
+  "pdf_page": 13,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          0.0,
+          0.0,
+          1190.550048828125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [],
+    "combined_frozen": [
+      {
+        "bbox": [
+          626.8006608072917,
+          0,
+          912.5326725260418,
+          140.60632299804683
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0013_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 13,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 13,
+          "bbox": [
+            626.8006608072917,
+            0,
+            912.5326725260418,
+            140.60632299804683
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          626.8006608072917,
+          63.393737548828085,
+          912.5326725260418,
+          220.60632299804683
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/4"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0013_r002",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 13,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 13,
+          "bbox": [
+            626.8006608072917,
+            63.393737548828085,
+            912.5326725260418,
+            220.60632299804683
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          626.3006608072917,
+          143.39373754882808,
+          912.0326725260418,
+          300.60632299804683
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/7"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0013_r003",
+        "context": [
+          {
+            "text": "26",
+            "bbox": [
+              755.0,
+              51.00003027343746,
+              784.3333333333334,
+              73.00003027343746
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 13,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 13,
+          "bbox": [
+            626.3006608072917,
+            143.39373754882808,
+            912.0326725260418,
+            300.60632299804683
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

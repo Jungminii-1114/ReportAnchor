@@ -1,0 +1,718 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 70.92,
+            "t": 769.48,
+            "r": 181.92,
+            "b": 754.48,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "나. 경영 관리계획",
+      "text": "나. 경영 관리계획",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 83.03999999999999,
+            "t": 741.88,
+            "r": 239.16,
+            "b": 726.88,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "1) 경영관리 중점 방향",
+      "text": "1) 경영관리 중점 방향",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 70.92,
+            "t": 694.27,
+            "r": 171.84,
+            "b": 678.4,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": " 연구사업관리",
+      "text": " 연구사업관리",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 659.3199999999999,
+            "r": 353.15999999999997,
+            "b": 644.3199999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "연구성과 관리를 통해 연구역량 강화 추진",
+      "text": "연구성과 관리를 통해 연구역량 강화 추진",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 80.88,
+            "t": 626.15968,
+            "r": 524.5288843672615,
+            "b": 612.448,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "❍ 기관 R&R에 따라 수립된 전략목표ㆍ성과목표별 성과점검을 통해 목표 달성도",
+      "text": "❍ 기관 R&R에 따라 수립된 전략목표ㆍ성과목표별 성과점검을 통해 목표 달성도",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 100.44,
+            "t": 604.648,
+            "r": 263.4077672751648,
+            "b": 591.688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "및 연구 결과 질적 수준 제고",
+      "text": "및 연구 결과 질적 수준 제고",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 567.76,
+            "r": 407.4,
+            "b": 552.76,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "기본사업 연구 결과 평가 및 성과 활용체계 고도화",
+      "text": "기본사업 연구 결과 평가 및 성과 활용체계 고도화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 80.88,
+            "t": 534.59968,
+            "r": 519.848456729698,
+            "b": 520.888,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "❍ 기본사업 연구 결과의 공개평가 등을 통해 질적 우수성 향상 및 실효성 확대",
+      "text": "❍ 기본사업 연구 결과의 공개평가 등을 통해 질적 우수성 향상 및 실효성 확대",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 95.88,
+            "t": 508.048,
+            "r": 419.1678632751403,
+            "b": 495.088,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "- 우수연구자 포상 및 미흡 과제의 제재 등 평가 결과 활용",
+      "text": "우수연구자 포상 및 미흡 과제의 제재 등 평가 결과 활용",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 95.88,
+            "t": 479.608,
+            "r": 524.6477672751647,
+            "b": 443.24800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "- 과제심의 시 이전년도 평가 결과 및 평가의견을 반영하여 연구과제 및 연구 책임자 선정",
+      "text": "과제심의 시 이전년도 평가 결과 및 평가의견을 반영하여 연구과제 및 연구 책임자 선정",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 80.88,
+            "t": 423.59968000000003,
+            "r": 407.2877672751648,
+            "b": 409.88800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "❍ 기관 연구성과의 활용･확산을 위한 성과관리 체계 운영",
+      "text": "❍ 기관 연구성과의 활용･확산을 위한 성과관리 체계 운영",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 95.88,
+            "t": 397.048,
+            "r": 516.9685527296734,
+            "b": 384.088,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "- 연구성과를 구체적으로 기록하고 성과 활용 실적을 기관차원에서 지속 관리",
+      "text": "연구성과를 구체적으로 기록하고 성과 활용 실적을 기관차원에서 지속 관리",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 95.88,
+            "t": 369.35968,
+            "r": 524.5280290921344,
+            "b": 332.248,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "- 논문발표･게재, 안건상정, 법령 제･개정, 제도개선, 정책반영, 정책홍보 등 7개 성과항목을 DB화하여 추적 관리",
+      "text": "논문발표･게재, 안건상정, 법령 제･개정, 제도개선, 정책반영, 정책홍보 등 7개 성과항목을 DB화하여 추적 관리",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 70.92,
+            "t": 306.6700000000001,
+            "r": 186.84,
+            "b": 290.80000000000007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": " 시설 안전･보건",
+      "text": " 시설 안전･보건",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 271.72,
+            "r": 439.2,
+            "b": 256.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "임직원의 안전을 최우선으로 한 안전중심 경영체계 구축",
+      "text": "임직원의 안전을 최우선으로 한 안전중심 경영체계 구축",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 80.88,
+            "t": 238.55967999999996,
+            "r": 412.8077672751648,
+            "b": 224.84799999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "❍ 안전보건 경영방침 최초 수립으로 기관장 안전의지 확립",
+      "text": "❍ 안전보건 경영방침 최초 수립으로 기관장 안전의지 확립",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 95.88,
+            "t": 212.00799999999992,
+            "r": 524.6481250957098,
+            "b": 199.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "- 중대재해와 각종 사고에 대한 기관 종합관리 대책 설정으로 중장기 안전보건",
+      "text": "중대재해와 각종 사고에 대한 기관 종합관리 대책 설정으로 중장기 안전보건",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 108.96,
+            "t": 188.60799999999995,
+            "r": 173.5290763672128,
+            "b": 175.64800000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "활동 구체화",
+      "text": "활동 구체화",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 80.88,
+            "t": 155.99968,
+            "r": 364.3277672751648,
+            "b": 142.288,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "❍ 공간안전인증 추진으로 재난안전 예방체계 구축",
+      "text": "❍ 공간안전인증 추진으로 재난안전 예방체계 구축",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 107,
+          "bbox": {
+            "l": 95.88,
+            "t": 129.44799999999998,
+            "r": 524.6478632751403,
+            "b": 116.48799999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "- 안전경영·소방안전·설비성능시험 등 분야별 평가를 통한 사고 예방 인증 획득",
+      "text": "안전경영·소방안전·설비성능시험 등 분야별 평가를 통한 사고 예방 인증 획득",
+      "enumerated": false,
+      "marker": "-"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "107": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 107
+    }
+  }
+}

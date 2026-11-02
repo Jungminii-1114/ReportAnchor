@@ -1,0 +1,5711 @@
+[
+  {
+    "pdf_page": 1,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          173.22756958007812,
+          710.52880859375,
+          421.90216064453125,
+          748.5266723632812
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9943442344665527,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          },
+          {
+            "confidence": 0.004641995765268803,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0001_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 1,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 1,
+          "bbox": [
+            173.22756958007812,
+            710.52880859375,
+            421.90216064453125,
+            748.5266723632812
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p001.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 2,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p002.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 3,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          91.06998443603516,
+          233.8607635498047,
+          499.697021484375,
+          670.0930786132812
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0003_r001",
+        "context": [
+          {
+            "text": "사업계획 및 예산(안)",
+            "bbox": [
+              82.2,
+              146.59199999999998,
+              193.8576,
+              159.55200000000002
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 3,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 3,
+          "bbox": [
+            91.06998443603516,
+            233.8607635498047,
+            499.697021484375,
+            670.0930786132812
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p003.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 4,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p004.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 5,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          71.04006958007812,
+          163.157470703125,
+          524.2052612304688,
+          749.169189453125
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0005_r001",
+        "context": [
+          {
+            "text": "1. 설립목적 및 주요기능",
+            "bbox": [
+              70.92,
+              134.32799999999997,
+              233.97758400000004,
+              151.36799999999994
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 5,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 5,
+          "bbox": [
+            71.04006958007812,
+            163.157470703125,
+            524.2052612304688,
+            749.169189453125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p005.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 6,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.73119354248047,
+          458.1077575683594,
+          524.529541015625,
+          557.4716796875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0006_r001",
+        "context": [
+          {
+            "text": "인 원",
+            "bbox": [
+              93.47999999999999,
+              420.35999999999996,
+              127.08,
+              435.35999999999996
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 6,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 6,
+          "bbox": [
+            69.73119354248047,
+            458.1077575683594,
+            524.529541015625,
+            557.4716796875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.89544677734375,
+          619.9053344726562,
+          524.7889404296875,
+          753.471435546875
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0006_r002",
+        "context": [
+          {
+            "text": "3. 시설 현황",
+            "bbox": [
+              70.92,
+              595.1279999999999,
+              154.778928,
+              612.1679999999999
+            ],
+            "source_ref": "#/texts/5"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 6,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 6,
+          "bbox": [
+            69.89544677734375,
+            619.9053344726562,
+            524.7889404296875,
+            753.471435546875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.97472381591797,
+          125.84864044189453,
+          524.2671508789062,
+          398.8185729980469
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "quantitative_or_flow_picture"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9334596395492554,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "flow_chart"
+          },
+          {
+            "confidence": 0.023055022582411766,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0006_r003",
+        "context": [
+          {
+            "text": "조 직",
+            "bbox": [
+              93.47999999999999,
+              103.79999999999995,
+              127.08,
+              118.79999999999995
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 6,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 6,
+          "bbox": [
+            70.97472381591797,
+            125.84864044189453,
+            524.2671508789062,
+            398.8185729980469
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p006.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 7,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          90.0718994140625,
+          306.4139099121094,
+          492.7489013671875,
+          455.92742919921875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.41345223784446716,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          },
+          {
+            "confidence": 0.38511204719543457,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "calendar"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0007_r001",
+        "context": [
+          {
+            "text": "비전 및 전략계획",
+            "bbox": [
+              93.47999999999999,
+              134.27999999999997,
+              199.92,
+              149.27999999999997
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 7,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 7,
+          "bbox": [
+            90.0718994140625,
+            306.4139099121094,
+            492.7489013671875,
+            455.92742919921875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          88.21033477783203,
+          486.32965087890625,
+          492.87835693359375,
+          723.9497680664062
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "quantitative_or_flow_picture"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.8109790682792664,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "flow_chart"
+          },
+          {
+            "confidence": 0.09530376642942429,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "table"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0007_r002",
+        "context": [
+          {
+            "text": "연구분야",
+            "bbox": [
+              95.33333333333334,
+              314.0,
+              130.66666666666669,
+              326.66666666666674
+            ],
+            "source_ref": "#/texts/4"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 7,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 7,
+          "bbox": [
+            88.21033477783203,
+            486.32965087890625,
+            492.87835693359375,
+            723.9497680664062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p007.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 8,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.58993530273438,
+          610.2033081054688,
+          523.7665405273438,
+          750.952880859375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0008_r001",
+        "context": [
+          {
+            "text": "(2019~2023)",
+            "bbox": [
+              117.36,
+              430.248,
+              173.61193212064327,
+              441.288
+            ],
+            "source_ref": "#/texts/30"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 8,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 8,
+          "bbox": [
+            70.58993530273438,
+            610.2033081054688,
+            523.7665405273438,
+            750.952880859375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          77.68669891357422,
+          147.08412170410156,
+          518.5055541992188,
+          333.6180419921875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.4249008297920227,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "pie_chart"
+          },
+          {
+            "confidence": 0.29778599739074707,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "flow_chart"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0008_r002",
+        "context": [
+          {
+            "text": "국민 연구자 중심 'R8D 대력신' 실현올 위한 정책 지원 및 전락연구 선도기관",
+            "bbox": [
+              164.33333333333331,
+              131.33333333333337,
+              433.3333333333333,
+              145.33333333333337
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 8,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 8,
+          "bbox": [
+            77.68669891357422,
+            147.08412170410156,
+            518.5055541992188,
+            333.6180419921875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p008.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 9,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.998046875,
+          181.5583953857422,
+          524.4185791015625,
+          350.3486328125
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0009_r001",
+        "context": [
+          {
+            "text": "성과목표 1-1 과학기술혁신정책 기획ㆍ지원 강화",
+            "bbox": [
+              77.39999999999999,
+              142.27199999999993,
+              236.23700775982957,
+              152.23199999999997
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            70.998046875,
+            181.5583953857422,
+            524.4185791015625,
+            350.3486328125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          71.01618194580078,
+          393.5589599609375,
+          524.6521606445312,
+          549.4638671875
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0009_r002",
+        "context": [
+          {
+            "text": "성과목표 1-2 국가전략기술 육성ㆍ지원 및 미래예측 활용ㆍ확산",
+            "bbox": [
+              77.39999999999999,
+              355.392,
+              285.0771963235005,
+              365.352
+            ],
+            "source_ref": "#/texts/4"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            71.01618194580078,
+            393.5589599609375,
+            524.6521606445312,
+            549.4638671875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.91569519042969,
+          616.95263671875,
+          524.6597290039062,
+          765.2889404296875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0009_r003",
+        "context": [
+          {
+            "text": "성과목표 2-1. 연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+            "bbox": [
+              81.36,
+              604.6320000000001,
+              312.0770077598295,
+              614.592
+            ],
+            "source_ref": "#/texts/7"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            70.91569519042969,
+            616.95263671875,
+            524.6597290039062,
+            765.2889404296875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p009.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 10,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.84683990478516,
+          118.3790283203125,
+          524.5968627929688,
+          245.59124755859375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0010_r001",
+        "context": [
+          {
+            "text": "성과목표 2-2. R&D 효과성 제고를 위한 분석 및 성과확산체계 고도화",
+            "bbox": [
+              77.39999999999999,
+              80.35199999999998,
+              308.1171273726395,
+              90.31200000000001
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            70.84683990478516,
+            118.3790283203125,
+            524.5968627929688,
+            245.59124755859375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          71.01419830322266,
+          350.0965270996094,
+          524.5570068359375,
+          548.6165771484375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0010_r002",
+        "context": [
+          {
+            "text": "전략목표 3 : 전략적 연구개발 투자 및 평가 지원체계 고도화",
+            "bbox": [
+              159.72,
+              280.20000000000005,
+              435.62970066412794,
+              292.20000000000005
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            71.01419830322266,
+            350.0965270996094,
+            524.5570068359375,
+            548.6165771484375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          71.08443450927734,
+          586.5687866210938,
+          524.562255859375,
+          685.3136596679688
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0010_r003",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            71.08443450927734,
+            586.5687866210938,
+            524.562255859375,
+            685.3136596679688
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p010.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 11,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.40486145019531,
+          154.9419708251953,
+          525.31201171875,
+          764.515380859375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0011_r001",
+        "context": [
+          {
+            "text": "1. 주요 성과 요약",
+            "bbox": [
+              70.92,
+              129.288,
+              189.458208,
+              146.32799999999997
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 11,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 11,
+          "bbox": [
+            70.40486145019531,
+            154.9419708251953,
+            525.31201171875,
+            764.515380859375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          87.85574340820312,
+          70.53541564941406,
+          127.97087860107422,
+          112.10675811767578
+        ],
+        "decision": "exclude_vlm",
+        "reason": [
+          "small_isolated_decoration_preserve_source"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9356578588485718,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          },
+          {
+            "confidence": 0.04075954109430313,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0011_r002",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 11,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 11,
+          "bbox": [
+            87.85574340820312,
+            70.53541564941406,
+            127.97087860107422,
+            112.10675811767578
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p011.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 12,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p012.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 13,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p013.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 14,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p014.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 15,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p015.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 16,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p016.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 17,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p017.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 18,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p018.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 19,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p019.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 20,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p020.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 21,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p021.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 22,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p022.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 23,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.63259887695312,
+          291.9788513183594,
+          523.8460083007812,
+          659.4935913085938
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0023_r001",
+        "context": [
+          {
+            "text": "< KISTEP Think 2025, 10대 과학기술혁신정책 아젠다(안) >",
+            "bbox": [
+              158.64,
+              277.0799999999999,
+              436.69022738399997,
+              289.0799999999999
+            ],
+            "source_ref": "#/texts/5"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 23,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 23,
+          "bbox": [
+            69.63259887695312,
+            291.9788513183594,
+            523.8460083007812,
+            659.4935913085938
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p023.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 24,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p024.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 25,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p025.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 26,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p026.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 27,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p027.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 28,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p028.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 29,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p029.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 30,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p030.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 31,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p031.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 32,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p032.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 33,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.39812469482422,
+          180.3758544921875,
+          525.775390625,
+          751.7050170898438
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0033_r001",
+        "context": [
+          {
+            "text": "1. 연구사업 운영계획",
+            "bbox": [
+              70.92,
+              134.32799999999997,
+              214.17758400000002,
+              151.36799999999994
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 33,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 33,
+          "bbox": [
+            70.39812469482422,
+            180.3758544921875,
+            525.775390625,
+            751.7050170898438
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p033.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 34,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.04977416992188,
+          527.24365234375,
+          525.1428833007812,
+          648.025390625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0034_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              489.59999999999997,
+              161.4,
+              504.59999999999997
+            ],
+            "source_ref": "#/texts/10"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 34,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 34,
+          "bbox": [
+            70.04977416992188,
+            527.24365234375,
+            525.1428833007812,
+            648.025390625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p034.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 35,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.69898986816406,
+          93.85169982910156,
+          522.1043090820312,
+          756.0634765625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0035_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 35,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 35,
+          "bbox": [
+            69.69898986816406,
+            93.85169982910156,
+            522.1043090820312,
+            756.0634765625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p035.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 36,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.20854949951172,
+          71.89264678955078,
+          522.5211791992188,
+          769.1781005859375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0036_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 36,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 36,
+          "bbox": [
+            70.20854949951172,
+            71.89264678955078,
+            522.5211791992188,
+            769.1781005859375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p036.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 37,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.04258728027344,
+          70.6797103881836,
+          521.5912475585938,
+          594.3624267578125
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0037_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 37,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 37,
+          "bbox": [
+            70.04258728027344,
+            70.6797103881836,
+            521.5912475585938,
+            594.3624267578125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p037.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 38,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.90728759765625,
+          70.26011657714844,
+          522.4563598632812,
+          747.4603271484375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0038_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 38,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 38,
+          "bbox": [
+            69.90728759765625,
+            70.26011657714844,
+            522.4563598632812,
+            747.4603271484375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p038.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 39,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          72.63671112060547,
+          627.0658569335938,
+          525.2212524414062,
+          738.6643676757812
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0039_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              589.56,
+              161.4,
+              604.56
+            ],
+            "source_ref": "#/texts/11"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 39,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 39,
+          "bbox": [
+            72.63671112060547,
+            627.0658569335938,
+            525.2212524414062,
+            738.6643676757812
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p039.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 40,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.14456939697266,
+          95.14895629882812,
+          525.1853637695312,
+          170.26905822753906
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0040_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 40,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 40,
+          "bbox": [
+            70.14456939697266,
+            95.14895629882812,
+            525.1853637695312,
+            170.26905822753906
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p040.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 41,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.9166030883789,
+          70.30834197998047,
+          525.2554321289062,
+          750.4287109375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0041_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 41,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 41,
+          "bbox": [
+            69.9166030883789,
+            70.30834197998047,
+            525.2554321289062,
+            750.4287109375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p041.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 42,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          71.00031280517578,
+          71.2542953491211,
+          525.3046875,
+          572.23095703125
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0042_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 42,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 42,
+          "bbox": [
+            71.00031280517578,
+            71.2542953491211,
+            525.3046875,
+            572.23095703125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p042.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 43,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.94190216064453,
+          635.1910400390625,
+          525.0880737304688,
+          746.618896484375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0043_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              597.6,
+              161.4,
+              612.6
+            ],
+            "source_ref": "#/texts/12"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 43,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 43,
+          "bbox": [
+            69.94190216064453,
+            635.1910400390625,
+            525.0880737304688,
+            746.618896484375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p043.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 44,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.86115264892578,
+          94.12905883789062,
+          525.1624145507812,
+          755.0454711914062
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0044_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 44,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 44,
+          "bbox": [
+            69.86115264892578,
+            94.12905883789062,
+            525.1624145507812,
+            755.0454711914062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p044.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 45,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.77360534667969,
+          70.32720947265625,
+          523.5971069335938,
+          734.702392578125
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0045_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 45,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 45,
+          "bbox": [
+            69.77360534667969,
+            70.32720947265625,
+            523.5971069335938,
+            734.702392578125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p045.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 46,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.18341827392578,
+          661.6666259765625,
+          525.2796020507812,
+          754.4088134765625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0046_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              636.0,
+              161.4,
+              651.0
+            ],
+            "source_ref": "#/texts/12"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 46,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 46,
+          "bbox": [
+            70.18341827392578,
+            661.6666259765625,
+            525.2796020507812,
+            754.4088134765625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p046.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 47,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.23778533935547,
+          93.79254913330078,
+          525.31298828125,
+          769.1495361328125
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0047_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 47,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 47,
+          "bbox": [
+            70.23778533935547,
+            93.79254913330078,
+            525.31298828125,
+            769.1495361328125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p047.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 48,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.32625579833984,
+          71.62340545654297,
+          524.8055419921875,
+          517.8568115234375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0048_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 48,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 48,
+          "bbox": [
+            70.32625579833984,
+            71.62340545654297,
+            524.8055419921875,
+            517.8568115234375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p048.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 49,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.09940338134766,
+          70.45280456542969,
+          525.0592651367188,
+          736.0933837890625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0049_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 49,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 49,
+          "bbox": [
+            70.09940338134766,
+            70.45280456542969,
+            525.0592651367188,
+            736.0933837890625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p049.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 50,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          71.10855102539062,
+          73.18232727050781,
+          525.1638793945312,
+          590.0955810546875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0050_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 50,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 50,
+          "bbox": [
+            71.10855102539062,
+            73.18232727050781,
+            525.1638793945312,
+            590.0955810546875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p050.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 51,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.79351806640625,
+          70.53416442871094,
+          525.09814453125,
+          751.4815063476562
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0051_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 51,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 51,
+          "bbox": [
+            69.79351806640625,
+            70.53416442871094,
+            525.09814453125,
+            751.4815063476562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p051.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 52,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          72.55028533935547,
+          534.43896484375,
+          525.37109375,
+          656.8472290039062
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0052_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              496.32,
+              161.4,
+              511.32
+            ],
+            "source_ref": "#/texts/10"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 52,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 52,
+          "bbox": [
+            72.55028533935547,
+            534.43896484375,
+            525.37109375,
+            656.8472290039062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p052.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 53,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.13506317138672,
+          94.45986938476562,
+          525.1943969726562,
+          691.6113891601562
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0053_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 53,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 53,
+          "bbox": [
+            70.13506317138672,
+            94.45986938476562,
+            525.1943969726562,
+            691.6113891601562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p053.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 54,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.17598724365234,
+          70.78863525390625,
+          525.19873046875,
+          630.6024169921875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0054_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 54,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 54,
+          "bbox": [
+            70.17598724365234,
+            70.78863525390625,
+            525.19873046875,
+            630.6024169921875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p054.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 55,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.05728912353516,
+          554.809814453125,
+          525.287353515625,
+          672.291748046875
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0055_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              517.1999999999999,
+              161.4,
+              532.1999999999999
+            ],
+            "source_ref": "#/texts/10"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 55,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 55,
+          "bbox": [
+            70.05728912353516,
+            554.809814453125,
+            525.287353515625,
+            672.291748046875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p055.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 56,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.19912719726562,
+          93.98589324951172,
+          525.3881225585938,
+          720.6748657226562
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0056_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 56,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 56,
+          "bbox": [
+            70.19912719726562,
+            93.98589324951172,
+            525.3881225585938,
+            720.6748657226562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p056.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 57,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.88346099853516,
+          70.73484802246094,
+          525.0633544921875,
+          711.3139038085938
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0057_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 57,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 57,
+          "bbox": [
+            69.88346099853516,
+            70.73484802246094,
+            525.0633544921875,
+            711.3139038085938
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p057.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 58,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.85630798339844,
+          630.5606079101562,
+          525.0242919921875,
+          746.6802978515625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0058_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              90.47999999999999,
+              595.8720000000001,
+              151.20836072972256,
+              608.832
+            ],
+            "source_ref": "#/texts/12"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 58,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 58,
+          "bbox": [
+            69.85630798339844,
+            630.5606079101562,
+            525.0242919921875,
+            746.6802978515625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p058.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 59,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.87184143066406,
+          93.84137725830078,
+          524.9666748046875,
+          769.4736328125
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0059_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 59,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 59,
+          "bbox": [
+            69.87184143066406,
+            93.84137725830078,
+            524.9666748046875,
+            769.4736328125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p059.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 60,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.19928741455078,
+          70.24971771240234,
+          525.1123657226562,
+          769.3245849609375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0060_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 60,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 60,
+          "bbox": [
+            70.19928741455078,
+            70.24971771240234,
+            525.1123657226562,
+            769.3245849609375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p060.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 61,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p061.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 62,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          72.59965515136719,
+          613.8758544921875,
+          525.1320190429688,
+          733.0615844726562
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0062_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              578.76,
+              161.4,
+              593.76
+            ],
+            "source_ref": "#/texts/12"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 62,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 62,
+          "bbox": [
+            72.59965515136719,
+            613.8758544921875,
+            525.1320190429688,
+            733.0615844726562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p062.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 63,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.37553405761719,
+          94.74085998535156,
+          525.0365600585938,
+          769.8636474609375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0063_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 63,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 63,
+          "bbox": [
+            70.37553405761719,
+            94.74085998535156,
+            525.0365600585938,
+            769.8636474609375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p063.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 64,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p064.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 65,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.0683364868164,
+          461.20184326171875,
+          525.0198364257812,
+          566.4614868164062
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0065_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              423.84,
+              161.4,
+              438.84
+            ],
+            "source_ref": "#/texts/9"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 65,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 65,
+          "bbox": [
+            70.0683364868164,
+            461.20184326171875,
+            525.0198364257812,
+            566.4614868164062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p065.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 66,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.57333374023438,
+          99.6067886352539,
+          525.1749877929688,
+          718.6283569335938
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0066_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 66,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 66,
+          "bbox": [
+            70.57333374023438,
+            99.6067886352539,
+            525.1749877929688,
+            718.6283569335938
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p066.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 67,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.1678695678711,
+          544.2315673828125,
+          525.2376708984375,
+          648.5208740234375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0067_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              506.4,
+              161.4,
+              521.4
+            ],
+            "source_ref": "#/texts/11"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 67,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 67,
+          "bbox": [
+            70.1678695678711,
+            544.2315673828125,
+            525.2376708984375,
+            648.5208740234375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p067.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 68,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.07958221435547,
+          99.34176635742188,
+          525.3582153320312,
+          646.82568359375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0068_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              71.51999999999998,
+              214.89,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 68,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 68,
+          "bbox": [
+            70.07958221435547,
+            99.34176635742188,
+            525.3582153320312,
+            646.82568359375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p068.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 69,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.10970306396484,
+          564.5359497070312,
+          525.283203125,
+          669.3956298828125
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0069_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              527.16,
+              161.4,
+              542.16
+            ],
+            "source_ref": "#/texts/11"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 69,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 69,
+          "bbox": [
+            70.10970306396484,
+            564.5359497070312,
+            525.283203125,
+            669.3956298828125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p069.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 70,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.41716766357422,
+          108.89849853515625,
+          525.5523071289062,
+          749.1304321289062
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0070_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 70,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 70,
+          "bbox": [
+            70.41716766357422,
+            108.89849853515625,
+            525.5523071289062,
+            749.1304321289062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p070.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 71,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p071.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 72,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.11488342285156,
+          295.6413879394531,
+          525.1660766601562,
+          476.6703186035156
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0072_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              257.15999999999997,
+              161.4,
+              272.15999999999997
+            ],
+            "source_ref": "#/texts/3"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 72,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 72,
+          "bbox": [
+            70.11488342285156,
+            295.6413879394531,
+            525.1660766601562,
+            476.6703186035156
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p072.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 73,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.58956146240234,
+          104.19225311279297,
+          525.0712890625,
+          768.7111206054688
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0073_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 73,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 73,
+          "bbox": [
+            69.58956146240234,
+            104.19225311279297,
+            525.0712890625,
+            768.7111206054688
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p073.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 74,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.90505981445312,
+          70.69805908203125,
+          525.2279052734375,
+          683.51171875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0074_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 74,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 74,
+          "bbox": [
+            70.90505981445312,
+            70.69805908203125,
+            525.2279052734375,
+            683.51171875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p074.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 75,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.33091735839844,
+          75.72168731689453,
+          525.9609375,
+          729.121337890625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0075_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 75,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 75,
+          "bbox": [
+            70.33091735839844,
+            75.72168731689453,
+            525.9609375,
+            729.121337890625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p075.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 76,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.7784652709961,
+          75.51531219482422,
+          525.2736206054688,
+          730.13037109375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0076_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 76,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 76,
+          "bbox": [
+            69.7784652709961,
+            75.51531219482422,
+            525.2736206054688,
+            730.13037109375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p076.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 77,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.4480209350586,
+          75.42282104492188,
+          525.4562377929688,
+          717.372314453125
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0077_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 77,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 77,
+          "bbox": [
+            70.4480209350586,
+            75.42282104492188,
+            525.4562377929688,
+            717.372314453125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p077.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 78,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.12451171875,
+          70.39408111572266,
+          525.593994140625,
+          709.852294921875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0078_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 78,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 78,
+          "bbox": [
+            70.12451171875,
+            70.39408111572266,
+            525.593994140625,
+            709.852294921875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p078.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 79,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.88790893554688,
+          70.29019165039062,
+          525.2528076171875,
+          145.81362915039062
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0079_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 79,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 79,
+          "bbox": [
+            69.88790893554688,
+            70.29019165039062,
+            525.2528076171875,
+            145.81362915039062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p079.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 80,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.02054595947266,
+          70.42029571533203,
+          525.3207397460938,
+          754.343994140625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0080_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 80,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 80,
+          "bbox": [
+            70.02054595947266,
+            70.42029571533203,
+            525.3207397460938,
+            754.343994140625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p080.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 81,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          72.7259750366211,
+          574.3432006835938,
+          525.2855224609375,
+          679.2892456054688
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0081_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              537.12,
+              161.4,
+              552.12
+            ],
+            "source_ref": "#/texts/12"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 81,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 81,
+          "bbox": [
+            72.7259750366211,
+            574.3432006835938,
+            525.2855224609375,
+            679.2892456054688
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p081.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 82,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.59416961669922,
+          109.10083770751953,
+          525.1459350585938,
+          752.0263061523438
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0082_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 82,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 82,
+          "bbox": [
+            70.59416961669922,
+            109.10083770751953,
+            525.1459350585938,
+            752.0263061523438
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p082.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 83,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          72.53519439697266,
+          652.6343383789062,
+          525.3838500976562,
+          751.7918090820312
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0083_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              615.12,
+              161.4,
+              630.12
+            ],
+            "source_ref": "#/texts/14"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 83,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 83,
+          "bbox": [
+            72.53519439697266,
+            652.6343383789062,
+            525.3838500976562,
+            751.7918090820312
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p083.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 84,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.30599975585938,
+          109.29182434082031,
+          525.3303833007812,
+          714.599609375
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0084_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 84,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 84,
+          "bbox": [
+            70.30599975585938,
+            109.29182434082031,
+            525.3303833007812,
+            714.599609375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p084.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 85,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          72.73053741455078,
+          615.9425048828125,
+          525.239990234375,
+          713.753662109375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0085_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              578.76,
+              161.4,
+              593.76
+            ],
+            "source_ref": "#/texts/12"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 85,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 85,
+          "bbox": [
+            72.73053741455078,
+            615.9425048828125,
+            525.239990234375,
+            713.753662109375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p085.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 86,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.70552825927734,
+          104.37035369873047,
+          525.422119140625,
+          729.0352172851562
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0086_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 86,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 86,
+          "bbox": [
+            70.70552825927734,
+            104.37035369873047,
+            525.422119140625,
+            729.0352172851562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p086.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 87,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.02974700927734,
+          606.3906860351562,
+          525.2371826171875,
+          694.1113891601562
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0087_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              568.8,
+              161.4,
+              583.8
+            ],
+            "source_ref": "#/texts/11"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 87,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 87,
+          "bbox": [
+            70.02974700927734,
+            606.3906860351562,
+            525.2371826171875,
+            694.1113891601562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p087.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 88,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.7564926147461,
+          104.15979766845703,
+          522.1798706054688,
+          730.5947265625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0088_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 88,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 88,
+          "bbox": [
+            69.7564926147461,
+            104.15979766845703,
+            522.1798706054688,
+            730.5947265625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p088.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 89,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          72.7946548461914,
+          544.7853393554688,
+          525.0211791992188,
+          642.4120483398438
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0089_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              507.12,
+              161.4,
+              522.12
+            ],
+            "source_ref": "#/texts/10"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 89,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 89,
+          "bbox": [
+            72.7946548461914,
+            544.7853393554688,
+            525.0211791992188,
+            642.4120483398438
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p089.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 90,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.25991821289062,
+          103.7102279663086,
+          525.1660766601562,
+          716.6763916015625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0090_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 90,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 90,
+          "bbox": [
+            70.25991821289062,
+            103.7102279663086,
+            525.1660766601562,
+            716.6763916015625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p090.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 91,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.15180206298828,
+          555.4817504882812,
+          525.1023559570312,
+          653.046630859375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0091_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              517.8,
+              161.4,
+              532.8
+            ],
+            "source_ref": "#/texts/10"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 91,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 91,
+          "bbox": [
+            70.15180206298828,
+            555.4817504882812,
+            525.1023559570312,
+            653.046630859375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p091.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 92,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.05667114257812,
+          104.74606323242188,
+          525.0735473632812,
+          727.3817138671875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0092_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 92,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 92,
+          "bbox": [
+            70.05667114257812,
+            104.74606323242188,
+            525.0735473632812,
+            727.3817138671875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p092.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 93,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p093.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 94,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.99309539794922,
+          320.158447265625,
+          525.20654296875,
+          422.1559143066406
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0094_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              282.5999999999999,
+              161.4,
+              297.5999999999999
+            ],
+            "source_ref": "#/texts/6"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 94,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 94,
+          "bbox": [
+            69.99309539794922,
+            320.158447265625,
+            525.20654296875,
+            422.1559143066406
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p094.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 95,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.41513061523438,
+          105.60848236083984,
+          525.051025390625,
+          745.4722900390625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0095_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 95,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 95,
+          "bbox": [
+            70.41513061523438,
+            105.60848236083984,
+            525.051025390625,
+            745.4722900390625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p095.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 96,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.1144027709961,
+          557.7706909179688,
+          525.2906494140625,
+          659.3612670898438
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0096_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              520.1999999999999,
+              161.4,
+              535.1999999999999
+            ],
+            "source_ref": "#/texts/10"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 96,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 96,
+          "bbox": [
+            70.1144027709961,
+            557.7706909179688,
+            525.2906494140625,
+            659.3612670898438
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p096.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 97,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.1252212524414,
+          104.63488006591797,
+          525.0825805664062,
+          692.1363525390625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0097_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 97,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 97,
+          "bbox": [
+            70.1252212524414,
+            104.63488006591797,
+            525.0825805664062,
+            692.1363525390625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p097.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 98,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          71.95439147949219,
+          121.4811019897461,
+          520.8275146484375,
+          768.5827026367188
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0098_r001",
+        "context": [
+          {
+            "text": "붙임 2025년 연구사업 총괄",
+            "bbox": [
+              90.11999999999999,
+              79.72799999999995,
+              334.275852,
+              99.76800000000003
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 98,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 98,
+          "bbox": [
+            71.95439147949219,
+            121.4811019897461,
+            520.8275146484375,
+            768.5827026367188
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p098.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 99,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.9966812133789,
+          70.94475555419922,
+          520.7960815429688,
+          768.8358764648438
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0099_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 99,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 99,
+          "bbox": [
+            70.9966812133789,
+            70.94475555419922,
+            520.7960815429688,
+            768.8358764648438
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p099.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 100,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          71.43640899658203,
+          70.62727355957031,
+          520.6332397460938,
+          414.1336364746094
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0100_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 100,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 100,
+          "bbox": [
+            71.43640899658203,
+            70.62727355957031,
+            520.6332397460938,
+            414.1336364746094
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p100.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 101,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.33804321289062,
+          70.23677825927734,
+          525.0684814453125,
+          671.74267578125
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0101_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 101,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 101,
+          "bbox": [
+            70.33804321289062,
+            70.23677825927734,
+            525.0684814453125,
+            671.74267578125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p101.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 102,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p102.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 103,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.86613464355469,
+          241.99728393554688,
+          524.1666259765625,
+          393.0223693847656
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0103_r001",
+        "context": [
+          {
+            "text": "❍ 정ㆍ현원 변화표",
+            "bbox": [
+              80.88,
+              142.84032000000002,
+              189.84809891275296,
+              156.55200000000002
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 103,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 103,
+          "bbox": [
+            69.86613464355469,
+            241.99728393554688,
+            524.1666259765625,
+            393.0223693847656
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.82206726074219,
+          470.95709228515625,
+          522.73583984375,
+          529.7669067382812
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0103_r002",
+        "context": [
+          {
+            "text": "- 정원 변동 내역",
+            "bbox": [
+              95.88,
+              449.592,
+              191.04855272967362,
+              462.55199999999996
+            ],
+            "source_ref": "#/texts/7"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 103,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 103,
+          "bbox": [
+            69.82206726074219,
+            470.95709228515625,
+            522.73583984375,
+            529.7669067382812
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.98314666748047,
+          632.7876586914062,
+          523.5575561523438,
+          704.3716430664062
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0103_r003",
+        "context": [
+          {
+            "text": "❍ '25년 정규직 채용 계획",
+            "bbox": [
+              80.88,
+              562.12032,
+              229.8085527296736,
+              575.832
+            ],
+            "source_ref": "#/texts/8"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 103,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 103,
+          "bbox": [
+            69.98314666748047,
+            632.7876586914062,
+            523.5575561523438,
+            704.3716430664062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p103.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 104,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.99492645263672,
+          129.54022216796875,
+          524.1283569335938,
+          318.6859436035156
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0104_r001",
+        "context": [
+          {
+            "text": "❍ (현황) '24.12월 현재 58명 수준으로, 수탁사업 중심 인력 운영",
+            "bbox": [
+              80.88,
+              104.68031999999994,
+              453.2477672751648,
+              118.39200000000005
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 104,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 104,
+          "bbox": [
+            69.99492645263672,
+            129.54022216796875,
+            524.1283569335938,
+            318.6859436035156
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.10853576660156,
+          611.1055297851562,
+          526.23388671875,
+          750.3306884765625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0104_r002",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 104,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 104,
+          "bbox": [
+            70.10853576660156,
+            611.1055297851562,
+            526.23388671875,
+            750.3306884765625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p104.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 105,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.94206237792969,
+          244.11416625976562,
+          525.5816040039062,
+          363.1815185546875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0105_r001",
+        "context": [
+          {
+            "text": "❍ 조달재원",
+            "bbox": [
+              80.88,
+              224.80032000000006,
+              148.20783709578336,
+              238.51199999999994
+            ],
+            "source_ref": "#/texts/5"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 105,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 105,
+          "bbox": [
+            69.94206237792969,
+            244.11416625976562,
+            525.5816040039062,
+            363.1815185546875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.91691589355469,
+          412.5821838378906,
+          525.4237670898438,
+          510.5994873046875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0105_r002",
+        "context": [
+          {
+            "text": "❍ 지출계획",
+            "bbox": [
+              80.88,
+              393.28031999999996,
+              148.20783709578336,
+              406.99199999999996
+            ],
+            "source_ref": "#/texts/7"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 105,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 105,
+          "bbox": [
+            69.91691589355469,
+            412.5821838378906,
+            525.4237670898438,
+            510.5994873046875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.0411148071289,
+          555.7730712890625,
+          525.952880859375,
+          738.1162719726562
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0105_r003",
+        "context": [
+          {
+            "text": " 인센티브 운영 계획",
+            "bbox": [
+              70.92,
+              532.77,
+              213.0,
+              548.64
+            ],
+            "source_ref": "#/texts/8"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 105,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 105,
+          "bbox": [
+            70.0411148071289,
+            555.7730712890625,
+            525.952880859375,
+            738.1162719726562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p105.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 106,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.03934478759766,
+          221.58753967285156,
+          525.9033813476562,
+          292.45513916015625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0106_r001",
+        "context": [
+          {
+            "text": " 연구개발준비금 운영계획",
+            "bbox": [
+              70.92,
+              70.64999999999998,
+              244.79999999999998,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 106,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 106,
+          "bbox": [
+            70.03934478759766,
+            221.58753967285156,
+            525.9033813476562,
+            292.45513916015625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.06796264648438,
+          331.3706359863281,
+          526.070556640625,
+          438.1475524902344
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0106_r002",
+        "context": [
+          {
+            "text": "❍ 2025년 연구개발준비금 편성 현황",
+            "bbox": [
+              80.88,
+              311.68031999999994,
+              291.7277672751648,
+              325.39200000000005
+            ],
+            "source_ref": "#/texts/4"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 106,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 106,
+          "bbox": [
+            70.06796264648438,
+            331.3706359863281,
+            526.070556640625,
+            438.1475524902344
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p106.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 107,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p107.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 108,
+    "status": "processed",
+    "regions": [],
+    "source_json": "results/KISTEP/docling/p108.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 109,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.80545043945312,
+          268.1214904785156,
+          524.2212524414062,
+          392.4539794921875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0109_r001",
+        "context": [
+          {
+            "text": "❍ 조달재원",
+            "bbox": [
+              80.88,
+              248.80031999999994,
+              148.20783709578336,
+              262.51199999999994
+            ],
+            "source_ref": "#/texts/6"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 109,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 109,
+          "bbox": [
+            69.80545043945312,
+            268.1214904785156,
+            524.2212524414062,
+            392.4539794921875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.82962036132812,
+          457.57659912109375,
+          524.1204833984375,
+          558.5033569335938
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0109_r002",
+        "context": [
+          {
+            "text": "❍ 지출계획",
+            "bbox": [
+              80.88,
+              438.88032,
+              148.20783709578336,
+              452.592
+            ],
+            "source_ref": "#/texts/8"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 109,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 109,
+          "bbox": [
+            69.82962036132812,
+            457.57659912109375,
+            524.1204833984375,
+            558.5033569335938
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p109.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 110,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.86459350585938,
+          247.82803344726562,
+          524.0804443359375,
+          366.2353820800781
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0110_r001",
+        "context": [
+          {
+            "text": "❍ 조달재원",
+            "bbox": [
+              80.88,
+              228.76031999999998,
+              148.20783709578336,
+              242.47199999999998
+            ],
+            "source_ref": "#/texts/4"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 110,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 110,
+          "bbox": [
+            69.86459350585938,
+            247.82803344726562,
+            524.0804443359375,
+            366.2353820800781
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.9596176147461,
+          416.90966796875,
+          524.0333251953125,
+          586.6267700195312
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0110_r002",
+        "context": [
+          {
+            "text": "❍ 지출계획",
+            "bbox": [
+              80.88,
+              397.96031999999997,
+              148.20783709578336,
+              411.67199999999997
+            ],
+            "source_ref": "#/texts/5"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 110,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 110,
+          "bbox": [
+            69.9596176147461,
+            416.90966796875,
+            524.0333251953125,
+            586.6267700195312
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.14929962158203,
+          630.7305297851562,
+          526.2620239257812,
+          720.4091186523438
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0110_r003",
+        "context": [
+          {
+            "text": " 연구개발적립금 운영계획",
+            "bbox": [
+              70.92,
+              608.37,
+              244.79999999999998,
+              624.24
+            ],
+            "source_ref": "#/texts/6"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 110,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 110,
+          "bbox": [
+            70.14929962158203,
+            630.7305297851562,
+            526.2620239257812,
+            720.4091186523438
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p110.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 111,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.79679870605469,
+          218.65513610839844,
+          525.1685791015625,
+          378.0227966308594
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0111_r001",
+        "context": [
+          {
+            "text": "1. 기본방향",
+            "bbox": [
+              70.92,
+              134.32799999999997,
+              149.857584,
+              151.36799999999994
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 111,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 111,
+          "bbox": [
+            69.79679870605469,
+            218.65513610839844,
+            525.1685791015625,
+            378.0227966308594
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.24406433105469,
+          506.70556640625,
+          524.7117919921875,
+          713.6619873046875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0111_r002",
+        "context": [
+          {
+            "text": "인건비",
+            "bbox": [
+              93.47999999999999,
+              437.76,
+              132.72,
+              452.76
+            ],
+            "source_ref": "#/texts/5"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 111,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 111,
+          "bbox": [
+            70.24406433105469,
+            506.70556640625,
+            524.7117919921875,
+            713.6619873046875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p111.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 112,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.69927215576172,
+          150.49851989746094,
+          525.0291748046875,
+          335.7910461425781
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0112_r001",
+        "context": [
+          {
+            "text": "연구직접비",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              158.88,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 112,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 112,
+          "bbox": [
+            69.69927215576172,
+            150.49851989746094,
+            525.0291748046875,
+            335.7910461425781
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.87813568115234,
+          466.094482421875,
+          524.7487182617188,
+          589.5775756835938
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0112_r002",
+        "context": [
+          {
+            "text": "경상운영비",
+            "bbox": [
+              93.47999999999999,
+              397.32,
+              158.88,
+              412.32
+            ],
+            "source_ref": "#/texts/4"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 112,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 112,
+          "bbox": [
+            69.87813568115234,
+            466.094482421875,
+            524.7487182617188,
+            589.5775756835938
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p112.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 113,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.8731918334961,
+          150.60791015625,
+          524.9003295898438,
+          307.532470703125
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0113_r001",
+        "context": [
+          {
+            "text": "시설비",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              132.72,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 113,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 113,
+          "bbox": [
+            69.8731918334961,
+            150.60791015625,
+            524.9003295898438,
+            307.532470703125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.85594177246094,
+          398.5643005371094,
+          525.0333251953125,
+          463.2904357910156
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0113_r002",
+        "context": [
+          {
+            "text": "차입금 상환",
+            "bbox": [
+              93.47999999999999,
+              329.76,
+              166.32,
+              344.76
+            ],
+            "source_ref": "#/texts/3"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 113,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 113,
+          "bbox": [
+            69.85594177246094,
+            398.5643005371094,
+            525.0333251953125,
+            463.2904357910156
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p113.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 114,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.04840850830078,
+          113.33262634277344,
+          525.3829345703125,
+          731.1879272460938
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0114_r001",
+        "context": [
+          {
+            "text": "3. 2025년도 수지예산(안)",
+            "bbox": [
+              70.92,
+              71.56799999999998,
+              248.1624,
+              88.60799999999995
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 114,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 114,
+          "bbox": [
+            70.04840850830078,
+            113.33262634277344,
+            525.3829345703125,
+            731.1879272460938
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p114.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 115,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.82625579833984,
+          159.96875,
+          526.3572998046875,
+          672.3809204101562
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0115_r001",
+        "context": [
+          {
+            "text": " 운영예산서",
+            "bbox": [
+              70.92,
+              120.69000000000005,
+              158.76,
+              136.55999999999995
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 115,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 115,
+          "bbox": [
+            69.82625579833984,
+            159.96875,
+            526.3572998046875,
+            672.3809204101562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p115.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 116,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          70.02042388916016,
+          109.45681762695312,
+          526.3148803710938,
+          296.57672119140625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0116_r001",
+        "context": [
+          {
+            "text": " 자본예산서",
+            "bbox": [
+              70.92,
+              70.64999999999998,
+              158.76,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 116,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 116,
+          "bbox": [
+            70.02042388916016,
+            109.45681762695312,
+            526.3148803710938,
+            296.57672119140625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.02481842041016,
+          357.32275390625,
+          526.2999267578125,
+          638.7788696289062
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0116_r002",
+        "context": [
+          {
+            "text": " 자금예산서",
+            "bbox": [
+              70.92,
+              318.21000000000004,
+              158.76,
+              334.08
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 116,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 116,
+          "bbox": [
+            70.02481842041016,
+            357.32275390625,
+            526.2999267578125,
+            638.7788696289062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p116.json",
+    "rule_version": "docling-context-routing/2"
+  },
+  {
+    "pdf_page": 117,
+    "status": "processed",
+    "regions": [
+      {
+        "bbox": [
+          69.92473602294922,
+          125.6949462890625,
+          525.5532836914062,
+          721.7636108398438
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0117_r001",
+        "context": [
+          {
+            "text": "붙임2 2025년도 정부출연금 총괄표",
+            "bbox": [
+              84.6,
+              79.67999999999995,
+              362.2560000000001,
+              97.67999999999995
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 117,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 117,
+          "bbox": [
+            69.92473602294922,
+            125.6949462890625,
+            525.5532836914062,
+            721.7636108398438
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ],
+    "source_json": "results/KISTEP/docling/p117.json",
+    "rule_version": "docling-context-routing/2"
+  }
+]

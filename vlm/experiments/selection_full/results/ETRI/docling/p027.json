@@ -1,0 +1,834 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 42.0,
+            "t": 725.181,
+            "r": 108.0,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 51.0,
+            "t": 682.8476666666667,
+            "r": 285.6666666666667,
+            "b": 652.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "농업과 전자기술의 만남]",
+      "text": "농업과 전자기술의 만남]",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 51.66666666666667,
+            "t": 613.5143333333333,
+            "r": 227.0,
+            "b": 600.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "김재준 플렉시불전자소자연구실 선임연구원",
+      "text": "김재준 플렉시불전자소자연구실 선임연구원"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 98.0,
+            "t": 73.84766666666667,
+            "r": 190.0,
+            "b": 51.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면 인터뷰름 확인하실 수 있습니다",
+      "text": "QR코드트 스랜하시면 인터뷰름 확인하실 수 있습니다"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 664.3333333333334,
+            "t": 688.8476666666667,
+            "r": 752.0,
+            "b": 675.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "초실감메타버스연구소",
+      "text": "초실감메타버스연구소"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 767.0,
+            "t": 638.181,
+            "r": 808.3333333333334,
+            "b": 624.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "무엇일까?",
+      "text": "무엇일까?"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 676.3333333333334,
+            "t": 499.5143333333334,
+            "r": 888.3333333333334,
+            "b": 467.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "기후 위기 속 식량 문제 해답은 '스마트 농업에 있다 전기로 식물과 소통하다? '식물전지공학으로 농업 학신",
+      "text": "기후 위기 속 식량 문제 해답은 '스마트 농업에 있다 전기로 식물과 소통하다? '식물전지공학으로 농업 학신",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 665.0,
+            "t": 444.8476666666667,
+            "r": 899.0,
+            "b": 396.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            124
+          ]
+        }
+      ],
+      "orig": "이에 대한 해답 중 하나로 연구원은 농업과 철단 기술울 결합한 '애 그테크(Agriculture + Technology) 와 이름 실현하기 위한 핵심요 소 기술로 '식물전자공학Plant Electronics) '올 제안하다",
+      "text": "이에 대한 해답 중 하나로 연구원은 농업과 철단 기술울 결합한 '애 그테크(Agriculture + Technology) 와 이름 실현하기 위한 핵심요 소 기술로 '식물전자공학Plant Electronics) '올 제안하다"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 665.0,
+            "t": 390.8476666666667,
+            "r": 899.0,
+            "b": 197.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            263
+          ]
+        }
+      ],
+      "orig": "기후 변화와 환경 파괴로 인해 기존 농업 시스템이 위기에 처한 지 금 농업올 데이터 기반의 정말한 기술 산업으로 학신하는 것이 필수 적인 과제다 농업과 식량 문제는 단순한 생존의 문제가 아니다 먹 거리논 개인의 건강과 행복은 물론 경제와 사회 전반에 걸처 영향울 어가 등장할 정도로 기후 변화로 인해 농산물 생산이 줄없다 이울 고 있다 우리나라도 예외는 아니다 이상 기후로 인해 특정 작물의 생산랑이 급감하거나 수입 과일 소비가 증가하는 등의 변화가 나타 올 미치고 있다",
+      "text": "기후 변화와 환경 파괴로 인해 기존 농업 시스템이 위기에 처한 지 금 농업올 데이터 기반의 정말한 기술 산업으로 학신하는 것이 필수 적인 과제다 농업과 식량 문제는 단순한 생존의 문제가 아니다 먹 거리논 개인의 건강과 행복은 물론 경제와 사회 전반에 걸처 영향울 어가 등장할 정도로 기후 변화로 인해 농산물 생산이 줄없다 이울 고 있다 우리나라도 예외는 아니다 이상 기후로 인해 특정 작물의 생산랑이 급감하거나 수입 과일 소비가 증가하는 등의 변화가 나타 올 미치고 있다"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 665.0,
+            "t": 193.5143333333333,
+            "r": 899.0,
+            "b": 90.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "이에 대응하기 위해 A, 바이오 양자 기술과 같은 철단 기술을 농업 개발이나 대체 단백질 연구에 기여할 수 있다 또한 양자 컴퓨팅과 있어 효율적인 농업 경영이 가능해진다",
+      "text": "이에 대응하기 위해 A, 바이오 양자 기술과 같은 철단 기술을 농업 개발이나 대체 단백질 연구에 기여할 수 있다 또한 양자 컴퓨팅과 있어 효율적인 농업 경영이 가능해진다"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 444.8476666666667,
+            "r": 945.6666666666667,
+            "b": 432.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "올 한다",
+      "text": "올 한다"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 427.51433333333335,
+            "r": 1150.3333333333333,
+            "b": 324.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            122
+          ]
+        }
+      ],
+      "orig": "연구원의 주도하에 서울대학교 포항공과대학교 한국생명공학연구 원 등 다양한 기관들이 식물전지공학의 핵심기술올 개발하고 있다 식물에 일체화되어 장기간 사용 가능한 전극과 디바이스름 제직하 분석하는 플랜트 핸텍스 기술 등이다",
+      "text": "연구원의 주도하에 서울대학교 포항공과대학교 한국생명공학연구 원 등 다양한 기관들이 식물전지공학의 핵심기술올 개발하고 있다 식물에 일체화되어 장기간 사용 가능한 전극과 디바이스름 제직하 분석하는 플랜트 핸텍스 기술 등이다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 319.5143333333334,
+            "r": 1150.3333333333333,
+            "b": 234.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            79
+          ]
+        }
+      ],
+      "orig": "연구진들은 식물학 농업 전자공학 바이오공학 등 다양한 분야의 전 문가들이 모여 식물전자공학 기술의 발전 가능성과 실제 적용 방안 호응올 얻없다",
+      "text": "연구진들은 식물학 농업 전자공학 바이오공학 등 다양한 분야의 전 문가들이 모여 식물전자공학 기술의 발전 가능성과 실제 적용 방안 호응올 얻없다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 229.5143333333333,
+            "r": 1149.6666666666667,
+            "b": 126.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            137
+          ]
+        }
+      ],
+      "orig": "다양한 기관의 응합적 접근은 전자 식물과 농업이라는 새로운 연구 영역올 식물공학 및 농업 전문가들 다 또한 차세대 식물 진단 기술 식물되사 소재공학 지속 가능한 농 업 생태계 구축 방안 등도 주요 논의 주제로 많은 연구적 접근이 이 루어지고 있다",
+      "text": "다양한 기관의 응합적 접근은 전자 식물과 농업이라는 새로운 연구 영역올 식물공학 및 농업 전문가들 다 또한 차세대 식물 진단 기술 식물되사 소재공학 지속 가능한 농 업 생태계 구축 방안 등도 주요 논의 주제로 많은 연구적 접근이 이 루어지고 있다"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 85.5143333333333,
+            "r": 1019.0,
+            "b": 72.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "출발점이 덜 것으로 기대한다",
+      "text": "출발점이 덜 것으로 기대한다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 1113.6666666666667,
+            "t": 38.51433333333341,
+            "r": 1149.6666666666667,
+            "b": 29.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "52 53",
+      "text": "52 53"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9430825710296631,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.02441677451133728,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.017791500315070152,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0044881682842969894,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.004116819240152836,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0024630206171423197,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.000713760091457516,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0006208000122569501,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.0005997899570502341,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.0005421956302598119,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.00025867988006211817,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.0002198488509748131,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.00018719641957432032,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 9.624189260648564e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 7.761225424474105e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 7.745261973468587e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 7.07231301930733e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 5.933901047683321e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 5.30144534423016e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 2.560659959272016e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 1.3892131391912699e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 1.1725433068932034e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 5.644583779940149e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 4.622122105502058e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 2.497998821127112e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 5.991024067952821e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 27,
+          "bbox": {
+            "l": 36.78381081492234,
+            "t": 698.1883848054663,
+            "r": 529.1888950146115,
+            "b": 36.06754871733642,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.9430825710296631
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.02441677451133728
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.017791500315070152
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0044881682842969894
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.004116819240152836
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0024630206171423197
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.000713760091457516
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.0006208000122569501
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.0005997899570502341
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.0005421956302598119
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.00025867988006211817
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.0002198488509748131
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.00018719641957432032
+            },
+            {
+              "class_name": "icon",
+              "confidence": 9.624189260648564e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 7.761225424474105e-05
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 7.745261973468587e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 7.07231301930733e-05
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 5.933901047683321e-05
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 5.30144534423016e-05
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 2.560659959272016e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 1.3892131391912699e-05
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 1.1725433068932034e-05
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 5.644583779940149e-06
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 4.622122105502058e-06
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 2.497998821127112e-06
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 5.991024067952821e-07
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "27": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 27
+    }
+  }
+}

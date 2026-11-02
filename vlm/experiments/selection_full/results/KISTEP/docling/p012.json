@@ -1,0 +1,758 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/groups/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 70.92,
+            "t": 770.42032,
+            "r": 257.25892799999997,
+            "b": 752.392,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "2. 정부정책 수립･이행 성과",
+      "text": "2. 정부정책 수립･이행 성과",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 83.03999999999999,
+            "t": 733.87,
+            "r": 325.2,
+            "b": 718.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "1) 과학기술혁신정책 기획･지원 강화",
+      "text": "1) 과학기술혁신정책 기획･지원 강화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 80.88,
+            "t": 699.35968,
+            "r": 467.64776727516477,
+            "b": 685.648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "❍ 주요 과학기술혁신 계획･전략 수립 지원 및 주요 중장기계획 점검",
+      "text": "❍ 주요 과학기술혁신 계획･전략 수립 지원 및 주요 중장기계획 점검",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 674.008,
+            "r": 524.6794909119479,
+            "b": 661.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "- 정부 R&D 혁신과제 추진상황 점검 및 추가과제 발굴을 통한 'R&D다운 R&D",
+      "text": "정부 R&D 혁신과제 추진상황 점검 및 추가과제 발굴을 통한 'R&D다운 R&D",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 108.96,
+            "t": 651.928,
+            "r": 388.3632960033596,
+            "b": 638.9680000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "지원 추진전략' 수립 지원(자문회의 전원회의 '24.4)",
+      "text": "지원 추진전략' 수립 지원(자문회의 전원회의 '24.4)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 624.808,
+            "r": 524.528648729649,
+            "b": 611.848,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "- 윤석열 정부 과학기술혁신 정책의 향후 추진방향을 종합적으로 논의하는 '국가",
+      "text": "윤석열 정부 과학기술혁신 정책의 향후 추진방향을 종합적으로 논의하는 '국가",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 108.96,
+            "t": 602.7280000000001,
+            "r": 393.16316509577484,
+            "b": 589.768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "과학기술 혁신생태계 고도화 대토론회' 개최('24.11.)",
+      "text": "과학기술 혁신생태계 고도화 대토론회' 개최('24.11.)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 576.35968,
+            "r": 524.6485527296735,
+            "b": 518.3679999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            122
+          ]
+        }
+      ],
+      "orig": "- ｢제5차 과학기술기본계획('23~'27)｣ 이행을 위한 '23년도 추진실적 점검 및 '24년도 시행계획 수립 지원('24.3.), '23년도 대상 심층점검 및 '25년도 시행 계획 수립지침 마련 지원('24.10.)",
+      "text": "｢제5차 과학기술기본계획('23~'27)｣ 이행을 위한 '23년도 추진실적 점검 및 '24년도 시행계획 수립 지원('24.3.), '23년도 대상 심층점검 및 '25년도 시행 계획 수립지침 마련 지원('24.10.)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 504.208,
+            "r": 524.53309090968,
+            "b": 491.24800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "- 범부처 국가과학기술정책의 전략성과 체계성 강화를 위한 '국과심 회의체 전문성·",
+      "text": "범부처 국가과학기술정책의 전략성과 체계성 강화를 위한 '국과심 회의체 전문성·",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 108.96,
+            "t": 482.12800000000004,
+            "r": 306.04316509577484,
+            "b": 469.168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "효율성 강화방안' 수립 지원('24.11.)",
+      "text": "효율성 강화방안' 수립 지원('24.11.)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 455.00800000000004,
+            "r": 524.64774982046,
+            "b": 442.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "- 대학 젊은 연구자 간담회('24.5.), 언론 좌담회('24.6.) 등 과학기술 정책의 대국민 홍보 강화",
+      "text": "대학 젊은 연구자 간담회('24.5.), 언론 좌담회('24.6.) 등 과학기술 정책의 대국민 홍보 강화",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 80.88,
+            "t": 423.59968000000003,
+            "r": 449.4077672751648,
+            "b": 409.88800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "❍ 지방과학기술혁신을 위한 종합계획 수립 및 법･제도 기반 마련",
+      "text": "❍ 지방과학기술혁신을 위한 종합계획 수립 및 법･제도 기반 마련",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 399.11968,
+            "r": 524.5280290921344,
+            "b": 363.208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "- ｢제6차 지방과학기술진흥종합계획('23~'27)｣에 따른 지역과학기술혁신법(안)* 등 법･제도 기반 구축을 지원",
+      "text": "｢제6차 지방과학기술진흥종합계획('23~'27)｣에 따른 지역과학기술혁신법(안)* 등 법･제도 기반 구축을 지원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 110.88,
+            "t": 352.192,
+            "r": 504.50659200000007,
+            "b": 341.15200000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "* 「지역과학기술혁신법」법안('24.6.3., 박충권 의원 대표 발의) 및 시행령 초안 수정·보완",
+      "text": "「지역과학기술혁신법」법안('24.6.3., 박충권 의원 대표 발의) 및 시행령 초안 수정·보완",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 326.51968,
+            "r": 503.0485527296735,
+            "b": 312.808,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- ｢제6차 지방종합계획｣ '23년도 추진실적 점검 및 '24년도 시행계획 수립",
+      "text": "｢제6차 지방종합계획｣ '23년도 추진실적 점검 및 '24년도 시행계획 수립",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 298.648,
+            "r": 524.6479592751157,
+            "b": 285.688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "- 지역특화 과학기술 기반 중장기발전전략인 지역별 과학기술혁신계획 수립 지원",
+      "text": "지역특화 과학기술 기반 중장기발전전략인 지역별 과학기술혁신계획 수립 지원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 110.88,
+            "t": 274.672,
+            "r": 524.54688,
+            "b": 244.91200000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "※ 11개 지역(강원, 경남, 경북, 광주, 대구, 대전, 부산, 전남, 전북, 충남, 충북) 수립 완료 및 3개 지역(인천, 울산, 제주) 추가 수립 중",
+      "text": "※ 11개 지역(강원, 경남, 경북, 광주, 대구, 대전, 부산, 전남, 전북, 충남, 충북) 수립 완료 및 3개 지역(인천, 울산, 제주) 추가 수립 중",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 231.08799999999997,
+            "r": 524.64774982046,
+            "b": 218.12799999999993,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "- 지역별 중점 신규사업 타당성 검토 및 심층 컨설팅 수행을 통해 '25년도 예산 연계 지원",
+      "text": "지역별 중점 신규사업 타당성 검토 및 심층 컨설팅 수행을 통해 '25년도 예산 연계 지원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 110.88,
+            "t": 207.11200000000008,
+            "r": 524.5824000000005,
+            "b": 196.07200000000012,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "※ 강원, 대전, 전북 제안사업은 소관부처(과기부, 산업부)가 '25년 신규사업 예산 요구('24.4.) 및 예산 반영('24.6.)",
+      "text": "※ 강원, 대전, 전북 제안사업은 소관부처(과기부, 산업부)가 '25년 신규사업 예산 요구('24.4.) 및 예산 반영('24.6.)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 80.88,
+            "t": 177.95968000000005,
+            "r": 485.1677672751648,
+            "b": 164.24799999999993,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "❍ 지역기술혁신허브 운영 계획 수립 가이드라인 마련 및 상세기획 추진",
+      "text": "❍ 지역기술혁신허브 운영 계획 수립 가이드라인 마련 및 상세기획 추진",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 95.88,
+            "t": 151.40800000000002,
+            "r": 524.5280552750912,
+            "b": 115.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "- 국가전략기술과 지역산업을 연계한 지역기술혁신허브 구성·운영을 지원하기 위한 가이드라인 마련* 및 배포",
+      "text": "국가전략기술과 지역산업을 연계한 지역기술혁신허브 구성·운영을 지원하기 위한 가이드라인 마련* 및 배포",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 110.88,
+            "t": 102.7120000000001,
+            "r": 524.462784,
+            "b": 91.67200000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "* 「지역기술혁신허브 운영계획 수립 가이드라인」 제4회 지방과학기술진흥협의회 안건 상정('24.4.29.)",
+      "text": "「지역기술혁신허브 운영계획 수립 가이드라인」 제4회 지방과학기술진흥협의회 안건 상정('24.4.29.)",
+      "enumerated": false,
+      "marker": "*"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "12": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 12
+    }
+  }
+}

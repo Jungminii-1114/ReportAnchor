@@ -1,0 +1,83 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 58,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 1069,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [],
+    "docling_derived": [
+      {
+        "bbox": [
+          69.85630798339844,
+          630.5606079101562,
+          525.0242919921875,
+          746.6802978515625
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          69.85630798339844,
+          630.5606079101562,
+          525.0242919921875,
+          746.6802978515625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0058_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              90.47999999999999,
+              595.8720000000001,
+              151.20836072972256,
+              608.832
+            ],
+            "source_ref": "#/texts/12"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 58,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 58,
+          "bbox": [
+            69.85630798339844,
+            630.5606079101562,
+            525.0242919921875,
+            746.6802978515625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

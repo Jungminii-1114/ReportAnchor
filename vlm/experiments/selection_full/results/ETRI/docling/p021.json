@@ -1,0 +1,864 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 41.666666666666664,
+            "t": 725.181,
+            "r": 107.66666666666667,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 682.8476666666667,
+            "r": 281.33333333333337,
+            "b": 622.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "노년층 시로 음성분석해 치매위험 예측하다",
+      "text": "노년층 시로 음성분석해 치매위험 예측하다",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 613.5143333333333,
+            "r": 192.66666666666666,
+            "b": 599.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "강병옥 복합지능연구실 책임연구원",
+      "text": "강병옥 복합지능연구실 책임연구원"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 323.0,
+            "t": 449.8476666666667,
+            "r": 531.0,
+            "b": 433.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "Image-Text-Audio Multimodal Model for Alzheime",
+      "text": "Image-Text-Audio Multimodal Model for Alzheime"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 323.0,
+            "t": 438.18100000000004,
+            "r": 446.0,
+            "b": 423.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "Shapley-based Auxiliary Loss",
+      "text": "Shapley-based Auxiliary Loss"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 329.6666666666667,
+            "t": 422.51433333333335,
+            "r": 341.6666666666667,
+            "b": 414.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "그립",
+      "text": "그립"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 689.5143333333334,
+            "r": 743.6666666666666,
+            "b": 675.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "인공지능창의연구소",
+      "text": "인공지능창의연구소"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 766.6666666666666,
+            "t": 655.5143333333334,
+            "r": 842.0,
+            "b": 642.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "도움올 줄 수 있다",
+      "text": "도움올 줄 수 있다"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 677.0,
+            "t": 445.8476666666667,
+            "r": 874.3333333333334,
+            "b": 431.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "스마트혼으로 치매 위험 확인 Al 기반 예측 업 탄생",
+      "text": "스마트혼으로 치매 위험 확인 Al 기반 예측 업 탄생",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 390.8476666666667,
+            "r": 898.3333333333334,
+            "b": 342.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "평가하고 예측하는 A 기술을 연구 중이다 연구진은 본 연구름 바탕 치매 예방 및 관리에 기여할 계획이다",
+      "text": "평가하고 예측하는 A 기술을 연구 중이다 연구진은 본 연구름 바탕 치매 예방 및 관리에 기여할 계획이다"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 319.18100000000004,
+            "r": 899.0,
+            "b": 252.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            79
+          ]
+        }
+      ],
+      "orig": "라 언어 생성 과정과 호흡 발성 등 다양한 신체 기능이 동시에 작 용하는 복합적인 과정이다 따라서 발화 유형올 분석하면 인지기능 약할 수 있다",
+      "text": "라 언어 생성 과정과 호흡 발성 등 다양한 신체 기능이 동시에 작 용하는 복합적인 과정이다 따라서 발화 유형올 분석하면 인지기능 약할 수 있다"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 247.18100000000004,
+            "r": 899.0,
+            "b": 180.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "연구진은 이러한 원리지 바탕으로 경도 인지장애 및 치매 환자들에 게 나타나는 언어적 인지적 특징올 시가 학습해 조기에 위험신호틀 치매 고위험군올 선별할 가능성의 길을 열없다",
+      "text": "연구진은 이러한 원리지 바탕으로 경도 인지장애 및 치매 환자들에 게 나타나는 언어적 인지적 특징올 시가 학습해 조기에 위험신호틀 치매 고위험군올 선별할 가능성의 길을 열없다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 174.84766666666678,
+            "r": 899.0,
+            "b": 54.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "연구진은 기존의 음성 치매 예측 기술을 한층 발전시켜다 특히 연구진은 세계 최초로 대 반 치매 예측 기술의 높은 가능성올 입종하다",
+      "text": "연구진은 기존의 음성 치매 예측 기술을 한층 발전시켜다 특히 연구진은 세계 최초로 대 반 치매 예측 기술의 높은 가능성올 입종하다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 462.8476666666667,
+            "r": 1150.3333333333333,
+            "b": 270.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            222
+          ]
+        }
+      ],
+      "orig": "연구진의 성과가 발표된 직후 미국과 독일의 여러 기업에서 상용화 고 있다 또한 연구진은 시각언어모델VLM) 기술올 적용해 동일한 챔런지에서 88.396로 최고 성능올 경신한 연구름 바탕으로 2025년 1월 우수 SCI 저널에 게재햇고 이후 음성 텍스트 . 영상울 결합한 부릎 판단하는 방식으로 작동하다 특히 연구진은 노년종이 사용하 논 데 불편함이 없도록 사용자 편의성올 최우선으로 고려해 업을 설",
+      "text": "연구진의 성과가 발표된 직후 미국과 독일의 여러 기업에서 상용화 고 있다 또한 연구진은 시각언어모델VLM) 기술올 적용해 동일한 챔런지에서 88.396로 최고 성능올 경신한 연구름 바탕으로 2025년 1월 우수 SCI 저널에 게재햇고 이후 음성 텍스트 . 영상울 결합한 부릎 판단하는 방식으로 작동하다 특히 연구진은 노년종이 사용하 논 데 불편함이 없도록 사용자 편의성올 최우선으로 고려해 업을 설"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 210.84766666666678,
+            "r": 1149.6666666666667,
+            "b": 162.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "현재 연구진은 한국전기연구원과 협력해 노인복지센터 등에서 실중 고 실용성올 높일 예정이다",
+      "text": "현재 연구진은 한국전기연구원과 협력해 노인복지센터 등에서 실중 고 실용성올 높일 예정이다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 84.84766666666678,
+            "r": 1150.3333333333333,
+            "b": 72.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "계획이다 또한 글로벌 디지털 치료제DTX) 시장에서도 경쟁력올 갖",
+      "text": "계획이다 또한 글로벌 디지털 치료제DTX) 시장에서도 경쟁력올 갖"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 1114.0,
+            "t": 38.5143333333333,
+            "r": 1148.0,
+            "b": 30.514333333333298,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "40 41",
+      "text": "40 41"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9262970089912415,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.03812615945935249,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.02597210183739662,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.003219632664695382,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0021126538049429655,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.0009887805208563805,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.0006883076275698841,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0006421991856768727,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.00047616675146855414,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.000406242732424289,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.00031745797605253756,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.00018053578969556838,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.0001554165210109204,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 9.931215754477307e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 7.704843301326036e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 7.254954834934324e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 3.514538911986165e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 3.3213262213394046e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 3.287829167675227e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 2.653196861501783e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 1.6962410882115364e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 1.4046369869902264e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 6.8442632255028e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 1.6765487771408516e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 9.608759228285635e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 1.4732026443198265e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 21,
+          "bbox": {
+            "l": 36.22301432948268,
+            "t": 699.5002365285538,
+            "r": 528.9922530320789,
+            "b": 36.10297152222972,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.9262970089912415
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.03812615945935249
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.02597210183739662
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.003219632664695382
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0021126538049429655
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.0009887805208563805
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0006883076275698841
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.0006421991856768727
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.00047616675146855414
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.000406242732424289
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.00031745797605253756
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.00018053578969556838
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.0001554165210109204
+            },
+            {
+              "class_name": "music",
+              "confidence": 9.931215754477307e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 7.704843301326036e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 7.254954834934324e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 3.514538911986165e-05
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 3.3213262213394046e-05
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 3.287829167675227e-05
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 2.653196861501783e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 1.6962410882115364e-05
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 1.4046369869902264e-05
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 6.8442632255028e-06
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 1.6765487771408516e-06
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 9.608759228285635e-07
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 1.4732026443198265e-07
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "21": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 21
+    }
+  }
+}

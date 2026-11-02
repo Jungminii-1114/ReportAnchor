@@ -1,0 +1,83 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 91,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 900,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [],
+    "docling_derived": [
+      {
+        "bbox": [
+          70.15180206298828,
+          555.4817504882812,
+          525.1023559570312,
+          653.046630859375
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          70.15180206298828,
+          555.4817504882812,
+          525.1023559570312,
+          653.046630859375
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0091_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              517.8,
+              161.4,
+              532.8
+            ],
+            "source_ref": "#/texts/10"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 91,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 91,
+          "bbox": [
+            70.15180206298828,
+            555.4817504882812,
+            525.1023559570312,
+            653.046630859375
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

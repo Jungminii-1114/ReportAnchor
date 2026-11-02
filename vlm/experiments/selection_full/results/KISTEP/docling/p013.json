@@ -1,0 +1,785 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 80.88,
+            "t": 760.3196800000001,
+            "r": 323.0477672751648,
+            "b": 746.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "❍ 과학기술 분야 핵심인재 지원 기반 구축",
+      "text": "❍ 과학기술 분야 핵심인재 지원 기반 구축",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 95.88,
+            "t": 734.51968,
+            "r": 524.6474880034905,
+            "b": 697.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "- 인재의 양적･질적 수급 불균형에 적의 대처하는 과학적 정책 수립을 위한 '데이터 기반 과학기술 인재정책 고도화 전략(안)*' 수립",
+      "text": "인재의 양적･질적 수급 불균형에 적의 대처하는 과학적 정책 수립을 위한 '데이터 기반 과학기술 인재정책 고도화 전략(안)*' 수립",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 110.88,
+            "t": 685.072,
+            "r": 353.8237439999999,
+            "b": 674.0319999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "* 국가과학기술자문회의 심의회의 상정 및 의결('24.6.)",
+      "text": "국가과학기술자문회의 심의회의 상정 및 의결('24.6.)",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 95.88,
+            "t": 659.87968,
+            "r": 524.563618914495,
+            "b": 646.168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "- IRIS-고용보험 결합DB를 활용한 연구원의 고용현황･경력경로 시범분석(~'24.11.)",
+      "text": "IRIS-고용보험 결합DB를 활용한 연구원의 고용현황･경력경로 시범분석(~'24.11.)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 108.96,
+            "t": 635.7280000000001,
+            "r": 398.0831563693225,
+            "b": 622.768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "및 이공계 유학생 국내외 유출입 현황 분석(~'24.12.)",
+      "text": "및 이공계 유학생 국내외 유출입 현황 분석(~'24.12.)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 95.88,
+            "t": 608.03968,
+            "r": 524.6478632751403,
+            "b": 570.928,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "- 시의적 정책 이슈를 반영한 ｢제4차 과학기술인재 기본계획('21~'25)｣ '24년도 시행계획* 및 ｢글로벌 연수지원 강화방안**｣ 수립",
+      "text": "시의적 정책 이슈를 반영한 ｢제4차 과학기술인재 기본계획('21~'25)｣ '24년도 시행계획* 및 ｢글로벌 연수지원 강화방안**｣ 수립",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 110.88,
+            "t": 558.712,
+            "r": 524.4626400000003,
+            "b": 547.672,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "* 자문회의 미래인재특위 상정 및 의결('24.4.); ** 자문회의 글로벌 특위 상정 및 의결('24.6.)",
+      "text": "자문회의 미래인재특위 상정 및 의결('24.4.); ** 자문회의 글로벌 특위 상정 및 의결('24.6.)",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 80.88,
+            "t": 528.47968,
+            "r": 469.08776727516477,
+            "b": 514.768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "❍ 혁신도전프로젝트 발굴 연구테마(2건)*에 대한 신규 사업기획 추진",
+      "text": "❍ 혁신도전프로젝트 발굴 연구테마(2건)*에 대한 신규 사업기획 추진",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 110.88,
+            "t": 505.072,
+            "r": 524.546784,
+            "b": 494.032,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "* 초고에너지밀도 주유형 알루미늄 공기전지 기술개발, 초고자기장 고온초전도 상용 자석(45T급) 개발",
+      "text": "초고에너지밀도 주유형 알루미늄 공기전지 기술개발, 초고자기장 고온초전도 상용 자석(45T급) 개발",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 95.88,
+            "t": 479.12800000000004,
+            "r": 524.5292683671637,
+            "b": 466.168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- 혁신도전프로젝트 추진단이 주도하고, 부처·전문기관, 기획기관, 산학연 전문가",
+      "text": "혁신도전프로젝트 추진단이 주도하고, 부처·전문기관, 기획기관, 산학연 전문가",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 108.96,
+            "t": 455.728,
+            "r": 366.0080290921344,
+            "b": 442.76800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "등과 협업을 통해 임무해결형 사업기획 추진 중",
+      "text": "등과 협업을 통해 임무해결형 사업기획 추진 중",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 110.88,
+            "t": 431.07232000000005,
+            "r": 524.5834080000004,
+            "b": 419.392,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "※ 기획의 완결성 제고 및 차년도 신규사업 예산 신청․심의의 원활한 대응을 위해 과제기간 변경('24.12.→ '25.3.)",
+      "text": "※ 기획의 완결성 제고 및 차년도 신규사업 예산 신청․심의의 원활한 대응을 위해 과제기간 변경('24.12.→ '25.3.)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 80.88,
+            "t": 400.31968000000006,
+            "r": 339.4877672751648,
+            "b": 386.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "❍ 혁신도전형 R&D사업군 제도 설계 및 실행",
+      "text": "❍ 혁신도전형 R&D사업군 제도 설계 및 실행",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 95.88,
+            "t": 373.76800000000003,
+            "r": 524.5290763672126,
+            "b": 360.80800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- 혁신적·도전적 정부R&D 사업의 체계적 추진을 위해 혁신도전형 R&D 사업군",
+      "text": "혁신적·도전적 정부R&D 사업의 체계적 추진을 위해 혁신도전형 R&D 사업군",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 108.96,
+            "t": 350.36800000000005,
+            "r": 470.5285527296736,
+            "b": 337.40799999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "제도 설계 및 대상 사업(우선지정 21개, 추가지정 14개 사업) 선정",
+      "text": "제도 설계 및 대상 사업(우선지정 21개, 추가지정 14개 사업) 선정",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 80.88,
+            "t": 317.63968,
+            "r": 424.80836072972255,
+            "b": 303.928,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "❍ 사회문제해결 과학기술정책 수립 지원 및 국민체감도 제고",
+      "text": "❍ 사회문제해결 과학기술정책 수립 지원 및 국민체감도 제고",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 95.88,
+            "t": 291.83968000000004,
+            "r": 524.6479592751157,
+            "b": 254.72799999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "- ｢제3차 과학기술 기반 사회문제해결 종합계획('23~'27)｣ '24년도 시행계획 수립 지원(국과심 운영위원회, '24.4.17.)",
+      "text": "｢제3차 과학기술 기반 사회문제해결 종합계획('23~'27)｣ '24년도 시행계획 수립 지원(국과심 운영위원회, '24.4.17.)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 95.88,
+            "t": 239.36799999999994,
+            "r": 512.1678632751402,
+            "b": 226.40800000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "- 국민수요가 높은 사회문제(플라스틱) 대상 임무지향적 플래그십 사업* 기획",
+      "text": "국민수요가 높은 사회문제(플라스틱) 대상 임무지향적 플래그십 사업* 기획",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 110.88,
+            "t": 214.07200000000012,
+            "r": 524.545824,
+            "b": 183.23200000000008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "* 국민수요, 정책방향 등 종합검토하여 사업기획방향 도출 후 관계부처(환경부 등) 협업을 통해 플라스 틱 순환성 설계･원료 확대를 위한 R&D사업을 위한 기획 연구",
+      "text": "국민수요, 정책방향 등 종합검토하여 사업기획방향 도출 후 관계부처(환경부 등) 협업을 통해 플라스 틱 순환성 설계･원료 확대를 위한 R&D사업을 위한 기획 연구",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 95.88,
+            "t": 168.32799999999997,
+            "r": 415.8085527296736,
+            "b": 155.36799999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "- 과학기술기반 사회문제 해결 R&D 성과 활용·확산* 제고",
+      "text": "과학기술기반 사회문제 해결 R&D 성과 활용·확산* 제고",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 110.88,
+            "t": 143.67232,
+            "r": 524.4263520000001,
+            "b": 131.99200000000008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "* 우수성과 발굴‧선정(26건) 및 현장컨설팅 5건, 문제해결 R&D 데모데이 및 성과전시회 개최",
+      "text": "우수성과 발굴‧선정(26건) 및 현장컨설팅 5건, 문제해결 R&D 데모데이 및 성과전시회 개최",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 121.8,
+            "t": 123.23200000000008,
+            "r": 463.58688,
+            "b": 112.19200000000012,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "('24.12.16.∼18.), 2023 사회문제해결 R&D 우수성과 사례집 발간('24.11.) 등",
+      "text": "('24.12.16.∼18.), 2023 사회문제해결 R&D 우수성과 사례집 발간('24.11.) 등",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "13": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 13
+    }
+  }
+}

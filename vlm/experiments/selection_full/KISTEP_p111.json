@@ -1,0 +1,172 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 111,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 1492,
+    "native_tables": 2,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          71.83054767955433,
+          219.5993896484375,
+          523.2238991477273,
+          377.4670104980469
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          71.83054767955433,
+          507.76434326171875,
+          523.2238991477273,
+          713.0999755859375
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          69.79679870605469,
+          218.65513610839844,
+          525.1685791015625,
+          378.0227966308594
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          70.24406433105469,
+          506.70556640625,
+          524.7117919921875,
+          713.6619873046875
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          69.79679870605469,
+          218.65513610839844,
+          525.1685791015625,
+          378.0227966308594
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0111_r001",
+        "context": [
+          {
+            "text": "1. 기본방향",
+            "bbox": [
+              70.92,
+              134.32799999999997,
+              149.857584,
+              151.36799999999994
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 111,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 111,
+          "bbox": [
+            69.79679870605469,
+            218.65513610839844,
+            525.1685791015625,
+            378.0227966308594
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.24406433105469,
+          506.70556640625,
+          524.7117919921875,
+          713.6619873046875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0111_r002",
+        "context": [
+          {
+            "text": "인건비",
+            "bbox": [
+              93.47999999999999,
+              437.76,
+              132.72,
+              452.76
+            ],
+            "source_ref": "#/texts/5"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 111,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 111,
+          "bbox": [
+            70.24406433105469,
+            506.70556640625,
+            524.7117919921875,
+            713.6619873046875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

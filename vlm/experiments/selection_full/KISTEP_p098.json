@@ -1,0 +1,96 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 98,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 3927,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          72.20100021362305,
+          123.10569069602273,
+          519.9199829101562,
+          768.718994140625
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          71.95439147949219,
+          121.4811019897461,
+          520.8275146484375,
+          768.5827026367188
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          71.95439147949219,
+          121.4811019897461,
+          520.8275146484375,
+          768.5827026367188
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0098_r001",
+        "context": [
+          {
+            "text": "붙임 2025년 연구사업 총괄",
+            "bbox": [
+              90.11999999999999,
+              79.72799999999995,
+              334.275852,
+              99.76800000000003
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 98,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 98,
+          "bbox": [
+            71.95439147949219,
+            121.4811019897461,
+            520.8275146484375,
+            768.5827026367188
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

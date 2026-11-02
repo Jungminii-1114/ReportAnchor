@@ -1,0 +1,577 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 665.0,
+            "t": 701.5143333333334,
+            "r": 712.3333333333334,
+            "b": 681.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "인사말",
+      "text": "인사말",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 665.0,
+            "t": 614.181,
+            "r": 1128.3333333333333,
+            "b": 584.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            92
+          ]
+        }
+      ],
+      "orig": "특히 미 중간 기술 주도권 경쟁 심화, AI 반도체 빠르게 재편하고 있습니다. 이러한 변화에 능동적으로 대응하고 기술 주권올 지키는 일은 어느 때보다 절실해적습니다.",
+      "text": "특히 미 중간 기술 주도권 경쟁 심화, AI 반도체 빠르게 재편하고 있습니다. 이러한 변화에 능동적으로 대응하고 기술 주권올 지키는 일은 어느 때보다 절실해적습니다."
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 665.0,
+            "t": 549.5143333333334,
+            "r": 1110.3333333333333,
+            "b": 520.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "반도체 제조, 양자 기술 등 대부분이 정보통신기술(ICT)올 근간으로 하고 있습니다.",
+      "text": "반도체 제조, 양자 기술 등 대부분이 정보통신기술(ICT)올 근간으로 하고 있습니다."
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 665.0,
+            "t": 214.18100000000004,
+            "r": 1018.3333333333333,
+            "b": 200.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "따뜻한 ICT로 국민의 사랑과 신회블 받는 세계 최고의 연구 기관이 되도록 노력하켓습니다.",
+      "text": "따뜻한 ICT로 국민의 사랑과 신회블 받는 세계 최고의 연구 기관이 되도록 노력하켓습니다."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 665.0,
+            "t": 166.18100000000004,
+            "r": 861.0,
+            "b": 152.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "ETRI의 도전올 앞으로도 응원해 주시기 바람니다.",
+      "text": "ETRI의 도전올 앞으로도 응원해 주시기 바람니다."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 134.5143333333334,
+            "r": 713.0,
+            "b": 120.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "감사합니다.",
+      "text": "감사합니다."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 967.6666666666666,
+            "t": 118.84766666666667,
+            "r": 1149.6666666666667,
+            "b": 92.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "한국전자동통신연구원 원장 방 승찬",
+      "text": "한국전자동통신연구원 원장 방 승찬"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 1119.6666666666667,
+            "t": 37.84766666666667,
+            "r": 1125.0,
+            "b": 30.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "8",
+      "text": "8"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9946357607841492,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.0031989607959985733,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.0012933637481182814,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.00030014864751137793,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.00017654692055657506,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 6.996120646363124e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 6.647448753938079e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 6.626472168136388e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 6.509519153041765e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 2.478307760611642e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 2.167053025914356e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 2.081789898511488e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 1.3736493201577105e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 1.3253425095172133e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 8.594856808485929e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 4.843629085371504e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 4.694677954830695e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 4.525000349531183e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 2.7862672595801996e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 2.6127750061277766e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 1.9480669379845494e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 1.595363983142306e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 6.259092515392695e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 6.035830892869853e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 2.2510781150231196e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 2.1134733074745782e-08,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 41.44057041379606,
+            "t": 658.047061103689,
+            "r": 524.8777193621964,
+            "b": 56.51857894004661,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.9946357607841492
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.0031989607959985733
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.0012933637481182814
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.00030014864751137793
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.00017654692055657506
+            },
+            {
+              "class_name": "table",
+              "confidence": 6.996120646363124e-05
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 6.647448753938079e-05
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 6.626472168136388e-05
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 6.509519153041765e-05
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 2.478307760611642e-05
+            },
+            {
+              "class_name": "music",
+              "confidence": 2.167053025914356e-05
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 2.081789898511488e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 1.3736493201577105e-05
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 1.3253425095172133e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 8.594856808485929e-06
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 4.843629085371504e-06
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 4.694677954830695e-06
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 4.525000349531183e-06
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 2.7862672595801996e-06
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 2.6127750061277766e-06
+            },
+            {
+              "class_name": "signature",
+              "confidence": 1.9480669379845494e-06
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 1.595363983142306e-06
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 6.259092515392695e-07
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 6.035830892869853e-07
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 2.2510781150231196e-07
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 2.1134733074745782e-08
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "5": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 5
+    }
+  }
+}

@@ -1,0 +1,813 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/groups/4"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/2"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 767.4159999999999,
+            "r": 476.1895640839679,
+            "b": 754.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "◦전략기술 연계 사회문제 발굴 및 범부처 임무지향 연구개발 기획 지원",
+      "text": "◦전략기술 연계 사회문제 발굴 및 범부처 임무지향 연구개발 기획 지원",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 154.32,
+            "t": 748.72,
+            "r": 522.269618623872,
+            "b": 718.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "- 전략기술 활용 가능성을 고려하여 도전적 사회문제를 선정하고, R&SD 로드맵 수립 및 범부처 협력 기반의 플래그십 사업기획 추진",
+      "text": "전략기술 활용 가능성을 고려하여 도전적 사회문제를 선정하고, R&SD 로드맵 수립 및 범부처 협력 기반의 플래그십 사업기획 추진",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 713.4159999999999,
+            "r": 314.069564083968,
+            "b": 700.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "◦ 사회문제해결 종합･시행계획 수립",
+      "text": "사회문제해결 종합･시행계획 수립",
+      "enumerated": false,
+      "marker": "◦"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 154.32,
+            "t": 694.72,
+            "r": 438.98956408396793,
+            "b": 682.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "- 제3차 종합계획 '25년도 시행계획 수립 및 차년도 예산 분석",
+      "text": "제3차 종합계획 '25년도 시행계획 수립 및 차년도 예산 분석",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 677.4159999999999,
+            "r": 360.86959135392,
+            "b": 664.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "◦ 사회문제해결R&D 우수성과 조사･지원･홍보",
+      "text": "사회문제해결R&D 우수성과 조사･지원･홍보",
+      "enumerated": false,
+      "marker": "◦"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 154.32,
+            "t": 659.4159999999999,
+            "r": 522.1494822741121,
+            "b": 628.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "- 사회문제해결R&D 우수성과 발굴･선정 및 사회적 가치 제고･성과 확산을 위한 민관협업형 프로그램 추진",
+      "text": "사회문제해결R&D 우수성과 발굴･선정 및 사회적 가치 제고･성과 확산을 위한 민관협업형 프로그램 추진",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 79.32,
+            "t": 514.84,
+            "r": 98.669564083968,
+            "b": 486.04,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "예상 성과",
+      "text": "예상 성과",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 117.0,
+            "t": 616.456,
+            "r": 235.82945477375998,
+            "b": 592.96,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "정량 ◦안건 상정 : 2건",
+      "text": "정량 ◦안건 상정 : 2건",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 594.856,
+            "r": 239.90945477376,
+            "b": 582.1600000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "◦연구보고서 : 4건",
+      "text": "◦연구보고서 : 4건",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 117.0,
+            "t": 479.44,
+            "r": 136.22959135391997,
+            "b": 467.44,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "정성",
+      "text": "정성",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 561.136,
+            "r": 522.1497554344322,
+            "b": 530.44,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "◦기술패권 경쟁시대, 미래먹거리 창출과 함께 국가 생존 안보에 필수적인 전략기술 정책을 수립하고, 신산업 육성 및 주력산업 역량 강화를 통해 국가 경쟁력 제고",
+      "text": "◦기술패권 경쟁시대, 미래먹거리 창출과 함께 국가 생존 안보에 필수적인 전략기술 정책을 수립하고, 신산업 육성 및 주력산업 역량 강화를 통해 국가 경쟁력 제고",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 525.136,
+            "r": 522.3896458938241,
+            "b": 494.44,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "◦사회적 관심과 수요가 높은 사회문제해결 이슈 발굴, 주요 사회문제 해결을 위한 과학 기술의 역할 및 기여도 확대",
+      "text": "◦사회적 관심과 수요가 높은 사회문제해결 이슈 발굴, 주요 사회문제 해결을 위한 과학 기술의 역할 및 기여도 확대",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 489.136,
+            "r": 522.1496188542723,
+            "b": 458.44,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "◦민관 협업형 사회문제해결 성과확산 추진으로 지속 가능한 문제해결 시장 창출을 통해 국민체감 성과 확대",
+      "text": "◦민관 협업형 사회문제해결 성과확산 추진으로 지속 가능한 문제해결 시장 창출을 통해 국민체감 성과 확대",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 453.136,
+            "r": 522.269618623872,
+            "b": 422.44,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "◦국가전략기술 분야 국내외 인재 데이터 분석을 통해 데이터 기반 국가전략기술 인재 정책 수립 지원 및 기술특성을 반영한 맞춤형 인재정책 수립 기반 구축",
+      "text": "◦국가전략기술 분야 국내외 인재 데이터 분석을 통해 데이터 기반 국가전략기술 인재 정책 수립 지원 및 기술특성을 반영한 맞춤형 인재정책 수립 기반 구축",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 417.136,
+            "r": 522.3896463546242,
+            "b": 386.44,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "◦과학기술인력의 성장･이동경로 등의 파악 및 정보 제공 등을 통해 미래 과학기술 인력의 진로 설계 및 선택 등에 기여",
+      "text": "◦과학기술인력의 성장･이동경로 등의 파악 및 정보 제공 등을 통해 미래 과학기술 인력의 진로 설계 및 선택 등에 기여",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 79.92,
+            "t": 280.84000000000003,
+            "r": 137.070028594752,
+            "b": 268.84000000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "성과활용계획",
+      "text": "성과활용계획",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 362.53600000000006,
+            "r": 522.1497006641281,
+            "b": 331.84000000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "◦정부 차원의 중장기적 기술수준 향상과 성장동력을 감안한 육성정책을 외교･안보적 가치까지 고려한 전략기술 육성정책으로 확장",
+      "text": "◦정부 차원의 중장기적 기술수준 향상과 성장동력을 감안한 육성정책을 외교･안보적 가치까지 고려한 전략기술 육성정책으로 확장",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 326.53600000000006,
+            "r": 522.3897279340802,
+            "b": 295.84000000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "◦경제･외교･안보 관점에서 범정부 차원에서 육성 및 보호가 필요한 전략기술 분야를 선정하여 육성･보호 방안을 마련, 정부의 자원을 연계･집중",
+      "text": "◦경제･외교･안보 관점에서 범정부 차원에서 육성 및 보호가 필요한 전략기술 분야를 선정하여 육성･보호 방안을 마련, 정부의 자원을 연계･집중",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 290.53600000000006,
+            "r": 522.1495643143681,
+            "b": 259.84000000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "◦국정과제 76 '전략기술 분야 과학기술 핵심인력 양성 확보･체계 구축'의 성공적 이행에 기여",
+      "text": "◦국정과제 76 '전략기술 분야 과학기술 핵심인력 양성 확보･체계 구축'의 성공적 이행에 기여",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 254.53600000000006,
+            "r": 522.1500558647041,
+            "b": 223.84000000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "◦국가전략기술 분야별 현황 데이터화 및 분석 등을 통해 데이터 기반 국가전략기술 인재 정책 수립을 지원하고 과학기술 정책 환경 변화에 선제적으로 대응",
+      "text": "◦국가전략기술 분야별 현황 데이터화 및 분석 등을 통해 데이터 기반 국가전략기술 인재 정책 수립을 지원하고 과학기술 정책 환경 변화에 선제적으로 대응",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 218.53600000000006,
+            "r": 466.22959135392,
+            "b": 205.84000000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "◦핵심 사회문제별 임무지향 플래그십 R&D사업 추진 참고자료로 활용",
+      "text": "◦핵심 사회문제별 임무지향 플래그십 R&D사업 추진 참고자료로 활용",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 64,
+          "bbox": {
+            "l": 148.92,
+            "t": 200.53600000000006,
+            "r": 471.7495640839679,
+            "b": 187.84000000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "◦사회문제해결 R&D 우수성과 시장진입 및 창출 지원 참고자료로 활용",
+      "text": "◦사회문제해결 R&D 우수성과 시장진입 및 창출 지원 참고자료로 활용",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "64": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 64
+    }
+  }
+}

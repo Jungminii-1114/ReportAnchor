@@ -1,0 +1,775 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 41.66666666666667,
+            "t": 725.181,
+            "r": 107.66666666666667,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 51.0,
+            "t": 682.8476666666667,
+            "r": 260.66666666666663,
+            "b": 620.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "AI 로봇이 산업현장의 안전올 책임진다]",
+      "text": "AI 로봇이 산업현장의 안전올 책임진다]",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 613.5143333333333,
+            "r": 174.0,
+            "b": 600.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "서범수 필드로보텍스연구실장",
+      "text": "서범수 필드로보텍스연구실장"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 97.66666666666667,
+            "t": 73.84766666666667,
+            "r": 163.66666666666666,
+            "b": 63.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면",
+      "text": "QR코드트 스랜하시면"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 689.5143333333334,
+            "r": 743.6666666666666,
+            "b": 675.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "인공지능창의연구소",
+      "text": "인공지능창의연구소"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 766.6666666666666,
+            "t": 672.5143333333334,
+            "r": 1150.0,
+            "b": 658.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "유성구 한국전력공사 전력연구원 테스트 베드에서 기능시험올 완료햇다. 시와 로봇이 결합하여 산",
+      "text": "유성구 한국전력공사 전력연구원 테스트 베드에서 기능시험올 완료햇다. 시와 로봇이 결합하여 산"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 677.0,
+            "t": 337.51433333333335,
+            "r": 869.0,
+            "b": 324.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "AI 로봇이 순찰하여 산업시설 및 근로자 안전 점검",
+      "text": "AI 로봇이 순찰하여 산업시설 및 근로자 안전 점검",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 676.3333333333334,
+            "t": 320.18100000000004,
+            "r": 885.6666666666666,
+            "b": 288.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "울산 화학공장 실중   로봇과 Al 협업으로 사고 예방 및 대응 강화",
+      "text": "울산 화학공장 실중   로봇과 Al 협업으로 사고 예방 및 대응 강화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 665.0,
+            "t": 265.51433333333335,
+            "r": 899.0,
+            "b": 108.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            161
+          ]
+        }
+      ],
+      "orig": "기존의 산업 로봇이 특정 직업 수행이나 단순 촬영에 머물럽다면 이 번 기술은 A 기반 다중로봇 협업올 통해 보다 정밀하고 신속하게 이 '감독순찰로봇' 두 로봇이 협력해 산업시설의 이상 장후름 감지하고 근로자의 안전 상태들 점검하는 역할올 수행하다 예름 들어 안전순 진단하고 대응할 수 있다",
+      "text": "기존의 산업 로봇이 특정 직업 수행이나 단순 촬영에 머물럽다면 이 번 기술은 A 기반 다중로봇 협업올 통해 보다 정밀하고 신속하게 이 '감독순찰로봇' 두 로봇이 협력해 산업시설의 이상 장후름 감지하고 근로자의 안전 상태들 점검하는 역할올 수행하다 예름 들어 안전순 진단하고 대응할 수 있다"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 665.0,
+            "t": 103.18100000000004,
+            "r": 899.0,
+            "b": 71.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "A 기반 로봇은 이상 상황 판단 기술을 활용해 근로자의 안전 장비 미착용 쓰러짐 감지 설비상태 모니터림 등올 수행하다 아울러 시",
+      "text": "A 기반 로봇은 이상 상황 판단 기술을 활용해 근로자의 안전 장비 미착용 쓰러짐 감지 설비상태 모니터림 등올 수행하다 아울러 시"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 337.51433333333335,
+            "r": 1149.6666666666667,
+            "b": 288.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "실시간으로 점검할 수 있다 이름 통해 정유공장 발전소 석유화학 시설 에너지 플랜트 등에서 기존의 수직업 점검 방식올 로봇 순찰 방식으로 대체하여 안전 관리의 효율성올 극대화할 수 있다",
+      "text": "실시간으로 점검할 수 있다 이름 통해 정유공장 발전소 석유화학 시설 에너지 플랜트 등에서 기존의 수직업 점검 방식올 로봇 순찰 방식으로 대체하여 안전 관리의 효율성올 극대화할 수 있다"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 283.51433333333335,
+            "r": 1151.0,
+            "b": 198.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "또한 촬영 로봇 팔이 달린 로봇 고정형 CCTV, 센서 등이 연계된 다중 에이전트 협업 기술올 통해 보다 정말한 신업현장 안전 관리가 올 지원하다 로봇 간 협업올 통해 산업시설 내 안전성올 더욱 강화 할수 있다",
+      "text": "또한 촬영 로봇 팔이 달린 로봇 고정형 CCTV, 센서 등이 연계된 다중 에이전트 협업 기술올 통해 보다 정말한 신업현장 안전 관리가 올 지원하다 로봇 간 협업올 통해 산업시설 내 안전성올 더욱 강화 할수 있다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 139.18100000000004,
+            "r": 1149.6666666666667,
+            "b": 54.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "틀 추진하고 있다 연구진은 A 기반 로봇 기술이 산업현장의 안전올 다 이 기술은 로봇 간 협업이 필수적인 미래 제조산업 환경에 대응 여 적용 범위름 확대해 나갈 계획이다",
+      "text": "틀 추진하고 있다 연구진은 A 기반 로봇 기술이 산업현장의 안전올 다 이 기술은 로봇 간 협업이 필수적인 미래 제조산업 환경에 대응 여 적용 범위름 확대해 나갈 계획이다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 1114.0,
+            "t": 38.5143333333333,
+            "r": 1149.3333333333333,
+            "b": 29.847666666666782,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "38 39",
+      "text": "38 39"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9843431711196899,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.00997078139334917,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.0039656260050833225,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0011365263490006328,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0003597587638068944,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 6.392524664988741e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 4.3994929001200944e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 3.336173540446907e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 2.9838833143003285e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 1.4643627764598932e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 9.829438567976467e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 8.789005732978694e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 7.872990863688756e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 5.081183189759031e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 2.216326720372308e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 2.0606707948900294e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 9.322461096417101e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 5.312244297783764e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 2.7995054097118555e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 2.3057023668116017e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 1.8546531066476746e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 1.62819418392246e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 7.794881184963742e-08,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 1.94068050518581e-08,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 5.550913506624511e-09,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 9.176335385996381e-11,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 20,
+          "bbox": {
+            "l": 34.127919995574565,
+            "t": 698.896840903333,
+            "r": 529.3456960990386,
+            "b": 36.394706670963956,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.9843431711196899
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.00997078139334917
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.0039656260050833225
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.0011365263490006328
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.0003597587638068944
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 6.392524664988741e-05
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 4.3994929001200944e-05
+            },
+            {
+              "class_name": "table",
+              "confidence": 3.336173540446907e-05
+            },
+            {
+              "class_name": "logo",
+              "confidence": 2.9838833143003285e-05
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 1.4643627764598932e-05
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 9.829438567976467e-06
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 8.789005732978694e-06
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 7.872990863688756e-06
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 5.081183189759031e-06
+            },
+            {
+              "class_name": "other",
+              "confidence": 2.216326720372308e-06
+            },
+            {
+              "class_name": "signature",
+              "confidence": 2.0606707948900294e-06
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 9.322461096417101e-07
+            },
+            {
+              "class_name": "icon",
+              "confidence": 5.312244297783764e-07
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 2.7995054097118555e-07
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 2.3057023668116017e-07
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 1.8546531066476746e-07
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 1.62819418392246e-07
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 7.794881184963742e-08
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 1.94068050518581e-08
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 5.550913506624511e-09
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 9.176335385996381e-11
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "20": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 20
+    }
+  }
+}

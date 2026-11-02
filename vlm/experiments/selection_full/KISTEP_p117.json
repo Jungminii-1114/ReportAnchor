@@ -1,0 +1,97 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 117,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 1534,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          70.86200332641602,
+          127.30043247767857,
+          524.6322980608259,
+          720.8909912109375
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          69.92473602294922,
+          125.6949462890625,
+          525.5532836914062,
+          721.7636108398438
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          69.92473602294922,
+          125.6949462890625,
+          525.5532836914062,
+          721.7636108398438
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0117_r001",
+        "context": [
+          {
+            "text": "붙임2 2025년도 정부출연금 총괄표",
+            "bbox": [
+              84.6,
+              79.67999999999995,
+              362.2560000000001,
+              97.67999999999995
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 117,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 117,
+          "bbox": [
+            69.92473602294922,
+            125.6949462890625,
+            525.5532836914062,
+            721.7636108398438
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

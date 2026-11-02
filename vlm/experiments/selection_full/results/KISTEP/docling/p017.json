@@ -1,0 +1,690 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 80.88,
+            "t": 760.3196800000001,
+            "r": 493.3277672751648,
+            "b": 746.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "❍ ｢국가연구개발혁신법｣ 제33조에 따른 연구자권익보호위원회 활동 지원",
+      "text": "❍ ｢국가연구개발혁신법｣ 제33조에 따른 연구자권익보호위원회 활동 지원",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 95.88,
+            "t": 735.664,
+            "r": 445.3626763640448,
+            "b": 720.808,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "- 연구자의 제재처분 재검토 심의 * , 연구윤리 길라잡이 개정(8월)",
+      "text": "연구자의 제재처분 재검토 심의 * , 연구윤리 길라잡이 개정(8월)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 110.88,
+            "t": 708.472,
+            "r": 448.7424,
+            "b": 697.432,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "* 2024년 총 28회 제재처분 재검토 회의 추진 예정(심의 안건 수 : 136건)",
+      "text": "2024년 총 28회 제재처분 재검토 회의 추진 예정(심의 안건 수 : 136건)",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 110.88,
+            "t": 685.672,
+            "r": 440.82239999999996,
+            "b": 674.6320000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "※ 제재처분 가이드라인 개정(4월) 및 현장연구자용 가이드라인 발간(12월)",
+      "text": "※ 제재처분 가이드라인 개정(4월) 및 현장연구자용 가이드라인 발간(12월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 80.88,
+            "t": 655.43968,
+            "r": 315.7641861878963,
+            "b": 641.7280000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "❍ 국외수혜정보보고 제도 시행(2024.2.6)",
+      "text": "❍ 국외수혜정보보고 제도 시행(2024.2.6)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 95.88,
+            "t": 628.888,
+            "r": 524.6485789126305,
+            "b": 615.928,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "- 연구책임자가 국가연구개발사업 수행기간 중 외국 정부·기관 등의 행정·재정적",
+      "text": "연구책임자가 국가연구개발사업 수행기간 중 외국 정부·기관 등의 행정·재정적",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 108.96,
+            "t": 605.488,
+            "r": 282.1285527296736,
+            "b": 592.528,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "지원, 노무·자문 대가 등을 보고",
+      "text": "지원, 노무·자문 대가 등을 보고",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 110.88,
+            "t": 580.312,
+            "r": 346.706592,
+            "b": 569.2719999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "※ 국가연구개발혁신법 시행령 제9조제3항제8호 신설",
+      "text": "※ 국가연구개발혁신법 시행령 제9조제3항제8호 신설",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 80.88,
+            "t": 550.07968,
+            "r": 364.8077672751648,
+            "b": 536.3679999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "❍ IRIS 2.0 전환 등 R&D혁신방안 후속조치 지원",
+      "text": "❍ IRIS 2.0 전환 등 R&D혁신방안 후속조치 지원",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 95.88,
+            "t": 523.528,
+            "r": 524.5626763640447,
+            "b": 463.76800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            130
+          ]
+        }
+      ],
+      "orig": "- 3책5공 및 의무사항 불이행 사전검증, 원문 중심 차별성 검토 기반 평가자료 제공, 혁신도전형 및 글로벌R&D 시스템 지원, 통합데이터 활용성 강화를 위한 활용성 높은 정보제공, 업무 자동화를 통한 제제 및 조사・분석 자동화 지원",
+      "text": "3책5공 및 의무사항 불이행 사전검증, 원문 중심 차별성 검토 기반 평가자료 제공, 혁신도전형 및 글로벌R&D 시스템 지원, 통합데이터 활용성 강화를 위한 활용성 높은 정보제공, 업무 자동화를 통한 제제 및 조사・분석 자동화 지원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 80.88,
+            "t": 444.11968,
+            "r": 341.2877672751648,
+            "b": 430.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "❍ 인프라 안정성 확보 및 클라우드 전환 추진",
+      "text": "❍ 인프라 안정성 확보 및 클라우드 전환 추진",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 95.88,
+            "t": 417.56800000000004,
+            "r": 524.5291985501452,
+            "b": 404.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "- 핵심 서비스 DB 쿼리 최적화, 시스템 장애대응에 필요한 서버 이중화, 클라우드",
+      "text": "핵심 서비스 DB 쿼리 최적화, 시스템 장애대응에 필요한 서버 이중화, 클라우드",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 108.96,
+            "t": 394.168,
+            "r": 320.8886487296491,
+            "b": 381.208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "도입을 위한 전환방식 및 전환계획 수립",
+      "text": "도입을 위한 전환방식 및 전환계획 수립",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 80.88,
+            "t": 361.43968000000007,
+            "r": 414.12836072972254,
+            "b": 347.72799999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "❍ IRIS 적용대상 기관 및 부처 특성을 반영한 시스템 운영",
+      "text": "❍ IRIS 적용대상 기관 및 부처 특성을 반영한 시스템 운영",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 95.88,
+            "t": 334.888,
+            "r": 524.6479592751157,
+            "b": 298.528,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "- 인프라 및 프로세스 과부화 및 접속지연 방지대책 수립, 대규모 동시접속 대비 매뉴얼 개발, 사용자 및 전문기관 의견수렴을 통한 기능개선",
+      "text": "인프라 및 프로세스 과부화 및 접속지연 방지대책 수립, 대규모 동시접속 대비 매뉴얼 개발, 사용자 및 전문기관 의견수렴을 통한 기능개선",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 80.88,
+            "t": 278.87968,
+            "r": 261.8476450994323,
+            "b": 265.168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "❍ 국가과학기술 지식정보서비스",
+      "text": "❍ 국가과학기술 지식정보서비스",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 95.88,
+            "t": 252.32799999999997,
+            "r": 524.6480640033435,
+            "b": 215.96799999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            99
+          ]
+        }
+      ],
+      "orig": "- 제도개선을 반영한 국가R&D성과평가정보시스템(PEIS) 운영 지원, R&D기평비관리 서비스 운영 지원, 지역 혁신수준·역량 파악을 위한 지역과학기술혁신 정보 플랫폼 운영 지원",
+      "text": "제도개선을 반영한 국가R&D성과평가정보시스템(PEIS) 운영 지원, R&D기평비관리 서비스 운영 지원, 지역 혁신수준·역량 파악을 위한 지역과학기술혁신 정보 플랫폼 운영 지원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 95.88,
+            "t": 200.48799999999994,
+            "r": 524.5626763640447,
+            "b": 140.72799999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            105
+          ]
+        }
+      ],
+      "orig": "- 이용자 및 현업부서 수요제기에 근거한 제재정보조회 서비스의 이관 연계, 「제3차 과학기술기반 사회문제 해결 종합계획(2023~2027)」추진 지원을 위한 사회문제해결플랫폼 운영 및 지원",
+      "text": "이용자 및 현업부서 수요제기에 근거한 제재정보조회 서비스의 이관 연계, 「제3차 과학기술기반 사회문제 해결 종합계획(2023~2027)」추진 지원을 위한 사회문제해결플랫폼 운영 및 지원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 95.88,
+            "t": 125.36799999999994,
+            "r": 524.6481512750668,
+            "b": 89.00800000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "- 국가과학기술표준분류체계 제도개선 파악 및 국가R&D표준정보 입력지원체계 이관 연계 반영, 과학기술통계 실시간 정보 제공 기능 구축 등 서비스 운영 및 지원",
+      "text": "국가과학기술표준분류체계 제도개선 파악 및 국가R&D표준정보 입력지원체계 이관 연계 반영, 과학기술통계 실시간 정보 제공 기능 구축 등 서비스 운영 및 지원",
+      "enumerated": false,
+      "marker": "-"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "17": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 17
+    }
+  }
+}

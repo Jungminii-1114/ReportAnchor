@@ -1,0 +1,106 @@
+{
+  "document": "ETRI",
+  "pdf_page": 35,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          35.893035888671875,
+          52.1380615234375,
+          528.11083984375,
+          715.2879638671875
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          34.44817248279561,
+          52.26663801045106,
+          530.0331193746186,
+          714.7223674538795
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_nonphotographic_picture_type"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.7515793442726135,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "photograph"
+          },
+          {
+            "confidence": 0.19019117951393127,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "full_page_image"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          34.44817248279561,
+          52.26663801045106,
+          530.0331193746186,
+          714.7223674538795
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.7515793442726135,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "photograph"
+          },
+          {
+            "confidence": 0.19019117951393127,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "full_page_image"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0035_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 35,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 35,
+          "bbox": [
+            34.44817248279561,
+            52.26663801045106,
+            530.0331193746186,
+            714.7223674538795
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

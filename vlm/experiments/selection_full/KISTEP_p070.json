@@ -1,0 +1,97 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 70,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 1349,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          70.86486053466797,
+          109.67999267578125,
+          524.9580078125,
+          749.6600341796875
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          70.41716766357422,
+          108.89849853515625,
+          525.5523071289062,
+          749.1304321289062
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          70.41716766357422,
+          108.89849853515625,
+          525.5523071289062,
+          749.1304321289062
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0070_r001",
+        "context": [
+          {
+            "text": "주요 연구내용(요약)",
+            "bbox": [
+              93.47999999999999,
+              81.60000000000002,
+              214.89,
+              96.60000000000002
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 70,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 70,
+          "bbox": [
+            70.41716766357422,
+            108.89849853515625,
+            525.5523071289062,
+            749.1304321289062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

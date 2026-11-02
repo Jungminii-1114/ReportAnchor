@@ -1,0 +1,469 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 42,
+          "bbox": {
+            "l": 71.00031280517578,
+            "t": 769.7457046508789,
+            "r": 525.3046875,
+            "b": 268.76904296875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 73.58400000000006,
+              "r": 522.1496458938241,
+              "b": 129.48000000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦기술예측 및 기술기획의 선도형 패러다임 전환을 위한 방법론 개선 및 신규 개발 연구 ◦ 국가전략기술 및 탄소중립기술 정책의 선제적 발굴을 위한 특별위원회 운영 - 바이오특별위, 탄소중립 기술특위 운영 및 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 275.88,
+              "r": 98.669564083968,
+              "b": 304.68000000000006,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 189.12,
+              "r": 136.22959135391997,
+              "b": 201.12,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정량",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 134.42399999999998,
+              "r": 522.2686364448,
+              "b": 255.12,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦연구보고서 3건 ◦기술분야별 단신동향(수시), 요약보고서(각4건, 총48건), 심층분석보고서(각2건, 총24건) ◦기술･정책분야 논문 발표 및 게재 : 1건 ◦KISTEP 이슈페이퍼 : 1건 ◦KISTEP 미래예측 브리프 : 2건 ◦국가과학기술자문회의 안건: 2건(바이오특위 1건, 탄소중립기술특위 1건)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 347.15999999999997,
+              "r": 136.22959135391997,
+              "b": 359.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 260.06399999999996,
+              "r": 522.269564083968,
+              "b": 445.56,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦데이터 기반으로 전략기술 정책 의사결정 지원을 통한 정책 지원 강화 ◦기술·산업 동향 분석으로 육성·보호 전략 마련을 통한 국가 과학기술 경쟁력 제고 ◦국내외 전문가 및 기관 협력 체계 강화 ◦미래 이머징 산업(기술)에 대해 기술 주권 관점의 데이터 기반 글로벌 R&D 협력 전략성 강화 ◦글로벌 R&D 생태계 진단 및 혁신 성장 아젠다 발굴 ◦국내 예측 네트워크 구축 및 미래이슈, 미래유망기술 분석자료 제공 ◦기술예측 및 기술기획의 개선·신규 방법론 제안 ◦국가 전략기술 및 탄소중립 기술의 정책 대안 제시",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 505.2,
+              "r": 137.070028594752,
+              "b": 517.1999999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 450.50399999999996,
+              "r": 522.3900281339521,
+              "b": 571.1999999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦데이터 기반 분석을 통해 주요 전략기술에 대한 R&D 전략 수립의 근거자료로 활용 ◦임무중심 전략 로드맵 최신화, 정책현안 분석 등을 통한 국가전략기술 정책 기획, 이행 점검 등에 활용 ◦미래 이머징 산업(기술)에 대한 리스크를 분석·발굴하고 성장전략 및 글로벌 협력전략 수립에 활용 ◦한국의 글로벌 R&D 생태계 진출 확대 방안 마련 및 아젠다 발굴에 활용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 4,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 73.58400000000006,
+                "r": 522.1496458938241,
+                "b": 129.48000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦기술예측 및 기술기획의 선도형 패러다임 전환을 위한 방법론 개선 및 신규 개발 연구 ◦ 국가전략기술 및 탄소중립기술 정책의 선제적 발굴을 위한 특별위원회 운영 - 바이오특별위, 탄소중립 기술특위 운영 및 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 189.12,
+                "r": 136.22959135391997,
+                "b": 201.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정량",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 134.42399999999998,
+                "r": 522.2686364448,
+                "b": 255.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦연구보고서 3건 ◦기술분야별 단신동향(수시), 요약보고서(각4건, 총48건), 심층분석보고서(각2건, 총24건) ◦기술･정책분야 논문 발표 및 게재 : 1건 ◦KISTEP 이슈페이퍼 : 1건 ◦KISTEP 미래예측 브리프 : 2건 ◦국가과학기술자문회의 안건: 2건(바이오특위 1건, 탄소중립기술특위 1건)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 275.88,
+                "r": 98.669564083968,
+                "b": 304.68000000000006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 347.15999999999997,
+                "r": 136.22959135391997,
+                "b": 359.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 260.06399999999996,
+                "r": 522.269564083968,
+                "b": 445.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦데이터 기반으로 전략기술 정책 의사결정 지원을 통한 정책 지원 강화 ◦기술·산업 동향 분석으로 육성·보호 전략 마련을 통한 국가 과학기술 경쟁력 제고 ◦국내외 전문가 및 기관 협력 체계 강화 ◦미래 이머징 산업(기술)에 대해 기술 주권 관점의 데이터 기반 글로벌 R&D 협력 전략성 강화 ◦글로벌 R&D 생태계 진단 및 혁신 성장 아젠다 발굴 ◦국내 예측 네트워크 구축 및 미래이슈, 미래유망기술 분석자료 제공 ◦기술예측 및 기술기획의 개선·신규 방법론 제안 ◦국가 전략기술 및 탄소중립 기술의 정책 대안 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 505.2,
+                "r": 137.070028594752,
+                "b": 517.1999999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 505.2,
+                "r": 137.070028594752,
+                "b": 517.1999999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 450.50399999999996,
+                "r": 522.3900281339521,
+                "b": 571.1999999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦데이터 기반 분석을 통해 주요 전략기술에 대한 R&D 전략 수립의 근거자료로 활용 ◦임무중심 전략 로드맵 최신화, 정책현안 분석 등을 통한 국가전략기술 정책 기획, 이행 점검 등에 활용 ◦미래 이머징 산업(기술)에 대한 리스크를 분석·발굴하고 성장전략 및 글로벌 협력전략 수립에 활용 ◦한국의 글로벌 R&D 생태계 진출 확대 방안 마련 및 아젠다 발굴에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "42": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 42
+    }
+  }
+}

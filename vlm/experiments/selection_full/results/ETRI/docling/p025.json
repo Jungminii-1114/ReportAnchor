@@ -1,0 +1,774 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 41.666666666666664,
+            "t": 725.181,
+            "r": 107.66666666666667,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 51.0,
+            "t": 681.8476666666667,
+            "r": 297.0,
+            "b": 622.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "안경 없이도 생생한 3D 영상 구현하다",
+      "text": "안경 없이도 생생한 3D 영상 구현하다",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 51.66666666666667,
+            "t": 613.8476666666668,
+            "r": 201.66666666666666,
+            "b": 599.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "확상운 실감미디어연구실 선임연구원",
+      "text": "확상운 실감미디어연구실 선임연구원"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 98.0,
+            "t": 73.51433333333341,
+            "r": 190.0,
+            "b": 51.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면 인터뷰름 확인하실 수 있습니다",
+      "text": "QR코드트 스랜하시면 인터뷰름 확인하실 수 있습니다"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 665.0,
+            "t": 688.181,
+            "r": 752.0,
+            "b": 676.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "초실감메타버스연구소",
+      "text": "초실감메타버스연구소"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 675.6666666666666,
+            "t": 463.51433333333335,
+            "r": 859.6666666666666,
+            "b": 449.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "공간컴퓨팅 기반 입체영상서비스 구현 핵심기술",
+      "text": "공간컴퓨팅 기반 입체영상서비스 구현 핵심기술",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 665.0,
+            "t": 391.51433333333335,
+            "r": 899.0,
+            "b": 342.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            108
+          ]
+        }
+      ],
+      "orig": "필요한 핵심 요소들올 포함하고 있다 실사 입체영상울 국제표준 (MV) 규격에 맛취 실시간으로 송 수신하고 수신문 영상울 보다 실 감나게 재현하는 기술올 만들없다 또한 3D 안경 없이도 입체 영상",
+      "text": "필요한 핵심 요소들올 포함하고 있다 실사 입체영상울 국제표준 (MV) 규격에 맛취 실시간으로 송 수신하고 수신문 영상울 보다 실 감나게 재현하는 기술올 만들없다 또한 3D 안경 없이도 입체 영상"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 264.84766666666667,
+            "r": 898.3333333333334,
+            "b": 252.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "연구진은 3D 그래픽 엔진인 언리얼Unreal)올 기반으로 더 현실적",
+      "text": "연구진은 3D 그래픽 엔진인 언리얼Unreal)올 기반으로 더 현실적"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 665.0,
+            "t": 194.5143333333333,
+            "r": 899.0,
+            "b": 126.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            106
+          ]
+        }
+      ],
+      "orig": "아울러 연구진은 인공지능세올 활용해 더욱 정밀하고 자연스러운 입체 영상울 구현하는 기술올 개발해 입체 영상 서비스의 품질올 한 으로 디코딩한 후 언리얼 엔진과 연동하여 해드 마운티드 디스플레",
+      "text": "아울러 연구진은 인공지능세올 활용해 더욱 정밀하고 자연스러운 입체 영상울 구현하는 기술올 개발해 입체 영상 서비스의 품질올 한 으로 디코딩한 후 언리얼 엔진과 연동하여 해드 마운티드 디스플레"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 916.0,
+            "t": 445.51433333333335,
+            "r": 1150.3333333333333,
+            "b": 414.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "속도로 더욱 선명하고 자연스러운 영상울 제공할 수 있음올 증명한 셈이다",
+      "text": "속도로 더욱 선명하고 자연스러운 영상울 제공할 수 있음올 증명한 셈이다"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 390.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 306.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            131
+          ]
+        }
+      ],
+      "orig": "하는 데 필요한 핵심기술이다 연구실에서 개발한 기술을 실제 인터 넷 환경에서 승 수신한 최초의 사례라는 점에서 근 의미가 있다 또 한 기존의 3D 영상은 파일 용랑이 크고 실시간 전송이 어려운 한계 3D 영상 서비스트 가능하게 만들없다",
+      "text": "하는 데 필요한 핵심기술이다 연구실에서 개발한 기술을 실제 인터 넷 환경에서 승 수신한 최초의 사례라는 점에서 근 의미가 있다 또 한 기존의 3D 영상은 파일 용랑이 크고 실시간 전송이 어려운 한계 3D 영상 서비스트 가능하게 만들없다"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 263.84766666666667,
+            "r": 1149.6666666666667,
+            "b": 161.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "스포 장에서 상영하면 공연장에 가지 않아도 마치 눈앞에서 공연올 관람 하는 듯한 경험올 할 수 있다 또한 스포츠 경기 중계름 3D 영상으 로 제공하면 더욱 실감 나는 관람이 가능해진다",
+      "text": "스포 장에서 상영하면 공연장에 가지 않아도 마치 눈앞에서 공연올 관람 하는 듯한 경험올 할 수 있다 또한 스포츠 경기 중계름 3D 영상으 로 제공하면 더욱 실감 나는 관람이 가능해진다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 121.5143333333333,
+            "r": 1149.6666666666667,
+            "b": 72.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "계획이다 특히 생성형 A 기술올 초실감 입체영상 서비스에 적용해 상울 실시간 제공하기 위한 기술개발올 진행할 예정이다",
+      "text": "계획이다 특히 생성형 A 기술올 초실감 입체영상 서비스에 적용해 상울 실시간 제공하기 위한 기술개발올 진행할 예정이다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 1114.3333333333333,
+            "t": 38.51433333333341,
+            "r": 1149.0,
+            "b": 30.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "48 49",
+      "text": "48 49"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.5188432335853577,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.4304441213607788,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.039837732911109924,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.003949942998588085,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.0030590184032917023,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0017340900376439095,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0007696691318415105,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.0007117271306924522,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.00023587615578435361,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 8.345573587575927e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 8.101113053271547e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 5.645686178468168e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 5.011842222302221e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 4.960113074048422e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 2.6877673008129932e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 2.004177622438874e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 1.1973233995377086e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 8.800331670499872e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 8.713678653293755e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 5.58097872271901e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 4.939938662573695e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 3.378532937858836e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 2.520293946872698e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 8.705634400030249e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 1.3800926979001815e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 4.253326224556986e-08,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 35.060897887683936,
+            "t": 694.9562481966273,
+            "r": 529.4312960684749,
+            "b": 36.29069409755948,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.5188432335853577
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.4304441213607788
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.039837732911109924
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.003949942998588085
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.0030590184032917023
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0017340900376439095
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.0007696691318415105
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0007117271306924522
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.00023587615578435361
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 8.345573587575927e-05
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 8.101113053271547e-05
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 5.645686178468168e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 5.011842222302221e-05
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 4.960113074048422e-05
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 2.6877673008129932e-05
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 2.004177622438874e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 1.1973233995377086e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 8.800331670499872e-06
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 8.713678653293755e-06
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 5.58097872271901e-06
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 4.939938662573695e-06
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 3.378532937858836e-06
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 2.520293946872698e-06
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 8.705634400030249e-07
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 1.3800926979001815e-07
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 4.253326224556986e-08
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "25": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 25
+    }
+  }
+}

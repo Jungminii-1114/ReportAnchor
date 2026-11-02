@@ -1,0 +1,690 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 80.88,
+            "t": 760.3196800000001,
+            "r": 524.5277672751647,
+            "b": 724.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "❍ 개정된 국가과학기술표준분류체계('23~'27)에 따른 개정평가 및 '25년 세부 영역(구 소분류) 시범개편 추진 준비 (~'24.12)",
+      "text": "❍ 개정된 국가과학기술표준분류체계('23~'27)에 따른 개정평가 및 '25년 세부 영역(구 소분류) 시범개편 추진 준비 (~'24.12)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 95.88,
+            "t": 710.248,
+            "r": 524.648648729649,
+            "b": 697.288,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "- '23년 접수된 개정 수요에 따라 6개 중분류의 개정평가 대상 선정 및 67개 세부",
+      "text": "'23년 접수된 개정 수요에 따라 6개 중분류의 개정평가 대상 선정 및 67개 세부",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 108.96,
+            "t": 688.168,
+            "r": 285.8478632751403,
+            "b": 675.2080000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "영역(구 소분류)의 개정평가 수행",
+      "text": "영역(구 소분류)의 개정평가 수행",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 95.88,
+            "t": 661.048,
+            "r": 524.5292683671637,
+            "b": 626.008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "- '25년 '소분류' 폐지 및 키워드 중심의 '세부영역'으로 전환 위한 키워드 용어집 검증 및 입력체계 개선 작업 수행",
+      "text": "'25년 '소분류' 폐지 및 키워드 중심의 '세부영역'으로 전환 위한 키워드 용어집 검증 및 입력체계 개선 작업 수행",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 83.03999999999999,
+            "t": 586.0,
+            "r": 464.76,
+            "b": 571.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "3) 연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+      "text": "3) 연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 80.88,
+            "t": 552.35968,
+            "r": 333.9677672751648,
+            "b": 538.648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "❍ 과학기술 분야 R&D 제도 혁신 기반 연구",
+      "text": "❍ 과학기술 분야 R&D 제도 혁신 기반 연구",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 95.88,
+            "t": 525.23968,
+            "r": 524.5285527296735,
+            "b": 489.32800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "- 연구현장의 ｢국가연구개발혁신법｣에 대한 인식도, 경험여부, 평가 등에 대한 설문조사 실시 및 조사결과 분석을 통한 정책적 시사점 도출",
+      "text": "연구현장의 ｢국가연구개발혁신법｣에 대한 인식도, 경험여부, 평가 등에 대한 설문조사 실시 및 조사결과 분석을 통한 정책적 시사점 도출",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 110.88,
+            "t": 478.432,
+            "r": 498.86735999999996,
+            "b": 467.392,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "※ 제도별 평가, 개선의견 분석, 연도별 결과 비교 등을 통한 중장기 제도개선방향 모색",
+      "text": "※ 제도별 평가, 개선의견 분석, 연도별 결과 비교 등을 통한 중장기 제도개선방향 모색",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 95.88,
+            "t": 453.44800000000004,
+            "r": 440.04891055021875,
+            "b": 440.488,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "- 해외 주요국(미·일·중·EU·싱가포르)의 국제공동연구 제도분석",
+      "text": "해외 주요국(미·일·중·EU·싱가포르)의 국제공동연구 제도분석",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 95.88,
+            "t": 426.32800000000003,
+            "r": 524.64774982046,
+            "b": 413.36800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "- 연구자·실무자 중심의 간담회 통한 글로벌 R&D 추진 애로사항 발굴* 및 제도개선 추진",
+      "text": "연구자·실무자 중심의 간담회 통한 글로벌 R&D 추진 애로사항 발굴* 및 제도개선 추진",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 110.88,
+            "t": 402.472,
+            "r": 524.6042879999999,
+            "b": 372.712,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            99
+          ]
+        }
+      ],
+      "orig": "* 국문 협약서 우선 인정 문제, IRIS 시스템 사용의 어려움, 영문 번역 및 검증의 부담, Lead Agency 등 추진 방식 및 국제공동연구개발비 등 개념 정의의 명확화 등",
+      "text": "국문 협약서 우선 인정 문제, IRIS 시스템 사용의 어려움, 영문 번역 및 검증의 부담, Lead Agency 등 추진 방식 및 국제공동연구개발비 등 개념 정의의 명확화 등",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 80.88,
+            "t": 354.59968000000003,
+            "r": 459.8477672751648,
+            "b": 340.888,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "❍ 연구개발기관으로서 대학의 자체 연구윤리규정 점검·컨설팅 실시",
+      "text": "❍ 연구개발기관으로서 대학의 자체 연구윤리규정 점검·컨설팅 실시",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 95.88,
+            "t": 326.72799999999995,
+            "r": 524.6478632751403,
+            "b": 291.568,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "- 혁신법 등 제도와 부합하는 연구윤리 관련 내규 및 관리체계 구축 여부를 연구 개발기관 자체검토 결과를 토대로 점검(법령준수 점검)*",
+      "text": "혁신법 등 제도와 부합하는 연구윤리 관련 내규 및 관리체계 구축 여부를 연구 개발기관 자체검토 결과를 토대로 점검(법령준수 점검)*",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 110.88,
+            "t": 280.672,
+            "r": 372.506592,
+            "b": 269.63200000000006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "* 2023년 연구지원체계 피평가 161개 대학 대상으로 실시",
+      "text": "2023년 연구지원체계 피평가 161개 대학 대상으로 실시",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 95.88,
+            "t": 255.688,
+            "r": 524.648648729649,
+            "b": 242.72799999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- 연구 부정행위 검증·예방활동의 적절성과 유관교육 시행 적절성을 점검하고 제반",
+      "text": "연구 부정행위 검증·예방활동의 적절성과 유관교육 시행 적절성을 점검하고 제반",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 108.96,
+            "t": 233.60799999999995,
+            "r": 248.37538909145758,
+            "b": 220.64800000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "사항에 대한 컨설팅 실시*",
+      "text": "사항에 대한 컨설팅 실시*",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 95.88,
+            "t": 206.48799999999994,
+            "r": 524.6480290921344,
+            "b": 193.52800000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "- 대학에서 보유 중인 연구윤리 자체규정의 실제 운영 시 발생되는 애로사항 및",
+      "text": "대학에서 보유 중인 연구윤리 자체규정의 실제 운영 시 발생되는 애로사항 및",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 108.96,
+            "t": 184.40800000000002,
+            "r": 353.97538909145754,
+            "b": 171.44799999999998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "관련 제도 개정 방안 등에 대한 컨설팅 실시*",
+      "text": "관련 제도 개정 방안 등에 대한 컨설팅 실시*",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 110.88,
+            "t": 160.43200000000002,
+            "r": 395.186592,
+            "b": 149.39200000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "* 22개 대학에 대해 전문가 사전점검 후 보완·컨설팅 의견 제시",
+      "text": "22개 대학에 대해 전문가 사전점검 후 보완·컨설팅 의견 제시",
+      "enumerated": false,
+      "marker": "*"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "28": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 28
+    }
+  }
+}

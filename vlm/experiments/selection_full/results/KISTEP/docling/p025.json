@@ -1,0 +1,677 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/groups/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 80.88,
+            "t": 760.3196800000001,
+            "r": 524.5275752752136,
+            "b": 746.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "❍ 혁신도전형 R&D 사업군(APRO)의 원활한 운영 및 제도적 혜택을 위해",
+      "text": "❍ 혁신도전형 R&D 사업군(APRO)의 원활한 운영 및 제도적 혜택을 위해",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 100.44,
+            "t": 736.168,
+            "r": 334.9277672751648,
+            "b": 723.208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "법 개정이 포함된 실질적인 제도개선 추진",
+      "text": "법 개정이 포함된 실질적인 제도개선 추진",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 95.88,
+            "t": 707.7280000000001,
+            "r": 504.9685527296735,
+            "b": 694.768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "- 혁신법 법률·시행령 개정안 및 APRO 사업군 운영 가이드라인 초안 마련",
+      "text": "혁신법 법률·시행령 개정안 및 APRO 사업군 운영 가이드라인 초안 마련",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 80.88,
+            "t": 675.11968,
+            "r": 524.5278370957832,
+            "b": 661.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "❍ 사회문제해결R&D 특화 평가체계･성과확산방안 마련 및 문제현황 모니터링",
+      "text": "❍ 사회문제해결R&D 특화 평가체계･성과확산방안 마련 및 문제현황 모니터링",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 100.44,
+            "t": 650.9680000000001,
+            "r": 178.44836072972254,
+            "b": 638.008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "지표체계 발굴",
+      "text": "지표체계 발굴",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 95.88,
+            "t": 622.528,
+            "r": 524.6485527296735,
+            "b": 586.168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "- 사회문제해결 R&D 사업의 특징을 고려한 연구과제 평가를 위한 사회적 가치 평가 지표 체계 개발 및 시범 적용*",
+      "text": "사회문제해결 R&D 사업의 특징을 고려한 연구과제 평가를 위한 사회적 가치 평가 지표 체계 개발 및 시범 적용*",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 110.88,
+            "t": 573.832,
+            "r": 524.426688,
+            "b": 542.992,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "* 건강관련 3개 연구개발과제(시각장애인용 웨어러블 디바이스 토탈케어 플랫폼, 공공기반 재활 운동 빅데이터 플랫폼 기술개발 등) 성과 대상 사회적 가치 시범 측정",
+      "text": "건강관련 3개 연구개발과제(시각장애인용 웨어러블 디바이스 토탈케어 플랫폼, 공공기반 재활 운동 빅데이터 플랫폼 기술개발 등) 성과 대상 사회적 가치 시범 측정",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 95.88,
+            "t": 528.83968,
+            "r": 453.48786327514034,
+            "b": 515.128,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "- 사회문제해결R&D의 성과 창출‧확산 강화를 위한 기반자료 구축",
+      "text": "사회문제해결R&D의 성과 창출‧확산 강화를 위한 기반자료 구축",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 110.88,
+            "t": 502.912,
+            "r": 524.5473120000003,
+            "b": 491.872,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "※ 민간 소셜임팩트 기관 현황(임팩트 투자사, 벤처필란트로피 등), 사회문제 관련 현황 모니터링",
+      "text": "※ 민간 소셜임팩트 기관 현황(임팩트 투자사, 벤처필란트로피 등), 사회문제 관련 현황 모니터링",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 123.47999999999999,
+            "t": 483.112,
+            "r": 286.82688,
+            "b": 472.072,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "을 위한 주요 사회문제 스코어보드 등",
+      "text": "을 위한 주요 사회문제 스코어보드 등",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 83.03999999999999,
+            "t": 436.51,
+            "r": 446.76,
+            "b": 420.64000000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "2) 국가전략기술 발굴･육성 지원 및 미래예측 활용･확산",
+      "text": "2) 국가전략기술 발굴･육성 지원 및 미래예측 활용･확산",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 80.88,
+            "t": 401.99968000000007,
+            "r": 346.92836072972256,
+            "b": 388.288,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "❍ 국가전략기술 기반 융복합 활성화 방안 마련",
+      "text": "❍ 국가전략기술 기반 융복합 활성화 방안 마련",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 95.88,
+            "t": 372.80800000000005,
+            "r": 524.648674912606,
+            "b": 313.192,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            125
+          ]
+        }
+      ],
+      "orig": "- 미래 메가트렌드에 대응하고 국가전략기술 성과 창출 가속화를 위한 유망 융복합 기술 선정, R&BD 프로젝트 추진, 융복합 성과 확산 기반 마련 등 추진전략 수립 ※ 국가전략기술 기반 17건의 유망 융복합 기술 후보군 발굴",
+      "text": "미래 메가트렌드에 대응하고 국가전략기술 성과 창출 가속화를 위한 유망 융복합 기술 선정, R&BD 프로젝트 추진, 융복합 성과 확산 기반 마련 등 추진전략 수립 ※ 국가전략기술 기반 17건의 유망 융복합 기술 후보군 발굴",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 80.88,
+            "t": 293.99968,
+            "r": 388.3277672751648,
+            "b": 280.288,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "❍ 국가전략기술 기술안보 조기 분석·예측 시스템 개발",
+      "text": "❍ 국가전략기술 기술안보 조기 분석·예측 시스템 개발",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 95.88,
+            "t": 266.82399999999996,
+            "r": 524.5301759999999,
+            "b": 228.44799999999998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "- 국가전략기술 기술분야별 실시간 데이터 * 수집 및 분석을 수행하고, 생성형 AI를 활용하여 단신동향 및 요약보고서 작성 프레임워크 개발",
+      "text": "국가전략기술 기술분야별 실시간 데이터 * 수집 및 분석을 수행하고, 생성형 AI를 활용하여 단신동향 및 요약보고서 작성 프레임워크 개발",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 110.88,
+            "t": 216.23200000000008,
+            "r": 417.26688,
+            "b": 205.19200000000012,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "* 국내외 언론, 정부기관, 연구기관, 국제기구, 학술단체, 산업동향 등",
+      "text": "국내외 언론, 정부기관, 연구기관, 국제기구, 학술단체, 산업동향 등",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 80.88,
+            "t": 185.99968,
+            "r": 524.5278632751402,
+            "b": 172.288,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "❍ 전략기술 관련 주요이슈 심층분석 기반의 기술주권 확보·회복·보호·활용 등을",
+      "text": "❍ 전략기술 관련 주요이슈 심층분석 기반의 기술주권 확보·회복·보호·활용 등을",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 100.44,
+            "t": 161.84799999999996,
+            "r": 389.04836072972256,
+            "b": 148.88800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "위한 맞춤형 전략 제언이 담긴 기술주권브리프 발간",
+      "text": "위한 맞춤형 전략 제언이 담긴 기술주권브리프 발간",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 25,
+          "bbox": {
+            "l": 95.88,
+            "t": 133.40800000000002,
+            "r": 524.6480552750912,
+            "b": 73.79200000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            125
+          ]
+        }
+      ],
+      "orig": "- 국내외 기술수준, 산업·과학기술 정책, 투자현황, 국제협력과 설문·이슈조사 등을 통해 기술 분야 관점의 미래동향 전망 및 전략기술 주권을 위한 핵심 요인 분석 ※ 감염병 백신･치료(6월) 사이버보안(11월) 등 발간 완료",
+      "text": "국내외 기술수준, 산업·과학기술 정책, 투자현황, 국제협력과 설문·이슈조사 등을 통해 기술 분야 관점의 미래동향 전망 및 전략기술 주권을 위한 핵심 요인 분석 ※ 감염병 백신･치료(6월) 사이버보안(11월) 등 발간 완료",
+      "enumerated": false,
+      "marker": "-"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "25": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 25
+    }
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 83.03999999999999,
+            "t": 766.75,
+            "r": 451.8,
+            "b": 750.88,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "5) 근거 기반 선도형 R&D의 전략적 투자･평가체계 강화",
+      "text": "5) 근거 기반 선도형 R&D의 전략적 투자･평가체계 강화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 80.88,
+            "t": 732.11968,
+            "r": 519.96774982046,
+            "b": 718.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "❍ '선도형 R&D사업체계' 및 'R&D 다운 R&D'를 위한 투자효율화 및 전략화 방안 연구",
+      "text": "❍ '선도형 R&D사업체계' 및 'R&D 다운 R&D'를 위한 투자효율화 및 전략화 방안 연구",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 95.88,
+            "t": 706.888,
+            "r": 457.4485527296736,
+            "b": 693.928,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "- 미래사회 대응 기술혁신 아젠다 발굴을 통한 R&D투자전략 연구",
+      "text": "미래사회 대응 기술혁신 아젠다 발굴을 통한 R&D투자전략 연구",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 110.88,
+            "t": 682.912,
+            "r": 524.5471680000002,
+            "b": 652.072,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "※ 정부R&D 예산 배분·조정 핵심 이슈 발굴을 위하여 중점기술별 국내외 산업·정책·투자 동향을 분석한 기술동향브리프 12회 발간",
+      "text": "※ 정부R&D 예산 배분·조정 핵심 이슈 발굴을 위하여 중점기술별 국내외 산업·정책·투자 동향을 분석한 기술동향브리프 12회 발간",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 95.88,
+            "t": 637.168,
+            "r": 524.6483869126794,
+            "b": 602.128,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": "- 미국, EU, 일본, 중국 등 주요국의 R&D 정책 및 연구프로그램, 투자 동향을 심층 분석하는 2024년도 글로벌 R&D 투자동향 분석 연구",
+      "text": "미국, EU, 일본, 중국 등 주요국의 R&D 정책 및 연구프로그램, 투자 동향을 심층 분석하는 2024년도 글로벌 R&D 투자동향 분석 연구",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 95.88,
+            "t": 587.9680000000001,
+            "r": 366.0078632751403,
+            "b": 575.008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "- 개방형 포럼 방식을 활용한 과학기술 이슈 연구",
+      "text": "개방형 포럼 방식을 활용한 과학기술 이슈 연구",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 110.88,
+            "t": 563.992,
+            "r": 524.54688,
+            "b": 533.152,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "※ 글로벌 패러다임 변화 및 전환적 기술혁신의 초인류, 퀀텀 컴퓨팅, 녹색 전환, 신개척 탐사 등 주제로 전문가 및 대국민 참여형 'KISTEP 수요 포럼' 개최(8회)",
+      "text": "※ 글로벌 패러다임 변화 및 전환적 기술혁신의 초인류, 퀀텀 컴퓨팅, 녹색 전환, 신개척 탐사 등 주제로 전문가 및 대국민 참여형 'KISTEP 수요 포럼' 개최(8회)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 95.88,
+            "t": 518.248,
+            "r": 524.528648729649,
+            "b": 483.088,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "- 주력산업, 지역, 농림수산, 배분조정 전략, 국방 무기체계 투자전략 등 주요 기술 분야 투자전략 및 개선 방안 연구 외",
+      "text": "주력산업, 지역, 농림수산, 배분조정 전략, 국방 무기체계 투자전략 등 주요 기술 분야 투자전략 및 개선 방안 연구 외",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 110.88,
+            "t": 472.192,
+            "r": 524.5470240000001,
+            "b": 421.552,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            131
+          ]
+        }
+      ],
+      "orig": "※ (투자전략) 주력산업의 기술주권 유지와 공급망 리스크 완화를 위한 정부R&D 투자전략 수립 연구, 근거 기반 R&D예산 배분조정 지원 및 투자전략 연구, 무기체계의 효과적인 확보를 위한 주관연구기관 유형별 국방 R&D 투자전략 연구",
+      "text": "※ (투자전략) 주력산업의 기술주권 유지와 공급망 리스크 완화를 위한 정부R&D 투자전략 수립 연구, 근거 기반 R&D예산 배분조정 지원 및 투자전략 연구, 무기체계의 효과적인 확보를 위한 주관연구기관 유형별 국방 R&D 투자전략 연구",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 110.88,
+            "t": 409.79200000000003,
+            "r": 524.472,
+            "b": 378.952,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "※ (체계개선) 지역R&D 성과데이터 연계를 통한 정부 R&D 투자 효과성 분석 및 이슈발굴 연구, 농림수산식품 분야 국가 R&D 정책연계 및 전략성 강화를 위한 체계개선 방안 연구,",
+      "text": "※ (체계개선) 지역R&D 성과데이터 연계를 통한 정부 R&D 투자 효과성 분석 및 이슈발굴 연구, 농림수산식품 분야 국가 R&D 정책연계 및 전략성 강화를 위한 체계개선 방안 연구,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 80.88,
+            "t": 359.75968000000006,
+            "r": 417.60836072972256,
+            "b": 346.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "❍ 근거 기반의 R&D예산 배분·조정 지원 및 투자전략 연구",
+      "text": "❍ 근거 기반의 R&D예산 배분·조정 지원 및 투자전략 연구",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 95.88,
+            "t": 334.40799999999996,
+            "r": 524.6478283693309,
+            "b": 299.36799999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "- R&D 예산과 성과평가 연계 방안 및 데이터/정보 기반 예산-평가 연계 통합플랫폼 설계 방안 마련",
+      "text": "R&D 예산과 성과평가 연계 방안 및 데이터/정보 기반 예산-평가 연계 통합플랫폼 설계 방안 마련",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 95.88,
+            "t": 285.20799999999997,
+            "r": 524.6130327279311,
+            "b": 272.24799999999993,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "- 국가연구개발 투자규모 예측을 위해 예산요구서 사업정보에 기반한 토픽모델링-",
+      "text": "국가연구개발 투자규모 예측을 위해 예산요구서 사업정보에 기반한 토픽모델링-",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 108.96,
+            "t": 263.12799999999993,
+            "r": 301.2090763672128,
+            "b": 250.168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "회귀분석을 통한 투자플랫폼 고도화",
+      "text": "회귀분석을 통한 투자플랫폼 고도화",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 110.88,
+            "t": 239.15200000000004,
+            "r": 524.546592,
+            "b": 228.11200000000008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "※ 특허 기반 이머징기술 분석방법론 고도화 및 토픽모델링-회귀분석에 의한 이머징기술 검증",
+      "text": "※ 특허 기반 이머징기술 분석방법론 고도화 및 토픽모델링-회귀분석에 의한 이머징기술 검증",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 95.88,
+            "t": 213.20799999999997,
+            "r": 342.2485527296736,
+            "b": 200.24799999999993,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "- 데이터 기반 예산 배분·조정 지원체계 구축",
+      "text": "데이터 기반 예산 배분·조정 지원체계 구축",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 110.88,
+            "t": 189.87231999999995,
+            "r": 524.5470240000001,
+            "b": 178.19200000000012,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "※ 국민 수요 기반의 재난·안전 R&D 추진을 위한 ｢재난·안전 R&D 정보포털｣ 운영 및 재난·안전",
+      "text": "※ 국민 수요 기반의 재난·안전 R&D 추진을 위한 ｢재난·안전 R&D 정보포털｣ 운영 및 재난·안전",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 126.0,
+            "t": 169.43200000000002,
+            "r": 243.38659199999998,
+            "b": 158.39200000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "R&D 투자·성과·수요 분석",
+      "text": "R&D 투자·성과·수요 분석",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 95.88,
+            "t": 143.48799999999994,
+            "r": 457.6883869126795,
+            "b": 130.52800000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "- 정부R&D 예산 배분·조정 지원시스템 개발 및 지원 기능 고도화",
+      "text": "정부R&D 예산 배분·조정 지원시스템 개발 및 지원 기능 고도화",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 110.88,
+            "t": 119.51200000000006,
+            "r": 524.5471680000002,
+            "b": 108.4720000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "※ 에너지환경, 공공우주 등 6개 전문위 기술분야의 효율적인 예산심의 지원 및 R&D투자 전략성",
+      "text": "※ 에너지환경, 공공우주 등 6개 전문위 기술분야의 효율적인 예산심의 지원 및 R&D투자 전략성",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 126.0,
+            "t": 99.7120000000001,
+            "r": 221.9424,
+            "b": 88.67200000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "강화('24.4월~'24.6월)",
+      "text": "강화('24.4월~'24.6월)",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "30": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 30
+    }
+  }
+}

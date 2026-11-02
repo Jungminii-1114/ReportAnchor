@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+inputs/*.pdf
+pipeline/inputs/*.pdf
+
+outputs/
+run/selected_v4/

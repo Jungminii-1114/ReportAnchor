@@ -1,0 +1,352 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 1019.0,
+            "t": 398.8476666666667,
+            "r": 1128.3333333333335,
+            "b": 366.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.4408419132232666,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.14112572371959686,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.08076655119657516,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.07975780218839645,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            },
+            {
+              "confidence": 0.07447417080402374,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.06022253260016441,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 0.03105083294212818,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.02390667051076889,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.01837857998907566,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.017198456451296806,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.006801188923418522,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.005868854001164436,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 0.0043968516401946545,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.003370091551914811,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0020787424873560667,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.002050405368208885,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.0019134583417326212,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.0015646434621885419,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0012608554679900408,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.0009720402304083109,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 0.0005903027486056089,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 0.0005198066355660558,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.00034633357427082956,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.00021658866899088025,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 0.0002162679156754166,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 0.00011038008233299479,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 658.5061660190072,
+            "t": 733.1984450509675,
+            "r": 1140.8960385416256,
+            "b": 27.53345729746718,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "line_chart",
+              "confidence": 0.4408419132232666
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.14112572371959686
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.08076655119657516
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 0.07975780218839645
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.07447417080402374
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 0.06022253260016441
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.03105083294212818
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.02390667051076889
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.01837857998907566
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.017198456451296806
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.006801188923418522
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.005868854001164436
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.0043968516401946545
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.003370091551914811
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.0020787424873560667
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.002050405368208885
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0019134583417326212
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0015646434621885419
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.0012608554679900408
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 0.0009720402304083109
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 0.0005903027486056089
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.0005198066355660558
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.00034633357427082956
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 0.00021658866899088025
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.0002162679156754166
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.00011038008233299479
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "2": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 2
+    }
+  }
+}

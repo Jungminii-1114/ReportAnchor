@@ -1,0 +1,878 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 36,
+          "bbox": {
+            "l": 70.20854949951172,
+            "t": 769.1073532104492,
+            "r": 522.5211791992188,
+            "b": 71.8218994140625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 75.48000000000002,
+              "r": 127.58980997433599,
+              "b": 87.48000000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "중과제명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 209.04,
+              "t": 74.78399999999999,
+              "r": 459.03872421744,
+              "b": 87.48000000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "과학기술혁신정책･제도 현안이슈 발굴 및 대응방안 연구",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 102.0,
+              "r": 118.10959135392,
+              "b": 114.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "구분",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 93.24000000000001,
+              "r": 207.50991928454397,
+              "b": 105.24000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구책임자",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 93.24000000000001,
+              "r": 273.269700664128,
+              "b": 105.24000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "오현환",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 315.0,
+              "t": 93.24000000000001,
+              "r": 353.18980997433596,
+              "b": 105.24000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "사업기간",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 397.91999999999996,
+              "t": 93.24000000000001,
+              "r": 495.9716749954561,
+              "b": 105.24000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25.01.01~'25.12.31",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 110.88,
+              "r": 198.02970066412797,
+              "b": 122.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구비",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 110.88,
+              "r": 271.46945477376,
+              "b": 122.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "'24년",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 110.88,
+              "r": 519.390028594752,
+              "b": 236.51999999999998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "1,306백만원 '25년 1,294백만원 ◦과학기술기본법상 기관 본연의 임무 및 과기정통부 위탁 업무 수행 ◦과학기술혁신정책의 싱크탱크로서 환경적 변화 등을 고려한 국･내외 과학기술정책 모니터링을 강화하여 능동적 현안이슈 발굴 및 정책대안 수립, 근거기반의 국가 과학 기술정책 의사결정 지원 ◦과학기술혁신 관련 주요 정책 이슈에 대한 심층분석과 긴급 현안에 대한 이슈 선점 및 시의적절한 현안대응 방향 제시",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 176.51999999999998,
+              "r": 127.58980997433599,
+              "b": 188.51999999999998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 499.44,
+              "r": 127.58980997433599,
+              "b": 511.44,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 250.34399999999994,
+              "r": 519.509755434432,
+              "b": 738.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦글로벌 과학기술혁신정책 동향 조사･분석 - 과학기술&ICT정책기술동향 조사･분석 및 대국민 과학기술정책 정보 발신 서비스 추진 ◦ 과학기술분야 중장기계획 조사 분석 및 심층분석 - 과학기술분야 중장기계획 실태조사 실시 ※ 각 부처 추진 중인 중장기계획 조사 및 ｢제5차 과학기술기본계획｣과 연계해 중장기계획에 대한 심층분석(연계성 점검) 실시 - NTIS 내 중장기계획 종합정보시스템 기능 구축 및 운영, 3년차 계획 대상 이행사항 점검 ◦ 과학기술혁신 분야 정책점검 체계 마련 및 분야별 점검, 2025년 국가과학기술 현황 종합인식조사(제2기-제3차) 추진 ◦ 과학기술정책 특위·협의회 운영지원(기초연구진흥협의회, 미래인재특위, 지역과학 기술협의회) ◦ 지역 R&D 통계 조사품질 개선 및 통계정보 지속생산을 위한 연구 추진 ◦ 지역 과학기술정책 이슈·동향 분석 및 정책연구 수행 ◦ 과학기술인재 관련 정책동향 조사･분석 및 정책 기획·분석 - 국가전략기술 다양한 심층분석 - 과학기술 정책연구 ◦ 데이터 기반 - 과학기술 다양한 데이터를 ◦ 「혁신도전형 - 혁신도전형",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 218.64,
+              "t": 553.4399999999999,
+              "r": 307.46970066412797,
+              "b": 738.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "핵심인재 현황 추진 둘러싼 과학기술인재정책 둘러싼 기반으로 R&D사업군」제도의 R&D사업 지정",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 304.2,
+              "t": 553.4399999999999,
+              "r": 375.029700664128,
+              "b": 738.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "및 DB를 정책환경 분석 고도화 추진 정책환경 이슈･의제 원활한 운영을 연구 및",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 5,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 75.48000000000002,
+                "r": 127.58980997433599,
+                "b": 87.48000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "중과제명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 209.04,
+                "t": 74.78399999999999,
+                "r": 459.03872421744,
+                "b": 87.48000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "과학기술혁신정책･제도 현안이슈 발굴 및 대응방안 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 209.04,
+                "t": 74.78399999999999,
+                "r": 459.03872421744,
+                "b": 87.48000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "과학기술혁신정책･제도 현안이슈 발굴 및 대응방안 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 209.04,
+                "t": 74.78399999999999,
+                "r": 459.03872421744,
+                "b": 87.48000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "과학기술혁신정책･제도 현안이슈 발굴 및 대응방안 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 209.04,
+                "t": 74.78399999999999,
+                "r": 459.03872421744,
+                "b": 87.48000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "과학기술혁신정책･제도 현안이슈 발굴 및 대응방안 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 102.0,
+                "r": 118.10959135392,
+                "b": 114.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 93.24000000000001,
+                "r": 207.50991928454397,
+                "b": 105.24000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구책임자",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 93.24000000000001,
+                "r": 273.269700664128,
+                "b": 105.24000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "오현환",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 315.0,
+                "t": 93.24000000000001,
+                "r": 353.18980997433596,
+                "b": 105.24000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "사업기간",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 397.91999999999996,
+                "t": 93.24000000000001,
+                "r": 495.9716749954561,
+                "b": 105.24000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 102.0,
+                "r": 118.10959135392,
+                "b": 114.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 110.88,
+                "r": 198.02970066412797,
+                "b": 122.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구비",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 110.88,
+                "r": 271.46945477376,
+                "b": 122.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "'24년",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 176.51999999999998,
+                "r": 127.58980997433599,
+                "b": 188.51999999999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 110.88,
+                "r": 519.390028594752,
+                "b": 236.51999999999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "1,306백만원 '25년 1,294백만원 ◦과학기술기본법상 기관 본연의 임무 및 과기정통부 위탁 업무 수행 ◦과학기술혁신정책의 싱크탱크로서 환경적 변화 등을 고려한 국･내외 과학기술정책 모니터링을 강화하여 능동적 현안이슈 발굴 및 정책대안 수립, 근거기반의 국가 과학 기술정책 의사결정 지원 ◦과학기술혁신 관련 주요 정책 이슈에 대한 심층분석과 긴급 현안에 대한 이슈 선점 및 시의적절한 현안대응 방향 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 110.88,
+                "r": 519.390028594752,
+                "b": 236.51999999999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "1,306백만원 '25년 1,294백만원 ◦과학기술기본법상 기관 본연의 임무 및 과기정통부 위탁 업무 수행 ◦과학기술혁신정책의 싱크탱크로서 환경적 변화 등을 고려한 국･내외 과학기술정책 모니터링을 강화하여 능동적 현안이슈 발굴 및 정책대안 수립, 근거기반의 국가 과학 기술정책 의사결정 지원 ◦과학기술혁신 관련 주요 정책 이슈에 대한 심층분석과 긴급 현안에 대한 이슈 선점 및 시의적절한 현안대응 방향 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 110.88,
+                "r": 519.390028594752,
+                "b": 236.51999999999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "1,306백만원 '25년 1,294백만원 ◦과학기술기본법상 기관 본연의 임무 및 과기정통부 위탁 업무 수행 ◦과학기술혁신정책의 싱크탱크로서 환경적 변화 등을 고려한 국･내외 과학기술정책 모니터링을 강화하여 능동적 현안이슈 발굴 및 정책대안 수립, 근거기반의 국가 과학 기술정책 의사결정 지원 ◦과학기술혁신 관련 주요 정책 이슈에 대한 심층분석과 긴급 현안에 대한 이슈 선점 및 시의적절한 현안대응 방향 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 110.88,
+                "r": 519.390028594752,
+                "b": 236.51999999999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "1,306백만원 '25년 1,294백만원 ◦과학기술기본법상 기관 본연의 임무 및 과기정통부 위탁 업무 수행 ◦과학기술혁신정책의 싱크탱크로서 환경적 변화 등을 고려한 국･내외 과학기술정책 모니터링을 강화하여 능동적 현안이슈 발굴 및 정책대안 수립, 근거기반의 국가 과학 기술정책 의사결정 지원 ◦과학기술혁신 관련 주요 정책 이슈에 대한 심층분석과 긴급 현안에 대한 이슈 선점 및 시의적절한 현안대응 방향 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 499.44,
+                "r": 127.58980997433599,
+                "b": 511.44,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 250.34399999999994,
+                "r": 519.509755434432,
+                "b": 738.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦글로벌 과학기술혁신정책 동향 조사･분석 - 과학기술&ICT정책기술동향 조사･분석 및 대국민 과학기술정책 정보 발신 서비스 추진 ◦ 과학기술분야 중장기계획 조사 분석 및 심층분석 - 과학기술분야 중장기계획 실태조사 실시 ※ 각 부처 추진 중인 중장기계획 조사 및 ｢제5차 과학기술기본계획｣과 연계해 중장기계획에 대한 심층분석(연계성 점검) 실시 - NTIS 내 중장기계획 종합정보시스템 기능 구축 및 운영, 3년차 계획 대상 이행사항 점검 ◦ 과학기술혁신 분야 정책점검 체계 마련 및 분야별 점검, 2025년 국가과학기술 현황 종합인식조사(제2기-제3차) 추진 ◦ 과학기술정책 특위·협의회 운영지원(기초연구진흥협의회, 미래인재특위, 지역과학 기술협의회) ◦ 지역 R&D 통계 조사품질 개선 및 통계정보 지속생산을 위한 연구 추진 ◦ 지역 과학기술정책 이슈·동향 분석 및 정책연구 수행 ◦ 과학기술인재 관련 정책동향 조사･분석 및 정책 기획·분석 - 국가전략기술 다양한 심층분석 - 과학기술 정책연구 ◦ 데이터 기반 - 과학기술 다양한 데이터를 ◦ 「혁신도전형 - 혁신도전형",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 218.64,
+                "t": 553.4399999999999,
+                "r": 307.46970066412797,
+                "b": 738.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "핵심인재 현황 추진 둘러싼 과학기술인재정책 둘러싼 기반으로 R&D사업군」제도의 R&D사업 지정",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 304.2,
+                "t": 553.4399999999999,
+                "r": 375.029700664128,
+                "b": 738.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "및 DB를 정책환경 분석 고도화 추진 정책환경 이슈･의제 원활한 운영을 연구 및",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 250.34399999999994,
+                "r": 519.509755434432,
+                "b": 738.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦글로벌 과학기술혁신정책 동향 조사･분석 - 과학기술&ICT정책기술동향 조사･분석 및 대국민 과학기술정책 정보 발신 서비스 추진 ◦ 과학기술분야 중장기계획 조사 분석 및 심층분석 - 과학기술분야 중장기계획 실태조사 실시 ※ 각 부처 추진 중인 중장기계획 조사 및 ｢제5차 과학기술기본계획｣과 연계해 중장기계획에 대한 심층분석(연계성 점검) 실시 - NTIS 내 중장기계획 종합정보시스템 기능 구축 및 운영, 3년차 계획 대상 이행사항 점검 ◦ 과학기술혁신 분야 정책점검 체계 마련 및 분야별 점검, 2025년 국가과학기술 현황 종합인식조사(제2기-제3차) 추진 ◦ 과학기술정책 특위·협의회 운영지원(기초연구진흥협의회, 미래인재특위, 지역과학 기술협의회) ◦ 지역 R&D 통계 조사품질 개선 및 통계정보 지속생산을 위한 연구 추진 ◦ 지역 과학기술정책 이슈·동향 분석 및 정책연구 수행 ◦ 과학기술인재 관련 정책동향 조사･분석 및 정책 기획·분석 - 국가전략기술 다양한 심층분석 - 과학기술 정책연구 ◦ 데이터 기반 - 과학기술 다양한 데이터를 ◦ 「혁신도전형 - 혁신도전형",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "36": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 36
+    }
+  }
+}

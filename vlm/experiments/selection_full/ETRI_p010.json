@@ -1,0 +1,424 @@
+{
+  "document": "ETRI",
+  "pdf_page": 10,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          0.0,
+          0.0,
+          1190.550048828125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          372.6561112756993,
+          327.75541602690674,
+          467.84794471414017,
+          631.6664985298806
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          864.1084458512082,
+          343.57041806943363,
+          880.5616385510345,
+          352.7235854977141
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_nonphotographic_picture_type"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.7889824509620667,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          },
+          {
+            "confidence": 0.20359139144420624,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          }
+        ]
+      },
+      {
+        "bbox": [
+          993.5487782514365,
+          152.2382680663859,
+          1061.8303424671853,
+          193.22652298756861
+        ],
+        "decision": "review_required",
+        "reason": [
+          "docling_picture_class_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.6191693544387817,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "other"
+          },
+          {
+            "confidence": 0.13790163397789001,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          372.6561112756993,
+          327.75541602690674,
+          467.84794471414017,
+          631.6664985298806
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0010_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            372.6561112756993,
+            327.75541602690674,
+            467.84794471414017,
+            631.6664985298806
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          864.1084458512082,
+          343.57041806943363,
+          880.5616385510345,
+          352.7235854977141
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.7889824509620667,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          },
+          {
+            "confidence": 0.20359139144420624,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0010_r002",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            864.1084458512082,
+            343.57041806943363,
+            880.5616385510345,
+            352.7235854977141
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          993.5487782514365,
+          152.2382680663859,
+          1061.8303424671853,
+          193.22652298756861
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.6191693544387817,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "other"
+          },
+          {
+            "confidence": 0.13790163397789001,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0010_r003",
+        "context": [
+          {
+            "text": "ETRI 연구소기업 운영 ETRI Laboratory Enterprise Status",
+            "bbox": [
+              664.6666666666666,
+              49.66669694010409,
+              967.3333333333333,
+              72.33336360677083
+            ],
+            "source_ref": "#/texts/36"
+          }
+        ],
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            993.5487782514365,
+            152.2382680663859,
+            1061.8303424671853,
+            193.22652298756861
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          15.633994140624992,
+          80.72707088216146,
+          280.5,
+          264.9396563313802
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/5"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0010_r004",
+        "context": [
+          {
+            "text": "ETRI 동문기업 및 성과 Status and Progress of ETRI START-UP",
+            "bbox": [
+              41.333333333333336,
+              49.66669694010409,
+              363.3333333333333,
+              71.66669694010409
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            15.633994140624992,
+            80.72707088216146,
+            280.5,
+            264.9396563313802
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          280.5,
+          81.72707088216146,
+          545.366005859375,
+          263.60632299804683
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/34"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0010_r005",
+        "context": [
+          {
+            "text": "ETRI 동문기업 및 성과 Status and Progress of ETRI START-UP",
+            "bbox": [
+              41.333333333333336,
+              49.66669694010409,
+              363.3333333333333,
+              71.66669694010409
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            280.5,
+            81.72707088216146,
+            545.366005859375,
+            263.60632299804683
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          644.133994140625,
+          81.06040421549471,
+          906.25,
+          264.27298966471346
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/37"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0010_r006",
+        "context": [
+          {
+            "text": "ETRI 연구소기업 운영 ETRI Laboratory Enterprise Status",
+            "bbox": [
+              664.6666666666666,
+              49.66669694010409,
+              967.3333333333333,
+              72.33336360677083
+            ],
+            "source_ref": "#/texts/36"
+          }
+        ],
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            644.133994140625,
+            81.06040421549471,
+            906.25,
+            264.27298966471346
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          906.25,
+          79.39373754882808,
+          1168.366005859375,
+          265.27298966471346
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/71"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0010_r007",
+        "context": [
+          {
+            "text": "ETRI 연구소기업 운영 ETRI Laboratory Enterprise Status",
+            "bbox": [
+              664.6666666666666,
+              49.66669694010409,
+              967.3333333333333,
+              72.33336360677083
+            ],
+            "source_ref": "#/texts/36"
+          }
+        ],
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 10,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            906.25,
+            79.39373754882808,
+            1168.366005859375,
+            265.27298966471346
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

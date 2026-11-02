@@ -1,0 +1,83 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 3,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 899,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [],
+    "docling_derived": [
+      {
+        "bbox": [
+          91.06998443603516,
+          233.8607635498047,
+          499.697021484375,
+          670.0930786132812
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          91.06998443603516,
+          233.8607635498047,
+          499.697021484375,
+          670.0930786132812
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0003_r001",
+        "context": [
+          {
+            "text": "사업계획 및 예산(안)",
+            "bbox": [
+              82.2,
+              146.59199999999998,
+              193.8576,
+              159.55200000000002
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 3,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 3,
+          "bbox": [
+            91.06998443603516,
+            233.8607635498047,
+            499.697021484375,
+            670.0930786132812
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

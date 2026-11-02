@@ -1,0 +1,910 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 42.0,
+            "t": 725.181,
+            "r": 108.0,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 51.0,
+            "t": 682.8476666666667,
+            "r": 278.33333333333337,
+            "b": 622.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "인간의 뇌처럼 생각하는 새로운 반도체 개발",
+      "text": "인간의 뇌처럼 생각하는 새로운 반도체 개발",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 51.66666666666667,
+            "t": 612.8476666666668,
+            "r": 81.0,
+            "b": 600.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "이재진",
+      "text": "이재진"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 181.0,
+            "t": 250.84766666666673,
+            "r": 195.66666666666666,
+            "b": 245.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "'",
+      "text": "'"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 352.0,
+            "t": 187.18100000000004,
+            "r": 365.3333333333333,
+            "b": 179.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "557",
+      "text": "557"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 689.5143333333334,
+            "r": 752.6666666666666,
+            "b": 675.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "인공지능컴퓨팅연구소",
+      "text": "인공지능컴퓨팅연구소"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 766.6666666666666,
+            "t": 655.5143333333334,
+            "r": 1032.0,
+            "b": 641.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "같은 초거대 인공지능이 등장하면서 Al 기술은 빠르게 발전하고 있다",
+      "text": "같은 초거대 인공지능이 등장하면서 Al 기술은 빠르게 발전하고 있다"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 805.0,
+            "t": 480.8476666666667,
+            "r": 846.3333333333334,
+            "b": 467.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "고성능 Al",
+      "text": "고성능 Al",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 480.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 468.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "필요하기 때문에 다른 경쟁 기관에서 쉽계 접근하기 어려운 기술적",
+      "text": "필요하기 때문에 다른 경쟁 기관에서 쉽계 접근하기 어려운 기술적"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 665.0,
+            "t": 427.51433333333335,
+            "r": 899.0,
+            "b": 306.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            206
+          ]
+        }
+      ],
+      "orig": "하지만 A 기술이 발전하면서 문제가 생겪다: 너무 많은 전력올 사용 한다는 것이다 현재의 A 반도체 즉 뇌 역할울 하는 컴퓨터 침은 정 보름 빠르게 처리할 수 있지만 전기름 많이 소모하기 때문에 지속적 인 발전에 어려움올 겨고 있다 이 문제름 해결하기 위해 과학자들은 인간의 뇌처럼 작동하는 뉴로모픽 반도체름 개발하고 있다 뉴로모 정보름 더 효율적으로 처리하는 기술이다",
+      "text": "하지만 A 기술이 발전하면서 문제가 생겪다: 너무 많은 전력올 사용 한다는 것이다 현재의 A 반도체 즉 뇌 역할울 하는 컴퓨터 침은 정 보름 빠르게 처리할 수 있지만 전기름 많이 소모하기 때문에 지속적 인 발전에 어려움올 겨고 있다 이 문제름 해결하기 위해 과학자들은 인간의 뇌처럼 작동하는 뉴로모픽 반도체름 개발하고 있다 뉴로모 정보름 더 효율적으로 처리하는 기술이다"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 300.84766666666667,
+            "r": 899.0,
+            "b": 234.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            108
+          ]
+        }
+      ],
+      "orig": "예름 들어 우리의 뇌는 작은 전구 하나 정도의 전력인 20W(와트) 도체는 같은 기능을 수행하기 위해 수백 W의 전력올 사용해야 한 다 뉴로모픽 반도체는 인간의 뇌처럼 짧고 빠른 신호인 스파이크",
+      "text": "예름 들어 우리의 뇌는 작은 전구 하나 정도의 전력인 20W(와트) 도체는 같은 기능을 수행하기 위해 수백 W의 전력올 사용해야 한 다 뉴로모픽 반도체는 인간의 뇌처럼 짧고 빠른 신호인 스파이크"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 665.0,
+            "t": 156.84766666666678,
+            "r": 898.3333333333334,
+            "b": 90.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "기반으로 차별화되고 독창적인 아날로그 회로 설계 기술을 결합해 비하면서도 높은 성능올 자랑하다",
+      "text": "기반으로 차별화되고 독창적인 아날로그 회로 설계 기술을 결합해 비하면서도 높은 성능올 자랑하다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 85.5143333333333,
+            "r": 898.3333333333334,
+            "b": 72.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "특히 연구진은 기존의 디지털 방식이 아난 아날로그 방식으로 뉴로",
+      "text": "특히 연구진은 기존의 디지털 방식이 아난 아날로그 방식으로 뉴로"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 391.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 324.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "12TOPSM급 에너지 효율올 달성햇다: 이울러 초저전력에서 동작 틀 인식할 수 있다 또한 소형화가 가능하다는 점이 장점이다 기존 Al 반도체보다 작은 크기로 개발 가능하다",
+      "text": "12TOPSM급 에너지 효율올 달성햇다: 이울러 초저전력에서 동작 틀 인식할 수 있다 또한 소형화가 가능하다는 점이 장점이다 기존 Al 반도체보다 작은 크기로 개발 가능하다"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 319.5143333333334,
+            "r": 1149.6666666666667,
+            "b": 252.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            110
+          ]
+        }
+      ],
+      "orig": "연구진은 전력 소모가 극히 적은 응용 분야인 지문 인식 및 위조 방 올 개발 중이다 현재 지문인식은 설치가 간단하고 비용이 저럼해 널 리 사용되고 있으나 지문 위 변조에 취약하다는 단점이 있어 타인",
+      "text": "연구진은 전력 소모가 극히 적은 응용 분야인 지문 인식 및 위조 방 올 개발 중이다 현재 지문인식은 설치가 간단하고 비용이 저럼해 널 리 사용되고 있으나 지문 위 변조에 취약하다는 단점이 있어 타인"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 228.84766666666678,
+            "r": 1149.6666666666667,
+            "b": 216.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "하지만 연구진이 개발한 뉴로모픽 반도체 기반 지문 위조 검출 기술",
+      "text": "하지만 연구진이 개발한 뉴로모픽 반도체 기반 지문 위조 검출 기술"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 103.5143333333333,
+            "r": 1149.6666666666667,
+            "b": 54.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "한 산업에서 활용월 것이다 이처럼 뉴로모픽 반도체는 높은 에너지 생활올 더욱 편리하고 안전하게 만들 것이다",
+      "text": "한 산업에서 활용월 것이다 이처럼 뉴로모픽 반도체는 높은 에너지 생활올 더욱 편리하고 안전하게 만들 것이다"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 1114.0,
+            "t": 38.5143333333333,
+            "r": 1148.6666666666667,
+            "b": 30.514333333333298,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "32 33",
+      "text": "32 33"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9925118684768677,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.0039304629899561405,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.0022850772365927696,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0002901544503401965,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.0002851323806680739,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.0002817927161231637,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.00016461123595945537,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 6.039283471181989e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 3.8985108403721824e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 2.6163930670008995e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 2.428564584988635e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 1.9845560018438846e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 1.9389701265026815e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 1.6479980331496336e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 1.4746447959623765e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 1.2099538253096398e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 4.888911917078076e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 4.735464699479053e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 2.791684210023959e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 2.5125170850515133e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 1.580538992129732e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 1.1203553640370956e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 4.873854209108686e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 4.2229640939694946e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 1.2015055972369737e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 2.7972444360813142e-09,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 17,
+          "bbox": {
+            "l": 34.760779391848466,
+            "t": 699.5718328152515,
+            "r": 529.2593639844611,
+            "b": 35.60595481742689,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.9925118684768677
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.0039304629899561405
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.0022850772365927696
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0002901544503401965
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.0002851323806680739
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.0002817927161231637
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.00016461123595945537
+            },
+            {
+              "class_name": "table",
+              "confidence": 6.039283471181989e-05
+            },
+            {
+              "class_name": "music",
+              "confidence": 3.8985108403721824e-05
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 2.6163930670008995e-05
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 2.428564584988635e-05
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 1.9845560018438846e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 1.9389701265026815e-05
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 1.6479980331496336e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 1.4746447959623765e-05
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 1.2099538253096398e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 4.888911917078076e-06
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 4.735464699479053e-06
+            },
+            {
+              "class_name": "signature",
+              "confidence": 2.791684210023959e-06
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 2.5125170850515133e-06
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 1.580538992129732e-06
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 1.1203553640370956e-06
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 4.873854209108686e-07
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 4.2229640939694946e-07
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 1.2015055972369737e-07
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 2.7972444360813142e-09
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "17": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 17
+    }
+  }
+}

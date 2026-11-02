@@ -1,0 +1,142 @@
+{
+  "document": "ETRI",
+  "pdf_page": 33,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          39.642147064208984,
+          37.04023742675781,
+          446.928955078125,
+          85.40687561035156
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          500.2320861816406,
+          87.22879028320312,
+          547.3548583984375,
+          516.5103149414062
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          23.295434951782227,
+          179.78738403320312,
+          70.41818237304688,
+          609.0689086914062
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          461.9517822265625,
+          228.81976318359375,
+          509.1980285644531,
+          658.2247924804688
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          38.4578988130507,
+          52.239705094682336,
+          529.0424659863527,
+          715.5315438162621
+        ],
+        "decision": "review_required",
+        "reason": [
+          "docling_picture_class_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.4505557715892792,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "photograph"
+          },
+          {
+            "confidence": 0.19813373684883118,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "geographical_map"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          38.4578988130507,
+          52.239705094682336,
+          529.0424659863527,
+          715.5315438162621
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.4505557715892792,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "photograph"
+          },
+          {
+            "confidence": 0.19813373684883118,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "geographical_map"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0033_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 33,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 33,
+          "bbox": [
+            38.4578988130507,
+            52.239705094682336,
+            529.0424659863527,
+            715.5315438162621
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 14,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 1179,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [],
+    "docling_derived": [],
+    "combined_frozen": []
+  }
+}

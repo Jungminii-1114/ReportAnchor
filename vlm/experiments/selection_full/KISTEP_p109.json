@@ -1,0 +1,172 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 109,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 748,
+    "native_tables": 2,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          70.84200286865234,
+          269.46502685546875,
+          523.4780069986979,
+          392.21099853515625
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          70.84200286865234,
+          459.21767171223956,
+          523.4780069986979,
+          557.8699951171875
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          69.80545043945312,
+          268.1214904785156,
+          524.2212524414062,
+          392.4539794921875
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          69.82962036132812,
+          457.57659912109375,
+          524.1204833984375,
+          558.5033569335938
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          69.80545043945312,
+          268.1214904785156,
+          524.2212524414062,
+          392.4539794921875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0109_r001",
+        "context": [
+          {
+            "text": "❍ 조달재원",
+            "bbox": [
+              80.88,
+              248.80031999999994,
+              148.20783709578336,
+              262.51199999999994
+            ],
+            "source_ref": "#/texts/6"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 109,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 109,
+          "bbox": [
+            69.80545043945312,
+            268.1214904785156,
+            524.2212524414062,
+            392.4539794921875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.82962036132812,
+          457.57659912109375,
+          524.1204833984375,
+          558.5033569335938
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0109_r002",
+        "context": [
+          {
+            "text": "❍ 지출계획",
+            "bbox": [
+              80.88,
+              438.88032,
+              148.20783709578336,
+              452.592
+            ],
+            "source_ref": "#/texts/8"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 109,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 109,
+          "bbox": [
+            69.82962036132812,
+            457.57659912109375,
+            524.1204833984375,
+            558.5033569335938
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

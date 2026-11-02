@@ -1,0 +1,824 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 80.88,
+            "t": 760.3196800000001,
+            "r": 524.5276974581461,
+            "b": 746.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "❍ 해외 센터들의 현황 및 애로사항을 분석하고, 전략거점센터 중심으로 효율화",
+      "text": "❍ 해외 센터들의 현황 및 애로사항을 분석하고, 전략거점센터 중심으로 효율화",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 100.44,
+            "t": 736.168,
+            "r": 317.5283607297225,
+            "b": 723.208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "및 전략성을 부여할 수 있는 방안 마련",
+      "text": "및 전략성을 부여할 수 있는 방안 마련",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 707.7280000000001,
+            "r": 524.6477672751647,
+            "b": 694.768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "- 제2회 글로벌 R&D 특별위원회에서 \"글로벌 R&D 전략거점센터 구축·운영",
+      "text": "제2회 글로벌 R&D 특별위원회에서 \"글로벌 R&D 전략거점센터 구축·운영",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 108.96,
+            "t": 684.328,
+            "r": 281.5634269109444,
+            "b": 671.368,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "방안(안)\" 심의·의결('24. 5. 30)",
+      "text": "방안(안)\" 심의·의결('24. 5. 30)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 655.888,
+            "r": 524.5285527296735,
+            "b": 621.568,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "- 과기부·산업부 전략거점센터 구축 모니터링, 신규 해외센터 타당성 검토 기준 마련, 해외 센터 현황조사 방안 마련 추진",
+      "text": "과기부·산업부 전략거점센터 구축 모니터링, 신규 해외센터 타당성 검토 기준 마련, 해외 센터 현황조사 방안 마련 추진",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 80.88,
+            "t": 603.83968,
+            "r": 524.5292683671637,
+            "b": 568.648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "❍ 국가적 차원에서 중요한 글로벌 R&D로서 집중적인 지원관리가 필요한 \"글로벌 R&D 플래그십 프로젝트\"선정",
+      "text": "❍ 국가적 차원에서 중요한 글로벌 R&D로서 집중적인 지원관리가 필요한 \"글로벌 R&D 플래그십 프로젝트\"선정",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 555.2080000000001,
+            "r": 524.5626763640447,
+            "b": 542.248,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "- 12대 국가전략기술 17대 탄소중립 분야를 중심으로 정책적 효과성, 국가적 대표성,",
+      "text": "12대 국가전략기술 17대 탄소중립 분야를 중심으로 정책적 효과성, 국가적 대표성,",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 108.96,
+            "t": 533.7280000000001,
+            "r": 313.5685527296736,
+            "b": 520.768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "신속 착수 가능성 등을 고려하여 선정",
+      "text": "신속 착수 가능성 등을 고려하여 선정",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 507.32800000000003,
+            "r": 459.16342691094434,
+            "b": 494.36800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "- '24년 상반기 1차 프로젝트 검토 결과 총 4건* 선정('24. 5. 30)",
+      "text": "'24년 상반기 1차 프로젝트 검토 결과 총 4건* 선정('24. 5. 30)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 110.88,
+            "t": 483.952,
+            "r": 524.472,
+            "b": 472.912,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "* 보스턴코리아프로젝트(복지·과기·산업부)\", \"한국형 수소환원제철용 철광석 최적화 기술개발(산업부)\",",
+      "text": "보스턴코리아프로젝트(복지·과기·산업부)\", \"한국형 수소환원제철용 철광석 최적화 기술개발(산업부)\",",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 121.19999999999999,
+            "t": 465.832,
+            "r": 524.606304,
+            "b": 454.79200000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "\"Net-Zere Korea 선도프로젝트(과기부)', \"한-미 해조류 바이오매스 생산 시스템 기술개발(해수부)\"",
+      "text": "\"Net-Zere Korea 선도프로젝트(과기부)', \"한-미 해조류 바이오매스 생산 시스템 기술개발(해수부)\"",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 441.56800000000004,
+            "r": 490.44855272967357,
+            "b": 428.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "- '25년 상반기 2차 프로젝트 선정을 위한 수요조사 및 검토위원회 운영",
+      "text": "'25년 상반기 2차 프로젝트 선정을 위한 수요조사 및 검토위원회 운영",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 80.88,
+            "t": 410.87968000000006,
+            "r": 524.5281250957098,
+            "b": 397.168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "❍ 기술주권 관점에서 국제협력 전략 수립 방법론을 개발하고, 데이터 기반으로",
+      "text": "❍ 기술주권 관점에서 국제협력 전략 수립 방법론을 개발하고, 데이터 기반으로",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 100.44,
+            "t": 388.648,
+            "r": 238.8077672751648,
+            "b": 375.68800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "배터리 분야에 실증 적용",
+      "text": "배터리 분야에 실증 적용",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 362.24800000000005,
+            "r": 520.5685527296735,
+            "b": 349.28799999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "- 근거기반 전략 수립을 위해 UN voting, 무역, 특허, 논문 데이터 수집·연계",
+      "text": "근거기반 전략 수립을 위해 UN voting, 무역, 특허, 논문 데이터 수집·연계",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 335.72799999999995,
+            "r": 524.647584003466,
+            "b": 322.76800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "- 배터리 분야에 실증 적용하여 양극활물질, 음극활물질, 바인더 등 8개 세부 분류에",
+      "text": "배터리 분야에 실증 적용하여 양극활물질, 음극활물질, 바인더 등 8개 세부 분류에",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 108.96,
+            "t": 314.36799999999994,
+            "r": 284.2885527296736,
+            "b": 301.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "대한 한국의 국제협력 전략 수립",
+      "text": "대한 한국의 국제협력 전략 수립",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 80.88,
+            "t": 283.67967999999996,
+            "r": 485.1677672751648,
+            "b": 269.96799999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "❍ 과학기술 국제협력 네트워크 확대 및 글로벌 과학기술혁신 역량 강화",
+      "text": "❍ 과학기술 국제협력 네트워크 확대 및 글로벌 과학기술혁신 역량 강화",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 256.408,
+            "r": 518.0478632751402,
+            "b": 243.44799999999998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "- OECD Global Science Forum 고위급 심포지엄 및 고위급 다자대화 참여",
+      "text": "OECD Global Science Forum 고위급 심포지엄 및 고위급 다자대화 참여",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 110.88,
+            "t": 233.15200000000004,
+            "r": 524.592,
+            "b": 203.99200000000008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            92
+          ]
+        }
+      ],
+      "orig": "※ GSF 고위급 심포지엄 '미래의 글로벌 및 포괄적 과학 협력을 위한 촉매제로서의 연구 인프라', 고위급 다자대화 '인재개발과 다양한 연구경력 경로' 패널토론 참여",
+      "text": "※ GSF 고위급 심포지엄 '미래의 글로벌 및 포괄적 과학 협력을 위한 촉매제로서의 연구 인프라', 고위급 다자대화 '인재개발과 다양한 연구경력 경로' 패널토론 참여",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 191.39968,
+            "r": 524.6479592751157,
+            "b": 156.32799999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "- UNESCO 산하 국제과학기술혁신센터와 「2024 KISTEP-ISTIC STI 교육･훈련 프로그램」('23.7) 공동 기획」 운영",
+      "text": "UNESCO 산하 국제과학기술혁신센터와 「2024 KISTEP-ISTIC STI 교육･훈련 프로그램」('23.7) 공동 기획」 운영",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 110.88,
+            "t": 145.91200000000003,
+            "r": 521.18736,
+            "b": 134.87200000000007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "※ ISTIC 회원 개도국 15개국 과학기술정책결정자 15명 참여, 기술예측 워크샵 형태로 운영",
+      "text": "※ ISTIC 회원 개도국 15개국 과학기술정책결정자 15명 참여, 기술예측 워크샵 형태로 운영",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 95.88,
+            "t": 121.64800000000002,
+            "r": 500.2878632751403,
+            "b": 108.68799999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- UKC, EKC, CKC 등 재외과기협 주최 컨퍼런스 참여 및 네트워크 확대",
+      "text": "UKC, EKC, CKC 등 재외과기협 주최 컨퍼런스 참여 및 네트워크 확대",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 26,
+          "bbox": {
+            "l": 110.88,
+            "t": 98.39200000000005,
+            "r": 524.5816800000003,
+            "b": 87.35200000000009,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "※ UKC 2024 내 KISTEP-CSIS 공동 포럼 \"한-미 동맹의 미래비전: CET 및 경제안보 협력 전략\" 개최('24.8)",
+      "text": "※ UKC 2024 내 KISTEP-CSIS 공동 포럼 \"한-미 동맹의 미래비전: CET 및 경제안보 협력 전략\" 개최('24.8)",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "26": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 26
+    }
+  }
+}
