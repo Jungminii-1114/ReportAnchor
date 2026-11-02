@@ -1,0 +1,33 @@
+{
+  "checks": [
+    "actual 180 chunks / 3105 blocks",
+    "N01 real page ranking 109 / 110 / 105",
+    "original BM25 score preserved",
+    "three sources exactly reconstructed",
+    "blank query contract error",
+    "no match returns zero candidates",
+    "invalid top-k rejected",
+    "unknown source preview rejected",
+    "cross-origin search rejected",
+    "foreign Host rejected",
+    "only frontend assets served",
+    "three result cards visible",
+    "selected PDF 109 visible",
+    "candidate selection changes PDF to 110",
+    "highlight can be disabled",
+    "enlarged preview opens",
+    "full reconstructed text shown",
+    "source spans expandable",
+    "N01 raw JSON available",
+    "JSON export matches real sources",
+    "blank error clears stale results",
+    "empty search wording does not assert absence in document",
+    "reset clears history and results",
+    "mobile has no horizontal overflow",
+    "no external browser requests",
+    "no browser JavaScript exceptions"
+  ],
+  "errors": [],
+  "external": [],
+  "passed": 26
+}

@@ -1,138 +1,132 @@
-# Report Agent
+# ReportAnchor
 
 **A local AI agent for evidence-based report review and decision support**
 
-〖English | [한국어](readme/README-korean.md)〗
+**English** | [한국어](README/readme/README-korean.md)
 
-〖[Overview](#overview) | [Why Report Agent?](#why-report-agent) | [Workflow](#workflow) | [Roadmap](#roadmap)〗
+[Introduction](#introduction) · [Key Features](#key-features) · [How to install](#how-to-install) · [Usage Examples](#usage-examples)
 
-> Analyze PDF and HWP reports locally, check user-defined review criteria, and provide feedback supported by traceable source evidence.
+> Find the evidence a review needs, inspect it in the original report, and distinguish supported findings from unresolved conditions.
 
-**Project status:** In development. The capabilities below describe the intended system.
+**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, and a local source-inspection UI. Answer generation, claim verification, and the complete agent workflow are planned. Implemented features and MVP designs are distinguished below.
 
-## Overview
+## Introduction
 
-Report Agent is a local AI agent for reviewing PDF and HWP reports against user-defined criteria. It connects document understanding, evidence retrieval, numerical checks, and source-backed feedback in a single workflow.
+ReportAnchor is a local document-review agent for **planning, research, and project-review staff in companies and public institutions**. It targets work involving business plans, technology reports, and R&D results, where reviewers need evidence for a specific question, an explicit review criterion, or a comparison.
 
-The goal is to help reviewers understand which conditions are met, which are not, and what remains unverified, while keeping the supporting evidence traceable to the original document.
+### Why we started
 
-## Why Report Agent?
+Reviewing a report involves more than summarizing it. Reviewers move between passages, tables, charts, and footnotes to establish the **subject, year, unit, and measurement conditions** behind each value. Copying information across documents can separate a number from those conditions and lead to an invalid comparison. Sharing a finding also requires explaining which page or table supports it.
 
-### Reports that cannot be sent to external services
+Internal plans and unpublished research may additionally be subject to restrictions on external transfer. Adopting a document AI system therefore requires control over where source files, extracted content, questions, indexes, and logs are processed.
 
-Internal plans, performance reports, and review materials may contain information that cannot be uploaded to an external service. A workflow that depends on external processing can therefore be unsuitable for these documents.
+ReportAnchor began as an attempt to connect **repeated evidence search, source rechecking, explicit review conditions, and local processing** in one workflow. It aims to run document processing, retrieval, and model inference locally, returning findings alongside the evidence and unresolved conditions. The user retains the final decision. Local execution alone does not establish enterprise security assurance.
 
-Report Agent is designed to perform document processing, retrieval, and model inference locally so that review can take place within the user's own environment.
+### Who it is for
 
-### Figures that lose their meaning during extraction
+- **Reviewers** who need to locate evidence across reports and inspect criteria-based findings or comparisons against the source.
+- **Document AI developers** building local review pipelines with replaceable parsers, VLMs, retrievers, and verification nodes while preserving source references and execution records.
 
-A figure in a report is defined by its row label, header hierarchy, data year, unit, and footnotes. When these relationships are lost during extraction or chunking, relevant-looking text can support an incorrect comparison.
+## Key Features
 
-Report Agent aims to preserve these relationships and their source locations throughout processing and retrieval, including complex tables and document regions that require visual interpretation.
+### Available in the current implementation
 
-### Review criteria that require more than a summary
+- **PDF text extraction and chunking:** Extract native text, blocks, page numbers, and coordinates with PyMuPDF, then construct searchable chunks. OCR, table-structure interpretation, and HWP support are not completed in this extraction demo.
+- **Korean BM25 retrieval:** Apply the same Kiwi tokenization policy to documents and queries, returning ranked chunks and retrieval scores.
+- **Traceable source reconstruction:** Preserve document versions, block IDs, character spans, and PDF locations; reconstruct each chunk from the original blocks and check equality.
+- **Local source-inspection UI:** View document settings, ranked results, and the source PDF side by side. Inspect referenced block regions, extracted text, and the N-01 response JSON, or download the result.
 
-Reviewers often need to check whether a report satisfies explicit conditions, compare values across sections, or establish whether the available evidence is sufficient. A summary or a relevant search result alone does not complete these checks.
+![ReportAnchor retrieval results beside the source PDF](docs/images/rag-demo-source-context.png)
 
-Report Agent uses the user's criteria to guide evidence collection, numerical calculations, and review feedback. Its intended output explains both the finding and the evidence used to reach it.
+*The current demo displays retrieved chunks rather than generated answers. Green highlights indicate the full bounding boxes of referenced source blocks.*
 
-### Findings that must be checked against the source
+### MVP under development
 
-A fluent answer can still cite a passage that does not support its claim or overlook information needed for a conclusion. Reviewers need to inspect the source and understand the limits of the available evidence.
+The latest JS design follows **request intake and routing → one task-specific fixed workflow → result delivery**. Each valid request selects one of three tasks.
 
-Report Agent aims to connect claims to source passages and table regions, verify their consistency, and identify missing information. If the evidence remains insufficient, it will abstain and explain what additional material is needed.
+| Task | Intended request | Target output |
+| --- | --- | --- |
+| **T-01 · Document QA** | Find an answer to a specific document question | Answer, claim-level evidence, unresolved information |
+| **T-02 · Criteria Review** | Check explicit user-provided review criteria | Criterion-level findings, evidence, and reasons |
+| **T-03 · Comparative Analysis** | Compare documents, periods, or indicators | Comparability checks, quantitative or qualitative differences, sources, and limitations |
 
-## Planned capabilities
+Planned components include **hybrid parser/VLM document processing**, **Dense + BM25 + RRF with optional reranking**, **claim, numerical, and citation checks**, and **harness-managed execution status, budgets, and artifacts**. Initial N-02 context expansion uses a fixed-length policy; expansion based on table, header, and footnote relationships is a later improvement.
 
-| Capability | Intended behavior |
-|---|---|
-| PDF and HWP processing | Extract text, tables, document structure, and source locations. The HWP parsing or conversion approach will be validated separately. |
-| Selective VLM processing | Apply a vision-language model to regions requiring additional interpretation, such as complex headers, tables, and charts. |
-| Evidence-preserving structure | Link values to their subjects, years, units, header paths, footnotes, and source locations. |
-| Hybrid retrieval | Combine keyword and semantic retrieval, then rerank candidate evidence. |
-| Criteria-based review | Analyze the request and use retrieval, source lookup, and calculation tools to check the user's criteria. |
-| Verification and abstention | Check claims against cited evidence, retry retrieval within a fixed limit, and abstain when evidence remains insufficient. |
+The agent follows predefined steps and branches. Retrieval retry conditions and limits remain to be finalized. A failed search must not be treated as proof that the document lacks the information, and insufficient evidence must be distinguished from execution failure. Standalone Claim Verification (T-04) and Document Summary (T-05) remain future candidates outside the three-task MVP.
 
-## Workflow
+Design references: [JS Query Agent MVP](https://github.com/Jungminii-1114/ReportAnchor/blob/9a54b0e687b9bcd993941492151e02bae3b9d656/docs/query-agent-mvp.md) and [document pipeline](https://github.com/Jungminii-1114/ReportAnchor/blob/9a54b0e687b9bcd993941492151e02bae3b9d656/docs/document-pipeline.md). Current code contracts and remaining nodes are documented in the [RAG development guide](rag/retrieval/README.md).
 
-```mermaid
-flowchart TD
-    subgraph PREP["Document preparation"]
-        A["Register PDF or HWP"] --> B["Extract text, tables, and source locations"]
-        B --> C["Process selected regions with a VLM"]
-        C --> D["Check structure and compare with the source"]
-        D --> E["Build chunks and preserve provenance"]
-        E --> F["Build keyword and vector indexes"]
-    end
+## How to install
 
-    subgraph AGENT["Question processing"]
-        G["Question and review criteria"] --> H["Analyze the request and select tools"]
-        H --> I["Hybrid retrieval and reranking"]
-        I --> J["Check evidence and perform calculations"]
-        J --> K["Generate a response and check claims and citations"]
-        K --> L["Return findings with source evidence"]
-        J --> M["If evidence is insufficient: retry retrieval or abstain"]
-    end
+### 1. Prepare the code and environment
 
-    F --> I
+These instructions target the **JM development version containing the RAG demo**. As checked on November 2, 2026, the remote JM branch does not yet include the new local RAG and web-demo files. A fresh clone alone cannot run the demo until those implementation changes are included. An existing local working tree containing them can be used directly.
+
+For a new checkout, select the JM branch. If you already have the development folder, use it instead of cloning again.
+
+```bash
+git clone --branch JM https://github.com/Jungminii-1114/ReportAnchor.git ReportAnchor
+cd ReportAnchor
 ```
 
-This diagram summarizes the main stages. Retrieval retries will be limited to two additional attempts. If sufficient evidence cannot be obtained, the agent will abstain and explain what remains unresolved. Unverified extraction fields will remain explicitly marked.
+Use **Python 3.13.9 or later**. The following installs the demo dependencies explicitly rather than installing the repository as a Python package.
 
-## Retrieval and agent design
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install pymupdf==1.28.2 kiwipiepy==0.24.1 rank-bm25==0.2.2
+```
 
-### Preserve meaning and provenance
+The activation command above is for macOS/Linux. On Windows, use `.venv\Scripts\Activate.ps1`. Reuse an existing environment if it already contains the required packages. Currently, `pyproject.toml` only declares PyMuPDF; the RAG demo also needs Kiwi and BM25.
 
-- Attach document and section titles to passage chunks.
-- Attach table titles, row labels, header paths, data years, units, and footnotes to table records.
-- Store search-oriented text alongside the structured source data.
-- Keep document versions and source locations traceable.
-- Distinguish a report's publication year from the year of a value inside it.
+This dependency set was checked in a fresh Python 3.13.9 environment on macOS Apple Silicon, covering PDF extraction, chunking, retrieval, source reconstruction, and PDF rendering.
 
-For HWP converted to PDF, source locations should identify the converted file and its version.
+### 2. Prepare document data
 
-### Retrieve supporting evidence
+Source PDFs and processed data are excluded from the repository. This example uses a public [KISTEP document](https://www.kistep.re.kr/boardDownload.es?bid=0017&list_no=16371&seq=2), saved as `data/raw/kistep_2025_plan.pdf`. The project is not limited to this document or to budget review.
 
-1. Identify the question, selected documents, and confirmed search constraints.
-2. Retrieve candidates with BM25 and dense embeddings.
-3. Deduplicate and combine ranked lists with reciprocal rank fusion (RRF).
-4. Rerank the candidates.
-5. Expand table headers, footnotes, or surrounding passages when needed.
-6. Return an evidence bundle with source references and extraction status.
+```bash
+mkdir -p data/raw
+# Save the PDF at the path above before running extraction.
+python 01_extract_pdf.py --pdf data/raw/kistep_2025_plan.pdf
 
-Retrieval relevance, extraction verification status, and the final review outcome will be represented separately.
+python 02_build_chunks.py \
+  --input-dir data/processed/pymupdf_demo/kistep_2025_plan_0530d100e085 \
+  --out data/processed/rag/demo
+```
 
-### Use tools for review
+The extraction folder includes a prefix of the source-file hash. For another document or a revised download, replace the example path with the extraction command's `output_dir`. Skip this step if you already have the extracted data and chunks.
 
-| Planned tool | Purpose |
-|---|---|
-| retrieve_evidence | Retrieve evidence matching the question and confirmed constraints. |
-| get_source_context | Inspect the original passage, table headers, or footnotes for a retrieved item. |
-| calculate | Perform supported numerical operations with explicit unit rules. |
+### 3. Start the local web demo
 
-The agent will check whether evidence matches the requested subject, year, and unit before using it in a calculation or response.
+```bash
+python scripts/run_rag_demo.py \
+  --chunks data/processed/rag/demo/chunks.jsonl \
+  --blocks data/processed/pymupdf_demo/kistep_2025_plan_0530d100e085/blocks.jsonl \
+  --pdf data/raw/kistep_2025_plan.pdf
+```
 
-## Team responsibilities
+After the ready message, open <http://127.0.0.1:8765>. Stop the server with `Ctrl+C`. See the [demo guide](docs/rag-demo-ui.md) for other data paths, a separate PyMuPDF environment, or a different port. The current retrieval and source-inspection demo requires neither an LLM API key nor an Ollama model.
 
-| Area | Responsibility |
-|---|---|
-| PDF and HWP parsing | Extract content, preserve structure and locations, and define the common document format. |
-| VLM research | Compare models and prompts, evaluate difficult document regions, and study selective processing. |
-| RAG and agent development — Jeongmin Lee | Build chunking, indexing, retrieval, reranking, request analysis, tool-use logic, and response generation and verification. |
-| Harness engineering | Build the shared runtime, state and trace management, execution limits, failure handling, and evaluation automation. |
+## Usage Examples
 
-The RAG and agent role owns the retrieval and review strategies. The harness role provides the shared environment for running, observing, and evaluating those strategies.
+### Inspect retrieval results against the source
 
-## Roadmap
+1. Confirm the connected document and select three results in the left panel.
+2. Search for `조달재원 출연금`.
+3. Select a result card, then inspect the right panel's **PDF 원문** (source PDF), **추출 텍스트** (extracted text), and **상세 정보** (details) tabs.
+4. Check the physical PDF page, block spans, and document version. Use **JSON 저장** to download the result when needed.
 
-1. **Define the data contract and examples:** agree on parser/VLM outputs and RAG inputs; prepare development questions and reference evidence.
-2. **Build the retrieval pipeline:** implement chunking and indexes; compare dense, keyword, hybrid, and reranked retrieval.
-3. **Implement review behavior:** connect question analysis, tools, calculations, citation checks, and abstention.
-4. **Integrate the harness and evaluate:** collect traces, analyze failures, and automate reproducible comparisons.
-5. **Build the interface:** connect local FastAPI services and a Chrome Extension for reviewing results and source evidence.
+The current sample document produces these results.
 
-## Getting started
+| Rank | Physical PDF page | BM25 score | Referenced source spans |
+| --- | --- | --- | --- |
+| 1 | 109 | Approximately 9.944 | 21 |
+| 2 | 110 | Approximately 9.290 | 31 |
+| 3 | 105 | Approximately 9.043 | 28 |
 
-Environment setup, model preparation, indexing, question execution, and evaluation commands will be added after the repository layout and dependencies are finalized.
+For example, compare the contribution-funding row on PDF page 109: **2024: 2,607 / 2025: 2,638 / change: 31 million KRW**. Physical PDF pages may differ from printed page labels. BM25 scores rank relevance; they are not accuracy estimates or probabilities.
 
-The initial development interface will be Python functions and command-line execution.
+**Reconstruction match** means that the stored block spans reproduce the chunk text. It does not establish PDF extraction accuracy, correct table structure, or factual answer generation. N-03 claim verification is not implemented yet.
+
+The November 2, 2026 record of 26 web/API checks and 12 existing BM25/contract tests is described in the [demo check record](docs/reports/rag-demo-ui-checks.json) and [source-inspection guide](docs/rag-demo-ui.md). These are functional checks, not retrieval-accuracy evaluations.
