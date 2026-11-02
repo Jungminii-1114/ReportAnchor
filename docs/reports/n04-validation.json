@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-03",
+  "scope": "N-04 run/CLI and local web generation integration",
+  "python": {
+    "tests_run": 83,
+    "failures": 0,
+    "errors": 0,
+    "successful": true,
+    "actual_model_requests": 0
+  },
+  "browser": {
+    "passed": 32,
+    "checks": [
+      "N04 capability and configured cloud model exposed",
+      "API key not exposed by info",
+      "cloud execution badge replaces local-only claim",
+      "search shows actual three source cards",
+      "search does not automatically generate",
+      "generation panel appears after search",
+      "UI test response is explicitly marked",
+      "answer claim is displayed",
+      "semantic verification pending badge visible",
+      "citation link available",
+      "successful generation button is disabled",
+      "citation selects page 109 source",
+      "citation opens source text tab",
+      "exact cited quote is highlighted",
+      "actual PDF preview still renders",
+      "N04 JSON includes claim ID",
+      "JSON export contains N01 N02 and N04",
+      "export contains no API key",
+      "repeated generation reuses successful result",
+      "new search clears old answer",
+      "invalid model JSON shown as diagnostic",
+      "generation failure retains source cards",
+      "generation failure allows manual retry",
+      "insufficient evidence shows missing information",
+      "blank question clears answer panel",
+      "mobile citation opens actual source",
+      "mobile has no horizontal overflow",
+      "reset hides draft and clears results",
+      "unknown generation request rejected",
+      "cross-origin generation request rejected",
+      "no browser JavaScript errors",
+      "browser requests remain local"
+    ],
+    "errors": [],
+    "external": [],
+    "model_response": "mock; actual KISTEP retrieval and sources; no live model inference"
+  },
+  "live_model_requests_by_this_check": 0,
+  "data": "Actual KISTEP chunks and blocks, 180 chunks and 3105 blocks; PDF preview from original file",
+  "model_response_in_web_checks": "Mocked response, explicitly labeled in the UI screenshot",
+  "user_provided_live_run": {
+    "independently_repeated": false,
+    "provider": "Ollama Cloud",
+    "model": "gemma4:31b",
+    "question": "2025년 경상운영비는 얼마인가?",
+    "answer": "4,566백만원",
+    "claims": 1,
+    "citations": 3,
+    "basis": "User pasted successful CLI output in this conversation"
+  },
+  "not_established": [
+    "N-03 semantic/numerical verification",
+    "Retrieval or generation accuracy over a benchmark",
+    "Live web-to-cloud inference in this check"
+  ]
+}

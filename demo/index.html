@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
 <body>
 <header class="topbar"><a class="brand" href="/"><span class="brand-icon">R<span>↗</span></span><span>ReportAnchor<small>EVIDENCE WORKSPACE</small></span></a>
-<div class="top-tabs"><span class="active">문서 탐색</span><span class="muted">RAG 데모</span></div><span class="local"><i></i> LOCAL ONLY</span></header>
+<div class="top-tabs"><span class="active">문서 탐색</span><span class="muted">RAG 데모</span></div><span class="local" id="runtime-badge"><i></i><span id="runtime-label">LOCAL WEB</span></span></header>
 <main class="workspace">
 <aside class="sidebar">
   <div class="section-label">WORKSPACE <span>01</span></div><h2>나의 문서</h2>
@@ -15,19 +15,30 @@
     <select id="top-k"><option value="3">3개 · 빠르게 확인</option><option value="5">5개 · 조금 더 넓게</option><option value="10">10개 · 상세 탐색</option></select>
     <div class="method"><span class="dot"></span><div><strong>BM25 + Kiwi</strong><small>한국어 형태소 기반 키워드 검색</small></div></div>
   </section>
-  <section class="side-section"><h3>시작 질문</h3><button class="sample" data-query="조달재원 출연금">조달재원 출연금 <span>↗</span></button><button class="sample" data-query="정보시스템 유지보수">정보시스템 유지보수 <span>↗</span></button><button class="sample" data-query="인건비 운영 계획">인건비 운영 계획 <span>↗</span></button></section>
-  <section class="pipeline"><div class="section-label">현재 연결된 단계</div><div><b>01</b><span>관련 청크 검색<small>N-01 · retrieve_evidence</small></span><i>✓</i></div><div><b>02</b><span>원문 연결·복원<small>N-02 · get_source_context</small></span><i>✓</i></div><div class="pending"><b>03</b><span>답변 생성·의미 검증<small>아직 연결하지 않았습니다</small></span></div></section>
-  <div class="side-footer">문서는 이 컴퓨터에서 처리됩니다.<br>외부 AI API를 호출하지 않습니다.</div>
+  <section class="side-section model-section"><h3>답변 모델</h3><strong id="model-name">검색 전용</strong><p id="model-mode" class="model-mode">모델 설정을 확인하고 있습니다.</p></section>
+  <section class="side-section"><h3>시작 질문</h3><button class="sample" data-query="2025년 경상운영비는 얼마인가?">2025년 경상운영비는? <span>↗</span></button><button class="sample" data-query="조달재원 출연금">조달재원 출연금 <span>↗</span></button><button class="sample" data-query="정보시스템 유지보수">정보시스템 유지보수 <span>↗</span></button><button class="sample" data-query="인건비 운영 계획">인건비 운영 계획 <span>↗</span></button></section>
+  <section class="pipeline"><div class="section-label">현재 연결된 단계</div><div><b>01</b><span>관련 청크 검색<small>N-01 · retrieve_evidence</small></span><i>✓</i></div><div><b>02</b><span>원문 연결·복원<small>N-02 · get_source_context</small></span><i>✓</i></div><div id="draft-step"><b>04</b><span>근거 기반 답변 초안<small>N-04 · draft_answer</small></span><i>✓</i></div><div class="pending"><b>03</b><span>주장·근거 의미 검증<small>N-03 · 다음 개발 단계</small></span></div></section>
+  <div class="side-footer" id="data-handling">검색과 원문 조회는 로컬에서 수행합니다.</div>
 </aside>
 <section class="search-panel">
-  <div class="panel-heading"><div><div class="section-label">RETRIEVAL</div><h1>질문에서 근거까지</h1></div><button id="reset" class="icon-button" title="검색 기록 지우기" aria-label="검색 기록 지우기">↺</button></div>
+  <div class="panel-heading"><div><div class="section-label">RETRIEVAL</div><h1>질문에서 답변과 근거까지</h1></div><button id="reset" class="icon-button" title="검색 기록 지우기" aria-label="검색 기록 지우기">↺</button></div>
   <div class="search-scroll" id="search-scroll">
-    <div class="intro" id="intro"><div class="intro-symbol">⌕</div><h2>보고서에서 근거를 찾아보세요.</h2><p>질문과 관련된 청크를 검색하고,<br>원본 PDF의 어느 부분인지 바로 확인합니다.</p><div class="intro-note">검색 결과는 생성된 답변이 아닙니다.</div></div>
+    <div class="intro" id="intro"><div class="intro-symbol">⌕</div><h2>보고서에서 근거를 찾아보세요.</h2><p>질문과 관련된 청크를 검색하고,<br>원본 PDF의 어느 부분인지 바로 확인합니다.</p><div class="intro-note">검색 후 선택한 근거로 답변 초안을 생성할 수 있습니다.</div></div>
     <div id="history" class="history" aria-live="polite"></div>
     <div id="query-bubble" class="query-bubble" hidden></div>
     <div id="result-summary" class="result-summary" hidden></div>
     <div id="query-tokens" class="query-tokens" hidden></div>
     <div id="notice" class="notice" role="status" hidden></div>
+    <section id="draft-panel" class="draft-panel" aria-label="N-04 답변 초안" hidden>
+      <div class="draft-heading"><div><div class="section-label">GROUNDED DRAFT · N-04</div><h2>답변 초안</h2></div><span class="draft-badge">N-03 의미 검증 전</span></div>
+      <p id="draft-note" class="draft-note"></p>
+      <button id="draft-button" type="button" class="draft-button" disabled>근거로 답변 생성 ↗</button>
+      <p id="draft-state" class="draft-state" role="status" hidden></p>
+      <div id="draft-claims" class="draft-claims"></div>
+      <div id="draft-missing" class="draft-missing" hidden></div>
+      <details id="draft-details" hidden><summary>N-04 응답 JSON 보기</summary><pre id="draft-json"></pre></details>
+    </section>
+    <div class="sources-label" id="sources-label" hidden>검색된 원문 근거</div>
     <div id="results" class="results"></div>
   </div>
   <form id="search-form" class="composer"><label for="query" class="sr-only">문서 검색 질문</label><div class="input-row"><textarea id="query" rows="2" maxlength="4000" placeholder="문서에 대해 궁금한 내용을 입력하세요…"></textarea><button id="search-button" type="submit"><span>검색</span> ↗</button></div><div class="composer-footer"><span>Enter로 검색 · Shift+Enter로 줄바꿈</span><span>원문 기반 탐색</span></div></form>

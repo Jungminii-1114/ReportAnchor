@@ -8,7 +8,7 @@
 
 > Find the evidence a review needs, inspect it in the original report, and distinguish supported findings from unresolved conditions.
 
-**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, fixed-length source-context expansion, and a local source-inspection UI. Answer generation, claim verification, and the complete agent workflow are planned. Implemented features and MVP designs are distinguished below.
+**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, fixed-length source-context expansion, a local source-inspection UI, and N-04 answer drafts with source citations. Generation supports local Ollama or optional Ollama Cloud; cloud mode sends the question and selected evidence to the cloud. N-03 claim verification and the complete agent workflow remain planned. Implemented features and MVP designs are distinguished below.
 
 ## Introduction
 
@@ -34,11 +34,12 @@ ReportAnchor began as an attempt to connect **repeated evidence search, source r
 - **PDF text extraction and chunking:** Extract native text, blocks, page numbers, and coordinates with PyMuPDF, then construct searchable chunks. OCR, table-structure interpretation, and HWP support are not completed in this extraction demo.
 - **Korean BM25 retrieval:** Apply the same Kiwi tokenization policy to documents and queries, returning ranked chunks and retrieval scores.
 - **Traceable source context:** Reconstruct chunks from original blocks, expand nearby text within the same page, and merge overlapping windows while preserving document versions, block IDs, character spans, and PDF locations. N-02 returns a typed `EvidenceBundle` with scope, integrity, and text-budget checks.
+- **Grounded answer drafts (N-04):** Generate claim-level citations, validate JSON structure and verbatim quote references, and report missing information. Semantic verification remains pending in N-03.
 - **Local source-inspection UI:** View document settings, ranked results, and the source PDF side by side. Inspect referenced block regions, extracted text, and the N-01 response JSON, or download the result.
 
 ![ReportAnchor retrieval results beside the source PDF](docs/images/rag-demo-source-context.png)
 
-*The current demo displays retrieved chunks rather than generated answers. Green highlights indicate the full bounding boxes of referenced source blocks.*
+*This screenshot shows the N-01/N-02 inspection view. The updated UI also offers optional N-04 draft generation and clickable citations. Green PDF highlights indicate full referenced source blocks, not exact quote characters.*
 
 ### MVP under development
 
@@ -106,7 +107,7 @@ python scripts/run_rag_demo.py \
   --pdf data/raw/kistep_2025_plan.pdf
 ```
 
-After the ready message, open <http://127.0.0.1:8765>. Stop the server with `Ctrl+C`. See the [demo guide](docs/rag-demo-ui.md) for other data paths, a separate PyMuPDF environment, or a different port. The current retrieval and source-inspection demo requires neither an LLM API key nor an Ollama model.
+After the ready message, open <http://127.0.0.1:8765>. Stop the server with `Ctrl+C`. See the [demo guide](docs/rag-demo-ui.md) for other data paths, a separate PyMuPDF environment, or a different port. Search-only mode requires neither an LLM API key nor an Ollama model. To enable answer drafts, add `--provider local --model "YOUR_LOCAL_MODEL"`, or set `OLLAMA_API_KEY` in the server shell and add `--provider cloud --model "gemma4:31b"`. Generation runs only after clicking its button. See the [N-04 guide](docs/n04-draft-answer.md).
 
 ## Usage Examples
 
@@ -132,3 +133,9 @@ For example, compare the contribution-funding row on PDF page 109: **2024: 2,607
 The November 2, 2026 record of 26 web/API checks and 12 existing BM25/contract tests is described in the [demo check record](docs/reports/rag-demo-ui-checks.json) and [source-inspection guide](docs/rag-demo-ui.md). These are functional checks, not retrieval-accuracy evaluations.
 
 For the completed N-02 context contract, CLI options, and node order, see the [source-context guide](docs/n02-source-context.md). The [N-02 validation record](docs/reports/n02-validation.json) covers the new implementation separately from the original demo checks.
+
+### Generate an evidence-based draft
+
+Start the server with model options, search for `2025년 경상운영비는 얼마인가?`, and click **근거로 답변 생성**. Each citation opens its source text and highlights the quoted passage. The UI labels the result as a draft pending N-03 semantic verification. JSON download includes the N-01, N-02, and N-04 results.
+
+See the [N-04 implementation and execution guide](docs/n04-draft-answer.md) for contracts, local/cloud modes, error handling, and validation limits.

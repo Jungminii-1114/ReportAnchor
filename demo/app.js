@@ -1,5 +1,5 @@
 const $ = (id) => document.getElementById(id);
-let info, response, selected, currentTab = 'pdf', searches = [], searching = false;
+let info, response, selected, currentTab = 'pdf', searches = [], searching = false, generating = false;
 let imageVersion = 0;
 
 function element(tag, text, cls) {
@@ -19,12 +19,117 @@ function notice(message, error = false) {
   $('notice').classList.toggle('error', error);
   $('notice').hidden = !message;
 }
-function setBusy(value) {
-  searching = value;
-  $('search-button').disabled = value;
-  $('search-button').textContent = value ? '검색 중…' : '검색 ↗';
-  $('reset').disabled = value;
-  document.querySelectorAll('.sample').forEach(b => b.disabled = value);
+function setBusy(value, task = 'search') {
+  if (task === 'draft') generating = value;
+  else searching = value;
+  const busy = searching || generating;
+  $('search-button').disabled = busy || !info;
+  $('search-button').textContent = searching ? '검색 중…' : '검색 ↗';
+  $('reset').disabled = busy;
+  $('top-k').disabled = busy;
+  $('export').disabled = busy || !response;
+  document.querySelectorAll('.sample').forEach(b => b.disabled = busy || !info);
+  const completed = response?.draft?.status === 'success';
+  $('draft-button').disabled = busy || !info?.generation?.enabled ||
+    !response?.source_context?.data?.items?.length || completed;
+  $('draft-button').textContent = generating ? '초안 생성 중…' : completed ? '초안 생성 완료' : '근거로 답변 생성 ↗';
+}
+
+function selectCitation(citation) {
+  const item = response?.source_context?.data?.items.find(i => i.evidence_id === citation.evidence_id);
+  const index = response?.sources.findIndex(s => s.evidence_ids.includes(citation.evidence_id));
+  if (!item || index < 0) return;
+  selectSource(response.sources[index], $('results').children[index]);
+  showTab('text');
+  const text = response.sources[index].context_text;
+  const start = text.indexOf(citation.quote);
+  if (start >= 0) {
+    $('source-text').replaceChildren(document.createTextNode(text.slice(0, start)),
+      element('mark', citation.quote, 'quote-highlight'),
+      document.createTextNode(text.slice(start + citation.quote.length)));
+  }
+  document.querySelectorAll('.citation-button').forEach(b => b.classList.remove('active'));
+  if (innerWidth <= 900) $('evidence').scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+function renderDraft() {
+  const result = response?.draft;
+  $('draft-panel').hidden = !response?.source_context?.data;
+  $('draft-claims').replaceChildren();
+  $('draft-missing').replaceChildren();
+  $('draft-missing').hidden = true;
+  $('draft-state').hidden = true;
+  $('draft-state').classList.remove('error');
+  $('draft-details').hidden = !result;
+  $('draft-json').textContent = result ? JSON.stringify(result, null, 2) : '';
+  const generation = info?.generation;
+  $('draft-note').textContent = !generation?.enabled
+    ? '답변 생성을 사용하려면 서버 실행 시 --provider와 --model을 지정하세요.'
+    : generation.test_response ? '화면 동작 검사 · 아래 답변은 가짜 모델 응답입니다.'
+    : generation.provider === 'cloud'
+      ? `${generation.model} · 생성 버튼을 누르면 질문과 검색된 원문 근거를 Ollama Cloud로 전송합니다.`
+      : `${generation.model} · 로컬 Ollama 모델로 답변을 생성합니다.`;
+  if (!result) {
+    setBusy(false, 'draft');
+    return;
+  }
+  $('draft-state').hidden = false;
+  if (result.status === 'error') {
+    $('draft-state').classList.add('error');
+    $('draft-state').textContent = Object.values(result.diagnostics)
+      .filter(d => d.status === 'failed').map(d => `${d.error_code}: ${d.reason}`).join('\n');
+  } else {
+    $('draft-state').textContent = result.outcome === 'insufficient_evidence'
+      ? '확보한 근거로는 답변을 작성할 수 없습니다. 아래 부족한 정보를 확인하세요.'
+      : `주장 ${result.data.claims.length}개 · 형식·인용 연결 검사 통과 · 의미 검증 전`;
+    result.data.claims.forEach((claim, number) => {
+      const article = element('article', undefined, 'draft-claim');
+      article.append(element('span', `CLAIM ${String(number + 1).padStart(2, '0')}`, 'claim-label'),
+        element('p', claim.text, 'claim-text'));
+      claim.citations.forEach((citation, citationNumber) => {
+        const item = response.source_context.data.items.find(i => i.evidence_id === citation.evidence_id);
+        const button = element('button', undefined, 'citation-button');
+        button.type = 'button';
+        button.append(element('span', `근거 ${citationNumber + 1} · PDF ${item?.pdf_pages.join(', ') || '?'}페이지 ↗`, 'citation-label'),
+          element('blockquote', citation.quote));
+        button.addEventListener('click', () => { selectCitation(citation); button.classList.add('active'); });
+        article.append(button);
+      });
+      $('draft-claims').append(article);
+    });
+    if (result.data.missing_information.length) {
+      $('draft-missing').hidden = false;
+      $('draft-missing').append(element('strong', '추가로 필요한 정보'));
+      const list = element('ul');
+      result.data.missing_information.forEach(text => list.append(element('li', text)));
+      $('draft-missing').append(list);
+    }
+  }
+  setBusy(false, 'draft');
+}
+
+async function generateDraft() {
+  if (searching || generating || !response?.retrieval?.data) return;
+  const requestRef = response.retrieval.data.request_ref;
+  setBusy(true, 'draft');
+  $('draft-state').hidden = false;
+  $('draft-state').classList.remove('error');
+  $('draft-state').textContent = '선택한 모델이 원문 근거로 초안을 작성하고 있습니다…';
+  try {
+    const data = await jsonFetch('/api/draft', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({request_ref: requestRef}),
+    });
+    if (response?.retrieval?.data?.request_ref !== data.request_ref) return;
+    response.draft = data.draft;
+    response.generation = {provider: data.generation.provider, model: data.generation.model,
+      elapsed_ms: data.elapsed_ms, cached: data.cached, semantic_verification: 'not_implemented'};
+    renderDraft();
+  } catch (error) {
+    $('draft-state').hidden = false;
+    $('draft-state').classList.add('error');
+    $('draft-state').textContent = error.message;
+  } finally { setBusy(false, 'draft'); }
 }
 function showTab(tab) {
   currentTab = tab;
@@ -124,6 +229,8 @@ function renderResults(data) {
   $('result-summary').hidden = false;
   $('query-tokens').textContent = '질문 토큰  /  ' + (data.query_tokens.join(' · ') || '없음');
   $('query-tokens').hidden = false;
+  renderDraft();
+  $('sources-label').hidden = !data.sources.length;
   if (data.retrieval.status === 'error') {
     const diagnostics = Object.values(data.retrieval.diagnostics);
     notice(diagnostics.map(d => `${d.error_code}: ${d.reason}`).join('\n'), true);
@@ -162,12 +269,13 @@ function renderHistory() {
   }));
 }
 async function search(query) {
-  if (searching) return;
+  if (searching || generating) return;
   setBusy(true); notice('');
   $('intro').hidden = true;
   $('export').disabled = true;
   // 이전 질문의 결과가 새 질문의 결과처럼 보이지 않도록 즉시 비운다.
   $('results').replaceChildren(); $('evidence').hidden = true; $('evidence-empty').hidden = false;
+  $('draft-panel').hidden = true; $('sources-label').hidden = true;
   $('result-summary').hidden = true; $('query-tokens').hidden = true;
   $('query-bubble').textContent = query; $('query-bubble').hidden = false;
   imageVersion++;
@@ -188,6 +296,7 @@ async function search(query) {
   finally { setBusy(false); $('query').focus(); }
 }
 $('search-form').addEventListener('submit', event => { event.preventDefault(); search($('query').value); });
+$('draft-button').addEventListener('click', generateDraft);
 $('query').addEventListener('keydown', event => {
   if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
     event.preventDefault(); search($('query').value);
@@ -208,7 +317,7 @@ $('export').addEventListener('click', () => {
 $('reset').addEventListener('click', () => {
   response = undefined; selected = undefined; searches = []; imageVersion++;
   $('intro').hidden = false; $('results').replaceChildren(); $('history').replaceChildren();
-  ['query-bubble', 'result-summary', 'query-tokens', 'evidence'].forEach(id => $(id).hidden = true);
+  ['query-bubble', 'result-summary', 'query-tokens', 'evidence', 'draft-panel', 'sources-label'].forEach(id => $(id).hidden = true);
   $('evidence-empty').hidden = false; $('export').disabled = true; notice(''); $('query').value = ''; $('query').focus();
 });
 jsonFetch('/api/info').then(data => {
@@ -217,4 +326,13 @@ jsonFetch('/api/info').then(data => {
   $('doc-subtitle').textContent = `${data.page_count}페이지 · 연결됨`;
   $('chunk-count').textContent = data.chunk_count.toLocaleString();
   $('block-count').textContent = data.block_count.toLocaleString();
+  const generation = data.generation;
+  $('model-name').textContent = generation.enabled ? generation.model : '검색 전용';
+  $('model-mode').textContent = !generation.enabled ? '모델 옵션을 지정하면 N-04를 사용할 수 있습니다.'
+    : generation.provider === 'cloud' ? 'Ollama Cloud · 버튼을 눌렀을 때만 호출' : '로컬 Ollama · 버튼을 눌렀을 때만 호출';
+  $('runtime-label').textContent = generation.enabled && generation.provider === 'cloud' ? 'CLOUD GENERATION' : 'LOCAL MODE';
+  $('runtime-badge').classList.toggle('cloud', generation.enabled && generation.provider === 'cloud');
+  $('data-handling').textContent = generation.data_handling;
+  $('draft-step').classList.toggle('pending', !generation.enabled);
+  setBusy(false);
 }).catch(error => { notice('문서 연결 실패: ' + error.message, true); $('search-button').disabled = true; });

@@ -179,6 +179,23 @@ class EvidenceBundle:
     budget_limited: bool
     context_strategy_version: str = "fixed-page-window-v1"
 
+@dataclass
+class DraftCitation:
+    evidence_id: str                    # N-02가 만든 근거 항목 ID
+    quote: str                          # 그 근거에서 '그대로' 가져온 구절
+
+@dataclass
+class DraftClaim:
+    claim_id: str
+    text: str
+    citations: list[DraftCitation]      # 해당 주장을 뒷받침한다고 제시한 근거
+
+@dataclass
+class ReviewDraft:
+    request_ref: str
+    question: str
+    claims: list[DraftClaim]            # 답변을 구성하는 개별 주장 목록
+    missing_information: list[str]      # 질문에 답하기 위해 추가로 필요한 정보
 
 @dataclass
 class StepDiagnostic:
