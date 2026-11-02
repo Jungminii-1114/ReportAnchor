@@ -1,0 +1,1582 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 56,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 769.48,
+            "r": 214.89,
+            "b": 754.48,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "주요 연구내용(요약)",
+      "text": "주요 연구내용(요약)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 56,
+          "bbox": {
+            "l": 70.19912719726562,
+            "t": 747.0141067504883,
+            "r": 525.3881225585938,
+            "b": 120.32513427734375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 101.03999999999996,
+              "r": 127.58980997433599,
+              "b": 113.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "중과제명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 234.95999999999998,
+              "t": 101.03999999999996,
+              "r": 435.99872421744,
+              "b": 113.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "전략적 R&D예산 편성을 위한 정책기반 연구",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 138.84000000000003,
+              "r": 118.10959135392,
+              "b": 150.84000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "구분",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 125.75999999999999,
+              "r": 353.18980997433596,
+              "b": 137.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구책임자 사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 125.75999999999999,
+              "r": 273.269700664128,
+              "b": 137.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "강현규",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.36,
+              "t": 125.75999999999999,
+              "r": 497.411674995456,
+              "b": 137.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 6,
+            "text": "'25.01.01~'25.12.31",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 151.91999999999996,
+              "r": 357.62970066412794,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구비 347백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 151.91999999999996,
+              "r": 271.46945477376,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "'24년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 151.91999999999996,
+              "r": 423.26945477375995,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.91999999999996,
+              "t": 151.91999999999996,
+              "r": 510.8697006641281,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "337백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 188.03999999999996,
+              "r": 127.58980997433599,
+              "b": 200.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 187.34400000000005,
+              "r": 406.82994655449596,
+              "b": 200.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦R&D예산 관련 정책연구를 통한 예산 편성 과정에서의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 411.84,
+              "t": 188.03999999999996,
+              "r": 440.6696733941759,
+              "b": 200.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "전략성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 445.68,
+              "t": 188.03999999999996,
+              "r": 464.90959135392,
+              "b": 200.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 359.64,
+              "r": 127.58980997433599,
+              "b": 371.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 282.144,
+              "r": 503.66956408396806,
+              "b": 333.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦중장기 R&D 투자전략 수립 및 재정지원의 시사점 도출을 위한 기반 연구 - 국내･외 R&D 투자 동향 및 정부 예산지원 관련 주요 정책 아젠다 점검 - 주요 국가전략기술 분야 등 R&D 현황 분석 및 전략적 투자 우선순위 점검",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 358.94399999999996,
+              "r": 522.3900554039042,
+              "b": 448.44,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦R&D 재정투자 및 관련 정책·제도의 주요 이슈 발굴·도출 - 국가전략기술, 글로벌 협력 등 미래성장동력 확충을 위한 전략적 투자방향 설정에 요구되는 선제적 이슈분석 및 제도개선 사항 발굴 - 정책 및 투자현황, 기술분야별 동향 분석 결과와 현장 및 관계자 의견수렴을 기반으로 효율적·전략적 예산 배분 및 편성을 위한 예산 정책방향 제시",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 531.96,
+              "r": 136.22959135391997,
+              "b": 543.96,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정량",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 531.264,
+              "r": 297.86945477375997,
+              "b": 543.96,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦연구보고서･조사자료 등 : 2건",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 583.92,
+              "r": 137.070028594752,
+              "b": 676.4399999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정성 성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 564.024,
+              "r": 457.22959135392,
+              "b": 615.12,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦정부 과학기술 정책 및 혁신성장 정책 방향 심층조사 ◦예산편성 프로세스상의 효율성 개선 및 전략적 투자방안 도출 ◦주요 정책이슈를 반영한 예산편성 현안 및 개선안 등 시사점 도출",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 644.544,
+              "r": 502.7095640839681,
+              "b": 695.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦R&D 예산과 관련된 정책연구를 통해 전략적 예산편성 기반 강화에 기여 ◦R&D 정책 수요자의 의견을 효과적으로 수렴하여 투자방향 설정과정에 활용 ◦R&D 재정지원 전략 및 성과 활용 개선 방안 마련에 활용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 9,
+        "num_cols": 6,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 101.03999999999996,
+                "r": 127.58980997433599,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "중과제명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 101.03999999999996,
+                "r": 127.58980997433599,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "중과제명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 234.95999999999998,
+                "t": 101.03999999999996,
+                "r": 435.99872421744,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "전략적 R&D예산 편성을 위한 정책기반 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 234.95999999999998,
+                "t": 101.03999999999996,
+                "r": 435.99872421744,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "전략적 R&D예산 편성을 위한 정책기반 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 234.95999999999998,
+                "t": 101.03999999999996,
+                "r": 435.99872421744,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "전략적 R&D예산 편성을 위한 정책기반 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 234.95999999999998,
+                "t": 101.03999999999996,
+                "r": 435.99872421744,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "전략적 R&D예산 편성을 위한 정책기반 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 125.75999999999999,
+                "r": 353.18980997433596,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구책임자 사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 125.75999999999999,
+                "r": 273.269700664128,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "강현규",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 125.75999999999999,
+                "r": 497.411674995456,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 125.75999999999999,
+                "r": 497.411674995456,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 138.84000000000003,
+                "r": 118.10959135392,
+                "b": 150.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 151.91999999999996,
+                "r": 357.62970066412794,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구비 347백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 151.91999999999996,
+                "r": 271.46945477376,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "'24년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 151.91999999999996,
+                "r": 423.26945477375995,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.91999999999996,
+                "t": 151.91999999999996,
+                "r": 510.8697006641281,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "337백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 188.03999999999996,
+                "r": 127.58980997433599,
+                "b": 200.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 188.03999999999996,
+                "r": 127.58980997433599,
+                "b": 200.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 187.34400000000005,
+                "r": 406.82994655449596,
+                "b": 200.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦R&D예산 관련 정책연구를 통한 예산 편성 과정에서의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 411.84,
+                "t": 188.03999999999996,
+                "r": 440.6696733941759,
+                "b": 200.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "전략성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 445.68,
+                "t": 188.03999999999996,
+                "r": 464.90959135392,
+                "b": 200.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 282.144,
+                "r": 503.66956408396806,
+                "b": 333.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦중장기 R&D 투자전략 수립 및 재정지원의 시사점 도출을 위한 기반 연구 - 국내･외 R&D 투자 동향 및 정부 예산지원 관련 주요 정책 아젠다 점검 - 주요 국가전략기술 분야 등 R&D 현황 분석 및 전략적 투자 우선순위 점검",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 282.144,
+                "r": 503.66956408396806,
+                "b": 333.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦중장기 R&D 투자전략 수립 및 재정지원의 시사점 도출을 위한 기반 연구 - 국내･외 R&D 투자 동향 및 정부 예산지원 관련 주요 정책 아젠다 점검 - 주요 국가전략기술 분야 등 R&D 현황 분석 및 전략적 투자 우선순위 점검",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 282.144,
+                "r": 503.66956408396806,
+                "b": 333.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦중장기 R&D 투자전략 수립 및 재정지원의 시사점 도출을 위한 기반 연구 - 국내･외 R&D 투자 동향 및 정부 예산지원 관련 주요 정책 아젠다 점검 - 주요 국가전략기술 분야 등 R&D 현황 분석 및 전략적 투자 우선순위 점검",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 282.144,
+                "r": 503.66956408396806,
+                "b": 333.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦중장기 R&D 투자전략 수립 및 재정지원의 시사점 도출을 위한 기반 연구 - 국내･외 R&D 투자 동향 및 정부 예산지원 관련 주요 정책 아젠다 점검 - 주요 국가전략기술 분야 등 R&D 현황 분석 및 전략적 투자 우선순위 점검",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 359.64,
+                "r": 127.58980997433599,
+                "b": 371.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 359.64,
+                "r": 127.58980997433599,
+                "b": 371.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 358.94399999999996,
+                "r": 522.3900554039042,
+                "b": 448.44,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D 재정투자 및 관련 정책·제도의 주요 이슈 발굴·도출 - 국가전략기술, 글로벌 협력 등 미래성장동력 확충을 위한 전략적 투자방향 설정에 요구되는 선제적 이슈분석 및 제도개선 사항 발굴 - 정책 및 투자현황, 기술분야별 동향 분석 결과와 현장 및 관계자 의견수렴을 기반으로 효율적·전략적 예산 배분 및 편성을 위한 예산 정책방향 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 358.94399999999996,
+                "r": 522.3900554039042,
+                "b": 448.44,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D 재정투자 및 관련 정책·제도의 주요 이슈 발굴·도출 - 국가전략기술, 글로벌 협력 등 미래성장동력 확충을 위한 전략적 투자방향 설정에 요구되는 선제적 이슈분석 및 제도개선 사항 발굴 - 정책 및 투자현황, 기술분야별 동향 분석 결과와 현장 및 관계자 의견수렴을 기반으로 효율적·전략적 예산 배분 및 편성을 위한 예산 정책방향 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 358.94399999999996,
+                "r": 522.3900554039042,
+                "b": 448.44,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D 재정투자 및 관련 정책·제도의 주요 이슈 발굴·도출 - 국가전략기술, 글로벌 협력 등 미래성장동력 확충을 위한 전략적 투자방향 설정에 요구되는 선제적 이슈분석 및 제도개선 사항 발굴 - 정책 및 투자현황, 기술분야별 동향 분석 결과와 현장 및 관계자 의견수렴을 기반으로 효율적·전략적 예산 배분 및 편성을 위한 예산 정책방향 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 358.94399999999996,
+                "r": 522.3900554039042,
+                "b": 448.44,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D 재정투자 및 관련 정책·제도의 주요 이슈 발굴·도출 - 국가전략기술, 글로벌 협력 등 미래성장동력 확충을 위한 전략적 투자방향 설정에 요구되는 선제적 이슈분석 및 제도개선 사항 발굴 - 정책 및 투자현황, 기술분야별 동향 분석 결과와 현장 및 관계자 의견수렴을 기반으로 효율적·전략적 예산 배분 및 편성을 위한 예산 정책방향 제시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 531.96,
+                "r": 136.22959135391997,
+                "b": 543.96,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정량",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 531.264,
+                "r": 297.86945477375997,
+                "b": 543.96,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦연구보고서･조사자료 등 : 2건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 531.264,
+                "r": 297.86945477375997,
+                "b": 543.96,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦연구보고서･조사자료 등 : 2건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 531.264,
+                "r": 297.86945477375997,
+                "b": 543.96,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦연구보고서･조사자료 등 : 2건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 531.264,
+                "r": 297.86945477375997,
+                "b": 543.96,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦연구보고서･조사자료 등 : 2건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 583.92,
+                "r": 137.070028594752,
+                "b": 676.4399999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정성 성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 564.024,
+                "r": 457.22959135392,
+                "b": 615.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦정부 과학기술 정책 및 혁신성장 정책 방향 심층조사 ◦예산편성 프로세스상의 효율성 개선 및 전략적 투자방안 도출 ◦주요 정책이슈를 반영한 예산편성 현안 및 개선안 등 시사점 도출",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 564.024,
+                "r": 457.22959135392,
+                "b": 615.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦정부 과학기술 정책 및 혁신성장 정책 방향 심층조사 ◦예산편성 프로세스상의 효율성 개선 및 전략적 투자방안 도출 ◦주요 정책이슈를 반영한 예산편성 현안 및 개선안 등 시사점 도출",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 564.024,
+                "r": 457.22959135392,
+                "b": 615.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦정부 과학기술 정책 및 혁신성장 정책 방향 심층조사 ◦예산편성 프로세스상의 효율성 개선 및 전략적 투자방안 도출 ◦주요 정책이슈를 반영한 예산편성 현안 및 개선안 등 시사점 도출",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 564.024,
+                "r": 457.22959135392,
+                "b": 615.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦정부 과학기술 정책 및 혁신성장 정책 방향 심층조사 ◦예산편성 프로세스상의 효율성 개선 및 전략적 투자방안 도출 ◦주요 정책이슈를 반영한 예산편성 현안 및 개선안 등 시사점 도출",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 644.544,
+                "r": 502.7095640839681,
+                "b": 695.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D 예산과 관련된 정책연구를 통해 전략적 예산편성 기반 강화에 기여 ◦R&D 정책 수요자의 의견을 효과적으로 수렴하여 투자방향 설정과정에 활용 ◦R&D 재정지원 전략 및 성과 활용 개선 방안 마련에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 644.544,
+                "r": 502.7095640839681,
+                "b": 695.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D 예산과 관련된 정책연구를 통해 전략적 예산편성 기반 강화에 기여 ◦R&D 정책 수요자의 의견을 효과적으로 수렴하여 투자방향 설정과정에 활용 ◦R&D 재정지원 전략 및 성과 활용 개선 방안 마련에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 644.544,
+                "r": 502.7095640839681,
+                "b": 695.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D 예산과 관련된 정책연구를 통해 전략적 예산편성 기반 강화에 기여 ◦R&D 정책 수요자의 의견을 효과적으로 수렴하여 투자방향 설정과정에 활용 ◦R&D 재정지원 전략 및 성과 활용 개선 방안 마련에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 644.544,
+                "r": 502.7095640839681,
+                "b": 695.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D 예산과 관련된 정책연구를 통해 전략적 예산편성 기반 강화에 기여 ◦R&D 정책 수요자의 의견을 효과적으로 수렴하여 투자방향 설정과정에 활용 ◦R&D 재정지원 전략 및 성과 활용 개선 방안 마련에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "56": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 56
+    }
+  }
+}

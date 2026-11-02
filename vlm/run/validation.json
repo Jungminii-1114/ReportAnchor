@@ -1,0 +1,11 @@
+{
+  "tasks": 6,
+  "documents": 3,
+  "tables": 4,
+  "metrics": 2,
+  "input_image_hashes_checked": true,
+  "schema_rejection_checked": true,
+  "original_prompts_verified": true,
+  "vlm_calls": 0,
+  "mode": "prepared_only"
+}

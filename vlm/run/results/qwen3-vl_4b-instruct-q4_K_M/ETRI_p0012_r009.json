@@ -1,0 +1,78 @@
+{
+  "task_id": "ETRI_p0012_r009",
+  "kind": "metric",
+  "purpose": "기본 텍스트 0인 비율 지표 추출",
+  "input_signature": "650478e06b6318ee5575440a65f038ce23a6240b6cec112d38c10d63684b26b1",
+  "metadata": {
+    "doc_id": "doc_c5371b7dfc62016a",
+    "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+    "region_id": "p0012_r009",
+    "pdf_page": 12,
+    "selection_bbox": [
+      908.9166666666666,
+      127.39373754882808,
+      1174.866005859375,
+      317.27298966471346
+    ],
+    "source_locator": {
+      "type": "pdf_page_bbox",
+      "pdf_page": 12,
+      "bbox": [
+        902.9166870117188,
+        121.39373779296875,
+        1180.865966796875,
+        323.2729797363281
+      ],
+      "units": "pt",
+      "coordinate_space": "pymupdf_unrotated_page"
+    },
+    "selection_rule_version": "baseline-oriented-selection/4",
+    "verification_status": "unverified",
+    "model": "qwen3-vl:4b-instruct-q4_K_M",
+    "prompt_sha256": "ee98938c02df0ec2a3253a88825d2cdcd28bb18e7b22b90d84953d9988ef772e",
+    "prompt_file": "prompts/metric_pilot.txt",
+    "extraction_method": "vlm",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "num_predict": 2048
+    }
+  },
+  "baseline_file": "inputs/ETRI_p0012_r009_baseline.json",
+  "image_file": "inputs/ETRI_p0012_r009.png",
+  "status": "schema_valid_content_unverified",
+  "extraction": {
+    "items": [
+      {
+        "group": "주요 공공연구기관 연구생산성",
+        "item": "총자수익 포함",
+        "value": "7.55",
+        "unit": "%"
+      },
+      {
+        "group": "",
+        "item": "ITRI (대만)",
+        "value": "6.2",
+        "unit": "%"
+      },
+      {
+        "group": "",
+        "item": "Fh.G (독일)",
+        "value": "5.3",
+        "unit": "%"
+      }
+    ],
+    "issues": []
+  },
+  "ollama_metrics": {
+    "total_duration": 62179289900,
+    "load_duration": 12790000,
+    "prompt_eval_count": 1240,
+    "prompt_eval_duration": 48869414000,
+    "eval_count": 134,
+    "eval_duration": 13219523000,
+    "done_reason": "stop"
+  },
+  "wall_seconds": 62.20193090000248
+}

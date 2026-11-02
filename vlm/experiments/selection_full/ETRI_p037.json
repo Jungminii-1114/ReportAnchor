@@ -1,0 +1,169 @@
+{
+  "document": "ETRI",
+  "pdf_page": 37,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          0.0,
+          0.0,
+          1190.550048828125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [],
+    "combined_frozen": [
+      {
+        "bbox": [
+          942.8006608072915,
+          0,
+          1190.550048828125,
+          140.60632299804683
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0037_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 37,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 37,
+          "bbox": [
+            942.8006608072915,
+            0,
+            1190.550048828125,
+            140.60632299804683
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          942.3006608072915,
+          46.727070882161456,
+          1190.550048828125,
+          202.9396563313802
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/3"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0037_r002",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 37,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 37,
+          "bbox": [
+            942.3006608072915,
+            46.727070882161456,
+            1190.550048828125,
+            202.9396563313802
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          942.8006608072915,
+          110.06040421549471,
+          1190.550048828125,
+          266.27298966471346
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/5"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0037_r003",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 37,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 37,
+          "bbox": [
+            942.8006608072915,
+            110.06040421549471,
+            1190.550048828125,
+            266.27298966471346
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          942.8006608072915,
+          172.39373754882808,
+          1190.550048828125,
+          329.2729896647135
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "numeric_context_window_no_semantic_link_inferred"
+        ],
+        "source_refs": [
+          "#/texts/6"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0037_r004",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 37,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 37,
+          "bbox": [
+            942.8006608072915,
+            172.39373754882808,
+            1190.550048828125,
+            329.2729896647135
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

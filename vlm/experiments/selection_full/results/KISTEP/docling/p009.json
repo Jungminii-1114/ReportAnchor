@@ -1,0 +1,2201 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/tables/1"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/tables/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 769.48,
+            "r": 272.88,
+            "b": 754.48,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "성과창출 로드맵 및 최종목표",
+      "text": "성과창출 로드맵 및 최종목표",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 125.64,
+            "t": 721.6,
+            "r": 469.70956408396796,
+            "b": 709.6,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "전략목표 1 : 과학기술혁신 및 국가전략기술정책지원 Think Tank 역할 강화",
+      "text": "전략목표 1 : 과학기술혁신 및 국가전략기술정책지원 Think Tank 역할 강화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 77.39999999999999,
+            "t": 698.7280000000001,
+            "r": 236.23700775982957,
+            "b": 688.768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "성과목표 1-1 과학기술혁신정책 기획ㆍ지원 강화",
+      "text": "성과목표 1-1 과학기술혁신정책 기획ㆍ지원 강화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 77.39999999999999,
+            "t": 682.528,
+            "r": 518.6970371850714,
+            "b": 659.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "(최종목표) 과학기술혁신정책 Think Tank로서 선제적 이슈 발굴 및 정책대안을 제시하고, 데이터 중심 주요 과학기술분야 혁신정책 수립기반 확대",
+      "text": "(최종목표) 과학기술혁신정책 Think Tank로서 선제적 이슈 발굴 및 정책대안을 제시하고, 데이터 중심 주요 과학기술분야 혁신정책 수립기반 확대"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 77.39999999999999,
+            "t": 485.608,
+            "r": 285.0771963235005,
+            "b": 475.648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "성과목표 1-2 국가전략기술 육성ㆍ지원 및 미래예측 활용ㆍ확산",
+      "text": "성과목표 1-2 국가전략기술 육성ㆍ지원 및 미래예측 활용ㆍ확산",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 77.39999999999999,
+            "t": 470.00800000000004,
+            "r": 518.8160745984877,
+            "b": 447.088,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            87
+          ]
+        }
+      ],
+      "orig": "(최종목표) 전략기술 플래그쉽 프로젝트 지속 발굴과 국제협력 거버넌스 논의 주도 및 미래예측ㆍ분석 역량 확충을 통해 글로벌 과학기술 정책환경 대응체계 고도화",
+      "text": "(최종목표) 전략기술 플래그쉽 프로젝트 지속 발굴과 국제협력 거버넌스 논의 주도 및 미래예측ㆍ분석 역량 확충을 통해 글로벌 과학기술 정책환경 대응체계 고도화"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 131.04,
+            "t": 257.32000000000005,
+            "r": 464.3095640839679,
+            "b": 245.32000000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "전략목표 2 : 과학기술혁신제도 발굴ㆍ기획 및 성과분석ㆍ확산 역량 제고",
+      "text": "전략목표 2 : 과학기술혁신제도 발굴ㆍ기획 및 성과분석ㆍ확산 역량 제고",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 81.36,
+            "t": 236.36799999999994,
+            "r": 312.0770077598295,
+            "b": 226.40800000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "성과목표 2-1. 연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+      "text": "성과목표 2-1. 연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 70.998046875,
+            "t": 659.4416046142578,
+            "r": 524.4185791015625,
+            "b": 490.6513671875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 116.64,
+              "t": 185.11199999999997,
+              "r": 144.31741303837958,
+              "b": 195.072,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "세부분야",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 265.44,
+              "t": 185.11199999999997,
+              "r": 279.5570077598295,
+              "b": 195.072,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "현재",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 417.47999999999996,
+              "t": 185.11199999999997,
+              "r": 462.6774130383794,
+              "b": 195.072,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "중점 추진계획",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 88.92,
+              "t": 206.832,
+              "r": 172.1366469790293,
+              "b": 229.75199999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "과학기술 분야 중장기계획 수립･점검 지원체계 구축",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 199.77432,
+              "r": 351.4164940406033,
+              "b": 236.23199999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 중장기계획 수립 사전분석 연구, 수립절차, 참여 주체 등의 체계화 노력 필요 ∙ 4대 중장기계획 이행점검 실효성 제고 필요",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 206.25432,
+              "r": 518.9360127473113,
+              "b": 229.75199999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙ 중장기계획 수립·점검 등 각 단계별 체계적인연구 추진정책 점검 절차·체계 고도화 및 환류 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.39999999999999,
+              "t": 247.89432,
+              "r": 183.77637371728034,
+              "b": 271.39200000000005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "혁신･도전형 R&D 정책･제도 기획 및 운영 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 247.89432,
+              "r": 351.2964029533536,
+              "b": 271.39200000000005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 혁신·도전형 사업 추진 제도·환경적 한계 존재(전 용 예산 부재, 인센티브 및 제도·규정 미비 등)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 241.99199999999996,
+              "r": 518.6967383417583,
+              "b": 277.87199999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "· 혁신·도전형 R&D사업 기준 정립, 관리 점검 방안 · 개발 및 육성을 위한 제도 설계 · 혁신·도전형 R&D거버넌스 운영 및 시스템 구축",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 82.08,
+              "t": 290.11199999999997,
+              "r": 178.9767999174554,
+              "b": 313.0319999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "데이터 기반 과학기술혁신정책 기획 기반 확대",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 289.53432,
+              "r": 351.2961330706344,
+              "b": 313.0319999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 스코어보드 운영을 통해 생산된 데이터 활용도 부족 ∙ 정보플랫폼 질적 성장 필요",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 283.63200000000006,
+              "r": 518.9361038345611,
+              "b": 319.63200000000006,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "· 정책 수립 시 기반자료 제공 및 정책고객 활용도 제고 · 과학기술혁신정보 플랫폼 운영 및 개선",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 82.08,
+              "t": 325.27199999999993,
+              "r": 178.97649404060326,
+              "b": 348.19199999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "과학기술혁신정책 상시적 이슈 발굴 체계 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 324.69432000000006,
+              "r": 351.1759469661467,
+              "b": 348.19199999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 전년도 발굴 아젠다현황 분석 없이 혁신정책 아젠다 매년 발굴하여 발표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 325.27199999999993,
+              "r": 518.8157428645922,
+              "b": 348.19199999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "· 전년도 발굴 아젠다현황 추적 및 분석 기반 차년도 아젠다발굴·관리체계 구축",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 116.64,
+                "t": 185.11199999999997,
+                "r": 144.31741303837958,
+                "b": 195.072,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "세부분야",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 265.44,
+                "t": 185.11199999999997,
+                "r": 279.5570077598295,
+                "b": 195.072,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "현재",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 417.47999999999996,
+                "t": 185.11199999999997,
+                "r": 462.6774130383794,
+                "b": 195.072,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "중점 추진계획",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 88.92,
+                "t": 206.832,
+                "r": 172.1366469790293,
+                "b": 229.75199999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술 분야 중장기계획 수립･점검 지원체계 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 199.77432,
+                "r": 351.4164940406033,
+                "b": 236.23199999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 중장기계획 수립 사전분석 연구, 수립절차, 참여 주체 등의 체계화 노력 필요 ∙ 4대 중장기계획 이행점검 실효성 제고 필요",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 206.25432,
+                "r": 518.9360127473113,
+                "b": 229.75199999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙ 중장기계획 수립·점검 등 각 단계별 체계적인연구 추진정책 점검 절차·체계 고도화 및 환류 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.39999999999999,
+                "t": 247.89432,
+                "r": 183.77637371728034,
+                "b": 271.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "혁신･도전형 R&D 정책･제도 기획 및 운영 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 247.89432,
+                "r": 351.2964029533536,
+                "b": 271.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 혁신·도전형 사업 추진 제도·환경적 한계 존재(전 용 예산 부재, 인센티브 및 제도·규정 미비 등)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 241.99199999999996,
+                "r": 518.6967383417583,
+                "b": 277.87199999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "· 혁신·도전형 R&D사업 기준 정립, 관리 점검 방안 · 개발 및 육성을 위한 제도 설계 · 혁신·도전형 R&D거버넌스 운영 및 시스템 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 82.08,
+                "t": 290.11199999999997,
+                "r": 178.9767999174554,
+                "b": 313.0319999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "데이터 기반 과학기술혁신정책 기획 기반 확대",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 289.53432,
+                "r": 351.2961330706344,
+                "b": 313.0319999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 스코어보드 운영을 통해 생산된 데이터 활용도 부족 ∙ 정보플랫폼 질적 성장 필요",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 283.63200000000006,
+                "r": 518.9361038345611,
+                "b": 319.63200000000006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "· 정책 수립 시 기반자료 제공 및 정책고객 활용도 제고 · 과학기술혁신정보 플랫폼 운영 및 개선",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 82.08,
+                "t": 325.27199999999993,
+                "r": 178.97649404060326,
+                "b": 348.19199999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신정책 상시적 이슈 발굴 체계 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 324.69432000000006,
+                "r": 351.1759469661467,
+                "b": 348.19199999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 전년도 발굴 아젠다현황 분석 없이 혁신정책 아젠다 매년 발굴하여 발표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 325.27199999999993,
+                "r": 518.8157428645922,
+                "b": 348.19199999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "· 전년도 발굴 아젠다현황 추적 및 분석 기반 차년도 아젠다발굴·관리체계 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 71.01618194580078,
+            "t": 447.4410400390625,
+            "r": 524.6521606445312,
+            "b": 291.5361328125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 116.64,
+              "t": 397.75199999999995,
+              "r": 144.31741303837958,
+              "b": 407.712,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "세부분야",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 265.44,
+              "t": 397.75199999999995,
+              "r": 279.5570077598295,
+              "b": 407.712,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "현재",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 417.47999999999996,
+              "t": 397.75199999999995,
+              "r": 462.6774130383794,
+              "b": 407.712,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "중점 추진계획",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.39999999999999,
+              "t": 418.77432,
+              "r": 183.65655589177965,
+              "b": 442.272,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "국가전략기술 발굴･육성 지원체계 구축",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 418.77432,
+              "r": 351.4164029533536,
+              "b": 442.272,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 기업투자 축소·확대, 특정 기술혁신, 공급망 불안 등 ∙ 이슈에 따라 신규 기술 확보 필요 가능성 존재",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 418.77432,
+              "r": 514.6162533939573,
+              "b": 442.272,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙ 전략기술 및 프로젝트 추가 선정 ∙ 롤링플랜 관점에서 임무중심 전략 로드맵 보완",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 88.92,
+              "t": 460.99199999999996,
+              "r": 172.13649404060325,
+              "b": 484.032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "국가전략기술 테크인텔리전스 역량 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 460.41432,
+              "r": 351.1761330706344,
+              "b": 484.032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 전략적 중요성과 정책 목표에 부합하는 기술 발굴 및 정책 연계성 강화 필요",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 460.41432,
+              "r": 518.8160127473113,
+              "b": 484.032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙ 테크인텔리전스 활용 방법론 및 플랫폼 분석 도구 개발 등을 통해 세부 정책 수립의 적시성 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 84.96,
+              "t": 496.15200000000004,
+              "r": 176.09649404060326,
+              "b": 519.072,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "글로벌 R&D 협력 기반강화 및 이행 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 495.57432,
+              "r": 340.4964940406033,
+              "b": 519.072,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 글로벌 R&D범부처종합 전략 부재 ∙ 수요 기반의 국제협력 R&D사업 기획 필요",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 496.15200000000004,
+              "r": 516.6560127473114,
+              "b": 519.072,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "· 글로벌 R&D 범부처종합전략 및 과제 이행 지원 · 데이터 기반 국제협력 R&D전략 수립 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 84.96,
+              "t": 524.832,
+              "r": 176.0964029533536,
+              "b": 547.7520000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "미래예측 선진 역량 확보 및 성과 활용 확산",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 524.25432,
+              "r": 351.29538527365327,
+              "b": 547.7520000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 과학기술예측조사, 기술영향평가, 기술수준조사의 정책적 활용도 증대 필요",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 524.25432,
+              "r": 518.9362533939574,
+              "b": 547.7520000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙ 미래 정보 모니터링체계 구축을 통한 미래이슈, 기술 발굴·분석 결과 활용도 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 116.64,
+                "t": 397.75199999999995,
+                "r": 144.31741303837958,
+                "b": 407.712,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "세부분야",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 265.44,
+                "t": 397.75199999999995,
+                "r": 279.5570077598295,
+                "b": 407.712,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "현재",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 417.47999999999996,
+                "t": 397.75199999999995,
+                "r": 462.6774130383794,
+                "b": 407.712,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "중점 추진계획",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.39999999999999,
+                "t": 418.77432,
+                "r": 183.65655589177965,
+                "b": 442.272,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "국가전략기술 발굴･육성 지원체계 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 418.77432,
+                "r": 351.4164029533536,
+                "b": 442.272,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 기업투자 축소·확대, 특정 기술혁신, 공급망 불안 등 ∙ 이슈에 따라 신규 기술 확보 필요 가능성 존재",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 418.77432,
+                "r": 514.6162533939573,
+                "b": 442.272,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙ 전략기술 및 프로젝트 추가 선정 ∙ 롤링플랜 관점에서 임무중심 전략 로드맵 보완",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 88.92,
+                "t": 460.99199999999996,
+                "r": 172.13649404060325,
+                "b": 484.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "국가전략기술 테크인텔리전스 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 460.41432,
+                "r": 351.1761330706344,
+                "b": 484.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 전략적 중요성과 정책 목표에 부합하는 기술 발굴 및 정책 연계성 강화 필요",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 460.41432,
+                "r": 518.8160127473113,
+                "b": 484.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙ 테크인텔리전스 활용 방법론 및 플랫폼 분석 도구 개발 등을 통해 세부 정책 수립의 적시성 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 84.96,
+                "t": 496.15200000000004,
+                "r": 176.09649404060326,
+                "b": 519.072,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "글로벌 R&D 협력 기반강화 및 이행 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 495.57432,
+                "r": 340.4964940406033,
+                "b": 519.072,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 글로벌 R&D범부처종합 전략 부재 ∙ 수요 기반의 국제협력 R&D사업 기획 필요",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 496.15200000000004,
+                "r": 516.6560127473114,
+                "b": 519.072,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "· 글로벌 R&D 범부처종합전략 및 과제 이행 지원 · 데이터 기반 국제협력 R&D전략 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 84.96,
+                "t": 524.832,
+                "r": 176.0964029533536,
+                "b": 547.7520000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "미래예측 선진 역량 확보 및 성과 활용 확산",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 524.25432,
+                "r": 351.29538527365327,
+                "b": 547.7520000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 과학기술예측조사, 기술영향평가, 기술수준조사의 정책적 활용도 증대 필요",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 524.25432,
+                "r": 518.9362533939574,
+                "b": 547.7520000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙ 미래 정보 모니터링체계 구축을 통한 미래이슈, 기술 발굴·분석 결과 활용도 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 70.91569519042969,
+            "t": 224.04736328125,
+            "r": 524.6597290039062,
+            "b": 75.7110595703125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 77.39999999999999,
+              "t": 620.352,
+              "r": 512.0963737172802,
+              "b": 630.312,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 3,
+            "text": "(최종목표) 연구현장 수요기반의 제도 개선 체계화, 연구현장 권익보호 및 IRIS 2.0 환경 구축을 통한 혁신형 R&D 시스템 전환에 기여",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.64,
+              "t": 635.472,
+              "r": 144.31741303837958,
+              "b": 645.432,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "세부분야",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 265.44,
+              "t": 635.472,
+              "r": 279.5570077598295,
+              "b": 645.432,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "현재",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 417.47999999999996,
+              "t": 635.472,
+              "r": 462.6774130383794,
+              "b": 645.432,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "중점 추진계획",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 82.08,
+              "t": 655.272,
+              "r": 178.97673806627898,
+              "b": 679.152,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "연구현장 중심의 국가연구개발 제도 개선･운영",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 648.69432,
+              "r": 351.29750386032686,
+              "b": 685.152,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 개선된 제도 이해도 제고 및 현장착근지원 필요 ∙ 국제공동연구, 선도형 R&D 등 변화하는 연구환경을 고려한 지속적 제도개선 필요",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 655.17432,
+              "r": 518.8163737172802,
+              "b": 678.672,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙ 설명회, 매뉴얼 FAQ, 연구관리혁신협의회 등을 통한 연구현장과 소통 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 81.24,
+              "t": 694.032,
+              "r": 179.69610383456114,
+              "b": 718.032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "국가R&D 연구윤리 내실화 및 연구현장 권익보호 체계 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 687.4543199999999,
+              "r": 351.1755823416686,
+              "b": 724.032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 국가 R&D연구윤리 제도의 글로벌 스탠다드 부합성 식별 부재 ∙ 연구윤리 정착을 위한 보완책 마련 필요",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 687.4543199999999,
+              "r": 518.8158339518419,
+              "b": 724.032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙ 글로벌 스탠다드에 부합하는 국가 R&D 연구윤리 개념 및 제도기반 확립 ∙ 연구자권익보호위원회 운영 방안 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.39999999999999,
+              "t": 733.8720000000001,
+              "r": 183.6822471617052,
+              "b": 757.8720000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "범부처통합연구지원시스템(IRIS) 2.0 후속조치 및 안정성 확보",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 193.92,
+              "t": 733.77432,
+              "r": 351.49775330963996,
+              "b": 757.272,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "∙ 범부처통합연구지원시스템을 구축하고 `22년 5개, `23년 29개 이상 전문기관 적용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.44,
+              "t": 733.77432,
+              "r": 518.8167054511758,
+              "b": 757.272,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙ 데이터 기반 통합관리체계 후속조치 및 안정성 확보, 클라우드 전환준비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 77.39999999999999,
+                "t": 620.352,
+                "r": 512.0963737172802,
+                "b": 630.312,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "(최종목표) 연구현장 수요기반의 제도 개선 체계화, 연구현장 권익보호 및 IRIS 2.0 환경 구축을 통한 혁신형 R&D 시스템 전환에 기여",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 77.39999999999999,
+                "t": 620.352,
+                "r": 512.0963737172802,
+                "b": 630.312,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "(최종목표) 연구현장 수요기반의 제도 개선 체계화, 연구현장 권익보호 및 IRIS 2.0 환경 구축을 통한 혁신형 R&D 시스템 전환에 기여",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 77.39999999999999,
+                "t": 620.352,
+                "r": 512.0963737172802,
+                "b": 630.312,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "(최종목표) 연구현장 수요기반의 제도 개선 체계화, 연구현장 권익보호 및 IRIS 2.0 환경 구축을 통한 혁신형 R&D 시스템 전환에 기여",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 116.64,
+                "t": 635.472,
+                "r": 144.31741303837958,
+                "b": 645.432,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "세부분야",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 265.44,
+                "t": 635.472,
+                "r": 279.5570077598295,
+                "b": 645.432,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "현재",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 417.47999999999996,
+                "t": 635.472,
+                "r": 462.6774130383794,
+                "b": 645.432,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "중점 추진계획",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 82.08,
+                "t": 655.272,
+                "r": 178.97673806627898,
+                "b": 679.152,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "연구현장 중심의 국가연구개발 제도 개선･운영",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 648.69432,
+                "r": 351.29750386032686,
+                "b": 685.152,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 개선된 제도 이해도 제고 및 현장착근지원 필요 ∙ 국제공동연구, 선도형 R&D 등 변화하는 연구환경을 고려한 지속적 제도개선 필요",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 655.17432,
+                "r": 518.8163737172802,
+                "b": 678.672,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙ 설명회, 매뉴얼 FAQ, 연구관리혁신협의회 등을 통한 연구현장과 소통 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 81.24,
+                "t": 694.032,
+                "r": 179.69610383456114,
+                "b": 718.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "국가R&D 연구윤리 내실화 및 연구현장 권익보호 체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 687.4543199999999,
+                "r": 351.1755823416686,
+                "b": 724.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 국가 R&D연구윤리 제도의 글로벌 스탠다드 부합성 식별 부재 ∙ 연구윤리 정착을 위한 보완책 마련 필요",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 687.4543199999999,
+                "r": 518.8158339518419,
+                "b": 724.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙ 글로벌 스탠다드에 부합하는 국가 R&D 연구윤리 개념 및 제도기반 확립 ∙ 연구자권익보호위원회 운영 방안 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.39999999999999,
+                "t": 733.8720000000001,
+                "r": 183.6822471617052,
+                "b": 757.8720000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "범부처통합연구지원시스템(IRIS) 2.0 후속조치 및 안정성 확보",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 193.92,
+                "t": 733.77432,
+                "r": 351.49775330963996,
+                "b": 757.272,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "∙ 범부처통합연구지원시스템을 구축하고 `22년 5개, `23년 29개 이상 전문기관 적용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.44,
+                "t": 733.77432,
+                "r": 518.8167054511758,
+                "b": 757.272,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙ 데이터 기반 통합관리체계 후속조치 및 안정성 확보, 클라우드 전환준비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "9": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 9
+    }
+  }
+}

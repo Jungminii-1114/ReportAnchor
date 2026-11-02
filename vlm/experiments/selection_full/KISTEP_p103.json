@@ -1,0 +1,221 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 103,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 1128,
+    "native_tables": 3,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          70.82200241088867,
+          243.093994140625,
+          522.9186503092448,
+          392.92999267578125
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          69.86613464355469,
+          241.99728393554688,
+          524.1666259765625,
+          393.0223693847656
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          69.82206726074219,
+          470.95709228515625,
+          522.73583984375,
+          529.7669067382812
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          69.98314666748047,
+          632.7876586914062,
+          523.5575561523438,
+          704.3716430664062
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          69.86613464355469,
+          241.99728393554688,
+          524.1666259765625,
+          393.0223693847656
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0103_r001",
+        "context": [
+          {
+            "text": "❍ 정ㆍ현원 변화표",
+            "bbox": [
+              80.88,
+              142.84032000000002,
+              189.84809891275296,
+              156.55200000000002
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 103,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 103,
+          "bbox": [
+            69.86613464355469,
+            241.99728393554688,
+            524.1666259765625,
+            393.0223693847656
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.82206726074219,
+          470.95709228515625,
+          522.73583984375,
+          529.7669067382812
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0103_r002",
+        "context": [
+          {
+            "text": "- 정원 변동 내역",
+            "bbox": [
+              95.88,
+              449.592,
+              191.04855272967362,
+              462.55199999999996
+            ],
+            "source_ref": "#/texts/7"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 103,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 103,
+          "bbox": [
+            69.82206726074219,
+            470.95709228515625,
+            522.73583984375,
+            529.7669067382812
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          69.98314666748047,
+          632.7876586914062,
+          523.5575561523438,
+          704.3716430664062
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0103_r003",
+        "context": [
+          {
+            "text": "❍ '25년 정규직 채용 계획",
+            "bbox": [
+              80.88,
+              562.12032,
+              229.8085527296736,
+              575.832
+            ],
+            "source_ref": "#/texts/8"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 103,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 103,
+          "bbox": [
+            69.98314666748047,
+            632.7876586914062,
+            523.5575561523438,
+            704.3716430664062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

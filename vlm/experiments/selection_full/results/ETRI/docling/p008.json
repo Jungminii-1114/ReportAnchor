@@ -1,0 +1,3046 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/71"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 42.333333333333336,
+            "t": 725.181,
+            "r": 71.66666666666666,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "일반현황",
+      "text": "일반현황"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 40.0,
+            "t": 703.181,
+            "r": 194.66666666666666,
+            "b": 678.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "특허출원 Patent Application",
+      "text": "특허출원 Patent Application",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 334.3333333333333,
+            "t": 611.181,
+            "r": 342.3333333333333,
+            "b": 601.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "건",
+      "text": "건"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 222.0,
+            "t": 614.8476666666668,
+            "r": 336.6666666666667,
+            "b": 568.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "3,040",
+      "text": "3,040"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 144.66666666666669,
+            "t": 415.51433333333335,
+            "r": 180.66666666666666,
+            "b": 402.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "국내출원",
+      "text": "국내출원"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 394.0,
+            "t": 414.8476666666667,
+            "r": 430.0,
+            "b": 402.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "국제출원",
+      "text": "국제출원"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 93.33333333333333,
+            "t": 398.18100000000004,
+            "r": 208.0,
+            "b": 351.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "2,152",
+      "text": "2,152"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 369.6666666666667,
+            "t": 397.8476666666667,
+            "r": 447.0,
+            "b": 356.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "888",
+      "text": "888"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 227.0,
+            "t": 296.51433333333335,
+            "r": 339.3333333333333,
+            "b": 282.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "총 특히출원 수 (건 5년 누적)",
+      "text": "총 특히출원 수 (건 5년 누적)"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 213.0,
+            "t": 275.51433333333335,
+            "r": 349.3333333333333,
+            "b": 228.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "14,354",
+      "text": "14,354"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 76.0,
+            "t": 187.5143333333334,
+            "r": 147.33333333333331,
+            "b": 157.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2020",
+      "text": "2020"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 420.6666666666667,
+            "t": 187.5143333333334,
+            "r": 492.6666666666667,
+            "b": 157.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2024",
+      "text": "2024"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 461.6666666666667,
+            "t": 672.5143333333334,
+            "r": 525.6666666666667,
+            "b": 662.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "(2024. 12 31. 기준)",
+      "text": "(2024. 12 31. 기준)"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 664.3333333333334,
+            "t": 701.5143333333334,
+            "r": 821.6666666666666,
+            "b": 679.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "기술이전 Technology Transfer",
+      "text": "기술이전 Technology Transfer"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1084.6666666666667,
+            "t": 672.5143333333334,
+            "r": 1148.6666666666667,
+            "b": 662.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "(2024. 12. 31. 기준)",
+      "text": "(2024. 12. 31. 기준)"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 647.5143333333334,
+            "r": 749.0,
+            "b": 634.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "기술 수 (건/5년 누적)",
+      "text": "기술 수 (건/5년 누적)"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 913.0,
+            "t": 647.5143333333334,
+            "r": 1012.3333333333333,
+            "b": 634.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "기술료 (백만 원5년 누적)",
+      "text": "기술료 (백만 원5년 누적)"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1069.0,
+            "t": 624.181,
+            "r": 1095.6666666666667,
+            "b": 612.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "백만 원",
+      "text": "백만 원"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 620.5143333333333,
+            "r": 680.6666666666666,
+            "b": 588.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "1",
+      "text": "1"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 911.6666666666667,
+            "t": 626.8476666666667,
+            "r": 1073.0,
+            "b": 580.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "285,813",
+      "text": "285,813"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 665.0,
+            "t": 573.5143333333334,
+            "r": 701.0,
+            "b": 560.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "5년 평균",
+      "text": "5년 평균"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 913.0,
+            "t": 572.8476666666667,
+            "r": 948.3333333333333,
+            "b": 560.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "5년 평균",
+      "text": "5년 평균"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 698.6666666666666,
+            "t": 553.8476666666667,
+            "r": 706.6666666666666,
+            "b": 545.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "건",
+      "text": "건"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 976.0,
+            "t": 554.5143333333334,
+            "r": 995.3333333333333,
+            "b": 545.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "박만 원",
+      "text": "박만 원"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 663.0,
+            "t": 554.181,
+            "r": 701.6666666666666,
+            "b": 533.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "312",
+      "text": "312"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 912.3333333333333,
+            "t": 554.181,
+            "r": 977.6666666666667,
+            "b": 532.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "57,162",
+      "text": "57,162"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 932.6666666666667,
+            "t": 496.5143333333334,
+            "r": 962.0,
+            "b": 485.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "63,962",
+      "text": "63,962"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1105.3333333333333,
+            "t": 495.18100000000004,
+            "r": 1136.3333333333333,
+            "b": 482.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "63,845",
+      "text": "63,845"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 731.3333333333334,
+            "t": 475.84766666666667,
+            "r": 748.6666666666666,
+            "b": 465.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "370",
+      "text": "370"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 976.0,
+            "t": 471.84766666666667,
+            "r": 1005.3333333333333,
+            "b": 461.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "53,178",
+      "text": "53,178"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1062.6666666666667,
+            "t": 475.18100000000004,
+            "r": 1092.0,
+            "b": 464.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "54,579",
+      "text": "54,579"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 688.0,
+            "t": 460.5143333333334,
+            "r": 705.3333333333334,
+            "b": 450.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "304",
+      "text": "304"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 776.0,
+            "t": 464.5143333333334,
+            "r": 792.6666666666666,
+            "b": 453.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "320",
+      "text": "320"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 818.6666666666666,
+            "t": 460.5143333333334,
+            "r": 836.0,
+            "b": 450.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "304",
+      "text": "304"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1019.3333333333333,
+            "t": 465.18100000000004,
+            "r": 1049.3333333333333,
+            "b": 454.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "50,249",
+      "text": "50,249"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 862.6666666666666,
+            "t": 453.84766666666667,
+            "r": 878.6666666666666,
+            "b": 443.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "261",
+      "text": "261"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 686.0,
+            "t": 391.18100000000004,
+            "r": 708.0,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2020",
+      "text": "2020"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 729.3333333333334,
+            "t": 391.18100000000004,
+            "r": 750.0,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2021",
+      "text": "2021"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 773.3333333333334,
+            "t": 391.18100000000004,
+            "r": 795.3333333333334,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2022",
+      "text": "2022"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 816.6666666666666,
+            "t": 391.18100000000004,
+            "r": 838.6666666666666,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2023",
+      "text": "2023"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 860.0,
+            "t": 391.18100000000004,
+            "r": 882.0,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2024",
+      "text": "2024"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 936.6666666666667,
+            "t": 391.18100000000004,
+            "r": 958.6666666666667,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2020",
+      "text": "2020"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 980.0,
+            "t": 391.18100000000004,
+            "r": 1000.6666666666667,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2021",
+      "text": "2021"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1023.3333333333333,
+            "t": 391.18100000000004,
+            "r": 1045.3333333333333,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2022",
+      "text": "2022"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1066.6666666666667,
+            "t": 391.18100000000004,
+            "r": 1088.6666666666667,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2023",
+      "text": "2023"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1110.0,
+            "t": 391.18100000000004,
+            "r": 1132.0,
+            "b": 381.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2024",
+      "text": "2024"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 665.0,
+            "t": 339.51433333333335,
+            "r": 783.6666666666666,
+            "b": 325.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "기술이전 기업 수 (건5년 누적)",
+      "text": "기술이전 기업 수 (건5년 누적)"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 841.0,
+            "t": 338.18100000000004,
+            "r": 876.3333333333334,
+            "b": 325.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "5년 평균",
+      "text": "5년 평균"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1102.0,
+            "t": 332.51433333333335,
+            "r": 1148.0,
+            "b": 321.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "중소중견기업",
+      "text": "중소중견기업"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 768.0,
+            "t": 313.8476666666667,
+            "r": 776.0,
+            "b": 305.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "건",
+      "text": "건"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 838.6666666666666,
+            "t": 319.18100000000004,
+            "r": 876.0,
+            "b": 299.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "297",
+      "text": "297"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1102.6666666666667,
+            "t": 317.8476666666667,
+            "r": 1124.6666666666667,
+            "b": 307.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "대기업",
+      "text": "대기업"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 312.51433333333335,
+            "r": 680.6666666666666,
+            "b": 281.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "1",
+      "text": "1"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 679.0,
+            "t": 323.51433333333335,
+            "r": 772.3333333333334,
+            "b": 272.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": ",487",
+      "text": ",487"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1102.0,
+            "t": 305.18100000000004,
+            "r": 1118.6666666666667,
+            "b": 295.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "소계",
+      "text": "소계"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 899.3333333333334,
+            "t": 227.18100000000004,
+            "r": 916.0,
+            "b": 217.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "307",
+      "text": "307"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 720.0,
+            "t": 217.18100000000004,
+            "r": 736.6666666666666,
+            "b": 207.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "287",
+      "text": "287"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 989.3333333333333,
+            "t": 219.18100000000004,
+            "r": 1006.0,
+            "b": 209.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "289",
+      "text": "289"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 798.0,
+            "t": 211.84766666666678,
+            "r": 814.6666666666666,
+            "b": 201.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "349",
+      "text": "349"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1078.0,
+            "t": 201.18100000000004,
+            "r": 1094.6666666666667,
+            "b": 191.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "247",
+      "text": "247"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 708.6666666666666,
+            "t": 177.84766666666667,
+            "r": 726.0,
+            "b": 167.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "284",
+      "text": "284"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 978.0,
+            "t": 180.5143333333334,
+            "r": 994.6666666666667,
+            "b": 169.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "286",
+      "text": "286"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1066.6666666666667,
+            "t": 157.84766666666667,
+            "r": 1084.0,
+            "b": 147.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "246",
+      "text": "246"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 910.6666666666667,
+            "t": 138.5143333333334,
+            "r": 922.0,
+            "b": 128.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "10",
+      "text": "10"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 718.0,
+            "t": 112.51433333333341,
+            "r": 740.0,
+            "b": 102.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2020",
+      "text": "2020"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 806.6666666666666,
+            "t": 112.51433333333341,
+            "r": 828.0,
+            "b": 102.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2021",
+      "text": "2021"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 896.6666666666666,
+            "t": 112.51433333333341,
+            "r": 918.6666666666667,
+            "b": 102.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2022",
+      "text": "2022"
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 986.6666666666667,
+            "t": 113.18100000000004,
+            "r": 1008.6666666666667,
+            "b": 102.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2023",
+      "text": "2023"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1076.0,
+            "t": 112.51433333333341,
+            "r": 1098.0,
+            "b": 102.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "2024",
+      "text": "2024"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 680.383995423069,
+            "t": 625.1453060282734,
+            "r": 770.9493379102644,
+            "b": 585.8833606383934,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": ",559",
+      "text": ",559"
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1137.6666666666667,
+            "t": 38.51433333333341,
+            "r": 1149.0,
+            "b": 30.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "15",
+      "text": "15"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.8675276637077332,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.06132684275507927,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.03774756193161011,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.007818094454705715,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.007642379496246576,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 0.00385202094912529,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.0034290675539523363,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.0031495997682213783,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.002046420471742749,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0013727785553783178,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0007057407055981457,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 0.000701465702150017,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.0005939045804552734,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 0.00043746092705987394,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.0004269578494131565,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.0003100190369877964,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.00025003659538924694,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.00016023628995753825,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.00014652720710728317,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.00014180873404257,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.00010071906581288204,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 5.916712325415574e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 3.610100975492969e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 8.254997737822123e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 6.965008196857525e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 2.1834885046700947e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 41.514429368180046,
+            "t": 700.555608243922,
+            "r": 103.96965118811772,
+            "b": 681.642955075893,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "logo",
+              "confidence": 0.8675276637077332
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.06132684275507927
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.03774756193161011
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.007818094454705715
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.007642379496246576
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.00385202094912529
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.0034290675539523363
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0031495997682213783
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.002046420471742749
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.0013727785553783178
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.0007057407055981457
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.000701465702150017
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 0.0005939045804552734
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.00043746092705987394
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0004269578494131565
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.0003100190369877964
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.00025003659538924694
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.00016023628995753825
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.00014652720710728317
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.00014180873404257
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.00010071906581288204
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 5.916712325415574e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 3.610100975492969e-05
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 8.254997737822123e-06
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 6.965008196857525e-06
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 2.1834885046700947e-06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.29074960947036743,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.1890275478363037,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.1369200348854065,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.11246266216039658,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.05331678315997124,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.04900014400482178,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            },
+            {
+              "confidence": 0.0362202525138855,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.022938894107937813,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.02034723199903965,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.019091861322522163,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 0.015111830085515976,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.010504364967346191,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.008062604814767838,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.00804914440959692,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.007295230403542519,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 0.006746718194335699,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.004224950913339853,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.0031826626509428024,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.002108195563778281,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.0015710557345300913,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 0.0008897513616830111,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 0.0008482520352117717,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.0005920410039834678,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.0003374554216861725,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 0.00025070240371860564,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 0.00014997346443124115,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 38.223032752933065,
+            "t": 666.796303385207,
+            "r": 529.9765001503586,
+            "b": 85.70965279420886,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.29074960947036743
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.1890275478363037
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.1369200348854065
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.11246266216039658
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.05331678315997124
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 0.04900014400482178
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.0362202525138855
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.022938894107937813
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.02034723199903965
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 0.019091861322522163
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.015111830085515976
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.010504364967346191
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.008062604814767838
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.00804914440959692
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 0.007295230403542519
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.006746718194335699
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.004224950913339853
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.0031826626509428024
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.002108195563778281
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.0015710557345300913
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.0008897513616830111
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.0008482520352117717
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0005920410039834678
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 0.0003374554216861725
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 0.00025070240371860564
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.00014997346443124115
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.6020881533622742,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.2369077503681183,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.12090352177619934,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.014700676314532757,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.010092752054333687,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.0030151542741805315,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            },
+            {
+              "confidence": 0.00281306984834373,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.002578792395070195,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0017674148548394442,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0006399535341188312,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.0006114188581705093,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.0006014728569425642,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.0005820764345116913,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 0.0005299458862282336,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.00045315103488974273,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.0003524766070768237,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.00029186232131905854,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.000269074720563367,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 0.0002013251796597615,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.00019514856103342026,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.00016322213923558593,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 8.046293805819005e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 7.452804857166484e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 4.714175884146243e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 3.0302679078886285e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 9.08783022168791e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 660.7601968606713,
+            "t": 670.7497642945939,
+            "r": 1151.0035462655708,
+            "b": 86.89524980618091,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/14"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.6020881533622742
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.2369077503681183
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.12090352177619934
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.014700676314532757
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.010092752054333687
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 0.0030151542741805315
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.00281306984834373
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.002578792395070195
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0017674148548394442
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.0006399535341188312
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.0006114188581705093
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0006014728569425642
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 0.0005820764345116913
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.0005299458862282336
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.00045315103488974273
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.0003524766070768237
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.00029186232131905854
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.000269074720563367
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0002013251796597615
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.00019514856103342026
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.00016322213923558593
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 8.046293805819005e-05
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 7.452804857166484e-05
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 4.714175884146243e-05
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 3.0302679078886285e-05
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 9.08783022168791e-06
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "8": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 8
+    }
+  }
+}

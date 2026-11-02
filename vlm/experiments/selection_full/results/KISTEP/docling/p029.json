@@ -1,0 +1,631 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 83.03999999999999,
+            "t": 765.88,
+            "r": 472.32,
+            "b": 750.88,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "4) R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+      "text": "4) R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 80.88,
+            "t": 732.11968,
+            "r": 381.0077672751648,
+            "b": 718.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "❍ R&D 투자의 효과성과 사회·경제적 파급효과 분석",
+      "text": "❍ R&D 투자의 효과성과 사회·경제적 파급효과 분석",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 704.248,
+            "r": 524.5285527296735,
+            "b": 666.568,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "- 친환경자동차 및 서비스로봇 분야를 대상으로 정부연구개발투자와 성과 관련 다차원 분석 실시 *",
+      "text": "친환경자동차 및 서비스로봇 분야를 대상으로 정부연구개발투자와 성과 관련 다차원 분석 실시 *",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 110.88,
+            "t": 653.0319999999999,
+            "r": 414.746592,
+            "b": 641.992,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "* 부처, 연구수행주체, 연구개발단계, 기술분야별 등을 대상으로 분석",
+      "text": "부처, 연구수행주체, 연구개발단계, 기술분야별 등을 대상으로 분석",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 626.8240000000001,
+            "r": 511.90932,
+            "b": 611.848,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- 정책·투자·성과·파급효과의 R&D 전주기 관점에서 사회･경제적 효과 분석 *",
+      "text": "정책·투자·성과·파급효과의 R&D 전주기 관점에서 사회･경제적 효과 분석 *",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 110.88,
+            "t": 598.312,
+            "r": 397.58688,
+            "b": 587.2719999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "* 매칭방법론-이중차분법(PSM-DID)을 활용한 기업지원 효과 등",
+      "text": "매칭방법론-이중차분법(PSM-DID)을 활용한 기업지원 효과 등",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 570.83968,
+            "r": 524.5290763672126,
+            "b": 532.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "- 정부연구개발투자에 따른 성과의 활용･확산을 위한 정책제안 및 투자의 책무성 제고방안 도출",
+      "text": "정부연구개발투자에 따른 성과의 활용･확산을 위한 정책제안 및 투자의 책무성 제고방안 도출",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 80.88,
+            "t": 511.43968,
+            "r": 524.5277672751647,
+            "b": 475.648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "❍ 연구관리전문기관의 연구지원 서비스를 경험한 고객대상으로 만족도 조사 및 기획·평가·성과관리 효율성 및 전문성 제고방안 마련",
+      "text": "❍ 연구관리전문기관의 연구지원 서비스를 경험한 고객대상으로 만족도 조사 및 기획·평가·성과관리 효율성 및 전문성 제고방안 마련",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 462.23968,
+            "r": 524.5285527296735,
+            "b": 423.80800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "- 연구자, 기획･평가･성과관리 전문가, 부처 담당자 등에 대해 전문기관의 연구 관리 제도·정책 이행을 위한 서비스 만족도 조사 실시",
+      "text": "연구자, 기획･평가･성과관리 전문가, 부처 담당자 등에 대해 전문기관의 연구 관리 제도·정책 이행을 위한 서비스 만족도 조사 실시",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 407.00800000000004,
+            "r": 452.6478632751403,
+            "b": 394.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "- 기획·평가·성과관리 효율성 및 전문성 제고를 위한 시사점 도출",
+      "text": "기획·평가·성과관리 효율성 및 전문성 제고를 위한 시사점 도출",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 80.88,
+            "t": 373.07968000000005,
+            "r": 523.0883607297225,
+            "b": 359.36800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "❍ 연구성과 관리･유통 전담기관이 보유한 등록･기탁 성과물의 체계적 심층분석 연구",
+      "text": "❍ 연구성과 관리･유통 전담기관이 보유한 등록･기탁 성과물의 체계적 심층분석 연구",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 347.104,
+            "r": 468.60891055021875,
+            "b": 332.248,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "- 전담기관 보유 성과물 * 에 대한 정보 수집･검증 및 다차원 심층분석",
+      "text": "전담기관 보유 성과물 * 에 대한 정보 수집･검증 및 다차원 심층분석",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 110.88,
+            "t": 318.5920000000001,
+            "r": 524.472,
+            "b": 285.5920000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "* 6대 연구성과물 대상으로 분석 : 화합물, 생명자원(생물자원, 생명정보), 소프트웨어(저작권, 기술상세정보), 신품종",
+      "text": "6대 연구성과물 대상으로 분석 : 화합물, 생명자원(생물자원, 생명정보), 소프트웨어(저작권, 기술상세정보), 신품종",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 268.408,
+            "r": 524.6489105502186,
+            "b": 255.44799999999998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "- 상관관계 분석 등 결과를 바탕으로 연구성과 유형별 시사점 도출 및 연구성과",
+      "text": "상관관계 분석 등 결과를 바탕으로 연구성과 유형별 시사점 도출 및 연구성과",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 108.96,
+            "t": 244.43967999999995,
+            "r": 342.8485527296736,
+            "b": 230.72799999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "관리･활용 정책 수립 고도화 근거자료 제시",
+      "text": "관리･활용 정책 수립 고도화 근거자료 제시",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 80.88,
+            "t": 209.75968,
+            "r": 418.5677672751648,
+            "b": 196.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "❍ 연구성과 관리·활용 기본계획 수립을 위한 사전연구 수행",
+      "text": "❍ 연구성과 관리·활용 기본계획 수립을 위한 사전연구 수행",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 182.63968,
+            "r": 524.6479592751157,
+            "b": 144.20799999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "- 국내･외 정책동향, 유관 부처 계획, 전문기관/전담기관/산·학·연 전문가 등 이해 관계자 대상 의견수렴 실시",
+      "text": "국내･외 정책동향, 유관 부처 계획, 전문기관/전담기관/산·학·연 전문가 등 이해 관계자 대상 의견수렴 실시",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 29,
+          "bbox": {
+            "l": 95.88,
+            "t": 127.40800000000002,
+            "r": 476.8885527296736,
+            "b": 114.44799999999998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "- 기본계획 수립을 위한 추진체계 및 주요 정책방향 우선순위 등 제안",
+      "text": "기본계획 수립을 위한 추진체계 및 주요 정책방향 우선순위 등 제안",
+      "enumerated": false,
+      "marker": "-"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "29": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 29
+    }
+  }
+}

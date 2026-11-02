@@ -1,0 +1,434 @@
+{
+  "rule_version": "parser-python-signals/1",
+  "parser_version": "1.28.2",
+  "parameters": {
+    "low_native_text_characters": 50,
+    "image_area_ratio": 0.02,
+    "min_image_side_pt": 40,
+    "table_timeout_seconds": 6
+  },
+  "document_id": "doc_a0e9df6afc65f27f",
+  "sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+  "file_name": "AX.pdf",
+  "pages": [
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 1,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": false,
+      "ink_ratio": 0.10856222799662038,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [
+        {
+          "bbox": [
+            0.0,
+            1.0,
+            595.0,
+            842.0
+          ],
+          "signals": [
+            "content_present_native_text_low"
+          ],
+          "decision": "review_required"
+        }
+      ],
+      "verification_status": "unverified",
+      "legacy_grid": []
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 2,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": true,
+      "ink_ratio": 7.970795007094008e-05,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [],
+      "verification_status": "unverified",
+      "legacy_grid": []
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 3,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": false,
+      "ink_ratio": 0.1332796633136189,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [
+        {
+          "bbox": [
+            0.0,
+            1.0,
+            595.0,
+            842.0
+          ],
+          "signals": [
+            "content_present_native_text_low"
+          ],
+          "decision": "review_required"
+        }
+      ],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 4,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": true,
+      "ink_ratio": 8.767874507803408e-05,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 5,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": false,
+      "ink_ratio": 0.11621419120343063,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [
+        {
+          "bbox": [
+            0.0,
+            1.0,
+            595.0,
+            842.0
+          ],
+          "signals": [
+            "content_present_native_text_low"
+          ],
+          "decision": "review_required"
+        }
+      ],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 6,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": true,
+      "ink_ratio": 7.970795007094008e-05,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 7,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": false,
+      "ink_ratio": 0.12904717116485198,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [
+        {
+          "bbox": [
+            0.0,
+            1.0,
+            595.0,
+            842.0
+          ],
+          "signals": [
+            "content_present_native_text_low"
+          ],
+          "decision": "review_required"
+        }
+      ],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 8,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": true,
+      "ink_ratio": 8.767874507803408e-05,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 9,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": false,
+      "ink_ratio": 0.14224680769659967,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [
+        {
+          "bbox": [
+            0.0,
+            1.0,
+            595.0,
+            842.0
+          ],
+          "signals": [
+            "content_present_native_text_low"
+          ],
+          "decision": "review_required"
+        }
+      ],
+      "verification_status": "unverified",
+      "legacy_grid": [
+        {
+          "bbox": [
+            66.0,
+            203.33333333333334,
+            199.33333333333334,
+            297.3333333333333
+          ],
+          "signals": [
+            "legacy_line_grid"
+          ],
+          "intersections": 6,
+          "decision": "review_required"
+        },
+        {
+          "bbox": [
+            220.0,
+            203.33333333333334,
+            370.0,
+            297.3333333333333
+          ],
+          "signals": [
+            "legacy_line_grid"
+          ],
+          "intersections": 6,
+          "decision": "review_required"
+        },
+        {
+          "bbox": [
+            388.0,
+            203.33333333333334,
+            532.0,
+            297.3333333333333
+          ],
+          "signals": [
+            "legacy_line_grid"
+          ],
+          "intersections": 6,
+          "decision": "review_required"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 10,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": true,
+      "ink_ratio": 8.767874507803408e-05,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 11,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": false,
+      "ink_ratio": 0.23271533102711664,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [
+        {
+          "bbox": [
+            0.0,
+            1.0,
+            595.0,
+            842.0
+          ],
+          "signals": [
+            "content_present_native_text_low"
+          ],
+          "decision": "review_required"
+        }
+      ],
+      "verification_status": "unverified",
+      "legacy_grid": [
+        {
+          "bbox": [
+            64.66666666666667,
+            139.33333333333334,
+            540.0,
+            582.6666666666666
+          ],
+          "signals": [
+            "legacy_line_grid"
+          ],
+          "intersections": 54,
+          "decision": "review_required"
+        }
+      ]
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 12,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": true,
+      "ink_ratio": 0.0001036203350922221,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 13,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": false,
+      "ink_ratio": 0.11058680992842226,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [
+        {
+          "bbox": [
+            0.0,
+            1.0,
+            595.0,
+            842.0
+          ],
+          "signals": [
+            "content_present_native_text_low"
+          ],
+          "decision": "review_required"
+        }
+      ],
+      "verification_status": "unverified"
+    },
+    {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "pdf_page": 14,
+      "page_size": [
+        595.0,
+        842.0
+      ],
+      "text": "",
+      "blocks": [],
+      "text_characters": 0,
+      "near_blank": true,
+      "ink_ratio": 7.970795007094008e-05,
+      "table_detection_status": "completed",
+      "table_error": null,
+      "tables": [],
+      "candidates": [],
+      "verification_status": "unverified"
+    }
+  ],
+  "coordinate_system": "PyMuPDF unrotated page pt",
+  "notes": [
+    "Candidates are signals, not confirmed parsing errors or VLM requirements."
+  ]
+}

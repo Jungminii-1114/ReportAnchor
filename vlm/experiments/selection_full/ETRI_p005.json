@@ -1,0 +1,178 @@
+{
+  "document": "ETRI",
+  "pdf_page": 5,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          41.66536331176758,
+          93.12602233886719,
+          248.657470703125,
+          305.75201416015625
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          248.24017333984375,
+          93.12602233886719,
+          455.44097900390625,
+          305.75201416015625
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          455.0236511230469,
+          93.12603759765625,
+          524.2992553710938,
+          694.9055786132812
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          41.66536331176758,
+          305.33465576171875,
+          248.657470703125,
+          517.9606323242188
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          248.24017333984375,
+          305.33465576171875,
+          455.44097900390625,
+          517.9606323242188
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          41.66536331176758,
+          517.5433349609375,
+          283.2952880859375,
+          694.9055786132812
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          282.8779602050781,
+          517.5433349609375,
+          455.44097900390625,
+          694.9055786132812
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          41.44057041379606,
+          93.13396916974853,
+          524.8777193621964,
+          694.6624513333909
+        ],
+        "decision": "exclude_vlm",
+        "reason": [
+          "docling_picture_class_score_ge_0.9"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9946357607841492,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "photograph"
+          },
+          {
+            "confidence": 0.0031989607959985733,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "full_page_image"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          41.44057041379606,
+          93.13396916974853,
+          524.8777193621964,
+          694.6624513333909
+        ],
+        "decision": "exclude_vlm",
+        "reason": [
+          "high_photo_score_no_detected_quantitative_signal_preserve_ocr"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9946357607841492,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "photograph"
+          },
+          {
+            "confidence": 0.0031989607959985733,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "full_page_image"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0005_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 5,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 5,
+          "bbox": [
+            41.44057041379606,
+            93.13396916974853,
+            524.8777193621964,
+            694.6624513333909
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "document": "ETRI",
+  "pdf_page": 22,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          36.84822082519531,
+          296.176513671875,
+          527.1509399414062,
+          714.3883056640625
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          36.567161560058594,
+          247.83486938476562,
+          457.1679382324219,
+          296.4576110839844
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          35.52000045776367,
+          51.82099914550781,
+          528.4800415039062,
+          297.10101318359375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          36.567161560058594,
+          52.922393798828125,
+          176.95480346679688,
+          183.33251953125
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          176.67373657226562,
+          52.922393798828125,
+          317.0613708496094,
+          183.33251953125
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          316.7803039550781,
+          52.922393798828125,
+          457.1679382324219,
+          183.33251953125
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          36.567161560058594,
+          183.0513916015625,
+          352.19342041015625,
+          248.39697265625
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          35.52000045776367,
+          51.82098388671875,
+          528.4800415039062,
+          248.62098693847656
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          34.13452074161404,
+          51.90452594868168,
+          529.053936260233,
+          715.5754412681093
+        ],
+        "decision": "exclude_vlm",
+        "reason": [
+          "docling_picture_class_score_ge_0.9"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9757882952690125,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "photograph"
+          },
+          {
+            "confidence": 0.008960098028182983,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "full_page_image"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          34.13452074161404,
+          51.90452594868168,
+          529.053936260233,
+          715.5754412681093
+        ],
+        "decision": "exclude_vlm",
+        "reason": [
+          "high_photo_score_no_detected_quantitative_signal_preserve_ocr"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9757882952690125,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "photograph"
+          },
+          {
+            "confidence": 0.008960098028182983,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "full_page_image"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0022_r001",
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "pdf_page": 22,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 22,
+          "bbox": [
+            34.13452074161404,
+            51.90452594868168,
+            529.053936260233,
+            715.5754412681093
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

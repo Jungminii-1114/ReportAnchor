@@ -1,0 +1,70 @@
+{
+  "purpose": "기본 텍스트 0인 비율 지표 추출",
+  "selection": {
+    "bbox": [
+      908.9166666666666,
+      127.39373754882808,
+      1174.866005859375,
+      317.27298966471346
+    ],
+    "decision": "vlm_candidate",
+    "reason": [
+      "numeric_context_window_no_semantic_link_inferred"
+    ],
+    "source_refs": [
+      "#/texts/50"
+    ],
+    "classification": [],
+    "verification_status": "unverified",
+    "region_id": "p0012_r009",
+    "doc_id": "doc_c5371b7dfc62016a",
+    "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+    "pdf_page": 12,
+    "rule_version": "baseline-oriented-selection/4",
+    "source_locator": {
+      "type": "pdf_page_bbox",
+      "pdf_page": 12,
+      "bbox": [
+        908.9166666666666,
+        127.39373754882808,
+        1174.866005859375,
+        317.27298966471346
+      ],
+      "units": "pt",
+      "coordinate_space": "pymupdf_unrotated_page"
+    }
+  },
+  "native_page_text": "",
+  "native_tables": [],
+  "docling_selected_elements": [
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 961.6666666666666,
+            "t": 556.181,
+            "r": 1102.3333333333333,
+            "b": 501.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "7,55 %",
+      "text": "7,55 %",
+      "level": 1
+    }
+  ],
+  "comparison_note": "파서와 모델 결과의 대조용. 이 파일의 정답/해석은 VLM에 보내지 않음. 평가용 전체 정답 없음."
+}

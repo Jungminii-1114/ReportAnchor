@@ -1,0 +1,632 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 80.88,
+            "t": 760.3196800000001,
+            "r": 524.5280290921344,
+            "b": 721.888,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "❍ '23년 기준 과학기술 중장기계획(19개 부처, 84개 계획) 조사･분석 및 ｢과학기술기본계획｣과의 연계성 심층분석 실시",
+      "text": "❍ '23년 기준 과학기술 중장기계획(19개 부처, 84개 계획) 조사･분석 및 ｢과학기술기본계획｣과의 연계성 심층분석 실시",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 80.88,
+            "t": 700.79968,
+            "r": 524.5273832824626,
+            "b": 687.088,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "❍ 제2기 국가과학기술현황 종합인식조사 2차년도 추진 및 과학기술혁신정책",
+      "text": "❍ 제2기 국가과학기술현황 종합인식조사 2차년도 추진 및 과학기술혁신정책",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 100.44,
+            "t": 675.328,
+            "r": 196.68809891275296,
+            "b": 662.368,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "점검 체계 고도화",
+      "text": "점검 체계 고도화",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 95.88,
+            "t": 646.43968,
+            "r": 524.6480290921344,
+            "b": 608.008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "- ｢제5차 과학기술기본계획('23~'27)｣의 시행기간에 맞춰 기본계획의 성과점검*에 활용할 수 있는 과학기술현황 종합인식조사 추진",
+      "text": "｢제5차 과학기술기본계획('23~'27)｣의 시행기간에 맞춰 기본계획의 성과점검*에 활용할 수 있는 과학기술현황 종합인식조사 추진",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 110.88,
+            "t": 594.352,
+            "r": 444.26707200000004,
+            "b": 583.312,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "* 제5차 과학기술기본계획 성과지표 중 하나인 연구현장의 연구환경 만족도",
+      "text": "제5차 과학기술기본계획 성과지표 중 하나인 연구현장의 연구환경 만족도",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 95.88,
+            "t": 567.328,
+            "r": 524.6478632751403,
+            "b": 529.648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "- 정부 R&D 혁신방안, 과학기술기본계획 등 범부처 전략의 실행력 제고를 위한 정책점검 체계 및 방법론 고도화 추진",
+      "text": "정부 R&D 혁신방안, 과학기술기본계획 등 범부처 전략의 실행력 제고를 위한 정책점검 체계 및 방법론 고도화 추진",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 80.88,
+            "t": 508.55968,
+            "r": 353.2883607297225,
+            "b": 494.848,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "❍ 지역의 혁신역량 진단 및 정책 기반자료 축적",
+      "text": "❍ 지역의 혁신역량 진단 및 정책 기반자료 축적",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 95.88,
+            "t": 478.168,
+            "r": 524.5298181876599,
+            "b": 465.208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- 지방과학기술연감, 지역 R&D실태조사 등을 통해 지역 혁신을 위한 지역유형별",
+      "text": "지방과학기술연감, 지역 R&D실태조사 등을 통해 지역 혁신을 위한 지역유형별",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 108.96,
+            "t": 453.44800000000004,
+            "r": 406.8085527296736,
+            "b": 440.488,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "추진전략 수립 기초자료의 종합 및 정책적 시사점 제공",
+      "text": "추진전략 수립 기초자료의 종합 및 정책적 시사점 제공",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 80.88,
+            "t": 419.39968000000005,
+            "r": 524.527121465493,
+            "b": 405.68800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "❍ 주요국의 지역과학기술혁신정책 동향 조사 및 우리나라 지역과학기술정책과",
+      "text": "❍ 주요국의 지역과학기술혁신정책 동향 조사 및 우리나라 지역과학기술정책과",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 100.44,
+            "t": 393.92800000000005,
+            "r": 287.2877672751648,
+            "b": 380.968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "비교 분석을 통한 정책 대안 도출",
+      "text": "비교 분석을 통한 정책 대안 도출",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 102.96,
+            "t": 367.432,
+            "r": 400.34736000000004,
+            "b": 356.392,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "※ 대만, 일본, 미국 등 주요국 지역과학기술 반도체 정책동향 조사",
+      "text": "※ 대만, 일본, 미국 등 주요국 지역과학기술 반도체 정책동향 조사",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 80.88,
+            "t": 336.11968,
+            "r": 310.3280989127529,
+            "b": 322.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "❍ 데이터 중심 과학기술인재정책 고도화",
+      "text": "❍ 데이터 중심 과학기술인재정책 고도화",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 95.88,
+            "t": 305.60799999999995,
+            "r": 524.5280290921344,
+            "b": 267.928,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "- 첨단바이오 분야 핵심 연구인력 DB를 활용하여 글로벌 연구자·기관 현황 및 연구 동향 등에 대한 다각적·입체적 심층분석 추진",
+      "text": "첨단바이오 분야 핵심 연구인력 DB를 활용하여 글로벌 연구자·기관 현황 및 연구 동향 등에 대한 다각적·입체적 심층분석 추진",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 110.88,
+            "t": 254.27200000000005,
+            "r": 497.9424,
+            "b": 243.23200000000008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "※ 심층분석 결과 기반 '글로벌 인력지도 심층분석(안)' 미래인재특위 상정('24.12 예정)",
+      "text": "※ 심층분석 결과 기반 '글로벌 인력지도 심층분석(안)' 미래인재특위 상정('24.12 예정)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 95.88,
+            "t": 227.99968,
+            "r": 524.6485789126305,
+            "b": 189.56799999999998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "- 최근 7년간 채용공고 데이터를 기반으로 이차전지 분야의 직무별･지역별･학력별 상세 수요 분석 추진",
+      "text": "최근 7년간 채용공고 데이터를 기반으로 이차전지 분야의 직무별･지역별･학력별 상세 수요 분석 추진",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 110.88,
+            "t": 175.91200000000003,
+            "r": 524.4624,
+            "b": 164.87200000000007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "※ 분석결과 기반 '국가전략기술 인재 산업 수요 분석결과(안)' 미래인재특위 상정('24.12 예정)",
+      "text": "※ 분석결과 기반 '국가전략기술 인재 산업 수요 분석결과(안)' 미래인재특위 상정('24.12 예정)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 24,
+          "bbox": {
+            "l": 95.88,
+            "t": 148.88800000000003,
+            "r": 524.6480290921344,
+            "b": 111.20799999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "- 과학기술인력 스코어보드의 활용·확산을 위해 인력통계를 지속 업데이트하고, 정 책동향 조사 및 심층분석을 통한 인재정책 고도화 지속 추진",
+      "text": "과학기술인력 스코어보드의 활용·확산을 위해 인력통계를 지속 업데이트하고, 정 책동향 조사 및 심층분석을 통한 인재정책 고도화 지속 추진",
+      "enumerated": false,
+      "marker": "-"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "24": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 24
+    }
+  }
+}

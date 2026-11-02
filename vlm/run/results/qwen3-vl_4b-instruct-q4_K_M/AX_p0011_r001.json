@@ -1,0 +1,308 @@
+{
+  "task_id": "AX_p0011_r001",
+  "kind": "table",
+  "purpose": "기본 텍스트 0인 평가기준 표 추출",
+  "input_signature": "df4f45008e5bf2e37b137245c38926b61640c410c0073101eabd8fa2b9410c0e",
+  "metadata": {
+    "doc_id": "doc_a0e9df6afc65f27f",
+    "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+    "region_id": "p0011_r001",
+    "pdf_page": 11,
+    "selection_bbox": [
+      65.99467468261719,
+      140.89022827148438,
+      537.8150024414062,
+      580.06591796875
+    ],
+    "source_locator": {
+      "type": "pdf_page_bbox",
+      "pdf_page": 11,
+      "bbox": [
+        59.99467468261719,
+        112.33333587646484,
+        543.8150024414062,
+        586.06591796875
+      ],
+      "units": "pt",
+      "coordinate_space": "pymupdf_unrotated_page"
+    },
+    "selection_rule_version": "baseline-oriented-selection/4",
+    "verification_status": "unverified",
+    "model": "qwen3-vl:4b-instruct-q4_K_M",
+    "prompt_sha256": "2cdff7a845c20fea8795d4632cd725f0f2265ea67467036bd684666d844b58c1",
+    "prompt_file": "prompts/table_fewshot.txt",
+    "extraction_method": "vlm",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "num_predict": 4096
+    }
+  },
+  "baseline_file": "inputs/AX_p0011_r001_baseline.json",
+  "image_file": "inputs/AX_p0011_r001.png",
+  "status": "schema_valid_content_unverified",
+  "extraction": {
+    "table_title": "<평가기준(안)>",
+    "cells": [
+      {
+        "row_path": [
+          "사업 티당성",
+          "목적 부합성"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· 사업 이해도, 추진방향 성과목표, 기대성과의 명확성 및 적정성\n- 과제 및 추진 목적의 적절성과 필요성\n- 사업에 대한 이해도 및 명확성\n- 목표 수준의 명확성 및 설정 목표의 도전성",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업 티당성",
+          "사업수행 역량"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· 추진 조직, 체계, 컨소시엄 참여기관 간 역할 등의 적절성\n- 참여기관 인력의 전문성, 참여기관의 실적 및 경영상태 등\n- 컨소시엄 구성의 적절성, 참여기관 역할의 적절성\n- 참여기관의 사업 수행 의지 적극성 및 구체성",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업 경쟁력",
+          "사업 전략 우수성"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· AI 기술개발 추진목표 및 전략의 우수성 및 실현가능성\n- AI 기술개발 전략의 구체적 방안에 대한 우수성 및 실현가능성\n- AI 기술개발 전략에 따른 세부 추진방안의 적절성",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업 경쟁력",
+          "기술개발 우수성"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· AI 기술개발 적절성 및 우수성\n- AI 기술개발 전략에 따른 세부 추진방안의 적절성 및 실현가능성\n- AI 기술개발 예상 결과물의 우수성",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "적용 및 확산 가능성",
+          "적용 가능성"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· AI 기술개발 결과물의 현장 적용 가능성\n- AI 기술개발 결과물의 현장적용 추진 전략의 구체성, 적절성 및 우수성\n- 협력 방안의 적절성",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "적용 및 확산 가능성",
+          "확산 가능성"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· AI 기술개발 결과물의 확산 가능성\n- AI 기술개발 이후의 타산업, 혜의전출 등 확산 가능성 및 적절성",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업관리",
+          "사업관리 적정성"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· 일정, 산출물, 보안, 사업비 등 관리 적정성\n- 일정에 따른 산출물 취득한 자료정보에 대한 보안 관리의 적절성\n- 민간부담금 매칭, 사업비 구성 및 운영 적절성\n- 과거 개인정보보호법 위반, 실증캡안심존) 보안규정 위반 등 여부",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업관리",
+          "품질관리 우수성"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· 산출물의 품질관리 구체성 및 우수성\n- 산출물의 구체성 및 우수성, 객관적 확보 방안 적정성\n- 산출물의 품질보증활동에 대한 구체성, 실현 가능성",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "일자리 창출",
+          "일자리 창출"
+        ],
+        "column_path": [
+          "세부 평가 기준"
+        ],
+        "value_raw": "· 고용 현황, 일자리 확대, 일자리 창출 계획 우수성\n- 고용환원(장구직 비율 등), 일자리 확대 및 차수 개선 노력 등\n- 본 과제를 통한 일자리 창출 계획 여부 등",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업 티당성",
+          "목적 부합성"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "10",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업 티당성",
+          "사업수행 역량"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "15",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업 경쟁력",
+          "사업 전략 우수성"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "15",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업 경쟁력",
+          "기술개발 우수성"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "25",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "적용 및 확산 가능성",
+          "적용 가능성"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "10",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "적용 및 확산 가능성",
+          "확산 가능성"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "5",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업관리",
+          "사업관리 적정성"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "5",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "사업관리",
+          "품질관리 우수성"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "10",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "일자리 창출",
+          "일자리 창출"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "5",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "총점"
+        ],
+        "column_path": [
+          "배점"
+        ],
+        "value_raw": "100",
+        "unit": "",
+        "notes": [],
+        "issues": []
+      }
+    ],
+    "notes": [],
+    "issues": []
+  },
+  "ollama_metrics": {
+    "total_duration": 263053221300,
+    "load_duration": 17341300,
+    "prompt_eval_count": 2019,
+    "prompt_eval_duration": 60075310000,
+    "eval_count": 1689,
+    "eval_duration": 202641488000,
+    "done_reason": "stop"
+  },
+  "wall_seconds": 263.0757522999993
+}

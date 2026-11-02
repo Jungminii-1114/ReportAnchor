@@ -1,0 +1,850 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 42.0,
+            "t": 725.181,
+            "r": 108.0,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 682.181,
+            "r": 208.33333333333334,
+            "b": 621.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "A로 마약사범 실시간 추적하다",
+      "text": "A로 마약사범 실시간 추적하다",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 51.0,
+            "t": 614.181,
+            "r": 227.0,
+            "b": 599.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "박상울 | 인공지능움합보안연구실 책임연구원",
+      "text": "박상울 | 인공지능움합보안연구실 책임연구원"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 98.0,
+            "t": 73.84766666666667,
+            "r": 190.0,
+            "b": 51.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면 인터뷰름 확인하실 수 있습니다",
+      "text": "QR코드트 스랜하시면 인터뷰름 확인하실 수 있습니다"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 689.5143333333334,
+            "r": 752.6666666666666,
+            "b": 675.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "인공지능컴퓨팅연구소",
+      "text": "인공지능컴퓨팅연구소"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 766.6666666666666,
+            "t": 690.181,
+            "r": 1150.0,
+            "b": 624.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "전 세계적으로 심각한 문제로 대두되는 마약범죄논 범죄자들의 지능화된 수법으로 단속에 어려움올 감시망으로는 효과적인 대응에 한계가 있없다. 이러한 문제름 해결하기 위해 연구진은 대검찰청 마약과와 협력해 인공지능시) 기반의 실시간 마약사범 추적 기술을 개발있다.",
+      "text": "전 세계적으로 심각한 문제로 대두되는 마약범죄논 범죄자들의 지능화된 수법으로 단속에 어려움올 감시망으로는 효과적인 대응에 한계가 있없다. 이러한 문제름 해결하기 위해 연구진은 대검찰청 마약과와 협력해 인공지능시) 기반의 실시간 마약사범 추적 기술을 개발있다."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 676.3333333333334,
+            "t": 427.8476666666667,
+            "r": 877.6666666666666,
+            "b": 413.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "범죄 수사부터 시민 안전까지 확대되는 Al 감시 기술",
+      "text": "범죄 수사부터 시민 안전까지 확대되는 Al 감시 기술",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 664.3333333333334,
+            "t": 390.8476666666667,
+            "r": 899.0,
+            "b": 270.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            190
+          ]
+        }
+      ],
+      "orig": "A 기반 실시간 마악사범 추적 기술은 CCTV, 휴대용 카메라 통제 용의자루 추적하고 도주 경로름 파악하다 특히 얼굴분만 아니라 성 별 나이 체형 걸음걸이 등올 종합적으로 분석하는 멀리모달 A 기술 올 적용해 변장과 변복에도 동일 인물올 식별할 수 있다 여기에 마 약 거래의 특이 행동 패련올 감지해 공범까지 추적하는 기능도 준비 하고 있다",
+      "text": "A 기반 실시간 마악사범 추적 기술은 CCTV, 휴대용 카메라 통제 용의자루 추적하고 도주 경로름 파악하다 특히 얼굴분만 아니라 성 별 나이 체형 걸음걸이 등올 종합적으로 분석하는 멀리모달 A 기술 올 적용해 변장과 변복에도 동일 인물올 식별할 수 있다 여기에 마 약 거래의 특이 행동 패련올 감지해 공범까지 추적하는 기능도 준비 하고 있다"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 665.0,
+            "t": 265.5143333333334,
+            "r": 899.0,
+            "b": 144.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            175
+          ]
+        }
+      ],
+      "orig": "연구진이 서울 승파구 지방자치단체 관제센터의 실제 CCTV 환경 에서 진행한 실험 결과 '다중 CCTV 멀리모달 복합정보 기반 마약 죄의 특성올 고려해 어둡거나 우천 상황 등 조도가 낮은 환경올 포 함한 실제 범죄 현장과 유사한 조건에서 얻은 결과다 연구진은 향후 외 시장에서 경쟁력 짓는 기술로 발전시길 계획이다",
+      "text": "연구진이 서울 승파구 지방자치단체 관제센터의 실제 CCTV 환경 에서 진행한 실험 결과 '다중 CCTV 멀리모달 복합정보 기반 마약 죄의 특성올 고려해 어둡거나 우천 상황 등 조도가 낮은 환경올 포 함한 실제 범죄 현장과 유사한 조건에서 얻은 결과다 연구진은 향후 외 시장에서 경쟁력 짓는 기술로 발전시길 계획이다"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 665.3333333333334,
+            "t": 139.18100000000004,
+            "r": 899.0,
+            "b": 108.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "연구진이 개발한 A 기반 마약사범 추적 기술은 단순히 마약사범올 검거하는 데 그치지 않고 실종자 추적 치매 노인 보호 공공장소 범",
+      "text": "연구진이 개발한 A 기반 마약사범 추적 기술은 단순히 마약사범올 검거하는 데 그치지 않고 실종자 추적 치매 노인 보호 공공장소 범"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 445.51433333333335,
+            "r": 1080.3333333333333,
+            "b": 432.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "색출하고 유통망올 차단하는 데 기여할 수 있다",
+      "text": "색출하고 유통망올 차단하는 데 기여할 수 있다"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 426.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 342.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            100
+          ]
+        }
+      ],
+      "orig": "뿐만 아니라 실종 아동이나 치매 노인의 위치틀 신속하게 추적해 구 인물 추적 슬루선올 도입해 정말한 감시 시스템올 구축할 수 있다 대화할 수 있어 안전한 생활환경 조성이 가능해진다",
+      "text": "뿐만 아니라 실종 아동이나 치매 노인의 위치틀 신속하게 추적해 구 인물 추적 슬루선올 도입해 정말한 감시 시스템올 구축할 수 있다 대화할 수 있어 안전한 생활환경 조성이 가능해진다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 283.5143333333334,
+            "r": 1149.6666666666667,
+            "b": 269.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "추적 시스템올 구축하는 데 기여할 수 있다 나아가 A 기반 지능형",
+      "text": "추적 시스템올 구축하는 데 기여할 수 있다 나아가 A 기반 지능형"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 211.18100000000004,
+            "r": 1149.6666666666667,
+            "b": 161.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "방범 시스템 등의로 확장할 계획이다 특히 일반 시민의 사생활 보호 적용해 시민의 안전과 개인정보 보호름 동시에 확보할 예정이다",
+      "text": "방범 시스템 등의로 확장할 계획이다 특히 일반 시민의 사생활 보호 적용해 시민의 안전과 개인정보 보호름 동시에 확보할 예정이다"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 156.84766666666678,
+            "r": 1149.6666666666667,
+            "b": 72.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "이 기술이 상용화되면 범죄 예방과 검거 효율이 획기적으로 향상월 된다 연구진은 앞으로도 Al 기반 범죄 수사 기술을 지속적으로 발전 시스템올 구축하는 것올 목표로 하고 있다",
+      "text": "이 기술이 상용화되면 범죄 예방과 검거 효율이 획기적으로 향상월 된다 연구진은 앞으로도 Al 기반 범죄 수사 기술을 지속적으로 발전 시스템올 구축하는 것올 목표로 하고 있다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 1113.6666666666667,
+            "t": 38.51433333333341,
+            "r": 1148.3333333333333,
+            "b": 30.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "30 31",
+      "text": "30 31"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9454639554023743,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.036844972521066666,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.008478972129523754,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.002915570978075266,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.002395980292931199,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0017306589288637042,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.0009310761233791709,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.000504251685924828,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.00021284259855747223,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.00017215557454619557,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 7.41807307349518e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 6.315890641417354e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 5.429497468867339e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 3.9680759073235095e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 2.7431904527475126e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 2.5713401555549353e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 2.2000047465553507e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 1.6428475646534935e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 8.551705832360312e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 8.279117537313141e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 4.547709977487102e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 2.8365741400193656e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 1.345494638371747e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 7.795075589456246e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 2.505602481051028e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 4.240071760364117e-08,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 16,
+          "bbox": {
+            "l": 37.21142933650941,
+            "t": 699.3556416754469,
+            "r": 528.9036634699823,
+            "b": 35.97146207273761,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.9454639554023743
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.036844972521066666
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.008478972129523754
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.002915570978075266
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.002395980292931199
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.0017306589288637042
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0009310761233791709
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.000504251685924828
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.00021284259855747223
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.00017215557454619557
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 7.41807307349518e-05
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 6.315890641417354e-05
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 5.429497468867339e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 3.9680759073235095e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 2.7431904527475126e-05
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 2.5713401555549353e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 2.2000047465553507e-05
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 1.6428475646534935e-05
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 8.551705832360312e-06
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 8.279117537313141e-06
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 4.547709977487102e-06
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 2.8365741400193656e-06
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 1.345494638371747e-06
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 7.795075589456246e-07
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 2.505602481051028e-07
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 4.240071760364117e-08
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "16": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 16
+    }
+  }
+}

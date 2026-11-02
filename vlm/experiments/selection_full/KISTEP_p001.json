@@ -1,0 +1,93 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 1,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 50,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [],
+    "docling_derived": [
+      {
+        "bbox": [
+          173.22756958007812,
+          710.52880859375,
+          421.90216064453125,
+          748.5266723632812
+        ],
+        "decision": "exclude_vlm",
+        "reason": [
+          "docling_picture_class_score_ge_0.9"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9943442344665527,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          },
+          {
+            "confidence": 0.004641995765268803,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          173.22756958007812,
+          710.52880859375,
+          421.90216064453125,
+          748.5266723632812
+        ],
+        "decision": "review_required",
+        "reason": [
+          "picture_type_or_need_uncertain"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9943442344665527,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "logo"
+          },
+          {
+            "confidence": 0.004641995765268803,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0001_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 1,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 1,
+          "bbox": [
+            173.22756958007812,
+            710.52880859375,
+            421.90216064453125,
+            748.5266723632812
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

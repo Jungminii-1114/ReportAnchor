@@ -1,0 +1,864 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 41.66666666666667,
+            "t": 725.181,
+            "r": 107.66666666666667,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 414.6666666666667,
+            "t": 712.181,
+            "r": 520.0,
+            "b": 700.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "연구원 톤 챔런지Top Challenge 과제",
+      "text": "연구원 톤 챔런지Top Challenge 과제"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 51.0,
+            "t": 682.5143333333334,
+            "r": 447.6666666666667,
+            "b": 620.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "6G 시대 성금, 세계 최초 20OGbps 무선 시연 성공햇다",
+      "text": "6G 시대 성금, 세계 최초 20OGbps 무선 시연 성공햇다",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 613.5143333333333,
+            "r": 203.33333333333334,
+            "b": 599.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "정희상 | 6G무선액세스시스템연구실장",
+      "text": "정희상 | 6G무선액세스시스템연구실장"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 98.33333333333333,
+            "t": 73.84766666666667,
+            "r": 189.66666666666666,
+            "b": 51.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면 인터뷰름 확인하실 수 있습니다.",
+      "text": "QR코드트 스랜하시면 인터뷰름 확인하실 수 있습니다."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 688.8476666666667,
+            "r": 727.3333333333334,
+            "b": 675.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "입체통신연구소",
+      "text": "입체통신연구소"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 676.3333333333334,
+            "t": 463.51433333333335,
+            "r": 881.6666666666666,
+            "b": 449.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "PoC 개발로 메타버스 자율주행 등 초연결 기술 박차",
+      "text": "PoC 개발로 메타버스 자율주행 등 초연결 기술 박차",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 427.18100000000004,
+            "r": 898.3333333333334,
+            "b": 378.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "연구진이 개발한 6G 이동통신 시스템은 초고주-Sub-THz) 대역 점 승 수신Multi-Transmission and Reception Point Multi",
+      "text": "연구진이 개발한 6G 이동통신 시스템은 초고주-Sub-THz) 대역 점 승 수신Multi-Transmission and Reception Point Multi"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 265.18100000000004,
+            "r": 898.3333333333334,
+            "b": 198.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            104
+          ]
+        }
+      ],
+      "orig": "다 연구진은 고속 데이터 전승올 지원하기 위해 대용량 채널의 부호 화 복호화 기술까지 포함해 데이터 처리 효율올 극대화해다 기존 이동통신보다 주파수가 높아 도달 거리가 짧다 하지만 인도어",
+      "text": "다 연구진은 고속 데이터 전승올 지원하기 위해 대용량 채널의 부호 화 복호화 기술까지 포함해 데이터 처리 효율올 극대화해다 기존 이동통신보다 주파수가 높아 도달 거리가 짧다 하지만 인도어"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 157.5143333333333,
+            "r": 779.0,
+            "b": 144.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "활용월 수 있을 것으로 전망되다",
+      "text": "활용월 수 있을 것으로 전망되다"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 665.0,
+            "t": 138.84766666666678,
+            "r": 899.0,
+            "b": 71.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            161
+          ]
+        }
+      ],
+      "orig": "이번 시연에 사용된 6G PoC 시스템은 다중점 송 수신 기술 초고 주파 편파 MMO(Multiple Input Multiple -Output) 기술 대용량 코 당 기술 등 6G 이동통신의 핵심 요소 기술 등올 포함하고 있다 연구진은 이번 세계 최초 시연올 통해 글로벌 6G 기술 경쟁에서",
+      "text": "이번 시연에 사용된 6G PoC 시스템은 다중점 송 수신 기술 초고 주파 편파 MMO(Multiple Input Multiple -Output) 기술 대용량 코 당 기술 등 6G 이동통신의 핵심 요소 기술 등올 포함하고 있다 연구진은 이번 세계 최초 시연올 통해 글로벌 6G 기술 경쟁에서"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 480.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 450.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "연구진분만 아니라 국내 주요 이동통신 기업 및 공동 연구기관과의 협력올 통해 이루어적다: 이로써 6G 표준 기술 선점올 위한 국제 경",
+      "text": "연구진분만 아니라 국내 주요 이동통신 기업 및 공동 연구기관과의 협력올 통해 이루어적다: 이로써 6G 표준 기술 선점올 위한 국제 경"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 426.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 306.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "연구진은 2020년 초 6G 비전올 수립하고 이틀 기반으로 국내 산 학 . 연과 협력해 한국의 6G 전락올 정립하다 이후 국제전기통신연 기술 개발에도 박치름 가하고 있다",
+      "text": "연구진은 2020년 초 6G 비전올 수립하고 이틀 기반으로 국내 산 학 . 연과 협력해 한국의 6G 전락올 정립하다 이후 국제전기통신연 기술 개발에도 박치름 가하고 있다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 282.84766666666667,
+            "r": 1149.6666666666667,
+            "b": 216.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            136
+          ]
+        }
+      ],
+      "orig": "반으로 2025년부터 2028년 사이에 3GPP에I서 표준 규겪이 제정 월 예정이다 연구진은 현재 확보한 핵심 특히 기술들올 항후 3GPP 6G 국제 표준에 적극 반영할 계획이다 6G눈 2030년경부터 본격적 인 서비스가 시작월 것으로 전망되다",
+      "text": "반으로 2025년부터 2028년 사이에 3GPP에I서 표준 규겪이 제정 월 예정이다 연구진은 현재 확보한 핵심 특히 기술들올 항후 3GPP 6G 국제 표준에 적극 반영할 계획이다 6G눈 2030년경부터 본격적 인 서비스가 시작월 것으로 전망되다"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 210.84766666666678,
+            "r": 1149.6666666666667,
+            "b": 162.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "6G 시대가 열리면 초실감 메타버스 초연결 사물인터넷0T) 지율 주행차 및 공중이동체UAM) 서비스 등 다양한 차세대 기술이 활성 화월 것으로 기대되다",
+      "text": "6G 시대가 열리면 초실감 메타버스 초연결 사물인터넷0T) 지율 주행차 및 공중이동체UAM) 서비스 등 다양한 차세대 기술이 활성 화월 것으로 기대되다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 156.84766666666678,
+            "r": 1150.3333333333333,
+            "b": 72.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            124
+          ]
+        }
+      ],
+      "orig": "연구진은 향후 3년 이내에 6G 핵심 기술이 국제 표준에 반영월 수 있도록 적극적으로 연구개발올 추진할 계획이다 기술 고도화 및 추가 연구개발올 통한 6G 기술 완성도 제고와 6G 서비스 개발을 위한 구축에 기여할 방침이다",
+      "text": "연구진은 향후 3년 이내에 6G 핵심 기술이 국제 표준에 반영월 수 있도록 적극적으로 연구개발올 추진할 계획이다 기술 고도화 및 추가 연구개발올 통한 6G 기술 완성도 제고와 6G 서비스 개발을 위한 구축에 기여할 방침이다"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 1114.3333333333333,
+            "t": 38.51433333333341,
+            "r": 1149.0,
+            "b": 29.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "42 43",
+      "text": "42 43"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9757882952690125,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.008960098028182983,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.008125181309878826,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0037120585329830647,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.001434860983863473,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.0008492129854857922,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0003709887096192688,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.00028973392909392715,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.00012958988372702152,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 7.961424853419885e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 7.003094651736319e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 5.31568584847264e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 3.293120244052261e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 2.5673054551589303e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 2.126532854163088e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 2.0724515707115643e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 1.0106478839588817e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 7.4438821684452705e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 7.400668437185232e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 4.3809513954329304e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 4.10110487791826e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 1.7309301938439603e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 5.344772375792672e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 4.6144822363203275e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 4.0278104052049457e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 3.006504556424261e-08,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 22,
+          "bbox": {
+            "l": 34.13452074161404,
+            "t": 699.2765043247558,
+            "r": 529.053936260233,
+            "b": 35.60558900532817,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.9757882952690125
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.008960098028182983
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.008125181309878826
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.0037120585329830647
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.001434860983863473
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0008492129854857922
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.0003709887096192688
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.00028973392909392715
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.00012958988372702152
+            },
+            {
+              "class_name": "other",
+              "confidence": 7.961424853419885e-05
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 7.003094651736319e-05
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 5.31568584847264e-05
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 3.293120244052261e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 2.5673054551589303e-05
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 2.126532854163088e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 2.0724515707115643e-05
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 1.0106478839588817e-05
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 7.4438821684452705e-06
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 7.400668437185232e-06
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 4.3809513954329304e-06
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 4.10110487791826e-06
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 1.7309301938439603e-06
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 5.344772375792672e-07
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 4.6144822363203275e-07
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 4.0278104052049457e-07
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 3.006504556424261e-08
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "22": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 22
+    }
+  }
+}

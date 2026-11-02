@@ -1,0 +1,1184 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 59,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 769.48,
+            "r": 214.89,
+            "b": 754.48,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "주요 연구내용(요약)",
+      "text": "주요 연구내용(요약)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 59,
+          "bbox": {
+            "l": 69.87184143066406,
+            "t": 747.1586227416992,
+            "r": 524.9666748046875,
+            "b": 71.5263671875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 94.08,
+              "t": 101.03999999999996,
+              "r": 122.90967339417598,
+              "b": 113.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 285.36,
+              "t": 101.03999999999996,
+              "r": 385.59846804156,
+              "b": 113.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "과학기술혁신정책 지원",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 150.0,
+              "r": 118.10959135392,
+              "b": 162.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "구분",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 138.36,
+              "r": 207.50991928454397,
+              "b": 150.36,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구책임자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 226.07999999999998,
+              "t": 121.55999999999995,
+              "r": 291.74970066412794,
+              "b": 167.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "오현환, 손석호,류영수, 전승수, 최동혁",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 315.0,
+              "t": 138.36,
+              "r": 353.18980997433596,
+              "b": 150.36,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.36,
+              "t": 138.36,
+              "r": 497.411674995456,
+              "b": 150.36,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 6,
+            "text": "'25.02.11~'26.02.10",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 175.68000000000006,
+              "r": 198.02970066412797,
+              "b": 187.68000000000006,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 175.68000000000006,
+              "r": 271.46945477376,
+              "b": 187.68000000000006,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "'24년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 306.0,
+              "t": 175.68000000000006,
+              "r": 362.30967339417595,
+              "b": 187.68000000000006,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "9,723백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 375.71999999999997,
+              "t": 175.68000000000006,
+              "r": 423.26945477375995,
+              "b": 208.07999999999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25년 지원하고,",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 423.71999999999997,
+              "t": 175.68000000000006,
+              "r": 522.1497022769281,
+              "b": 208.07999999999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "8,751백만원 국가과학기술자문회의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 289.0799999999999,
+              "r": 127.58980997433599,
+              "b": 301.0799999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 195.38400000000001,
+              "r": 387.99005540390397,
+              "b": 394.08,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦국가 범부처 과학기술정책 수립을 직접적으로 심의회의 활동을 지원 ◦제1차 국가전략기술 육성 기본계획 추진 및 ◦탄소중립 추진을 위한 핵심기술 확보 및 R&D 운영을 지원 ◦국가R&D사업 특성별 성과관리･활용 계획을 수립하고 사업별 생애주기 기반의 성과관리･활용･확산 ◦정부 R&D 혁신방안의 선도형 R&D 전환을 위한 정부R&D 심의체계 고도화지원 ◦글로벌 R&D 범부처 집행-성과-홍보 등 전주기 ◦전략적 글로벌 R&D 수행을 위한 정책 기반",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 361.68,
+              "t": 233.27999999999997,
+              "r": 470.4301651749119,
+              "b": 375.47999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "임무중심 전략로드맵 수립을 위해 우수 성과확산 국가 연구개발시스템 관리를 위한",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 436.32,
+              "t": 233.27999999999997,
+              "r": 522.3900826738562,
+              "b": 375.47999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "조기 달성 탄소중립기술특위 사례를 발굴하여 혁신지원과 거버넌스 운영·지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 360.59999999999997,
+              "t": 307.68000000000006,
+              "r": 379.82959135391997,
+              "b": 319.68000000000006,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "독려",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 578.28,
+              "r": 127.58980997433599,
+              "b": 590.28,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 406.58399999999995,
+              "r": 522.3902192540161,
+              "b": 761.28,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦｢제5차 과학기술기본계획｣ 실적점검 및 시행계획 수립 지원 ◦주요 정책 의사결정 기구 운영 지원 ◦'25년도 과학기술연감 발간 ◦혁신도전형 R&D 사업군 제도 운영 및 혁신도전형 R&D 협의체 운영 ◦'25년도 R&D 예비타당성조사 대상 사업의 정책부합성 평가 ◦｢제5차 과학기술인재 육성지원 기본계획('26~'30)｣ 수립 지원 ◦제1차 국가전략기술 육성 기본계획 '25년도 시행계획 및 실적점검 ◦국가전략기술 분야 선제적 규제혁신로드맵 수립 ◦국가전략기술 전략연구사업 지정 및 관리 ◦국가전략기술 혁신거점 지정 및 관리 ◦탄소중립 기술혁신 전략로드맵 수정(안) 마련 ◦효과적인 연구성과 확산체계 연구 및 개선 추진 ◦연구현장중심의 국가연구개발사업 제도개선 추진 ◦예산심의 기술 전문위(3개 신설) 확대 및 전문위원 증원 등을 고려해 세부 기술분야에 대한 기술동향 및 사업분석 등 사전검토 자료 강화 ◦정부R&D 중기재정계획 등 심의 지원 ◦정부R&D 투자전략 수립 및 범부처 총괄 투자 조정 검토 지원 ◦부처합동 설명회 ◦중점 연구개발 연구 및 기반",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 221.64,
+              "t": 713.28,
+              "r": 301.58987780361593,
+              "b": 761.28,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "등 정부 R&D 투자정책 및 조성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 285.47999999999996,
+              "t": 713.28,
+              "r": 385.10991928454393,
+              "b": 743.28,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "사업 홍보 외 기술분야별 주요사업의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 389.4,
+              "t": 731.28,
+              "r": 437.0699192845439,
+              "b": 743.28,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "심층분석과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 441.47999999999996,
+              "t": 731.28,
+              "r": 522.1497006641281,
+              "b": 743.28,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "심의시스템 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 6,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 94.08,
+                "t": 101.03999999999996,
+                "r": 122.90967339417598,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 285.36,
+                "t": 101.03999999999996,
+                "r": 385.59846804156,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "과학기술혁신정책 지원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 285.36,
+                "t": 101.03999999999996,
+                "r": 385.59846804156,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "과학기술혁신정책 지원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 285.36,
+                "t": 101.03999999999996,
+                "r": 385.59846804156,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "과학기술혁신정책 지원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 285.36,
+                "t": 101.03999999999996,
+                "r": 385.59846804156,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "과학기술혁신정책 지원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 285.36,
+                "t": 101.03999999999996,
+                "r": 385.59846804156,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "과학기술혁신정책 지원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 150.0,
+                "r": 118.10959135392,
+                "b": 162.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 138.36,
+                "r": 207.50991928454397,
+                "b": 150.36,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구책임자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 226.07999999999998,
+                "t": 121.55999999999995,
+                "r": 291.74970066412794,
+                "b": 167.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "오현환, 손석호,류영수, 전승수, 최동혁",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 315.0,
+                "t": 138.36,
+                "r": 353.18980997433596,
+                "b": 150.36,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 138.36,
+                "r": 497.411674995456,
+                "b": 150.36,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.02.11~'26.02.10",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 138.36,
+                "r": 497.411674995456,
+                "b": 150.36,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.02.11~'26.02.10",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 150.0,
+                "r": 118.10959135392,
+                "b": 162.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 175.68000000000006,
+                "r": 198.02970066412797,
+                "b": 187.68000000000006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 175.68000000000006,
+                "r": 271.46945477376,
+                "b": 187.68000000000006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "'24년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 306.0,
+                "t": 175.68000000000006,
+                "r": 362.30967339417595,
+                "b": 187.68000000000006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "9,723백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 375.71999999999997,
+                "t": 175.68000000000006,
+                "r": 423.26945477375995,
+                "b": 208.07999999999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25년 지원하고,",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 423.71999999999997,
+                "t": 175.68000000000006,
+                "r": 522.1497022769281,
+                "b": 208.07999999999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "8,751백만원 국가과학기술자문회의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 289.0799999999999,
+                "r": 127.58980997433599,
+                "b": 301.0799999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 195.38400000000001,
+                "r": 387.99005540390397,
+                "b": 394.08,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 범부처 과학기술정책 수립을 직접적으로 심의회의 활동을 지원 ◦제1차 국가전략기술 육성 기본계획 추진 및 ◦탄소중립 추진을 위한 핵심기술 확보 및 R&D 운영을 지원 ◦국가R&D사업 특성별 성과관리･활용 계획을 수립하고 사업별 생애주기 기반의 성과관리･활용･확산 ◦정부 R&D 혁신방안의 선도형 R&D 전환을 위한 정부R&D 심의체계 고도화지원 ◦글로벌 R&D 범부처 집행-성과-홍보 등 전주기 ◦전략적 글로벌 R&D 수행을 위한 정책 기반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 195.38400000000001,
+                "r": 387.99005540390397,
+                "b": 394.08,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 범부처 과학기술정책 수립을 직접적으로 심의회의 활동을 지원 ◦제1차 국가전략기술 육성 기본계획 추진 및 ◦탄소중립 추진을 위한 핵심기술 확보 및 R&D 운영을 지원 ◦국가R&D사업 특성별 성과관리･활용 계획을 수립하고 사업별 생애주기 기반의 성과관리･활용･확산 ◦정부 R&D 혁신방안의 선도형 R&D 전환을 위한 정부R&D 심의체계 고도화지원 ◦글로벌 R&D 범부처 집행-성과-홍보 등 전주기 ◦전략적 글로벌 R&D 수행을 위한 정책 기반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 360.59999999999997,
+                "t": 307.68000000000006,
+                "r": 379.82959135391997,
+                "b": 319.68000000000006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "독려",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 361.68,
+                "t": 233.27999999999997,
+                "r": 470.4301651749119,
+                "b": 375.47999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "임무중심 전략로드맵 수립을 위해 우수 성과확산 국가 연구개발시스템 관리를 위한",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 436.32,
+                "t": 233.27999999999997,
+                "r": 522.3900826738562,
+                "b": 375.47999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "조기 달성 탄소중립기술특위 사례를 발굴하여 혁신지원과 거버넌스 운영·지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 578.28,
+                "r": 127.58980997433599,
+                "b": 590.28,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 406.58399999999995,
+                "r": 522.3902192540161,
+                "b": 761.28,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦｢제5차 과학기술기본계획｣ 실적점검 및 시행계획 수립 지원 ◦주요 정책 의사결정 기구 운영 지원 ◦'25년도 과학기술연감 발간 ◦혁신도전형 R&D 사업군 제도 운영 및 혁신도전형 R&D 협의체 운영 ◦'25년도 R&D 예비타당성조사 대상 사업의 정책부합성 평가 ◦｢제5차 과학기술인재 육성지원 기본계획('26~'30)｣ 수립 지원 ◦제1차 국가전략기술 육성 기본계획 '25년도 시행계획 및 실적점검 ◦국가전략기술 분야 선제적 규제혁신로드맵 수립 ◦국가전략기술 전략연구사업 지정 및 관리 ◦국가전략기술 혁신거점 지정 및 관리 ◦탄소중립 기술혁신 전략로드맵 수정(안) 마련 ◦효과적인 연구성과 확산체계 연구 및 개선 추진 ◦연구현장중심의 국가연구개발사업 제도개선 추진 ◦예산심의 기술 전문위(3개 신설) 확대 및 전문위원 증원 등을 고려해 세부 기술분야에 대한 기술동향 및 사업분석 등 사전검토 자료 강화 ◦정부R&D 중기재정계획 등 심의 지원 ◦정부R&D 투자전략 수립 및 범부처 총괄 투자 조정 검토 지원 ◦부처합동 설명회 ◦중점 연구개발 연구 및 기반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 221.64,
+                "t": 713.28,
+                "r": 301.58987780361593,
+                "b": 761.28,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "등 정부 R&D 투자정책 및 조성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 285.47999999999996,
+                "t": 713.28,
+                "r": 385.10991928454393,
+                "b": 743.28,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "사업 홍보 외 기술분야별 주요사업의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 389.4,
+                "t": 731.28,
+                "r": 437.0699192845439,
+                "b": 743.28,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "심층분석과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 441.47999999999996,
+                "t": 731.28,
+                "r": 522.1497006641281,
+                "b": 743.28,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "심의시스템 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "59": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 59
+    }
+  }
+}

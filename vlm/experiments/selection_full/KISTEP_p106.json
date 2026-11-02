@@ -1,0 +1,159 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 106,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 803,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          70.86200332641602,
+          332.1564086914062,
+          525.517333984375,
+          438.0010070800781
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          70.03934478759766,
+          221.58753967285156,
+          525.9033813476562,
+          292.45513916015625
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          70.06796264648438,
+          331.3706359863281,
+          526.070556640625,
+          438.1475524902344
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          70.03934478759766,
+          221.58753967285156,
+          525.9033813476562,
+          292.45513916015625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0106_r001",
+        "context": [
+          {
+            "text": " 연구개발준비금 운영계획",
+            "bbox": [
+              70.92,
+              70.64999999999998,
+              244.79999999999998,
+              86.51999999999998
+            ],
+            "source_ref": "#/texts/0"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 106,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 106,
+          "bbox": [
+            70.03934478759766,
+            221.58753967285156,
+            525.9033813476562,
+            292.45513916015625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.06796264648438,
+          331.3706359863281,
+          526.070556640625,
+          438.1475524902344
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0106_r002",
+        "context": [
+          {
+            "text": "❍ 2025년 연구개발준비금 편성 현황",
+            "bbox": [
+              80.88,
+              311.68031999999994,
+              291.7277672751648,
+              325.39200000000005
+            ],
+            "source_ref": "#/texts/4"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 106,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 106,
+          "bbox": [
+            70.06796264648438,
+            331.3706359863281,
+            526.070556640625,
+            438.1475524902344
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

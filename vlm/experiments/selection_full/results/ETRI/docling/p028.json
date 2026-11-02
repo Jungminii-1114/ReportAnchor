@@ -1,0 +1,864 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 42.0,
+            "t": 725.181,
+            "r": 108.0,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 415.0,
+            "t": 712.181,
+            "r": 520.3333333333333,
+            "b": 700.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "연구원 톤 챔런지Top Challenge 과제",
+      "text": "연구원 톤 챔런지Top Challenge 과제"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 51.0,
+            "t": 683.5143333333334,
+            "r": 285.6666666666667,
+            "b": 622.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "채혈 없이 혈당 축정하다 당뇨 관리 쉬위저",
+      "text": "채혈 없이 혈당 축정하다 당뇨 관리 쉬위저",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 51.66666666666667,
+            "t": 613.8476666666668,
+            "r": 201.66666666666666,
+            "b": 599.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "김봉규 진단치료기연구실 책임연구원",
+      "text": "김봉규 진단치료기연구실 책임연구원"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 767.0,
+            "t": 655.5143333333334,
+            "r": 853.6666666666666,
+            "b": 642.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "기술을 개발하고 있다",
+      "text": "기술을 개발하고 있다"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 677.0,
+            "t": 463.51433333333335,
+            "r": 871.6666666666666,
+            "b": 449.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "Al 기반 비침습 방식 손목시계 등 웨어러불도 가능",
+      "text": "Al 기반 비침습 방식 손목시계 등 웨어러불도 가능",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 427.18100000000004,
+            "r": 898.3333333333334,
+            "b": 288.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "혈당이 너무 높거나 낮으면 우리 몸은 제대로 기능하지 못하다 고혈 당 상태가 지속되면 몸의 다양한 장기가 손상되 신장병 시력 저하 고 번거로위서 꾸준히 관리하기가 어려워다",
+      "text": "혈당이 너무 높거나 낮으면 우리 몸은 제대로 기능하지 못하다 고혈 당 상태가 지속되면 몸의 다양한 장기가 손상되 신장병 시력 저하 고 번거로위서 꾸준히 관리하기가 어려워다"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 264.84766666666667,
+            "r": 899.0,
+            "b": 215.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            108
+          ]
+        }
+      ],
+      "orig": "연구하고 있다 이 기술은 피부에 빛올 비추 후 빛에 의해 생성되는 소리신호름 분석해 혈당 수치름 축정하는 방식으로 빛과 소리의 장 점이 결합한 기술이다 기존 기술에 비해 정확도가 높고 고통이 없",
+      "text": "연구하고 있다 이 기술은 피부에 빛올 비추 후 빛에 의해 생성되는 소리신호름 분석해 혈당 수치름 축정하는 방식으로 빛과 소리의 장 점이 결합한 기술이다 기존 기술에 비해 정확도가 높고 고통이 없"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 193.5143333333333,
+            "r": 899.0,
+            "b": 180.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "과거에도 비슷한 원리의 기술이 개발된 적이 있없지만 정확도가 낮",
+      "text": "과거에도 비슷한 원리의 기술이 개발된 적이 있없지만 정확도가 낮"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 121.5143333333333,
+            "r": 870.3333333333334,
+            "b": 108.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "술올 활용해 더욱 정말한 예측이 가능하도록 개선하고 있다",
+      "text": "술올 활용해 더욱 정말한 예측이 가능하도록 개선하고 있다"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 103.5143333333333,
+            "r": 898.3333333333334,
+            "b": 90.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "연구진은 이 기술을 바탕으로 웨어러블 혈당 축정기도 개발 중이다",
+      "text": "연구진은 이 기술을 바탕으로 웨어러블 혈당 축정기도 개발 중이다"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 916.6666666666667,
+            "t": 443.8476666666667,
+            "r": 942.6666666666667,
+            "b": 433.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "것이다",
+      "text": "것이다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 372.8476666666667,
+            "r": 1065.0,
+            "b": 360.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "에 감지하고 예방하는 역할까지 할 수 있다",
+      "text": "에 감지하고 예방하는 역할까지 할 수 있다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 338.18100000000004,
+            "r": 1150.3333333333333,
+            "b": 270.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            148
+          ]
+        }
+      ],
+      "orig": "한다 또 세계적으로 채혈식 혈당기 시장은 2033년까지 약 60조 원 규모로 성장할 것으로 예상되다 하지만 비침습 혈당 축정 기술은 아 직 선도 기업이 없기 때문에 우리나라가 글로벌 시장올 선점할 기회 가있다 연구진은 올해 비침습 혈당 축정 기술의 핵심기술올 완성하",
+      "text": "한다 또 세계적으로 채혈식 혈당기 시장은 2033년까지 약 60조 원 규모로 성장할 것으로 예상되다 하지만 비침습 혈당 축정 기술은 아 직 선도 기업이 없기 때문에 우리나라가 글로벌 시장올 선점할 기회 가있다 연구진은 올해 비침습 혈당 축정 기술의 핵심기술올 완성하"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 247.5143333333334,
+            "r": 1149.6666666666667,
+            "b": 162.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "또한 연구진은 초음파 소자의 고효율 소형화 제작 기술 잡음특성이 혈당 축정이 가능하다",
+      "text": "또한 연구진은 초음파 소자의 고효율 소형화 제작 기술 잡음특성이 혈당 축정이 가능하다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 121.5143333333333,
+            "r": 1149.6666666666667,
+            "b": 53.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            135
+          ]
+        }
+      ],
+      "orig": "올 활용하고 있다 현재는 병원과 산업체와 협력올 통해 다양한 환경 에서 비침습 혈당 축정 시스템의 성능분석올 위한 임상데이터 수집 이 진행되고 있다 스마트위치 해드셋 안경 등 일상적 착용이 가능 한 형태의 비침습 혈당기 개발도 추진할 예정이다",
+      "text": "올 활용하고 있다 현재는 병원과 산업체와 협력올 통해 다양한 환경 에서 비침습 혈당 축정 시스템의 성능분석올 위한 임상데이터 수집 이 진행되고 있다 스마트위치 해드셋 안경 등 일상적 착용이 가능 한 형태의 비침습 혈당기 개발도 추진할 예정이다"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 1114.0,
+            "t": 38.5143333333333,
+            "r": 1149.3333333333333,
+            "b": 29.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "54 55",
+      "text": "54 55"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9548900723457336,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.02525957301259041,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.007862756960093975,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.006054636090993881,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0016984266694635153,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.001652171602472663,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0009167852695100009,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.0005122163565829396,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.00042117477278225124,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.00025739354896359146,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.00013201341789681464,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 9.961427713278681e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 9.203374793287367e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 7.240392005769536e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 2.0778204998350702e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 1.1367745173629373e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 1.1165578143845778e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 1.0451484740769956e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 6.187211511132773e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 5.495572622749023e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 4.60388628198416e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 3.0860608148941537e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 2.452405851727235e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 1.7106189034166164e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 1.4289539649325889e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 4.809987075304889e-08,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 28,
+          "bbox": {
+            "l": 34.5659906517048,
+            "t": 697.2221874102481,
+            "r": 529.7569176200655,
+            "b": 35.939514482782215,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.9548900723457336
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.02525957301259041
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.007862756960093975
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.006054636090993881
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.0016984266694635153
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.001652171602472663
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.0009167852695100009
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0005122163565829396
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.00042117477278225124
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.00025739354896359146
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.00013201341789681464
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 9.961427713278681e-05
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 9.203374793287367e-05
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 7.240392005769536e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 2.0778204998350702e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 1.1367745173629373e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 1.1165578143845778e-05
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 1.0451484740769956e-05
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 6.187211511132773e-06
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 5.495572622749023e-06
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 4.60388628198416e-06
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 3.0860608148941537e-06
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 2.452405851727235e-06
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 1.7106189034166164e-06
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 1.4289539649325889e-06
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 4.809987075304889e-08
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "28": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 28
+    }
+  }
+}

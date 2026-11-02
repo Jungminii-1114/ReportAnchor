@@ -1,0 +1,1323 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/32"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 40.666666666666664,
+            "t": 725.181,
+            "r": 57.0,
+            "b": 715.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "개요",
+      "text": "개요"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 98.0,
+            "t": 687.8476666666667,
+            "r": 158.33333333333334,
+            "b": 674.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "History of ETRI",
+      "text": "History of ETRI"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 250.33333333333334,
+            "t": 699.181,
+            "r": 342.6666666666667,
+            "b": 670.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "1970's",
+      "text": "1970's",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 638.6666666666666,
+            "t": 699.8476666666667,
+            "r": 729.6666666666666,
+            "b": 671.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "1980's",
+      "text": "1980's",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 879.3333333333334,
+            "t": 699.8476666666667,
+            "r": 971.6666666666666,
+            "b": 671.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "1990's",
+      "text": "1990's",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 699.6666666666666,
+            "t": 641.5143333333334,
+            "r": 775.6666666666666,
+            "b": 627.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "1981. 01. 20.",
+      "text": "1981. 01. 20.",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 68.0,
+            "t": 623.8476666666667,
+            "r": 188.66666666666666,
+            "b": 610.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "한국전기기기시험연구소 (KERTI)",
+      "text": "한국전기기기시험연구소 (KERTI)"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 698.6666666666666,
+            "t": 623.8476666666667,
+            "r": 846.3333333333334,
+            "b": 565.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "한국전기통신연구소 (KETRI) 정부의 출연연구기관 통페합 방침에 따라 한국통신기술연구소와 한국전기기기 시험연구소가 통합되어 출범",
+      "text": "한국전기통신연구소 (KETRI) 정부의 출연연구기관 통페합 방침에 따라 한국통신기술연구소와 한국전기기기 시험연구소가 통합되어 출범"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 68.0,
+            "t": 608.5143333333333,
+            "r": 212.66666666666666,
+            "b": 595.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "전기 분야의 연구와 시험 등올 위해 설립",
+      "text": "전기 분야의 연구와 시험 등올 위해 설립"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 67.0,
+            "t": 579.181,
+            "r": 251.0,
+            "b": 550.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "한국전자기술연구소 (KIET) 반도체 컴퓨터 등 전자 분야 전문 연구름 위해 설립",
+      "text": "한국전자기술연구소 (KIET) 반도체 컴퓨터 등 전자 분야 전문 연구름 위해 설립"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 698.6666666666666,
+            "t": 548.8476666666667,
+            "r": 799.0,
+            "b": 535.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "한국전기통신연구소로 통합",
+      "text": "한국전기통신연구소로 통합",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 68.0,
+            "t": 532.8476666666667,
+            "r": 193.0,
+            "b": 486.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "1976. 12. 31 한국전자통신연구소 (KECRI 설립) 통신기술의 연구 개발을 위해 설립",
+      "text": "1976. 12. 31 한국전자통신연구소 (KECRI 설립) 통신기술의 연구 개발을 위해 설립"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 945.0,
+            "t": 537.181,
+            "r": 1122.6666666666667,
+            "b": 461.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "1996.01.01. 시스템공학연구소 (SERI) 1967년 6월 KIST 전자계산실로 출발한 KIST 부설 시스템공학연구소가 1996년 1월 1일 ETRI 부설로 이관 1998년 5월 25일 ETRI에I 통합",
+      "text": "1996.01.01. 시스템공학연구소 (SERI) 1967년 6월 KIST 전자계산실로 출발한 KIST 부설 시스템공학연구소가 1996년 1월 1일 ETRI 부설로 이관 1998년 5월 25일 ETRI에I 통합"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 697.3333333333334,
+            "t": 518.5143333333334,
+            "r": 894.3333333333334,
+            "b": 430.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            180
+          ]
+        }
+      ],
+      "orig": "1981. 0 20 과학기술처의 '연구 개발체제 정비와 운영개선 방안 에 따른 정부의 출연연구기관 통페합안 시행에 따라 한국통신기술연구소와 한국전기기기시험연구소가 한국전기통신 연구소 (Korea Electrotechnology and Telecommunications Research Institute: KETRI)로 통합",
+      "text": "1981. 0 20 과학기술처의 '연구 개발체제 정비와 운영개선 방안 에 따른 정부의 출연연구기관 통페합안 시행에 따라 한국통신기술연구소와 한국전기기기시험연구소가 한국전기통신 연구소 (Korea Electrotechnology and Telecommunications Research Institute: KETRI)로 통합"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 67.0,
+            "t": 470.18100000000004,
+            "r": 190.33333333333334,
+            "b": 441.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "ETRI 역사의 출발점인 3개 연구소 (전자 통신 전기 분야) 설립",
+      "text": "ETRI 역사의 출발점인 3개 연구소 (전자 통신 전기 분야) 설립"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 945.0,
+            "t": 444.51433333333335,
+            "r": 1124.6666666666667,
+            "b": 430.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "KIST 부설 시스템공학연구소가 ETRI 부설로 이관",
+      "text": "KIST 부설 시스템공학연구소가 ETRI 부설로 이관",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 67.0,
+            "t": 424.8476666666667,
+            "r": 268.0,
+            "b": 382.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            122
+          ]
+        }
+      ],
+      "orig": "1976 12 30 한국전기기기시험연구소 (Korea Electric Research and Testing Institute: KERTI) 설립 한국전자기술연구소 (Korea Institute of Electronics",
+      "text": "1976 12 30 한국전기기기시험연구소 (Korea Electric Research and Testing Institute: KERTI) 설립 한국전자기술연구소 (Korea Institute of Electronics"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 944.0,
+            "t": 414.18100000000004,
+            "r": 1150.3333333333333,
+            "b": 341.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            171
+          ]
+        }
+      ],
+      "orig": "1996 0 0 1967년 6월 27일에 한국과학기술연구소 (KIST) 전자계산실로 출발한 KIST 부설 시스템공학연구소 (System Engineering Research Institute: SERI의 주 관부처가 과학기술처에서 정보통신부로 변경되에 따라 1996년 1월 (일 ETRI 부설 기관으로 이관",
+      "text": "1996 0 0 1967년 6월 27일에 한국과학기술연구소 (KIST) 전자계산실로 출발한 KIST 부설 시스템공학연구소 (System Engineering Research Institute: SERI의 주 관부처가 과학기술처에서 정보통신부로 변경되에 따라 1996년 1월 (일 ETRI 부설 기관으로 이관"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 67.0,
+            "t": 379.18100000000004,
+            "r": 263.0,
+            "b": 351.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "Technology: KET) 설립 1976 12 31 : 한국전자동신연구소 (Korea Electronics",
+      "text": "Technology: KET) 설립 1976 12 31 : 한국전자동신연구소 (Korea Electronics"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 67.0,
+            "t": 349.8476666666667,
+            "r": 261.0,
+            "b": 321.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "& Communications Research Institute: KECRI) 설립 KIST 부설",
+      "text": "& Communications Research Institute: KECRI) 설립 KIST 부설"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 946.0,
+            "t": 323.18100000000004,
+            "r": 1023.0,
+            "b": 308.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "1997.01. 31.",
+      "text": "1997.01. 31.",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 945.0,
+            "t": 305.18100000000004,
+            "r": 1044.3333333333335,
+            "b": 291.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "한국전자통신연구원 (ETRI)",
+      "text": "한국전자통신연구원 (ETRI)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 698.6666666666666,
+            "t": 296.18100000000004,
+            "r": 862.3333333333334,
+            "b": 235.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "1985.03. 26. 한국전자통신연구소 (ETRI) 한국전기통신연구소와 한국전자기술연구소가 통합되어 정보통신 전문 연구기관으로 발족",
+      "text": "1985.03. 26. 한국전자통신연구소 (ETRI) 한국전기통신연구소와 한국전자기술연구소가 통합되어 정보통신 전문 연구기관으로 발족"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 946.0,
+            "t": 290.18100000000004,
+            "r": 1144.3333333333333,
+            "b": 277.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "전기통신기본번에 따라 한국전자통신연구원으로 명칭 변경",
+      "text": "전기통신기본번에 따라 한국전자통신연구원으로 명칭 변경"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 945.0,
+            "t": 260.51433333333335,
+            "r": 1072.0,
+            "b": 246.84766666666673,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "한국전자통신연구원으로 명칭 변경",
+      "text": "한국전자통신연구원으로 명칭 변경",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 945.0,
+            "t": 230.18100000000004,
+            "r": 1111.0,
+            "b": 187.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "1997. Ot. 31 : 전기통신법 개정에 따라 한국전자통신연구소가 한국전자통신연구원으로 명칭 변경",
+      "text": "1997. Ot. 31 : 전기통신법 개정에 따라 한국전자통신연구소가 한국전자통신연구원으로 명칭 변경"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 319.6666666666667,
+            "t": 215.18100000000004,
+            "r": 395.6666666666667,
+            "b": 200.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "1977.12. 10.",
+      "text": "1977.12. 10.",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 698.6666666666666,
+            "t": 218.5143333333334,
+            "r": 791.0,
+            "b": 205.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "한국전자통신연구소 출범",
+      "text": "한국전자통신연구소 출범",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 317.3333333333333,
+            "t": 197.18100000000004,
+            "r": 452.0,
+            "b": 139.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "한국통신기술연구소 (KTRI) KIST 부설 한국전자통신연구소 (1976. 12 31. 설립가 통신 분야 전문 연구소로 독립",
+      "text": "한국통신기술연구소 (KTRI) KIST 부설 한국전자통신연구소 (1976. 12 31. 설립가 통신 분야 전문 연구소로 독립"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 698.0,
+            "t": 189.5143333333334,
+            "r": 875.6666666666666,
+            "b": 100.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            157
+          ]
+        }
+      ],
+      "orig": "1985. 03. 26. 세계적인 정보화 추세에 맞취 통신과 전자 분야의 통합 필요성이 제기롭에 따라 한국전기통신연구소와 한국전자기술연구소가 통합되어 한국전자통신연구소(Electronics and Telecommunications Research Institute: ETRI) 출범",
+      "text": "1985. 03. 26. 세계적인 정보화 추세에 맞취 통신과 전자 분야의 통합 필요성이 제기롭에 따라 한국전기통신연구소와 한국전자기술연구소가 통합되어 한국전자통신연구소(Electronics and Telecommunications Research Institute: ETRI) 출범"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 127.33333333333333,
+            "t": 166.5143333333334,
+            "r": 137.33333333333331,
+            "b": 155.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "기",
+      "text": "기"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 317.3333333333333,
+            "t": 122.18100000000004,
+            "r": 508.0,
+            "b": 64.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            110
+          ]
+        }
+      ],
+      "orig": "1977. 12 10 특정연구기관육성번에 따라 KIST 부설 한국전자통신연구소가 한국통신기술연구소 (Korea Telecommunications Research Institute: KTRI)로 독립",
+      "text": "1977. 12 10 특정연구기관육성번에 따라 KIST 부설 한국전자통신연구소가 한국통신기술연구소 (Korea Telecommunications Research Institute: KTRI)로 독립"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 1113.0,
+            "t": 38.84766666666667,
+            "r": 1126.0,
+            "b": 30.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "76",
+      "text": "76"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.292122483253479,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.21313725411891937,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.18691158294677734,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.15947657823562622,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.0354362390935421,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.031417492777109146,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.030729318037629128,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.02053297869861126,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.010468323715031147,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.005888162646442652,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.003175111021846533,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.002147711580619216,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.0017540256958454847,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.0013915392337366939,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.0012855454115197062,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.0008984426967799664,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.0008253384730778635,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.0007325620390474796,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.0005757957114838064,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.00036602208274416625,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 0.00018145536887459457,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 0.00017872429452836514,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 0.00017256935825571418,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 0.0001477236219216138,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 2.5469460524618626e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            },
+            {
+              "confidence": 2.1466383259394206e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 39,
+          "bbox": {
+            "l": 38.07269895058735,
+            "t": 704.6621272217416,
+            "r": 1157.0095769079865,
+            "b": 41.96151325201481,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.292122483253479
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.21313725411891937
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.18691158294677734
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.15947657823562622
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.0354362390935421
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.031417492777109146
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.030729318037629128
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.02053297869861126
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.010468323715031147
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.005888162646442652
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.003175111021846533
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.002147711580619216
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0017540256958454847
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.0013915392337366939
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.0012855454115197062
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.0008984426967799664
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0008253384730778635
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.0007325620390474796
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.0005757957114838064
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 0.00036602208274416625
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.00018145536887459457
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 0.00017872429452836514
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.00017256935825571418
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 0.0001477236219216138
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 2.5469460524618626e-05
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 2.1466383259394206e-05
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "39": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 39
+    }
+  }
+}

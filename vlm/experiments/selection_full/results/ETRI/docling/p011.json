@@ -1,0 +1,6249 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/texts/92"
+      },
+      {
+        "$ref": "#/texts/93"
+      },
+      {
+        "$ref": "#/texts/94"
+      },
+      {
+        "$ref": "#/texts/95"
+      },
+      {
+        "$ref": "#/texts/96"
+      },
+      {
+        "$ref": "#/texts/97"
+      },
+      {
+        "$ref": "#/texts/98"
+      },
+      {
+        "$ref": "#/texts/99"
+      },
+      {
+        "$ref": "#/texts/100"
+      },
+      {
+        "$ref": "#/texts/101"
+      },
+      {
+        "$ref": "#/texts/102"
+      },
+      {
+        "$ref": "#/texts/103"
+      },
+      {
+        "$ref": "#/texts/104"
+      },
+      {
+        "$ref": "#/texts/105"
+      },
+      {
+        "$ref": "#/texts/106"
+      },
+      {
+        "$ref": "#/texts/107"
+      },
+      {
+        "$ref": "#/texts/108"
+      },
+      {
+        "$ref": "#/texts/109"
+      },
+      {
+        "$ref": "#/texts/110"
+      },
+      {
+        "$ref": "#/texts/111"
+      },
+      {
+        "$ref": "#/texts/112"
+      },
+      {
+        "$ref": "#/texts/113"
+      },
+      {
+        "$ref": "#/texts/114"
+      },
+      {
+        "$ref": "#/texts/115"
+      },
+      {
+        "$ref": "#/texts/116"
+      },
+      {
+        "$ref": "#/texts/117"
+      },
+      {
+        "$ref": "#/texts/118"
+      },
+      {
+        "$ref": "#/texts/119"
+      },
+      {
+        "$ref": "#/texts/120"
+      },
+      {
+        "$ref": "#/texts/121"
+      },
+      {
+        "$ref": "#/texts/122"
+      },
+      {
+        "$ref": "#/texts/123"
+      },
+      {
+        "$ref": "#/texts/124"
+      },
+      {
+        "$ref": "#/texts/125"
+      },
+      {
+        "$ref": "#/texts/126"
+      },
+      {
+        "$ref": "#/texts/127"
+      },
+      {
+        "$ref": "#/texts/128"
+      },
+      {
+        "$ref": "#/texts/129"
+      },
+      {
+        "$ref": "#/texts/130"
+      },
+      {
+        "$ref": "#/texts/131"
+      },
+      {
+        "$ref": "#/texts/132"
+      },
+      {
+        "$ref": "#/texts/133"
+      },
+      {
+        "$ref": "#/texts/134"
+      },
+      {
+        "$ref": "#/texts/135"
+      },
+      {
+        "$ref": "#/texts/136"
+      },
+      {
+        "$ref": "#/texts/137"
+      },
+      {
+        "$ref": "#/texts/138"
+      },
+      {
+        "$ref": "#/texts/139"
+      },
+      {
+        "$ref": "#/texts/140"
+      },
+      {
+        "$ref": "#/texts/141"
+      },
+      {
+        "$ref": "#/texts/142"
+      },
+      {
+        "$ref": "#/texts/143"
+      },
+      {
+        "$ref": "#/texts/144"
+      },
+      {
+        "$ref": "#/texts/145"
+      },
+      {
+        "$ref": "#/texts/146"
+      },
+      {
+        "$ref": "#/texts/147"
+      },
+      {
+        "$ref": "#/texts/148"
+      },
+      {
+        "$ref": "#/texts/149"
+      },
+      {
+        "$ref": "#/texts/150"
+      },
+      {
+        "$ref": "#/texts/151"
+      },
+      {
+        "$ref": "#/texts/152"
+      },
+      {
+        "$ref": "#/texts/153"
+      },
+      {
+        "$ref": "#/texts/154"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/161"
+      },
+      {
+        "$ref": "#/texts/162"
+      },
+      {
+        "$ref": "#/texts/163"
+      },
+      {
+        "$ref": "#/texts/164"
+      },
+      {
+        "$ref": "#/texts/165"
+      },
+      {
+        "$ref": "#/texts/166"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/155"
+        },
+        {
+          "$ref": "#/texts/156"
+        },
+        {
+          "$ref": "#/texts/157"
+        },
+        {
+          "$ref": "#/texts/158"
+        },
+        {
+          "$ref": "#/texts/159"
+        },
+        {
+          "$ref": "#/texts/160"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 42.333333333333336,
+            "t": 725.181,
+            "r": 71.66666666666666,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "일반현황",
+      "text": "일반현황"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 40.333333333333336,
+            "t": 702.5143333333334,
+            "r": 364.6666666666667,
+            "b": 678.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "본원 및 지역연구본부 Nationwide Regional Research Center",
+      "text": "본원 및 지역연구본부 Nationwide Regional Research Center",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 461.6666666666667,
+            "t": 672.5143333333334,
+            "r": 526.3333333333334,
+            "b": 662.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "(2024. 12 31. 기준)",
+      "text": "(2024. 12 31. 기준)"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1069.6666666666667,
+            "t": 672.5143333333334,
+            "r": 1149.6666666666667,
+            "b": 662.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "(202년~2024년 기준)",
+      "text": "(202년~2024년 기준)"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 404.6666666666667,
+            "t": 579.5143333333334,
+            "r": 430.0,
+            "b": 571.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "북대전 IC",
+      "text": "북대전 IC"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 460.6666666666667,
+            "t": 579.5143333333334,
+            "r": 482.0,
+            "b": 571.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "회덕 JC",
+      "text": "회덕 JC"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 212.66666666666666,
+            "t": 488.84766666666667,
+            "r": 246.66666666666666,
+            "b": 480.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "과학기술연합",
+      "text": "과학기술연합"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 170.33333333333334,
+            "t": 480.5143333333334,
+            "r": 204.66666666666666,
+            "b": 471.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "한국연구재단",
+      "text": "한국연구재단"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 212.66666666666666,
+            "t": 480.18100000000004,
+            "r": 246.66666666666666,
+            "b": 471.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "대학원대학교",
+      "text": "대학원대학교"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 253.33333333333334,
+            "t": 480.18100000000004,
+            "r": 302.6666666666667,
+            "b": 471.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "한국표준과학연구원",
+      "text": "한국표준과학연구원"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 126.0,
+            "t": 456.84766666666667,
+            "r": 145.33333333333331,
+            "b": 448.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "KT8G",
+      "text": "KT8G"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 378.3333333333333,
+            "t": 453.84766666666667,
+            "r": 417.3333333333333,
+            "b": 443.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "액스포과학공원",
+      "text": "액스포과학공원"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 126.66666666666667,
+            "t": 448.18100000000004,
+            "r": 144.0,
+            "b": 440.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "연구원",
+      "text": "연구원"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 251.0,
+            "t": 445.84766666666667,
+            "r": 269.66666666666663,
+            "b": 439.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "대전본원",
+      "text": "대전본원"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 83.33333333333334,
+            "t": 443.5143333333334,
+            "r": 102.66666666666667,
+            "b": 435.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "유성 IC",
+      "text": "유성 IC"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 121.33333333333333,
+            "t": 423.5143333333334,
+            "r": 150.66666666666669,
+            "b": 414.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "충남대학교",
+      "text": "충남대학교"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 348.0,
+            "t": 425.5143333333334,
+            "r": 376.6666666666667,
+            "b": 416.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "대전신세계",
+      "text": "대전신세계"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 348.0,
+            "t": 416.18100000000004,
+            "r": 386.6666666666667,
+            "b": 408.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "ArtaScience",
+      "text": "ArtaScience"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 222.0,
+            "t": 408.18100000000004,
+            "r": 242.0,
+            "b": 400.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "KAIST",
+      "text": "KAIST"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 48.66666666666667,
+            "t": 341.51433333333335,
+            "r": 83.0,
+            "b": 330.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "대전(본원)",
+      "text": "대전(본원)"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 49.33333333333333,
+            "t": 328.18100000000004,
+            "r": 145.33333333333331,
+            "b": 317.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "대전광역시 유성구 가정로 218",
+      "text": "대전광역시 유성구 가정로 218"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 49.33333333333333,
+            "t": 314.8476666666667,
+            "r": 96.0,
+            "b": 304.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Tel. 1466.38",
+      "text": "Tel. 1466.38"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 104.33333333333333,
+            "t": 224.5143333333334,
+            "r": 111.66666666666667,
+            "b": 219.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "본사",
+      "text": "본사"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 172.33333333333334,
+            "t": 220.5143333333334,
+            "r": 194.33333333333334,
+            "b": 215.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "한국수지원금사",
+      "text": "한국수지원금사"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 130.33333333333331,
+            "t": 188.5143333333334,
+            "r": 140.33333333333331,
+            "b": 183.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "민구소",
+      "text": "민구소"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 155.0,
+            "t": 182.5143333333334,
+            "r": 159.66666666666669,
+            "b": 168.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "품",
+      "text": "품"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 172.33333333333334,
+            "t": 193.84766666666667,
+            "r": 177.0,
+            "b": 155.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "[",
+      "text": "["
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 73.0,
+            "t": 121.84766666666667,
+            "r": 84.33333333333334,
+            "b": 117.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "판교 IC",
+      "text": "판교 IC"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 48.66666666666667,
+            "t": 91.84766666666667,
+            "r": 146.66666666666669,
+            "b": 80.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "수도권연구본부 시안전연구소",
+      "text": "수도권연구본부 시안전연구소"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 223.0,
+            "t": 221.84766666666667,
+            "r": 230.33333333333334,
+            "b": 217.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "대무",
+      "text": "대무"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 220.33333333333334,
+            "t": 173.18100000000004,
+            "r": 227.66666666666666,
+            "b": 169.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "광신",
+      "text": "광신"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 215.0,
+            "t": 91.84766666666667,
+            "r": 263.66666666666663,
+            "b": 81.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "호남권연구본부",
+      "text": "호남권연구본부",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 425.6666666666667,
+            "t": 248.51433333333335,
+            "r": 437.0,
+            "b": 243.84766666666673,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "DGIST",
+      "text": "DGIST"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 485.6666666666667,
+            "t": 171.84766666666667,
+            "r": 507.0,
+            "b": 165.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "ET미I",
+      "text": "ET미I"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 386.3333333333333,
+            "t": 108.51433333333341,
+            "r": 402.3333333333333,
+            "b": 103.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "달성소밤시",
+      "text": "달성소밤시"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 380.0,
+            "t": 91.51433333333341,
+            "r": 428.6666666666667,
+            "b": 80.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "대경권연구본부",
+      "text": "대경권연구본부",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 48.66666666666667,
+            "t": 78.84766666666667,
+            "r": 190.66666666666666,
+            "b": 55.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "경기도 성남시 분당구 대왕판고로712번길 22 Tel. 031.739.7200 / 031.739.7210",
+      "text": "경기도 성남시 분당구 대왕판고로712번길 22 Tel. 031.739.7200 / 031.739.7210"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 214.66666666666666,
+            "t": 79.84766666666667,
+            "r": 337.6666666666667,
+            "b": 55.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "광주광역시 북구 철단과기로776번길 77 Tel. 062.970.6507",
+      "text": "광주광역시 북구 철단과기로776번길 77 Tel. 062.970.6507"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 380.0,
+            "t": 65.51433333333341,
+            "r": 449.3333333333333,
+            "b": 55.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Tel. 053.670.8000",
+      "text": "Tel. 053.670.8000"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 702.181,
+            "r": 1008.0,
+            "b": 679.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "글로벌 R8D 협력 네트위크 Global RaD Cooperation Network",
+      "text": "글로벌 R8D 협력 네트위크 Global RaD Cooperation Network",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 745.3333333333334,
+            "t": 616.181,
+            "r": 768.0,
+            "b": 610.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "NORWAY",
+      "text": "NORWAY"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 861.3333333333334,
+            "t": 612.181,
+            "r": 880.0,
+            "b": 606.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "RUSSIA",
+      "text": "RUSSIA"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 779.3333333333334,
+            "t": 605.5143333333333,
+            "r": 801.3333333333334,
+            "b": 600.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "FINLAND",
+      "text": "FINLAND"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 772.0,
+            "t": 600.181,
+            "r": 798.6666666666666,
+            "b": 594.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "o ESTONIA",
+      "text": "o ESTONIA"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 757.3333333333334,
+            "t": 596.181,
+            "r": 794.6666666666666,
+            "b": 589.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "NETHLRLANDS",
+      "text": "NETHLRLANDS"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 702.0,
+            "t": 586.8476666666668,
+            "r": 724.0,
+            "b": 581.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "IRLLAND",
+      "text": "IRLLAND"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 738.0,
+            "t": 589.5143333333333,
+            "r": 746.0,
+            "b": 584.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "UK",
+      "text": "UK"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 767.3333333333334,
+            "t": 587.5143333333333,
+            "r": 788.6666666666666,
+            "b": 582.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "POLAND",
+      "text": "POLAND"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1039.3333333333333,
+            "t": 589.5143333333333,
+            "r": 1060.0,
+            "b": 583.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "CANADA",
+      "text": "CANADA"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 709.3333333333334,
+            "t": 580.181,
+            "r": 731.3333333333334,
+            "b": 574.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "3ELGIUM",
+      "text": "3ELGIUM"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 759.3333333333334,
+            "t": 580.8476666666668,
+            "r": 784.0,
+            "b": 575.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "GERMANY",
+      "text": "GERMANY"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 672.6666666666666,
+            "t": 576.8476666666668,
+            "r": 708.6666666666666,
+            "b": 570.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "LUXEMBOURG",
+      "text": "LUXEMBOURG"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 710.6666666666666,
+            "t": 573.5143333333333,
+            "r": 731.3333333333334,
+            "b": 567.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "FRANCE",
+      "text": "FRANCE"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 764.0,
+            "t": 575.5143333333333,
+            "r": 785.3333333333334,
+            "b": 570.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "AUSTRIA",
+      "text": "AUSTRIA"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 848.0,
+            "t": 574.181,
+            "r": 876.0,
+            "b": 568.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "MONGOLIA",
+      "text": "MONGOLIA"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 806.0,
+            "t": 570.8476666666668,
+            "r": 830.0,
+            "b": 564.8476666666668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "ROMANIA",
+      "text": "ROMANIA"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 729.3333333333334,
+            "t": 567.5143333333333,
+            "r": 764.6666666666666,
+            "b": 562.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "SWITZERLAND",
+      "text": "SWITZERLAND"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 773.3333333333334,
+            "t": 567.5143333333333,
+            "r": 802.0,
+            "b": 562.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "oBULGARIA",
+      "text": "oBULGARIA"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 890.6666666666666,
+            "t": 565.5143333333333,
+            "r": 908.6666666666666,
+            "b": 559.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "KOREA",
+      "text": "KOREA"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1070.6666666666667,
+            "t": 566.8476666666668,
+            "r": 1081.3333333333333,
+            "b": 561.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "USA",
+      "text": "USA"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 694.6666666666666,
+            "t": 563.5143333333333,
+            "r": 722.6666666666666,
+            "b": 557.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "PORTUGAL",
+      "text": "PORTUGAL"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 784.6666666666666,
+            "t": 561.5143333333333,
+            "r": 806.6666666666666,
+            "b": 555.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "TURKIYE",
+      "text": "TURKIYE"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 815.3333333333334,
+            "t": 564.8476666666668,
+            "r": 846.6666666666666,
+            "b": 558.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "UZBEKISTAN",
+      "text": "UZBEKISTAN"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 708.0,
+            "t": 556.8476666666668,
+            "r": 722.6666666666666,
+            "b": 551.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "SPAIN",
+      "text": "SPAIN"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 750.0,
+            "t": 558.8476666666668,
+            "r": 765.3333333333334,
+            "b": 552.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "ITALY",
+      "text": "ITALY"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 920.0,
+            "t": 559.5143333333333,
+            "r": 936.6666666666667,
+            "b": 554.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "JAPAN",
+      "text": "JAPAN"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 708.6666666666666,
+            "t": 552.181,
+            "r": 729.3333333333334,
+            "b": 545.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "GREECE",
+      "text": "GREECE"
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 879.3333333333334,
+            "t": 548.8476666666667,
+            "r": 895.3333333333334,
+            "b": 543.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "CHINA",
+      "text": "CHINA"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 759.3333333333334,
+            "t": 547.5143333333334,
+            "r": 784.6666666666666,
+            "b": 540.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "HUNGARY",
+      "text": "HUNGARY"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 832.6666666666666,
+            "t": 541.5143333333334,
+            "r": 856.6666666666666,
+            "b": 536.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "PAKISTAN",
+      "text": "PAKISTAN"
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 866.6666666666666,
+            "t": 541.5143333333334,
+            "r": 898.6666666666666,
+            "b": 535.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "HONG KONG",
+      "text": "HONG KONG"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 760.0,
+            "t": 537.5143333333334,
+            "r": 794.6666666666666,
+            "b": 530.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "SAUDI ARABIA",
+      "text": "SAUDI ARABIA"
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 810.0,
+            "t": 534.8476666666667,
+            "r": 821.3333333333334,
+            "b": 528.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "UAE",
+      "text": "UAE"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 893.3333333333334,
+            "t": 536.181,
+            "r": 912.6666666666667,
+            "b": 530.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "TAIWAN",
+      "text": "TAIWAN"
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 840.6666666666666,
+            "t": 533.5143333333334,
+            "r": 855.3333333333334,
+            "b": 526.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "INDIA",
+      "text": "INDIA"
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 866.0,
+            "t": 529.5143333333334,
+            "r": 892.6666666666666,
+            "b": 524.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "MYANMAR",
+      "text": "MYANMAR"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 786.0,
+            "t": 520.181,
+            "r": 810.0,
+            "b": 514.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "ETHIOPIA",
+      "text": "ETHIOPIA"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 522.181,
+            "r": 854.6666666666666,
+            "b": 516.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "THAILAND",
+      "text": "THAILAND"
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 879.3333333333334,
+            "t": 522.181,
+            "r": 902.6666666666666,
+            "b": 515.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "VIETNAM",
+      "text": "VIETNAM"
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 840.0,
+            "t": 503.5143333333334,
+            "r": 874.6666666666666,
+            "b": 496.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "SINGAPORE 0",
+      "text": "SINGAPORE 0"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1105.3333333333333,
+            "t": 488.84766666666667,
+            "r": 1122.6666666666667,
+            "b": 482.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "BRAZIL",
+      "text": "BRAZIL"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1006.6666666666667,
+            "t": 492.18100000000004,
+            "r": 1047.3333333333333,
+            "b": 461.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "43",
+      "text": "43"
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1045.0,
+            "t": 471.84766666666667,
+            "r": 1066.3333333333333,
+            "b": 463.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "개 국가",
+      "text": "개 국가"
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 893.3333333333334,
+            "t": 460.84766666666667,
+            "r": 921.3333333333333,
+            "b": 454.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "AUSTRALIA",
+      "text": "AUSTRALIA"
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 986.3333333333333,
+            "t": 456.5143333333334,
+            "r": 1049.0,
+            "b": 424.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "255",
+      "text": "255"
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1046.3333333333333,
+            "t": 435.84766666666667,
+            "r": 1067.0,
+            "b": 427.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "개 기관",
+      "text": "개 기관"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 938.0,
+            "t": 430.84766666666667,
+            "r": 974.6666666666667,
+            "b": 424.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "NEW ZEALAND",
+      "text": "NEW ZEALAND"
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 403.51433333333335,
+            "r": 690.6666666666666,
+            "b": 398.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "AUSTRALIA",
+      "text": "AUSTRALIA",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 403.51433333333335,
+            "r": 844.0,
+            "b": 398.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "UAPAN",
+      "text": "UAPAN"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 403.51433333333335,
+            "r": 1014.6666666666667,
+            "b": 398.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "THAILAND",
+      "text": "THAILAND"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 397.18100000000004,
+            "r": 816.6666666666666,
+            "b": 377.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            165
+          ]
+        }
+      ],
+      "orig": "Deakin Universty / Distinctive Edge Suppor Services Ptyltd; Grifith University | University of South Australia / University of Sydney University of Wolongong AUSTRIA",
+      "text": "Deakin Universty / Distinctive Edge Suppor Services Ptyltd; Grifith University | University of South Australia / University of Sydney University of Wolongong AUSTRIA"
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 397.18100000000004,
+            "r": 971.3333333333333,
+            "b": 377.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            134
+          ]
+        }
+      ],
+      "orig": "briclge KDDI / National University Corporation Tohoku University / Nippon Telegraph and Telephone Corporation RIKEN ZMP Inc LUXEMBOURG",
+      "text": "briclge KDDI / National University Corporation Tohoku University / Nippon Telegraph and Telephone Corporation RIKEN ZMP Inc LUXEMBOURG"
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 376.18100000000004,
+            "r": 778.0,
+            "b": 369.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "Federal Ministry of Finance PROFACTOR GMBH",
+      "text": "Federal Ministry of Finance PROFACTOR GMBH"
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 829.3333333333334,
+            "t": 375.51433333333335,
+            "r": 876.6666666666666,
+            "b": 370.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "SISVELINTERNATIONAL",
+      "text": "SISVELINTERNATIONAL"
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 368.8476666666667,
+            "r": 686.0,
+            "b": 363.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "BELGIUMV",
+      "text": "BELGIUMV"
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 368.8476666666667,
+            "r": 852.6666666666666,
+            "b": 363.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "MONGOLIA",
+      "text": "MONGOLIA"
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 361.51433333333335,
+            "r": 818.6666666666666,
+            "b": 349.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "VRT BRAZIL",
+      "text": "VRT BRAZIL"
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 347.8476666666667,
+            "r": 718.6666666666666,
+            "b": 341.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        },
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 361.51433333333335,
+            "r": 941.3333333333333,
+            "b": 356.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            27,
+            70
+          ]
+        }
+      ],
+      "orig": "The University of Campinas NEMA (NATIONAL FMERGENCY MANAGEMENT AGENCY)",
+      "text": "The University of Campinas NEMA (NATIONAL FMERGENCY MANAGEMENT AGENCY)"
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 396.8476666666667,
+            "r": 1005.3333333333333,
+            "b": 391.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "KMITL",
+      "text": "KMITL"
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 390.18100000000004,
+            "r": 1011.3333333333333,
+            "b": 384.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "TURKIYE",
+      "text": "TURKIYE"
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 383.18100000000004,
+            "r": 1142.6666666666667,
+            "b": 370.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            140
+          ]
+        }
+      ],
+      "orig": "ARU GROUP DAKIK ERMETAL ERSTE Sofware Limited 'Istanbul Universiry / KocSistem / Presify Analtik YazilimAS SILVERLINE FNDUSTRI VE TICAREI As",
+      "text": "ARU GROUP DAKIK ERMETAL ERSTE Sofware Limited 'Istanbul Universiry / KocSistem / Presify Analtik YazilimAS SILVERLINE FNDUSTRI VE TICAREI As"
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 361.51433333333335,
+            "r": 1002.0,
+            "b": 356.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "UAE",
+      "text": "UAE"
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 347.51433333333335,
+            "r": 893.3333333333334,
+            "b": 342.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "UCSY (Univ of Computer Stuaies)",
+      "text": "UCSY (Univ of Computer Stuaies)"
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 347.51433333333335,
+            "r": 999.3333333333333,
+            "b": 342.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "UK",
+      "text": "UK"
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 340.8476666666667,
+            "r": 688.0,
+            "b": 335.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "BULGARIA",
+      "text": "BULGARIA"
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 340.8476666666667,
+            "r": 860.6666666666666,
+            "b": 335.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "NETHERLANDS",
+      "text": "NETHERLANDS"
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 333.51433333333335,
+            "r": 687.3333333333334,
+            "b": 328.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "IOMT-BAS",
+      "text": "IOMT-BAS"
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 326.8476666666667,
+            "r": 685.3333333333334,
+            "b": 321.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "CANADA",
+      "text": "CANADA"
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 319.8476666666667,
+            "r": 823.3333333333334,
+            "b": 293.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            203
+          ]
+        }
+      ],
+      "orig": "CIFAR Communications Research Centre (CRC) (Bromont) MODA QA Consultants SkykorestInc; University of Calgary / University of Toronto / Universty of Western Ontario UTIAS-sFL Vector Instirute XANADU CHINA",
+      "text": "CIFAR Communications Research Centre (CRC) (Bromont) MODA QA Consultants SkykorestInc; University of Calgary / University of Toronto / Universty of Western Ontario UTIAS-sFL Vector Instirute XANADU CHINA"
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 292.77728479399997,
+            "r": 822.0,
+            "b": 258.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            288
+          ]
+        }
+      ],
+      "orig": "Beijing Jiaotong Universty CAS SIAT IHSENSE Group Inclustrial Technalogy Innovation ResearchInstture (ITIRII Jiangsu Provincial Department of Science and Techndlogy JunheLLP / Natonal Ininovation Center-Yangize Delta Shanghai Jiao Tong University Suzhou Industral Park TCL ESTONIA Hodings",
+      "text": "Beijing Jiaotong Universty CAS SIAT IHSENSE Group Inclustrial Technalogy Innovation ResearchInstture (ITIRII Jiangsu Provincial Department of Science and Techndlogy JunheLLP / Natonal Ininovation Center-Yangize Delta Shanghai Jiao Tong University Suzhou Industral Park TCL ESTONIA Hodings"
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 258.18100000000004,
+            "r": 722.0,
+            "b": 251.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "AUSTRALO ALPHA LAB MTU",
+      "text": "AUSTRALO ALPHA LAB MTU"
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 249.51433333333335,
+            "r": 686.0,
+            "b": 244.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "ETHIOPIA",
+      "text": "ETHIOPIA"
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 665.3333333333334,
+            "t": 243.51433333333335,
+            "r": 756.6666666666666,
+            "b": 230.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "ASTU (Adama Science & Technology Universty) FINLAND",
+      "text": "ASTU (Adama Science & Technology Universty) FINLAND"
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 229.5143333333333,
+            "r": 810.6666666666666,
+            "b": 216.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            101
+          ]
+        }
+      ],
+      "orig": "AALTO / IQM Finland Oy/KC Ministry ot Economic Afairs and Employment | TAMPEREEN KORKEAKOULUSAATIO SR",
+      "text": "AALTO / IQM Finland Oy/KC Ministry ot Economic Afairs and Employment | TAMPEREEN KORKEAKOULUSAATIO SR"
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 214.84766666666678,
+            "r": 684.0,
+            "b": 209.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "FRANCE",
+      "text": "FRANCE"
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 207.84766666666678,
+            "r": 822.6666666666666,
+            "b": 181.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            169
+          ]
+        }
+      ],
+      "orig": "Aos CNRS Detacto Eurelsat SA Exens Solutions Pasteur Research Insttute Southern Aerospace and Telecomn Consuting Sysnav THALES ALENIA SPACEFRANCE / Unovious Film CERMANY",
+      "text": "Aos CNRS Detacto Eurelsat SA Exens Solutions Pasteur Research Insttute Southern Aerospace and Telecomn Consuting Sysnav THALES ALENIA SPACEFRANCE / Unovious Film CERMANY"
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 165.84766666666667,
+            "r": 822.6666666666666,
+            "b": 153.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "TESATSPACE TheFederal Agancyfor Technical Relier THWI Vangjuard Automaton GmbH GREECE",
+      "text": "TESATSPACE TheFederal Agancyfor Technical Relier THWI Vangjuard Automaton GmbH GREECE"
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 665.3333333333334,
+            "t": 151.5143333333334,
+            "r": 823.3333333333334,
+            "b": 125.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            207
+          ]
+        }
+      ],
+      "orig": "ATHINAIIKI ZYTHOPIIA ANONYMOS ETAIRIA-ATHENIAN BREWERY SA Hellenic Rescue Team ot Attica Informatics and Telematics Institute ar CERTH WINGS ICT SOLUTIONS INFORMATION COMMUMICATION TECHNOLOGIES IKE HONG KONG",
+      "text": "ATHINAIIKI ZYTHOPIIA ANONYMOS ETAIRIA-ATHENIAN BREWERY SA Hellenic Rescue Team ot Attica Informatics and Telematics Institute ar CERTH WINGS ICT SOLUTIONS INFORMATION COMMUMICATION TECHNOLOGIES IKE HONG KONG"
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 677.0,
+            "t": 124.51433333333341,
+            "r": 700.0,
+            "b": 117.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Technology",
+      "text": "Technology"
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 116.84766666666667,
+            "r": 688.0,
+            "b": 111.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "HUNGARY",
+      "text": "HUNGARY"
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 333.51433333333335,
+            "r": 984.0,
+            "b": 314.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            159
+          ]
+        }
+      ],
+      "orig": "CORDIS Gezamenlijke Brandweer / Netherlancls Organisation tor Applied Scientfic Research / NLR / SMART Photonics TNO / Wageningen Livestock Research NEWZEALAND",
+      "text": "CORDIS Gezamenlijke Brandweer / Netherlancls Organisation tor Applied Scientfic Research / NLR / SMART Photonics TNO / Wageningen Livestock Research NEWZEALAND"
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.3333333333334,
+            "t": 313.18100000000004,
+            "r": 872.0,
+            "b": 306.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "University of Auckland",
+      "text": "University of Auckland"
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 305.51433333333335,
+            "r": 848.6666666666666,
+            "b": 300.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "NORWAY",
+      "text": "NORWAY"
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 829.0,
+            "t": 299.18100000000004,
+            "r": 968.6666666666667,
+            "b": 286.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "Kongsberg Martime AS Norweg an University ot Science and Technology PAKISTAN",
+      "text": "Kongsberg Martime AS Norweg an University ot Science and Technology PAKISTAN"
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 285.18100000000004,
+            "r": 893.3333333333334,
+            "b": 278.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Information Technology University",
+      "text": "Information Technology University"
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 277.51433333333335,
+            "r": 847.3333333333334,
+            "b": 272.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "POLAND",
+      "text": "POLAND"
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 829.3333333333334,
+            "t": 271.18100000000004,
+            "r": 983.3333333333333,
+            "b": 243.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            242
+          ]
+        }
+      ],
+      "orig": "Poznan University Scientific and Research Centrefor Fire Protection - Narional Research Insttute SIEC BADAWCZA LUKASIEWICZ PRZEMYSLOWY INSTYTUI AUJTOMATYKI POMIAROW PIAP The University of Gdansk / VIGO PHOTOMCS Warsaw University of Technology",
+      "text": "Poznan University Scientific and Research Centrefor Fire Protection - Narional Research Insttute SIEC BADAWCZA LUKASIEWICZ PRZEMYSLOWY INSTYTUI AUJTOMATYKI POMIAROW PIAP The University of Gdansk / VIGO PHOTOMCS Warsaw University of Technology"
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 242.84766666666673,
+            "r": 852.6666666666666,
+            "b": 237.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "PORTUGAL",
+      "text": "PORTUGAL"
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 829.0,
+            "t": 235.84766666666678,
+            "r": 982.0,
+            "b": 223.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "Faculty o Sciences of Universty of Lisbon Visionware Sistemas dle Informacao S4 WinTrust",
+      "text": "Faculty o Sciences of Universty of Lisbon Visionware Sistemas dle Informacao S4 WinTrust"
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 829.3333333333334,
+            "t": 221.5143333333333,
+            "r": 850.0,
+            "b": 216.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "ROMANIA",
+      "text": "ROMANIA"
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 215.18100000000004,
+            "r": 934.0,
+            "b": 202.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "ASOCIATIA TRANSILVANIAIT/NTTDATA ROMANIA SA RUSSIA",
+      "text": "ASOCIATIA TRANSILVANIAIT/NTTDATA ROMANIA SA RUSSIA"
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 201.18100000000004,
+            "r": 893.3333333333334,
+            "b": 194.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "JSC APEX Wonder Technolog es",
+      "text": "JSC APEX Wonder Technolog es"
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 193.5143333333333,
+            "r": 858.6666666666666,
+            "b": 188.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "SAUDIARABIA",
+      "text": "SAUDIARABIA"
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 186.84766666666678,
+            "r": 884.0,
+            "b": 181.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "ALHALLOUL AL-MABTAKRA",
+      "text": "ALHALLOUL AL-MABTAKRA"
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 179.5143333333333,
+            "r": 854.0,
+            "b": 174.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "SINGAPORE",
+      "text": "SINGAPORE"
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 991.6666666666667,
+            "t": 341.18100000000004,
+            "r": 1129.3333333333333,
+            "b": 321.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            139
+          ]
+        }
+      ],
+      "orig": "Airbus CRANFIELD UNIVERSITY Graphcore Limired University Queens University Belfast / Universty of Oxford / Universty of University o Surrey",
+      "text": "Airbus CRANFIELD UNIVERSITY Graphcore Limired University Queens University Belfast / Universty of Oxford / Universty of University o Surrey"
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 319.51433333333335,
+            "r": 1001.3333333333333,
+            "b": 314.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "USA",
+      "text": "USA"
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 312.8476666666667,
+            "r": 1145.3333333333333,
+            "b": 181.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            305
+          ]
+        }
+      ],
+      "orig": "Apere ANAFLSARISCALE Avcena GFLicensing/ General Dynamics Misson Sysems Inc IneiCorporaton NortneastenUniversty / Norhroip Gumman Northwestem Power Amnerca pSemiCorporaton| Purdue University | Gualcomm Rambus SIART Global-oldlings The Ohio Sate University University ot Texasat Mary Coulage XILINX INC CoP",
+      "text": "Apere ANAFLSARISCALE Avcena GFLicensing/ General Dynamics Misson Sysems Inc IneiCorporaton NortneastenUniversty / Norhroip Gumman Northwestem Power Amnerca pSemiCorporaton| Purdue University | Gualcomm Rambus SIART Global-oldlings The Ohio Sate University University ot Texasat Mary Coulage XILINX INC CoP"
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 179.5143333333333,
+            "r": 1019.3333333333333,
+            "b": 174.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "UZBEKISTAN",
+      "text": "UZBEKISTAN"
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 165.5143333333334,
+            "r": 858.6666666666666,
+            "b": 160.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "/Valesphotonics",
+      "text": "/Valesphotonics"
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 829.3333333333334,
+            "t": 158.84766666666667,
+            "r": 842.6666666666666,
+            "b": 153.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "SPAIN",
+      "text": "SPAIN"
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 991.6666666666667,
+            "t": 173.5143333333333,
+            "r": 1142.0,
+            "b": 158.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            132
+          ]
+        }
+      ],
+      "orig": "IUT (Inha Universty in Tashkent) MDT (Ministry of Digital Technologesl MITC / TUIT (Tashkent Universty of Iinformation Technologies)",
+      "text": "IUT (Inha Universty in Tashkent) MDT (Ministry of Digital Technologesl MITC / TUIT (Tashkent Universty of Iinformation Technologies)"
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 158.84766666666667,
+            "r": 1012.6666666666667,
+            "b": 153.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "VIETNAM",
+      "text": "VIETNAM"
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 151.5143333333334,
+            "r": 984.6666666666667,
+            "b": 118.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            220
+          ]
+        }
+      ],
+      "orig": "ANDREU WORLD SA Panel Sistemas PIus Etnics ROBOTNIKAUTOMATIONSLL Semdynamics Technology Sevces SL Thales Alena Space Espana UNIVERSITAT POLITECNICA VALENCIA / University ofMaard Carlos ll/ University oftne Basque Country",
+      "text": "ANDREU WORLD SA Panel Sistemas PIus Etnics ROBOTNIKAUTOMATIONSLL Semdynamics Technology Sevces SL Thales Alena Space Espana UNIVERSITAT POLITECNICA VALENCIA / University ofMaard Carlos ll/ University oftne Basque Country"
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 116.84766666666667,
+            "r": 848.6666666666666,
+            "b": 111.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "SWEDEN",
+      "text": "SWEDEN"
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 110.51433333333341,
+            "r": 758.0,
+            "b": 103.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "Ministry of Innovation and Technology ZalaZone",
+      "text": "Ministry of Innovation and Technology ZalaZone"
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 102.18100000000004,
+            "r": 678.0,
+            "b": 97.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "INDIA",
+      "text": "INDIA"
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 95.84766666666667,
+            "r": 697.3333333333334,
+            "b": 90.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Christ University",
+      "text": "Christ University"
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 88.84766666666667,
+            "r": 684.6666666666666,
+            "b": 83.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "RELAND",
+      "text": "RELAND"
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 81.51433333333341,
+            "r": 712.0,
+            "b": 76.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "Tyndall National Institute",
+      "text": "Tyndall National Institute"
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 666.0,
+            "t": 67.51433333333341,
+            "r": 819.3333333333334,
+            "b": 54.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            123
+          ]
+        },
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 110.18100000000004,
+            "r": 973.5023400421878,
+            "b": 90.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            124,
+            275
+          ]
+        },
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 89.51433333333341,
+            "r": 983.3333333333333,
+            "b": 76.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            276,
+            370
+          ]
+        }
+      ],
+      "orig": "COMAU SPA ENEA EVERIS ITALIA SPA FONDAZIONE BRUNO KESSLER / Fondazione Guglielmo Marconi ITER IDEA SRL Thales Alenia Italia KTH Royal Institute of Technology RISE Research institutes of Swedlen / Sodertorn Fire Brigade Association Uppsala University ZnOrdic AB SWTZERLAND The CSEM SA /ID Quantique SA The Robotic System Lab at ETHZurich University of Bern(UNIBE) Wearin'",
+      "text": "COMAU SPA ENEA EVERIS ITALIA SPA FONDAZIONE BRUNO KESSLER / Fondazione Guglielmo Marconi ITER IDEA SRL Thales Alenia Italia KTH Royal Institute of Technology RISE Research institutes of Swedlen / Sodertorn Fire Brigade Association Uppsala University ZnOrdic AB SWTZERLAND The CSEM SA /ID Quantique SA The Robotic System Lab at ETHZurich University of Bern(UNIBE) Wearin'"
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 74.84766666666667,
+            "r": 847.3333333333334,
+            "b": 69.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "TAIWAN",
+      "text": "TAIWAN"
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 828.6666666666666,
+            "t": 68.43043818408103,
+            "r": 973.3333333333333,
+            "b": 55.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        },
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 992.0,
+            "t": 151.84766666666667,
+            "r": 1139.3333333333333,
+            "b": 138.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            96,
+            190
+          ]
+        }
+      ],
+      "orig": "National Ming Chiao University / Nuvoton / Taiwan Semiconauctor ResearchInsttute TSMC Yang Tung Hanci University of Science Technology / Vietnam Korea Institute ot Science and Technology and",
+      "text": "National Ming Chiao University / Nuvoton / Taiwan Semiconauctor ResearchInsttute TSMC Yang Tung Hanci University of Science Technology / Vietnam Korea Institute ot Science and Technology and"
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1004.6666666666667,
+            "t": 127.51433333333341,
+            "r": 1016.0,
+            "b": 122.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "ETRI",
+      "text": "ETRI",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/155",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1004.6666666666667,
+            "t": 112.84766666666667,
+            "r": 1075.3333333333333,
+            "b": 106.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "District Beijing 100027 CHINA",
+      "text": "District Beijing 100027 CHINA"
+    },
+    {
+      "self_ref": "#/texts/156",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1004.6666666666667,
+            "t": 104.84766666666667,
+            "r": 1061.3333333333333,
+            "b": 98.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "TEL +86-186-1408-8551",
+      "text": "TEL +86-186-1408-8551"
+    },
+    {
+      "self_ref": "#/texts/157",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1004.6666666666667,
+            "t": 93.51433333333341,
+            "r": 1016.0,
+            "b": 88.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "ETRI",
+      "text": "ETRI"
+    },
+    {
+      "self_ref": "#/texts/158",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1004.6666666666667,
+            "t": 87.18100000000004,
+            "r": 1126.6666666666667,
+            "b": 80.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "3003 North Ist Street Suite 338, San Jose CA 95134",
+      "text": "3003 North Ist Street Suite 338, San Jose CA 95134"
+    },
+    {
+      "self_ref": "#/texts/159",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1004.0,
+            "t": 78.84766666666667,
+            "r": 1015.3333333333333,
+            "b": 72.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "USA",
+      "text": "USA"
+    },
+    {
+      "self_ref": "#/texts/160",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1004.6666666666667,
+            "t": 70.84766666666667,
+            "r": 1055.3333333333333,
+            "b": 64.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "TEL +1-669-287-0114",
+      "text": "TEL +1-669-287-0114"
+    },
+    {
+      "self_ref": "#/texts/161",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 258.33333333333337,
+            "t": 243.84766666666673,
+            "r": 287.66666666666663,
+            "b": 239.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "GIST 감주과학기운원",
+      "text": "GIST 감주과학기운원"
+    },
+    {
+      "self_ref": "#/texts/162",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 275.0,
+            "t": 217.18100000000004,
+            "r": 282.33333333333337,
+            "b": 213.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "APT",
+      "text": "APT"
+    },
+    {
+      "self_ref": "#/texts/163",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 271.66666666666663,
+            "t": 133.18100000000004,
+            "r": 283.66666666666663,
+            "b": 128.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "리인차",
+      "text": "리인차"
+    },
+    {
+      "self_ref": "#/texts/164",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 275.66666666666663,
+            "t": 129.18100000000004,
+            "r": 283.66666666666663,
+            "b": 124.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "APT",
+      "text": "APT"
+    },
+    {
+      "self_ref": "#/texts/165",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 338.3333333333333,
+            "t": 153.18100000000004,
+            "r": 351.0,
+            "b": 148.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "감주무편",
+      "text": "감주무편"
+    },
+    {
+      "self_ref": "#/texts/166",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1113.6666666666667,
+            "t": 38.51433333333341,
+            "r": 1148.3333333333333,
+            "b": 30.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "20 21",
+      "text": "20 21"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.5048389434814453,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.2736743986606598,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.07963961362838745,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.05345344915986061,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.053097907453775406,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.006804508622735739,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.005320196971297264,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.004546469543129206,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.004006343428045511,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 0.0029534981586039066,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 0.0028642627876251936,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.0025596057530492544,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.0018449499038979411,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0010561376111581922,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 0.0007407442899420857,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.0007091735024005175,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.00033717721817083657,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 0.0003315029025543481,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            },
+            {
+              "confidence": 0.00023488665465265512,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.00021834022481925786,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.00020429896540008485,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.00018624583026394248,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.00015290227020159364,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.00011102331336587667,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 6.527046934934333e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 4.8049147153506055e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 40.8876864344407,
+            "t": 610.6812761587387,
+            "r": 525.2980926974894,
+            "b": 350.38671705327135,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.5048389434814453
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.2736743986606598
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.07963961362838745
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.05345344915986061
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.053097907453775406
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.006804508622735739
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.005320196971297264
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.004546469543129206
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 0.004006343428045511
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 0.0029534981586039066
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.0028642627876251936
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.0025596057530492544
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.0018449499038979411
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 0.0010561376111581922
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.0007407442899420857
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.0007091735024005175
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.00033717721817083657
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 0.0003315029025543481
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.00023488665465265512
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.00021834022481925786
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.00020429896540008485
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.00018624583026394248
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.00015290227020159364
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.00011102331336587667
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 6.527046934934333e-05
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 4.8049147153506055e-05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.7550933361053467,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.19155947864055634,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.018637975677847862,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.01080744806677103,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.00851152092218399,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.0043318006210029125,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 0.002134328940883279,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.0020582329016178846,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.0010220693657174706,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0008361648069694638,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.0007988257566466928,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0007765670889057219,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0006848049233667552,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.0005855187773704529,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.0004421281046234071,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 0.0003827142936643213,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 0.00029709457885473967,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.00026444243849255145,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 0.00019949839042965323,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.00014657393330708146,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.00010477335308678448,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 8.550682105123997e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 8.386305125895888e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 7.62291019782424e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 7.282327715074643e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            },
+            {
+              "confidence": 6.362401563819731e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 40.715369211576444,
+            "t": 264.39877270495634,
+            "r": 195.8066811914708,
+            "b": 101.15070341881278,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.7550933361053467
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.19155947864055634
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.018637975677847862
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.01080744806677103
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.00851152092218399
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 0.0043318006210029125
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.002134328940883279
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.0020582329016178846
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0010220693657174706
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.0008361648069694638
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.0007988257566466928
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.0007765670889057219
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.0006848049233667552
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.0005855187773704529
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.0004421281046234071
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 0.0003827142936643213
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.00029709457885473967
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 0.00026444243849255145
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.00019949839042965323
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.00014657393330708146
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.00010477335308678448
+            },
+            {
+              "class_name": "music",
+              "confidence": 8.550682105123997e-05
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 8.386305125895888e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 7.62291019782424e-05
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 7.282327715074643e-05
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 6.362401563819731e-06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9216054081916809,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.07329098135232925,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.0015288974391296506,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.0012024418683722615,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.0008624532492831349,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 0.0004178425879217684,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.0002507767057977617,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.00022205276763997972,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0001078187269740738,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 8.104567677946761e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 6.67255008011125e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 6.520318856928498e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 6.005269824527204e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 5.221929313847795e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 5.010121822124347e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 3.808938345173374e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 1.9429713574936613e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 1.8849696061806753e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 1.3779360415355768e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 1.2769031854986679e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 1.1900639037776273e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 6.184400717756944e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 4.868721589446068e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            },
+            {
+              "confidence": 4.846674983127741e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 4.22049288317794e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 1.0846919167306623e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 369.717067136212,
+            "t": 264.3774641502056,
+            "r": 524.8557550079576,
+            "b": 100.58082913768033,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.9216054081916809
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.07329098135232925
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.0015288974391296506
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.0012024418683722615
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 0.0008624532492831349
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.0004178425879217684
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0002507767057977617
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.00022205276763997972
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 0.0001078187269740738
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 8.104567677946761e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 6.67255008011125e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 6.520318856928498e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 6.005269824527204e-05
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 5.221929313847795e-05
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 5.010121822124347e-05
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 3.808938345173374e-05
+            },
+            {
+              "class_name": "logo",
+              "confidence": 1.9429713574936613e-05
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 1.8849696061806753e-05
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 1.3779360415355768e-05
+            },
+            {
+              "class_name": "music",
+              "confidence": 1.2769031854986679e-05
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 1.1900639037776273e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 6.184400717756944e-06
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 4.868721589446068e-06
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 4.846674983127741e-06
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 4.22049288317794e-06
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 1.0846919167306623e-06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        },
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        },
+        {
+          "$ref": "#/texts/86"
+        },
+        {
+          "$ref": "#/texts/87"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9989867806434631,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.00025162732345052063,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.00018615000590216368,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 0.00016650452744215727,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.0001266874751308933,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 9.239142673322931e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 2.778560337901581e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 2.5454743081354536e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 2.0867035345872864e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 1.709320531517733e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 1.6995141777442768e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 1.6553183741052635e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 1.5863801309023984e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 9.569034773448948e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 6.936953923286637e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 6.717610631312709e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 6.3458319345954806e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 4.266208179615205e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 4.066013389092404e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 3.985222065239213e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 2.8020479021506617e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 2.2486890429718187e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 1.2317040045672911e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 4.677393690144527e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 4.622592086889199e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 1.911414670985323e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 670.772952800914,
+            "t": 645.6667145826158,
+            "r": 1140.3047093158405,
+            "b": 408.08918588216255,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.9989867806434631
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.00025162732345052063
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 0.00018615000590216368
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.00016650452744215727
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.0001266874751308933
+            },
+            {
+              "class_name": "other",
+              "confidence": 9.239142673322931e-05
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 2.778560337901581e-05
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 2.5454743081354536e-05
+            },
+            {
+              "class_name": "music",
+              "confidence": 2.0867035345872864e-05
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 1.709320531517733e-05
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 1.6995141777442768e-05
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 1.6553183741052635e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 1.5863801309023984e-05
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 9.569034773448948e-06
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 6.936953923286637e-06
+            },
+            {
+              "class_name": "table",
+              "confidence": 6.717610631312709e-06
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 6.3458319345954806e-06
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 4.266208179615205e-06
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 4.066013389092404e-06
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 3.985222065239213e-06
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 2.8020479021506617e-06
+            },
+            {
+              "class_name": "signature",
+              "confidence": 2.2486890429718187e-06
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 1.2317040045672911e-06
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 4.677393690144527e-07
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 4.622592086889199e-07
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 1.911414670985323e-07
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "11": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 11
+    }
+  }
+}

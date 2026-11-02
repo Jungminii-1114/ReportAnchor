@@ -1,0 +1,2972 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 97.32,
+            "t": 764.608,
+            "r": 331.0524,
+            "b": 735.832,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Ⅳ 2025년도 사업계획(안)",
+      "text": "Ⅳ 2025년도 사업계획(안)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 70.92,
+            "t": 706.672,
+            "r": 214.17758400000002,
+            "b": 689.6320000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "1. 연구사업 운영계획",
+      "text": "1. 연구사업 운영계획",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/tables/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 230.28,
+            "t": 679.72,
+            "r": 365.170227384,
+            "b": 667.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "< R&R-연구사업 연계 구조 >",
+      "text": "< R&R-연구사업 연계 구조 >"
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        }
+      ],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 70.39812469482422,
+            "t": 660.6241455078125,
+            "r": 525.775390625,
+            "b": 89.29498291015625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/2"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 153.84,
+              "t": 185.59199999999998,
+              "r": 172.54119617239837,
+              "b": 195.55200000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "R&R",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 374.15999999999997,
+              "t": 185.59199999999998,
+              "r": 406.1290076849338,
+              "b": 195.55200000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "연구사업",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 93.84,
+              "t": 201.312,
+              "r": 125.80900768493389,
+              "b": 211.27199999999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "상위역할",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 186.12,
+              "t": 201.312,
+              "r": 218.08900768493388,
+              "b": 211.27199999999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "주요역할",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 295.32,
+              "t": 201.312,
+              "r": 319.3686246678407,
+              "b": 211.27199999999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "대과제",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 429.96,
+              "t": 201.312,
+              "r": 454.00862466784076,
+              "b": 211.27199999999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "중과제",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.52,
+              "t": 266.23199999999997,
+              "r": 142.1281972638432,
+              "b": 318.192,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 6,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 91.56,
+              "t": 322.27199999999993,
+              "r": 128.08858028093627,
+              "b": 332.23199999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "역할 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 154.2,
+              "t": 247.63199999999995,
+              "r": 249.88824165074772,
+              "b": 271.51199999999994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "과학기술혁정책 기획·지원 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 265.44,
+              "t": 221.952,
+              "r": 349.24858028093627,
+              "b": 245.952,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "과학기술혁신정책 기획 역량 강화 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 364.32,
+              "t": 215.59199999999998,
+              "r": 519.7681972638431,
+              "b": 252.312,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "과학기술혁신전략 기획·분석 고도화 연구 과학기술혁신 정책･제도 현안 이슈 발굴 및 대응방안 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 280.92,
+              "t": 254.61432000000002,
+              "r": 499.280712330036,
+              "b": 265.15200000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 과학기술혁신정책지원(국가과학기술 정책 기획･조정)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 260.52,
+              "t": 268.0319999999999,
+              "r": 519.7869370209839,
+              "b": 290.832,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 국가전략기술 육성 기획·분석 사업(국가전략기술 핵심인재 지원 기반구축) (수탁) 국가전략기술 육성 기획·분석 사업(국가적 당면과제 해결촉진 및 성과확산)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 264.84,
+              "t": 293.592,
+              "r": 349.72900768493383,
+              "b": 330.43199999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "(수탁) 미래 예측 및 성장동력 발굴･육성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 329.64,
+              "t": 293.592,
+              "r": 514.8482416507476,
+              "b": 329.832,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "지방과학기술정책연구센터 운영지원사업 과학기술 예측 및 기획 연구 미래 이슈 발굴 및 성장전략 기획 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 158.16,
+              "t": 325.75199999999995,
+              "r": 246.04858028093625,
+              "b": 363.67199999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "국가전략기술 발굴·육성 지원 및 미래예측 활용·확산",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 265.44,
+              "t": 320.472,
+              "r": 349.24858028093627,
+              "b": 357.19199999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "전략 연구 과학기술혁신정책 기획 역량 강화 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 371.03999999999996,
+              "t": 333.31199999999995,
+              "r": 512.912617006064,
+              "b": 357.19199999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "과학기술혁신정책 글로벌 Think-Tank 역량 강화 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 260.52,
+              "t": 359.49432,
+              "r": 519.9207123300359,
+              "b": 382.87199999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 국가전략기술 육성 기획·분석 사업(국가전략기술 육성 기획･관리) (수탁) 과학기술혁신정책지원(글로벌정책 기획·조정)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 76.08,
+              "t": 450.43199999999996,
+              "r": 143.6885802809363,
+              "b": 502.39200000000005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 15,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 23,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 156.48,
+              "t": 411.43199999999996,
+              "r": 247.7290076849339,
+              "b": 449.352,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 260.88,
+              "t": 385.75199999999995,
+              "r": 353.68824165074767,
+              "b": 409.75199999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "R&D 성과평가 및 정보분석 기반 구축 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 369.84,
+              "t": 392.712,
+              "r": 514.1285802809363,
+              "b": 402.67199999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "R&D 성과평가 및 확산 제도개선 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 290.76,
+              "t": 412.512,
+              "r": 489.40858028093623,
+              "b": 448.152,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 연구자권익보호위원회 운영 (수탁) 범부처 통합연구지원시스템 구축 및 운영 지원 (수탁) 국가R&D 기획·관리 지원서비스 구축",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 266.76,
+              "t": 450.45432,
+              "r": 513.4090076849337,
+              "b": 475.032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 국가연구개발성과평가(연구비 관리제도 운영･지원, 연구보안 체계 내실화)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 154.2,
+              "t": 503.47200000000004,
+              "r": 250.00858028093626,
+              "b": 541.392,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 260.88,
+              "t": 484.272,
+              "r": 353.68824165074767,
+              "b": 508.27200000000005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "R&D 성과평가 및 정보분석 기반 구축 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 371.4,
+              "t": 477.21432,
+              "r": 512.5681972638431,
+              "b": 514.6320000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "R&D사업 조사･분석 및 평가 빅데이터 기반 지식정보 연계･분석 및 시스템 구축 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 305.52,
+              "t": 517.5120000000001,
+              "r": 474.76858028093625,
+              "b": 527.472,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 국가연구개발 통합성과활용플랫폼 구축",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 262.8,
+              "t": 530.352,
+              "r": 517.3686246678407,
+              "b": 553.032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 14,
+            "end_row_offset_idx": 15,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 직할 출연(연) 및 국가과학기술연구회 기관평가 (수탁) 국가연구개발성과평가(연구성과 관리･활용 및 운영지원,연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 350.28,
+              "t": 556.53432,
+              "r": 422.80858028093627,
+              "b": 579.912,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 15,
+            "end_row_offset_idx": 16,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "관리제도 운영･지원 기술혁신",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 413.64,
+              "t": 557.112,
+              "r": 519.7712656569222,
+              "b": 606.672,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 15,
+            "end_row_offset_idx": 16,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": ") 연구 기반 구축 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.8,
+              "t": 641.592,
+              "r": 139.9690076849339,
+              "b": 679.6320000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "전략적 연구개발 투자 및 평가 지원체계 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 153.84,
+              "t": 602.592,
+              "r": 250.36790302055914,
+              "b": 626.592,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 5,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "근거 기반 선도형 R&D의 전략적 투자·평가체계 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 261.71999999999997,
+              "t": 576.312,
+              "r": 386.69150475268924,
+              "b": 633.552,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "R&D 투자전략 기획역량 강화 연구 R&D예산정책 및 효율화 연구 전략적 정부",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 368.15999999999997,
+              "t": 569.952,
+              "r": 519.7712656569222,
+              "b": 632.952,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "아젠다 대응 R&D 투자전략 기획 근거기반 R&D예산 배분･조정 지원체계 R&D 예산 편성을 위한 정책기반 연구 R&D투자 효율화를 위한 선제적 이슈 분석",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 266.76,
+              "t": 636.432,
+              "r": 513.440712330036,
+              "b": 646.392,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 16,
+            "end_row_offset_idx": 17,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 국가연구개발성과평가(성과평가 정책수립 및 성과평가 실시)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 300.96,
+              "t": 649.272,
+              "r": 479.20824165074765,
+              "b": 659.232,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 17,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 연구개발예산의 전략적 편성에 관한 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 156.48,
+              "t": 694.6320000000001,
+              "r": 238.12858028093626,
+              "b": 718.6320000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 21,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "R&D 예비타당성 전문성·신뢰성 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 223.67999999999998,
+              "t": 694.6320000000001,
+              "r": 247.7286246678408,
+              "b": 704.592,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 21,
+            "end_row_offset_idx": 23,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "조사의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 267.84,
+              "t": 675.432,
+              "r": 346.7298181060245,
+              "b": 685.392,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "R&D 예비타당성조사",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 278.88,
+              "t": 689.472,
+              "r": 335.68858028093626,
+              "b": 699.432,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 19,
+            "end_row_offset_idx": 20,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "기반 강화 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 364.32,
+              "t": 661.9920000000001,
+              "r": 507.2882416507476,
+              "b": 685.992,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "R&D사업 예비타당성조사 방법론 연구 조사기반 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 321.96,
+              "t": 661.9920000000001,
+              "r": 519.6481972638431,
+              "b": 738.432,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 20,
+            "end_row_offset_idx": 21,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "및 (수탁) 국가연구개발사업 타당성조사 (수탁) 국방R&D분야 사업타당성조사",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 368.15999999999997,
+              "t": 688.8720000000001,
+              "r": 515.8081972638431,
+              "b": 712.8720000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 19,
+            "end_row_offset_idx": 20,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "R&D 예비타당성조사 네트워크 구축 및 전문역량 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 289.32,
+              "t": 741.312,
+              "r": 490.880712330036,
+              "b": 751.272,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 22,
+            "end_row_offset_idx": 23,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "(수탁) 국가연구개발성과평가(예비타당성조사 대상선정)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 23,
+        "num_cols": 4,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 153.84,
+                "t": 185.59199999999998,
+                "r": 172.54119617239837,
+                "b": 195.55200000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "R&R",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 153.84,
+                "t": 185.59199999999998,
+                "r": 172.54119617239837,
+                "b": 195.55200000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "R&R",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 374.15999999999997,
+                "t": 185.59199999999998,
+                "r": 406.1290076849338,
+                "b": 195.55200000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "연구사업",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 374.15999999999997,
+                "t": 185.59199999999998,
+                "r": 406.1290076849338,
+                "b": 195.55200000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "연구사업",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 93.84,
+                "t": 201.312,
+                "r": 125.80900768493389,
+                "b": 211.27199999999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "상위역할",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 186.12,
+                "t": 201.312,
+                "r": 218.08900768493388,
+                "b": 211.27199999999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "주요역할",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 295.32,
+                "t": 201.312,
+                "r": 319.3686246678407,
+                "b": 211.27199999999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "대과제",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 429.96,
+                "t": 201.312,
+                "r": 454.00862466784076,
+                "b": 211.27199999999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "중과제",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.52,
+                "t": 266.23199999999997,
+                "r": 142.1281972638432,
+                "b": 318.192,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 6,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 154.2,
+                "t": 247.63199999999995,
+                "r": 249.88824165074772,
+                "b": 271.51199999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "과학기술혁정책 기획·지원 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 265.44,
+                "t": 221.952,
+                "r": 349.24858028093627,
+                "b": 245.952,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "과학기술혁신정책 기획 역량 강화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 364.32,
+                "t": 215.59199999999998,
+                "r": 519.7681972638431,
+                "b": 252.312,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "과학기술혁신전략 기획·분석 고도화 연구 과학기술혁신 정책･제도 현안 이슈 발굴 및 대응방안 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.52,
+                "t": 266.23199999999997,
+                "r": 142.1281972638432,
+                "b": 318.192,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 6,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 154.2,
+                "t": 247.63199999999995,
+                "r": 249.88824165074772,
+                "b": 271.51199999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "과학기술혁정책 기획·지원 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 280.92,
+                "t": 254.61432000000002,
+                "r": 499.280712330036,
+                "b": 265.15200000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 과학기술혁신정책지원(국가과학기술 정책 기획･조정)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 280.92,
+                "t": 254.61432000000002,
+                "r": 499.280712330036,
+                "b": 265.15200000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 과학기술혁신정책지원(국가과학기술 정책 기획･조정)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.52,
+                "t": 266.23199999999997,
+                "r": 142.1281972638432,
+                "b": 318.192,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 6,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 154.2,
+                "t": 247.63199999999995,
+                "r": 249.88824165074772,
+                "b": 271.51199999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "과학기술혁정책 기획·지원 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 260.52,
+                "t": 268.0319999999999,
+                "r": 519.7869370209839,
+                "b": 290.832,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가전략기술 육성 기획·분석 사업(국가전략기술 핵심인재 지원 기반구축) (수탁) 국가전략기술 육성 기획·분석 사업(국가적 당면과제 해결촉진 및 성과확산)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 260.52,
+                "t": 268.0319999999999,
+                "r": 519.7869370209839,
+                "b": 290.832,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가전략기술 육성 기획·분석 사업(국가전략기술 핵심인재 지원 기반구축) (수탁) 국가전략기술 육성 기획·분석 사업(국가적 당면과제 해결촉진 및 성과확산)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.52,
+                "t": 266.23199999999997,
+                "r": 142.1281972638432,
+                "b": 318.192,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 6,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 158.16,
+                "t": 325.75199999999995,
+                "r": 246.04858028093625,
+                "b": 363.67199999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "국가전략기술 발굴·육성 지원 및 미래예측 활용·확산",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 264.84,
+                "t": 293.592,
+                "r": 349.72900768493383,
+                "b": 330.43199999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "(수탁) 미래 예측 및 성장동력 발굴･육성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 329.64,
+                "t": 293.592,
+                "r": 514.8482416507476,
+                "b": 329.832,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "지방과학기술정책연구센터 운영지원사업 과학기술 예측 및 기획 연구 미래 이슈 발굴 및 성장전략 기획 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 91.56,
+                "t": 322.27199999999993,
+                "r": 128.08858028093627,
+                "b": 332.23199999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "역할 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 158.16,
+                "t": 325.75199999999995,
+                "r": 246.04858028093625,
+                "b": 363.67199999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "국가전략기술 발굴·육성 지원 및 미래예측 활용·확산",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 265.44,
+                "t": 320.472,
+                "r": 349.24858028093627,
+                "b": 357.19199999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "전략 연구 과학기술혁신정책 기획 역량 강화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 371.03999999999996,
+                "t": 333.31199999999995,
+                "r": 512.912617006064,
+                "b": 357.19199999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "과학기술혁신정책 글로벌 Think-Tank 역량 강화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.52,
+                "t": 266.23199999999997,
+                "r": 142.1281972638432,
+                "b": 318.192,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 6,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 158.16,
+                "t": 325.75199999999995,
+                "r": 246.04858028093625,
+                "b": 363.67199999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "국가전략기술 발굴·육성 지원 및 미래예측 활용·확산",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 260.52,
+                "t": 359.49432,
+                "r": 519.9207123300359,
+                "b": 382.87199999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가전략기술 육성 기획·분석 사업(국가전략기술 육성 기획･관리) (수탁) 과학기술혁신정책지원(글로벌정책 기획·조정)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 260.52,
+                "t": 359.49432,
+                "r": 519.9207123300359,
+                "b": 382.87199999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가전략기술 육성 기획·분석 사업(국가전략기술 육성 기획･관리) (수탁) 과학기술혁신정책지원(글로벌정책 기획·조정)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 156.48,
+                "t": 411.43199999999996,
+                "r": 247.7290076849339,
+                "b": 449.352,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 260.88,
+                "t": 385.75199999999995,
+                "r": 353.68824165074767,
+                "b": 409.75199999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "R&D 성과평가 및 정보분석 기반 구축 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 369.84,
+                "t": 392.712,
+                "r": 514.1285802809363,
+                "b": 402.67199999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "R&D 성과평가 및 확산 제도개선 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 156.48,
+                "t": 411.43199999999996,
+                "r": 247.7290076849339,
+                "b": 449.352,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 290.76,
+                "t": 412.512,
+                "r": 489.40858028093623,
+                "b": 448.152,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 연구자권익보호위원회 운영 (수탁) 범부처 통합연구지원시스템 구축 및 운영 지원 (수탁) 국가R&D 기획·관리 지원서비스 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 290.76,
+                "t": 412.512,
+                "r": 489.40858028093623,
+                "b": 448.152,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 연구자권익보호위원회 운영 (수탁) 범부처 통합연구지원시스템 구축 및 운영 지원 (수탁) 국가R&D 기획·관리 지원서비스 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 156.48,
+                "t": 411.43199999999996,
+                "r": 247.7290076849339,
+                "b": 449.352,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 266.76,
+                "t": 450.45432,
+                "r": 513.4090076849337,
+                "b": 475.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가연구개발성과평가(연구비 관리제도 운영･지원, 연구보안 체계 내실화)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 266.76,
+                "t": 450.45432,
+                "r": 513.4090076849337,
+                "b": 475.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가연구개발성과평가(연구비 관리제도 운영･지원, 연구보안 체계 내실화)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 154.2,
+                "t": 503.47200000000004,
+                "r": 250.00858028093626,
+                "b": 541.392,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 260.88,
+                "t": 484.272,
+                "r": 353.68824165074767,
+                "b": 508.27200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "R&D 성과평가 및 정보분석 기반 구축 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 371.4,
+                "t": 477.21432,
+                "r": 512.5681972638431,
+                "b": 514.6320000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "R&D사업 조사･분석 및 평가 빅데이터 기반 지식정보 연계･분석 및 시스템 구축 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 154.2,
+                "t": 503.47200000000004,
+                "r": 250.00858028093626,
+                "b": 541.392,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 305.52,
+                "t": 517.5120000000001,
+                "r": 474.76858028093625,
+                "b": 527.472,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가연구개발 통합성과활용플랫폼 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 305.52,
+                "t": 517.5120000000001,
+                "r": 474.76858028093625,
+                "b": 527.472,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가연구개발 통합성과활용플랫폼 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 153.84,
+                "t": 602.592,
+                "r": 250.36790302055914,
+                "b": 626.592,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 5,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "근거 기반 선도형 R&D의 전략적 투자·평가체계 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 261.71999999999997,
+                "t": 576.312,
+                "r": 386.69150475268924,
+                "b": 633.552,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "R&D 투자전략 기획역량 강화 연구 R&D예산정책 및 효율화 연구 전략적 정부",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 368.15999999999997,
+                "t": 569.952,
+                "r": 519.7712656569222,
+                "b": 632.952,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "아젠다 대응 R&D 투자전략 기획 근거기반 R&D예산 배분･조정 지원체계 R&D 예산 편성을 위한 정책기반 연구 R&D투자 효율화를 위한 선제적 이슈 분석",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 153.84,
+                "t": 602.592,
+                "r": 250.36790302055914,
+                "b": 626.592,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 5,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "근거 기반 선도형 R&D의 전략적 투자·평가체계 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 262.8,
+                "t": 530.352,
+                "r": 517.3686246678407,
+                "b": 553.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 직할 출연(연) 및 국가과학기술연구회 기관평가 (수탁) 국가연구개발성과평가(연구성과 관리･활용 및 운영지원,연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 262.8,
+                "t": 530.352,
+                "r": 517.3686246678407,
+                "b": 553.032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 직할 출연(연) 및 국가과학기술연구회 기관평가 (수탁) 국가연구개발성과평가(연구성과 관리･활용 및 운영지원,연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 153.84,
+                "t": 602.592,
+                "r": 250.36790302055914,
+                "b": 626.592,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 5,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "근거 기반 선도형 R&D의 전략적 투자·평가체계 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 350.28,
+                "t": 556.53432,
+                "r": 422.80858028093627,
+                "b": 579.912,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "관리제도 운영･지원 기술혁신",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 413.64,
+                "t": 557.112,
+                "r": 519.7712656569222,
+                "b": 606.672,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": ") 연구 기반 구축 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 153.84,
+                "t": 602.592,
+                "r": 250.36790302055914,
+                "b": 626.592,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 5,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "근거 기반 선도형 R&D의 전략적 투자·평가체계 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 266.76,
+                "t": 636.432,
+                "r": 513.440712330036,
+                "b": 646.392,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가연구개발성과평가(성과평가 정책수립 및 성과평가 실시)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 266.76,
+                "t": 636.432,
+                "r": 513.440712330036,
+                "b": 646.392,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가연구개발성과평가(성과평가 정책수립 및 성과평가 실시)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 153.84,
+                "t": 602.592,
+                "r": 250.36790302055914,
+                "b": 626.592,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 5,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "근거 기반 선도형 R&D의 전략적 투자·평가체계 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 300.96,
+                "t": 649.272,
+                "r": 479.20824165074765,
+                "b": 659.232,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 연구개발예산의 전략적 편성에 관한 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 300.96,
+                "t": 649.272,
+                "r": 479.20824165074765,
+                "b": 659.232,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 연구개발예산의 전략적 편성에 관한 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.8,
+                "t": 641.592,
+                "r": 139.9690076849339,
+                "b": 679.6320000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전략적 연구개발 투자 및 평가 지원체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 156.48,
+                "t": 694.6320000000001,
+                "r": 238.12858028093626,
+                "b": 718.6320000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "R&D 예비타당성 전문성·신뢰성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 267.84,
+                "t": 675.432,
+                "r": 346.7298181060245,
+                "b": 685.392,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "R&D 예비타당성조사",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 364.32,
+                "t": 661.9920000000001,
+                "r": 507.2882416507476,
+                "b": 685.992,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "R&D사업 예비타당성조사 방법론 연구 조사기반 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 156.48,
+                "t": 694.6320000000001,
+                "r": 238.12858028093626,
+                "b": 718.6320000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "R&D 예비타당성 전문성·신뢰성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 278.88,
+                "t": 689.472,
+                "r": 335.68858028093626,
+                "b": 699.432,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 19,
+              "end_row_offset_idx": 20,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "기반 강화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 368.15999999999997,
+                "t": 688.8720000000001,
+                "r": 515.8081972638431,
+                "b": 712.8720000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 19,
+              "end_row_offset_idx": 20,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "R&D 예비타당성조사 네트워크 구축 및 전문역량 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 156.48,
+                "t": 694.6320000000001,
+                "r": 238.12858028093626,
+                "b": 718.6320000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "R&D 예비타당성 전문성·신뢰성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 321.96,
+                "t": 661.9920000000001,
+                "r": 519.6481972638431,
+                "b": 738.432,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 20,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "및 (수탁) 국가연구개발사업 타당성조사 (수탁) 국방R&D분야 사업타당성조사",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 321.96,
+                "t": 661.9920000000001,
+                "r": 519.6481972638431,
+                "b": 738.432,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 20,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "및 (수탁) 국가연구개발사업 타당성조사 (수탁) 국방R&D분야 사업타당성조사",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 223.67999999999998,
+                "t": 694.6320000000001,
+                "r": 247.7286246678408,
+                "b": 704.592,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "조사의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 22,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 22,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.08,
+                "t": 450.43199999999996,
+                "r": 143.6885802809363,
+                "b": 502.39200000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 15,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 223.67999999999998,
+                "t": 694.6320000000001,
+                "r": 247.7286246678408,
+                "b": 704.592,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "조사의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 289.32,
+                "t": 741.312,
+                "r": 490.880712330036,
+                "b": 751.272,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 22,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가연구개발성과평가(예비타당성조사 대상선정)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 289.32,
+                "t": 741.312,
+                "r": 490.880712330036,
+                "b": 751.272,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 22,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "(수탁) 국가연구개발성과평가(예비타당성조사 대상선정)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "33": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 33
+    }
+  }
+}

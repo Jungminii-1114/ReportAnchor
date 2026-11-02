@@ -1,0 +1,469 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 74,
+          "bbox": {
+            "l": 70.90505981445312,
+            "t": 770.3019409179688,
+            "r": 525.2279052734375,
+            "b": 157.48828125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 154.32,
+              "t": 74.27999999999997,
+              "r": 522.1495913539201,
+              "b": 123.48000000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "- (과제평가) 전 부처 연구개발 과제평가 표준지침 현장 착근 지원 및 연구관리 전문 기관 전문협의회 운영을 통한 제도 개선 사항 발굴 - (표준성과지표) 국가연구개발사업 표준성과지표 기존 지표 보완·개선사항 도출",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 350.88,
+              "r": 98.669564083968,
+              "b": 379.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 143.15999999999997,
+              "r": 136.22959135391997,
+              "b": 155.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정량",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 134.06399999999996,
+              "r": 409.94945477375995,
+              "b": 163.55999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦ 연구보고서 : 3권 ◦ 국가과학기술자문회의 심의회의 운영위원회 보고 : 2건",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 382.08,
+              "r": 136.22959135391997,
+              "b": 394.08,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 179.784,
+              "r": 522.3898099743361,
+              "b": 595.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦ (성과평가 기본계획 및 실시계획) 사업 및 기관평가 추진시 평가분야별 세부 적용 기준으로 활용하고 평가기반 관리･운영･발전 및 국가연구개발 성과평가(사업 및 기관)의 기본 방향 공유 ◦ (전략계획서 점검) 당초 사업 기획과 실제 사업추진의 일관성 확보 및 성과평가의 기준으로 활용 ◦ (성과목표지표 점검) 점검 완료된 성과계획서 및 보고서는 정부 예산안의 첨부서류로 국회에 제출 ◦ 특정평가 - (사업(군)･사업별 특정평가) 과학기술정책 이슈 또는 국가･사회적으로 필요한 현안 사업(군)에 대한 평가 결과를 정책 반영 및 사업 개선방안으로 활용 - (예타 사업변경 특정평가) 사업조정내용의 적절성을 확인하여 사업 예상 성과 달성과 국가연구개발사업 예산 투자의 효과성 확보 - (핵심재정사업 특정평가) 핵심재정사업의 성과 점검을 통해 국정 비전의 달성도를 평가하고, 개선방안을 제시하여 조기 성과 달성에 기여 ◦ 성과평가체계 선진화 및 기반 강화 - (성과평가 기반) 성과평가전문위원회 운영을 통해 R&D 평가 제도의 전문성 확보, 성과평가 포럼을 통해 연구개발 추진 부처 및 연구자의 연구개발성과 제고, 성과평가 유공자 포상을 통한 연구자 및 연구현장 사기 진작, 설문 조사 결과 등을 성과평가 개선사항에 반영 - (과제평가) 국가연구개발사업 평가 대상 사업에 속한 전 부처 과제의 공통 지침 마련을 통해 전주기적(선정~최종) 과제평가의 전문성, 효율성 제고 - (성과평가정보시스템) 국가연구개발 관련 성과평가정보(사업평가, 기관평가)를 등록･ 공개함으로써 평가의 투명성 및 신뢰성 제고 - (표준성과지표) 국가연구개발 표준 지표를 제공하여 성과 측정의 가이드라인을 제시 하고 사업별 전략계획서 수립/점검 및 평가에 활용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 639.12,
+              "r": 137.070028594752,
+              "b": 651.12,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 613.2239999999999,
+              "r": 522.2698642838402,
+              "b": 676.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦ R&D 성과평가제도 개선을 통해 평가의 신뢰성을 제고하고 우수성과의 창출과 확산을 견인 ◦ 주요 현안 사업(군)의 추진체계와 추진성과에 대한 특정평가를 통해 정부 R&D 투자방향 설정, 사업예산 조정과 연계 강화를 통해 연구개발 투자 효과성 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 4,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 154.32,
+                "t": 74.27999999999997,
+                "r": 522.1495913539201,
+                "b": 123.48000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "- (과제평가) 전 부처 연구개발 과제평가 표준지침 현장 착근 지원 및 연구관리 전문 기관 전문협의회 운영을 통한 제도 개선 사항 발굴 - (표준성과지표) 국가연구개발사업 표준성과지표 기존 지표 보완·개선사항 도출",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 143.15999999999997,
+                "r": 136.22959135391997,
+                "b": 155.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정량",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 134.06399999999996,
+                "r": 409.94945477375995,
+                "b": 163.55999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦ 연구보고서 : 3권 ◦ 국가과학기술자문회의 심의회의 운영위원회 보고 : 2건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 350.88,
+                "r": 98.669564083968,
+                "b": 379.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 382.08,
+                "r": 136.22959135391997,
+                "b": 394.08,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 179.784,
+                "r": 522.3898099743361,
+                "b": 595.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦ (성과평가 기본계획 및 실시계획) 사업 및 기관평가 추진시 평가분야별 세부 적용 기준으로 활용하고 평가기반 관리･운영･발전 및 국가연구개발 성과평가(사업 및 기관)의 기본 방향 공유 ◦ (전략계획서 점검) 당초 사업 기획과 실제 사업추진의 일관성 확보 및 성과평가의 기준으로 활용 ◦ (성과목표지표 점검) 점검 완료된 성과계획서 및 보고서는 정부 예산안의 첨부서류로 국회에 제출 ◦ 특정평가 - (사업(군)･사업별 특정평가) 과학기술정책 이슈 또는 국가･사회적으로 필요한 현안 사업(군)에 대한 평가 결과를 정책 반영 및 사업 개선방안으로 활용 - (예타 사업변경 특정평가) 사업조정내용의 적절성을 확인하여 사업 예상 성과 달성과 국가연구개발사업 예산 투자의 효과성 확보 - (핵심재정사업 특정평가) 핵심재정사업의 성과 점검을 통해 국정 비전의 달성도를 평가하고, 개선방안을 제시하여 조기 성과 달성에 기여 ◦ 성과평가체계 선진화 및 기반 강화 - (성과평가 기반) 성과평가전문위원회 운영을 통해 R&D 평가 제도의 전문성 확보, 성과평가 포럼을 통해 연구개발 추진 부처 및 연구자의 연구개발성과 제고, 성과평가 유공자 포상을 통한 연구자 및 연구현장 사기 진작, 설문 조사 결과 등을 성과평가 개선사항에 반영 - (과제평가) 국가연구개발사업 평가 대상 사업에 속한 전 부처 과제의 공통 지침 마련을 통해 전주기적(선정~최종) 과제평가의 전문성, 효율성 제고 - (성과평가정보시스템) 국가연구개발 관련 성과평가정보(사업평가, 기관평가)를 등록･ 공개함으로써 평가의 투명성 및 신뢰성 제고 - (표준성과지표) 국가연구개발 표준 지표를 제공하여 성과 측정의 가이드라인을 제시 하고 사업별 전략계획서 수립/점검 및 평가에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 639.12,
+                "r": 137.070028594752,
+                "b": 651.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 639.12,
+                "r": 137.070028594752,
+                "b": 651.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 613.2239999999999,
+                "r": 522.2698642838402,
+                "b": 676.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦ R&D 성과평가제도 개선을 통해 평가의 신뢰성을 제고하고 우수성과의 창출과 확산을 견인 ◦ 주요 현안 사업(군)의 추진체계와 추진성과에 대한 특정평가를 통해 정부 R&D 투자방향 설정, 사업예산 조정과 연계 강화를 통해 연구개발 투자 효과성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "74": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 74
+    }
+  }
+}

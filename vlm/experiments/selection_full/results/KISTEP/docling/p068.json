@@ -1,0 +1,1462 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 68,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 769.48,
+            "r": 214.89,
+            "b": 754.48,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "주요 연구내용(요약)",
+      "text": "주요 연구내용(요약)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 68,
+          "bbox": {
+            "l": 70.07958221435547,
+            "t": 741.6582336425781,
+            "r": 525.3582153320312,
+            "b": 194.17431640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 94.08,
+              "t": 106.08000000000004,
+              "r": 122.90967339417598,
+              "b": 118.08000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "사업명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 239.76,
+              "t": 106.08000000000004,
+              "r": 431.389213596,
+              "b": 118.08000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "연구개발지원단 육성지원사업(정책연구센터)",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 143.88,
+              "r": 118.10959135392,
+              "b": 155.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "구분",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 130.79999999999995,
+              "r": 207.50991928454397,
+              "b": 142.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구책임자",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 130.79999999999995,
+              "r": 353.18980997433596,
+              "b": 142.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "권명화 사업기간",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.36,
+              "t": 130.79999999999995,
+              "r": 497.411674995456,
+              "b": 142.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 6,
+            "text": "'25.01.01~'25.12.31",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 156.96000000000004,
+              "r": 198.02970066412797,
+              "b": 168.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구비",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 156.96000000000004,
+              "r": 357.62970066412794,
+              "b": 168.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "'24년 470백만원",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 156.96000000000004,
+              "r": 510.8697006641281,
+              "b": 168.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "'25년 470백만원",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 197.15999999999997,
+              "r": 127.58980997433599,
+              "b": 209.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 188.06399999999996,
+              "r": 522.149564083968,
+              "b": 217.55999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦지역이 주도하는 근거기반의 과학기술혁신정책 수립을 위한 연구개발지원단 기능 강화와 중앙과 지역이 협력하는 통합적 과학기술혁신정책 수립 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 327.0,
+              "r": 127.58980997433599,
+              "b": 339.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 242.30399999999997,
+              "r": 522.2696458938241,
+              "b": 423.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦지역의 근거기반 맞춤형 과학기술혁신전략 수립 지원 - 지역별 과학기술혁신환경 및 역량에 대한 분석을 토대로 각 지역의 맞춤형 과기혁신 전략 수립을 위한 활용성이 높은 정책 근거 자료 제시 ◦지역과학기술혁신 데이터의 통합적 구축 및 공유 체계 마련 - 광역 시·도별 (매년)R&D과제, R&D성과, (격년)혁신기관 및 혁신클러스터 조사·분석 - 지역과학기술정보서비스(이하 RTIS) 구축 및 운영 고도화 - 상시적 수요조사를 통해 플랫폼 정보, 콘텐츠, 커뮤니티 공간 및 서비스 등을 지속 개선하여 정보공유･축적 및 정책 수립 지원 효과성 제고 ◦ 중앙(과기부)과 지역(연지단)의 Think-Tank로서 정책 고객 지원 강화 - 과기부 지역과학기술혁신정책 기획･조정시 요구되는 정책현안 근접 지원 - 지역기술혁신허브 운영 상세 기획, 허브 선정 및 컨설팅 등 적시 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 500.76,
+              "r": 98.669564083968,
+              "b": 529.56,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 456.84,
+              "r": 136.22959135391997,
+              "b": 468.84,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정량",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 447.74399999999997,
+              "r": 316.46945477376,
+              "b": 477.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦지역 R&D 조사분석 보고서 : 3건 ◦연구보고서 : 1건",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 536.28,
+              "r": 136.22959135391997,
+              "b": 548.28,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 501.984,
+              "r": 457.34956408396795,
+              "b": 581.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦중앙부처(과기정통부)의 지역과기혁신정책 총괄 기획･조정 지원 - 과학기술기반의 지역혁신 역량 제고 방안 등 전략 수립 지원 등 ◦연지단 수요를 기반으로 맞춤형 컨설팅 및 개선 방안 제시 - 연지단 사업 기획시, 사업 설계 및 추진 방향(전략 수립) 등 지원 ◦지역과학기술정보서비스(RTIS) 운영 및 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 615.84,
+              "r": 137.070028594752,
+              "b": 627.84,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 606.7439999999999,
+              "r": 522.149564083968,
+              "b": 636.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦17개 광역시·도 지역과학기술 혁신역량 분석, 지역과학기술혁신전략, 지역 주도 R&D 기획 등에 활용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 6,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 94.08,
+                "t": 106.08000000000004,
+                "r": 122.90967339417598,
+                "b": 118.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 94.08,
+                "t": 106.08000000000004,
+                "r": 122.90967339417598,
+                "b": 118.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 239.76,
+                "t": 106.08000000000004,
+                "r": 431.389213596,
+                "b": 118.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "연구개발지원단 육성지원사업(정책연구센터)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 239.76,
+                "t": 106.08000000000004,
+                "r": 431.389213596,
+                "b": 118.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "연구개발지원단 육성지원사업(정책연구센터)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 239.76,
+                "t": 106.08000000000004,
+                "r": 431.389213596,
+                "b": 118.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "연구개발지원단 육성지원사업(정책연구센터)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 239.76,
+                "t": 106.08000000000004,
+                "r": 431.389213596,
+                "b": 118.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "연구개발지원단 육성지원사업(정책연구센터)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 143.88,
+                "r": 118.10959135392,
+                "b": 155.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 130.79999999999995,
+                "r": 207.50991928454397,
+                "b": 142.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구책임자",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 130.79999999999995,
+                "r": 353.18980997433596,
+                "b": 142.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "권명화 사업기간",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 130.79999999999995,
+                "r": 497.411674995456,
+                "b": 142.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 130.79999999999995,
+                "r": 497.411674995456,
+                "b": 142.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 156.96000000000004,
+                "r": 198.02970066412797,
+                "b": 168.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구비",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 156.96000000000004,
+                "r": 357.62970066412794,
+                "b": 168.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "'24년 470백만원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 156.96000000000004,
+                "r": 510.8697006641281,
+                "b": 168.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "'25년 470백만원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 197.15999999999997,
+                "r": 127.58980997433599,
+                "b": 209.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 197.15999999999997,
+                "r": 127.58980997433599,
+                "b": 209.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 188.06399999999996,
+                "r": 522.149564083968,
+                "b": 217.55999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역이 주도하는 근거기반의 과학기술혁신정책 수립을 위한 연구개발지원단 기능 강화와 중앙과 지역이 협력하는 통합적 과학기술혁신정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 188.06399999999996,
+                "r": 522.149564083968,
+                "b": 217.55999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역이 주도하는 근거기반의 과학기술혁신정책 수립을 위한 연구개발지원단 기능 강화와 중앙과 지역이 협력하는 통합적 과학기술혁신정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 188.06399999999996,
+                "r": 522.149564083968,
+                "b": 217.55999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역이 주도하는 근거기반의 과학기술혁신정책 수립을 위한 연구개발지원단 기능 강화와 중앙과 지역이 협력하는 통합적 과학기술혁신정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 188.06399999999996,
+                "r": 522.149564083968,
+                "b": 217.55999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역이 주도하는 근거기반의 과학기술혁신정책 수립을 위한 연구개발지원단 기능 강화와 중앙과 지역이 협력하는 통합적 과학기술혁신정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 327.0,
+                "r": 127.58980997433599,
+                "b": 339.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 327.0,
+                "r": 127.58980997433599,
+                "b": 339.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 242.30399999999997,
+                "r": 522.2696458938241,
+                "b": 423.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역의 근거기반 맞춤형 과학기술혁신전략 수립 지원 - 지역별 과학기술혁신환경 및 역량에 대한 분석을 토대로 각 지역의 맞춤형 과기혁신 전략 수립을 위한 활용성이 높은 정책 근거 자료 제시 ◦지역과학기술혁신 데이터의 통합적 구축 및 공유 체계 마련 - 광역 시·도별 (매년)R&D과제, R&D성과, (격년)혁신기관 및 혁신클러스터 조사·분석 - 지역과학기술정보서비스(이하 RTIS) 구축 및 운영 고도화 - 상시적 수요조사를 통해 플랫폼 정보, 콘텐츠, 커뮤니티 공간 및 서비스 등을 지속 개선하여 정보공유･축적 및 정책 수립 지원 효과성 제고 ◦ 중앙(과기부)과 지역(연지단)의 Think-Tank로서 정책 고객 지원 강화 - 과기부 지역과학기술혁신정책 기획･조정시 요구되는 정책현안 근접 지원 - 지역기술혁신허브 운영 상세 기획, 허브 선정 및 컨설팅 등 적시 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 242.30399999999997,
+                "r": 522.2696458938241,
+                "b": 423.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역의 근거기반 맞춤형 과학기술혁신전략 수립 지원 - 지역별 과학기술혁신환경 및 역량에 대한 분석을 토대로 각 지역의 맞춤형 과기혁신 전략 수립을 위한 활용성이 높은 정책 근거 자료 제시 ◦지역과학기술혁신 데이터의 통합적 구축 및 공유 체계 마련 - 광역 시·도별 (매년)R&D과제, R&D성과, (격년)혁신기관 및 혁신클러스터 조사·분석 - 지역과학기술정보서비스(이하 RTIS) 구축 및 운영 고도화 - 상시적 수요조사를 통해 플랫폼 정보, 콘텐츠, 커뮤니티 공간 및 서비스 등을 지속 개선하여 정보공유･축적 및 정책 수립 지원 효과성 제고 ◦ 중앙(과기부)과 지역(연지단)의 Think-Tank로서 정책 고객 지원 강화 - 과기부 지역과학기술혁신정책 기획･조정시 요구되는 정책현안 근접 지원 - 지역기술혁신허브 운영 상세 기획, 허브 선정 및 컨설팅 등 적시 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 242.30399999999997,
+                "r": 522.2696458938241,
+                "b": 423.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역의 근거기반 맞춤형 과학기술혁신전략 수립 지원 - 지역별 과학기술혁신환경 및 역량에 대한 분석을 토대로 각 지역의 맞춤형 과기혁신 전략 수립을 위한 활용성이 높은 정책 근거 자료 제시 ◦지역과학기술혁신 데이터의 통합적 구축 및 공유 체계 마련 - 광역 시·도별 (매년)R&D과제, R&D성과, (격년)혁신기관 및 혁신클러스터 조사·분석 - 지역과학기술정보서비스(이하 RTIS) 구축 및 운영 고도화 - 상시적 수요조사를 통해 플랫폼 정보, 콘텐츠, 커뮤니티 공간 및 서비스 등을 지속 개선하여 정보공유･축적 및 정책 수립 지원 효과성 제고 ◦ 중앙(과기부)과 지역(연지단)의 Think-Tank로서 정책 고객 지원 강화 - 과기부 지역과학기술혁신정책 기획･조정시 요구되는 정책현안 근접 지원 - 지역기술혁신허브 운영 상세 기획, 허브 선정 및 컨설팅 등 적시 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 242.30399999999997,
+                "r": 522.2696458938241,
+                "b": 423.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역의 근거기반 맞춤형 과학기술혁신전략 수립 지원 - 지역별 과학기술혁신환경 및 역량에 대한 분석을 토대로 각 지역의 맞춤형 과기혁신 전략 수립을 위한 활용성이 높은 정책 근거 자료 제시 ◦지역과학기술혁신 데이터의 통합적 구축 및 공유 체계 마련 - 광역 시·도별 (매년)R&D과제, R&D성과, (격년)혁신기관 및 혁신클러스터 조사·분석 - 지역과학기술정보서비스(이하 RTIS) 구축 및 운영 고도화 - 상시적 수요조사를 통해 플랫폼 정보, 콘텐츠, 커뮤니티 공간 및 서비스 등을 지속 개선하여 정보공유･축적 및 정책 수립 지원 효과성 제고 ◦ 중앙(과기부)과 지역(연지단)의 Think-Tank로서 정책 고객 지원 강화 - 과기부 지역과학기술혁신정책 기획･조정시 요구되는 정책현안 근접 지원 - 지역기술혁신허브 운영 상세 기획, 허브 선정 및 컨설팅 등 적시 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 500.76,
+                "r": 98.669564083968,
+                "b": 529.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 456.84,
+                "r": 136.22959135391997,
+                "b": 468.84,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정량",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 447.74399999999997,
+                "r": 316.46945477376,
+                "b": 477.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역 R&D 조사분석 보고서 : 3건 ◦연구보고서 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 447.74399999999997,
+                "r": 316.46945477376,
+                "b": 477.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역 R&D 조사분석 보고서 : 3건 ◦연구보고서 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 447.74399999999997,
+                "r": 316.46945477376,
+                "b": 477.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역 R&D 조사분석 보고서 : 3건 ◦연구보고서 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 447.74399999999997,
+                "r": 316.46945477376,
+                "b": 477.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦지역 R&D 조사분석 보고서 : 3건 ◦연구보고서 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 500.76,
+                "r": 98.669564083968,
+                "b": 529.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 536.28,
+                "r": 136.22959135391997,
+                "b": 548.28,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 501.984,
+                "r": 457.34956408396795,
+                "b": 581.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦중앙부처(과기정통부)의 지역과기혁신정책 총괄 기획･조정 지원 - 과학기술기반의 지역혁신 역량 제고 방안 등 전략 수립 지원 등 ◦연지단 수요를 기반으로 맞춤형 컨설팅 및 개선 방안 제시 - 연지단 사업 기획시, 사업 설계 및 추진 방향(전략 수립) 등 지원 ◦지역과학기술정보서비스(RTIS) 운영 및 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 501.984,
+                "r": 457.34956408396795,
+                "b": 581.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦중앙부처(과기정통부)의 지역과기혁신정책 총괄 기획･조정 지원 - 과학기술기반의 지역혁신 역량 제고 방안 등 전략 수립 지원 등 ◦연지단 수요를 기반으로 맞춤형 컨설팅 및 개선 방안 제시 - 연지단 사업 기획시, 사업 설계 및 추진 방향(전략 수립) 등 지원 ◦지역과학기술정보서비스(RTIS) 운영 및 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 501.984,
+                "r": 457.34956408396795,
+                "b": 581.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦중앙부처(과기정통부)의 지역과기혁신정책 총괄 기획･조정 지원 - 과학기술기반의 지역혁신 역량 제고 방안 등 전략 수립 지원 등 ◦연지단 수요를 기반으로 맞춤형 컨설팅 및 개선 방안 제시 - 연지단 사업 기획시, 사업 설계 및 추진 방향(전략 수립) 등 지원 ◦지역과학기술정보서비스(RTIS) 운영 및 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 501.984,
+                "r": 457.34956408396795,
+                "b": 581.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦중앙부처(과기정통부)의 지역과기혁신정책 총괄 기획･조정 지원 - 과학기술기반의 지역혁신 역량 제고 방안 등 전략 수립 지원 등 ◦연지단 수요를 기반으로 맞춤형 컨설팅 및 개선 방안 제시 - 연지단 사업 기획시, 사업 설계 및 추진 방향(전략 수립) 등 지원 ◦지역과학기술정보서비스(RTIS) 운영 및 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 615.84,
+                "r": 137.070028594752,
+                "b": 627.84,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 615.84,
+                "r": 137.070028594752,
+                "b": 627.84,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 606.7439999999999,
+                "r": 522.149564083968,
+                "b": 636.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦17개 광역시·도 지역과학기술 혁신역량 분석, 지역과학기술혁신전략, 지역 주도 R&D 기획 등에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 606.7439999999999,
+                "r": 522.149564083968,
+                "b": 636.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦17개 광역시·도 지역과학기술 혁신역량 분석, 지역과학기술혁신전략, 지역 주도 R&D 기획 등에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 606.7439999999999,
+                "r": 522.149564083968,
+                "b": 636.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦17개 광역시·도 지역과학기술 혁신역량 분석, 지역과학기술혁신전략, 지역 주도 R&D 기획 등에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 606.7439999999999,
+                "r": 522.149564083968,
+                "b": 636.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦17개 광역시·도 지역과학기술 혁신역량 분석, 지역과학기술혁신전략, 지역 주도 R&D 기획 등에 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "68": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 68
+    }
+  }
+}

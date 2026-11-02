@@ -1,0 +1,1294 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 97.32,
+            "t": 764.608,
+            "r": 301.15731599999987,
+            "b": 735.832,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Ⅲ 2024년도 주요성과",
+      "text": "Ⅲ 2024년도 주요성과",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 70.92,
+            "t": 711.712,
+            "r": 189.458208,
+            "b": 694.672,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "1. 주요 성과 요약",
+      "text": "1. 주요 성과 요약",
+      "level": 1
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.9356578588485718,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.04075954109430313,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.005065685138106346,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.004695647396147251,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.004136493429541588,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.003014111891388893,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 0.0023690401576459408,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.0008666625944897532,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.0007639037794433534,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.0007124106050468981,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.0005891085020266473,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.00038359183236025274,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.00025693944189697504,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.00021206896053627133,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 0.00016353539831470698,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.0001024024750222452,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 6.698039214825258e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 4.7146324504865333e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 4.6534394641639665e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 2.420103737676982e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            },
+            {
+              "confidence": 2.2899908799445257e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 1.6333922758349217e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 1.5980311218299903e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 7.92044465924846e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 1.8059248532154015e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 1.2029571507810033e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 87.85574340820312,
+            "t": 770.4645843505859,
+            "r": 127.97087860107422,
+            "b": 728.8932418823242,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "icon",
+              "confidence": 0.9356578588485718
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.04075954109430313
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.005065685138106346
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.004695647396147251
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.004136493429541588
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.003014111891388893
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.0023690401576459408
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.0008666625944897532
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.0007639037794433534
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.0007124106050468981
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.0005891085020266473
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.00038359183236025274
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.00025693944189697504
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 0.00021206896053627133
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.00016353539831470698
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.0001024024750222452
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 6.698039214825258e-05
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 4.7146324504865333e-05
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 4.6534394641639665e-05
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 2.420103737676982e-05
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 2.2899908799445257e-05
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 1.6333922758349217e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 1.5980311218299903e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 7.92044465924846e-06
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 1.8059248532154015e-06
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 1.2029571507810033e-06
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 70.40486145019531,
+            "t": 686.0580291748047,
+            "r": 525.31201171875,
+            "b": 76.484619140625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 147.48632684350014,
+              "t": 155.8972115907818,
+              "r": 197.82289803028107,
+              "b": 169.3312068283558,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "R&R",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 339.18657034635544,
+              "t": 161.8904744181782,
+              "r": 425.57758301496506,
+              "b": 176.3598783314228,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "2024년도 주요 성과",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 87.35557418316603,
+              "t": 169.62911292910576,
+              "r": 124.64847598224878,
+              "b": 182.44737416505814,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "전략목표",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 171.0821882635355,
+              "t": 168.21059349924326,
+              "r": 207.2008840739727,
+              "b": 180.08195709437132,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "주요기능",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 73.44759695231915,
+              "t": 241.12576812505722,
+              "r": 137.0907399058342,
+              "b": 296.7642545700073,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank 역할 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 141.93531423807144,
+              "t": 218.9947098493576,
+              "r": 244.38946157693863,
+              "b": 245.97143709659576,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "과학기술혁정책 기획·지원 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 251.63176581263542,
+              "t": 187.06286899745464,
+              "r": 521.9269114732742,
+              "b": 277.9267430305481,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙정부 R&D 혁신과제 추진점검 및 추가과제 발굴을 통한 'R&D다운R&D지원 추진전략' 수립 지원(자문회의 전원회의, '24.4.) ∙과학기술혁신을 위한 주요 과학기술 중장기 및 시행 계획 수립 지원 ※ 「제5차 과학기술기본계획」, 「제6차 지방과학기술진흥종합계획」, 「제3차 과학기술 기반 사회문제해결 종합계획」, 「제4차 과학기술인재 기본계획」 '23년도 추진실적 점검 및 '24년도 시행계획 수립 등 ∙과학기술분야 인재 수급불균형에 적의 대처하는 과학적 정책 수립을 위한 '데이터 기반 과학기술 인재정책 고도화 전략(안)' 수립(심의회의, '24.6.) ∙혁신도전프로젝트 신규 사업기획(2건)을 추진하고, 혁신도전형 R&D 사업군 제도의 설계 및 대상사업 선정",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 138.69898974895477,
+              "t": 303.747086673975,
+              "r": 246.11535847187042,
+              "b": 333.78609120845795,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "국가전략기술 발굴·육성 지원 및 미래예측 활용·확산",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 249.7634883224964,
+              "t": 282.0410268008709,
+              "r": 520.7342231273651,
+              "b": 351.6861629486084,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙기술패권 경쟁에 대응하고 과학기술주권 확보를 위한 '제1차 국가전략기술 육성 기본계획'('24.8.) 수립 지원 ※ R&D 이외에도 산업계 연계 조기 성장동력화와 기술안보에 중점, 과기혁신정책의 주요 정책수단(투자, 역량개발, 사업화, 클러스터, 네트워킹, 규제, 표준 등)을 연계 ∙ 2024년 기술영향평가(안전·신뢰 AI), 제7차 국가과학기술예측조사 사전 기획 연구, 국가전략기술 포함 기술수준평가를 위한 기반 자료 마련(논문･ 특허 정량 분석), 탄소중립 기술혁신 로드맵 수립 등 과학기술 예측 및 기획 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 74.01600062847137,
+              "t": 444.2434087395668,
+              "r": 135.8728501945734,
+              "b": 490.6266814470291,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 142.30746999382973,
+              "t": 392.59668588638306,
+              "r": 244.02568593621254,
+              "b": 430.8850461244583,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 250.5992217361927,
+              "t": 362.9806709289551,
+              "r": 520.0792723894119,
+              "b": 470.6753534078598,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "∙연구현장 수요기반 행정제도 개선, 혁신법 및 제도 운영지원 ※ 2024년 국가연구개발 행정제도개선(안) 마련, 혁신법 매뉴얼 개정·발간 등 ∙연구지원체계평가 및 간접비 고시비율 산출 등 지원 ※ 출연(연)등 61개 기관 고시비율 산출(2024. 12월 고시) ∙ IRIS 2.0 전환 등 R&D 혁신방안 후속조치 지원 ※ 3책5공 및 의무사항 불이행 사전검증, 차별성 검토기반 평가자료 제공 ※ 혁신도전/글로벌 R&D 지원 시스템 구현, 통합데이터 활용성 강화, 업무자동화 지원 ∙ IRIS 인프라 안정성 확보 및 클라우드 전환 추진 ※ (안전성) 인프라/프로세스 과부화 및 접속지연 방지대책 수립, 대규모 동시접속 대비 매뉴얼 개발, 사용자 및 전문기관 의견수렴을 통한 기능개선 (클라우드) DB쿼리개선, 서버이중화, 전환 방식 및 전환계획 수립",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 140.41656076908112,
+              "t": 504.08919394016266,
+              "r": 245.50314903259277,
+              "b": 538.4425467252731,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 249.72,
+              "t": 465.4279375076294,
+              "r": 522.2017467021942,
+              "b": 589.7520000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "⦁제4차 연구성과 관리·활용 기본계획 이행, 연구성과 활용생태계 구축 및 연구성과의 가치제고를 위한 실시계획 수립 ※ 중앙행정기관의 추진계획에 대한 종합조정을 통한 2024년 연구성과 관리·활용 실시계획 마련 ⦁통합성과활용플랫폼 시스템 기본설계 및 성과물 정보의 통합저장소 구축 ※ 성과물 정보 기반의 통합검색 서비스 구현을 위한 5대 성과정보 통합 데이터 저장소 구축 및 전담기관 협의체 운영 ⦁R&D 통계 데이터 생산·활용 체계 강화 및 과학기술 정책의 데이터 기반 의사결정 지원 ※ 국가연구개발사업 조사분석, 연구개발활동조사 및 업무지원 서비스 고도화와 생성형 인공지능 서비스 개발 ⦁국외수혜정보보고 제도시행(2024.2.6) 및 연구자권익보호위원회 지원 ※ 연구책임자가 연구개발기간 동안 외국 정부·기관 등으로부터 받는 행정적·재정적 지원이나 노무·자문 등에 관한 사항을 보고 ∙ '25년도 국가연구개발사업 예산배분･조정(안) 수립 지원과 정책･기술",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 73.50310504436493,
+              "t": 650.1785862445831,
+              "r": 135.95100358128548,
+              "b": 690.2074074745178,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "전략적 연구개발 투자 및 평가 지원체계 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 138.42301547527313,
+              "t": 627.5125986337662,
+              "r": 244.49994891881943,
+              "b": 654.3677419424057,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "근거 기반 선도형 R&D의 전략적 투자·평가체계 강화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 248.1912675499916,
+              "t": 600.4926407337189,
+              "r": 520.6708976626396,
+              "b": 706.2929916381836,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "분야의 투자효율화 및 차년도 투자방향 및 기준(안) 마련 지원 ※ 29개 부처 1,184개 사업 24조 4,753억원(주요 R&D, 자문회의안 기준) ※ 데이터 기반 & Paperless 국가연구개발사업 예산배분･조정 수립 지원 ∙국가전략기술 및 기초연구･국방･성장동력, 탄소중립, 지역, 인재양성, 글로벌 R&D 등 투자 효율화 및 전략화, 연구개발 투자시스템 개선방안 연구 외 ∙성과평가 실시계획 수립 및 평가별 지침 개정* 지원, 국가연구개발사업의 성과평가 실시**를 통해 연구개발사업의 성과 제고 * 25년도 성과평가 실시계획(10.31. 운영위 심의), 전략계획서･중간평가･기관평가 지침 개정 ** 전략계획서 점검(405개 사업), 중간평가(208개 사업), 특정평가(다부처 사업 등), 출연(연) 기관평가(기관운영평가 9개 기관, 연구사업평가 7개 기관, 기관운영계획 점검 14개 기관 등) ∙평가정보시스템 및 예산배분정보시스템 간 사업현황 및 이슈 정보 연계 구축",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 142.87740595638752,
+              "t": 720.736865401268,
+              "r": 242.94602066278458,
+              "b": 745.6617909669876,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "R&D 예비타당성 조사의 전문성·신뢰성 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 253.0652129650116,
+              "t": 705.0085067749023,
+              "r": 519.4186264276505,
+              "b": 758.5215830802917,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "⦁국가연구개발사업 예비타당성조사 수행 세부지침 및 매뉴얼 개정 ※ 부처고유임무형 계속사업 신설, 도전･혁신적 R&D 사업 예타 합리화 반영 ⦁대형 국가연구개발 투자･관리 시스템 혁신방안 후속조치 마련 ※ 예타 폐지 후속 조치인 심사제도 신설을 위한 법령개정(안) 마련, 기획위원회 운영 ⦁예타 교육 등을 통한 이해관계자들의 이해도 및 수용성 제고 ※ 예타 교육 연간 4회 실시, 구축형 R&D사업 관련 전문가 의견수렴",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 147.48632684350014,
+                "t": 155.8972115907818,
+                "r": 197.82289803028107,
+                "b": 169.3312068283558,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "R&R",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 147.48632684350014,
+                "t": 155.8972115907818,
+                "r": 197.82289803028107,
+                "b": 169.3312068283558,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "R&R",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 339.18657034635544,
+                "t": 161.8904744181782,
+                "r": 425.57758301496506,
+                "b": 176.3598783314228,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "2024년도 주요 성과",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 87.35557418316603,
+                "t": 169.62911292910576,
+                "r": 124.64847598224878,
+                "b": 182.44737416505814,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전략목표",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 171.0821882635355,
+                "t": 168.21059349924326,
+                "r": 207.2008840739727,
+                "b": 180.08195709437132,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "주요기능",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 73.44759695231915,
+                "t": 241.12576812505722,
+                "r": 137.0907399058342,
+                "b": 296.7642545700073,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank 역할 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 141.93531423807144,
+                "t": 218.9947098493576,
+                "r": 244.38946157693863,
+                "b": 245.97143709659576,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "과학기술혁정책 기획·지원 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 251.63176581263542,
+                "t": 187.06286899745464,
+                "r": 521.9269114732742,
+                "b": 277.9267430305481,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙정부 R&D 혁신과제 추진점검 및 추가과제 발굴을 통한 'R&D다운R&D지원 추진전략' 수립 지원(자문회의 전원회의, '24.4.) ∙과학기술혁신을 위한 주요 과학기술 중장기 및 시행 계획 수립 지원 ※ 「제5차 과학기술기본계획」, 「제6차 지방과학기술진흥종합계획」, 「제3차 과학기술 기반 사회문제해결 종합계획」, 「제4차 과학기술인재 기본계획」 '23년도 추진실적 점검 및 '24년도 시행계획 수립 등 ∙과학기술분야 인재 수급불균형에 적의 대처하는 과학적 정책 수립을 위한 '데이터 기반 과학기술 인재정책 고도화 전략(안)' 수립(심의회의, '24.6.) ∙혁신도전프로젝트 신규 사업기획(2건)을 추진하고, 혁신도전형 R&D 사업군 제도의 설계 및 대상사업 선정",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 73.44759695231915,
+                "t": 241.12576812505722,
+                "r": 137.0907399058342,
+                "b": 296.7642545700073,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술 혁신 및 국가전략기술 정책지원 Think Tank 역할 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 138.69898974895477,
+                "t": 303.747086673975,
+                "r": 246.11535847187042,
+                "b": 333.78609120845795,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "국가전략기술 발굴·육성 지원 및 미래예측 활용·확산",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 249.7634883224964,
+                "t": 282.0410268008709,
+                "r": 520.7342231273651,
+                "b": 351.6861629486084,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙기술패권 경쟁에 대응하고 과학기술주권 확보를 위한 '제1차 국가전략기술 육성 기본계획'('24.8.) 수립 지원 ※ R&D 이외에도 산업계 연계 조기 성장동력화와 기술안보에 중점, 과기혁신정책의 주요 정책수단(투자, 역량개발, 사업화, 클러스터, 네트워킹, 규제, 표준 등)을 연계 ∙ 2024년 기술영향평가(안전·신뢰 AI), 제7차 국가과학기술예측조사 사전 기획 연구, 국가전략기술 포함 기술수준평가를 위한 기반 자료 마련(논문･ 특허 정량 분석), 탄소중립 기술혁신 로드맵 수립 등 과학기술 예측 및 기획 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 74.01600062847137,
+                "t": 444.2434087395668,
+                "r": 135.8728501945734,
+                "b": 490.6266814470291,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 142.30746999382973,
+                "t": 392.59668588638306,
+                "r": 244.02568593621254,
+                "b": 430.8850461244583,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 250.5992217361927,
+                "t": 362.9806709289551,
+                "r": 520.0792723894119,
+                "b": 470.6753534078598,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "∙연구현장 수요기반 행정제도 개선, 혁신법 및 제도 운영지원 ※ 2024년 국가연구개발 행정제도개선(안) 마련, 혁신법 매뉴얼 개정·발간 등 ∙연구지원체계평가 및 간접비 고시비율 산출 등 지원 ※ 출연(연)등 61개 기관 고시비율 산출(2024. 12월 고시) ∙ IRIS 2.0 전환 등 R&D 혁신방안 후속조치 지원 ※ 3책5공 및 의무사항 불이행 사전검증, 차별성 검토기반 평가자료 제공 ※ 혁신도전/글로벌 R&D 지원 시스템 구현, 통합데이터 활용성 강화, 업무자동화 지원 ∙ IRIS 인프라 안정성 확보 및 클라우드 전환 추진 ※ (안전성) 인프라/프로세스 과부화 및 접속지연 방지대책 수립, 대규모 동시접속 대비 매뉴얼 개발, 사용자 및 전문기관 의견수렴을 통한 기능개선 (클라우드) DB쿼리개선, 서버이중화, 전환 방식 및 전환계획 수립",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 74.01600062847137,
+                "t": 444.2434087395668,
+                "r": 135.8728501945734,
+                "b": 490.6266814470291,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "과학기술혁신제도 발굴·기획 및 성과 분석·확산 역량 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 140.41656076908112,
+                "t": 504.08919394016266,
+                "r": 245.50314903259277,
+                "b": 538.4425467252731,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 249.72,
+                "t": 465.4279375076294,
+                "r": 522.2017467021942,
+                "b": 589.7520000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "⦁제4차 연구성과 관리·활용 기본계획 이행, 연구성과 활용생태계 구축 및 연구성과의 가치제고를 위한 실시계획 수립 ※ 중앙행정기관의 추진계획에 대한 종합조정을 통한 2024년 연구성과 관리·활용 실시계획 마련 ⦁통합성과활용플랫폼 시스템 기본설계 및 성과물 정보의 통합저장소 구축 ※ 성과물 정보 기반의 통합검색 서비스 구현을 위한 5대 성과정보 통합 데이터 저장소 구축 및 전담기관 협의체 운영 ⦁R&D 통계 데이터 생산·활용 체계 강화 및 과학기술 정책의 데이터 기반 의사결정 지원 ※ 국가연구개발사업 조사분석, 연구개발활동조사 및 업무지원 서비스 고도화와 생성형 인공지능 서비스 개발 ⦁국외수혜정보보고 제도시행(2024.2.6) 및 연구자권익보호위원회 지원 ※ 연구책임자가 연구개발기간 동안 외국 정부·기관 등으로부터 받는 행정적·재정적 지원이나 노무·자문 등에 관한 사항을 보고 ∙ '25년도 국가연구개발사업 예산배분･조정(안) 수립 지원과 정책･기술",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 73.50310504436493,
+                "t": 650.1785862445831,
+                "r": 135.95100358128548,
+                "b": 690.2074074745178,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전략적 연구개발 투자 및 평가 지원체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 138.42301547527313,
+                "t": 627.5125986337662,
+                "r": 244.49994891881943,
+                "b": 654.3677419424057,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "근거 기반 선도형 R&D의 전략적 투자·평가체계 강화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 248.1912675499916,
+                "t": 600.4926407337189,
+                "r": 520.6708976626396,
+                "b": 706.2929916381836,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "분야의 투자효율화 및 차년도 투자방향 및 기준(안) 마련 지원 ※ 29개 부처 1,184개 사업 24조 4,753억원(주요 R&D, 자문회의안 기준) ※ 데이터 기반 & Paperless 국가연구개발사업 예산배분･조정 수립 지원 ∙국가전략기술 및 기초연구･국방･성장동력, 탄소중립, 지역, 인재양성, 글로벌 R&D 등 투자 효율화 및 전략화, 연구개발 투자시스템 개선방안 연구 외 ∙성과평가 실시계획 수립 및 평가별 지침 개정* 지원, 국가연구개발사업의 성과평가 실시**를 통해 연구개발사업의 성과 제고 * 25년도 성과평가 실시계획(10.31. 운영위 심의), 전략계획서･중간평가･기관평가 지침 개정 ** 전략계획서 점검(405개 사업), 중간평가(208개 사업), 특정평가(다부처 사업 등), 출연(연) 기관평가(기관운영평가 9개 기관, 연구사업평가 7개 기관, 기관운영계획 점검 14개 기관 등) ∙평가정보시스템 및 예산배분정보시스템 간 사업현황 및 이슈 정보 연계 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 73.50310504436493,
+                "t": 650.1785862445831,
+                "r": 135.95100358128548,
+                "b": 690.2074074745178,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전략적 연구개발 투자 및 평가 지원체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 142.87740595638752,
+                "t": 720.736865401268,
+                "r": 242.94602066278458,
+                "b": 745.6617909669876,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "R&D 예비타당성 조사의 전문성·신뢰성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.0652129650116,
+                "t": 705.0085067749023,
+                "r": 519.4186264276505,
+                "b": 758.5215830802917,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "⦁국가연구개발사업 예비타당성조사 수행 세부지침 및 매뉴얼 개정 ※ 부처고유임무형 계속사업 신설, 도전･혁신적 R&D 사업 예타 합리화 반영 ⦁대형 국가연구개발 투자･관리 시스템 혁신방안 후속조치 마련 ※ 예타 폐지 후속 조치인 심사제도 신설을 위한 법령개정(안) 마련, 기획위원회 운영 ⦁예타 교육 등을 통한 이해관계자들의 이해도 및 수용성 제고 ※ 예타 교육 연간 4회 실시, 구축형 R&D사업 관련 전문가 의견수렴",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "11": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 11
+    }
+  }
+}

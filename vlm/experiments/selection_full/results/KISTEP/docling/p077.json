@@ -1,0 +1,1484 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 77,
+          "bbox": {
+            "l": 70.4480209350586,
+            "t": 765.5771789550781,
+            "r": 525.4562377929688,
+            "b": 123.627685546875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 94.08,
+              "t": 82.08000000000004,
+              "r": 122.90967339417598,
+              "b": 94.08000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 253.67999999999998,
+              "t": 82.08000000000004,
+              "r": 417.38959135391997,
+              "b": 94.08000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "연구지원 체계평가 운영에 관한 연구",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 117.0,
+              "r": 118.10959135392,
+              "b": 129.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "구분",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 105.36000000000001,
+              "r": 207.50991928454397,
+              "b": 117.36000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구책임자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 105.36000000000001,
+              "r": 353.18980997433596,
+              "b": 117.36000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "황병용 사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 393.47999999999996,
+              "t": 105.36000000000001,
+              "r": 448.64481945792005,
+              "b": 117.36000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25.01.01.~",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 453.84,
+              "t": 105.36000000000001,
+              "r": 503.31516932630404,
+              "b": 117.36000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "'25.12.31.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 128.64,
+              "r": 198.02970066412797,
+              "b": 140.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 128.64,
+              "r": 357.62970066412794,
+              "b": 140.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "'24년 155백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 128.64,
+              "r": 423.26945477375995,
+              "b": 140.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.91999999999996,
+              "t": 128.64,
+              "r": 510.8697006641281,
+              "b": 140.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "264백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 174.60000000000002,
+              "r": 127.58980997433599,
+              "b": 186.60000000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 173.904,
+              "r": 368.78956408396795,
+              "b": 186.60000000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦160여 개 대학에 대한 연구지원체계평가 수행",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 345.24,
+              "r": 127.58980997433599,
+              "b": 357.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 268.94399999999996,
+              "r": 522.50945477376,
+              "b": 432.84,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦대학 유형 약 160개 기관에 대한 평가 수행 - (대상기간) '23.3.1.~'25.2.28 (2년간) - (평가항목･지표) 5개 영역, 9개 항목, 22~26개 세부지표를 평가 - (평가절차) 공고/접수(1~4월), 평가단 구성(4월), 만족도조사/서류평가/현장평가 (5~6월), 이의신청/재점검(7월), 평가결과 심의(9월) - (평가결과 환류) 간접비고시비율 연계, S등급 기관 연구비정산 갈음, 맞춤형 컨설팅 등 ◦대학 연구지원체계평가 제도개선 - 2024년 평가결과 분석을 통해 대학 연구지원체계평가 지표개선 ◦2026년 평가예정 출연(연) 등 비영리기관 유형에 대한 안내 - 해설서 및 평가지침 공개 및 문의 답변 계속",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 543.84,
+              "r": 98.669564083968,
+              "b": 572.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 515.76,
+              "r": 136.22959135391997,
+              "b": 527.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정량",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 506.664,
+              "r": 262.94945477375995,
+              "b": 536.16,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦보고서 : 1건 ◦ 지침 및 해설서 : 1건",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 586.56,
+              "r": 136.22959135391997,
+              "b": 598.56,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 585.8639999999999,
+              "r": 489.6295640839679,
+              "b": 598.56,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦국가연구개발사업을 수행하는 대학의 연구지원 체계 효율화 및 기능 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 667.56,
+              "r": 137.070028594752,
+              "b": 679.56,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 658.4639999999999,
+              "r": 503.06956408396803,
+              "b": 687.9599999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦국가연구개발사업 수행 비영리기관에 대한 간접비고시비율 연계 ◦연구지원체계평가 제도개선 사항은 정부과제 연구지원 관련 정책자료로 활용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 6,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 94.08,
+                "t": 82.08000000000004,
+                "r": 122.90967339417598,
+                "b": 94.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 82.08000000000004,
+                "r": 417.38959135391997,
+                "b": 94.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "연구지원 체계평가 운영에 관한 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 82.08000000000004,
+                "r": 417.38959135391997,
+                "b": 94.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "연구지원 체계평가 운영에 관한 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 82.08000000000004,
+                "r": 417.38959135391997,
+                "b": 94.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "연구지원 체계평가 운영에 관한 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 82.08000000000004,
+                "r": 417.38959135391997,
+                "b": 94.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "연구지원 체계평가 운영에 관한 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 82.08000000000004,
+                "r": 417.38959135391997,
+                "b": 94.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "연구지원 체계평가 운영에 관한 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 105.36000000000001,
+                "r": 207.50991928454397,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구책임자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 105.36000000000001,
+                "r": 353.18980997433596,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "황병용 사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 393.47999999999996,
+                "t": 105.36000000000001,
+                "r": 448.64481945792005,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25.01.01.~",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 453.84,
+                "t": 105.36000000000001,
+                "r": 503.31516932630404,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "'25.12.31.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 117.0,
+                "r": 118.10959135392,
+                "b": 129.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 117.0,
+                "r": 118.10959135392,
+                "b": 129.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 128.64,
+                "r": 198.02970066412797,
+                "b": 140.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 128.64,
+                "r": 357.62970066412794,
+                "b": 140.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "'24년 155백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 128.64,
+                "r": 423.26945477375995,
+                "b": 140.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.91999999999996,
+                "t": 128.64,
+                "r": 510.8697006641281,
+                "b": 140.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "264백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 174.60000000000002,
+                "r": 127.58980997433599,
+                "b": 186.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 174.60000000000002,
+                "r": 127.58980997433599,
+                "b": 186.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 173.904,
+                "r": 368.78956408396795,
+                "b": 186.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦160여 개 대학에 대한 연구지원체계평가 수행",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 173.904,
+                "r": 368.78956408396795,
+                "b": 186.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦160여 개 대학에 대한 연구지원체계평가 수행",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 173.904,
+                "r": 368.78956408396795,
+                "b": 186.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦160여 개 대학에 대한 연구지원체계평가 수행",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 173.904,
+                "r": 368.78956408396795,
+                "b": 186.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦160여 개 대학에 대한 연구지원체계평가 수행",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 345.24,
+                "r": 127.58980997433599,
+                "b": 357.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 345.24,
+                "r": 127.58980997433599,
+                "b": 357.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 268.94399999999996,
+                "r": 522.50945477376,
+                "b": 432.84,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦대학 유형 약 160개 기관에 대한 평가 수행 - (대상기간) '23.3.1.~'25.2.28 (2년간) - (평가항목･지표) 5개 영역, 9개 항목, 22~26개 세부지표를 평가 - (평가절차) 공고/접수(1~4월), 평가단 구성(4월), 만족도조사/서류평가/현장평가 (5~6월), 이의신청/재점검(7월), 평가결과 심의(9월) - (평가결과 환류) 간접비고시비율 연계, S등급 기관 연구비정산 갈음, 맞춤형 컨설팅 등 ◦대학 연구지원체계평가 제도개선 - 2024년 평가결과 분석을 통해 대학 연구지원체계평가 지표개선 ◦2026년 평가예정 출연(연) 등 비영리기관 유형에 대한 안내 - 해설서 및 평가지침 공개 및 문의 답변 계속",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 268.94399999999996,
+                "r": 522.50945477376,
+                "b": 432.84,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦대학 유형 약 160개 기관에 대한 평가 수행 - (대상기간) '23.3.1.~'25.2.28 (2년간) - (평가항목･지표) 5개 영역, 9개 항목, 22~26개 세부지표를 평가 - (평가절차) 공고/접수(1~4월), 평가단 구성(4월), 만족도조사/서류평가/현장평가 (5~6월), 이의신청/재점검(7월), 평가결과 심의(9월) - (평가결과 환류) 간접비고시비율 연계, S등급 기관 연구비정산 갈음, 맞춤형 컨설팅 등 ◦대학 연구지원체계평가 제도개선 - 2024년 평가결과 분석을 통해 대학 연구지원체계평가 지표개선 ◦2026년 평가예정 출연(연) 등 비영리기관 유형에 대한 안내 - 해설서 및 평가지침 공개 및 문의 답변 계속",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 268.94399999999996,
+                "r": 522.50945477376,
+                "b": 432.84,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦대학 유형 약 160개 기관에 대한 평가 수행 - (대상기간) '23.3.1.~'25.2.28 (2년간) - (평가항목･지표) 5개 영역, 9개 항목, 22~26개 세부지표를 평가 - (평가절차) 공고/접수(1~4월), 평가단 구성(4월), 만족도조사/서류평가/현장평가 (5~6월), 이의신청/재점검(7월), 평가결과 심의(9월) - (평가결과 환류) 간접비고시비율 연계, S등급 기관 연구비정산 갈음, 맞춤형 컨설팅 등 ◦대학 연구지원체계평가 제도개선 - 2024년 평가결과 분석을 통해 대학 연구지원체계평가 지표개선 ◦2026년 평가예정 출연(연) 등 비영리기관 유형에 대한 안내 - 해설서 및 평가지침 공개 및 문의 답변 계속",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 268.94399999999996,
+                "r": 522.50945477376,
+                "b": 432.84,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦대학 유형 약 160개 기관에 대한 평가 수행 - (대상기간) '23.3.1.~'25.2.28 (2년간) - (평가항목･지표) 5개 영역, 9개 항목, 22~26개 세부지표를 평가 - (평가절차) 공고/접수(1~4월), 평가단 구성(4월), 만족도조사/서류평가/현장평가 (5~6월), 이의신청/재점검(7월), 평가결과 심의(9월) - (평가결과 환류) 간접비고시비율 연계, S등급 기관 연구비정산 갈음, 맞춤형 컨설팅 등 ◦대학 연구지원체계평가 제도개선 - 2024년 평가결과 분석을 통해 대학 연구지원체계평가 지표개선 ◦2026년 평가예정 출연(연) 등 비영리기관 유형에 대한 안내 - 해설서 및 평가지침 공개 및 문의 답변 계속",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 543.84,
+                "r": 98.669564083968,
+                "b": 572.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 515.76,
+                "r": 136.22959135391997,
+                "b": 527.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정량",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 506.664,
+                "r": 262.94945477375995,
+                "b": 536.16,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦보고서 : 1건 ◦ 지침 및 해설서 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 506.664,
+                "r": 262.94945477375995,
+                "b": 536.16,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦보고서 : 1건 ◦ 지침 및 해설서 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 506.664,
+                "r": 262.94945477375995,
+                "b": 536.16,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦보고서 : 1건 ◦ 지침 및 해설서 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 506.664,
+                "r": 262.94945477375995,
+                "b": 536.16,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦보고서 : 1건 ◦ 지침 및 해설서 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 543.84,
+                "r": 98.669564083968,
+                "b": 572.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 586.56,
+                "r": 136.22959135391997,
+                "b": 598.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 585.8639999999999,
+                "r": 489.6295640839679,
+                "b": 598.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업을 수행하는 대학의 연구지원 체계 효율화 및 기능 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 585.8639999999999,
+                "r": 489.6295640839679,
+                "b": 598.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업을 수행하는 대학의 연구지원 체계 효율화 및 기능 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 585.8639999999999,
+                "r": 489.6295640839679,
+                "b": 598.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업을 수행하는 대학의 연구지원 체계 효율화 및 기능 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 585.8639999999999,
+                "r": 489.6295640839679,
+                "b": 598.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업을 수행하는 대학의 연구지원 체계 효율화 및 기능 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 667.56,
+                "r": 137.070028594752,
+                "b": 679.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 667.56,
+                "r": 137.070028594752,
+                "b": 679.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 658.4639999999999,
+                "r": 503.06956408396803,
+                "b": 687.9599999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업 수행 비영리기관에 대한 간접비고시비율 연계 ◦연구지원체계평가 제도개선 사항은 정부과제 연구지원 관련 정책자료로 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 658.4639999999999,
+                "r": 503.06956408396803,
+                "b": 687.9599999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업 수행 비영리기관에 대한 간접비고시비율 연계 ◦연구지원체계평가 제도개선 사항은 정부과제 연구지원 관련 정책자료로 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 658.4639999999999,
+                "r": 503.06956408396803,
+                "b": 687.9599999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업 수행 비영리기관에 대한 간접비고시비율 연계 ◦연구지원체계평가 제도개선 사항은 정부과제 연구지원 관련 정책자료로 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 658.4639999999999,
+                "r": 503.06956408396803,
+                "b": 687.9599999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업 수행 비영리기관에 대한 간접비고시비율 연계 ◦연구지원체계평가 제도개선 사항은 정부과제 연구지원 관련 정책자료로 활용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "77": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 77
+    }
+  }
+}

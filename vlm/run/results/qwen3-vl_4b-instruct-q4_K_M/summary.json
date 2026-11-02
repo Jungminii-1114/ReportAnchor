@@ -1,0 +1,1312 @@
+{
+  "model": "qwen3-vl:4b-instruct-q4_K_M",
+  "tasks": [
+    {
+      "task_id": "KISTEP_p0006_r001",
+      "kind": "table",
+      "purpose": "기본 인원 표 총계 310 누락 보완",
+      "input_signature": "4a5b36947210ad1196c8953b143089bdfbc05abb6e075ba60e20f88678be97a5",
+      "metadata": {
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "region_id": "p0006_r001",
+        "pdf_page": 6,
+        "selection_bbox": [
+          69.73119354248047,
+          458.1077575683594,
+          524.529541015625,
+          557.4716796875
+        ],
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 6,
+          "bbox": [
+            63.73119354248047,
+            414.3599853515625,
+            530.529541015625,
+            563.4716796875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        },
+        "selection_rule_version": "baseline-oriented-selection/4",
+        "verification_status": "unverified",
+        "model": "qwen3-vl:4b-instruct-q4_K_M",
+        "prompt_sha256": "2cdff7a845c20fea8795d4632cd725f0f2265ea67467036bd684666d844b58c1",
+        "prompt_file": "prompts/table_fewshot.txt",
+        "extraction_method": "vlm",
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192,
+          "num_predict": 4096
+        }
+      },
+      "baseline_file": "inputs/KISTEP_p0006_r001_baseline.json",
+      "image_file": "inputs/KISTEP_p0006_r001.png",
+      "status": "schema_valid_content_unverified",
+      "extraction": {
+        "table_title": "인 원",
+        "cells": [
+          {
+            "row_path": [
+              "직급별 인원",
+              "임 원"
+            ],
+            "column_path": [
+              "직급별 인원",
+              "임 원"
+            ],
+            "value_raw": "1",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "직급별 인원",
+              "연구직"
+            ],
+            "column_path": [
+              "직급별 인원",
+              "연구직"
+            ],
+            "value_raw": "208",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "직급별 인원",
+              "전문관리직 Ⅰ"
+            ],
+            "column_path": [
+              "직급별 인원",
+              "전문관리직 Ⅰ"
+            ],
+            "value_raw": "19",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "직급별 인원",
+              "공무직"
+            ],
+            "column_path": [
+              "직급별 인원",
+              "공무직"
+            ],
+            "value_raw": "15",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "직급별 인원",
+              "전문관리직 Ⅱ"
+            ],
+            "column_path": [
+              "직급별 인원",
+              "전문관리직 Ⅱ"
+            ],
+            "value_raw": "63",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "직급별 인원",
+              "별도정원"
+            ],
+            "column_path": [
+              "직급별 인원",
+              "별도정원"
+            ],
+            "value_raw": "4",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "직급별 인원",
+              "총계"
+            ],
+            "column_path": [
+              "직급별 인원",
+              "총계"
+            ],
+            "value_raw": "310",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "학위별 인원",
+              "박 사"
+            ],
+            "column_path": [
+              "학위별 인원",
+              "박 사"
+            ],
+            "value_raw": "165",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "학위별 인원",
+              "석 사"
+            ],
+            "column_path": [
+              "학위별 인원",
+              "석 사"
+            ],
+            "value_raw": "88",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "학위별 인원",
+              "학사 이하"
+            ],
+            "column_path": [
+              "학위별 인원",
+              "학사 이하"
+            ],
+            "value_raw": "57",
+            "unit": "명",
+            "notes": [],
+            "issues": []
+          }
+        ],
+        "notes": [],
+        "issues": []
+      },
+      "ollama_metrics": {
+        "total_duration": 145386970700,
+        "load_duration": 5402939300,
+        "prompt_eval_count": 2145,
+        "prompt_eval_duration": 60872669000,
+        "eval_count": 676,
+        "eval_duration": 79081236000,
+        "done_reason": "stop"
+      },
+      "wall_seconds": 145.40087530000164
+    },
+    {
+      "task_id": "KISTEP_p0111_r002",
+      "kind": "table",
+      "purpose": "기본 파서가 분리한 금액·비고 구조 보존 여부 비교",
+      "input_signature": "3a139b092e6132097025493a88aee4688f2c2478657c11093b7802f7ee86a89e",
+      "metadata": {
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "region_id": "p0111_r002",
+        "pdf_page": 111,
+        "selection_bbox": [
+          70.24406433105469,
+          506.70556640625,
+          524.7117919921875,
+          713.6619873046875
+        ],
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 111,
+          "bbox": [
+            64.24406433105469,
+            431.760009765625,
+            530.7117919921875,
+            719.6619873046875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        },
+        "selection_rule_version": "baseline-oriented-selection/4",
+        "verification_status": "unverified",
+        "model": "qwen3-vl:4b-instruct-q4_K_M",
+        "prompt_sha256": "2cdff7a845c20fea8795d4632cd725f0f2265ea67467036bd684666d844b58c1",
+        "prompt_file": "prompts/table_fewshot.txt",
+        "extraction_method": "vlm",
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192,
+          "num_predict": 4096
+        }
+      },
+      "baseline_file": "inputs/KISTEP_p0111_r002_baseline.json",
+      "image_file": "inputs/KISTEP_p0111_r002.png",
+      "status": "schema_valid_content_unverified",
+      "extraction": {
+        "table_title": "인건비",
+        "cells": [
+          {
+            "row_path": [
+              "’24년 인건비(A)"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "29,486",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년",
+              "증감",
+              "내역",
+              "정규직",
+              "처우개선분"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "762",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년",
+              "증감",
+              "내역",
+              "정규직",
+              "’24년 신규인력"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "76",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년",
+              "증감",
+              "내역",
+              "정규직",
+              "’25년 신규인력"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "42",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년",
+              "증감",
+              "내역",
+              "정규직",
+              "소 계(B)"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "880",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년",
+              "증감",
+              "내역",
+              "전문",
+              "관리직Ⅱ",
+              "처우개선분"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "128",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년",
+              "증감",
+              "내역",
+              "전문",
+              "관리직Ⅱ",
+              "’24년 신규인력"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "78",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년",
+              "증감",
+              "내역",
+              "전문",
+              "관리직Ⅱ",
+              "소 계(C)"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "206",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년",
+              "증감",
+              "내역",
+              "합계(D=B+C)"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "1,086",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "’25년 인건비(A+D)"
+            ],
+            "column_path": [
+              "금액"
+            ],
+            "value_raw": "30,572",
+            "unit": "백만원",
+            "notes": [],
+            "issues": []
+          }
+        ],
+        "notes": [
+          "단위 : 백만원"
+        ],
+        "issues": []
+      },
+      "ollama_metrics": {
+        "total_duration": 171220515000,
+        "load_duration": 15293100,
+        "prompt_eval_count": 2336,
+        "prompt_eval_duration": 70114764000,
+        "eval_count": 764,
+        "eval_duration": 100826853000,
+        "done_reason": "stop"
+      },
+      "wall_seconds": 171.23314849999588
+    },
+    {
+      "task_id": "ETRI_p0010_r004",
+      "kind": "metric",
+      "purpose": "기본 텍스트 0인 865 지표 추출",
+      "input_signature": "ee7dc6dee639919df70d6f6843404fe47471acb10c20a7e2b0f2de3033403840",
+      "metadata": {
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "region_id": "p0010_r004",
+        "pdf_page": 10,
+        "selection_bbox": [
+          15.633994140624992,
+          80.72707088216146,
+          280.5,
+          264.9396563313802
+        ],
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 10,
+          "bbox": [
+            9.633994102478027,
+            43.66669845581055,
+            369.3333435058594,
+            270.9396667480469
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        },
+        "selection_rule_version": "baseline-oriented-selection/4",
+        "verification_status": "unverified",
+        "model": "qwen3-vl:4b-instruct-q4_K_M",
+        "prompt_sha256": "ee98938c02df0ec2a3253a88825d2cdcd28bb18e7b22b90d84953d9988ef772e",
+        "prompt_file": "prompts/metric_pilot.txt",
+        "extraction_method": "vlm",
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192,
+          "num_predict": 2048
+        }
+      },
+      "baseline_file": "inputs/ETRI_p0010_r004_baseline.json",
+      "image_file": "inputs/ETRI_p0010_r004.png",
+      "status": "schema_valid_content_unverified",
+      "extraction": {
+        "items": [
+          {
+            "group": "ETRI 동문기업 및 성과",
+            "item": "동문기업 수",
+            "value": "865",
+            "unit": "개"
+          }
+        ],
+        "issues": []
+      },
+      "ollama_metrics": {
+        "total_duration": 55014742900,
+        "load_duration": 11707800,
+        "prompt_eval_count": 1242,
+        "prompt_eval_duration": 49230179000,
+        "eval_count": 59,
+        "eval_duration": 5607124000,
+        "done_reason": "stop"
+      },
+      "wall_seconds": 55.03259120000439
+    },
+    {
+      "task_id": "ETRI_p0012_r009",
+      "kind": "metric",
+      "purpose": "기본 텍스트 0인 비율 지표 추출",
+      "input_signature": "650478e06b6318ee5575440a65f038ce23a6240b6cec112d38c10d63684b26b1",
+      "metadata": {
+        "doc_id": "doc_c5371b7dfc62016a",
+        "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+        "region_id": "p0012_r009",
+        "pdf_page": 12,
+        "selection_bbox": [
+          908.9166666666666,
+          127.39373754882808,
+          1174.866005859375,
+          317.27298966471346
+        ],
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 12,
+          "bbox": [
+            902.9166870117188,
+            121.39373779296875,
+            1180.865966796875,
+            323.2729797363281
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        },
+        "selection_rule_version": "baseline-oriented-selection/4",
+        "verification_status": "unverified",
+        "model": "qwen3-vl:4b-instruct-q4_K_M",
+        "prompt_sha256": "ee98938c02df0ec2a3253a88825d2cdcd28bb18e7b22b90d84953d9988ef772e",
+        "prompt_file": "prompts/metric_pilot.txt",
+        "extraction_method": "vlm",
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192,
+          "num_predict": 2048
+        }
+      },
+      "baseline_file": "inputs/ETRI_p0012_r009_baseline.json",
+      "image_file": "inputs/ETRI_p0012_r009.png",
+      "status": "schema_valid_content_unverified",
+      "extraction": {
+        "items": [
+          {
+            "group": "주요 공공연구기관 연구생산성",
+            "item": "총자수익 포함",
+            "value": "7.55",
+            "unit": "%"
+          },
+          {
+            "group": "",
+            "item": "ITRI (대만)",
+            "value": "6.2",
+            "unit": "%"
+          },
+          {
+            "group": "",
+            "item": "Fh.G (독일)",
+            "value": "5.3",
+            "unit": "%"
+          }
+        ],
+        "issues": []
+      },
+      "ollama_metrics": {
+        "total_duration": 62179289900,
+        "load_duration": 12790000,
+        "prompt_eval_count": 1240,
+        "prompt_eval_duration": 48869414000,
+        "eval_count": 134,
+        "eval_duration": 13219523000,
+        "done_reason": "stop"
+      },
+      "wall_seconds": 62.20193090000248
+    },
+    {
+      "task_id": "AX_p0007_r001",
+      "kind": "table",
+      "purpose": "기본 텍스트 0인 선정 과제 표 추출",
+      "input_signature": "8098ae70e1fe686cfa4bdfd7d4cde280a8c6f8a3510bb5c063851155671c89db",
+      "metadata": {
+        "doc_id": "doc_a0e9df6afc65f27f",
+        "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+        "region_id": "p0007_r001",
+        "pdf_page": 7,
+        "selection_bbox": [
+          66.9599380493164,
+          167.43634033203125,
+          539.21923828125,
+          531.8327026367188
+        ],
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 7,
+          "bbox": [
+            60.959938049316406,
+            111.66666412353516,
+            545.21923828125,
+            537.8327026367188
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        },
+        "selection_rule_version": "baseline-oriented-selection/4",
+        "verification_status": "unverified",
+        "model": "qwen3-vl:4b-instruct-q4_K_M",
+        "prompt_sha256": "2cdff7a845c20fea8795d4632cd725f0f2265ea67467036bd684666d844b58c1",
+        "prompt_file": "prompts/table_fewshot.txt",
+        "extraction_method": "vlm",
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192,
+          "num_predict": 4096
+        }
+      },
+      "baseline_file": "inputs/AX_p0007_r001_baseline.json",
+      "image_file": "inputs/AX_p0007_r001.png",
+      "status": "schema_valid_content_unverified",
+      "extraction": {
+        "table_title": "AI 기반 사업수행 역량을 보유한 국내 AI ICT 중소 중견기업 컨소시엄",
+        "cells": [
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "주관기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "AI 중소·중견기업 (법인만 참여가능)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "주관기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "1개 (*필수)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "주관기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "사업 전체를 총괄적으로 수행하며, AI 솔루션 개발·실증·적용·확산",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "참여기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "AIICT 중소·중견기업 (법인만 참여가능)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "참여기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "1개 이상 (*필수)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "참여기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "주관기관과 협력하여 AI 솔루션 개발·실증·적용·확산 (대학/연구소 참여불가)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "주관기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "AI 중소·중견기업 (법인만 참여가능)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "주관기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "1개 (*필수)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "주관기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "사업 전체를 총괄적으로 수행하며, AI 솔루션 개발·실증·적용·확산",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "참여기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "AIICT 중소·중견기업, 연구소 등 (법인만 참여가능)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "참여기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "1개 이상 (*필수)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "①(조세심판본과)",
+              "②(건강관리본과)",
+              "③(복지행정본과)",
+              "④(식품안전본과)",
+              "⑤(산재보상본과)",
+              "⑥(생활화학본과)",
+              "⑦(가뭄대응본과)",
+              "⑧(감염병대응본과)",
+              "⑨(교육훈련본과)",
+              "⑩(분쟁조정본과)",
+              "⑪(안전환경본과)",
+              "⑫(농기계본과)",
+              "⑬(스마트팜본과)",
+              "⑭(근대자료본과)",
+              "⑮(근로감독본과)",
+              "⑯(자살예방본과)",
+              "⑰(인포데믹본과)"
+            ],
+            "column_path": [
+              "참여기관",
+              "자격요건",
+              "기관수",
+              "주요역할"
+            ],
+            "value_raw": "주관기관과 협력하여 AI 솔루션 개발·실증·적용·확산 (대학 참여불가)",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          }
+        ],
+        "notes": [],
+        "issues": []
+      },
+      "ollama_metrics": {
+        "total_duration": 591635389800,
+        "load_duration": 22255800,
+        "prompt_eval_count": 2048,
+        "prompt_eval_duration": 65894390000,
+        "eval_count": 3431,
+        "eval_duration": 525621143000,
+        "done_reason": "stop"
+      },
+      "wall_seconds": 591.6529141999999
+    },
+    {
+      "task_id": "AX_p0011_r001",
+      "kind": "table",
+      "purpose": "기본 텍스트 0인 평가기준 표 추출",
+      "input_signature": "df4f45008e5bf2e37b137245c38926b61640c410c0073101eabd8fa2b9410c0e",
+      "metadata": {
+        "doc_id": "doc_a0e9df6afc65f27f",
+        "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+        "region_id": "p0011_r001",
+        "pdf_page": 11,
+        "selection_bbox": [
+          65.99467468261719,
+          140.89022827148438,
+          537.8150024414062,
+          580.06591796875
+        ],
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 11,
+          "bbox": [
+            59.99467468261719,
+            112.33333587646484,
+            543.8150024414062,
+            586.06591796875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        },
+        "selection_rule_version": "baseline-oriented-selection/4",
+        "verification_status": "unverified",
+        "model": "qwen3-vl:4b-instruct-q4_K_M",
+        "prompt_sha256": "2cdff7a845c20fea8795d4632cd725f0f2265ea67467036bd684666d844b58c1",
+        "prompt_file": "prompts/table_fewshot.txt",
+        "extraction_method": "vlm",
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192,
+          "num_predict": 4096
+        }
+      },
+      "baseline_file": "inputs/AX_p0011_r001_baseline.json",
+      "image_file": "inputs/AX_p0011_r001.png",
+      "status": "schema_valid_content_unverified",
+      "extraction": {
+        "table_title": "<평가기준(안)>",
+        "cells": [
+          {
+            "row_path": [
+              "사업 티당성",
+              "목적 부합성"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· 사업 이해도, 추진방향 성과목표, 기대성과의 명확성 및 적정성\n- 과제 및 추진 목적의 적절성과 필요성\n- 사업에 대한 이해도 및 명확성\n- 목표 수준의 명확성 및 설정 목표의 도전성",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업 티당성",
+              "사업수행 역량"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· 추진 조직, 체계, 컨소시엄 참여기관 간 역할 등의 적절성\n- 참여기관 인력의 전문성, 참여기관의 실적 및 경영상태 등\n- 컨소시엄 구성의 적절성, 참여기관 역할의 적절성\n- 참여기관의 사업 수행 의지 적극성 및 구체성",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업 경쟁력",
+              "사업 전략 우수성"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· AI 기술개발 추진목표 및 전략의 우수성 및 실현가능성\n- AI 기술개발 전략의 구체적 방안에 대한 우수성 및 실현가능성\n- AI 기술개발 전략에 따른 세부 추진방안의 적절성",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업 경쟁력",
+              "기술개발 우수성"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· AI 기술개발 적절성 및 우수성\n- AI 기술개발 전략에 따른 세부 추진방안의 적절성 및 실현가능성\n- AI 기술개발 예상 결과물의 우수성",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "적용 및 확산 가능성",
+              "적용 가능성"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· AI 기술개발 결과물의 현장 적용 가능성\n- AI 기술개발 결과물의 현장적용 추진 전략의 구체성, 적절성 및 우수성\n- 협력 방안의 적절성",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "적용 및 확산 가능성",
+              "확산 가능성"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· AI 기술개발 결과물의 확산 가능성\n- AI 기술개발 이후의 타산업, 혜의전출 등 확산 가능성 및 적절성",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업관리",
+              "사업관리 적정성"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· 일정, 산출물, 보안, 사업비 등 관리 적정성\n- 일정에 따른 산출물 취득한 자료정보에 대한 보안 관리의 적절성\n- 민간부담금 매칭, 사업비 구성 및 운영 적절성\n- 과거 개인정보보호법 위반, 실증캡안심존) 보안규정 위반 등 여부",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업관리",
+              "품질관리 우수성"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· 산출물의 품질관리 구체성 및 우수성\n- 산출물의 구체성 및 우수성, 객관적 확보 방안 적정성\n- 산출물의 품질보증활동에 대한 구체성, 실현 가능성",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "일자리 창출",
+              "일자리 창출"
+            ],
+            "column_path": [
+              "세부 평가 기준"
+            ],
+            "value_raw": "· 고용 현황, 일자리 확대, 일자리 창출 계획 우수성\n- 고용환원(장구직 비율 등), 일자리 확대 및 차수 개선 노력 등\n- 본 과제를 통한 일자리 창출 계획 여부 등",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업 티당성",
+              "목적 부합성"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "10",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업 티당성",
+              "사업수행 역량"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "15",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업 경쟁력",
+              "사업 전략 우수성"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "15",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업 경쟁력",
+              "기술개발 우수성"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "25",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "적용 및 확산 가능성",
+              "적용 가능성"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "10",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "적용 및 확산 가능성",
+              "확산 가능성"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "5",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업관리",
+              "사업관리 적정성"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "5",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "사업관리",
+              "품질관리 우수성"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "10",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "일자리 창출",
+              "일자리 창출"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "5",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          },
+          {
+            "row_path": [
+              "총점"
+            ],
+            "column_path": [
+              "배점"
+            ],
+            "value_raw": "100",
+            "unit": "",
+            "notes": [],
+            "issues": []
+          }
+        ],
+        "notes": [],
+        "issues": []
+      },
+      "ollama_metrics": {
+        "total_duration": 263053221300,
+        "load_duration": 17341300,
+        "prompt_eval_count": 2019,
+        "prompt_eval_duration": 60075310000,
+        "eval_count": 1689,
+        "eval_duration": 202641488000,
+        "done_reason": "stop"
+      },
+      "wall_seconds": 263.0757522999993
+    }
+  ],
+  "note": "Schema validity is not content accuracy. No F1 computed without gold."
+}

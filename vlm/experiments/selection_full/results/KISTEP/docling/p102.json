@@ -1,0 +1,814 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/groups/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 70.92,
+            "t": 769.432,
+            "r": 184.53758400000004,
+            "b": 752.392,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "2. 기관 운영계획",
+      "text": "2. 기관 운영계획",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 70.92,
+            "t": 742.24,
+            "r": 181.92,
+            "b": 727.24,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "가. 인력 운영계획",
+      "text": "가. 인력 운영계획",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 83.03999999999999,
+            "t": 714.64,
+            "r": 239.16,
+            "b": 699.64,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "1) 인력운영 중점 방향",
+      "text": "1) 인력운영 중점 방향",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 70.92,
+            "t": 681.0699999999999,
+            "r": 338.15999999999997,
+            "b": 665.2,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": " 직무중심의 합리적인 보수체계로의 전환",
+      "text": " 직무중심의 합리적인 보수체계로의 전환",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 646.91968,
+            "r": 524.5280290921344,
+            "b": 612.448,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "❍ 정부 기조에 맞추어 직무 중심의 보수체계 도입을 추진하여 인사관리의 합리화 및 효율성 제고",
+      "text": "❍ 정부 기조에 맞추어 직무 중심의 보수체계 도입을 추진하여 인사관리의 합리화 및 효율성 제고",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 95.88,
+            "t": 599.6080000000001,
+            "r": 524.6483869126794,
+            "b": 586.648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- 전문 컨설팅 업체를 통한 직무분석 및 직무평가, 전직원 대상 설명회, 전직원",
+      "text": "전문 컨설팅 업체를 통한 직무분석 및 직무평가, 전직원 대상 설명회, 전직원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 108.96,
+            "t": 576.2080000000001,
+            "r": 391.3285527296736,
+            "b": 563.248,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "투표 등 일련의 절차를 통해 직무급제 도입(안) 마련",
+      "text": "투표 등 일련의 절차를 통해 직무급제 도입(안) 마련",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 95.88,
+            "t": 548.5196800000001,
+            "r": 524.5278370957832,
+            "b": 534.808,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "- 노사공동협의체 구성을 통한 단체협약 체결, 규정 개정 및 보직자․경영부서",
+      "text": "노사공동협의체 구성을 통한 단체협약 체결, 규정 개정 및 보직자․경영부서",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 108.96,
+            "t": 525.11968,
+            "r": 269.4085527296736,
+            "b": 511.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "직무급제 시범 도입․운영 목표",
+      "text": "직무급제 시범 도입․운영 목표",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 82.08,
+            "t": 485.68,
+            "r": 224.42959135391996,
+            "b": 473.68,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "KISTEP 직무급 도입 추진 경과",
+      "text": "KISTEP 직무급 도입 추진 경과",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 462.016,
+            "r": 247.24530404825998,
+            "b": 449.32,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "◦직무급 도입 컨설팅 착수('24.6월)",
+      "text": "◦직무급 도입 컨설팅 착수('24.6월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 442.81600000000003,
+            "r": 282.76530404826,
+            "b": 430.12,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "◦전직원 대상 조직진단 설문 실시('24.7월)",
+      "text": "◦전직원 대상 조직진단 설문 실시('24.7월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 423.61600000000004,
+            "r": 247.24530404825998,
+            "b": 410.92,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "◦직무급 도입 논의 워크숍('24.7월)",
+      "text": "◦직무급 도입 논의 워크숍('24.7월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 404.41600000000005,
+            "r": 389.20530404826,
+            "b": 391.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "◦직무급 설계를 위한 직무분류 및 평가관련 설명회 개최('24.8월)",
+      "text": "◦직무급 설계를 위한 직무분류 및 평가관련 설명회 개최('24.8월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 385.21600000000007,
+            "r": 360.40530404826,
+            "b": 372.52000000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "◦기관 특성을 반영한 직무분류체계 도출(88개 직무, '24.8월)",
+      "text": "◦기관 특성을 반영한 직무분류체계 도출(88개 직무, '24.8월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 366.016,
+            "r": 247.24530404825998,
+            "b": 353.32,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "◦전직원 대상 설명회 개최('24.9월)",
+      "text": "◦전직원 대상 설명회 개최('24.9월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 346.81600000000003,
+            "r": 349.48530404826,
+            "b": 334.12,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "◦전직원 대상 직무평가 지표 선정 설문 실시('24.9~10월)",
+      "text": "◦전직원 대상 직무평가 지표 선정 설문 실시('24.9~10월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 327.616,
+            "r": 341.08530404826,
+            "b": 314.9200000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "◦직무평가(1차·2차) 실시 및 직무등급 확정('24.10~12월)",
+      "text": "◦직무평가(1차·2차) 실시 및 직무등급 확정('24.10~12월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 70.92,
+            "t": 277.99,
+            "r": 353.15999999999997,
+            "b": 262.12,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": " 합리적인 복리후생 제도 구축을 위한 노력",
+      "text": " 합리적인 복리후생 제도 구축을 위한 노력",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 80.88,
+            "t": 243.95968000000005,
+            "r": 524.5285789126305,
+            "b": 209.48799999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            80
+          ]
+        }
+      ],
+      "orig": "❍ 공공기관 혁신가이드라인 및 복리후생 제도 개선계획에 따른 국가공무원 수준의 선택적 복지제도 운영으로 기관의 운영 효율성 제고 및 공공성 강화",
+      "text": "❍ 공공기관 혁신가이드라인 및 복리후생 제도 개선계획에 따른 국가공무원 수준의 선택적 복지제도 운영으로 기관의 운영 효율성 제고 및 공공성 강화",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 95.88,
+            "t": 196.64800000000002,
+            "r": 417.129626187709,
+            "b": 183.688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "- 선택적 복지포인트 제도 국가공무원 수준으로 축소ㆍ운영",
+      "text": "선택적 복지포인트 제도 국가공무원 수준으로 축소ㆍ운영",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 95.88,
+            "t": 168.20799999999997,
+            "r": 487.6885527296736,
+            "b": 155.24799999999993,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "- 유급휴일로 부여하고 있는 창립기념일의 무급휴일 또는 정상근무 전환",
+      "text": "유급휴일로 부여하고 있는 창립기념일의 무급휴일 또는 정상근무 전환",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 102,
+          "bbox": {
+            "l": 110.88,
+            "t": 143.03200000000004,
+            "r": 513.74688,
+            "b": 114.35200000000009,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "※ 노사합의 필요사항으로 제2024-3회 노사협의회('24.10.7.) 안건으로 상정하였으나 노사 간 의견 차이를 확인하여 향후 노사 간 이견을 좁히기 위해 지속적 논의 예정",
+      "text": "※ 노사합의 필요사항으로 제2024-3회 노사협의회('24.10.7.) 안건으로 상정하였으나 노사 간 의견 차이를 확인하여 향후 노사 간 이견을 좁히기 위해 지속적 논의 예정",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "102": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 102
+    }
+  }
+}

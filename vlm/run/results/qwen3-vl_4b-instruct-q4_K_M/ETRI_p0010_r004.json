@@ -1,0 +1,66 @@
+{
+  "task_id": "ETRI_p0010_r004",
+  "kind": "metric",
+  "purpose": "기본 텍스트 0인 865 지표 추출",
+  "input_signature": "ee7dc6dee639919df70d6f6843404fe47471acb10c20a7e2b0f2de3033403840",
+  "metadata": {
+    "doc_id": "doc_c5371b7dfc62016a",
+    "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+    "region_id": "p0010_r004",
+    "pdf_page": 10,
+    "selection_bbox": [
+      15.633994140624992,
+      80.72707088216146,
+      280.5,
+      264.9396563313802
+    ],
+    "source_locator": {
+      "type": "pdf_page_bbox",
+      "pdf_page": 10,
+      "bbox": [
+        9.633994102478027,
+        43.66669845581055,
+        369.3333435058594,
+        270.9396667480469
+      ],
+      "units": "pt",
+      "coordinate_space": "pymupdf_unrotated_page"
+    },
+    "selection_rule_version": "baseline-oriented-selection/4",
+    "verification_status": "unverified",
+    "model": "qwen3-vl:4b-instruct-q4_K_M",
+    "prompt_sha256": "ee98938c02df0ec2a3253a88825d2cdcd28bb18e7b22b90d84953d9988ef772e",
+    "prompt_file": "prompts/metric_pilot.txt",
+    "extraction_method": "vlm",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "num_predict": 2048
+    }
+  },
+  "baseline_file": "inputs/ETRI_p0010_r004_baseline.json",
+  "image_file": "inputs/ETRI_p0010_r004.png",
+  "status": "schema_valid_content_unverified",
+  "extraction": {
+    "items": [
+      {
+        "group": "ETRI 동문기업 및 성과",
+        "item": "동문기업 수",
+        "value": "865",
+        "unit": "개"
+      }
+    ],
+    "issues": []
+  },
+  "ollama_metrics": {
+    "total_duration": 55014742900,
+    "load_duration": 11707800,
+    "prompt_eval_count": 1242,
+    "prompt_eval_duration": 49230179000,
+    "eval_count": 59,
+    "eval_duration": 5607124000,
+    "done_reason": "stop"
+  },
+  "wall_seconds": 55.03259120000439
+}

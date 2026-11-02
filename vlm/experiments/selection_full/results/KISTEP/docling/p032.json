@@ -1,0 +1,580 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/groups/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 80.88,
+            "t": 760.3196800000001,
+            "r": 406.4477672751648,
+            "b": 746.608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "❍ 연구개발부문 예비타당성조사 분석 방법론 고도화 연구",
+      "text": "❍ 연구개발부문 예비타당성조사 분석 방법론 고도화 연구",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 95.88,
+            "t": 733.768,
+            "r": 400.68786327514033,
+            "b": 720.808,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "- 과학기술적 타당성 분석 체계화를 위한 검토기준 연구",
+      "text": "과학기술적 타당성 분석 체계화를 위한 검토기준 연구",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 110.88,
+            "t": 708.472,
+            "r": 515.66736,
+            "b": 697.432,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "* R&D사업기획의 오답노트 연구, 거대언어모델을 활용한 연구개발 예타 의사결정요인 분석",
+      "text": "R&D사업기획의 오답노트 연구, 거대언어모델을 활용한 연구개발 예타 의사결정요인 분석",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 95.88,
+            "t": 682.528,
+            "r": 377.5285527296736,
+            "b": 669.568,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "- 경제적 분석 고도화를 위한 편익추정 방법론 연구",
+      "text": "경제적 분석 고도화를 위한 편익추정 방법론 연구",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 110.88,
+            "t": 657.232,
+            "r": 516.987072,
+            "b": 646.192,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "* R&D기여율 갱신을 위한 탐색 연구, 몬테카를로 시뮬레이션을 활용한 경제성 분석 고도화",
+      "text": "R&D기여율 갱신을 위한 탐색 연구, 몬테카를로 시뮬레이션을 활용한 경제성 분석 고도화",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 95.88,
+            "t": 631.288,
+            "r": 359.7685527296736,
+            "b": 618.328,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "- 종합평가의 신뢰성 확보를 위한 결과특성 연구",
+      "text": "종합평가의 신뢰성 확보를 위한 결과특성 연구",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 110.88,
+            "t": 606.112,
+            "r": 430.34659200000004,
+            "b": 595.072,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "* 분석적 계층화법의 경제적 타당성 분석 표준화 점수 적용 가능성 모색",
+      "text": "분석적 계층화법의 경제적 타당성 분석 표준화 점수 적용 가능성 모색",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 80.88,
+            "t": 575.87968,
+            "r": 311.16836072972256,
+            "b": 562.168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "❍ 예타조사 수행기반 강화 및 저변 확대",
+      "text": "❍ 예타조사 수행기반 강화 및 저변 확대",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 95.88,
+            "t": 549.328,
+            "r": 524.5292683671637,
+            "b": 512.9680000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "- 신규 R&D사업을 준비하는 담당자 대상의 예타교육*으로 인식의 차이를 줄이고 충실한 사전 기획을 위한 저변을 확대",
+      "text": "신규 R&D사업을 준비하는 담당자 대상의 예타교육*으로 인식의 차이를 줄이고 충실한 사전 기획을 위한 저변을 확대",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 110.88,
+            "t": 500.632,
+            "r": 416.3424,
+            "b": 489.592,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "* R&D 주요 거점지역별 예타교육(상반기 139명, 하반기 99명 참석)",
+      "text": "R&D 주요 거점지역별 예타교육(상반기 139명, 하반기 99명 참석)",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 95.88,
+            "t": 474.68800000000005,
+            "r": 524.6491287331266,
+            "b": 438.32800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "- 연구개발 예타의 주요 이해관계자* 간 공감대 형성을 위한 사전분석 콜로키움과 전문가 네트워크",
+      "text": "연구개발 예타의 주요 이해관계자* 간 공감대 형성을 위한 사전분석 콜로키움과 전문가 네트워크",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 110.88,
+            "t": 426.112,
+            "r": 524.5463040000002,
+            "b": 375.472,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            139
+          ]
+        }
+      ],
+      "orig": "* 재정사업 예타 전문기관(KDI 공공투자관리센터), 대형연구시설관리 전문기관(국가연구시설장비 진흥센터), 국방무기체계개발사업 선행연구조사분석 전문기관(국방기술진흥연구소)과의 교류를 통하여, 구축형 R&D사업 맞춤형 심사제도 설계를 위한 시사점 발굴",
+      "text": "재정사업 예타 전문기관(KDI 공공투자관리센터), 대형연구시설관리 전문기관(국가연구시설장비 진흥센터), 국방무기체계개발사업 선행연구조사분석 전문기관(국방기술진흥연구소)과의 교류를 통하여, 구축형 R&D사업 맞춤형 심사제도 설계를 위한 시사점 발굴",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 95.88,
+            "t": 360.56800000000004,
+            "r": 524.5281250957098,
+            "b": 347.60799999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "- 예타 온라인 플랫폼 `R&D예타로'로 예타 접수창구를 일원화하고, 착수부터",
+      "text": "예타 온라인 플랫폼 `R&D예타로'로 예타 접수창구를 일원화하고, 착수부터",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 108.96,
+            "t": 337.16799999999995,
+            "r": 411.4885527296736,
+            "b": 324.20799999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "종료까지 진행단계 및 조사결과 보고서를 투명하게 공개",
+      "text": "종료까지 진행단계 및 조사결과 보고서를 투명하게 공개",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 95.88,
+            "t": 309.47968000000003,
+            "r": 524.528648729649,
+            "b": 295.76800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "- 전문기관이 제공하는 최신 분석정보, 특허정보, 시설･장비 정보 등 효율적 분석",
+      "text": "전문기관이 제공하는 최신 분석정보, 특허정보, 시설･장비 정보 등 효율적 분석",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 32,
+          "bbox": {
+            "l": 108.96,
+            "t": 285.328,
+            "r": 284.2885527296736,
+            "b": 272.36799999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "수행을 위한 증거기반 조사 강화",
+      "text": "수행을 위한 증거기반 조사 강화",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "32": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 32
+    }
+  }
+}

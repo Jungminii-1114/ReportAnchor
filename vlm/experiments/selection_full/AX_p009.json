@@ -1,0 +1,152 @@
+{
+  "document": "AX",
+  "pdf_page": 9,
+  "page_size": [
+    595.0,
+    842.0
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          0.0,
+          1.0,
+          595.0,
+          842.0
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          202.08201599121094,
+          239.60240173339844,
+          217.7256317138672,
+          260.8486633300781
+        ],
+        "decision": "exclude_vlm",
+        "reason": [
+          "docling_picture_class_score_ge_0.9"
+        ],
+        "source_refs": [
+          "#/pictures/0"
+        ],
+        "classification": [
+          {
+            "confidence": 0.998552143573761,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          },
+          {
+            "confidence": 0.0007521417574025691,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "flow_chart"
+          }
+        ]
+      },
+      {
+        "bbox": [
+          370.0404052734375,
+          240.22669982910156,
+          386.7923278808594,
+          260.90887451171875
+        ],
+        "decision": "exclude_vlm",
+        "reason": [
+          "docling_picture_class_score_ge_0.9"
+        ],
+        "source_refs": [
+          "#/pictures/1"
+        ],
+        "classification": [
+          {
+            "confidence": 0.9985767602920532,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          },
+          {
+            "confidence": 0.0006685072439722717,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "flow_chart"
+          }
+        ]
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          82.33333333333334,
+          202.0,
+          522.3333333333333,
+          292.66666666666663
+        ],
+        "decision": "review_required",
+        "reason": [
+          "aligned_small_graphics_and_neighbor_text_possible_diagram"
+        ],
+        "source_refs": [
+          "#/pictures/0",
+          "#/pictures/1",
+          "#/texts/3",
+          "#/texts/4",
+          "#/texts/5",
+          "#/texts/6",
+          "#/texts/14",
+          "#/texts/15"
+        ],
+        "classification": [
+          {
+            "confidence": 0.998552143573761,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "icon"
+          },
+          {
+            "confidence": 0.0007521417574025691,
+            "created_by": "DocumentPictureClassifier",
+            "class_name": "flow_chart"
+          }
+        ],
+        "verification_status": "unverified",
+        "region_id": "p0009_r001",
+        "context": [
+          {
+            "text": "선정절차",
+            "bbox": [
+              76.66666666666667,
+              123.0,
+              136.66666666666669,
+              141.66666666666663
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_a0e9df6afc65f27f",
+        "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            82.33333333333334,
+            202.0,
+            522.3333333333333,
+            292.66666666666663
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

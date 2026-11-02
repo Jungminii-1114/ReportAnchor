@@ -1,0 +1,218 @@
+{
+  "task_id": "KISTEP_p0111_r002",
+  "kind": "table",
+  "purpose": "기본 파서가 분리한 금액·비고 구조 보존 여부 비교",
+  "input_signature": "3a139b092e6132097025493a88aee4688f2c2478657c11093b7802f7ee86a89e",
+  "metadata": {
+    "doc_id": "doc_0530d100e08517b6",
+    "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+    "region_id": "p0111_r002",
+    "pdf_page": 111,
+    "selection_bbox": [
+      70.24406433105469,
+      506.70556640625,
+      524.7117919921875,
+      713.6619873046875
+    ],
+    "source_locator": {
+      "type": "pdf_page_bbox",
+      "pdf_page": 111,
+      "bbox": [
+        64.24406433105469,
+        431.760009765625,
+        530.7117919921875,
+        719.6619873046875
+      ],
+      "units": "pt",
+      "coordinate_space": "pymupdf_unrotated_page"
+    },
+    "selection_rule_version": "baseline-oriented-selection/4",
+    "verification_status": "unverified",
+    "model": "qwen3-vl:4b-instruct-q4_K_M",
+    "prompt_sha256": "2cdff7a845c20fea8795d4632cd725f0f2265ea67467036bd684666d844b58c1",
+    "prompt_file": "prompts/table_fewshot.txt",
+    "extraction_method": "vlm",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "num_predict": 4096
+    }
+  },
+  "baseline_file": "inputs/KISTEP_p0111_r002_baseline.json",
+  "image_file": "inputs/KISTEP_p0111_r002.png",
+  "status": "schema_valid_content_unverified",
+  "extraction": {
+    "table_title": "인건비",
+    "cells": [
+      {
+        "row_path": [
+          "’24년 인건비(A)"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "29,486",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년",
+          "증감",
+          "내역",
+          "정규직",
+          "처우개선분"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "762",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년",
+          "증감",
+          "내역",
+          "정규직",
+          "’24년 신규인력"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "76",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년",
+          "증감",
+          "내역",
+          "정규직",
+          "’25년 신규인력"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "42",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년",
+          "증감",
+          "내역",
+          "정규직",
+          "소 계(B)"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "880",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년",
+          "증감",
+          "내역",
+          "전문",
+          "관리직Ⅱ",
+          "처우개선분"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "128",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년",
+          "증감",
+          "내역",
+          "전문",
+          "관리직Ⅱ",
+          "’24년 신규인력"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "78",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년",
+          "증감",
+          "내역",
+          "전문",
+          "관리직Ⅱ",
+          "소 계(C)"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "206",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년",
+          "증감",
+          "내역",
+          "합계(D=B+C)"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "1,086",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "’25년 인건비(A+D)"
+        ],
+        "column_path": [
+          "금액"
+        ],
+        "value_raw": "30,572",
+        "unit": "백만원",
+        "notes": [],
+        "issues": []
+      }
+    ],
+    "notes": [
+      "단위 : 백만원"
+    ],
+    "issues": []
+  },
+  "ollama_metrics": {
+    "total_duration": 171220515000,
+    "load_duration": 15293100,
+    "prompt_eval_count": 2336,
+    "prompt_eval_duration": 70114764000,
+    "eval_count": 764,
+    "eval_duration": 100826853000,
+    "done_reason": "stop"
+  },
+  "wall_seconds": 171.23314849999588
+}

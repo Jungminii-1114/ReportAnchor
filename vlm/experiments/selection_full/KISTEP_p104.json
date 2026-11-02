@@ -1,0 +1,133 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 104,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 1540,
+    "native_tables": 2,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [],
+    "docling_derived": [
+      {
+        "bbox": [
+          69.99492645263672,
+          129.54022216796875,
+          524.1283569335938,
+          318.6859436035156
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          70.10853576660156,
+          611.1055297851562,
+          526.23388671875,
+          750.3306884765625
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          69.99492645263672,
+          129.54022216796875,
+          524.1283569335938,
+          318.6859436035156
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0104_r001",
+        "context": [
+          {
+            "text": "❍ (현황) '24.12월 현재 58명 수준으로, 수탁사업 중심 인력 운영",
+            "bbox": [
+              80.88,
+              104.68031999999994,
+              453.2477672751648,
+              118.39200000000005
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 104,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 104,
+          "bbox": [
+            69.99492645263672,
+            129.54022216796875,
+            524.1283569335938,
+            318.6859436035156
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.10853576660156,
+          611.1055297851562,
+          526.23388671875,
+          750.3306884765625
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0104_r002",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 104,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 104,
+          "bbox": [
+            70.10853576660156,
+            611.1055297851562,
+            526.23388671875,
+            750.3306884765625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

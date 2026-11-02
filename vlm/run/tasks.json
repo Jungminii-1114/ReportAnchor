@@ -1,0 +1,230 @@
+[
+  {
+    "task_id": "KISTEP_p0006_r001",
+    "document": "KISTEP",
+    "pdf_page": 6,
+    "kind": "table",
+    "purpose": "기본 인원 표 총계 310 누락 보완",
+    "image": "inputs/KISTEP_p0006_r001.png",
+    "image_sha256": "539e1b2c5d19c9f9798a97cba0f421f9592ee2c1c1878c54e8e4af1972ae220f",
+    "baseline": "inputs/KISTEP_p0006_r001_baseline.json",
+    "parser_text": "인 원\n(단위 : 명, %)\n직급별 \n인원\n임 원\n연구직\n전문관리직\nⅠ\n공무직\n전문관리직\nⅡ\n별도정원\n총계\n1\n208\n19\n15\n63\n4\n310\n학위별 \n인원\n박 사\n석 사\n학사 이하\n165\n88\n57\n",
+    "prompt_file": "prompts/table_fewshot.txt",
+    "metadata": {
+      "doc_id": "doc_0530d100e08517b6",
+      "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+      "region_id": "p0006_r001",
+      "pdf_page": 6,
+      "selection_bbox": [
+        69.73119354248047,
+        458.1077575683594,
+        524.529541015625,
+        557.4716796875
+      ],
+      "source_locator": {
+        "type": "pdf_page_bbox",
+        "pdf_page": 6,
+        "bbox": [
+          63.73119354248047,
+          414.3599853515625,
+          530.529541015625,
+          563.4716796875
+        ],
+        "units": "pt",
+        "coordinate_space": "pymupdf_unrotated_page"
+      },
+      "selection_rule_version": "baseline-oriented-selection/4",
+      "verification_status": "unverified"
+    }
+  },
+  {
+    "task_id": "KISTEP_p0111_r002",
+    "document": "KISTEP",
+    "pdf_page": 111,
+    "kind": "table",
+    "purpose": "기본 파서가 분리한 금액·비고 구조 보존 여부 비교",
+    "image": "inputs/KISTEP_p0111_r002.png",
+    "image_sha256": "59af096b33a5bedff60f85c6c8a25741bae10a13ea03051e1f0efb2a442aa7b7",
+    "baseline": "inputs/KISTEP_p0111_r002_baseline.json",
+    "parser_text": "인건비\n❍’24년 29,486백만원 ➡ ’25년 30,572백만원(+1,086백만원, +3.7% 증)\n(단위 : 백만원)\n구  분\n금 액\n비  고\n’24년 인건비(A)\n29,486\n’25년\n증감\n내역\n정규직\n처우개선분\n762 ∙처우개선분(3.0%)\n’24년 신규인력\n76 ∙‘24년 신규직원(2명) 6개월 미반영분\n’25년 신규인력\n42 ∙‘25년 신규직원(1명) 6개월 반영분 \n소  계(B)\n880\n전문\n관리직Ⅱ\n처우개선분\n128 ∙처우개선분(3.0%)\n’24년 신규인력\n78 ∙‘24년 IRIS 신규직원(2명) 8개월 미반영분\n소  계(C)\n206\n합계(D=B+C)\n1,086\n’25년 인건비(A+D)\n30,572\n",
+    "prompt_file": "prompts/table_fewshot.txt",
+    "metadata": {
+      "doc_id": "doc_0530d100e08517b6",
+      "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+      "region_id": "p0111_r002",
+      "pdf_page": 111,
+      "selection_bbox": [
+        70.24406433105469,
+        506.70556640625,
+        524.7117919921875,
+        713.6619873046875
+      ],
+      "source_locator": {
+        "type": "pdf_page_bbox",
+        "pdf_page": 111,
+        "bbox": [
+          64.24406433105469,
+          431.760009765625,
+          530.7117919921875,
+          719.6619873046875
+        ],
+        "units": "pt",
+        "coordinate_space": "pymupdf_unrotated_page"
+      },
+      "selection_rule_version": "baseline-oriented-selection/4",
+      "verification_status": "unverified"
+    }
+  },
+  {
+    "task_id": "ETRI_p0010_r004",
+    "document": "ETRI",
+    "pdf_page": 10,
+    "kind": "metric",
+    "purpose": "기본 텍스트 0인 865 지표 추출",
+    "image": "inputs/ETRI_p0010_r004.png",
+    "image_sha256": "d98938cba6075bb06ee7ccc1929be72d17874390f29366afea733e4dbd0bebb7",
+    "baseline": "inputs/ETRI_p0010_r004_baseline.json",
+    "parser_text": "",
+    "prompt_file": "prompts/metric_pilot.txt",
+    "metadata": {
+      "doc_id": "doc_c5371b7dfc62016a",
+      "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+      "region_id": "p0010_r004",
+      "pdf_page": 10,
+      "selection_bbox": [
+        15.633994140624992,
+        80.72707088216146,
+        280.5,
+        264.9396563313802
+      ],
+      "source_locator": {
+        "type": "pdf_page_bbox",
+        "pdf_page": 10,
+        "bbox": [
+          9.633994102478027,
+          43.66669845581055,
+          369.3333435058594,
+          270.9396667480469
+        ],
+        "units": "pt",
+        "coordinate_space": "pymupdf_unrotated_page"
+      },
+      "selection_rule_version": "baseline-oriented-selection/4",
+      "verification_status": "unverified"
+    }
+  },
+  {
+    "task_id": "ETRI_p0012_r009",
+    "document": "ETRI",
+    "pdf_page": 12,
+    "kind": "metric",
+    "purpose": "기본 텍스트 0인 비율 지표 추출",
+    "image": "inputs/ETRI_p0012_r009.png",
+    "image_sha256": "75d97ac2bafe244ddece8413d1c5181f825919d08f13e4622b0cab1c633abe45",
+    "baseline": "inputs/ETRI_p0012_r009_baseline.json",
+    "parser_text": "",
+    "prompt_file": "prompts/metric_pilot.txt",
+    "metadata": {
+      "doc_id": "doc_c5371b7dfc62016a",
+      "version_sha256": "c5371b7dfc62016aa5dfe9b86a40d130aefd559e4648c4c843599535b4868576",
+      "region_id": "p0012_r009",
+      "pdf_page": 12,
+      "selection_bbox": [
+        908.9166666666666,
+        127.39373754882808,
+        1174.866005859375,
+        317.27298966471346
+      ],
+      "source_locator": {
+        "type": "pdf_page_bbox",
+        "pdf_page": 12,
+        "bbox": [
+          902.9166870117188,
+          121.39373779296875,
+          1180.865966796875,
+          323.2729797363281
+        ],
+        "units": "pt",
+        "coordinate_space": "pymupdf_unrotated_page"
+      },
+      "selection_rule_version": "baseline-oriented-selection/4",
+      "verification_status": "unverified"
+    }
+  },
+  {
+    "task_id": "AX_p0007_r001",
+    "document": "AX",
+    "pdf_page": 7,
+    "kind": "table",
+    "purpose": "기본 텍스트 0인 선정 과제 표 추출",
+    "image": "inputs/AX_p0007_r001.png",
+    "image_sha256": "b987805b6a1c8c39f1cb2b53cc15a3357998d50142586fe5329feaef7a9861e0",
+    "baseline": "inputs/AX_p0007_r001_baseline.json",
+    "parser_text": "",
+    "prompt_file": "prompts/table_fewshot.txt",
+    "metadata": {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "region_id": "p0007_r001",
+      "pdf_page": 7,
+      "selection_bbox": [
+        66.9599380493164,
+        167.43634033203125,
+        539.21923828125,
+        531.8327026367188
+      ],
+      "source_locator": {
+        "type": "pdf_page_bbox",
+        "pdf_page": 7,
+        "bbox": [
+          60.959938049316406,
+          111.66666412353516,
+          545.21923828125,
+          537.8327026367188
+        ],
+        "units": "pt",
+        "coordinate_space": "pymupdf_unrotated_page"
+      },
+      "selection_rule_version": "baseline-oriented-selection/4",
+      "verification_status": "unverified"
+    }
+  },
+  {
+    "task_id": "AX_p0011_r001",
+    "document": "AX",
+    "pdf_page": 11,
+    "kind": "table",
+    "purpose": "기본 텍스트 0인 평가기준 표 추출",
+    "image": "inputs/AX_p0011_r001.png",
+    "image_sha256": "6124d253bb8e72a4e030c2743ee494713cf7f7edbf8335d85cbf89bc1537c562",
+    "baseline": "inputs/AX_p0011_r001_baseline.json",
+    "parser_text": "",
+    "prompt_file": "prompts/table_fewshot.txt",
+    "metadata": {
+      "doc_id": "doc_a0e9df6afc65f27f",
+      "version_sha256": "a0e9df6afc65f27fff1e31591d76827cd733f2e2d43ef879e2f3effdf188842c",
+      "region_id": "p0011_r001",
+      "pdf_page": 11,
+      "selection_bbox": [
+        65.99467468261719,
+        140.89022827148438,
+        537.8150024414062,
+        580.06591796875
+      ],
+      "source_locator": {
+        "type": "pdf_page_bbox",
+        "pdf_page": 11,
+        "bbox": [
+          59.99467468261719,
+          112.33333587646484,
+          543.8150024414062,
+          586.06591796875
+        ],
+        "units": "pt",
+        "coordinate_space": "pymupdf_unrotated_page"
+      },
+      "selection_rule_version": "baseline-oriented-selection/4",
+      "verification_status": "unverified"
+    }
+  }
+]

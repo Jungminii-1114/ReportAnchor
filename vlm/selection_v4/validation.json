@@ -1,0 +1,12 @@
+{
+  "pages": {
+    "KISTEP": 117,
+    "ETRI": 41,
+    "AX": 14
+  },
+  "code_hash_matches_frozen_version": true,
+  "contents_numbers_excluded_on_known_cases": true,
+  "sparse_native_image_candidates_added_on_known_cases": true,
+  "vlm_calls": 0,
+  "generalization_accuracy_measured": false
+}

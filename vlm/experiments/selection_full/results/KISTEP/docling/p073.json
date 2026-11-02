@@ -1,0 +1,1164 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 73,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 759.4,
+            "r": 214.89,
+            "b": 744.4,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "주요 연구내용(요약)",
+      "text": "주요 연구내용(요약)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 73,
+          "bbox": {
+            "l": 69.58956146240234,
+            "t": 736.807746887207,
+            "r": 525.0712890625,
+            "b": 72.28887939453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 94.08,
+              "t": 111.0,
+              "r": 122.90967339417598,
+              "b": 123.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 253.67999999999998,
+              "t": 111.0,
+              "r": 417.38959135391997,
+              "b": 123.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "성과평가 정책수립 및 성과평가 실시",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 148.79999999999995,
+              "r": 118.10959135392,
+              "b": 160.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "구분",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 135.84000000000003,
+              "r": 207.50991928454397,
+              "b": 147.84000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구책임자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 135.84000000000003,
+              "r": 273.269700664128,
+              "b": 147.84000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "이일환",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 315.0,
+              "t": 135.84000000000003,
+              "r": 353.18980997433596,
+              "b": 147.84000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.36,
+              "t": 135.84000000000003,
+              "r": 497.411674995456,
+              "b": 147.84000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 6,
+            "text": "'25.01.01~'25.12.31",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 161.88,
+              "r": 198.02970066412797,
+              "b": 173.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 161.88,
+              "r": 271.46945477376,
+              "b": 173.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "'24년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 306.0,
+              "t": 161.88,
+              "r": 362.30967339417595,
+              "b": 173.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "1,230백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 161.88,
+              "r": 423.26945477375995,
+              "b": 173.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 459.24,
+              "t": 161.88,
+              "r": 515.5497006641281,
+              "b": 173.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "1,410백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 295.44000000000005,
+              "r": 127.58980997433599,
+              "b": 307.44000000000005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 183.144,
+              "r": 522.5096458938241,
+              "b": 419.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦ (성과평가 기본계획 및 실시계획) 제5차 국가연구개발 성과평가 기본계획 수립('26∼'30) 및 이에 따른 '26년도 국가연구개발 성과평가 실시계획 수립 ◦ (전략계획서 점검) 확정된 예산 규모에서 사업의 기획내용을 충실히 반영한 전략 계획서 수립 여부 점검 ◦ (성과목표지표 점검) 부처별 차년도 성과계획서 점검(질적 지표 중심의 성과지표 설정 여부 등), 부처별 전년도 성과보고서 점검(성과지표의 달성여부 등) ◦ (특정평가) 사업(군) 및 개별사업 중심 특정평가를 통한 정책 개선 방향 제시 및 R&D투자 효과성 제고, 체계적인 성과관리를 통해 연구개발 투자 효과성 제고 ◦ 성과평가체계 선진화 및 기반강화 - 평가전문위 운영, 성과평가포럼, 유공포상, 설문조사 등 성과평가 기반 강화 - 성과평가정보시스템 운영･고도화를 통한 평가지원 및 대국민 공개 범위 확대 - 과제평가 표준지침 이행 실태조사 및 연구관리 전문기관 전문협의회 운영 - 국가연구개발사업",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.95999999999998,
+              "t": 407.03999999999996,
+              "r": 309.38980997433595,
+              "b": 419.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "표준 성과지표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 314.4,
+              "t": 407.03999999999996,
+              "r": 333.7495640839679,
+              "b": 419.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "개선",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 590.64,
+              "r": 127.58980997433599,
+              "b": 602.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 434.424,
+              "r": 522.5098645142402,
+              "b": 763.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦ (성과평가 기본계획 및 실시계획) 성과평가 기본계획 및 주요 정책 현안을 반영하여 국가연구개발평가(사업 및 기관) 전반의 제도개선 추진 ◦ (전략계획서 점검) 신규 사업 및 단계 재수립 사업, 부처의 수요 사업에 대해 사업목표, 성과목표 및 지표의 적절성 점검 계획 수립･실시 ◦ (성과목표지표 점검) 부처별 '26년도 성과계획서 점검, 부처별 '24년도 성과보고서 점검 ◦ 특정평가 - (사업(군)･사업 특정평가) 정책-예산-평가의 유기적 연계를 위해 정책 현안 중심의 사업군 및 개별사업 평가 강화 - (예타 사업변경 특정평가) 예비타당성조사 통과 사업 중 급격한 환경변화에 따라 사업 내용 변경을 요하는 사업에 대해 필요성·적정성 등 평가 실시 - (핵심재정사업 특정평가) 현 정부 국정비전이 반영된 핵심재정사업(기재부 지정)의 성과 점검, 사업추진 개선사항 도출을 위한 평가 실시 ◦ 성과평가체계 선진화 및 기반 강화 - (성과평가 기반) 평가전문위원회를 구성하여 전문가 의견 수렴, 정책･사업 추진상의 개선사항을 조사 등을 - (성과평가정보시스템) 과정 등을",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 213.35999999999999,
+              "t": 695.52,
+              "r": 312.99027402432,
+              "b": 763.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "논의하는 국가연구개발 성과평가 시스템 등록･공개하고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 280.8,
+              "t": 695.52,
+              "r": 377.549618623872,
+              "b": 763.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "성과평가 포럼 강화 운영 및 고도화를 온라인 모니터링 실시",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 381.47999999999996,
+              "t": 695.52,
+              "r": 472.950437874432,
+              "b": 744.72,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "개최, 성과평가유공자 사업･기관별",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 448.2,
+              "t": 695.52,
+              "r": 522.5095913539201,
+              "b": 744.72,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "포상, 설문 평가 결과와 평가",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 6,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 94.08,
+                "t": 111.0,
+                "r": 122.90967339417598,
+                "b": 123.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 111.0,
+                "r": 417.38959135391997,
+                "b": 123.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "성과평가 정책수립 및 성과평가 실시",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 111.0,
+                "r": 417.38959135391997,
+                "b": 123.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "성과평가 정책수립 및 성과평가 실시",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 111.0,
+                "r": 417.38959135391997,
+                "b": 123.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "성과평가 정책수립 및 성과평가 실시",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 111.0,
+                "r": 417.38959135391997,
+                "b": 123.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "성과평가 정책수립 및 성과평가 실시",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 253.67999999999998,
+                "t": 111.0,
+                "r": 417.38959135391997,
+                "b": 123.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "성과평가 정책수립 및 성과평가 실시",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 148.79999999999995,
+                "r": 118.10959135392,
+                "b": 160.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 135.84000000000003,
+                "r": 207.50991928454397,
+                "b": 147.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구책임자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 135.84000000000003,
+                "r": 273.269700664128,
+                "b": 147.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "이일환",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 315.0,
+                "t": 135.84000000000003,
+                "r": 353.18980997433596,
+                "b": 147.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 135.84000000000003,
+                "r": 497.411674995456,
+                "b": 147.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 135.84000000000003,
+                "r": 497.411674995456,
+                "b": 147.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 148.79999999999995,
+                "r": 118.10959135392,
+                "b": 160.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 161.88,
+                "r": 198.02970066412797,
+                "b": 173.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 161.88,
+                "r": 271.46945477376,
+                "b": 173.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "'24년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 306.0,
+                "t": 161.88,
+                "r": 362.30967339417595,
+                "b": 173.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "1,230백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 161.88,
+                "r": 423.26945477375995,
+                "b": 173.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 459.24,
+                "t": 161.88,
+                "r": 515.5497006641281,
+                "b": 173.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "1,410백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 295.44000000000005,
+                "r": 127.58980997433599,
+                "b": 307.44000000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 183.144,
+                "r": 522.5096458938241,
+                "b": 419.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦ (성과평가 기본계획 및 실시계획) 제5차 국가연구개발 성과평가 기본계획 수립('26∼'30) 및 이에 따른 '26년도 국가연구개발 성과평가 실시계획 수립 ◦ (전략계획서 점검) 확정된 예산 규모에서 사업의 기획내용을 충실히 반영한 전략 계획서 수립 여부 점검 ◦ (성과목표지표 점검) 부처별 차년도 성과계획서 점검(질적 지표 중심의 성과지표 설정 여부 등), 부처별 전년도 성과보고서 점검(성과지표의 달성여부 등) ◦ (특정평가) 사업(군) 및 개별사업 중심 특정평가를 통한 정책 개선 방향 제시 및 R&D투자 효과성 제고, 체계적인 성과관리를 통해 연구개발 투자 효과성 제고 ◦ 성과평가체계 선진화 및 기반강화 - 평가전문위 운영, 성과평가포럼, 유공포상, 설문조사 등 성과평가 기반 강화 - 성과평가정보시스템 운영･고도화를 통한 평가지원 및 대국민 공개 범위 확대 - 과제평가 표준지침 이행 실태조사 및 연구관리 전문기관 전문협의회 운영 - 국가연구개발사업",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.95999999999998,
+                "t": 407.03999999999996,
+                "r": 309.38980997433595,
+                "b": 419.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "표준 성과지표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 314.4,
+                "t": 407.03999999999996,
+                "r": 333.7495640839679,
+                "b": 419.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "개선",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 183.144,
+                "r": 522.5096458938241,
+                "b": 419.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦ (성과평가 기본계획 및 실시계획) 제5차 국가연구개발 성과평가 기본계획 수립('26∼'30) 및 이에 따른 '26년도 국가연구개발 성과평가 실시계획 수립 ◦ (전략계획서 점검) 확정된 예산 규모에서 사업의 기획내용을 충실히 반영한 전략 계획서 수립 여부 점검 ◦ (성과목표지표 점검) 부처별 차년도 성과계획서 점검(질적 지표 중심의 성과지표 설정 여부 등), 부처별 전년도 성과보고서 점검(성과지표의 달성여부 등) ◦ (특정평가) 사업(군) 및 개별사업 중심 특정평가를 통한 정책 개선 방향 제시 및 R&D투자 효과성 제고, 체계적인 성과관리를 통해 연구개발 투자 효과성 제고 ◦ 성과평가체계 선진화 및 기반강화 - 평가전문위 운영, 성과평가포럼, 유공포상, 설문조사 등 성과평가 기반 강화 - 성과평가정보시스템 운영･고도화를 통한 평가지원 및 대국민 공개 범위 확대 - 과제평가 표준지침 이행 실태조사 및 연구관리 전문기관 전문협의회 운영 - 국가연구개발사업",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 183.144,
+                "r": 522.5096458938241,
+                "b": 419.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦ (성과평가 기본계획 및 실시계획) 제5차 국가연구개발 성과평가 기본계획 수립('26∼'30) 및 이에 따른 '26년도 국가연구개발 성과평가 실시계획 수립 ◦ (전략계획서 점검) 확정된 예산 규모에서 사업의 기획내용을 충실히 반영한 전략 계획서 수립 여부 점검 ◦ (성과목표지표 점검) 부처별 차년도 성과계획서 점검(질적 지표 중심의 성과지표 설정 여부 등), 부처별 전년도 성과보고서 점검(성과지표의 달성여부 등) ◦ (특정평가) 사업(군) 및 개별사업 중심 특정평가를 통한 정책 개선 방향 제시 및 R&D투자 효과성 제고, 체계적인 성과관리를 통해 연구개발 투자 효과성 제고 ◦ 성과평가체계 선진화 및 기반강화 - 평가전문위 운영, 성과평가포럼, 유공포상, 설문조사 등 성과평가 기반 강화 - 성과평가정보시스템 운영･고도화를 통한 평가지원 및 대국민 공개 범위 확대 - 과제평가 표준지침 이행 실태조사 및 연구관리 전문기관 전문협의회 운영 - 국가연구개발사업",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 590.64,
+                "r": 127.58980997433599,
+                "b": 602.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 434.424,
+                "r": 522.5098645142402,
+                "b": 763.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦ (성과평가 기본계획 및 실시계획) 성과평가 기본계획 및 주요 정책 현안을 반영하여 국가연구개발평가(사업 및 기관) 전반의 제도개선 추진 ◦ (전략계획서 점검) 신규 사업 및 단계 재수립 사업, 부처의 수요 사업에 대해 사업목표, 성과목표 및 지표의 적절성 점검 계획 수립･실시 ◦ (성과목표지표 점검) 부처별 '26년도 성과계획서 점검, 부처별 '24년도 성과보고서 점검 ◦ 특정평가 - (사업(군)･사업 특정평가) 정책-예산-평가의 유기적 연계를 위해 정책 현안 중심의 사업군 및 개별사업 평가 강화 - (예타 사업변경 특정평가) 예비타당성조사 통과 사업 중 급격한 환경변화에 따라 사업 내용 변경을 요하는 사업에 대해 필요성·적정성 등 평가 실시 - (핵심재정사업 특정평가) 현 정부 국정비전이 반영된 핵심재정사업(기재부 지정)의 성과 점검, 사업추진 개선사항 도출을 위한 평가 실시 ◦ 성과평가체계 선진화 및 기반 강화 - (성과평가 기반) 평가전문위원회를 구성하여 전문가 의견 수렴, 정책･사업 추진상의 개선사항을 조사 등을 - (성과평가정보시스템) 과정 등을",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 213.35999999999999,
+                "t": 695.52,
+                "r": 312.99027402432,
+                "b": 763.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "논의하는 국가연구개발 성과평가 시스템 등록･공개하고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 280.8,
+                "t": 695.52,
+                "r": 377.549618623872,
+                "b": 763.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "성과평가 포럼 강화 운영 및 고도화를 온라인 모니터링 실시",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 381.47999999999996,
+                "t": 695.52,
+                "r": 472.950437874432,
+                "b": 744.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "개최, 성과평가유공자 사업･기관별",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 448.2,
+                "t": 695.52,
+                "r": 522.5095913539201,
+                "b": 744.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "포상, 설문 평가 결과와 평가",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "73": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 73
+    }
+  }
+}

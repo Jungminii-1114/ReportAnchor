@@ -1,0 +1,823 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 83.03999999999999,
+            "t": 765.88,
+            "r": 472.32,
+            "b": 750.88,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "4) R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+      "text": "4) R&D 효과성 제고를 위한 분석 및 성과확산 체계 고도화",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 80.88,
+            "t": 731.51968,
+            "r": 524.5277672751647,
+            "b": 717.808,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "❍ ｢제4차 연구성과 관리･활용 기본계획(2021~2025)｣ 이행과 연구성과 활용",
+      "text": "❍ ｢제4차 연구성과 관리･활용 기본계획(2021~2025)｣ 이행과 연구성과 활용",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 100.44,
+            "t": 710.008,
+            "r": 431.16836072972256,
+            "b": 697.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "생태계 구축 및 연구성과의 가치제고를 위한 실시계획 수립",
+      "text": "생태계 구축 및 연구성과의 가치제고를 위한 실시계획 수립",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 95.88,
+            "t": 684.9596799999999,
+            "r": 524.528648729649,
+            "b": 671.248,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "- 중앙행정기관의 추진계획에 대한 종합조정을 통해 2024년 연구성과 관리･활용",
+      "text": "중앙행정기관의 추진계획에 대한 종합조정을 통해 2024년 연구성과 관리･활용",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 108.96,
+            "t": 660.808,
+            "r": 375.8826763640448,
+            "b": 647.848,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "실시계획 마련(3월), 2025년 수립지침 통보(10월)",
+      "text": "실시계획 마련(3월), 2025년 수립지침 통보(10월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 80.88,
+            "t": 628.19968,
+            "r": 524.5284829126549,
+            "b": 614.488,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "❍ R&D 선순환 촉진과 우수연구자 사기진작 등을 위해 기업부담 완화 및 연구자",
+      "text": "❍ R&D 선순환 촉진과 우수연구자 사기진작 등을 위해 기업부담 완화 및 연구자",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 100.44,
+            "t": 606.568,
+            "r": 310.0553890914576,
+            "b": 593.6080000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "보상강화를 위한 혁신법령 개정 추진*",
+      "text": "보상강화를 위한 혁신법령 개정 추진*",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 95.88,
+            "t": 580.768,
+            "r": 524.54618181936,
+            "b": 567.808,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "- 정부납부기술료 납부요율 현행 대비 1/2 하향, 연구자 보상기준 상향(50%→",
+      "text": "정부납부기술료 납부요율 현행 대비 1/2 하향, 연구자 보상기준 상향(50%→",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 108.96,
+            "t": 557.3679999999999,
+            "r": 404.80517237060855,
+            "b": 544.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "60%) 혁신법 시행령 개정 추진(입법예고, 2024.08.29)",
+      "text": "60%) 혁신법 시행령 개정 추진(입법예고, 2024.08.29)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 80.88,
+            "t": 524.7596800000001,
+            "r": 524.5626763640447,
+            "b": 490.288,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "❍ 국가연구개발사업 종료 후 성과활용 제고를 위한 '연구성과 관리･활용 계획' 및 '효과성 분석' 상위점검 실시",
+      "text": "❍ 국가연구개발사업 종료 후 성과활용 제고를 위한 '연구성과 관리･활용 계획' 및 '효과성 분석' 상위점검 실시",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 95.88,
+            "t": 477.44800000000004,
+            "r": 524.5624232735274,
+            "b": 464.488,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "- 자체점검 지침 수립(4월), 상위점검 지침 확정(6월) 및 상위점검 수행(~11월),",
+      "text": "자체점검 지침 수립(4월), 상위점검 지침 확정(6월) 및 상위점검 수행(~11월),",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 108.96,
+            "t": 454.79968,
+            "r": 451.4826763640448,
+            "b": 441.088,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "상위점검 결과 부처 통보 및 NTIS 평가시스템 등록･공개(12월)",
+      "text": "상위점검 결과 부처 통보 및 NTIS 평가시스템 등록･공개(12월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 80.88,
+            "t": 421.31968000000006,
+            "r": 524.5280290921344,
+            "b": 386.848,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "❍ 17개 연구관리전문기관 대상으로 실태조사 실시 및 기획･평가･성과관리 등 연구관리 전주기 효율화 방안 제시",
+      "text": "❍ 17개 연구관리전문기관 대상으로 실태조사 실시 및 기획･평가･성과관리 등 연구관리 전주기 효율화 방안 제시",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 95.88,
+            "t": 374.75968000000006,
+            "r": 524.648674912606,
+            "b": 361.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "- 부처담당자, 연구자, 기획･평가･성과관리 전문가 등 연구관리 전문기관의 서비스",
+      "text": "부처담당자, 연구자, 기획･평가･성과관리 전문가 등 연구관리 전문기관의 서비스",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 108.96,
+            "t": 350.608,
+            "r": 266.5285527296736,
+            "b": 337.64799999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "이용자 대상으로 만족도 조사",
+      "text": "이용자 대상으로 만족도 조사",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 95.88,
+            "t": 322.91967999999997,
+            "r": 510.64267636404475,
+            "b": 309.20799999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "- 2024년 연구관리전문기관 지정･운영에 대한 실태조사･분석 결과(안)(12월)",
+      "text": "2024년 연구관리전문기관 지정･운영에 대한 실태조사･분석 결과(안)(12월)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 80.88,
+            "t": 289.55967999999996,
+            "r": 521.7683607297224,
+            "b": 275.84799999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "❍ 연구성과관리･유통 전담기관 기능 고도화 및 연구성과 활용 촉진 기반 마련",
+      "text": "❍ 연구성과관리･유통 전담기관 기능 고도화 및 연구성과 활용 촉진 기반 마련",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 95.88,
+            "t": 263.75968,
+            "r": 524.6496261913089,
+            "b": 250.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "- 연구성과 관리･유통 전담기관 실무협의회 운영 및 전담기관-연구관리전문기관",
+      "text": "연구성과 관리･유통 전담기관 실무협의회 운영 및 전담기관-연구관리전문기관",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 108.96,
+            "t": 239.60799999999995,
+            "r": 352.24267636404477,
+            "b": 226.64800000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "협의회 개최 등 제도 운영 활성화(2월, 10월)",
+      "text": "협의회 개최 등 제도 운영 활성화(2월, 10월)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 95.88,
+            "t": 211.168,
+            "r": 409.12267636404476,
+            "b": 198.20799999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "- 전담기관별 연구성과 관리·유통 실적 및 계획 점검(6월)",
+      "text": "전담기관별 연구성과 관리·유통 실적 및 계획 점검(6월)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 80.88,
+            "t": 178.55967999999996,
+            "r": 524.5277672751647,
+            "b": 164.84799999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "❍ ｢국가연구개발사업 등의 성과평가 및 성과관리에 관한 법률｣ 제18조에 따른",
+      "text": "❍ ｢국가연구개발사업 등의 성과평가 및 성과관리에 관한 법률｣ 제18조에 따른",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 100.44,
+            "t": 157.79967999999997,
+            "r": 441.9677672751648,
+            "b": 144.08799999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "2024년 국가연구개발사업 연구성과 관리･활용 실태조사 실시",
+      "text": "2024년 국가연구개발사업 연구성과 관리･활용 실태조사 실시",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 95.88,
+            "t": 131.24799999999993,
+            "r": 524.528648729649,
+            "b": 118.28800000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "- 2022년 국가연구개발사업에 참여한 기관 14,657개 중 1,300개 표본 기관 대상",
+      "text": "2022년 국가연구개발사업에 참여한 기관 14,657개 중 1,300개 표본 기관 대상",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 18,
+          "bbox": {
+            "l": 108.96,
+            "t": 107.84799999999996,
+            "r": 342.8485527296736,
+            "b": 94.88800000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "으로 실태조사 실시 및 정책적 시사점 도출",
+      "text": "으로 실태조사 실시 및 정책적 시사점 도출",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "18": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 18
+    }
+  }
+}

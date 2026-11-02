@@ -1,0 +1,972 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 41.666666666666664,
+            "t": 725.181,
+            "r": 107.66666666666667,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 50.33333333333333,
+            "t": 682.8476666666667,
+            "r": 351.3333333333333,
+            "b": 622.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "학습 데이터 품질평가 국제표준으로 Al 신회성 높인다",
+      "text": "학습 데이터 품질평가 국제표준으로 Al 신회성 높인다",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 613.5143333333333,
+            "r": 80.66666666666666,
+            "b": 600.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "하수육",
+      "text": "하수육"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 328.6666666666667,
+            "t": 598.5143333333334,
+            "r": 504.3333333333333,
+            "b": 574.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "ISOIEC 5259-1:2024",
+      "text": "ISOIEC 5259-1:2024"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 205.66666666666666,
+            "t": 590.181,
+            "r": 323.6666666666667,
+            "b": 552.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "SOIIEC",
+      "text": "SOIIEC"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 315.0,
+            "t": 306.18100000000004,
+            "r": 370.3333333333333,
+            "b": 292.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "auditalyility",
+      "text": "auditalyility"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 98.33333333333333,
+            "t": 73.84766666666667,
+            "r": 163.66666666666666,
+            "b": 63.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면",
+      "text": "QR코드트 스랜하시면"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 688.5143333333334,
+            "r": 723.3333333333334,
+            "b": 675.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "ICT전락연구소",
+      "text": "ICT전락연구소"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 766.6666666666666,
+            "t": 690.181,
+            "r": 1149.3333333333333,
+            "b": 641.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "요즘 인공지능시) 기술이 발전하면서 전 세계적으로 '시가 정말 안전한가? 라는 질문올 많이 한다 있도록 기준올 만들려는 움직임이 활발하다.",
+      "text": "요즘 인공지능시) 기술이 발전하면서 전 세계적으로 '시가 정말 안전한가? 라는 질문올 많이 한다 있도록 기준올 만들려는 움직임이 활발하다."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 677.0,
+            "t": 446.18100000000004,
+            "r": 891.6666666666666,
+            "b": 414.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "시가 제대로 작동하는지 학습 데이터 품질평가 관리기준 생겨",
+      "text": "시가 제대로 작동하는지 학습 데이터 품질평가 관리기준 생겨",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 796.3333333333334,
+            "t": 410.18100000000004,
+            "r": 897.6666666666666,
+            "b": 395.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "오작동 위험관리 기능해저",
+      "text": "오작동 위험관리 기능해저",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 408.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 396.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "향후 본 국제표준은 A 개발에 사용되는 데이터의 품질올 체계적으",
+      "text": "향후 본 국제표준은 A 개발에 사용되는 데이터의 품질올 체계적으"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 665.0,
+            "t": 372.8476666666667,
+            "r": 899.0,
+            "b": 307.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "이런 흐름 속에서 연구진이 중심이 되어 A 개발에 사용되는 데이터 품질올 평가하고 관리하는 국제요준올 만들없다 이제 A 개발에 사 셈이다",
+      "text": "이런 흐름 속에서 연구진이 중심이 되어 A 개발에 사용되는 데이터 품질올 평가하고 관리하는 국제요준올 만들없다 이제 A 개발에 사 셈이다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 665.0,
+            "t": 301.5143333333334,
+            "r": 899.0,
+            "b": 216.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "A가 제대로 작동하려면 좋은 품질의 데이터가 필요하다 그런데 지 준이 없있다 연구진이 A 개발에 사용되는 학습 데이터 품질올 위한 로 정리월 것이다",
+      "text": "A가 제대로 작동하려면 좋은 품질의 데이터가 필요하다 그런데 지 준이 없있다 연구진이 A 개발에 사용되는 학습 데이터 품질올 위한 로 정리월 것이다"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 665.0,
+            "t": 211.18100000000004,
+            "r": 899.6666666666666,
+            "b": 125.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            143
+          ]
+        }
+      ],
+      "orig": "이 표준어는 다음처럼 세 가지의 내용올 포함하고 있다 먼저 시가 학습하는 데이터가 얼마나 정확한지 평가하는 데이터 품질 축정과 한 데이터 품질 관리 요구사항 기준이다 마지막으로 데이터지 수집 하고 정리하는 과정에서 지켜야 할 원직인 데이터 품질 관리 절차다",
+      "text": "이 표준어는 다음처럼 세 가지의 내용올 포함하고 있다 먼저 시가 학습하는 데이터가 얼마나 정확한지 평가하는 데이터 품질 축정과 한 데이터 품질 관리 요구사항 기준이다 마지막으로 데이터지 수집 하고 정리하는 과정에서 지켜야 할 원직인 데이터 품질 관리 절차다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 301.84766666666667,
+            "r": 1150.3333333333333,
+            "b": 270.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "로 사용할 수 있어 많은 도움올 줄 것으로 보인다 앞으로 A 규제가 강화월 가능성이 높은데 이 표준올 따르면 법적인 문제름 줄일 수",
+      "text": "로 사용할 수 있어 많은 도움올 줄 것으로 보인다 앞으로 A 규제가 강화월 가능성이 높은데 이 표준올 따르면 법적인 문제름 줄일 수"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 228.84766666666667,
+            "r": 1150.3333333333333,
+            "b": 198.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "회할 수 있도록 'A 데이터 생명주기 관리에 대한 연구도 계속 진행 관리하고 재",
+      "text": "회할 수 있도록 'A 데이터 생명주기 관리에 대한 연구도 계속 진행 관리하고 재"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 174.84766666666678,
+            "r": 1149.6666666666667,
+            "b": 162.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "앞으로도 연구원은 미국 일본 독일 중국 영국 등 여러 나라의 연구",
+      "text": "앞으로도 연구원은 미국 일본 독일 중국 영국 등 여러 나라의 연구"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 916.0,
+            "t": 67.5143333333333,
+            "r": 1014.3333333333333,
+            "b": 54.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "보하는 데 근 의미름 가진다",
+      "text": "보하는 데 근 의미름 가진다"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 1114.0,
+            "t": 38.5143333333333,
+            "r": 1149.3333333333333,
+            "b": 30.514333333333298,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "64 65",
+      "text": "64 65"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.4505557715892792,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.19813373684883118,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.15390688180923462,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.06065038591623306,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.055557381361722946,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.024600869044661522,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.02099679224193096,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.00798879750072956,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.007542273495346308,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.0057096900418400764,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.003010085318237543,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.0029042873065918684,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.00220990227535367,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.0011332896538078785,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 0.001086307456716895,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.0009007978369481862,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 0.0007238783873617649,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.000605143781285733,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.0003962318005505949,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.00030100365984253585,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 0.00027205771766602993,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 0.0002389405999565497,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 0.00019757909467443824,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 0.0001962812675628811,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.00016751587099861354,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 1.4086205737839919e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 33,
+          "bbox": {
+            "l": 38.4578988130507,
+            "t": 698.9413251787552,
+            "r": 529.0424659863527,
+            "b": 35.649486457175385,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.4505557715892792
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.19813373684883118
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.15390688180923462
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.06065038591623306
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.055557381361722946
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.024600869044661522
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.02099679224193096
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.00798879750072956
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.007542273495346308
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.0057096900418400764
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.003010085318237543
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.0029042873065918684
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.00220990227535367
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.0011332896538078785
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.001086307456716895
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 0.0009007978369481862
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0007238783873617649
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.000605143781285733
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.0003962318005505949
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.00030100365984253585
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 0.00027205771766602993
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 0.0002389405999565497
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 0.00019757909467443824
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.0001962812675628811
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.00016751587099861354
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 1.4086205737839919e-05
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "33": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 33
+    }
+  }
+}

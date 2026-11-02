@@ -1,0 +1,7 @@
+pymupdf==1.28.2
+numpy
+scipy
+Pillow
+docling[easyocr]==2.145.0
+easyocr==1.7.2
+httpx[socks]

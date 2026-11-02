@@ -1,0 +1,1457 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 54,
+          "bbox": {
+            "l": 70.17598724365234,
+            "t": 770.2113647460938,
+            "r": 525.19873046875,
+            "b": 210.3975830078125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 81.36000000000001,
+              "r": 127.58980997433599,
+              "b": 93.36000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "중과제명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 213.35999999999999,
+              "t": 81.36000000000001,
+              "r": 457.59872421744,
+              "b": 93.36000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "R&D 예비타당성조사 네트워크 구축 및 전문역량 강화",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 129.0,
+              "r": 118.10959135392,
+              "b": 141.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "구분",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 113.15999999999997,
+              "r": 207.50991928454397,
+              "b": 125.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구책임자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 113.15999999999997,
+              "r": 353.18980997433596,
+              "b": 125.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "안상진 사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.36,
+              "t": 113.15999999999997,
+              "r": 497.411674995456,
+              "b": 125.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 6,
+            "text": "'25.01.01~'25.12.31",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 144.96000000000004,
+              "r": 198.02970066412797,
+              "b": 156.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 144.96000000000004,
+              "r": 357.62970066412794,
+              "b": 156.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "'24년 121백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 144.96000000000004,
+              "r": 423.26945477375995,
+              "b": 156.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.91999999999996,
+              "t": 144.96000000000004,
+              "r": 510.8697006641281,
+              "b": 156.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "117백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 200.64,
+              "r": 127.58980997433599,
+              "b": 212.64,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 180.74400000000003,
+              "r": 522.3895913539201,
+              "b": 231.84000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦교육, 콜로키움, 전문가세미나 등의 사전분석 전문 네트워크 관련 활동 수행을 통해 R&D사업 사전분석(예비타당성조사, 맞춤형 심사제도 등) 관련 이해관계자들의 이해도 및 수용성 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 313.79999999999995,
+              "r": 127.58980997433599,
+              "b": 325.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 265.10400000000004,
+              "r": 522.149618623872,
+              "b": 373.8,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦R&D부문 사전분석 제도 및 방법론 교육 (상･하반기) - 정부부처, 연구관리전문기관, 출연(연) 관계자 등 대상 ◦산･학･연 전문가가 참여하는 R&D 사전분석 콜로키움 개최 - 국가연구개발사업 사전분석 및 전주기적 관리와 관련된 학술연구 결과 공유 및 논의 ◦분야별 최신동향 파악을 위한 전문가 세미나 및 동향조사 추진 - 최근 현안 분야 등 국가연구개발사업 사전분석과 관련된 세미나 진행",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 449.88,
+              "r": 98.669564083968,
+              "b": 478.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 426.96,
+              "r": 136.22959135391997,
+              "b": 438.96,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정량",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 407.06399999999996,
+              "r": 408.50945477375996,
+              "b": 458.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦국가연구개발사업 사전분석(예비타당성조사) 교육 : 4회 ◦R&D사전분석 콜로키움 : 1회 ◦전문가세미나 및 기술동향 조사 : 6회",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 498.12,
+              "r": 136.22959135391997,
+              "b": 510.12,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 487.82399999999996,
+              "r": 522.26945477376,
+              "b": 519.72,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦R&D부문 사전분석(예비타당성조사) 이해관계자 대상 만족도 80% 이상 유지('21년 기준 82.1%)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 577.68,
+              "r": 137.070028594752,
+              "b": 589.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 548.184,
+              "r": 522.1500558647041,
+              "b": 618.48,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦R&D사업 사전분석에 대한 연구계 이해도 제고 ◦전문가 네트워크 운영을 통한 사전분석 방법론 개선 기여 ◦근거기반(Evidence-based)으로 연구개발사업 사전분석을 수행하는 전문연구기관 으로서의 위상 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 6,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 81.36000000000001,
+                "r": 127.58980997433599,
+                "b": 93.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "중과제명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 213.35999999999999,
+                "t": 81.36000000000001,
+                "r": 457.59872421744,
+                "b": 93.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예비타당성조사 네트워크 구축 및 전문역량 강화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 213.35999999999999,
+                "t": 81.36000000000001,
+                "r": 457.59872421744,
+                "b": 93.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예비타당성조사 네트워크 구축 및 전문역량 강화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 213.35999999999999,
+                "t": 81.36000000000001,
+                "r": 457.59872421744,
+                "b": 93.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예비타당성조사 네트워크 구축 및 전문역량 강화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 213.35999999999999,
+                "t": 81.36000000000001,
+                "r": 457.59872421744,
+                "b": 93.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예비타당성조사 네트워크 구축 및 전문역량 강화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 213.35999999999999,
+                "t": 81.36000000000001,
+                "r": 457.59872421744,
+                "b": 93.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예비타당성조사 네트워크 구축 및 전문역량 강화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 113.15999999999997,
+                "r": 207.50991928454397,
+                "b": 125.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구책임자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 113.15999999999997,
+                "r": 353.18980997433596,
+                "b": 125.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "안상진 사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 113.15999999999997,
+                "r": 497.411674995456,
+                "b": 125.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 113.15999999999997,
+                "r": 497.411674995456,
+                "b": 125.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 129.0,
+                "r": 118.10959135392,
+                "b": 141.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 129.0,
+                "r": 118.10959135392,
+                "b": 141.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 144.96000000000004,
+                "r": 198.02970066412797,
+                "b": 156.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 144.96000000000004,
+                "r": 357.62970066412794,
+                "b": 156.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "'24년 121백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 144.96000000000004,
+                "r": 423.26945477375995,
+                "b": 156.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.91999999999996,
+                "t": 144.96000000000004,
+                "r": 510.8697006641281,
+                "b": 156.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "117백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 200.64,
+                "r": 127.58980997433599,
+                "b": 212.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 200.64,
+                "r": 127.58980997433599,
+                "b": 212.64,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 180.74400000000003,
+                "r": 522.3895913539201,
+                "b": 231.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦교육, 콜로키움, 전문가세미나 등의 사전분석 전문 네트워크 관련 활동 수행을 통해 R&D사업 사전분석(예비타당성조사, 맞춤형 심사제도 등) 관련 이해관계자들의 이해도 및 수용성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 180.74400000000003,
+                "r": 522.3895913539201,
+                "b": 231.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦교육, 콜로키움, 전문가세미나 등의 사전분석 전문 네트워크 관련 활동 수행을 통해 R&D사업 사전분석(예비타당성조사, 맞춤형 심사제도 등) 관련 이해관계자들의 이해도 및 수용성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 180.74400000000003,
+                "r": 522.3895913539201,
+                "b": 231.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦교육, 콜로키움, 전문가세미나 등의 사전분석 전문 네트워크 관련 활동 수행을 통해 R&D사업 사전분석(예비타당성조사, 맞춤형 심사제도 등) 관련 이해관계자들의 이해도 및 수용성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 180.74400000000003,
+                "r": 522.3895913539201,
+                "b": 231.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦교육, 콜로키움, 전문가세미나 등의 사전분석 전문 네트워크 관련 활동 수행을 통해 R&D사업 사전분석(예비타당성조사, 맞춤형 심사제도 등) 관련 이해관계자들의 이해도 및 수용성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 313.79999999999995,
+                "r": 127.58980997433599,
+                "b": 325.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 313.79999999999995,
+                "r": 127.58980997433599,
+                "b": 325.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 265.10400000000004,
+                "r": 522.149618623872,
+                "b": 373.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D부문 사전분석 제도 및 방법론 교육 (상･하반기) - 정부부처, 연구관리전문기관, 출연(연) 관계자 등 대상 ◦산･학･연 전문가가 참여하는 R&D 사전분석 콜로키움 개최 - 국가연구개발사업 사전분석 및 전주기적 관리와 관련된 학술연구 결과 공유 및 논의 ◦분야별 최신동향 파악을 위한 전문가 세미나 및 동향조사 추진 - 최근 현안 분야 등 국가연구개발사업 사전분석과 관련된 세미나 진행",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 265.10400000000004,
+                "r": 522.149618623872,
+                "b": 373.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D부문 사전분석 제도 및 방법론 교육 (상･하반기) - 정부부처, 연구관리전문기관, 출연(연) 관계자 등 대상 ◦산･학･연 전문가가 참여하는 R&D 사전분석 콜로키움 개최 - 국가연구개발사업 사전분석 및 전주기적 관리와 관련된 학술연구 결과 공유 및 논의 ◦분야별 최신동향 파악을 위한 전문가 세미나 및 동향조사 추진 - 최근 현안 분야 등 국가연구개발사업 사전분석과 관련된 세미나 진행",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 265.10400000000004,
+                "r": 522.149618623872,
+                "b": 373.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D부문 사전분석 제도 및 방법론 교육 (상･하반기) - 정부부처, 연구관리전문기관, 출연(연) 관계자 등 대상 ◦산･학･연 전문가가 참여하는 R&D 사전분석 콜로키움 개최 - 국가연구개발사업 사전분석 및 전주기적 관리와 관련된 학술연구 결과 공유 및 논의 ◦분야별 최신동향 파악을 위한 전문가 세미나 및 동향조사 추진 - 최근 현안 분야 등 국가연구개발사업 사전분석과 관련된 세미나 진행",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 265.10400000000004,
+                "r": 522.149618623872,
+                "b": 373.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D부문 사전분석 제도 및 방법론 교육 (상･하반기) - 정부부처, 연구관리전문기관, 출연(연) 관계자 등 대상 ◦산･학･연 전문가가 참여하는 R&D 사전분석 콜로키움 개최 - 국가연구개발사업 사전분석 및 전주기적 관리와 관련된 학술연구 결과 공유 및 논의 ◦분야별 최신동향 파악을 위한 전문가 세미나 및 동향조사 추진 - 최근 현안 분야 등 국가연구개발사업 사전분석과 관련된 세미나 진행",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 449.88,
+                "r": 98.669564083968,
+                "b": 478.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 426.96,
+                "r": 136.22959135391997,
+                "b": 438.96,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정량",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 407.06399999999996,
+                "r": 408.50945477375996,
+                "b": 458.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업 사전분석(예비타당성조사) 교육 : 4회 ◦R&D사전분석 콜로키움 : 1회 ◦전문가세미나 및 기술동향 조사 : 6회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 407.06399999999996,
+                "r": 408.50945477375996,
+                "b": 458.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업 사전분석(예비타당성조사) 교육 : 4회 ◦R&D사전분석 콜로키움 : 1회 ◦전문가세미나 및 기술동향 조사 : 6회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 407.06399999999996,
+                "r": 408.50945477375996,
+                "b": 458.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업 사전분석(예비타당성조사) 교육 : 4회 ◦R&D사전분석 콜로키움 : 1회 ◦전문가세미나 및 기술동향 조사 : 6회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 407.06399999999996,
+                "r": 408.50945477375996,
+                "b": 458.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가연구개발사업 사전분석(예비타당성조사) 교육 : 4회 ◦R&D사전분석 콜로키움 : 1회 ◦전문가세미나 및 기술동향 조사 : 6회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 498.12,
+                "r": 136.22959135391997,
+                "b": 510.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 487.82399999999996,
+                "r": 522.26945477376,
+                "b": 519.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D부문 사전분석(예비타당성조사) 이해관계자 대상 만족도 80% 이상 유지('21년 기준 82.1%)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 487.82399999999996,
+                "r": 522.26945477376,
+                "b": 519.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D부문 사전분석(예비타당성조사) 이해관계자 대상 만족도 80% 이상 유지('21년 기준 82.1%)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 487.82399999999996,
+                "r": 522.26945477376,
+                "b": 519.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D부문 사전분석(예비타당성조사) 이해관계자 대상 만족도 80% 이상 유지('21년 기준 82.1%)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 487.82399999999996,
+                "r": 522.26945477376,
+                "b": 519.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D부문 사전분석(예비타당성조사) 이해관계자 대상 만족도 80% 이상 유지('21년 기준 82.1%)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 577.68,
+                "r": 137.070028594752,
+                "b": 589.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 577.68,
+                "r": 137.070028594752,
+                "b": 589.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 548.184,
+                "r": 522.1500558647041,
+                "b": 618.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D사업 사전분석에 대한 연구계 이해도 제고 ◦전문가 네트워크 운영을 통한 사전분석 방법론 개선 기여 ◦근거기반(Evidence-based)으로 연구개발사업 사전분석을 수행하는 전문연구기관 으로서의 위상 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 548.184,
+                "r": 522.1500558647041,
+                "b": 618.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D사업 사전분석에 대한 연구계 이해도 제고 ◦전문가 네트워크 운영을 통한 사전분석 방법론 개선 기여 ◦근거기반(Evidence-based)으로 연구개발사업 사전분석을 수행하는 전문연구기관 으로서의 위상 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 548.184,
+                "r": 522.1500558647041,
+                "b": 618.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D사업 사전분석에 대한 연구계 이해도 제고 ◦전문가 네트워크 운영을 통한 사전분석 방법론 개선 기여 ◦근거기반(Evidence-based)으로 연구개발사업 사전분석을 수행하는 전문연구기관 으로서의 위상 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 548.184,
+                "r": 522.1500558647041,
+                "b": 618.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦R&D사업 사전분석에 대한 연구계 이해도 제고 ◦전문가 네트워크 운영을 통한 사전분석 방법론 개선 기여 ◦근거기반(Evidence-based)으로 연구개발사업 사전분석을 수행하는 전문연구기관 으로서의 위상 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "54": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 54
+    }
+  }
+}

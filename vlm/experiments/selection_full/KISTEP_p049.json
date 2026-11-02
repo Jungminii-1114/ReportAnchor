@@ -1,0 +1,85 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 49,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 1477,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          70.85800323486328,
+          70.72250366210938,
+          524.9580078125,
+          735.9949951171875
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error",
+          "empty_header"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          70.09940338134766,
+          70.45280456542969,
+          525.0592651367188,
+          736.0933837890625
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          70.09940338134766,
+          70.45280456542969,
+          525.0592651367188,
+          736.0933837890625
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0049_r001",
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 49,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 49,
+          "bbox": [
+            70.09940338134766,
+            70.45280456542969,
+            525.0592651367188,
+            736.0933837890625
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

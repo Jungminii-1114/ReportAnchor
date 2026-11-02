@@ -1,0 +1,202 @@
+{
+  "task_id": "KISTEP_p0006_r001",
+  "kind": "table",
+  "purpose": "기본 인원 표 총계 310 누락 보완",
+  "input_signature": "4a5b36947210ad1196c8953b143089bdfbc05abb6e075ba60e20f88678be97a5",
+  "metadata": {
+    "doc_id": "doc_0530d100e08517b6",
+    "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+    "region_id": "p0006_r001",
+    "pdf_page": 6,
+    "selection_bbox": [
+      69.73119354248047,
+      458.1077575683594,
+      524.529541015625,
+      557.4716796875
+    ],
+    "source_locator": {
+      "type": "pdf_page_bbox",
+      "pdf_page": 6,
+      "bbox": [
+        63.73119354248047,
+        414.3599853515625,
+        530.529541015625,
+        563.4716796875
+      ],
+      "units": "pt",
+      "coordinate_space": "pymupdf_unrotated_page"
+    },
+    "selection_rule_version": "baseline-oriented-selection/4",
+    "verification_status": "unverified",
+    "model": "qwen3-vl:4b-instruct-q4_K_M",
+    "prompt_sha256": "2cdff7a845c20fea8795d4632cd725f0f2265ea67467036bd684666d844b58c1",
+    "prompt_file": "prompts/table_fewshot.txt",
+    "extraction_method": "vlm",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "num_predict": 4096
+    }
+  },
+  "baseline_file": "inputs/KISTEP_p0006_r001_baseline.json",
+  "image_file": "inputs/KISTEP_p0006_r001.png",
+  "status": "schema_valid_content_unverified",
+  "extraction": {
+    "table_title": "인 원",
+    "cells": [
+      {
+        "row_path": [
+          "직급별 인원",
+          "임 원"
+        ],
+        "column_path": [
+          "직급별 인원",
+          "임 원"
+        ],
+        "value_raw": "1",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "직급별 인원",
+          "연구직"
+        ],
+        "column_path": [
+          "직급별 인원",
+          "연구직"
+        ],
+        "value_raw": "208",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "직급별 인원",
+          "전문관리직 Ⅰ"
+        ],
+        "column_path": [
+          "직급별 인원",
+          "전문관리직 Ⅰ"
+        ],
+        "value_raw": "19",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "직급별 인원",
+          "공무직"
+        ],
+        "column_path": [
+          "직급별 인원",
+          "공무직"
+        ],
+        "value_raw": "15",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "직급별 인원",
+          "전문관리직 Ⅱ"
+        ],
+        "column_path": [
+          "직급별 인원",
+          "전문관리직 Ⅱ"
+        ],
+        "value_raw": "63",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "직급별 인원",
+          "별도정원"
+        ],
+        "column_path": [
+          "직급별 인원",
+          "별도정원"
+        ],
+        "value_raw": "4",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "직급별 인원",
+          "총계"
+        ],
+        "column_path": [
+          "직급별 인원",
+          "총계"
+        ],
+        "value_raw": "310",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "학위별 인원",
+          "박 사"
+        ],
+        "column_path": [
+          "학위별 인원",
+          "박 사"
+        ],
+        "value_raw": "165",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "학위별 인원",
+          "석 사"
+        ],
+        "column_path": [
+          "학위별 인원",
+          "석 사"
+        ],
+        "value_raw": "88",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      },
+      {
+        "row_path": [
+          "학위별 인원",
+          "학사 이하"
+        ],
+        "column_path": [
+          "학위별 인원",
+          "학사 이하"
+        ],
+        "value_raw": "57",
+        "unit": "명",
+        "notes": [],
+        "issues": []
+      }
+    ],
+    "notes": [],
+    "issues": []
+  },
+  "ollama_metrics": {
+    "total_duration": 145386970700,
+    "load_duration": 5402939300,
+    "prompt_eval_count": 2145,
+    "prompt_eval_duration": 60872669000,
+    "eval_count": 676,
+    "eval_duration": 79081236000,
+    "done_reason": "stop"
+  },
+  "wall_seconds": 145.40087530000164
+}

@@ -1,0 +1,32 @@
+{
+  "document": "AX",
+  "pdf_page": 1,
+  "page_size": [
+    595.0,
+    842.0
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          0.0,
+          1.0,
+          595.0,
+          842.0
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [],
+    "combined_frozen": []
+  }
+}

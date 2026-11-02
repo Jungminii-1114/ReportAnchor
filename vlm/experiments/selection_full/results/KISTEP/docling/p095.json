@@ -1,0 +1,1296 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 95,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 759.4,
+            "r": 214.89,
+            "b": 744.4,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "주요 연구내용(요약)",
+      "text": "주요 연구내용(요약)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 95,
+          "bbox": {
+            "l": 70.41513061523438,
+            "t": 735.3915176391602,
+            "r": 525.051025390625,
+            "b": 95.5277099609375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 94.08,
+              "t": 112.08000000000004,
+              "r": 122.90967339417598,
+              "b": 124.08000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 259.08,
+              "t": 112.08000000000004,
+              "r": 411.8786301438,
+              "b": 124.08000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "범부처 연구과제관리서비스 표준화",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 149.88,
+              "r": 118.10959135392,
+              "b": 161.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "구분",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 136.79999999999995,
+              "r": 207.50991928454397,
+              "b": 148.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구책임자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 136.79999999999995,
+              "r": 353.18980997433596,
+              "b": 148.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "이헌중 사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.36,
+              "t": 136.79999999999995,
+              "r": 497.411674995456,
+              "b": 148.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 5,
+            "text": "'25.01.01~'25.12.31",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 162.96000000000004,
+              "r": 198.02970066412797,
+              "b": 174.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 162.96000000000004,
+              "r": 365.30970066412794,
+              "b": 174.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "'24년 13,538백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 162.96000000000004,
+              "r": 423.26945477375995,
+              "b": 174.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "'25년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 456.24,
+              "t": 162.96000000000004,
+              "r": 518.5497006641281,
+              "b": 174.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "18,955백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 193.20000000000005,
+              "r": 127.58980997433599,
+              "b": 205.20000000000005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 184.10400000000004,
+              "r": 522.1498099743361,
+              "b": 213.60000000000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦ 사용자 편의성 및 시스템 안정성 증대를 위한 디자인 개선, D/B 재설계 추진으로 범부처 통합연구지원시스템 2.0 구현",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 344.03999999999996,
+              "r": 127.58980997433599,
+              "b": 356.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 234.144,
+              "r": 522.1495368140161,
+              "b": 465.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦IRIS 시스템 사용자 편의성 향상과 요구사항 및 정책환경 변화대응 - 데이터 정합성 개선을 통한 서비스 안정화, 자료 신뢰성 확보 및 통계자료 작성 지원, 사용자 매뉴얼 현행화 ◦IRIS 데이터 관리 체계 및 기능개선(이관대응 포함) - 데이터 이관 환경 구성 및 IRIS DB 검증지원, 정제 등 ◦업무포털 워크라운지, 연구기관 과제참여 현황 기능개선 - 마이R&D 기능개선을 통한 연구자 참여과제 현황 제공 - 연구기관(대학, 출연연구소 등) 대상 참여과제 관리 메뉴 기능개선 ◦IRIS 사용자 경험/인터페이스(UX/UI) 측면의 디자인 개선 - 사용자 편의 제공을 위한 디자인, 색상, 배치 등 개선(안) 도출 ◦개인정보 관리 기능개선 - 시스템 접속 및 사용 과정의 이상행위 모니터링, 조치 기능개선 ◦IRIS D/B 재설계 연계 기능개선 - D/B 성능개선과 클라우드 전환을 위한 재설계, 기능 구축",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 496.2,
+              "r": 136.22959135391997,
+              "b": 554.16,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과 정량",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 487.104,
+              "r": 370.94956408396797,
+              "b": 516.6,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦연구보고서 및 기획발간물 발간 : 3건 ◦사용자 설명회 및 전문기관 간담회 : 4회 이상",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 552.24,
+              "r": 137.070028594752,
+              "b": 677.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "정성 성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 526.3439999999999,
+              "r": 522.269673394176,
+              "b": 736.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦만족도 조사 및 현황분석을 통한 개선 이슈 및 효율화 방안 도출 ◦R&D정보 관리 일원화 및 연구자 맞춤형 정보 분석 서비스 제공으로 연구 편의성 및 정보 접근성 개선 ◦부처･기관 간 정보공유 확대로 기관별 인력 및 연구관리비용 등 효율성 개선 필요한 기반",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 606.3839999999999,
+              "r": 522.3898097439361,
+              "b": 719.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦IRIS 2.0 전환으로 연구과제 선정 신뢰성, 집행 투명성, 평가 전문성 강화를 구현하여 전 부처 연구과제, 연구비 집행, 연구자정보 관리 전반에 대한 통합관리 추진 ◦ 기관별 사업관리 특성을 고려한 기능 개선 및 IRIS-유관시스템 간 정보 연계 강화를 통한 연구 의사결정체계 지원 강화 ◦연구성과정보(논문, 특허 등) 및 제재처분 정보와 같이 분산 등록 및 관리되던 내용을 일원화 하고 연계체계 강화로 연구자, 관리자, 의사결정자 만족도 강화 ◦전환방식을 선정하고 기존 시스템 및 인프라 활용에 대한 계획 등 클라우드 전환에",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 5,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 94.08,
+                "t": 112.08000000000004,
+                "r": 122.90967339417598,
+                "b": 124.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 259.08,
+                "t": 112.08000000000004,
+                "r": 411.8786301438,
+                "b": 124.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "범부처 연구과제관리서비스 표준화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 259.08,
+                "t": 112.08000000000004,
+                "r": 411.8786301438,
+                "b": 124.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "범부처 연구과제관리서비스 표준화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 259.08,
+                "t": 112.08000000000004,
+                "r": 411.8786301438,
+                "b": 124.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "범부처 연구과제관리서비스 표준화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 259.08,
+                "t": 112.08000000000004,
+                "r": 411.8786301438,
+                "b": 124.08000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "범부처 연구과제관리서비스 표준화",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 136.79999999999995,
+                "r": 207.50991928454397,
+                "b": 148.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구책임자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 136.79999999999995,
+                "r": 353.18980997433596,
+                "b": 148.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "이헌중 사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 136.79999999999995,
+                "r": 497.411674995456,
+                "b": 148.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 5,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 136.79999999999995,
+                "r": 497.411674995456,
+                "b": 148.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 5,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 149.88,
+                "r": 118.10959135392,
+                "b": 161.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 162.96000000000004,
+                "r": 198.02970066412797,
+                "b": 174.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 162.96000000000004,
+                "r": 365.30970066412794,
+                "b": 174.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "'24년 13,538백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 162.96000000000004,
+                "r": 423.26945477375995,
+                "b": 174.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "'25년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 456.24,
+                "t": 162.96000000000004,
+                "r": 518.5497006641281,
+                "b": 174.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "18,955백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 193.20000000000005,
+                "r": 127.58980997433599,
+                "b": 205.20000000000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.1498099743361,
+                "b": 213.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦ 사용자 편의성 및 시스템 안정성 증대를 위한 디자인 개선, D/B 재설계 추진으로 범부처 통합연구지원시스템 2.0 구현",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.1498099743361,
+                "b": 213.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦ 사용자 편의성 및 시스템 안정성 증대를 위한 디자인 개선, D/B 재설계 추진으로 범부처 통합연구지원시스템 2.0 구현",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.1498099743361,
+                "b": 213.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦ 사용자 편의성 및 시스템 안정성 증대를 위한 디자인 개선, D/B 재설계 추진으로 범부처 통합연구지원시스템 2.0 구현",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.1498099743361,
+                "b": 213.60000000000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦ 사용자 편의성 및 시스템 안정성 증대를 위한 디자인 개선, D/B 재설계 추진으로 범부처 통합연구지원시스템 2.0 구현",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 344.03999999999996,
+                "r": 127.58980997433599,
+                "b": 356.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 234.144,
+                "r": 522.1495368140161,
+                "b": 465.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦IRIS 시스템 사용자 편의성 향상과 요구사항 및 정책환경 변화대응 - 데이터 정합성 개선을 통한 서비스 안정화, 자료 신뢰성 확보 및 통계자료 작성 지원, 사용자 매뉴얼 현행화 ◦IRIS 데이터 관리 체계 및 기능개선(이관대응 포함) - 데이터 이관 환경 구성 및 IRIS DB 검증지원, 정제 등 ◦업무포털 워크라운지, 연구기관 과제참여 현황 기능개선 - 마이R&D 기능개선을 통한 연구자 참여과제 현황 제공 - 연구기관(대학, 출연연구소 등) 대상 참여과제 관리 메뉴 기능개선 ◦IRIS 사용자 경험/인터페이스(UX/UI) 측면의 디자인 개선 - 사용자 편의 제공을 위한 디자인, 색상, 배치 등 개선(안) 도출 ◦개인정보 관리 기능개선 - 시스템 접속 및 사용 과정의 이상행위 모니터링, 조치 기능개선 ◦IRIS D/B 재설계 연계 기능개선 - D/B 성능개선과 클라우드 전환을 위한 재설계, 기능 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 234.144,
+                "r": 522.1495368140161,
+                "b": 465.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦IRIS 시스템 사용자 편의성 향상과 요구사항 및 정책환경 변화대응 - 데이터 정합성 개선을 통한 서비스 안정화, 자료 신뢰성 확보 및 통계자료 작성 지원, 사용자 매뉴얼 현행화 ◦IRIS 데이터 관리 체계 및 기능개선(이관대응 포함) - 데이터 이관 환경 구성 및 IRIS DB 검증지원, 정제 등 ◦업무포털 워크라운지, 연구기관 과제참여 현황 기능개선 - 마이R&D 기능개선을 통한 연구자 참여과제 현황 제공 - 연구기관(대학, 출연연구소 등) 대상 참여과제 관리 메뉴 기능개선 ◦IRIS 사용자 경험/인터페이스(UX/UI) 측면의 디자인 개선 - 사용자 편의 제공을 위한 디자인, 색상, 배치 등 개선(안) 도출 ◦개인정보 관리 기능개선 - 시스템 접속 및 사용 과정의 이상행위 모니터링, 조치 기능개선 ◦IRIS D/B 재설계 연계 기능개선 - D/B 성능개선과 클라우드 전환을 위한 재설계, 기능 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 234.144,
+                "r": 522.1495368140161,
+                "b": 465.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦IRIS 시스템 사용자 편의성 향상과 요구사항 및 정책환경 변화대응 - 데이터 정합성 개선을 통한 서비스 안정화, 자료 신뢰성 확보 및 통계자료 작성 지원, 사용자 매뉴얼 현행화 ◦IRIS 데이터 관리 체계 및 기능개선(이관대응 포함) - 데이터 이관 환경 구성 및 IRIS DB 검증지원, 정제 등 ◦업무포털 워크라운지, 연구기관 과제참여 현황 기능개선 - 마이R&D 기능개선을 통한 연구자 참여과제 현황 제공 - 연구기관(대학, 출연연구소 등) 대상 참여과제 관리 메뉴 기능개선 ◦IRIS 사용자 경험/인터페이스(UX/UI) 측면의 디자인 개선 - 사용자 편의 제공을 위한 디자인, 색상, 배치 등 개선(안) 도출 ◦개인정보 관리 기능개선 - 시스템 접속 및 사용 과정의 이상행위 모니터링, 조치 기능개선 ◦IRIS D/B 재설계 연계 기능개선 - D/B 성능개선과 클라우드 전환을 위한 재설계, 기능 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 234.144,
+                "r": 522.1495368140161,
+                "b": 465.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦IRIS 시스템 사용자 편의성 향상과 요구사항 및 정책환경 변화대응 - 데이터 정합성 개선을 통한 서비스 안정화, 자료 신뢰성 확보 및 통계자료 작성 지원, 사용자 매뉴얼 현행화 ◦IRIS 데이터 관리 체계 및 기능개선(이관대응 포함) - 데이터 이관 환경 구성 및 IRIS DB 검증지원, 정제 등 ◦업무포털 워크라운지, 연구기관 과제참여 현황 기능개선 - 마이R&D 기능개선을 통한 연구자 참여과제 현황 제공 - 연구기관(대학, 출연연구소 등) 대상 참여과제 관리 메뉴 기능개선 ◦IRIS 사용자 경험/인터페이스(UX/UI) 측면의 디자인 개선 - 사용자 편의 제공을 위한 디자인, 색상, 배치 등 개선(안) 도출 ◦개인정보 관리 기능개선 - 시스템 접속 및 사용 과정의 이상행위 모니터링, 조치 기능개선 ◦IRIS D/B 재설계 연계 기능개선 - D/B 성능개선과 클라우드 전환을 위한 재설계, 기능 구축",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 496.2,
+                "r": 136.22959135391997,
+                "b": 554.16,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과 정량",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 487.104,
+                "r": 370.94956408396797,
+                "b": 516.6,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구보고서 및 기획발간물 발간 : 3건 ◦사용자 설명회 및 전문기관 간담회 : 4회 이상",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 487.104,
+                "r": 370.94956408396797,
+                "b": 516.6,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구보고서 및 기획발간물 발간 : 3건 ◦사용자 설명회 및 전문기관 간담회 : 4회 이상",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 487.104,
+                "r": 370.94956408396797,
+                "b": 516.6,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구보고서 및 기획발간물 발간 : 3건 ◦사용자 설명회 및 전문기관 간담회 : 4회 이상",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 487.104,
+                "r": 370.94956408396797,
+                "b": 516.6,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구보고서 및 기획발간물 발간 : 3건 ◦사용자 설명회 및 전문기관 간담회 : 4회 이상",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 552.24,
+                "r": 137.070028594752,
+                "b": 677.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "정성 성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 526.3439999999999,
+                "r": 522.269673394176,
+                "b": 736.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦만족도 조사 및 현황분석을 통한 개선 이슈 및 효율화 방안 도출 ◦R&D정보 관리 일원화 및 연구자 맞춤형 정보 분석 서비스 제공으로 연구 편의성 및 정보 접근성 개선 ◦부처･기관 간 정보공유 확대로 기관별 인력 및 연구관리비용 등 효율성 개선 필요한 기반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 526.3439999999999,
+                "r": 522.269673394176,
+                "b": 736.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦만족도 조사 및 현황분석을 통한 개선 이슈 및 효율화 방안 도출 ◦R&D정보 관리 일원화 및 연구자 맞춤형 정보 분석 서비스 제공으로 연구 편의성 및 정보 접근성 개선 ◦부처･기관 간 정보공유 확대로 기관별 인력 및 연구관리비용 등 효율성 개선 필요한 기반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 526.3439999999999,
+                "r": 522.269673394176,
+                "b": 736.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦만족도 조사 및 현황분석을 통한 개선 이슈 및 효율화 방안 도출 ◦R&D정보 관리 일원화 및 연구자 맞춤형 정보 분석 서비스 제공으로 연구 편의성 및 정보 접근성 개선 ◦부처･기관 간 정보공유 확대로 기관별 인력 및 연구관리비용 등 효율성 개선 필요한 기반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 526.3439999999999,
+                "r": 522.269673394176,
+                "b": 736.68,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦만족도 조사 및 현황분석을 통한 개선 이슈 및 효율화 방안 도출 ◦R&D정보 관리 일원화 및 연구자 맞춤형 정보 분석 서비스 제공으로 연구 편의성 및 정보 접근성 개선 ◦부처･기관 간 정보공유 확대로 기관별 인력 및 연구관리비용 등 효율성 개선 필요한 기반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 606.3839999999999,
+                "r": 522.3898097439361,
+                "b": 719.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦IRIS 2.0 전환으로 연구과제 선정 신뢰성, 집행 투명성, 평가 전문성 강화를 구현하여 전 부처 연구과제, 연구비 집행, 연구자정보 관리 전반에 대한 통합관리 추진 ◦ 기관별 사업관리 특성을 고려한 기능 개선 및 IRIS-유관시스템 간 정보 연계 강화를 통한 연구 의사결정체계 지원 강화 ◦연구성과정보(논문, 특허 등) 및 제재처분 정보와 같이 분산 등록 및 관리되던 내용을 일원화 하고 연계체계 강화로 연구자, 관리자, 의사결정자 만족도 강화 ◦전환방식을 선정하고 기존 시스템 및 인프라 활용에 대한 계획 등 클라우드 전환에",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 606.3839999999999,
+                "r": 522.3898097439361,
+                "b": 719.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦IRIS 2.0 전환으로 연구과제 선정 신뢰성, 집행 투명성, 평가 전문성 강화를 구현하여 전 부처 연구과제, 연구비 집행, 연구자정보 관리 전반에 대한 통합관리 추진 ◦ 기관별 사업관리 특성을 고려한 기능 개선 및 IRIS-유관시스템 간 정보 연계 강화를 통한 연구 의사결정체계 지원 강화 ◦연구성과정보(논문, 특허 등) 및 제재처분 정보와 같이 분산 등록 및 관리되던 내용을 일원화 하고 연계체계 강화로 연구자, 관리자, 의사결정자 만족도 강화 ◦전환방식을 선정하고 기존 시스템 및 인프라 활용에 대한 계획 등 클라우드 전환에",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 606.3839999999999,
+                "r": 522.3898097439361,
+                "b": 719.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦IRIS 2.0 전환으로 연구과제 선정 신뢰성, 집행 투명성, 평가 전문성 강화를 구현하여 전 부처 연구과제, 연구비 집행, 연구자정보 관리 전반에 대한 통합관리 추진 ◦ 기관별 사업관리 특성을 고려한 기능 개선 및 IRIS-유관시스템 간 정보 연계 강화를 통한 연구 의사결정체계 지원 강화 ◦연구성과정보(논문, 특허 등) 및 제재처분 정보와 같이 분산 등록 및 관리되던 내용을 일원화 하고 연계체계 강화로 연구자, 관리자, 의사결정자 만족도 강화 ◦전환방식을 선정하고 기존 시스템 및 인프라 활용에 대한 계획 등 클라우드 전환에",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 606.3839999999999,
+                "r": 522.3898097439361,
+                "b": 719.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦IRIS 2.0 전환으로 연구과제 선정 신뢰성, 집행 투명성, 평가 전문성 강화를 구현하여 전 부처 연구과제, 연구비 집행, 연구자정보 관리 전반에 대한 통합관리 추진 ◦ 기관별 사업관리 특성을 고려한 기능 개선 및 IRIS-유관시스템 간 정보 연계 강화를 통한 연구 의사결정체계 지원 강화 ◦연구성과정보(논문, 특허 등) 및 제재처분 정보와 같이 분산 등록 및 관리되던 내용을 일원화 하고 연계체계 강화로 연구자, 관리자, 의사결정자 만족도 강화 ◦전환방식을 선정하고 기존 시스템 및 인프라 활용에 대한 계획 등 클라우드 전환에",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "95": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 95
+    }
+  }
+}

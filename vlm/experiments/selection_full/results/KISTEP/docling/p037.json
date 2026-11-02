@@ -1,0 +1,496 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 37,
+          "bbox": {
+            "l": 70.04258728027344,
+            "t": 770.3202896118164,
+            "r": 521.5912475585938,
+            "b": 246.6375732421875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 73.58400000000006,
+              "r": 519.6295913539201,
+              "b": 259.0799999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦ 제3차 과학기술 기반 사회문제해결 종합계획('23~'27) 이행 기반 마련 연구 - 핵심사회문제 해결 플래그십 사업 성과의 시나리오*별 사회적 가치 추정 연구 * (예시) 성과확산 경로: 공공서비스 중심형, 민간시장 중심형, 혼합형(공공서비스+ 민간시장) 등 ◦ 과학기술혁신 관련 주요 정책 이슈에 대한 심층분석과 긴급 현안에 대한 이슈 선점 - 과학기술미래예측, 과학기술정책, 국가 R&D 전략 및 평가 등 KISTEP 주요 임무 관련 쟁점 사항에 대한 심층 분석(이슈페이퍼) - 수시로 발생는 우리 사회 주요 현안에 대한 과학기술혁신관점의 이슈 발굴(선점) 및 대응방향 제시(정책브리프)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 284.76,
+              "r": 98.669564083968,
+              "b": 313.55999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 418.32,
+              "r": 98.669564083968,
+              "b": 447.12,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 307.9200000000001,
+              "r": 136.22959135391997,
+              "b": 319.9200000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정량",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 264.0239999999999,
+              "r": 463.94945477375995,
+              "b": 363.12,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦ 주요국 과학기술 동향 모니터링 이슈 발굴 및 보고서 작성 : 24건 ◦ 국가과학기술 중장기계획 조사 분석 : 심층분석 1건, 안건상정 1건 ◦ 연구보고서 : 6건 ◦ KISTEP 이슈페이퍼 : 15건 ◦ KISTEP 정책브리프 : 10건",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 117.0,
+              "t": 411.96,
+              "r": 136.22959135391997,
+              "b": 423.96,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "정성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 368.06399999999996,
+              "r": 519.629618623872,
+              "b": 467.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦ 과학기술분야 중장기계획 조사결과 도출 및 과학기술분야 중장기 계획 연계맵 마련 ◦ 2025년도 국가 과학기술 현황 종합인식조사 실시(제2기-제3차) ◦ K-STIP scoreboard 지표 최신화 및 부문별 이슈 심층분석 수행 ◦ 과학기술혁신정책 관련 정책 정보를 정부, 국회 및 외부 전문가들에게 제공함으로써 KISTEP의 정책 전문성 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 526.8,
+              "r": 137.070028594752,
+              "b": 538.8,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 472.104,
+              "r": 519.62945477376,
+              "b": 592.8,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "◦ 시의성 있는 정책이슈 발굴과 심층분석을 통해 정책적 시사점과 대응방안을 제시해서 과학기술정책 수립 시 활용도 제고 ◦ 정책기획의 최상위 중장기계획, 종합계획, R&D사업 추진 및 성과관리가 연계될 수 있도록 체계적 정책 조정 기반 마련 ◦ 과학기술인력, 지역, 민간혁신, 사회문제 등 정책분야별 과학기술 신규지표 발굴 및 이슈 도출을 통한 현황분석 및 정책적 함의 도출",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 4,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 73.58400000000006,
+                "r": 519.6295913539201,
+                "b": 259.0799999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦ 제3차 과학기술 기반 사회문제해결 종합계획('23~'27) 이행 기반 마련 연구 - 핵심사회문제 해결 플래그십 사업 성과의 시나리오*별 사회적 가치 추정 연구 * (예시) 성과확산 경로: 공공서비스 중심형, 민간시장 중심형, 혼합형(공공서비스+ 민간시장) 등 ◦ 과학기술혁신 관련 주요 정책 이슈에 대한 심층분석과 긴급 현안에 대한 이슈 선점 - 과학기술미래예측, 과학기술정책, 국가 R&D 전략 및 평가 등 KISTEP 주요 임무 관련 쟁점 사항에 대한 심층 분석(이슈페이퍼) - 수시로 발생는 우리 사회 주요 현안에 대한 과학기술혁신관점의 이슈 발굴(선점) 및 대응방향 제시(정책브리프)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 284.76,
+                "r": 98.669564083968,
+                "b": 313.55999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 307.9200000000001,
+                "r": 136.22959135391997,
+                "b": 319.9200000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정량",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 264.0239999999999,
+                "r": 463.94945477375995,
+                "b": 363.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦ 주요국 과학기술 동향 모니터링 이슈 발굴 및 보고서 작성 : 24건 ◦ 국가과학기술 중장기계획 조사 분석 : 심층분석 1건, 안건상정 1건 ◦ 연구보고서 : 6건 ◦ KISTEP 이슈페이퍼 : 15건 ◦ KISTEP 정책브리프 : 10건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 418.32,
+                "r": 98.669564083968,
+                "b": 447.12,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 117.0,
+                "t": 411.96,
+                "r": 136.22959135391997,
+                "b": 423.96,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "정성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 368.06399999999996,
+                "r": 519.629618623872,
+                "b": 467.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦ 과학기술분야 중장기계획 조사결과 도출 및 과학기술분야 중장기 계획 연계맵 마련 ◦ 2025년도 국가 과학기술 현황 종합인식조사 실시(제2기-제3차) ◦ K-STIP scoreboard 지표 최신화 및 부문별 이슈 심층분석 수행 ◦ 과학기술혁신정책 관련 정책 정보를 정부, 국회 및 외부 전문가들에게 제공함으로써 KISTEP의 정책 전문성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 526.8,
+                "r": 137.070028594752,
+                "b": 538.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 526.8,
+                "r": 137.070028594752,
+                "b": 538.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 472.104,
+                "r": 519.62945477376,
+                "b": 592.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "◦ 시의성 있는 정책이슈 발굴과 심층분석을 통해 정책적 시사점과 대응방안을 제시해서 과학기술정책 수립 시 활용도 제고 ◦ 정책기획의 최상위 중장기계획, 종합계획, R&D사업 추진 및 성과관리가 연계될 수 있도록 체계적 정책 조정 기반 마련 ◦ 과학기술인력, 지역, 민간혁신, 사회문제 등 정책분야별 과학기술 신규지표 발굴 및 이슈 도출을 통한 현황분석 및 정책적 함의 도출",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "37": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 37
+    }
+  }
+}

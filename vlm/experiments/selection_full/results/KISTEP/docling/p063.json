@@ -1,0 +1,1124 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 63,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 769.48,
+            "r": 214.89,
+            "b": 754.48,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "주요 연구내용(요약)",
+      "text": "주요 연구내용(요약)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 63,
+          "bbox": {
+            "l": 70.37553405761719,
+            "t": 746.2591400146484,
+            "r": 525.0365600585938,
+            "b": 71.1363525390625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 94.08,
+              "t": 101.03999999999996,
+              "r": 122.90967339417598,
+              "b": 113.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 258.36,
+              "t": 100.34400000000005,
+              "r": 412.70956408396796,
+              "b": 113.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "국가전략기술 육성 기획･분석 사업",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 138.84000000000003,
+              "r": 118.10959135392,
+              "b": 150.84000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "구분",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 125.75999999999999,
+              "r": 207.50991928454397,
+              "b": 137.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구책임자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 226.07999999999998,
+              "t": 125.75999999999999,
+              "r": 291.74970066412794,
+              "b": 137.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "오현환, 손석호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 315.0,
+              "t": 125.75999999999999,
+              "r": 353.18980997433596,
+              "b": 137.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 397.32,
+              "t": 125.75999999999999,
+              "r": 499.452110162688,
+              "b": 137.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 6,
+            "text": "'25.01.01∼'25.12.31",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 151.91999999999996,
+              "r": 198.02970066412797,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 151.91999999999996,
+              "r": 271.46945477376,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "'24년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 306.0,
+              "t": 151.91999999999996,
+              "r": 362.30967339417595,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "1,441백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 151.91999999999996,
+              "r": 423.26945477375995,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 459.24,
+              "t": 151.91999999999996,
+              "r": 515.5497006641281,
+              "b": 163.91999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "2,259백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 211.79999999999995,
+              "r": 127.58980997433599,
+              "b": 223.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 184.10400000000004,
+              "r": 522.149618623872,
+              "b": 250.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦기술패권 대응을 위한 국가전략기술을 육성을 위해 기본계획 및 시행계획 수립, 정책 이행 점검, 전략기술 선정･관리를 지원 ◦정책적 활용도가 높고 신뢰할 수 있는 전략기술 분야 인력 관련 통계 및 현황·특성 파악 등을 통한 데이터 기반의 국가전략기술 인재정책 수립 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 512.04,
+              "r": 127.58980997433599,
+              "b": 524.04,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 268.34400000000005,
+              "r": 522.3895913539201,
+              "b": 731.04,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦국가전략기술 확인제도 운영 - 확인제도 운영을 통한 산학연의 보유관리 또는 연구개발 중인 기술에 대한 심사 ◦전략기술 분야 검토･조정 - 기술 발전 및 경제안보 여건 등 대내외 변화에 따른 국가전략기술 임무중심 전략 로드맵의 주기적 현행화 ◦국가전략기술 특별위･조정위 등 운영 - 국가과학기술자문회의 산하 범부처 정책조율과 민관 역량 결집을 위한 국가전략 기술 특위, 전문가 네트워크 등 운영 ◦전략기술 성과확산 - 임무중심 로드맵과 부처별 연구개발 사업, 출연연 핵심 연구사업 등과 연계를 통한 성과발굴 및 확산 추진 ◦ 국내·외 인재데이터 구축 - 전략기술 분야별 '글로벌 인력지도' 등 국내외 우수과학자･연구기관 정보 분석 체계 구축·활용 확대 ◦ 신진연구자 수급현황 및 연구인력 이동성 분석 등 - (IRIS-고용보험 DB 연계 및 분석) 가명정보 결합*을 위한 개인정보 가명처리**를 실시하고, 결합정보 관리･활용을 위한 기반 구축 * 개인정보의 일부를 삭제･대체하는 등의 방법으로 개인정보를 비식별화 후 결합기관을 통한 DB 간 연계 ** IRIS과제･연구자 정보의 위험성 검토, 비식별화, 적정성 검토 등 - (인력 상세 등을 기반으로 - (과학기술인력 과학기술인력의 재직 중인 인재정책",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 208.79999999999998,
+              "t": 629.04,
+              "r": 332.4297554344319,
+              "b": 731.04,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "수요 분석) 전략기술 분야별 직무 법정통계조사) 향후 10년 간 연구원 현황·처우·인력수요 수립 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 290.88,
+              "t": 629.04,
+              "r": 379.10967316377594,
+              "b": 713.04,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "분야 인력수요 구성 및 필요 주요 이공계 수요·공급 규모, 국내 등을",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 346.91999999999996,
+              "t": 629.04,
+              "r": 440.90945477376,
+              "b": 713.04,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "파악을 전공･학위, 요구 인력(유학생·취업자)의 이공계 분야 분석·파악하여",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 434.64,
+              "t": 629.04,
+              "r": 522.38945477376,
+              "b": 713.04,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "채용공고 분석 등을 상세 분석 국내외 체류 현황, 연구기관(산·학·연)에 기반 과학기술",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 6,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 94.08,
+                "t": 101.03999999999996,
+                "r": 122.90967339417598,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 258.36,
+                "t": 100.34400000000005,
+                "r": 412.70956408396796,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "국가전략기술 육성 기획･분석 사업",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 258.36,
+                "t": 100.34400000000005,
+                "r": 412.70956408396796,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "국가전략기술 육성 기획･분석 사업",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 258.36,
+                "t": 100.34400000000005,
+                "r": 412.70956408396796,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "국가전략기술 육성 기획･분석 사업",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 258.36,
+                "t": 100.34400000000005,
+                "r": 412.70956408396796,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "국가전략기술 육성 기획･분석 사업",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 258.36,
+                "t": 100.34400000000005,
+                "r": 412.70956408396796,
+                "b": 113.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "국가전략기술 육성 기획･분석 사업",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 138.84000000000003,
+                "r": 118.10959135392,
+                "b": 150.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 125.75999999999999,
+                "r": 207.50991928454397,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구책임자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 226.07999999999998,
+                "t": 125.75999999999999,
+                "r": 291.74970066412794,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "오현환, 손석호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 315.0,
+                "t": 125.75999999999999,
+                "r": 353.18980997433596,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 397.32,
+                "t": 125.75999999999999,
+                "r": 499.452110162688,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01∼'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 397.32,
+                "t": 125.75999999999999,
+                "r": 499.452110162688,
+                "b": 137.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01∼'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 138.84000000000003,
+                "r": 118.10959135392,
+                "b": 150.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 151.91999999999996,
+                "r": 198.02970066412797,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 151.91999999999996,
+                "r": 271.46945477376,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "'24년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 306.0,
+                "t": 151.91999999999996,
+                "r": 362.30967339417595,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "1,441백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 151.91999999999996,
+                "r": 423.26945477375995,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 459.24,
+                "t": 151.91999999999996,
+                "r": 515.5497006641281,
+                "b": 163.91999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "2,259백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 211.79999999999995,
+                "r": 127.58980997433599,
+                "b": 223.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.149618623872,
+                "b": 250.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술패권 대응을 위한 국가전략기술을 육성을 위해 기본계획 및 시행계획 수립, 정책 이행 점검, 전략기술 선정･관리를 지원 ◦정책적 활용도가 높고 신뢰할 수 있는 전략기술 분야 인력 관련 통계 및 현황·특성 파악 등을 통한 데이터 기반의 국가전략기술 인재정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.149618623872,
+                "b": 250.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술패권 대응을 위한 국가전략기술을 육성을 위해 기본계획 및 시행계획 수립, 정책 이행 점검, 전략기술 선정･관리를 지원 ◦정책적 활용도가 높고 신뢰할 수 있는 전략기술 분야 인력 관련 통계 및 현황·특성 파악 등을 통한 데이터 기반의 국가전략기술 인재정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.149618623872,
+                "b": 250.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술패권 대응을 위한 국가전략기술을 육성을 위해 기본계획 및 시행계획 수립, 정책 이행 점검, 전략기술 선정･관리를 지원 ◦정책적 활용도가 높고 신뢰할 수 있는 전략기술 분야 인력 관련 통계 및 현황·특성 파악 등을 통한 데이터 기반의 국가전략기술 인재정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.149618623872,
+                "b": 250.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술패권 대응을 위한 국가전략기술을 육성을 위해 기본계획 및 시행계획 수립, 정책 이행 점검, 전략기술 선정･관리를 지원 ◦정책적 활용도가 높고 신뢰할 수 있는 전략기술 분야 인력 관련 통계 및 현황·특성 파악 등을 통한 데이터 기반의 국가전략기술 인재정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 184.10400000000004,
+                "r": 522.149618623872,
+                "b": 250.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술패권 대응을 위한 국가전략기술을 육성을 위해 기본계획 및 시행계획 수립, 정책 이행 점검, 전략기술 선정･관리를 지원 ◦정책적 활용도가 높고 신뢰할 수 있는 전략기술 분야 인력 관련 통계 및 현황·특성 파악 등을 통한 데이터 기반의 국가전략기술 인재정책 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 512.04,
+                "r": 127.58980997433599,
+                "b": 524.04,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 268.34400000000005,
+                "r": 522.3895913539201,
+                "b": 731.04,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦국가전략기술 확인제도 운영 - 확인제도 운영을 통한 산학연의 보유관리 또는 연구개발 중인 기술에 대한 심사 ◦전략기술 분야 검토･조정 - 기술 발전 및 경제안보 여건 등 대내외 변화에 따른 국가전략기술 임무중심 전략 로드맵의 주기적 현행화 ◦국가전략기술 특별위･조정위 등 운영 - 국가과학기술자문회의 산하 범부처 정책조율과 민관 역량 결집을 위한 국가전략 기술 특위, 전문가 네트워크 등 운영 ◦전략기술 성과확산 - 임무중심 로드맵과 부처별 연구개발 사업, 출연연 핵심 연구사업 등과 연계를 통한 성과발굴 및 확산 추진 ◦ 국내·외 인재데이터 구축 - 전략기술 분야별 '글로벌 인력지도' 등 국내외 우수과학자･연구기관 정보 분석 체계 구축·활용 확대 ◦ 신진연구자 수급현황 및 연구인력 이동성 분석 등 - (IRIS-고용보험 DB 연계 및 분석) 가명정보 결합*을 위한 개인정보 가명처리**를 실시하고, 결합정보 관리･활용을 위한 기반 구축 * 개인정보의 일부를 삭제･대체하는 등의 방법으로 개인정보를 비식별화 후 결합기관을 통한 DB 간 연계 ** IRIS과제･연구자 정보의 위험성 검토, 비식별화, 적정성 검토 등 - (인력 상세 등을 기반으로 - (과학기술인력 과학기술인력의 재직 중인 인재정책",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 208.79999999999998,
+                "t": 629.04,
+                "r": 332.4297554344319,
+                "b": 731.04,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "수요 분석) 전략기술 분야별 직무 법정통계조사) 향후 10년 간 연구원 현황·처우·인력수요 수립 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 290.88,
+                "t": 629.04,
+                "r": 379.10967316377594,
+                "b": 713.04,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "분야 인력수요 구성 및 필요 주요 이공계 수요·공급 규모, 국내 등을",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 346.91999999999996,
+                "t": 629.04,
+                "r": 440.90945477376,
+                "b": 713.04,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "파악을 전공･학위, 요구 인력(유학생·취업자)의 이공계 분야 분석·파악하여",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 434.64,
+                "t": 629.04,
+                "r": 522.38945477376,
+                "b": 713.04,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "채용공고 분석 등을 상세 분석 국내외 체류 현황, 연구기관(산·학·연)에 기반 과학기술",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "63": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 63
+    }
+  }
+}

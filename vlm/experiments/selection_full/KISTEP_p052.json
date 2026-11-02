@@ -1,0 +1,83 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 52,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 935,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [],
+    "docling_derived": [
+      {
+        "bbox": [
+          72.55028533935547,
+          534.43896484375,
+          525.37109375,
+          656.8472290039062
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          72.55028533935547,
+          534.43896484375,
+          525.37109375,
+          656.8472290039062
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0052_r001",
+        "context": [
+          {
+            "text": "'25년 예산",
+            "bbox": [
+              93.47999999999999,
+              496.32,
+              161.4,
+              511.32
+            ],
+            "source_ref": "#/texts/10"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 52,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 52,
+          "bbox": [
+            72.55028533935547,
+            534.43896484375,
+            525.37109375,
+            656.8472290039062
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

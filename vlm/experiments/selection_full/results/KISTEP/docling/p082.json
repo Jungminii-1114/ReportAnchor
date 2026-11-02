@@ -1,0 +1,1275 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 82,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 759.4,
+            "r": 214.89,
+            "b": 744.4,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "주요 연구내용(요약)",
+      "text": "주요 연구내용(요약)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 82,
+          "bbox": {
+            "l": 70.59416961669922,
+            "t": 731.8991622924805,
+            "r": 525.1459350585938,
+            "b": 88.97369384765625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 94.08,
+              "t": 116.03999999999996,
+              "r": 122.90967339417598,
+              "b": 128.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 276.0,
+              "t": 116.03999999999996,
+              "r": 370.71848398008007,
+              "b": 128.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구자권익보호위원회",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 375.84,
+              "t": 116.03999999999996,
+              "r": 394.95872421744,
+              "b": 128.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "운영",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 151.07999999999993,
+              "r": 118.10959135392,
+              "b": 163.07999999999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "구분",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 139.31999999999994,
+              "r": 207.50991928454397,
+              "b": 151.31999999999994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구책임자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 139.31999999999994,
+              "r": 353.18980997433596,
+              "b": 151.31999999999994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "정정규 사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.36,
+              "t": 139.31999999999994,
+              "r": 497.411674995456,
+              "b": 151.31999999999994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 5,
+            "text": "'25.01.01~'25.12.31",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 162.72000000000003,
+              "r": 198.02970066412797,
+              "b": 174.72000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 162.72000000000003,
+              "r": 357.62970066412794,
+              "b": 174.72000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "'24년 481백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 162.72000000000003,
+              "r": 423.26945477375995,
+              "b": 174.72000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "'25년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.91999999999996,
+              "t": 162.72000000000003,
+              "r": 510.8697006641281,
+              "b": 174.72000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "495백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 215.03999999999996,
+              "r": 127.58980997433599,
+              "b": 227.03999999999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "최종목표",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 197.54399999999998,
+              "r": 522.1496736245763,
+              "b": 243.84000000000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦연구자 권익보호와 제재처분의 일관성 및 전문성 확보 ◦부처의 사전 제재처분에 대해 연구자 권익과 사회적 책임 간의 균형을 고려하여 합리적으로 심의하고, 관련 제도 개선을 통해 건전한 연구생태계 조성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 379.8,
+              "r": 127.58980997433599,
+              "b": 391.8,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 278.304,
+              "r": 522.3897279340802,
+              "b": 492.59999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦부처별 제재처분의 적절성을 재검토하기 위한 제재처분재검토회의 운영 - 제재처분의 적절성 재검토회의의 효율적인 진행을 위하여 회의의 제반 사항 및 주요 사항 사전검토, 상정 안건 작성, 심의 활동을 지원 ◦연구윤리 및 연구자 권익보호 정책연구, 제재처분 절차 및 제도 개선 연구 - 연구환경 변화에 대응하기 위한 권익보호 과제를 지속적으로 발굴하기 위한 국내외 사례연구 및 다양한 전문 분야의 시각이 반영된 정책 및 제도 제안 ◦국가연구개발혁신법 등 제도개선, 연구윤리 및 제재처분 실무 가이드라인 제시 - 연구현장 및 유관기관 대응 등을 통해 연구자 권익보호, 연구윤리 및 제재처분 제도 개선 사항을 발굴 - 법률전문가 및 실무전문가들과의 검토를 통해 법령 개정, 실무 가이드라인 등 체계 고도화",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 525.24,
+              "r": 137.070028594752,
+              "b": 700.1999999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과 정량 정성 성과활용계획",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 524.544,
+              "r": 343.94945477375995,
+              "b": 537.24,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦2025년 개정 제재처분 가이드라인 : 1건",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 570.024,
+              "r": 497.78956408396795,
+              "b": 616.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦국가연구개발사업에 참여하는 연구자들의 권익 보호 증진에 기여 ◦제재처분에 대한 공통된 기준 및 절차의 확산에 기여 ◦연구현장의 윤리의식 제고와 함께 연구자 권익 보호 관련 정책 수립에 기여",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 653.904,
+              "r": 522.3895913539201,
+              "b": 733.8,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 5,
+            "text": "◦연구자권익보호위원회의 효율적이고 원활한 운영을 유도 ◦연구자 권익보호 및 제재처분 재검토 관련 제도 개선사항 도출을 통해 연구자권익 보호위원회 심의결과의 실효성 강화 ◦연구자권익보호회의 안건 상정, 실무 가이드라인 또는 법령 개정(안) 수요 등에 반영 하여 제도 개선의 선순환 체계 마련",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 5,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 94.08,
+                "t": 116.03999999999996,
+                "r": 122.90967339417598,
+                "b": 128.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 276.0,
+                "t": 116.03999999999996,
+                "r": 370.71848398008007,
+                "b": 128.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구자권익보호위원회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 375.84,
+                "t": 116.03999999999996,
+                "r": 394.95872421744,
+                "b": 128.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "운영",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 139.31999999999994,
+                "r": 207.50991928454397,
+                "b": 151.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구책임자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 139.31999999999994,
+                "r": 353.18980997433596,
+                "b": 151.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "정정규 사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 139.31999999999994,
+                "r": 497.411674995456,
+                "b": 151.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 5,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 139.31999999999994,
+                "r": 497.411674995456,
+                "b": 151.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 5,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 151.07999999999993,
+                "r": 118.10959135392,
+                "b": 163.07999999999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "구분",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 162.72000000000003,
+                "r": 198.02970066412797,
+                "b": 174.72000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 162.72000000000003,
+                "r": 357.62970066412794,
+                "b": 174.72000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "'24년 481백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 162.72000000000003,
+                "r": 423.26945477375995,
+                "b": 174.72000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "'25년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.91999999999996,
+                "t": 162.72000000000003,
+                "r": 510.8697006641281,
+                "b": 174.72000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "495백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 215.03999999999996,
+                "r": 127.58980997433599,
+                "b": 227.03999999999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "최종목표",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 197.54399999999998,
+                "r": 522.1496736245763,
+                "b": 243.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구자 권익보호와 제재처분의 일관성 및 전문성 확보 ◦부처의 사전 제재처분에 대해 연구자 권익과 사회적 책임 간의 균형을 고려하여 합리적으로 심의하고, 관련 제도 개선을 통해 건전한 연구생태계 조성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 197.54399999999998,
+                "r": 522.1496736245763,
+                "b": 243.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구자 권익보호와 제재처분의 일관성 및 전문성 확보 ◦부처의 사전 제재처분에 대해 연구자 권익과 사회적 책임 간의 균형을 고려하여 합리적으로 심의하고, 관련 제도 개선을 통해 건전한 연구생태계 조성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 197.54399999999998,
+                "r": 522.1496736245763,
+                "b": 243.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구자 권익보호와 제재처분의 일관성 및 전문성 확보 ◦부처의 사전 제재처분에 대해 연구자 권익과 사회적 책임 간의 균형을 고려하여 합리적으로 심의하고, 관련 제도 개선을 통해 건전한 연구생태계 조성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 197.54399999999998,
+                "r": 522.1496736245763,
+                "b": 243.84000000000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구자 권익보호와 제재처분의 일관성 및 전문성 확보 ◦부처의 사전 제재처분에 대해 연구자 권익과 사회적 책임 간의 균형을 고려하여 합리적으로 심의하고, 관련 제도 개선을 통해 건전한 연구생태계 조성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 379.8,
+                "r": 127.58980997433599,
+                "b": 391.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 278.304,
+                "r": 522.3897279340802,
+                "b": 492.59999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦부처별 제재처분의 적절성을 재검토하기 위한 제재처분재검토회의 운영 - 제재처분의 적절성 재검토회의의 효율적인 진행을 위하여 회의의 제반 사항 및 주요 사항 사전검토, 상정 안건 작성, 심의 활동을 지원 ◦연구윤리 및 연구자 권익보호 정책연구, 제재처분 절차 및 제도 개선 연구 - 연구환경 변화에 대응하기 위한 권익보호 과제를 지속적으로 발굴하기 위한 국내외 사례연구 및 다양한 전문 분야의 시각이 반영된 정책 및 제도 제안 ◦국가연구개발혁신법 등 제도개선, 연구윤리 및 제재처분 실무 가이드라인 제시 - 연구현장 및 유관기관 대응 등을 통해 연구자 권익보호, 연구윤리 및 제재처분 제도 개선 사항을 발굴 - 법률전문가 및 실무전문가들과의 검토를 통해 법령 개정, 실무 가이드라인 등 체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 278.304,
+                "r": 522.3897279340802,
+                "b": 492.59999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦부처별 제재처분의 적절성을 재검토하기 위한 제재처분재검토회의 운영 - 제재처분의 적절성 재검토회의의 효율적인 진행을 위하여 회의의 제반 사항 및 주요 사항 사전검토, 상정 안건 작성, 심의 활동을 지원 ◦연구윤리 및 연구자 권익보호 정책연구, 제재처분 절차 및 제도 개선 연구 - 연구환경 변화에 대응하기 위한 권익보호 과제를 지속적으로 발굴하기 위한 국내외 사례연구 및 다양한 전문 분야의 시각이 반영된 정책 및 제도 제안 ◦국가연구개발혁신법 등 제도개선, 연구윤리 및 제재처분 실무 가이드라인 제시 - 연구현장 및 유관기관 대응 등을 통해 연구자 권익보호, 연구윤리 및 제재처분 제도 개선 사항을 발굴 - 법률전문가 및 실무전문가들과의 검토를 통해 법령 개정, 실무 가이드라인 등 체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 278.304,
+                "r": 522.3897279340802,
+                "b": 492.59999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦부처별 제재처분의 적절성을 재검토하기 위한 제재처분재검토회의 운영 - 제재처분의 적절성 재검토회의의 효율적인 진행을 위하여 회의의 제반 사항 및 주요 사항 사전검토, 상정 안건 작성, 심의 활동을 지원 ◦연구윤리 및 연구자 권익보호 정책연구, 제재처분 절차 및 제도 개선 연구 - 연구환경 변화에 대응하기 위한 권익보호 과제를 지속적으로 발굴하기 위한 국내외 사례연구 및 다양한 전문 분야의 시각이 반영된 정책 및 제도 제안 ◦국가연구개발혁신법 등 제도개선, 연구윤리 및 제재처분 실무 가이드라인 제시 - 연구현장 및 유관기관 대응 등을 통해 연구자 권익보호, 연구윤리 및 제재처분 제도 개선 사항을 발굴 - 법률전문가 및 실무전문가들과의 검토를 통해 법령 개정, 실무 가이드라인 등 체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 278.304,
+                "r": 522.3897279340802,
+                "b": 492.59999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦부처별 제재처분의 적절성을 재검토하기 위한 제재처분재검토회의 운영 - 제재처분의 적절성 재검토회의의 효율적인 진행을 위하여 회의의 제반 사항 및 주요 사항 사전검토, 상정 안건 작성, 심의 활동을 지원 ◦연구윤리 및 연구자 권익보호 정책연구, 제재처분 절차 및 제도 개선 연구 - 연구환경 변화에 대응하기 위한 권익보호 과제를 지속적으로 발굴하기 위한 국내외 사례연구 및 다양한 전문 분야의 시각이 반영된 정책 및 제도 제안 ◦국가연구개발혁신법 등 제도개선, 연구윤리 및 제재처분 실무 가이드라인 제시 - 연구현장 및 유관기관 대응 등을 통해 연구자 권익보호, 연구윤리 및 제재처분 제도 개선 사항을 발굴 - 법률전문가 및 실무전문가들과의 검토를 통해 법령 개정, 실무 가이드라인 등 체계 고도화",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 525.24,
+                "r": 137.070028594752,
+                "b": 700.1999999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과 정량 정성 성과활용계획",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 524.544,
+                "r": 343.94945477375995,
+                "b": 537.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦2025년 개정 제재처분 가이드라인 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 524.544,
+                "r": 343.94945477375995,
+                "b": 537.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦2025년 개정 제재처분 가이드라인 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 524.544,
+                "r": 343.94945477375995,
+                "b": 537.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦2025년 개정 제재처분 가이드라인 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 524.544,
+                "r": 343.94945477375995,
+                "b": 537.24,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦2025년 개정 제재처분 가이드라인 : 1건",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 570.024,
+                "r": 497.78956408396795,
+                "b": 616.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦국가연구개발사업에 참여하는 연구자들의 권익 보호 증진에 기여 ◦제재처분에 대한 공통된 기준 및 절차의 확산에 기여 ◦연구현장의 윤리의식 제고와 함께 연구자 권익 보호 관련 정책 수립에 기여",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 570.024,
+                "r": 497.78956408396795,
+                "b": 616.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦국가연구개발사업에 참여하는 연구자들의 권익 보호 증진에 기여 ◦제재처분에 대한 공통된 기준 및 절차의 확산에 기여 ◦연구현장의 윤리의식 제고와 함께 연구자 권익 보호 관련 정책 수립에 기여",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 570.024,
+                "r": 497.78956408396795,
+                "b": 616.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦국가연구개발사업에 참여하는 연구자들의 권익 보호 증진에 기여 ◦제재처분에 대한 공통된 기준 및 절차의 확산에 기여 ◦연구현장의 윤리의식 제고와 함께 연구자 권익 보호 관련 정책 수립에 기여",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 570.024,
+                "r": 497.78956408396795,
+                "b": 616.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦국가연구개발사업에 참여하는 연구자들의 권익 보호 증진에 기여 ◦제재처분에 대한 공통된 기준 및 절차의 확산에 기여 ◦연구현장의 윤리의식 제고와 함께 연구자 권익 보호 관련 정책 수립에 기여",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 653.904,
+                "r": 522.3895913539201,
+                "b": 733.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구자권익보호위원회의 효율적이고 원활한 운영을 유도 ◦연구자 권익보호 및 제재처분 재검토 관련 제도 개선사항 도출을 통해 연구자권익 보호위원회 심의결과의 실효성 강화 ◦연구자권익보호회의 안건 상정, 실무 가이드라인 또는 법령 개정(안) 수요 등에 반영 하여 제도 개선의 선순환 체계 마련",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 653.904,
+                "r": 522.3895913539201,
+                "b": 733.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구자권익보호위원회의 효율적이고 원활한 운영을 유도 ◦연구자 권익보호 및 제재처분 재검토 관련 제도 개선사항 도출을 통해 연구자권익 보호위원회 심의결과의 실효성 강화 ◦연구자권익보호회의 안건 상정, 실무 가이드라인 또는 법령 개정(안) 수요 등에 반영 하여 제도 개선의 선순환 체계 마련",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 653.904,
+                "r": 522.3895913539201,
+                "b": 733.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구자권익보호위원회의 효율적이고 원활한 운영을 유도 ◦연구자 권익보호 및 제재처분 재검토 관련 제도 개선사항 도출을 통해 연구자권익 보호위원회 심의결과의 실효성 강화 ◦연구자권익보호회의 안건 상정, 실무 가이드라인 또는 법령 개정(안) 수요 등에 반영 하여 제도 개선의 선순환 체계 마련",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 653.904,
+                "r": 522.3895913539201,
+                "b": 733.8,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 5,
+              "text": "◦연구자권익보호위원회의 효율적이고 원활한 운영을 유도 ◦연구자 권익보호 및 제재처분 재검토 관련 제도 개선사항 도출을 통해 연구자권익 보호위원회 심의결과의 실효성 강화 ◦연구자권익보호회의 안건 상정, 실무 가이드라인 또는 법령 개정(안) 수요 등에 반영 하여 제도 개선의 선순환 체계 마련",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "82": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 82
+    }
+  }
+}

@@ -1,0 +1,851 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 42.0,
+            "t": 725.181,
+            "r": 108.0,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 652.5143333333334,
+            "r": 327.0,
+            "b": 622.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "불필요한 소방력 낭비 출인다",
+      "text": "불필요한 소방력 낭비 출인다",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 51.0,
+            "t": 614.181,
+            "r": 218.33333333333334,
+            "b": 599.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "양회성 국방안전지능화연구실 책임연구원",
+      "text": "양회성 국방안전지능화연구실 책임연구원"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 98.0,
+            "t": 73.84766666666667,
+            "r": 163.33333333333334,
+            "b": 63.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면",
+      "text": "QR코드트 스랜하시면"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 676.3333333333334,
+            "t": 427.51433333333335,
+            "r": 877.3333333333334,
+            "b": 396.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "시I가 먼지 요리 연기 여부름 구별해 비화재보 감소 빛의 파장 이용해 진짜 화재만 감지하는 Al 화재경보",
+      "text": "시I가 먼지 요리 연기 여부름 구별해 비화재보 감소 빛의 파장 이용해 진짜 화재만 감지하는 Al 화재경보",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 677.0,
+            "t": 390.8476666666667,
+            "r": 715.6666666666666,
+            "b": 378.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "기술 개발",
+      "text": "기술 개발",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 354.8476666666667,
+            "r": 898.3333333333334,
+            "b": 342.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "기존의 화재 감지기는 연기와 같은 작은 입자가 감지기 내부로 들어",
+      "text": "기존의 화재 감지기는 연기와 같은 작은 입자가 감지기 내부로 들어"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 319.18100000000004,
+            "r": 899.6666666666666,
+            "b": 234.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            156
+          ]
+        }
+      ],
+      "orig": "한다 하지만 먼지 습기 요리 연기 담배 연기 등 화재가 아난 입지들 소방청 자료에 따르면 2021년부터 2022년 7월까지 화재 경보에 다 른 출동 건수는 총 25만 8,220건이없고 이 중 96.696가 감지기 오 작동에 의한 오인 출동이없다 이로 인해 소방력과 예산이 불필요하",
+      "text": "한다 하지만 먼지 습기 요리 연기 담배 연기 등 화재가 아난 입지들 소방청 자료에 따르면 2021년부터 2022년 7월까지 화재 경보에 다 른 출동 건수는 총 25만 8,220건이없고 이 중 96.696가 감지기 오 작동에 의한 오인 출동이없다 이로 인해 소방력과 예산이 불필요하"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 665.3333333333334,
+            "t": 229.18100000000004,
+            "r": 785.6666666666666,
+            "b": 215.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "게 낭비되는 문제가 지속되고 있다",
+      "text": "게 낭비되는 문제가 지속되고 있다"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 193.5143333333334,
+            "r": 899.0,
+            "b": 54.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "개발없다 이 기술은 다양한 파장의 빛올 활용하여 파장별 입자의 존 감지기처럼 단순히 연기의 유무만을 판단하는 방식에서 벗어나",
+      "text": "개발없다 이 기술은 다양한 파장의 빛올 활용하여 파장별 입자의 존 감지기처럼 단순히 연기의 유무만을 판단하는 방식에서 벗어나"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 426.8476666666667,
+            "r": 1133.6666666666667,
+            "b": 414.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "실제 화재 발생 여부름 더욱 정밀하게 판단할 수 잇도록 해준다",
+      "text": "실제 화재 발생 여부름 더욱 정밀하게 판단할 수 잇도록 해준다"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 301.5143333333334,
+            "r": 1149.6666666666667,
+            "b": 252.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "수입 제품이다 따라서 이번에 개발된 A 화재 센서 기술이 적용된 장에서도 높은 경쟁력올 가질 것으로 전망되다",
+      "text": "수입 제품이다 따라서 이번에 개발된 A 화재 센서 기술이 적용된 장에서도 높은 경쟁력올 가질 것으로 전망되다"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 247.18100000000004,
+            "r": 1149.6666666666667,
+            "b": 180.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "이 기술이 상용화되면 화재 오경보로 인한 국민들의 불편과 화재 경 들 것으로 기대되다 더불어 불필요한 소방 출동에 따른 소방력 낭비 와 사회적 비용도 크게 감소할 것이다",
+      "text": "이 기술이 상용화되면 화재 오경보로 인한 국민들의 불편과 화재 경 들 것으로 기대되다 더불어 불필요한 소방 출동에 따른 소방력 낭비 와 사회적 비용도 크게 감소할 것이다"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 174.84766666666678,
+            "r": 1149.6666666666667,
+            "b": 126.84766666666678,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "또한 본 기술의 핵심인 다파장 입자 산란 축정 기술은 화재 감지뿐 만 아니라 산업 의료 환경 모니터림 미용 분야 등 다양한 분아에도 폭넓게 활용월 수 있다",
+      "text": "또한 본 기술의 핵심인 다파장 입자 산란 축정 기술은 화재 감지뿐 만 아니라 산업 의료 환경 모니터림 미용 분야 등 다양한 분아에도 폭넓게 활용월 수 있다"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 121.5143333333333,
+            "r": 1149.6666666666667,
+            "b": 54.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "현재 연구진은 화재 감지 분야의 기업들과 상용화루 위한 논의름 진 업들과 협의름 이어가고 있다 앞으로 본 기술이 국내 외 화재 감지 시장에서 새로운 기준으로 자리 잡율 것으로 기대되다",
+      "text": "현재 연구진은 화재 감지 분야의 기업들과 상용화루 위한 논의름 진 업들과 협의름 이어가고 있다 앞으로 본 기술이 국내 외 화재 감지 시장에서 새로운 기준으로 자리 잡율 것으로 기대되다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 1114.0,
+            "t": 38.5143333333333,
+            "r": 1149.3333333333333,
+            "b": 30.514333333333298,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "58 59",
+      "text": "58 59"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.6953203678131104,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.19045564532279968,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.05025056004524231,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.014581668190658092,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.012736858800053596,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.01226550992578268,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.008710864000022411,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.003176548518240452,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.002941021230071783,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.002331519266590476,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.001514624455012381,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 0.0011228501098230481,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.0009959627641364932,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 0.0007786152418702841,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.0005601554294116795,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.00047183805145323277,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 0.0004231428902130574,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 0.0003619521448854357,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 0.0003382416325621307,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 0.00028525901143439114,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.00015316542703658342,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 0.00011085160804213956,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 6.196993490448222e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 2.4183866116800345e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 1.7804042727220803e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 8.773939953243826e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 30,
+          "bbox": {
+            "l": 37.32734469070242,
+            "t": 698.5953812496409,
+            "r": 529.2821825080314,
+            "b": 36.220519143287106,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "photograph",
+              "confidence": 0.6953203678131104
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.19045564532279968
+            },
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.05025056004524231
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.014581668190658092
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.012736858800053596
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.01226550992578268
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.008710864000022411
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.003176548518240452
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.002941021230071783
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.002331519266590476
+            },
+            {
+              "class_name": "icon",
+              "confidence": 0.001514624455012381
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.0011228501098230481
+            },
+            {
+              "class_name": "other",
+              "confidence": 0.0009959627641364932
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.0007786152418702841
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.0005601554294116795
+            },
+            {
+              "class_name": "signature",
+              "confidence": 0.00047183805145323277
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 0.0004231428902130574
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 0.0003619521448854357
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.0003382416325621307
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.00028525901143439114
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 0.00015316542703658342
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 0.00011085160804213956
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 6.196993490448222e-05
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 2.4183866116800345e-05
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 1.7804042727220803e-05
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 8.773939953243826e-06
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "30": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 30
+    }
+  }
+}

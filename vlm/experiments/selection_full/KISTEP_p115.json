@@ -1,0 +1,83 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 115,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 2069,
+    "native_tables": 1,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [],
+    "docling_derived": [
+      {
+        "bbox": [
+          69.82625579833984,
+          159.96875,
+          526.3572998046875,
+          672.3809204101562
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          69.82625579833984,
+          159.96875,
+          526.3572998046875,
+          672.3809204101562
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0115_r001",
+        "context": [
+          {
+            "text": " 운영예산서",
+            "bbox": [
+              70.92,
+              120.69000000000005,
+              158.76,
+              136.55999999999995
+            ],
+            "source_ref": "#/texts/1"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 115,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 115,
+          "bbox": [
+            69.82625579833984,
+            159.96875,
+            526.3572998046875,
+            672.3809204101562
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}

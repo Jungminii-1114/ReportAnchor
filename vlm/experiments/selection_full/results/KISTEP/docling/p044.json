@@ -1,0 +1,1495 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 44,
+          "bbox": {
+            "l": 93.47999999999999,
+            "t": 769.48,
+            "r": 214.89,
+            "b": 754.48,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "주요 연구내용(요약)",
+      "text": "주요 연구내용(요약)",
+      "level": 1
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 44,
+          "bbox": {
+            "l": 69.86115264892578,
+            "t": 746.8709411621094,
+            "r": 525.1624145507812,
+            "b": 85.95452880859375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 105.36000000000001,
+              "r": 127.58980997433599,
+              "b": 117.36000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "중과제명",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 241.92,
+              "t": 105.36000000000001,
+              "r": 429.03846804156,
+              "b": 117.36000000000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "R&D 예산 배분·조정 지원전략 수립 연구",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 98.88,
+              "t": 153.0,
+              "r": 118.10959135392,
+              "b": 165.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "구분",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.84,
+              "t": 137.15999999999997,
+              "r": 207.50991928454397,
+              "b": 149.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구책임자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.56,
+              "t": 137.15999999999997,
+              "r": 353.18980997433596,
+              "b": 149.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "전승수 사업기간",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.36,
+              "t": 137.15999999999997,
+              "r": 497.411674995456,
+              "b": 149.15999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 6,
+            "text": "'25.01.01~'25.12.31",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.32,
+              "t": 168.96000000000004,
+              "r": 198.02970066412797,
+              "b": 180.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구비",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 246.35999999999999,
+              "t": 168.96000000000004,
+              "r": 362.30967339417595,
+              "b": 180.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "'24년 1,127백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 398.15999999999997,
+              "t": 168.96000000000004,
+              "r": 423.26945477375995,
+              "b": 180.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "'25년",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 459.24,
+              "t": 168.96000000000004,
+              "r": 515.5497006641281,
+              "b": 180.96000000000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "1,127백만원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.39999999999999,
+              "t": 211.91999999999996,
+              "r": 127.58980997433599,
+              "b": 404.28,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "최종목표 사업내용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 202.82399999999996,
+              "r": 522.2698097439361,
+              "b": 232.31999999999994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦국가 R&D 투자 정책 목표 실현 및 심의 체계 고도화를 위해 정부 R&D 사업 효율화 지원 및 투자 전략화 연구",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 257.18399999999997,
+              "r": 522.1495913539201,
+              "b": 521.88,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦국가 연구개발 사업의 투자 혁신 아젠다 발굴 및 투자시스템 혁신 연구 - 기술 혁신 전략 및 연구개발 투자 관련 아젠다 발굴 기획 연구 - 첨단 전략기술 중심의 기술동향 브리프 작성 및 발간(4건) - 기술 영향도 및 투자 효과성이 높은 기술분야의 개방형 포럼 개최(2건) 등 ◦글로벌 R&D 기술 투자 동향 분석 및 주요국의 R&D 프로그램 분석 연구 - 선진국 과학기술·산업 정책 분석을 통해 국가 간 경쟁 여건 비교･분석 - 투자전략 수립을 위한 주요국의 과학기술 투자방향 조사 및 연구프로그램 등 동향 분석과 시사점 발굴 연구 등 ◦중점기술분야의 전문위 및 전문위원 분석지원과 예산배분심의 지원 사업 - 년도별 정부연구개발사업 예산현황 및 투자 포트폴리오 분석지원 - 첨단바이오 및 생명기초분야 전문위 사업분석 지원 - AI반도체 및 양자 등 기계정보통신 성장동력분야 전문위 사업분석 지원 - 국방 연구개발 사업 및 출연연분야 전문위 사업분석 지원 - 우주, 재난안전, 건설교통 등 거대공공분야 전문위 사업분석 지원 ◦정부 연구개발사업 차년도 예산설명회 및 전문위 심의지원 체계 고도화 - 중점정책 및 기술분야 전문위별 사업분석 및 효율화 지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 154.32,
+              "t": 526.68,
+              "r": 204.14980997433597,
+              "b": 538.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "- 기술분야",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 242.88,
+              "t": 526.68,
+              "r": 277.10945477376,
+              "b": 538.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "이슈 및",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 386.64,
+              "t": 526.68,
+              "r": 458.5498099743359,
+              "b": 538.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "전문위 심의지원",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.56,
+              "t": 526.68,
+              "r": 473.42945477375997,
+              "b": 538.68,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "외",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.32,
+              "t": 571.0799999999999,
+              "r": 136.22959135391997,
+              "b": 651.36,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "예상 성과 정량 정성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 561.9839999999999,
+              "r": 462.26945477375995,
+              "b": 591.48,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦기술동향브리프 발간 : 4건, ◦연구보고서･조사자료 등 : 2건 ◦논문 발표 및 게재 : 2건, ◦수요포럼 개최 : 2회",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 613.4639999999999,
+              "r": 522.389618623872,
+              "b": 676.56,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 5,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 6,
+            "text": "◦(기술적 측면) 기술분야 투자 분석과 주요 시사점 확보로 투자 효과성 제고 ◦(경제적 측면) 산업 분야별 투자 지원방안 제안을 통해 산업의 생산성 증가 및 부가가치 창출기회 확보 ◦(사회적 측면) 정부의 정책적 지원방안 제시로 과학기술의 사회적 기여도 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.92,
+              "t": 715.2239999999999,
+              "r": 303.38967339417593,
+              "b": 727.92,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "성과활용계획 ◦핵심 기술 및 정책 이슈 발굴과",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 148.92,
+              "t": 698.424,
+              "r": 512.7895913539201,
+              "b": 744.72,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "◦주요 기술분야의 쟁점 선정, 투자전략 개선 및 R&D 투자 시스템 활용도 제고 산업경쟁력 분석을 통한 기술확보 전략 마련 ◦R&D 사업 예산심의 및 검토의 효율성 제고와 예산배분조정의 효과성 제고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 6,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 105.36000000000001,
+                "r": 127.58980997433599,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "중과제명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 105.36000000000001,
+                "r": 127.58980997433599,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "중과제명",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 241.92,
+                "t": 105.36000000000001,
+                "r": 429.03846804156,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예산 배분·조정 지원전략 수립 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 241.92,
+                "t": 105.36000000000001,
+                "r": 429.03846804156,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예산 배분·조정 지원전략 수립 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 241.92,
+                "t": 105.36000000000001,
+                "r": 429.03846804156,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예산 배분·조정 지원전략 수립 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 241.92,
+                "t": 105.36000000000001,
+                "r": 429.03846804156,
+                "b": 117.36000000000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "R&D 예산 배분·조정 지원전략 수립 연구",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.84,
+                "t": 137.15999999999997,
+                "r": 207.50991928454397,
+                "b": 149.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구책임자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.56,
+                "t": 137.15999999999997,
+                "r": 353.18980997433596,
+                "b": 149.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "전승수 사업기간",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 137.15999999999997,
+                "r": 497.411674995456,
+                "b": 149.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.36,
+                "t": 137.15999999999997,
+                "r": 497.411674995456,
+                "b": 149.15999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "'25.01.01~'25.12.31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 153.0,
+                "r": 118.10959135392,
+                "b": 165.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "구분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 98.88,
+                "t": 153.0,
+                "r": 118.10959135392,
+                "b": 165.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "구분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.32,
+                "t": 168.96000000000004,
+                "r": 198.02970066412797,
+                "b": 180.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구비",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 246.35999999999999,
+                "t": 168.96000000000004,
+                "r": 362.30967339417595,
+                "b": 180.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "'24년 1,127백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 398.15999999999997,
+                "t": 168.96000000000004,
+                "r": 423.26945477375995,
+                "b": 180.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "'25년",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 459.24,
+                "t": 168.96000000000004,
+                "r": 515.5497006641281,
+                "b": 180.96000000000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "1,127백만원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.39999999999999,
+                "t": 211.91999999999996,
+                "r": 127.58980997433599,
+                "b": 404.28,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "최종목표 사업내용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 202.82399999999996,
+                "r": 522.2698097439361,
+                "b": 232.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 R&D 투자 정책 목표 실현 및 심의 체계 고도화를 위해 정부 R&D 사업 효율화 지원 및 투자 전략화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 202.82399999999996,
+                "r": 522.2698097439361,
+                "b": 232.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 R&D 투자 정책 목표 실현 및 심의 체계 고도화를 위해 정부 R&D 사업 효율화 지원 및 투자 전략화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 202.82399999999996,
+                "r": 522.2698097439361,
+                "b": 232.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 R&D 투자 정책 목표 실현 및 심의 체계 고도화를 위해 정부 R&D 사업 효율화 지원 및 투자 전략화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 202.82399999999996,
+                "r": 522.2698097439361,
+                "b": 232.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 R&D 투자 정책 목표 실현 및 심의 체계 고도화를 위해 정부 R&D 사업 효율화 지원 및 투자 전략화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 202.82399999999996,
+                "r": 522.2698097439361,
+                "b": 232.31999999999994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 R&D 투자 정책 목표 실현 및 심의 체계 고도화를 위해 정부 R&D 사업 효율화 지원 및 투자 전략화 연구",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 257.18399999999997,
+                "r": 522.1495913539201,
+                "b": 521.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 연구개발 사업의 투자 혁신 아젠다 발굴 및 투자시스템 혁신 연구 - 기술 혁신 전략 및 연구개발 투자 관련 아젠다 발굴 기획 연구 - 첨단 전략기술 중심의 기술동향 브리프 작성 및 발간(4건) - 기술 영향도 및 투자 효과성이 높은 기술분야의 개방형 포럼 개최(2건) 등 ◦글로벌 R&D 기술 투자 동향 분석 및 주요국의 R&D 프로그램 분석 연구 - 선진국 과학기술·산업 정책 분석을 통해 국가 간 경쟁 여건 비교･분석 - 투자전략 수립을 위한 주요국의 과학기술 투자방향 조사 및 연구프로그램 등 동향 분석과 시사점 발굴 연구 등 ◦중점기술분야의 전문위 및 전문위원 분석지원과 예산배분심의 지원 사업 - 년도별 정부연구개발사업 예산현황 및 투자 포트폴리오 분석지원 - 첨단바이오 및 생명기초분야 전문위 사업분석 지원 - AI반도체 및 양자 등 기계정보통신 성장동력분야 전문위 사업분석 지원 - 국방 연구개발 사업 및 출연연분야 전문위 사업분석 지원 - 우주, 재난안전, 건설교통 등 거대공공분야 전문위 사업분석 지원 ◦정부 연구개발사업 차년도 예산설명회 및 전문위 심의지원 체계 고도화 - 중점정책 및 기술분야 전문위별 사업분석 및 효율화 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 257.18399999999997,
+                "r": 522.1495913539201,
+                "b": 521.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 연구개발 사업의 투자 혁신 아젠다 발굴 및 투자시스템 혁신 연구 - 기술 혁신 전략 및 연구개발 투자 관련 아젠다 발굴 기획 연구 - 첨단 전략기술 중심의 기술동향 브리프 작성 및 발간(4건) - 기술 영향도 및 투자 효과성이 높은 기술분야의 개방형 포럼 개최(2건) 등 ◦글로벌 R&D 기술 투자 동향 분석 및 주요국의 R&D 프로그램 분석 연구 - 선진국 과학기술·산업 정책 분석을 통해 국가 간 경쟁 여건 비교･분석 - 투자전략 수립을 위한 주요국의 과학기술 투자방향 조사 및 연구프로그램 등 동향 분석과 시사점 발굴 연구 등 ◦중점기술분야의 전문위 및 전문위원 분석지원과 예산배분심의 지원 사업 - 년도별 정부연구개발사업 예산현황 및 투자 포트폴리오 분석지원 - 첨단바이오 및 생명기초분야 전문위 사업분석 지원 - AI반도체 및 양자 등 기계정보통신 성장동력분야 전문위 사업분석 지원 - 국방 연구개발 사업 및 출연연분야 전문위 사업분석 지원 - 우주, 재난안전, 건설교통 등 거대공공분야 전문위 사업분석 지원 ◦정부 연구개발사업 차년도 예산설명회 및 전문위 심의지원 체계 고도화 - 중점정책 및 기술분야 전문위별 사업분석 및 효율화 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 257.18399999999997,
+                "r": 522.1495913539201,
+                "b": 521.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 연구개발 사업의 투자 혁신 아젠다 발굴 및 투자시스템 혁신 연구 - 기술 혁신 전략 및 연구개발 투자 관련 아젠다 발굴 기획 연구 - 첨단 전략기술 중심의 기술동향 브리프 작성 및 발간(4건) - 기술 영향도 및 투자 효과성이 높은 기술분야의 개방형 포럼 개최(2건) 등 ◦글로벌 R&D 기술 투자 동향 분석 및 주요국의 R&D 프로그램 분석 연구 - 선진국 과학기술·산업 정책 분석을 통해 국가 간 경쟁 여건 비교･분석 - 투자전략 수립을 위한 주요국의 과학기술 투자방향 조사 및 연구프로그램 등 동향 분석과 시사점 발굴 연구 등 ◦중점기술분야의 전문위 및 전문위원 분석지원과 예산배분심의 지원 사업 - 년도별 정부연구개발사업 예산현황 및 투자 포트폴리오 분석지원 - 첨단바이오 및 생명기초분야 전문위 사업분석 지원 - AI반도체 및 양자 등 기계정보통신 성장동력분야 전문위 사업분석 지원 - 국방 연구개발 사업 및 출연연분야 전문위 사업분석 지원 - 우주, 재난안전, 건설교통 등 거대공공분야 전문위 사업분석 지원 ◦정부 연구개발사업 차년도 예산설명회 및 전문위 심의지원 체계 고도화 - 중점정책 및 기술분야 전문위별 사업분석 및 효율화 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 257.18399999999997,
+                "r": 522.1495913539201,
+                "b": 521.88,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦국가 연구개발 사업의 투자 혁신 아젠다 발굴 및 투자시스템 혁신 연구 - 기술 혁신 전략 및 연구개발 투자 관련 아젠다 발굴 기획 연구 - 첨단 전략기술 중심의 기술동향 브리프 작성 및 발간(4건) - 기술 영향도 및 투자 효과성이 높은 기술분야의 개방형 포럼 개최(2건) 등 ◦글로벌 R&D 기술 투자 동향 분석 및 주요국의 R&D 프로그램 분석 연구 - 선진국 과학기술·산업 정책 분석을 통해 국가 간 경쟁 여건 비교･분석 - 투자전략 수립을 위한 주요국의 과학기술 투자방향 조사 및 연구프로그램 등 동향 분석과 시사점 발굴 연구 등 ◦중점기술분야의 전문위 및 전문위원 분석지원과 예산배분심의 지원 사업 - 년도별 정부연구개발사업 예산현황 및 투자 포트폴리오 분석지원 - 첨단바이오 및 생명기초분야 전문위 사업분석 지원 - AI반도체 및 양자 등 기계정보통신 성장동력분야 전문위 사업분석 지원 - 국방 연구개발 사업 및 출연연분야 전문위 사업분석 지원 - 우주, 재난안전, 건설교통 등 거대공공분야 전문위 사업분석 지원 ◦정부 연구개발사업 차년도 예산설명회 및 전문위 심의지원 체계 고도화 - 중점정책 및 기술분야 전문위별 사업분석 및 효율화 지원",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.32,
+                "t": 571.0799999999999,
+                "r": 136.22959135391997,
+                "b": 651.36,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "예상 성과 정량 정성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 561.9839999999999,
+                "r": 462.26945477375995,
+                "b": 591.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술동향브리프 발간 : 4건, ◦연구보고서･조사자료 등 : 2건 ◦논문 발표 및 게재 : 2건, ◦수요포럼 개최 : 2회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 561.9839999999999,
+                "r": 462.26945477375995,
+                "b": 591.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술동향브리프 발간 : 4건, ◦연구보고서･조사자료 등 : 2건 ◦논문 발표 및 게재 : 2건, ◦수요포럼 개최 : 2회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 561.9839999999999,
+                "r": 462.26945477375995,
+                "b": 591.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술동향브리프 발간 : 4건, ◦연구보고서･조사자료 등 : 2건 ◦논문 발표 및 게재 : 2건, ◦수요포럼 개최 : 2회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 561.9839999999999,
+                "r": 462.26945477375995,
+                "b": 591.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술동향브리프 발간 : 4건, ◦연구보고서･조사자료 등 : 2건 ◦논문 발표 및 게재 : 2건, ◦수요포럼 개최 : 2회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 561.9839999999999,
+                "r": 462.26945477375995,
+                "b": 591.48,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦기술동향브리프 발간 : 4건, ◦연구보고서･조사자료 등 : 2건 ◦논문 발표 및 게재 : 2건, ◦수요포럼 개최 : 2회",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 613.4639999999999,
+                "r": 522.389618623872,
+                "b": 676.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦(기술적 측면) 기술분야 투자 분석과 주요 시사점 확보로 투자 효과성 제고 ◦(경제적 측면) 산업 분야별 투자 지원방안 제안을 통해 산업의 생산성 증가 및 부가가치 창출기회 확보 ◦(사회적 측면) 정부의 정책적 지원방안 제시로 과학기술의 사회적 기여도 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 613.4639999999999,
+                "r": 522.389618623872,
+                "b": 676.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦(기술적 측면) 기술분야 투자 분석과 주요 시사점 확보로 투자 효과성 제고 ◦(경제적 측면) 산업 분야별 투자 지원방안 제안을 통해 산업의 생산성 증가 및 부가가치 창출기회 확보 ◦(사회적 측면) 정부의 정책적 지원방안 제시로 과학기술의 사회적 기여도 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 613.4639999999999,
+                "r": 522.389618623872,
+                "b": 676.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦(기술적 측면) 기술분야 투자 분석과 주요 시사점 확보로 투자 효과성 제고 ◦(경제적 측면) 산업 분야별 투자 지원방안 제안을 통해 산업의 생산성 증가 및 부가가치 창출기회 확보 ◦(사회적 측면) 정부의 정책적 지원방안 제시로 과학기술의 사회적 기여도 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 613.4639999999999,
+                "r": 522.389618623872,
+                "b": 676.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦(기술적 측면) 기술분야 투자 분석과 주요 시사점 확보로 투자 효과성 제고 ◦(경제적 측면) 산업 분야별 투자 지원방안 제안을 통해 산업의 생산성 증가 및 부가가치 창출기회 확보 ◦(사회적 측면) 정부의 정책적 지원방안 제시로 과학기술의 사회적 기여도 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 613.4639999999999,
+                "r": 522.389618623872,
+                "b": 676.56,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 5,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 6,
+              "text": "◦(기술적 측면) 기술분야 투자 분석과 주요 시사점 확보로 투자 효과성 제고 ◦(경제적 측면) 산업 분야별 투자 지원방안 제안을 통해 산업의 생산성 증가 및 부가가치 창출기회 확보 ◦(사회적 측면) 정부의 정책적 지원방안 제시로 과학기술의 사회적 기여도 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 715.2239999999999,
+                "r": 303.38967339417593,
+                "b": 727.92,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획 ◦핵심 기술 및 정책 이슈 발굴과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 79.92,
+                "t": 715.2239999999999,
+                "r": 303.38967339417593,
+                "b": 727.92,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "성과활용계획 ◦핵심 기술 및 정책 이슈 발굴과",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 698.424,
+                "r": 512.7895913539201,
+                "b": 744.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦주요 기술분야의 쟁점 선정, 투자전략 개선 및 R&D 투자 시스템 활용도 제고 산업경쟁력 분석을 통한 기술확보 전략 마련 ◦R&D 사업 예산심의 및 검토의 효율성 제고와 예산배분조정의 효과성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 698.424,
+                "r": 512.7895913539201,
+                "b": 744.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦주요 기술분야의 쟁점 선정, 투자전략 개선 및 R&D 투자 시스템 활용도 제고 산업경쟁력 분석을 통한 기술확보 전략 마련 ◦R&D 사업 예산심의 및 검토의 효율성 제고와 예산배분조정의 효과성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 698.424,
+                "r": 512.7895913539201,
+                "b": 744.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦주요 기술분야의 쟁점 선정, 투자전략 개선 및 R&D 투자 시스템 활용도 제고 산업경쟁력 분석을 통한 기술확보 전략 마련 ◦R&D 사업 예산심의 및 검토의 효율성 제고와 예산배분조정의 효과성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 148.92,
+                "t": 698.424,
+                "r": 512.7895913539201,
+                "b": 744.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "◦주요 기술분야의 쟁점 선정, 투자전략 개선 및 R&D 투자 시스템 활용도 제고 산업경쟁력 분석을 통한 기술확보 전략 마련 ◦R&D 사업 예산심의 및 검토의 효율성 제고와 예산배분조정의 효과성 제고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "44": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 44
+    }
+  }
+}

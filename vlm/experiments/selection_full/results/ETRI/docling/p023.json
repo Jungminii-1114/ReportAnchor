@@ -1,0 +1,912 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "ETRI",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4853074131362940278,
+    "filename": "ETRI.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 41.66666666666667,
+            "t": 725.181,
+            "r": 107.66666666666667,
+            "b": 714.5143333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "직활부서별 주요성과",
+      "text": "직활부서별 주요성과"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 1047.3333333333333,
+            "t": 725.8476666666667,
+            "r": 1149.6666666666667,
+            "b": 712.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2025 ETRI Technology Report",
+      "text": "2025 ETRI Technology Report"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 50.33333333333333,
+            "t": 683.181,
+            "r": 314.3333333333333,
+            "b": 621.5143333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "6G 위성통신기술로 하늘과 바다, 땅을 연결하다",
+      "text": "6G 위성통신기술로 하늘과 바다, 땅을 연결하다",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 51.33333333333333,
+            "t": 613.5143333333333,
+            "r": 182.66666666666666,
+            "b": 600.181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "유준규 위성통신인프라연구실장",
+      "text": "유준규 위성통신인프라연구실장"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 98.33333333333333,
+            "t": 73.84766666666667,
+            "r": 163.66666666666666,
+            "b": 63.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "QR코드트 스랜하시면",
+      "text": "QR코드트 스랜하시면"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 664.6666666666666,
+            "t": 689.181,
+            "r": 727.3333333333334,
+            "b": 675.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "입체통신연구소",
+      "text": "입체통신연구소"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 767.0,
+            "t": 689.8476666666667,
+            "r": 1150.3333333333333,
+            "b": 624.8476666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "오늘날 우리논 어디에서나 스마트론올 이용해 인터넷올 사용하고 있다 하지만 신호가 약한 산속이나 덕분이다",
+      "text": "오늘날 우리논 어디에서나 스마트론올 이용해 인터넷올 사용하고 있다 하지만 신호가 약한 산속이나 덕분이다"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 831.6666666666666,
+            "t": 498.84766666666667,
+            "r": 887.6666666666666,
+            "b": 486.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "긴급구조 지원",
+      "text": "긴급구조 지원",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 676.3333333333334,
+            "t": 481.8476666666667,
+            "r": 897.0,
+            "b": 467.51433333333335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "비행기 배, 오지서도 끊김 없는 인터넷, 6G 위성통신 개화",
+      "text": "비행기 배, 오지서도 끊김 없는 인터넷, 6G 위성통신 개화",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 445.18100000000004,
+            "r": 899.0,
+            "b": 342.84766666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            156
+          ]
+        }
+      ],
+      "orig": "연구원은 6G 시대륙 대비해 하늘과 땅을 연결하는 차세대 위성통신 기술올 개발하고 있다 위성올 이용한 통신 기술이 발전하면 지구상 의 어느 곳에서도 끊김 없이 인터넷올 사용할 수 있다 또한 기후 변 화로 인해 자연재해가 발생하거나 긴급한 구조가 필요한 상황에서 더욱 향상월 것이다",
+      "text": "연구원은 6G 시대륙 대비해 하늘과 땅을 연결하는 차세대 위성통신 기술올 개발하고 있다 위성올 이용한 통신 기술이 발전하면 지구상 의 어느 곳에서도 끊김 없이 인터넷올 사용할 수 있다 또한 기후 변 화로 인해 자연재해가 발생하거나 긴급한 구조가 필요한 상황에서 더욱 향상월 것이다"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 337.18100000000004,
+            "r": 899.0,
+            "b": 288.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "이 기술이 완성되면 자율주행차 드론 도심 항공 모빌리티UAM) 등 신망이 당지 안는 지역에서도 빠른 속도의 데이터 전송이 가능해진",
+      "text": "이 기술이 완성되면 자율주행차 드론 도심 항공 모빌리티UAM) 등 신망이 당지 안는 지역에서도 빠른 속도의 데이터 전송이 가능해진"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 665.6666666666666,
+            "t": 265.5143333333334,
+            "r": 898.3333333333334,
+            "b": 163.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            113
+          ]
+        }
+      ],
+      "orig": "연구진은 6G 위성통신 기술을 개발하기 위해 두 가지 핵심 목표로 연구름 진행하고 있다 첫 번째 목표는 하늘과 지상을 하나로 연결 준화 기구에서 6G 위성통신이 공식적으로 인정받올 수 있도록 연구 중이다",
+      "text": "연구진은 6G 위성통신 기술을 개발하기 위해 두 가지 핵심 목표로 연구름 진행하고 있다 첫 번째 목표는 하늘과 지상을 하나로 연결 준화 기구에서 6G 위성통신이 공식적으로 인정받올 수 있도록 연구 중이다"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 665.0,
+            "t": 139.5143333333333,
+            "r": 899.0,
+            "b": 54.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            175
+          ]
+        }
+      ],
+      "orig": "술올 개발하는 것이다 위성이 원활하게 데이터지 주고받기 위해서 눈 고성능의 반도체와 안테나가 필요하다 연구진은 관련 핵심 부품 올 자체적으로 개발하고 있다 이름 통해 우리나라가 위성통신 기술 올 보유한 세계적인 강국으로 도약할 수 있도록 노력 중이다 위성통신 시장은 급속도로 성장하고 있다 2027년에는 세계 시장",
+      "text": "술올 개발하는 것이다 위성이 원활하게 데이터지 주고받기 위해서 눈 고성능의 반도체와 안테나가 필요하다 연구진은 관련 핵심 부품 올 자체적으로 개발하고 있다 이름 통해 우리나라가 위성통신 기술 올 보유한 세계적인 강국으로 도약할 수 있도록 노력 중이다 위성통신 시장은 급속도로 성장하고 있다 2027년에는 세계 시장"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 499.5143333333334,
+            "r": 1150.3333333333333,
+            "b": 450.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            114
+          ]
+        }
+      ],
+      "orig": "규모가 약 400조 원에 이름 것으로 예상되다 2035년에는 무려 818 조원 규모까지 성장할 것으로 전망h다 이논 전 세계적으로 6G 위 성통신 기술에 대한 관심이 높아지고 있으머 이 기술이 앞으로 다양",
+      "text": "규모가 약 400조 원에 이름 것으로 예상되다 2035년에는 무려 818 조원 규모까지 성장할 것으로 전망h다 이논 전 세계적으로 6G 위 성통신 기술에 대한 관심이 높아지고 있으머 이 기술이 앞으로 다양"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 426.8476666666667,
+            "r": 1150.3333333333333,
+            "b": 360.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "연구진의 기술이 성공적으로 개발되다면 우리나라는 6G 위성통신 분아에서 세계적인 경쟁력올 갖추게 월 것이다 이논 단순히 기술적 인 발전올 의미하는 것이 아니라 우리나라의 산업 발전과 경제 성장 에도 근 영향울 미칠 것이다 아울러 6G 위성통신 기술이 완성되면",
+      "text": "연구진의 기술이 성공적으로 개발되다면 우리나라는 6G 위성통신 분아에서 세계적인 경쟁력올 갖추게 월 것이다 이논 단순히 기술적 인 발전올 의미하는 것이 아니라 우리나라의 산업 발전과 경제 성장 에도 근 영향울 미칠 것이다 아울러 6G 위성통신 기술이 완성되면"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 916.3333333333333,
+            "t": 301.5143333333334,
+            "r": 1134.3333333333333,
+            "b": 288.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "막 남극과 같은 극한 환경에서도 빠른 인터넷올 이용할 수 있다",
+      "text": "막 남극과 같은 극한 환경에서도 빠른 인터넷올 이용할 수 있다"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 265.18100000000004,
+            "r": 1149.6666666666667,
+            "b": 234.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "조 활동올 지원할 수 있다 기존의 지상 기지국이 파손되거나 기능을 상실하는 상황에서도 위성올 이용하면 즉시 통신망올 복구할 수 잎",
+      "text": "조 활동올 지원할 수 있다 기존의 지상 기지국이 파손되거나 기능을 상실하는 상황에서도 위성올 이용하면 즉시 통신망올 복구할 수 잎"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 915.6666666666667,
+            "t": 228.84766666666678,
+            "r": 1150.3333333333333,
+            "b": 72.18100000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            286
+          ]
+        }
+      ],
+      "orig": "기 때문에 긴급 상황에서 더욱 중요한 역할울 하게 월 것이다 연구원은 올해부터 본격적으로 6G 위성통신 기술을 실용화하기 위 한 연구름 추진할 예정이다 이름 통해 위성통신이 단순한 연구 수준 에 머무는 것이 아니라 실제로 활용월 수 있도록 개발할 계획이다 선제적으로 연구원이 개발한 사물인터넷 비지상망oT-NTN Intent O Things Non-Terrestrial Networks) 전승기술올 시험한다 이 틀 위해 연구진은 2026년도 발사되는 누리호에 6U급 loT 위성올 탑 기술에 대해 실중할 계획이다",
+      "text": "기 때문에 긴급 상황에서 더욱 중요한 역할울 하게 월 것이다 연구원은 올해부터 본격적으로 6G 위성통신 기술을 실용화하기 위 한 연구름 추진할 예정이다 이름 통해 위성통신이 단순한 연구 수준 에 머무는 것이 아니라 실제로 활용월 수 있도록 개발할 계획이다 선제적으로 연구원이 개발한 사물인터넷 비지상망oT-NTN Intent O Things Non-Terrestrial Networks) 전승기술올 시험한다 이 틀 위해 연구진은 2026년도 발사되는 누리호에 6U급 loT 위성올 탑 기술에 대해 실중할 계획이다"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 1114.3333333333333,
+            "t": 38.51433333333341,
+            "r": 1149.0,
+            "b": 30.51433333333341,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "44 45",
+      "text": "44 45"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "meta": {
+        "classification": {
+          "predictions": [
+            {
+              "confidence": 0.8292647004127502,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_computer"
+            },
+            {
+              "confidence": 0.10578883439302444,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "photograph"
+            },
+            {
+              "confidence": 0.039181776344776154,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "full_page_image"
+            },
+            {
+              "confidence": 0.010681552812457085,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "page_thumbnail"
+            },
+            {
+              "confidence": 0.0045537385158240795,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "geographical_map"
+            },
+            {
+              "confidence": 0.004508044570684433,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "screenshot_from_manual"
+            },
+            {
+              "confidence": 0.0015265316469594836,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "logo"
+            },
+            {
+              "confidence": 0.0014851641608402133,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "qr_code"
+            },
+            {
+              "confidence": 0.0004744468897115439,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "engineering_drawing"
+            },
+            {
+              "confidence": 0.00047365526552312076,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "music"
+            },
+            {
+              "confidence": 0.0004685794410761446,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "flow_chart"
+            },
+            {
+              "confidence": 0.0004361623723525554,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "line_chart"
+            },
+            {
+              "confidence": 0.0003106994554400444,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "table"
+            },
+            {
+              "confidence": 0.0001920264185173437,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "calendar"
+            },
+            {
+              "confidence": 0.00013158394722267985,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_chart"
+            },
+            {
+              "confidence": 8.869703015079722e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "bar_code"
+            },
+            {
+              "confidence": 8.098677062662318e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "icon"
+            },
+            {
+              "confidence": 7.211801130324602e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "other"
+            },
+            {
+              "confidence": 7.042187644401565e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "pie_chart"
+            },
+            {
+              "confidence": 6.368314643623307e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "signature"
+            },
+            {
+              "confidence": 5.832357783219777e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "scatter_plot"
+            },
+            {
+              "confidence": 5.6192886404460296e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "chemistry_structure"
+            },
+            {
+              "confidence": 1.510541551397182e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "stamp"
+            },
+            {
+              "confidence": 1.2834050721721724e-05,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "topographical_map"
+            },
+            {
+              "confidence": 3.486762125248788e-06,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "crossword_puzzle"
+            },
+            {
+              "confidence": 7.220396014417929e-07,
+              "created_by": "DocumentPictureClassifier",
+              "class_name": "box_plot"
+            }
+          ]
+        }
+      },
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 23,
+          "bbox": {
+            "l": 34.46336068122152,
+            "t": 699.0696261512979,
+            "r": 529.3013403058952,
+            "b": 36.46811296544172,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": [
+        {
+          "kind": "classification",
+          "provenance": "DocumentPictureClassifier",
+          "predicted_classes": [
+            {
+              "class_name": "screenshot_from_computer",
+              "confidence": 0.8292647004127502
+            },
+            {
+              "class_name": "photograph",
+              "confidence": 0.10578883439302444
+            },
+            {
+              "class_name": "full_page_image",
+              "confidence": 0.039181776344776154
+            },
+            {
+              "class_name": "page_thumbnail",
+              "confidence": 0.010681552812457085
+            },
+            {
+              "class_name": "geographical_map",
+              "confidence": 0.0045537385158240795
+            },
+            {
+              "class_name": "screenshot_from_manual",
+              "confidence": 0.004508044570684433
+            },
+            {
+              "class_name": "logo",
+              "confidence": 0.0015265316469594836
+            },
+            {
+              "class_name": "qr_code",
+              "confidence": 0.0014851641608402133
+            },
+            {
+              "class_name": "engineering_drawing",
+              "confidence": 0.0004744468897115439
+            },
+            {
+              "class_name": "music",
+              "confidence": 0.00047365526552312076
+            },
+            {
+              "class_name": "flow_chart",
+              "confidence": 0.0004685794410761446
+            },
+            {
+              "class_name": "line_chart",
+              "confidence": 0.0004361623723525554
+            },
+            {
+              "class_name": "table",
+              "confidence": 0.0003106994554400444
+            },
+            {
+              "class_name": "calendar",
+              "confidence": 0.0001920264185173437
+            },
+            {
+              "class_name": "bar_chart",
+              "confidence": 0.00013158394722267985
+            },
+            {
+              "class_name": "bar_code",
+              "confidence": 8.869703015079722e-05
+            },
+            {
+              "class_name": "icon",
+              "confidence": 8.098677062662318e-05
+            },
+            {
+              "class_name": "other",
+              "confidence": 7.211801130324602e-05
+            },
+            {
+              "class_name": "pie_chart",
+              "confidence": 7.042187644401565e-05
+            },
+            {
+              "class_name": "signature",
+              "confidence": 6.368314643623307e-05
+            },
+            {
+              "class_name": "scatter_plot",
+              "confidence": 5.832357783219777e-05
+            },
+            {
+              "class_name": "chemistry_structure",
+              "confidence": 5.6192886404460296e-05
+            },
+            {
+              "class_name": "stamp",
+              "confidence": 1.510541551397182e-05
+            },
+            {
+              "class_name": "topographical_map",
+              "confidence": 1.2834050721721724e-05
+            },
+            {
+              "class_name": "crossword_puzzle",
+              "confidence": 3.486762125248788e-06
+            },
+            {
+              "class_name": "box_plot",
+              "confidence": 7.220396014417929e-07
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "23": {
+      "size": {
+        "width": 1190.55,
+        "height": 751.181
+      },
+      "page_no": 23
+    }
+  }
+}

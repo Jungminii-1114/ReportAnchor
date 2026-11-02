@@ -1,0 +1,1535 @@
+{
+  "purpose": "기본 인원 표 총계 310 누락 보완",
+  "selection": {
+    "bbox": [
+      69.73119354248047,
+      458.1077575683594,
+      524.529541015625,
+      557.4716796875
+    ],
+    "decision": "review_required",
+    "reason": [
+      "merged_structure_not_confirmed_error"
+    ],
+    "source_refs": [
+      "#/tables/0"
+    ],
+    "classification": [],
+    "verification_status": "unverified",
+    "region_id": "p0006_r001",
+    "context": [
+      {
+        "text": "인 원",
+        "bbox": [
+          93.47999999999999,
+          420.35999999999996,
+          127.08,
+          435.35999999999996
+        ],
+        "source_ref": "#/texts/2"
+      }
+    ],
+    "doc_id": "doc_0530d100e08517b6",
+    "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+    "pdf_page": 6,
+    "rule_version": "baseline-oriented-selection/4",
+    "source_locator": {
+      "type": "pdf_page_bbox",
+      "pdf_page": 6,
+      "bbox": [
+        69.73119354248047,
+        458.1077575683594,
+        524.529541015625,
+        557.4716796875
+      ],
+      "units": "pt",
+      "coordinate_space": "pymupdf_unrotated_page"
+    }
+  },
+  "native_page_text": "2. 조직 및 인원 현황\n\n  조 직\n\n\n\n\n\n  인 원\n\n                                                         (단위 : 명, %)\n\n                  전문관리직        전문관리직\n 직급별   임 원   연구직          공무직         별도정원   총계\n                   Ⅰ           Ⅱ\n 인원\n           1        208       19        15        63        4\n\n 학위별      박 사          석 사         학사 이하        310\n 인원          165                 88                 57\n\n* 공무직 중 반일제 환경미화 6인×0.5인으로 산정\n\n3. 시설 현황\n\n  구 분    면 적   취득방법  취득일           위 치\n\n  청사    14,706.24㎡  자가     ’19.12  충청북도 음성군 원중로 1339\n\n 서울평가                    서울특별시 중구 통일로 10 연세대학교 세브란스\n             683.07㎡  임차     ’20.03\n  회의장                    빌딩 13층, 22층\n\n    IRIS\n              858㎡  임차     ’22.01  대전광역시 유성구 도룡동 엑스포타워 15층\n  운영단",
+  "native_tables": [
+    {
+      "bbox": [
+        116.21700286865234,
+        459.5769958496094,
+        523.9180094401041,
+        557.3900146484375
+      ],
+      "row_count": 4,
+      "column_count": 7,
+      "rows": [
+        [
+          "임 원",
+          "연구직",
+          "전문관리직\nⅠ",
+          "공무직",
+          "전문관리직\nⅡ",
+          "별도정원",
+          "총계"
+        ],
+        [
+          "1",
+          "208",
+          "19",
+          "15",
+          "63",
+          "4",
+          null
+        ],
+        [
+          "박 사",
+          null,
+          "석 사",
+          null,
+          "학사 이하",
+          null,
+          null
+        ],
+        [
+          "165",
+          null,
+          "88",
+          null,
+          "57",
+          null,
+          null
+        ]
+      ],
+      "cells": [
+        [
+          116.21700286865234,
+          459.5769958496094,
+          176.18499755859375,
+          496.8559875488281
+        ],
+        [
+          116.21700286865234,
+          496.8559875488281,
+          176.18499755859375,
+          517.35400390625
+        ],
+        [
+          116.21700286865234,
+          517.35400390625,
+          236.0330017089844,
+          537.8519897460938
+        ],
+        [
+          116.21700286865234,
+          537.8519897460938,
+          236.0330017089844,
+          557.3900146484375
+        ],
+        [
+          176.18499755859375,
+          459.5769958496094,
+          236.0330017089844,
+          496.8559875488281
+        ],
+        [
+          176.18499755859375,
+          496.8559875488281,
+          236.0330017089844,
+          517.35400390625
+        ],
+        [
+          236.0330017089844,
+          459.5769958496094,
+          296.0010070800781,
+          496.8559875488281
+        ],
+        [
+          236.0330017089844,
+          496.8559875488281,
+          296.0010070800781,
+          517.35400390625
+        ],
+        [
+          236.0330017089844,
+          517.35400390625,
+          355.968994140625,
+          537.8519897460938
+        ],
+        [
+          236.0330017089844,
+          537.8519897460938,
+          355.968994140625,
+          557.3900146484375
+        ],
+        [
+          296.0010070800781,
+          459.5769958496094,
+          355.968994140625,
+          496.8559875488281
+        ],
+        [
+          296.0010070800781,
+          496.8559875488281,
+          355.968994140625,
+          517.35400390625
+        ],
+        [
+          355.968994140625,
+          459.5769958496094,
+          415.8163350423177,
+          496.8559875488281
+        ],
+        [
+          355.968994140625,
+          496.8559875488281,
+          415.8163350423177,
+          517.35400390625
+        ],
+        [
+          355.968994140625,
+          517.35400390625,
+          475.78419799804686,
+          537.8519897460938
+        ],
+        [
+          355.968994140625,
+          537.8519897460938,
+          475.78419799804686,
+          557.3900146484375
+        ],
+        [
+          415.8163350423177,
+          459.5769958496094,
+          475.78419799804686,
+          496.8559875488281
+        ],
+        [
+          415.8163350423177,
+          496.8559875488281,
+          475.78419799804686,
+          517.35400390625
+        ],
+        [
+          475.78419799804686,
+          459.5769958496094,
+          523.9180094401041,
+          496.8559875488281
+        ]
+      ]
+    },
+    {
+      "bbox": [
+        70.82200241088867,
+        620.9202423095703,
+        523.9180094401041,
+        753.2559814453125
+      ],
+      "row_count": 4,
+      "column_count": 5,
+      "rows": [
+        [
+          "구 분",
+          "면 적",
+          "취득방법",
+          "취득일",
+          "위 치"
+        ],
+        [
+          "청사",
+          "14,706.24㎡",
+          "자가",
+          "’19.12",
+          "충청북도 음성군 원중로 1339"
+        ],
+        [
+          "서울평가\n회의장",
+          "683.07㎡",
+          "임차",
+          "’20.03",
+          "서울특별시 중구 통일로 10 연세대학교 세브란스\n빌딩 13층, 22층"
+        ],
+        [
+          "IRIS\n운영단",
+          "858㎡",
+          "임차",
+          "’22.01",
+          "대전광역시 유성구 도룡동 엑스포타워 15층"
+        ]
+      ],
+      "cells": [
+        [
+          70.82200241088867,
+          620.9202423095703,
+          130.0099983215332,
+          641.2979736328125
+        ],
+        [
+          70.82200241088867,
+          641.2979736328125,
+          130.0099983215332,
+          667.4299926757812
+        ],
+        [
+          70.82200241088867,
+          667.4299926757812,
+          130.0099983215332,
+          710.343017578125
+        ],
+        [
+          70.82200241088867,
+          710.343017578125,
+          130.0099983215332,
+          753.2559814453125
+        ],
+        [
+          130.0099983215332,
+          620.9202423095703,
+          198.4929962158203,
+          641.2979736328125
+        ],
+        [
+          130.0099983215332,
+          641.2979736328125,
+          198.4929962158203,
+          667.4299926757812
+        ],
+        [
+          130.0099983215332,
+          667.4299926757812,
+          198.4929962158203,
+          710.343017578125
+        ],
+        [
+          130.0099983215332,
+          710.343017578125,
+          198.4929962158203,
+          753.2559814453125
+        ],
+        [
+          198.4929962158203,
+          620.9202423095703,
+          248.74600219726562,
+          641.2979736328125
+        ],
+        [
+          198.4929962158203,
+          641.2979736328125,
+          248.74600219726562,
+          667.4299926757812
+        ],
+        [
+          198.4929962158203,
+          667.4299926757812,
+          248.74600219726562,
+          710.343017578125
+        ],
+        [
+          198.4929962158203,
+          710.343017578125,
+          248.74600219726562,
+          753.2559814453125
+        ],
+        [
+          248.74600219726562,
+          620.9202423095703,
+          304.7560119628906,
+          641.2979736328125
+        ],
+        [
+          248.74600219726562,
+          641.2979736328125,
+          304.7560119628906,
+          667.4299926757812
+        ],
+        [
+          248.74600219726562,
+          667.4299926757812,
+          304.7560119628906,
+          710.343017578125
+        ],
+        [
+          248.74600219726562,
+          710.343017578125,
+          304.7560119628906,
+          753.2559814453125
+        ],
+        [
+          304.7560119628906,
+          620.9202423095703,
+          523.9180094401041,
+          641.2979736328125
+        ],
+        [
+          304.7560119628906,
+          641.2979736328125,
+          523.9180094401041,
+          667.4299926757812
+        ],
+        [
+          304.7560119628906,
+          667.4299926757812,
+          523.9180094401041,
+          710.343017578125
+        ],
+        [
+          304.7560119628906,
+          710.343017578125,
+          523.9180094401041,
+          753.2559814453125
+        ]
+      ]
+    }
+  ],
+  "docling_selected_elements": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 69.73119354248047,
+            "t": 382.8922424316406,
+            "r": 524.529541015625,
+            "b": 283.5283203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/3"
+        }
+      ],
+      "references": [],
+      "footnotes": [
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 79.2,
+              "t": 475.2,
+              "r": 107.909700664128,
+              "b": 504.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "직급별 인원",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 133.92,
+              "t": 473.4,
+              "r": 158.66945477375998,
+              "b": 485.4,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "임 원",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 191.88,
+              "t": 473.4,
+              "r": 220.58970066412797,
+              "b": 485.4,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연구직",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 242.39999999999998,
+              "t": 465.0,
+              "r": 289.94994655449597,
+              "b": 493.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "전문관리직 Ⅰ",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 311.76,
+              "t": 473.4,
+              "r": 340.46970066412797,
+              "b": 485.4,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "공무직",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 362.28,
+              "t": 465.0,
+              "r": 409.82994655449596,
+              "b": 493.79999999999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "전문관리직 Ⅱ",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 426.96,
+              "t": 473.4,
+              "r": 465.14980997433594,
+              "b": 485.4,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "별도정원",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 490.2,
+              "t": 473.4,
+              "r": 509.54956408396805,
+              "b": 485.4,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 7,
+            "end_col_offset_idx": 8,
+            "text": "총계",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 143.04,
+              "t": 502.32,
+              "r": 149.41213651104,
+              "b": 514.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 196.92,
+              "t": 502.32,
+              "r": 215.53161861235202,
+              "b": 514.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "208",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 259.92,
+              "t": 502.32,
+              "r": 272.41187756169603,
+              "b": 514.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "19",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 319.92,
+              "t": 502.32,
+              "r": 332.291904831648,
+              "b": 514.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "15",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 379.8,
+              "t": 502.32,
+              "r": 392.291877561696,
+              "b": 514.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "63",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 442.8,
+              "t": 502.32,
+              "r": 449.17213651104004,
+              "b": 514.3199999999999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 490.56,
+              "t": 522.36,
+              "r": 509.17161861235195,
+              "b": 534.36,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 7,
+            "end_col_offset_idx": 8,
+            "text": "310",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 79.2,
+              "t": 524.16,
+              "r": 107.909700664128,
+              "b": 536.16,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "학위별",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 83.88,
+              "t": 540.96,
+              "r": 103.229564083968,
+              "b": 552.96,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "인원",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 163.92,
+              "t": 522.72,
+              "r": 188.66945477375998,
+              "b": 534.72,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 3,
+            "text": "박 사",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 283.8,
+              "t": 522.72,
+              "r": 308.54945477376,
+              "b": 534.72,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 5,
+            "text": "석 사",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 394.2,
+              "t": 522.72,
+              "r": 437.90956408396795,
+              "b": 534.72,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 7,
+            "text": "학사 이하",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 167.04,
+              "t": 542.76,
+              "r": 185.531645882304,
+              "b": 554.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 3,
+            "text": "165",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 289.92,
+              "t": 542.76,
+              "r": 302.41187756169603,
+              "b": 554.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 5,
+            "text": "88",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 409.8,
+              "t": 542.76,
+              "r": 422.291877561696,
+              "b": 554.76,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 7,
+            "text": "57",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 4,
+        "num_cols": 8,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 79.2,
+                "t": 475.2,
+                "r": 107.909700664128,
+                "b": 504.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "직급별 인원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 133.92,
+                "t": 473.4,
+                "r": 158.66945477375998,
+                "b": 485.4,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "임 원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 191.88,
+                "t": 473.4,
+                "r": 220.58970066412797,
+                "b": 485.4,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연구직",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 242.39999999999998,
+                "t": 465.0,
+                "r": 289.94994655449597,
+                "b": 493.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "전문관리직 Ⅰ",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 311.76,
+                "t": 473.4,
+                "r": 340.46970066412797,
+                "b": 485.4,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "공무직",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 362.28,
+                "t": 465.0,
+                "r": 409.82994655449596,
+                "b": 493.79999999999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "전문관리직 Ⅱ",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 426.96,
+                "t": 473.4,
+                "r": 465.14980997433594,
+                "b": 485.4,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "별도정원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 490.2,
+                "t": 473.4,
+                "r": 509.54956408396805,
+                "b": 485.4,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "총계",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.2,
+                "t": 475.2,
+                "r": 107.909700664128,
+                "b": 504.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "직급별 인원",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 143.04,
+                "t": 502.32,
+                "r": 149.41213651104,
+                "b": 514.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 196.92,
+                "t": 502.32,
+                "r": 215.53161861235202,
+                "b": 514.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "208",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 259.92,
+                "t": 502.32,
+                "r": 272.41187756169603,
+                "b": 514.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "19",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 319.92,
+                "t": 502.32,
+                "r": 332.291904831648,
+                "b": 514.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "15",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 379.8,
+                "t": 502.32,
+                "r": 392.291877561696,
+                "b": 514.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "63",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 442.8,
+                "t": 502.32,
+                "r": 449.17213651104004,
+                "b": 514.3199999999999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 79.2,
+                "t": 524.16,
+                "r": 107.909700664128,
+                "b": 536.16,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "학위별",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 163.92,
+                "t": 522.72,
+                "r": 188.66945477375998,
+                "b": 534.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 3,
+              "text": "박 사",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 163.92,
+                "t": 522.72,
+                "r": 188.66945477375998,
+                "b": 534.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 3,
+              "text": "박 사",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 283.8,
+                "t": 522.72,
+                "r": 308.54945477376,
+                "b": 534.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 5,
+              "text": "석 사",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 283.8,
+                "t": 522.72,
+                "r": 308.54945477376,
+                "b": 534.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 5,
+              "text": "석 사",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 394.2,
+                "t": 522.72,
+                "r": 437.90956408396795,
+                "b": 534.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 7,
+              "text": "학사 이하",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 394.2,
+                "t": 522.72,
+                "r": 437.90956408396795,
+                "b": 534.72,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 7,
+              "text": "학사 이하",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 490.56,
+                "t": 522.36,
+                "r": 509.17161861235195,
+                "b": 534.36,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "310",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 83.88,
+                "t": 540.96,
+                "r": 103.229564083968,
+                "b": 552.96,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "인원",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 167.04,
+                "t": 542.76,
+                "r": 185.531645882304,
+                "b": 554.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 3,
+              "text": "165",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 167.04,
+                "t": 542.76,
+                "r": 185.531645882304,
+                "b": 554.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 3,
+              "text": "165",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 289.92,
+                "t": 542.76,
+                "r": 302.41187756169603,
+                "b": 554.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 5,
+              "text": "88",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 289.92,
+                "t": 542.76,
+                "r": 302.41187756169603,
+                "b": 554.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 5,
+              "text": "88",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 409.8,
+                "t": 542.76,
+                "r": 422.291877561696,
+                "b": 554.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 7,
+              "text": "57",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 409.8,
+                "t": 542.76,
+                "r": 422.291877561696,
+                "b": 554.76,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 7,
+              "text": "57",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 490.56,
+                "t": 522.36,
+                "r": 509.17161861235195,
+                "b": 534.36,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "310",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "comparison_note": "파서와 모델 결과의 대조용. 이 파일의 정답/해석은 VLM에 보내지 않음. 평가용 전체 정답 없음."
+}

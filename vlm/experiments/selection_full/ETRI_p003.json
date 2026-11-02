@@ -1,0 +1,212 @@
+{
+  "document": "ETRI",
+  "pdf_page": 3,
+  "page_size": [
+    1190.550048828125,
+    751.1810302734375
+  ],
+  "native_summary": {
+    "native_characters": 0,
+    "native_tables": 0,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          0.0,
+          0.0,
+          245.2370147705078,
+          250.54495239257812
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          244.74655151367188,
+          0.0,
+          490.4630126953125,
+          250.54495239257812
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          489.9725646972656,
+          0.0,
+          595.6649780273438,
+          572.7719116210938
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          629.99658203125,
+          0.0,
+          875.7130126953125,
+          250.54495239257812
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          875.2225952148438,
+          0.0,
+          1120.9390869140625,
+          250.54495239257812
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          1120.4486083984375,
+          0.0,
+          1190.550048828125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          0.0,
+          250.05450439453125,
+          245.2370147705078,
+          501.1659240722656
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          244.74655151367188,
+          250.05450439453125,
+          490.4630126953125,
+          501.1659240722656
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          629.99658203125,
+          250.05450439453125,
+          875.7130126953125,
+          501.1659240722656
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          875.2225952148438,
+          250.05450439453125,
+          1120.9390869140625,
+          501.1659240722656
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          0.0,
+          500.6755065917969,
+          245.2370147705078,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          244.74655151367188,
+          500.6755065917969,
+          490.4630126953125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          629.99658203125,
+          500.6755065917969,
+          875.7130126953125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          875.2225952148438,
+          500.6755065917969,
+          1120.9390869140625,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          489.9725646972656,
+          572.281494140625,
+          595.6649780273438,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          0.0,
+          0.0,
+          1190.550048828125,
+          751.1810302734375
+        ],
+        "signals": [
+          "content_present_native_text_low"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [],
+    "combined_frozen": []
+  }
+}

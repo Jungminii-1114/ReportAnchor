@@ -1,0 +1,645 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "KISTEP",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10354758650900360664,
+    "filename": "KISTEP.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/groups/1"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 764.488,
+            "r": 524.5307999999999,
+            "b": 732.088,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "- 우리나라의 기술 경쟁력(경쟁 우위 or 경쟁 열위, 무한 경쟁), 기술 발전주기 (기초원천-초기실증-양산-보급확대)를 기준으로 맞춤형 협력 전략 수립",
+      "text": "우리나라의 기술 경쟁력(경쟁 우위 or 경쟁 열위, 무한 경쟁), 기술 발전주기 (기초원천-초기실증-양산-보급확대)를 기준으로 맞춤형 협력 전략 수립",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 80.88,
+            "t": 716.27968,
+            "r": 430.08776727516477,
+            "b": 702.568,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "❍ 글로벌 R&D 범부처 거버넌스 확립을 통한 추진 기반 마련",
+      "text": "❍ 글로벌 R&D 범부처 거버넌스 확립을 통한 추진 기반 마련",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 689.7280000000001,
+            "r": 524.5304639999998,
+            "b": 657.2080000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "- \"글로벌 R&D 특별위원회\"를 신설하여 글로벌 R&D 주요정책*을 조정·심의 하는 등 범부처 컨트롤타워 기능 강화 (4회 개최)",
+      "text": "\"글로벌 R&D 특별위원회\"를 신설하여 글로벌 R&D 주요정책*을 조정·심의 하는 등 범부처 컨트롤타워 기능 강화 (4회 개최)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 110.88,
+            "t": 648.832,
+            "r": 387.14688,
+            "b": 637.792,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "* 플래그십 프로젝트, 전략지도, 글로벌 R&D 전략거점센터 등",
+      "text": "플래그십 프로젝트, 전략지도, 글로벌 R&D 전략거점센터 등",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 622.888,
+            "r": 524.5588799999999,
+            "b": 570.808,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "- \"글로벌 R&D 협의체\" 및 \"글로벌 R&D 실무소통회의\"를 구성하여 집행-성과홍보를 전주기적으로 관리하고, 주요부처 및 사업관리기관이 애로사항 등을 상시 소통할 수 있는 창구 마련(협의체 3회, 실무 소통회의 2회 개최)",
+      "text": "\"글로벌 R&D 협의체\" 및 \"글로벌 R&D 실무소통회의\"를 구성하여 집행-성과홍보를 전주기적으로 관리하고, 주요부처 및 사업관리기관이 애로사항 등을 상시 소통할 수 있는 창구 마련(협의체 3회, 실무 소통회의 2회 개최)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 80.88,
+            "t": 554.99968,
+            "r": 431.16836072972256,
+            "b": 541.288,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "❍ 국가 차원의 과학기술외교 추진전략 수립 및 체계기반 구축",
+      "text": "❍ 국가 차원의 과학기술외교 추진전략 수립 및 체계기반 구축",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 528.4480000000001,
+            "r": 524.530224,
+            "b": 496.048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "- 과학기술 국제협력 활성화 기반조성 및 다양한 협력 층위별 과학기술 국제협력 활동 지원을 위한 법적 근거로 '(가칭) 과학기술 국제협력 촉진에 관한 법률(안)' 제정 지원",
+      "text": "과학기술 국제협력 활성화 기반조성 및 다양한 협력 층위별 과학기술 국제협력 활동 지원을 위한 법적 근거로 '(가칭) 과학기술 국제협력 촉진에 관한 법률(안)' 제정 지원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 110.88,
+            "t": 487.552,
+            "r": 524.6673120000003,
+            "b": 456.712,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "※ 범부처 차원의 통일된 과학기술 국제협력 정책 수립 및 제도 기반 마련, 협력 층위별 과학기술 국제협력 활동 활성화, 국제공동연구 제도개선 등을 위한 법률 제정 기반 마련",
+      "text": "※ 범부처 차원의 통일된 과학기술 국제협력 정책 수립 및 제도 기반 마련, 협력 층위별 과학기술 국제협력 활동 활성화, 국제공동연구 제도개선 등을 위한 법률 제정 기반 마련",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 441.80800000000005,
+            "r": 524.5310399999998,
+            "b": 409.408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            93
+          ]
+        }
+      ],
+      "orig": "- 과학기술·디지털 글로벌 협력 확대 기조에 맞추어 장기적인 관점의 과학기술·디지털 국제협력 비전 및 방향 제시를 위한 '(가칭) 과학기술외교전략(안)' 수립 지원 중",
+      "text": "과학기술·디지털 글로벌 협력 확대 기조에 맞추어 장기적인 관점의 과학기술·디지털 국제협력 비전 및 방향 제시를 위한 '(가칭) 과학기술외교전략(안)' 수립 지원 중",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 397.76800000000003,
+            "r": 524.4105599999999,
+            "b": 384.80800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "- '한-캐나다 과학기술공동위원회('24.6)' 등 주요국 과학기술 협력의제 발굴 및",
+      "text": "'한-캐나다 과학기술공동위원회('24.6)' 등 주요국 과학기술 협력의제 발굴 및",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 108.96,
+            "t": 378.32800000000003,
+            "r": 162.73046399999998,
+            "b": 365.36800000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "전략 수립",
+      "text": "전략 수립",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 110.88,
+            "t": 356.872,
+            "r": 524.66688,
+            "b": 326.03200000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "※ 국가별 주요 과학기술정책, 중점 추진분야, 기술수준 등을 비교·분석하여 전략적 과학기술 협 력 분야 발굴 및 협력전략 제시",
+      "text": "※ 국가별 주요 과학기술정책, 중점 추진분야, 기술수준 등을 비교·분석하여 전략적 과학기술 협 력 분야 발굴 및 협력전략 제시",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 311.12799999999993,
+            "r": 524.530176,
+            "b": 278.72799999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "- 'EU Horizon Europe 준회원국 가입'을 위한 준회원국 가입 협정서 문안 검토 및 공식 협상회의 지원",
+      "text": "'EU Horizon Europe 준회원국 가입'을 위한 준회원국 가입 협정서 문안 검토 및 공식 협상회의 지원",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 110.88,
+            "t": 270.2320000000001,
+            "r": 524.5467840000001,
+            "b": 239.39200000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "※ 준회원국 협정서 심층 분석, 주요쟁점 대응방안 마련, EU 연구혁신총국과의 공식 협상회의 및 온라인 실무회의 등 협상 지원",
+      "text": "※ 준회원국 협정서 심층 분석, 주요쟁점 대응방안 마련, EU 연구혁신총국과의 공식 협상회의 및 온라인 실무회의 등 협상 지원",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 224.48799999999994,
+            "r": 406.570992,
+            "b": 211.52800000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "- 주요국 과학기술외교 정보수집 및 모니터링 체계 강화",
+      "text": "주요국 과학기술외교 정보수집 및 모니터링 체계 강화",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 110.88,
+            "t": 203.15200000000004,
+            "r": 524.546448,
+            "b": 192.11200000000008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "※ 주요국 및 국제기구 과학기술외교 관련 정책, 전략, 법안, 국제회의 결과 등 동향조사 및 분석 실시",
+      "text": "※ 주요국 및 국제기구 과학기술외교 관련 정책, 전략, 법안, 국제회의 결과 등 동향조사 및 분석 실시",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 95.88,
+            "t": 177.95968000000005,
+            "r": 524.5307999999999,
+            "b": 144.688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "- 근거 기반 과학기술외교･국제협력 전략 수립 지원을 위한 과학기술 국제협력 통계체계 구축",
+      "text": "근거 기반 과학기술외교･국제협력 전략 수립 지원을 위한 과학기술 국제협력 통계체계 구축",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 15,
+          "bbox": {
+            "l": 110.88,
+            "t": 136.31200000000013,
+            "r": 524.5467840000001,
+            "b": 105.4720000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "※ R&D 투자, 인력, 협력 네트워크, 성과, 환경 및 제도 등 과학기술 국제협력 관련 지표체계 보완 및 정량지표 최신화",
+      "text": "※ R&D 투자, 인력, 협력 네트워크, 성과, 환경 및 제도 등 과학기술 국제협력 관련 지표체계 보완 및 정량지표 최신화",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "15": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 15
+    }
+  }
+}

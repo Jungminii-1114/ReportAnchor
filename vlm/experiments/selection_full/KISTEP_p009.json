@@ -1,0 +1,244 @@
+{
+  "document": "KISTEP",
+  "pdf_page": 9,
+  "page_size": [
+    595.0,
+    841.0
+  ],
+  "native_summary": {
+    "native_characters": 2995,
+    "native_tables": 3,
+    "table_detection_status": "completed",
+    "near_blank": false
+  },
+  "methods": {
+    "python": [
+      {
+        "bbox": [
+          72.08100128173828,
+          182.08099365234375,
+          523.93798828125,
+          350.1369934082031
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          72.08100128173828,
+          394.4880065917969,
+          523.93798828125,
+          549.47900390625
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error"
+        ],
+        "decision": "review_required"
+      },
+      {
+        "bbox": [
+          72.08100128173828,
+          631.948974609375,
+          523.93798828125,
+          764.8829956054688
+        ],
+        "signals": [
+          "merged_or_missing_cells_not_confirmed_error"
+        ],
+        "decision": "review_required"
+      }
+    ],
+    "docling_derived": [
+      {
+        "bbox": [
+          70.998046875,
+          181.5583953857422,
+          524.4185791015625,
+          350.3486328125
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          71.01618194580078,
+          393.5589599609375,
+          524.6521606445312,
+          549.4638671875
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": []
+      },
+      {
+        "bbox": [
+          70.91569519042969,
+          616.95263671875,
+          524.6597290039062,
+          765.2889404296875
+        ],
+        "decision": "vlm_candidate",
+        "reason": [
+          "docling_detected_table_broad_baseline"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": []
+      }
+    ],
+    "combined_frozen": [
+      {
+        "bbox": [
+          70.998046875,
+          181.5583953857422,
+          524.4185791015625,
+          350.3486328125
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/0"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0009_r001",
+        "context": [
+          {
+            "text": "성과목표 1-1 과학기술혁신정책 기획ㆍ지원 강화",
+            "bbox": [
+              77.39999999999999,
+              142.27199999999993,
+              236.23700775982957,
+              152.23199999999997
+            ],
+            "source_ref": "#/texts/2"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            70.998046875,
+            181.5583953857422,
+            524.4185791015625,
+            350.3486328125
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          71.01618194580078,
+          393.5589599609375,
+          524.6521606445312,
+          549.4638671875
+        ],
+        "decision": "parser_only",
+        "reason": [
+          "structured_table_preserved_not_content_verified"
+        ],
+        "source_refs": [
+          "#/tables/1"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0009_r002",
+        "context": [
+          {
+            "text": "성과목표 1-2 국가전략기술 육성ㆍ지원 및 미래예측 활용ㆍ확산",
+            "bbox": [
+              77.39999999999999,
+              355.392,
+              285.0771963235005,
+              365.352
+            ],
+            "source_ref": "#/texts/4"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            71.01618194580078,
+            393.5589599609375,
+            524.6521606445312,
+            549.4638671875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      },
+      {
+        "bbox": [
+          70.91569519042969,
+          616.95263671875,
+          524.6597290039062,
+          765.2889404296875
+        ],
+        "decision": "review_required",
+        "reason": [
+          "merged_structure_not_confirmed_error"
+        ],
+        "source_refs": [
+          "#/tables/2"
+        ],
+        "classification": [],
+        "verification_status": "unverified",
+        "region_id": "p0009_r003",
+        "context": [
+          {
+            "text": "성과목표 2-1. 연구자 중심 범부처 R&D제도 혁신 허브기관 역할 강화",
+            "bbox": [
+              81.36,
+              604.6320000000001,
+              312.0770077598295,
+              614.592
+            ],
+            "source_ref": "#/texts/7"
+          }
+        ],
+        "doc_id": "doc_0530d100e08517b6",
+        "version_sha256": "0530d100e08517b60bb2acb9504d7ead70107f0c23a586738fb37e2191d1add8",
+        "pdf_page": 9,
+        "rule_version": "docling-context-routing/2",
+        "source_locator": {
+          "type": "pdf_page_bbox",
+          "pdf_page": 9,
+          "bbox": [
+            70.91569519042969,
+            616.95263671875,
+            524.6597290039062,
+            765.2889404296875
+          ],
+          "units": "pt",
+          "coordinate_space": "pymupdf_unrotated_page"
+        }
+      }
+    ]
+  }
+}
