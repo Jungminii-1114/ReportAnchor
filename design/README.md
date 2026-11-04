@@ -24,6 +24,7 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 |---|---|---|---|
 | v1 | 2026-11-04 | 최초 구조 스켈레톤 · top bar 포함 | `versions/reportanchor-workspace_v1_2026-11-04.figcraft` |
 | v2 | 2026-11-04 | top bar 제거 · 탭 최상단 · 사이드바 아이콘 브랜드 | `versions/reportanchor-workspace_v2_2026-11-04.figcraft` |
+| v3 | 2026-11-04 | 브레드크럼 페이지 · 중복 줌 제거 | `versions/reportanchor-workspace_v3_2026-11-04.figcraft` |
 
 ## 레거시
 
