@@ -31,6 +31,7 @@
 | 9 | 검색 기본 구성 (RRF 단독 / Reranker 추가) | 비교 실험 후 결정 |
 | 10 | **MVP Query Agent 실행 구조 (2026-10-31)** | **① Small Node N-10 `route_query` → ② Big Node(T-01/T-02/T-03 중 하나) 고정 워크플로 → ③ Small Node N-11 `deliver_result`**로 확정. 실행 전 종료는 N-10 → N-11. 자율 Big Node 연쇄 호출·재계획은 MVP 기본 경로에서 제외. [상세 설계](query-agent-mvp.md) |
 | 11 | **MVP 노드 목록 (2026-10-31)** | **Big Node 총 5종 등록:** T-01/T-02/T-03 MVP 우선, T-04/T-05 후속 보류. **Small Node 총 11종:** Big Node 내부 N-01~N-09 및 최상위 공통 N-10·N-11. [명칭 기준](naming-conventions.md) · [Small Node LIST](query-agent-node-list.md) |
+| 12 | **메인 에이전트와 tool (2026-11-05)** | N-10·N-11은 메인 에이전트의 역할이고 각 Big Node는 메인 에이전트가 호출하는 tool이다. 요청당 1개만 호출하고 재호출하지 않으며, 검증 후 보정은 Big Node 내부에서 끝낸다. [상세 설계](query-agent-mvp.md) |
 
 ## 1. 목표와 설계 관점
 
@@ -111,7 +112,7 @@ MVP의 업무 범위는 **사용자 검토 기준에 따른 문서 검토**(근�
 | H-09 | 비동기 작업 분리 | 문서 등록·파싱·색인과 대화형 검토 요청의 실행 수명·큐 분리. 로컬 우선 운영 | 중간 |
 | H-10 | 변경 적용 정책·산출물 버전 이력 | 수정 전후 버전·차이·적용 상태와 되돌리기 범위를 기록. 자동 적용과 사람 검토가 필요한 범위는 작업·도구별 정책으로 결정. 수정·생성 도구 도입 시 검토 (MVP 범위 아님) | 후순위 |
 | H-11 | 리랭커 비교 기준선(아이디어) | 기본 Dense+BM25→RRF 대비 선택형 리랭커의 성능·지연·비용 비교. Voyage Reranker는 **공개·허가 데이터에 한한 외부 API 실험**으로만 사용하며, 최종 제품은 로컬·오프라인 기본 구성 유지. 모델·평가 조건 미확정 | 중간 |
-| H-12 | 쿼리 증폭·재작성(보류 아이디어) | 원본 질의 대비 Multi-query Generation, Query Rewriting, PRF, HyDE, Query Decomposition 등을 **선택형 검색 전처리·재검색 전략**으로 비교. 검색 품질(Recall@k·nDCG@k), 추가 호출·지연·비용과 질의 의미 왜곡 위험 검증 후 도입 여부 결정. 현재 기본 파이프라인에는 미포함 | 후순위 |
+| H-12 | 쿼리 증폭·재작성(보류 아이디어) | 원본 질의 대비 Multi-query Generation, Query Rewriting, PRF, HyDE, Query Decomposition 등을 **선택형 검색 전처리·재검색 전략**으로 비교. 검색 품질(Recall@k·nDCG@k), 추가 호출·지연·비용과 질의 의미 왜곡 위험 검증 후 도입 여부 결정. 현재 기본 파이프라인에는 미포함. 도입하면 Big Node 밖의 별도 노드로 붙임 | 후순위 |
 | H-13 | DSH 참고 LangChain/LangGraph 하네스 | DSH의 Agent 루프·플러그인·세션·도구 계약을 참고해 LangChain/LangGraph로 하네스를 직접 구현. MVP는 검토 작업, 수정·생성은 추후 선택 확장 | 높음 |
 
 H-13의 **DSH 설계 참고 → LangChain/LangGraph 직접 구현**과 **검토 중심 MVP**는 결정된 방향이다(0절). **H-02만 저장 기능 MVP 필수 구현 대상**, H-03은 미정이며 H-04/H-05의 자동 캐시·리플레이는 함께 확정되지 않았다. 기술 선택·실험 조건은 추가 검토한다.

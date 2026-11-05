@@ -10,7 +10,7 @@
 
 | 표준 명칭 | 기존 문서에서의 표현 | 의미 | 식별자 |
 |---|---|---|---|
-| **Big Node** | 작업 Tool, Task Tool, 목적별 고정 워크플로 | **사용자 목적 하나를 해결하는 전체 워크플로**. Query Router가 선택하고 내부에서 Small Node를 정해진 순서·분기로 실행 | `T-01`부터 `T-05` |
+| **Big Node** | 작업 Tool, Task Tool, 목적별 고정 워크플로 | **사용자 목적 하나를 해결하는 전체 워크플로**. 메인 에이전트가 tool로 호출하고 내부에서 Small Node를 정해진 순서·분기로 실행 | `T-01`부터 `T-05` |
 | **Small Node** | 최소 단위 노드, 공통/전용 노드 | **입출력이 구분되는 최소 책임 단위**. Big Node 내부에서 사용하거나, 상위 실행 경로의 입구·출구에서 사용함 | `N-01`부터 `N-11` |
 | **내부 기능** | 기초 기능, 함수·모듈 | Small Node 내부의 세부 연산. Dense/BM25/RRF, 원문 위치 조회 보조, 결정적 계산 등. **별도의 노드 계층으로 세지 않음** | ID 미부여 |
 
@@ -20,13 +20,13 @@
 
 ```text
 ReportAnchor Query Agent — MVP 확정 실행 경로
-  1. Small Node: N-10 route_query       (질문 확인·Big Node 선택)
+  1. Small Node: N-10 route_query       (메인 에이전트: 질문 확인·tool 선택)
            ↓
-  2. Big Node: T-01 / T-02 / T-03     (요청당 하나만 선택)
+  2. Big Node: T-01 / T-02 / T-03     (메인 에이전트의 tool, 요청당 하나만 호출)
        └─ Small Node: N-01 ~ N-09 중 업무별 조합
            └─ 내부 기능: 검색 엔진 연산·계산 등
            ↓
-  3. Small Node: N-11 deliver_result   (검증 상태·결과 전달)
+  3. Small Node: N-11 deliver_result   (메인 에이전트: 검증 상태·결과 전달)
 
   ※ 실행 전 종료: N-10 → N-11 (명확화·권한 거부·미지원)
 ```
@@ -74,13 +74,14 @@ ReportAnchor Query Agent — MVP 확정 실행 경로
 | **ReportAnchor** | 프로젝트명 | 다른 프로젝트명·이전 이름 사용하지 않음 |
 | **Harness** | 실행 관리 계층 | Big/Small Node 실행 상태·예산·오류·아티팩트 기록(MVP)을 관리. 체크포인트·재개는 미정 |
 | **Query Agent** | 사용자 요청의 전체 처리 구조 | 아래 3단계의 상위 흐름 |
+| **Main Agent (메인 에이전트)** | 요청을 확인하고 tool을 호출해 결과를 전달하는 LLM 주체 | N-10·N-11의 역할을 수행. Big Node를 tool로 호출하며 내부 Small Node는 직접 호출하지 않음 |
 | **Query Intake & Routing** | 원본 질문·대상 범위·권한 확인, Big Node 선택 | 최상위 Small Node **N-10** |
 | **Fixed Workflow** | 사전에 정의된 순서·분기를 따르는 실행 흐름 | 각 Big Node의 내부 실행 방식 |
 | **Result Delivery** | 결과·출처·검증 상태·미확인 내용 제공 | 최상위 Small Node **N-11** |
 | **Hybrid Retrieval** | Dense·BM25 후보 검색 및 통합 | N-01의 내부 검색 기능 |
 | **RRF** | 순위 기반 후보 통합 | N-01의 내부 기능 |
 | **Reranker** | 검색 후보 순위 재평가 | N-01 내부의 선택형 기능 |
-| **Query Expansion** | 질의 증폭·재작성 | MVP 기본 흐름에서 제외, H-12 백로그 유지 |
+| **Query Expansion** | 질의 증폭·재작성 | MVP 기본 흐름에서 제외, H-12 백로그 유지. 도입 시 Big Node 밖의 별도 노드 |
 
 **용어 주의:** `Reranker`는 원문 근거가 사실임을 검증하는 Small Node가 아니다. 관련성 재평가와 `verify_grounding`(근거 지지 검사)은 구별한다.
 
@@ -94,11 +95,11 @@ ReportAnchor Query Agent — MVP 확정 실행 경로
 | `RoutedTask` | N-10이 선택한 Big Node 및 해당 입력·허용 범위 (실행 불가 시 상태·사유를 N-11로 전달) |
 | `RetrievalCandidates` | N-01의 검색 후보·순위·원문 참조 |
 | `EvidenceBundle` | 근거 후보를 원문 문맥·위치·검증 상태와 연결한 묶음 |
-| `ReviewDraft` | T-01의 답변·검토 초안 |
+| `ReviewDraft` | T-01의 주장 초안과 답하지 못한 항목 |
 | `CriteriaSet` / `CriterionFinding` | T-02의 기준 목록 / 항목별 판정 |
 | `ComparisonSpec` / `ComparisonFinding` | T-03의 비교 정의 / 결과 |
 | `VerificationReport` | N-03의 주장·근거·인용 검증 결과 |
-| `WorkflowResult` | Big Node의 최종 실행 결과와 상태·근거 참조. N-11이 사용자에게 표현하되 새로운 판정은 하지 않음 |
+| `WorkflowResult` | Big Node가 메인 에이전트에게 돌려주는 tool 결과. 최종 실행 결과와 상태·근거 참조를 담으며, N-11이 사용자에게 표현하되 새로운 판정은 하지 않음 |
 
 **경계 메모:** 기존 문서에는 `EvidenceBundle`을 검색 단계에서 제공한다고 표현한 곳과, N-02 원문 조회·보강 후 제공한다고 표현한 곳이 있다. 여기서는 **원문 근거를 연결한 묶음**이라는 의미만 통일하고, 정확한 생성·보강 경계는 데이터 계약 설계에서 결정한다.
 
@@ -114,7 +115,7 @@ ReportAnchor Query Agent — MVP 확정 실행 경로
 | 필드명(후보) | 영어 `snake_case` | `document_id`, `source_ref` |
 | 설계 문서 | 영어 소문자 `kebab-case` 파일명 | `query-agent-mvp.md` |
 
-**신규 문서 작성 기준:** 기능의 사용자 목적을 설명할 때 **Big Node**, 그 내부 또는 최상위 입구·출구의 최소 실행 단위를 설명할 때 **Small Node**를 우선 사용한다. 프레임워크 고유의 Tool/Node 명칭을 인용하는 경우에만 원래 용어를 병기한다. **별도 Tiny Node 계층은 만들지 않는다.**
+**신규 문서 작성 기준:** 기능의 사용자 목적을 설명할 때 **Big Node**, 그 내부 또는 최상위 입구·출구의 최소 실행 단위를 설명할 때 **Small Node**를 우선 사용한다. 메인 에이전트와의 호출 관계를 설명할 때와 프레임워크 고유의 Tool/Node 명칭을 인용하는 경우에만 tool 등 원래 용어를 병기한다. **별도 Tiny Node 계층은 만들지 않는다.**
 
 ## 8. 관련 문서
 

@@ -50,8 +50,8 @@ Report Agent aims to connect claims to source passages and table regions, verify
 | Selective VLM processing | Apply a vision-language model to regions requiring additional interpretation, such as complex headers, tables, and charts. |
 | Evidence-preserving structure | Link values to their subjects, years, units, header paths, footnotes, and source locations. |
 | Hybrid retrieval | Combine keyword and semantic retrieval, then rerank candidate evidence. |
-| Criteria-based review | Analyze the request and use retrieval, source lookup, and calculation tools to check the user's criteria. |
-| Verification and abstention | Check claims against cited evidence, retry retrieval within a fixed limit, and abstain when evidence remains insufficient. |
+| Criteria-based review | Analyze the request, select a review workflow, and check the user's criteria with retrieval, source lookup, and calculation. |
+| Verification and abstention | Check claims against cited evidence, correct conflicting claims once, and abstain when evidence remains insufficient. |
 
 ## Workflow
 
@@ -71,13 +71,13 @@ flowchart TD
         I --> J["Check evidence and perform calculations"]
         J --> K["Generate a response and check claims and citations"]
         K --> L["Return findings with source evidence"]
-        J --> M["If evidence is insufficient: retry retrieval or abstain"]
+        J --> M["If evidence is insufficient: abstain and state what is unconfirmed"]
     end
 
     F --> I
 ```
 
-This diagram summarizes the main stages. Retrieval retries will be limited to two additional attempts. If sufficient evidence cannot be obtained, the agent will abstain and explain what remains unresolved. Unverified extraction fields will remain explicitly marked.
+This diagram summarizes the main stages. If sufficient evidence cannot be obtained, the agent will abstain and explain what remains unresolved. Unverified extraction fields will remain explicitly marked.
 
 ## Retrieval and agent design
 
@@ -104,11 +104,13 @@ Retrieval relevance, extraction verification status, and the final review outcom
 
 ### Use tools for review
 
+The main agent calls one review workflow as a tool for each request. Each tool runs fixed internal steps, including evidence retrieval, source lookup, calculation, and verification, and returns its results to the agent.
+
 | Planned tool | Purpose |
 |---|---|
-| retrieve_evidence | Retrieve evidence matching the question and confirmed constraints. |
-| get_source_context | Inspect the original passage, table headers, or footnotes for a retrieved item. |
-| calculate | Perform supported numerical operations with explicit unit rules. |
+| Document QA | Answer a question with claims backed by source evidence. |
+| Criteria Review | Check whether a report meets explicit criteria. |
+| Comparative Analysis | Compare documents, periods, or metrics on a common basis. |
 
 The agent will check whether evidence matches the requested subject, year, and unit before using it in a calculation or response.
 

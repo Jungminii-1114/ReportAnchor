@@ -78,7 +78,27 @@ NodeResult[RetrievalCandidates]
 | `error_code` | 기계가 판단할 오류 코드. 예: `TIMEOUT` |
 | `reason` | 실패나 생략 이유를 설명하는 짧은 코드·안전한 메시지 |
 | `retryable` | 재시도 가능성 힌트 (`true` / `false` / `null`). 실행 여부는 호출자가 판단 |
-| `count` 등 | 필요 시 결과 건수·지연시간 등 비민감 선택적 정보 |
+| `count` 등 | 필요 시 결과 건수·지연시간 등 비민감 선택적 정보. 일부 실패 시 `count`는 성공 건수 |
+| `failed_items[]` | 항목별 처리 단계에서 실패한 항목 목록 (선택). 각 요소는 `ref`, `error_code`, `retryable` |
+
+**항목별 실패 기록 (2026-11-05 결정):** 한 단계가 여러 항목을 처리하다 일부 또는 전부 실패하면 `failed_items[]`에 기록한다.
+
+- **`ref`:** 실패한 항목의 ID다. N-02는 `chunk_id`, N-03은 `claim_id`를 쓴다.
+- **단계 `status`:** 일부만 실패해도 `failed`로 적고 `count`로 성공 건수를 표시한다. 새 상태값은 만들지 않는다.
+- **전체 실패:** 노드가 `error`로 끝나 `data=null`이어도 `failed_items[]`는 남긴다.
+- **원문 제외:** ID와 오류 코드만 남기고 원문은 넣지 않는다.
+- **적용 범위:** 항목별 처리가 있는 단계에만 쓴다. 검색기처럼 이미 단계가 나뉜 경우에는 쓰지 않는다.
+
+```json
+"resolve_source_spans": {
+  "status": "failed",
+  "count": 3,
+  "failed_items": [
+    {"ref": "chunk_042", "error_code": "BLOCK_NOT_FOUND", "retryable": false},
+    {"ref": "chunk_057", "error_code": "SOURCE_READ_FAILED", "retryable": true}
+  ]
+}
+```
 
 **확정 범위:** 공통 4개 키, 실행 상태 분류, 딕셔너리 기반 단계 식별·오류 기록. **추후 확정:** 개별 단계별 전체 오류 코드 목록과 선택적 진단 필드, 재시도 정책.
 
@@ -142,6 +162,7 @@ NodeResult[RetrievalCandidates]
 {
   "status": "success",
   "data": {
+    "request_ref": "req_001",
     "candidates": [],
     "index_refs": {
       "dense": "dense-index-v3",
@@ -203,12 +224,13 @@ Dense 검색에 실패했고 BM25 검색은 정상 완료됐지만 후보가 없
 - **전체 11개 Small Node에 공통 적용**한다. `data` 안의 정확한 필드와 `outcome` 코드 목록은 노드별 상세 계약에서 따로 확정한다.
 - 상위 처리에서 `status`와 `diagnostics`를 사용하되, 공통 반환 계약 안에 업무별 Small Node 연결이나 조건부 엣지를 정의하지 않는다.
 - 노드/함수의 개수를 늘리지 않으며 Tiny Node 계층을 추가하지 않는다.
+- **빈 입력 (2026-11-05 결정):** 앞 노드의 결과를 입력으로 받는 Small Node는 빈 목록을 정상 입력으로 보고 `status=success`와 빈 결과를 반환하며 외부 호출을 하지 않는다. `null`은 앞 단계 실패를 넘긴 계약 위반이므로 `status=error`다.
 
 ## 7. 공통 테스트 체크리스트
 
 1. 정상 실행 + 선택적 단계 `skipped`: `status=success` 허용
 2. 모든 필수 검색 단계 정상 완료 + 빈 결과: `status=success`, `outcome=no_candidates`, `data.candidates=[]` (N-01 예시)
-3. 일부 단계 실패 + 안전한 부분 결과: `partial`, `data` 보존(검색 후보 `[]` 가능), 실패 단계/원인 명시
+3. 일부 단계 실패 + 안전한 부분 결과: `partial`, `data` 보존(검색 후보 `[]` 가능), 실패 단계/원인 명시. 항목별 처리 단계는 `failed_items[]`에 실패 항목 기록
 4. 모든 필수 단계 실패 또는 권한/버전 오류: `error`, 위험한 `data` 반환 금지
 5. 업무상 결과인 '미충족·근거 부족·비교 불가능'을 실행 `error`와 혼동하지 않기
 6. 직렬화 시 **`status` / `data` / `diagnostics` / `outcome` 네 키 모두 포함**(`data/outcome=null`, `diagnostics={}` 허용)
