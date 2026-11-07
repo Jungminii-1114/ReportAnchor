@@ -10,7 +10,7 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 |---|---|
 | `01 · Foundation — v0.1` | 최초 디자인 언어 보드. 기록용으로만 유지 |
 | `02 · Structure — v3` | HIG식 소스 목록 + 문서 + 인스펙터 구조 (1440×960) |
-| `03 · Material 3` | M3를 적용한 기본 워크스페이스. `Before — current` 프레임은 v3 비교용 |
+| `03 · Material 3` | M3 + 톤 분리 워크스페이스. `Before — current` 프레임은 v3 비교용 |
 | `04 · M3 System` | M3 토큰 보드 + 컴포넌트/상태 시트 |
 | `05 · States` | 근거 부족 · 색인 중 · 검토 완료 상태 화면 3종 |
 
@@ -39,6 +39,7 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 | v3 | 2026-11-04 | 브레드크럼 페이지 · 중복 줌 제거 | `versions/reportanchor-workspace_v3_2026-11-04.figcraft` |
 | v4 | 2026-11-04 | Material 3 적용 · 중복 크럼/루트 제거 · 검토 패널 단일 스크롤 | `versions/reportanchor-workspace_v4_2026-11-04.figcraft` |
 | v5 | 2026-11-07 | 핸드오프 세트 — M3 토큰/컴포넌트 보드 · 상태 3종 | `versions/reportanchor-workspace_v5_2026-11-07.figcraft` |
+| v6 | 2026-11-07 | 윤곽선·그림자 제거 · 표면 톤 분리 · 보드/상태 동기화 | `versions/reportanchor-workspace_v6_2026-11-07.figcraft` |
 
 ## Material 3 기준
 
@@ -47,8 +48,19 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 - 상태 색은 항상 텍스트 라벨과 함께 씁니다: `뒷받침` · `모순` · `근거 부족` · `부분 답변` · `답변 완료`.
 - 서체: UI `Noto Sans KR`, 문서 `Noto Serif KR`, 메타 `JetBrains Mono`.
 - 타입: 라벨 10–13, 본문 14/24, 제목 16, 질문 16, 지면 H1 24, 통계 32.
-- 색 역할: primary `#1F6B54`, primaryContainer `#D5EBE0`, secondaryContainer `#E3F1EA`, tertiary `#9A5B00`, error `#B42318`, surface `#FFFDF8`, outlineVariant `#E4DED1`.
+- 색 역할: primary `#1F6B54`, primaryContainer `#D5EBE0`, secondaryContainer `#E3F1EA`, tertiary `#9A5B00`, error `#B42318`, surface `#FFFDF8`, surfaceContainer `#F6F3EC`, surfaceContainerHigh `#F1EDE3`, surfaceContainerHighest `#EAE5D9`, desk `#EFEBE1`, outlineVariant `#E4DED1`.
 - 상호작용: hover 8% · focus 12% · pressed 16% · disabled 38%, focus ring 2px + offset 2px.
+
+## 톤 분리 원칙
+
+YouTube·Pixel OS처럼 장식적 윤곽선 대신 표면 톤으로 영역을 나눕니다.
+
+- 장식적 1px 구분선과 컨테이너 외곽선을 두지 않습니다.
+- 영역 톤: 상단 밴드 `#F6F3EC` · 사이드바 `#EAE5D9` · 데스크 `#EFEBE1` · 지면/패널 `#FFFDF8`.
+- 지면은 테두리나 그림자 없이 데스크와의 톤 차이로만 뜹니다.
+- 칩·입력·보조 버튼은 외곽선 대신 tonal fill(`#F6F3EC` / `#F1EDE3` / container 색)을 씁니다.
+- 기능적 선은 유지합니다: 포커스 링 2px · 탭 인디케이터 3px · 아이콘 스트로크.
+- 표면 단계: `surface` → `surfaceContainerLow` → `surfaceContainer` → `surfaceContainerHigh` → `surfaceContainerHighest`.
 
 ## 상태 화면
 
