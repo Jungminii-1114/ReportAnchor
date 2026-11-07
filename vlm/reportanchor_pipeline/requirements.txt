@@ -1,7 +1,0 @@
-pymupdf
-numpy
-scipy
-Pillow
-docling
-easyocr
-torch
