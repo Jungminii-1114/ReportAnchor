@@ -60,6 +60,7 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 | v15 | 2026-11-07 | 검토 패널 `⋯`에 대화 메뉴 추가 · 검토 기록/새 질문/공유/대화 내보내기 · 레거시 페이지를 뒤로 이동 | `versions/reportanchor-workspace_v15_2026-11-07.figcraft` |
 | v16 | 2026-11-07 | 03의 레거시 비교 프레임을 세로 스택 맨 아래로 이동 · 페이지 순서 원복 | `versions/reportanchor-workspace_v16_2026-11-07.figcraft` |
 | v17 | 2026-11-07 | `자세히 보기`를 펼침으로 명확화 · 화살표 `⌄`/`⌃` · 근거 펼침 레이아웃(클레임 3·연결 자료 2·노트 1) | `versions/reportanchor-workspace_v17_2026-11-07.figcraft` |
+| v18 | 2026-11-07 | 레거시 비교 프레임을 LAYOUT 08 아래로 다시 이동 | `versions/reportanchor-workspace_v18_2026-11-07.figcraft` |
 
 ## Material 3 기준
 
@@ -229,7 +230,7 @@ YouTube·Pixel OS처럼 장식적 윤곽선 대신 표면 톤으로 영역을 �
 
 - 현재 핸드오프에 쓰지 않는 페이지·프레임은 이름 앞에 `LEGACY ·`를 붙입니다. 대상: 01 Foundation, 02 Structure v3, 03의 `LEGACY · Before — current (v3)`.
 - `03 · Material 3`, `04 · M3 System`, `05 · States`는 현재 기준이므로 접두사를 붙이지 않습니다.
-- `03`의 `LEGACY · Before — current (v3)` 비교 프레임은 현재 레이아웃 세로 스택이 끊기지 않도록 맨 아래(y=8800)에 둡니다. 페이지 순서는 기존대로 `LEGACY · 01` → `LEGACY · 02` → `03` → `04` → `05`입니다.
+- `03`의 `LEGACY · Before — current (v3)` 비교 프레임은 현재 레이아웃 스택(01–08) 아래, y=10960에 둡니다. 새 레이아웃을 추가하면 그 아래로 다시 내려 순서를 유지합니다. 페이지 순서는 기존대로 `LEGACY · 01` → `LEGACY · 02` → `03` → `04` → `05`입니다.
 - `legacy/panel-modes/` — 우측 패널 확장 모드 보드와 4개 패널, 내보내기 이미지
   - `근거 대조`, `기준 검증`, `노트`, `검토 기록`
   - 2026-11-04 기준 메인 범위에서 제외. 삭제하지 않고 보관만 합니다.
