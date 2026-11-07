@@ -1,5 +1,7 @@
 # ReportAnchor 로컬 RAG 데모
 
+> **버전 안내 (2026-11-05):** 아래 내용은 이전 구현의 설명·검증 기록이다. 현재의 청크별 근거 구조, 주장 출력과 보정 호출은 [최신 JM 계약 및 실행 방법](js-contract-migration.md)을 따른다. 예전 `items/evidence_id/citations` 및 문맥 병합 예제를 현재 API에 그대로 적용하지 않는다.
+
 Kotaemon의 문서 / 검색 / 원문 패널 구성을 참고한 독립적인 데모 화면이다.
 Kotaemon을 설치하거나 그 검색 파이프라인으로 교체하지 않는다.
 

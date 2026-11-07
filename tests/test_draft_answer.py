@@ -11,8 +11,7 @@ from unittest.mock import patch
 from urllib.error import HTTPError, URLError
 
 from rag.contracts import (
-    ContextExpansionConfig, EvidenceAnchor, EvidenceBundle, EvidenceItem,
-    NodeResult, ReviewDraft, SourceSpan,
+    EvidenceBundle, EvidenceItem, NodeResult, ReviewDraft,
 )
 from rag.nodes.draft_answer import DraftAnswerNode, load_evidence_bundle, main
 
@@ -20,38 +19,24 @@ from rag.nodes.draft_answer import DraftAnswerNode, load_evidence_bundle, main
 class DraftAnswerTests(unittest.TestCase):
     def setUp(self):
         self.text = "2025년 경상운영비는 4,566백만원이며, 전년 대비 34백만원 증가하였다."
-        span = SourceSpan("b1", 1, 0, len(self.text), self.text, {}, "synthetic", "unverified")
-        item = EvidenceItem(
-            "evidence_demo_001", "demo_doc", "demo_version", [1], self.text,
-            [span], [EvidenceAnchor("c1", 1, self.text, [span])], "unverified",
-        )
-        self.bundle = EvidenceBundle(
-            "demo_request", [item], ContextExpansionConfig(), len(self.text),
-            1, 1, [], False,
-        )
-        self.question = "2025년 경상운영비는 얼마인가?"
-        self.payload = {
-            "claims": [{
-                "text": "2025년 경상운영비는 4,566백만원이다.",
-                "citations": [{
-                    "evidence_id": item.evidence_id,
-                    "quote": "2025년 경상운영비는 4,566백만원",
-                }],
-            }],
-            "missing_information": [],
-        }
+        item = EvidenceItem('c1', 'demo_doc', 'demo_version', 1, self.text,
+                            [dict(block_id='b1', start_offset=0, end_offset=len(self.text), source_locator={})], False)
+        self.bundle = EvidenceBundle('demo_request', [item], 'fixed-test-v1')
+        self.question = '2025년 경상운영비는 얼마인가?'
+        self.payload = dict(claims=[dict(claim_text='2025년 경상운영비는 4,566백만원이다.',
+                                       evidence_refs=['c1'])], unanswered_items=[])
         self.raw = json.dumps(self.payload, ensure_ascii=False)
         self.node = DraftAnswerNode("test-model", "http://localhost:11434")
         # 각 테스트가 가짜 응답을 지정한 경우 외에는 통신을 금지한다.
         self.transport = patch(
-            "rag.nodes.draft_answer.urlopen",
+            "rag.llm.ollama_client.urlopen",
             side_effect=AssertionError("실제 API 호출은 금지되어 있습니다."),
         ).start()
         self.addCleanup(patch.stopall)
 
     def run_with_response(self, response):
-        with patch.object(self.node, "_call_ollama", return_value=response):
-            return self.node.run(self.question, self.bundle)
+        with patch.object(self.node.client, "chat", return_value=response):
+            return self.node.run("demo_request", self.question, self.bundle)
 
     def test_success_returns_node_result_and_preserves_inputs(self):
         before = asdict(self.bundle)
@@ -61,20 +46,18 @@ class DraftAnswerTests(unittest.TestCase):
         self.assertEqual(result.status, "success")
         self.assertIsNone(result.outcome)
         self.assertEqual(result.data.request_ref, "demo_request")
-        self.assertEqual(result.data.question, self.question)
         self.assertEqual(result.data.claims[0].claim_id, "claim_0001")
-        self.assertEqual(result.data.claims[0].citations[0].quote,
-                         self.payload["claims"][0]["citations"][0]["quote"])
+        self.assertEqual(result.data.claims[0].evidence_refs, ["c1"])
         self.assertEqual(result.diagnostics["parse_and_validate_draft"].count, 1)
         self.assertEqual(asdict(self.bundle), before)
         json.dumps(asdict(result), ensure_ascii=False)
 
     def test_input_errors_never_call_model(self):
-        with patch.object(self.node, "_call_ollama") as model:
+        with patch.object(self.node.client, "chat") as model:
             for question, bundle in [(" ", self.bundle), (None, self.bundle),
                                      (self.question, None), (self.question, {})]:
                 with self.subTest(question=question, bundle_type=type(bundle).__name__):
-                    result = self.node.run(question, bundle)
+                    result = self.node.run("demo_request", question, bundle)
                     self.assertEqual(result.status, "error")
                     self.assertIsNone(result.data)
                     self.assertFalse(result.diagnostics["validate_draft_input"].retryable)
@@ -83,37 +66,36 @@ class DraftAnswerTests(unittest.TestCase):
     def test_malformed_and_duplicate_evidence_rejected_before_call(self):
         for variant, expected in [("wrong_item", "INVALID_EVIDENCE_ITEM"),
                                   ("empty_text", "INVALID_EVIDENCE_ITEM"),
-                                  ("duplicate", "DUPLICATE_EVIDENCE_ID")]:
+                                  ("duplicate", "INVALID_EVIDENCE_ITEM")]:
             bundle = deepcopy(self.bundle)
             if variant == "wrong_item":
-                bundle.items = [{}]
+                bundle.evidence_items = [{}]
             elif variant == "empty_text":
-                bundle.items[0].text = " "
+                bundle.evidence_items[0].context_text = " "
             else:
-                bundle.items.append(deepcopy(bundle.items[0]))
-            with self.subTest(variant=variant), patch.object(self.node, "_call_ollama") as model:
-                result = self.node.run(self.question, bundle)
+                bundle.evidence_items.append(deepcopy(bundle.evidence_items[0]))
+            with self.subTest(variant=variant), patch.object(self.node.client, "chat") as model:
+                result = self.node.run("demo_request", self.question, bundle)
                 self.assertEqual(result.status, "error")
                 self.assertEqual(result.diagnostics["validate_draft_input"].error_code, expected)
                 model.assert_not_called()
 
     def test_empty_bundle_abstains_without_model_or_key(self):
         bundle = deepcopy(self.bundle)
-        bundle.items = []
-        bundle.char_count = bundle.requested_candidates = bundle.resolved_candidates = 0
+        bundle.evidence_items = []
         self.node = DraftAnswerNode("test-model", "https://ollama.com", provider="cloud")
-        with patch.object(self.node, "_call_ollama") as model:
-            result = self.node.run(self.question, bundle)
+        with patch.object(self.node.client, "chat") as model:
+            result = self.node.run("demo_request", self.question, bundle)
             model.assert_not_called()
         self.assertEqual(result.status, "success")
         self.assertEqual(result.outcome, "insufficient_evidence")
         self.assertEqual(result.data.claims, [])
-        self.assertTrue(result.data.missing_information)
+        self.assertTrue(result.data.unanswered_items)
         self.assertEqual(result.diagnostics["call_ollama"].status, "skipped")
 
     def test_model_abstention_is_success_not_transport_failure(self):
         result = self.run_with_response(json.dumps({
-            "claims": [], "missing_information": ["관련 근거가 부족합니다."],
+            "claims": [], "unanswered_items": ["관련 근거가 부족합니다."],
         }))
         self.assertEqual(result.status, "success")
         self.assertEqual(result.outcome, "insufficient_evidence")
@@ -126,8 +108,8 @@ class DraftAnswerTests(unittest.TestCase):
             self.node = DraftAnswerNode("test-model", "http://localhost:11434")
             for key, value in settings.items():
                 setattr(self.node, key, value)
-            with self.subTest(settings=settings), patch.object(self.node, "_call_ollama") as model:
-                result = self.node.run(self.question, self.bundle)
+            with self.subTest(settings=settings), patch.object(self.node.client, "chat") as model:
+                result = self.node.run("demo_request", self.question, self.bundle)
                 self.assertEqual(result.status, "error")
                 self.assertIn("validate_model_config", result.diagnostics)
                 model.assert_not_called()
@@ -139,8 +121,8 @@ class DraftAnswerTests(unittest.TestCase):
             ("https://example.invalid", "mock-key", "INVALID_MODEL_URL"),
         ]:
             self.node = DraftAnswerNode("test-model", base_url, provider="cloud", api_key=api_key)
-            with self.subTest(url=base_url), patch.object(self.node, "_call_ollama") as model:
-                result = self.node.run(self.question, self.bundle)
+            with self.subTest(url=base_url), patch.object(self.node.client, "chat") as model:
+                result = self.node.run("demo_request", self.question, self.bundle)
                 self.assertEqual(result.status, "error")
                 self.assertEqual(result.diagnostics["validate_model_config"].error_code, code)
                 model.assert_not_called()
@@ -148,8 +130,8 @@ class DraftAnswerTests(unittest.TestCase):
     def test_http_errors_report_retryability_without_raw_details(self):
         for code, retryable in [(401, False), (404, False), (429, True), (503, True)]:
             error = HTTPError("https://ollama.com/api/chat", code, "private detail", {}, None)
-            with self.subTest(code=code), patch.object(self.node, "_call_ollama", side_effect=error):
-                result = self.node.run(self.question, self.bundle)
+            with self.subTest(code=code), patch.object(self.node.client, "chat", side_effect=error):
+                result = self.node.run("demo_request", self.question, self.bundle)
                 diagnostic = result.diagnostics["call_ollama"]
                 self.assertEqual(result.status, "error")
                 self.assertIsNone(result.data)
@@ -165,8 +147,8 @@ class DraftAnswerTests(unittest.TestCase):
             (URLError("offline"), "MODEL_CONNECTION_FAILED"),
             (ConnectionResetError(), "MODEL_CONNECTION_FAILED"),
         ]:
-            with self.subTest(error=type(error).__name__), patch.object(self.node, "_call_ollama", side_effect=error):
-                result = self.node.run(self.question, self.bundle)
+            with self.subTest(error=type(error).__name__), patch.object(self.node.client, "chat", side_effect=error):
+                result = self.node.run("demo_request", self.question, self.bundle)
                 diagnostic = result.diagnostics["call_ollama"]
                 self.assertEqual(diagnostic.error_code, code)
                 self.assertTrue(diagnostic.retryable)
@@ -176,7 +158,7 @@ class DraftAnswerTests(unittest.TestCase):
             self.transport.side_effect = None
             self.transport.return_value = io.BytesIO(json.dumps(response_body).encode())
             with self.subTest(response=response_body):
-                result = self.node.run(self.question, self.bundle)
+                result = self.node.run("demo_request", self.question, self.bundle)
                 self.assertEqual(result.status, "error")
                 self.assertEqual(result.diagnostics["call_ollama"].error_code, "INVALID_MODEL_RESPONSE")
 
@@ -184,12 +166,12 @@ class DraftAnswerTests(unittest.TestCase):
         bad_cases = ["not JSON", "[]"]
         for update in [
             lambda d: d.pop("claims"),
-            lambda d: d.update(missing_information="none"),
+            lambda d: d.update(unanswered_items="none"),
             lambda d: d.update(claims=[]),
-            lambda d: d["claims"][0].update(text=" "),
-            lambda d: d["claims"][0].update(citations=[]),
-            lambda d: d["claims"][0]["citations"][0].update(evidence_id="unknown"),
-            lambda d: d["claims"][0]["citations"][0].update(quote="9,999백만원"),
+            lambda d: d["claims"][0].update(claim_text=" "),
+            lambda d: d["claims"][0].update(evidence_refs=[]),
+            lambda d: d["claims"][0].update(evidence_refs=["unknown"]),
+            lambda d: d["claims"][0].update(evidence_refs="c1"),
         ]:
             data = deepcopy(self.payload)
             update(data)
@@ -206,7 +188,7 @@ class DraftAnswerTests(unittest.TestCase):
         self.node = DraftAnswerNode("test-model", "https://ollama.com", provider="cloud", api_key="mock-key")
         self.transport.side_effect = None
         self.transport.return_value = io.BytesIO(json.dumps({"message": {"content": self.raw}}).encode())
-        result = self.node.run(self.question, self.bundle)
+        result = self.node.run("demo_request", self.question, self.bundle)
         self.assertEqual(result.status, "success")
         request = self.transport.call_args.args[0]
         self.assertEqual(request.full_url, "https://ollama.com/api/chat")
@@ -218,7 +200,7 @@ class DraftAnswerTests(unittest.TestCase):
     def test_programming_errors_are_not_silently_hidden(self):
         with patch.object(self.node, "_build_prompt", side_effect=RuntimeError("bug")):
             with self.assertRaises(RuntimeError):
-                self.node.run(self.question, self.bundle)
+                self.node.run("demo_request", self.question, self.bundle)
 
 
     def test_load_bundle_and_node_result_preserve_nested_contracts(self):
@@ -230,16 +212,15 @@ class DraftAnswerTests(unittest.TestCase):
                     path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
                     loaded = load_evidence_bundle(path)
                     self.assertEqual(asdict(loaded), asdict(self.bundle))
-                    self.assertIsInstance(loaded.items[0].source_spans[0], SourceSpan)
-                    self.assertIsInstance(loaded.items[0].anchors[0], EvidenceAnchor)
+                    self.assertIsInstance(loaded.evidence_items[0], EvidenceItem)
 
     def test_invalid_n02_file_rejected(self):
         cases = [[], {"status": "error", "data": None}]
         for change in [
-            lambda d: d.update(char_count=1),
-            lambda d: d.update(resolved_candidates=5),
-            lambda d: d["items"][0].update(text="changed"),
-            lambda d: d["items"][0]["source_spans"][0].update(end_char=9999),
+            lambda d: d.update(evidence_items=None),
+            lambda d: d.update(evidence_items=[None]),
+            lambda d: d.pop('request_ref'),
+            lambda d: d['evidence_items'][0].pop('chunk_id'),
         ]:
             payload = asdict(self.bundle)
             change(payload)
@@ -264,16 +245,16 @@ class DraftAnswerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "n02.json"
             path.write_text(json.dumps({"status": "success", "data": asdict(self.bundle)}))
-            with patch.object(DraftAnswerNode, "_call_ollama", return_value=self.raw) as model:
+            with patch("rag.llm.ollama_client.OllamaClient.chat", return_value=self.raw) as model:
                 code, result = self.cli(path)
                 model.assert_called_once()
         self.assertEqual(code, 0)
         self.assertEqual(result["status"], "success")
         self.assertEqual(result["data"]["request_ref"], self.bundle.request_ref)
-        self.assertEqual(result["data"]["claims"][0]["citations"][0]["evidence_id"], "evidence_demo_001")
+        self.assertEqual(result["data"]["claims"][0]["evidence_refs"], ["c1"])
 
     def test_cli_missing_file_returns_error_without_model(self):
-        with tempfile.TemporaryDirectory() as directory, patch.object(DraftAnswerNode, "_call_ollama") as model:
+        with tempfile.TemporaryDirectory() as directory, patch("rag.llm.ollama_client.OllamaClient.chat") as model:
             code, result = self.cli(Path(directory) / "missing.json")
             model.assert_not_called()
         self.assertEqual(code, 2)
@@ -283,7 +264,7 @@ class DraftAnswerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "n02.json"
             path.write_text(json.dumps(asdict(self.bundle)))
-            with patch("rag.nodes.draft_answer.os.environ", {}), patch.object(DraftAnswerNode, "_call_ollama") as model:
+            with patch("rag.nodes.draft_answer.os.environ", {}), patch("rag.llm.ollama_client.OllamaClient.chat") as model:
                 code, result = self.cli(path, "cloud")
                 model.assert_not_called()
         self.assertEqual(code, 2)
@@ -294,7 +275,7 @@ class DraftAnswerTests(unittest.TestCase):
             path = Path(directory) / "n02.json"
             path.write_text(json.dumps(asdict(self.bundle)))
             with patch("rag.nodes.draft_answer.os.environ", {"OLLAMA_API_KEY": "mock-cli-key"}):
-                with patch.object(DraftAnswerNode, "_call_ollama", return_value=self.raw):
+                with patch("rag.llm.ollama_client.OllamaClient.chat", return_value=self.raw):
                     code, result = self.cli(path, "cloud")
         self.assertEqual(code, 0)
         self.assertNotIn("mock-cli-key", json.dumps(result))

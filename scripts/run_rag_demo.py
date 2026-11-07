@@ -114,14 +114,10 @@ class Demo:
         if result.data:
             context_result = get_source_context(result.data, self.lookup, self.blocks,
                 document_scope=request.document_scope, config=self.context_config)
-            context_by_chunk = {}
-            if context_result.data:
-                for item in context_result.data.items:
-                    for anchor in item.anchors:
-                        context_by_chunk.setdefault(anchor.chunk_id, []).append(item)
+            context_by_chunk = {i.chunk_id: i for i in context_result.data.evidence_items} if context_result.data else {}
             for candidate in result.data.candidates:
-                context_items = context_by_chunk.get(candidate.chunk_id)
-                if not context_items:
+                item = context_by_chunk.get(candidate.chunk_id)
+                if item is None:
                     continue
                 chunk = get_source_for_candidate(candidate, self.lookup)
                 text = reconstruct_chunk_text(chunk, self.blocks)
@@ -139,15 +135,11 @@ class Demo:
                     title=chunk.get('document_title', ''), pages=chunk['pdf_pages'], text=text,
                     matched_tokens=sorted(set(tokens) & set(tokenize(chunk['search_text']))),
                     reconstruction_match=True, verification_status=chunk.get('verification_status', 'unverified'),
-                    source_spans=spans,
-                    context_text='\n\n'.join(item.text for item in context_items),
-                    context_source_spans=[asdict(s) for item in context_items for s in item.source_spans],
-                    evidence_ids=[item.evidence_id for item in context_items],
-                    context_chunk_ids=sorted({a.chunk_id for item in context_items for a in item.anchors}),
-                    context_verification_status=(context_items[0].verification_status
-                        if len({item.verification_status for item in context_items}) == 1 else 'mixed'),
-                    page_block_count=sum(len(self.page_blocks.get((self.doc_id, self.version, p), []))
-                                         for p in chunk['pdf_pages']),
+                    source_spans=spans, context_text=item.context_text,
+                    context_source_spans=spans, evidence_refs=[item.chunk_id],
+                    context_chunk_ids=[item.chunk_id],
+                    context_verification_status=chunk.get('verification_status', 'unverified'),
+                    page_block_count=sum(len(self.page_blocks.get((self.doc_id, self.version, p), [])) for p in chunk['pdf_pages']),
                 ))
         if context_result is not None and context_result.data is not None:
             with self.lock:
@@ -176,7 +168,7 @@ class Demo:
                 return dict(request_ref=request_ref, draft=asdict(session['draft']),
                             generation=self.generation_info(), elapsed_ms=0, cached=True)
             started = time.perf_counter()
-            result = self.draft_node.run(session['question'], session['context'].data)
+            result = self.draft_node.run(request_ref, session['question'], session['context'].data)
             if result.status == 'success':
                 session['draft'] = result
             return dict(request_ref=request_ref, draft=asdict(result), generation=self.generation_info(),

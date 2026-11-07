@@ -41,7 +41,7 @@ class DemoDraftTests(unittest.TestCase):
     def setUp(self):
         self.demo.sessions.clear()
         self.demo.draft_node = DraftAnswerNode("test-model", "http://localhost:11434")
-        self.no_network = patch("rag.nodes.draft_answer.urlopen", side_effect=AssertionError("실제 모델 호출 금지"))
+        self.no_network = patch("rag.llm.ollama_client.urlopen", side_effect=AssertionError("실제 모델 호출 금지"))
         self.no_network.start()
         self.addCleanup(self.no_network.stop)
 
@@ -49,10 +49,9 @@ class DemoDraftTests(unittest.TestCase):
         return self.demo.search("2025년 경상운영비는 얼마인가?", 3)
 
     def model_response(self, result):
-        evidence = result["source_context"]["data"]["items"][0]
-        return json.dumps(dict(claims=[dict(text="2025년 경상운영비는 4,566백만원이다.",
-            citations=[dict(evidence_id=evidence["evidence_id"], quote="2025년 경상운영비는 4,566백만원")])],
-            missing_information=[]), ensure_ascii=False)
+        evidence = result['source_context']['data']['evidence_items'][0]
+        return json.dumps(dict(claims=[dict(claim_text='2025년 경상운영비는 4,566백만원이다.',
+                                           evidence_refs=[evidence['chunk_id']])], unanswered_items=[]), ensure_ascii=False)
 
     def test_search_does_not_call_model(self):
         with patch.object(self.demo.draft_node, "run") as run:
@@ -67,11 +66,11 @@ class DemoDraftTests(unittest.TestCase):
         request_ref = result["retrieval"]["data"]["request_ref"]
         session = self.demo.sessions[request_ref]
         before = asdict(session["context"].data)
-        with patch.object(self.demo.draft_node, "_call_ollama", return_value=self.model_response(result)):
+        with patch.object(self.demo.draft_node.client, "chat", return_value=self.model_response(result)):
             with patch.object(self.demo.draft_node, "run", wraps=self.demo.draft_node.run) as run:
                 answer = self.demo.draft(request_ref)
-                self.assertIs(run.call_args.args[1], session["context"].data)
-                self.assertEqual(run.call_args.args[0], result["query"])
+                self.assertIs(run.call_args.args[2], session["context"].data)
+                self.assertEqual(run.call_args.args[1], result["query"])
         self.assertEqual(answer["draft"]["status"], "success")
         self.assertEqual(asdict(session["context"].data), before)
         self.assertEqual(answer["generation"]["semantic_verification"], "not_implemented")
@@ -79,7 +78,7 @@ class DemoDraftTests(unittest.TestCase):
     def test_successful_repeated_request_does_not_bill_again(self):
         result = self.search()
         reference = result["retrieval"]["data"]["request_ref"]
-        with patch.object(self.demo.draft_node, "_call_ollama", return_value=self.model_response(result)) as model:
+        with patch.object(self.demo.draft_node.client, "chat", return_value=self.model_response(result)) as model:
             first = self.demo.draft(reference)
             second = self.demo.draft(reference)
             model.assert_called_once()
@@ -90,7 +89,7 @@ class DemoDraftTests(unittest.TestCase):
     def test_generation_error_keeps_search_sources_and_can_retry(self):
         result = self.search()
         reference = result["retrieval"]["data"]["request_ref"]
-        with patch.object(self.demo.draft_node, "_call_ollama", return_value="not JSON"):
+        with patch.object(self.demo.draft_node.client, "chat", return_value="not JSON"):
             answer = self.demo.draft(reference)
         self.assertEqual(answer["draft"]["status"], "error")
         self.assertTrue(result["sources"])
@@ -116,7 +115,7 @@ class DemoDraftTests(unittest.TestCase):
     def test_cloud_key_is_not_exposed_in_info_or_response(self):
         self.demo.draft_node = DraftAnswerNode("test-cloud", "https://ollama.com", provider="cloud", api_key="mock-private-key")
         result = self.search()
-        with patch.object(self.demo.draft_node, "_call_ollama", return_value=self.model_response(result)):
+        with patch.object(self.demo.draft_node.client, "chat", return_value=self.model_response(result)):
             answer = self.demo.draft(result["retrieval"]["data"]["request_ref"])
         self.assertNotIn("mock-private-key", json.dumps(self.demo.info()))
         self.assertNotIn("mock-private-key", json.dumps(answer))
@@ -125,7 +124,7 @@ class DemoDraftTests(unittest.TestCase):
     def test_empty_results_abstain_without_calling_model(self):
         result = self.demo.search("zzzxqv999xxxyyy", 3)
         reference = result["retrieval"]["data"]["request_ref"]
-        with patch.object(self.demo.draft_node, "_call_ollama") as model:
+        with patch.object(self.demo.draft_node.client, "chat") as model:
             answer = self.demo.draft(reference)
             model.assert_not_called()
         self.assertEqual(answer["draft"]["outcome"], "insufficient_evidence")

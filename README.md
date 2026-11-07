@@ -8,7 +8,9 @@
 
 > Find the evidence a review needs, inspect it in the original report, and distinguish supported findings from unresolved conditions.
 
-**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, fixed-length source-context expansion, a local source-inspection UI, and N-04 answer drafts with source citations. Generation supports local Ollama or optional Ollama Cloud; cloud mode sends the question and selected evidence to the cloud. N-03 claim verification and the complete agent workflow remain planned. Implemented features and MVP designs are distinguished below.
+**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, fixed-length source-context expansion, a local source-inspection UI, and N-04 answer drafts with source citations. Generation supports local Ollama or optional Ollama Cloud; cloud mode sends the question and selected evidence to the cloud. N-03 claim verification is available as a standalone Python node and CLI; its UI integration and the complete T-01 workflow remain planned. See the [N-03 guide](docs/n03-grounding.md). Implemented features and MVP designs are distinguished below.
+
+See the [current JM contracts and migration notes](docs/js-contract-migration.md) for the 2026-11-05 schema and API changes.
 
 ## Introduction
 
@@ -33,8 +35,8 @@ ReportAnchor began as an attempt to connect **repeated evidence search, source r
 
 - **PDF text extraction and chunking:** Extract native text, blocks, page numbers, and coordinates with PyMuPDF, then construct searchable chunks. OCR, table-structure interpretation, and HWP support are not completed in this extraction demo.
 - **Korean BM25 retrieval:** Apply the same Kiwi tokenization policy to documents and queries, returning ranked chunks and retrieval scores.
-- **Traceable source context:** Reconstruct chunks from original blocks, expand nearby text within the same page, and merge overlapping windows while preserving document versions, block IDs, character spans, and PDF locations. N-02 returns a typed `EvidenceBundle` with scope, integrity, and text-budget checks.
-- **Grounded answer drafts (N-04):** Generate claim-level citations, validate JSON structure and verbatim quote references, and report missing information. Semantic verification remains pending in N-03.
+- **Traceable source context:** Reconstruct chunks from original blocks, expand nearby text within the same page, and keep one evidence item per chunk while preserving document versions, block IDs, character spans, and PDF locations. Overlapping contexts remain separate. N-02 returns a typed `EvidenceBundle` with scope, integrity, and text-budget checks.
+- **Grounded answer drafts (N-04):** Generate sentence-level claims with chunk references and unanswered items. Validate JSON structure and reference IDs; support a targeted correction call that preserves claim IDs. Semantic verification and the T-01 correction loop remain pending.
 - **Local source-inspection UI:** View document settings, ranked results, and the source PDF side by side. Inspect referenced block regions, extracted text, and the N-01 response JSON, or download the result.
 
 ![ReportAnchor retrieval results beside the source PDF](docs/images/rag-demo-source-context.png)
@@ -128,7 +130,7 @@ The current sample document produces these results.
 
 For example, compare the contribution-funding row on PDF page 109: **2024: 2,607 / 2025: 2,638 / change: 31 million KRW**. Physical PDF pages may differ from printed page labels. BM25 scores rank relevance; they are not accuracy estimates or probabilities.
 
-**Reconstruction match** means that the stored block spans reproduce the chunk text. It does not establish PDF extraction accuracy, correct table structure, or factual answer generation. N-03 claim verification is not implemented yet.
+**Reconstruction match** means that the stored block spans reproduce the chunk text. It does not establish PDF extraction accuracy, correct table structure, or factual answer generation. Standalone N-03 verification is implemented; actual model judgment accuracy has not been evaluated, and the web demo does not run N-03 yet.
 
 The November 2, 2026 record of 26 web/API checks and 12 existing BM25/contract tests is described in the [demo check record](docs/reports/rag-demo-ui-checks.json) and [source-inspection guide](docs/rag-demo-ui.md). These are functional checks, not retrieval-accuracy evaluations.
 

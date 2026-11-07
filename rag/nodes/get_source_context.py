@@ -2,7 +2,7 @@
 N-02: 검색 후보의 원문을 조회하고 고정 길이 문맥을 EvidenceBundle로 반환한다.
 
 검색·생성·사실 검증을 하지 않는다. 원문 저장 순서를 유지하며, 같은 문서/버전/
-페이지에서 겹치는 창만 병합한다. 후보 원문은 예산 때문에 일부만 잘라내지 않는다.
+페이지에서 청크별 문맥을 독립적으로 보존한다. 후보 원문은 예산 때문에 일부만 잘라내지 않는다.
 """
 from __future__ import annotations
 
@@ -16,8 +16,8 @@ from pathlib import Path
 from typing import Mapping
 
 from rag.contracts import (
-    ContextExpansionConfig, DocumentRef, EvidenceAnchor, EvidenceBundle, EvidenceItem,
-    NodeResult, RetrievalCandidate, RetrievalCandidates, SourceSpan, StepDiagnostic,
+    ContextExpansionConfig, DocumentRef, EvidenceBundle, EvidenceItem,
+    NodeResult, RetrievalCandidate, RetrievalCandidates, SourceSpan, StepDiagnostic, FailedItem,
 )
 
 
@@ -177,28 +177,13 @@ class _Page:
         return result
 
 
-@dataclass
-class _Window:
-    page: _Page
-    start: int
-    end: int
-    anchors: list[EvidenceAnchor]
 
 
-def _merge(windows: list[_Window]) -> list[_Window]:
-    merged = []
-    for window in sorted(windows, key=lambda w: (w.page.key, w.start, w.end)):
-        if merged and merged[-1].page.key == window.page.key and window.start <= merged[-1].end:
-            previous = merged[-1]
-            previous.end = max(previous.end, window.end)
-            previous.anchors.extend(window.anchors)
-        else:
-            merged.append(_Window(window.page, window.start, window.end, list(window.anchors)))
-    return merged
 
 
-def _size(windows: list[_Window]) -> int:
-    return sum(len("\n".join(s.text for s in w.page.spans(w.start, w.end))) for w in windows)
+
+
+
 
 
 def _failed(code: str, reason: str, diagnostics=None):
@@ -215,45 +200,54 @@ def get_source_context(
     *,
     document_scope: list[DocumentRef],
     config: ContextExpansionConfig | None = None,
+    context_profile_ref: str | None = None,
 ) -> NodeResult[EvidenceBundle]:
-    """파일을 다시 읽지 않고 후보를 허용 범위의 원문 문맥에 연결한다."""
+    """One retrieval chunk produces one evidence item; overlapping items stay separate."""
     diagnostics = {}
     try:
         config = ContextExpansionConfig() if config is None else config
         if not isinstance(config, ContextExpansionConfig):
-            raise ValueError("문맥 설정 타입이 올바르지 않습니다.")
-        if not isinstance(retrieval, RetrievalCandidates):
-            raise ValueError("RetrievalCandidates 입력이 필요합니다.")
-        if not isinstance(retrieval.request_ref, str) or not retrieval.request_ref.strip():
-            raise ValueError("요청 참조가 필요합니다.")
-        if (not isinstance(document_scope, list) or not document_scope
-                or any(not isinstance(d, DocumentRef) for d in document_scope)):
-            raise ValueError("명시적인 허용 문서·버전 범위가 필요합니다.")
-        if not isinstance(retrieval.candidates, list):
-            raise ValueError("검색 후보 목록이 필요합니다.")
+            raise ValueError('잘못된 문맥 설정입니다.')
+        config.__post_init__()
+        if (not isinstance(retrieval, RetrievalCandidates)
+                or not isinstance(retrieval.request_ref, str) or not retrieval.request_ref.strip()
+                or not isinstance(retrieval.candidates, list)):
+            raise ValueError('검색 후보 형식이 올바르지 않습니다.')
+        if not isinstance(chunk_lookup, Mapping) or not isinstance(block_lookup, Mapping):
+            raise ValueError('청크·블록 조회표가 필요합니다.')
+        if not isinstance(document_scope, list) or any(not isinstance(d, DocumentRef) for d in document_scope):
+            raise ValueError('문서 범위 형식이 올바르지 않습니다.')
+        for document in document_scope:
+            document.__post_init__()
         allowed = {(d.document_id, d.document_version) for d in document_scope}
-        # 어떤 후보도 처리하기 전에 전체 요청의 범위를 먼저 검증한다.
         identities = {}
         for candidate in retrieval.candidates:
             if not isinstance(candidate, RetrievalCandidate):
-                raise ValueError("검색 후보 타입이 올바르지 않습니다.")
+                raise ValueError('검색 후보 형식이 올바르지 않습니다.')
             candidate.__post_init__()
-            if (candidate.document_id, candidate.document_version) not in allowed:
-                return _failed("DOCUMENT_SCOPE_MISMATCH", "허용되지 않은 문서·버전의 후보가 있습니다.")
-            identity = (candidate.document_id, candidate.document_version)
+            identity = candidate.document_id, candidate.document_version
+            if identity not in allowed:
+                return _failed('DOCUMENT_SCOPE_MISMATCH', '허용되지 않은 문서·버전의 후보입니다.')
             if candidate.chunk_id in identities and identities[candidate.chunk_id] != identity:
-                return _failed("CONFLICTING_CANDIDATE_REFERENCE", "같은 청크 ID에 서로 다른 문서·버전이 지정됐습니다.")
+                return _failed('CONFLICTING_CANDIDATE_REFERENCE', '같은 청크 ID가 서로 다른 문서·버전을 가리킵니다.')
             identities[candidate.chunk_id] = identity
-        if not isinstance(chunk_lookup, Mapping) or not isinstance(block_lookup, Mapping):
-            raise ValueError("청크·블록 조회표가 필요합니다.")
+        if context_profile_ref is None:
+            digest = hashlib.sha256(json.dumps(asdict(config), sort_keys=True).encode()).hexdigest()[:16]
+            context_profile_ref = 'fixed-page-window-v2:' + digest
+        if not isinstance(context_profile_ref, str) or not context_profile_ref.strip():
+            raise ValueError('문맥 설정 참조가 필요합니다.')
+        if not retrieval.candidates:
+            return NodeResult('success', EvidenceBundle(retrieval.request_ref, [], context_profile_ref), {}, None)
         grouped = group_blocks_by_page(block_lookup)
+    except SourceContextError as error:
+        return _failed(error.code, str(error))
     except (ValueError, TypeError, KeyError, AttributeError):
-        return _failed("INVALID_SOURCE_CONTEXT_INPUT", "입력·설정 또는 원문 조회표 형식이 올바르지 않습니다.")
-    diagnostics["validate_source_context_input"] = StepDiagnostic("success")
-    windows, seen, skipped, pages = [], set(), [], {}
-    resolved, duplicates, limited = 0, 0, False
-    candidates = sorted(retrieval.candidates, key=lambda c: c.rank)
-    for number, candidate in enumerate(candidates, 1):
+        return _failed('INVALID_SOURCE_CONTEXT_INPUT', '입력·설정·원문 조회표를 확인하세요.')
+
+    diagnostics['validate_source_context_input'] = StepDiagnostic('success')
+    items, failed_items, excluded, seen, pages = [], [], [], set(), {}
+    used_chars, duplicates, budget_closed = 0, 0, False
+    for candidate in sorted(retrieval.candidates, key=lambda c: c.rank):
         if candidate.chunk_id in seen:
             duplicates += 1
             continue
@@ -261,69 +255,59 @@ def get_source_context(
         try:
             chunk = get_source_for_candidate(candidate, chunk_lookup)
             spans = _anchor_spans(chunk, block_lookup)
-            if "\n".join(s.text for s in spans) != chunk.get("text"):
-                raise SourceContextError("RECONSTRUCTION_MISMATCH", "청크 텍스트와 원본 블록 구간이 일치하지 않습니다.", fatal=True)
+            if '\n'.join(s.text for s in spans) != chunk.get('text'):
+                raise SourceContextError('RECONSTRUCTION_MISMATCH', '청크와 원본 블록 구간이 다릅니다.', fatal=True)
             by_page = {}
             for span in spans:
                 by_page.setdefault(span.pdf_page, []).append(span)
-            proposed, anchors_only = [], []
-            for page_number, source_spans in by_page.items():
-                key = (candidate.document_id, candidate.document_version, page_number)
+            expanded, anchor_parts, truncated = [], [], False
+            for page_number, anchors in by_page.items():
+                key = candidate.document_id, candidate.document_version, page_number
                 if key not in pages:
                     pages[key] = _Page.build(key, grouped.get(key, []))
                 page = pages[key]
-                first, last = source_spans[0], source_spans[-1]
-                start = page.offsets[first.block_id][0] + first.start_char
-                end = page.offsets[last.block_id][0] + last.end_char
-                anchor_text = "\n".join(s.text for s in source_spans)
-                if page.text[start:end] != anchor_text:
-                    raise SourceContextError("NONCONTIGUOUS_SOURCE_SPANS", "원문 구간의 순서 또는 연속성이 올바르지 않습니다.", fatal=True)
-                anchor = EvidenceAnchor(candidate.chunk_id, candidate.rank, anchor_text, source_spans)
-                proposed.append(_Window(page, max(0, start - config.before_chars),
-                                        min(len(page.text), end + config.after_chars), [anchor]))
-                anchors_only.append(_Window(page, start, end, [anchor]))
-            trial = _merge(windows + proposed)
-            if _size(trial) > config.max_total_chars:
-                limited = True
-                trial = _merge(windows + anchors_only)
-                if _size(trial) > config.max_total_chars:
-                    skipped.append(candidate.chunk_id)
-                    diagnostics[f"candidate_{number}"] = StepDiagnostic(
-                        "skipped", "CONTEXT_BUDGET_EXCEEDED", "원문을 자르지 않고 보존할 문자 예산이 부족합니다.", False)
-                    continue
-                # 확장은 선택 기능이다. 예산으로 줄여도 정상 원문을 반환하면 success이다.
-                diagnostics[f"context_expansion_{number}"] = StepDiagnostic(
-                    "skipped", reason="문자 예산에 따라 추가 문맥을 생략했습니다.", count=0)
-            windows = trial
-            resolved += 1
+                start = page.offsets[anchors[0].block_id][0] + anchors[0].start_char
+                end = page.offsets[anchors[-1].block_id][0] + anchors[-1].end_char
+                anchor = '\n'.join(s.text for s in anchors)
+                if page.text[start:end] != anchor:
+                    raise SourceContextError('NONCONTIGUOUS_SOURCE_SPANS', '원문 구간이 연속적이지 않습니다.', fatal=True)
+                left, right = max(0, start - config.before_chars), min(len(page.text), end + config.after_chars)
+                expanded.append('\n'.join(s.text for s in page.spans(left, right)))
+                anchor_parts.append(anchor)
+                truncated |= left != start - config.before_chars or right != end + config.after_chars
+            context_text = '\n\n'.join(expanded)
+            if used_chars + len(context_text) > config.max_total_chars:
+                context_text = '\n\n'.join(anchor_parts)
+                truncated = True
+            if budget_closed or used_chars + len(context_text) > config.max_total_chars:
+                budget_closed = True
+                excluded.append(candidate.chunk_id)
+                continue
+            source_refs = [dict(block_id=s.block_id, start_offset=s.start_char,
+                                end_offset=s.end_char, source_locator=deepcopy(s.source_locator),
+                                extraction_method=s.extraction_method, verification_status=s.verification_status) for s in spans]
+            items.append(EvidenceItem(candidate.chunk_id, candidate.document_id,
+                candidate.document_version, candidate.rank, context_text, source_refs, truncated))
+            used_chars += len(context_text)
         except SourceContextError as error:
             if error.fatal:
                 return _failed(error.code, str(error), diagnostics)
-            skipped.append(candidate.chunk_id)
-            diagnostics[f"candidate_{number}"] = StepDiagnostic("failed", error.code, str(error), False)
+            failed_items.append(FailedItem(candidate.chunk_id, error.code, False))
         except (KeyError, TypeError, ValueError, AttributeError):
-            return _failed("INVALID_SOURCE_DATA", "원문 데이터 형식이 올바르지 않습니다.", diagnostics)
-    items = []
-    for window in sorted(windows, key=lambda w: (min(a.rank for a in w.anchors), w.page.key)):
-        spans = window.page.spans(window.start, window.end)
-        signature = json.dumps([window.page.key,
-            [(s.block_id, s.start_char, s.end_char, s.text) for s in spans]], ensure_ascii=False)
-        evidence_id = "evidence_" + hashlib.sha256(signature.encode()).hexdigest()[:24]
-        statuses = {s.verification_status for s in spans}
-        items.append(EvidenceItem(evidence_id, window.page.key[0], window.page.key[1], [window.page.key[2]],
-                    "\n".join(s.text for s in spans), spans, sorted(window.anchors, key=lambda a: a.rank),
-                    next(iter(statuses)) if len(statuses) == 1 else "mixed"))
-    diagnostics["resolve_sources"] = StepDiagnostic("success" if not skipped else "failed",
-        "SOURCES_SKIPPED" if skipped else None,
-        "일부 후보의 원문을 반환하지 못했습니다." if skipped else None, False if skipped else None, resolved)
-    diagnostics["deduplicate_candidates"] = StepDiagnostic("success", count=duplicates)
-    diagnostics["build_evidence_bundle"] = StepDiagnostic("success", count=len(items))
-    bundle = EvidenceBundle(retrieval.request_ref, items, config, sum(len(i.text) for i in items),
-                            len(retrieval.candidates), resolved, skipped, limited)
-    if skipped and not items:
-        return _failed("NO_USABLE_SOURCE_CONTEXT", "안전하게 반환할 원문 근거를 확보하지 못했습니다.", diagnostics)
-    return NodeResult("partial" if skipped else "success", bundle, diagnostics,
-                      "no_candidates" if not candidates else None)
+            return _failed('INVALID_SOURCE_DATA', '원문 데이터의 형식·위치·순서를 확인하세요.', diagnostics)
+    diagnostics['resolve_sources'] = StepDiagnostic(
+        'failed' if failed_items else 'success',
+        error_code='SOURCES_UNAVAILABLE' if failed_items else None,
+        reason='일부 원문을 조회하지 못했습니다.' if failed_items else None,
+        count=len(items), failed_items=failed_items)
+    diagnostics['deduplicate_candidates'] = StepDiagnostic('success', count=duplicates)
+    diagnostics['context_budget'] = StepDiagnostic(
+        'skipped' if excluded else 'success', count=len(items), excluded_refs=excluded,
+        reason='출력 상한으로 낮은 순위 후보를 제외했습니다.' if excluded else None)
+    if failed_items and not items:
+        return _failed('NO_USABLE_SOURCE_CONTEXT', '반환할 원문 근거를 확보하지 못했습니다.', diagnostics)
+    return NodeResult('partial' if failed_items else 'success',
+        EvidenceBundle(retrieval.request_ref, items, context_profile_ref), diagnostics, None)
 
 
 def load_retrieval_result(path: Path) -> RetrievalCandidates:

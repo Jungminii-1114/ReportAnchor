@@ -31,22 +31,21 @@ function setBusy(value, task = 'search') {
   document.querySelectorAll('.sample').forEach(b => b.disabled = busy || !info);
   const completed = response?.draft?.status === 'success';
   $('draft-button').disabled = busy || !info?.generation?.enabled ||
-    !response?.source_context?.data?.items?.length || completed;
+    !response?.source_context?.data?.evidence_items?.length || completed;
   $('draft-button').textContent = generating ? '초안 생성 중…' : completed ? '초안 생성 완료' : '근거로 답변 생성 ↗';
 }
 
-function selectCitation(citation) {
-  const item = response?.source_context?.data?.items.find(i => i.evidence_id === citation.evidence_id);
-  const index = response?.sources.findIndex(s => s.evidence_ids.includes(citation.evidence_id));
-  if (!item || index < 0) return;
-  selectSource(response.sources[index], $('results').children[index]);
+function selectCitation(chunkId) {
+  const index = response?.sources.findIndex(s => s.chunk_id === chunkId);
+  if (index === undefined || index < 0) return;
+  const source = response.sources[index];
+  selectSource(source, $('results').children[index]);
   showTab('text');
-  const text = response.sources[index].context_text;
-  const start = text.indexOf(citation.quote);
+  const start = source.context_text.indexOf(source.text);
   if (start >= 0) {
-    $('source-text').replaceChildren(document.createTextNode(text.slice(0, start)),
-      element('mark', citation.quote, 'quote-highlight'),
-      document.createTextNode(text.slice(start + citation.quote.length)));
+    $('source-text').replaceChildren(document.createTextNode(source.context_text.slice(0, start)),
+      element('mark', source.text, 'quote-highlight'),
+      document.createTextNode(source.context_text.slice(start + source.text.length)));
   }
   document.querySelectorAll('.citation-button').forEach(b => b.classList.remove('active'));
   if (innerWidth <= 900) $('evidence').scrollIntoView({behavior: 'smooth', block: 'start'});
@@ -81,27 +80,27 @@ function renderDraft() {
   } else {
     $('draft-state').textContent = result.outcome === 'insufficient_evidence'
       ? '확보한 근거로는 답변을 작성할 수 없습니다. 아래 부족한 정보를 확인하세요.'
-      : `주장 ${result.data.claims.length}개 · 형식·인용 연결 검사 통과 · 의미 검증 전`;
+      : `주장 ${result.data.claims.length}개 · 형식·근거 참조 검사 통과 · 의미 검증 전`;
     result.data.claims.forEach((claim, number) => {
       const article = element('article', undefined, 'draft-claim');
       article.append(element('span', `CLAIM ${String(number + 1).padStart(2, '0')}`, 'claim-label'),
-        element('p', claim.text, 'claim-text'));
-      claim.citations.forEach((citation, citationNumber) => {
-        const item = response.source_context.data.items.find(i => i.evidence_id === citation.evidence_id);
+        element('p', claim.claim_text, 'claim-text'));
+      claim.evidence_refs.forEach((chunkId, citationNumber) => {
+        const source = response.sources.find(s => s.chunk_id === chunkId);
         const button = element('button', undefined, 'citation-button');
         button.type = 'button';
-        button.append(element('span', `근거 ${citationNumber + 1} · PDF ${item?.pdf_pages.join(', ') || '?'}페이지 ↗`, 'citation-label'),
-          element('blockquote', citation.quote));
-        button.addEventListener('click', () => { selectCitation(citation); button.classList.add('active'); });
+        button.append(element('span', `검색 근거 ${citationNumber + 1} · PDF ${source?.pages.join(', ') || '?'}페이지 ↗`, 'citation-label'),
+          element('blockquote', source?.text.slice(0, 180) || chunkId));
+        button.addEventListener('click', () => { selectCitation(chunkId); button.classList.add('active'); });
         article.append(button);
       });
       $('draft-claims').append(article);
     });
-    if (result.data.missing_information.length) {
+    if (result.data.unanswered_items.length) {
       $('draft-missing').hidden = false;
       $('draft-missing').append(element('strong', '추가로 필요한 정보'));
       const list = element('ul');
-      result.data.missing_information.forEach(text => list.append(element('li', text)));
+      result.data.unanswered_items.forEach(text => list.append(element('li', text)));
       $('draft-missing').append(list);
     }
   }
@@ -149,8 +148,8 @@ function setMetadata(source) {
     ['PDF 물리 페이지', source.pages.join(', ') + ' (인쇄 쪽번호와 다를 수 있음)'],
     ['원문 연결', `블록 구간 ${source.source_spans.length}개 · 복원 일치`],
     ['문맥 보강', `원래 청크 ${source.text.length}자 → 주변 문맥 포함 ${source.context_text.length}자`],
-    ['근거 항목 ID', source.evidence_ids.join(', ')],
-    ['연결된 검색 청크 수', source.context_chunk_ids.length + '개 (같은 페이지의 겹치는 문맥은 병합)'],
+    ['근거 항목 ID', source.evidence_refs.join(', ')],
+    ['연결된 검색 청크 수', source.context_chunk_ids.length + '개 (후보 1개당 근거 1개)'],
     ['문맥 정책', `앞 ${info.context_config.before_chars}자 / 뒤 ${info.context_config.after_chars}자 · 전체 ${info.context_config.max_total_chars}자 상한`],
     ['해당 페이지 전체 블록', source.page_block_count + '개'],
     ['추출 정확도 검증 상태', source.verification_status + ' · 인식 정확도 미검증'],

@@ -10,10 +10,11 @@ N-02는 `chunk_id`를 받고자 하는데, N-01이 `id`라는 이름으로 보�
 *여기서는 검색 요청,후보,결과 형식을 정의하도록 한다.
 """
 
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from typing import Generic, Literal, TypeVar, get_args
 
 import json
+from enum import Enum
 
 NodeStatus = Literal["success", "partial", "error"]
 StepStatus = Literal["success", "failed", "skipped"]
@@ -140,62 +141,54 @@ class SourceSpan:
                 raise ValueError("추출 방법과 검증 상태는 비어 있지 않은 문자열이어야 합니다.")
 
 
-@dataclass
-class EvidenceAnchor:
-    """확장·병합된 근거가 어느 검색 후보에서 시작했는지 보존한다.
 
-    여러 페이지 청크는 각 페이지의 원문 구간을 해당 근거 항목에 나누어 보존한다.
-    """
-    chunk_id: str
-    rank: int
-    text: str
-    source_spans: list[SourceSpan]
 
 
 @dataclass
 class EvidenceItem:
-    """같은 문서·버전·페이지 안에서 겹치는 문맥을 합친 근거 한 건."""
-    evidence_id: str
+    chunk_id: str
     document_id: str
     document_version: str
-    pdf_pages: list[int]
-    text: str
-    source_spans: list[SourceSpan]
-    anchors: list[EvidenceAnchor]
-    verification_status: str
-    reconstruction_match: bool = True
+    retrieval_rank: int
+    context_text: str
+    source_refs: list[dict]
+    context_truncated: bool
 
 
 @dataclass
 class EvidenceBundle:
-    """N-04에 전달할 근거. 검색 점수와 추출 정확도 검증을 혼동하지 않는다."""
     request_ref: str
-    items: list[EvidenceItem]
-    config: ContextExpansionConfig
-    char_count: int
-    requested_candidates: int
-    resolved_candidates: int
-    skipped_chunk_ids: list[str]
-    budget_limited: bool
-    context_strategy_version: str = "fixed-page-window-v1"
+    evidence_items: list[EvidenceItem]
+    context_profile_ref: str
 
-@dataclass
-class DraftCitation:
-    evidence_id: str                    # N-02가 만든 근거 항목 ID
-    quote: str                          # 그 근거에서 '그대로' 가져온 구절
+
 
 @dataclass
 class DraftClaim:
     claim_id: str
-    text: str
-    citations: list[DraftCitation]      # 해당 주장을 뒷받침한다고 제시한 근거
+    claim_text: str
+    evidence_refs: list[str]
 
 @dataclass
 class ReviewDraft:
     request_ref: str
-    question: str
-    claims: list[DraftClaim]            # 답변을 구성하는 개별 주장 목록
-    missing_information: list[str]      # 질문에 답하기 위해 추가로 필요한 정보
+    claims: list[DraftClaim]
+    unanswered_items: list[str]
+
+
+@dataclass
+class RevisionTarget:
+    claim_id: str
+    claim_text: str
+    reason: str
+    evidence_refs: list[str]
+
+
+@dataclass
+class FailedItem:
+    ref: str
+    error_code: str
+    retryable: bool
 
 @dataclass
 class StepDiagnostic:
@@ -204,6 +197,8 @@ class StepDiagnostic:
     reason: str | None = None
     retryable: bool | None = None
     count: int | None = None
+    failed_items: list[FailedItem] = field(default_factory=list)
+    excluded_refs: list[str] = field(default_factory=list)
 
     def __post_init__(self) -> None:
         # Literal은 타입 힌트이므로 허용값을 실행 시에도 확인한다.
@@ -225,6 +220,27 @@ class StepDiagnostic:
         if self.retryable is not None and type(self.retryable) is not bool:
             raise TypeError("retryable은 bool 또는 None이어야 합니다.")
 
+class Verdict(str, Enum):
+    SUPPORTED = "supported"
+    CONTRADICTED = "contradicted"
+    INSUFFICIENT = "insufficient"
+
+class Issues(str, Enum):
+    YEAR_MISMATCH = "year_mismatch"
+    UNIT_MISMATCH = "unit_mismatch"
+    UNSUPPORTED_CAUSALITY = "unsupported_causality"
+
+@dataclass
+class ClaimVerification:
+    claim_id: str
+    verdict: Verdict
+    reason: str
+    evidence_refs: list[str]
+
+@dataclass
+class VerificationReport:
+    request_ref: str
+    checks: list[ClaimVerification]
 
 T = TypeVar("T")                            # 업무 데이터 타입이 들어갈 자리
 
@@ -301,4 +317,23 @@ if __name__ == "__main__":
         document_version="example_version",
         rank=1,
         score_metadata={},
+    )
+
+    claim_result = ClaimVerification(
+        claim_id = "claim_0001",
+        verdict=Verdict.CONTRADICTED,
+        reason="주장은 2025년 금액이라고 설명하지만, 인용한 금액은 2024년에 해당한다.",
+        evidence_refs=["example_chunk"],
+    )
+
+    report = VerificationReport(
+        request_ref = "example_request",
+        checks=[claim_result],
+    )
+    print(
+        json.dumps(
+            asdict(report),
+            ensure_ascii=False,
+            indent=2
+        )
     )

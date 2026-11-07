@@ -1,4 +1,4 @@
-"""N-02의 원문 경계·확장·병합·예산·오류·CLI를 검증한다."""
+"""N-02의 원문 경계·확장·청크별 보존·예산·오류·CLI를 검증한다."""
 from copy import deepcopy
 from dataclasses import asdict
 import json
@@ -36,31 +36,38 @@ class SourceContextTests(unittest.TestCase):
         return get_source_context(data,self.lookup if lookup is None else lookup,self.blocks if blocks is None else blocks,
                                   document_scope=self.scope if scope is None else scope,config=config)
     def check_roundtrip(self,bundle):
-        self.assertEqual(bundle.char_count,sum(len(i.text) for i in bundle.items))
-        self.assertLessEqual(bundle.char_count,bundle.config.max_total_chars)
-        for i in bundle.items:
-            self.assertEqual(i.text,'\n'.join(s.text for s in i.source_spans))
-            for s in i.source_spans:self.assertEqual(s.text,self.blocks[s.block_id]['text'][s.start_char:s.end_char])
+        for item in bundle.evidence_items:
+            for ref in item.source_refs:
+                raw=self.blocks[ref['block_id']]['text'][ref['start_offset']:ref['end_offset']]
+                self.assertTrue(raw)
+                self.assertIn(raw,item.context_text)
     def test_fixed_length_preserves_raw_offsets(self):
         r=self.run_node(config=Config(3,3,100));self.assertEqual(r.status,'success')
-        self.assertEqual(r.data.items[0].text,'E\nFGHIJ\nK');self.assertEqual(r.data.items[0].anchors[0].text,'GHI')
+        self.assertEqual(r.data.evidence_items[0].context_text,'E\nFGHIJ\nK')
+        self.assertEqual(r.data.evidence_items[0].source_refs[0]['start_offset'],1)
         self.check_roundtrip(r.data)
     def test_zero_expansion(self):
-        r=self.run_node(config=Config(0,0,100));self.assertEqual(r.data.items[0].text,'GHI');self.assertFalse(r.data.budget_limited)
+        r=self.run_node(config=Config(0,0,100));self.assertEqual(r.data.evidence_items[0].context_text,'GHI')
+        self.assertFalse(r.data.evidence_items[0].context_truncated)
     def test_page_boundary(self):
-        r=self.run_node();self.assertEqual(r.data.items[0].text,'ABCDE\nFGHIJ\nKLMNO');self.assertEqual(r.data.items[0].pdf_pages,[1])
-        self.assertEqual(r.data.items[0].verification_status,'unverified')
+        item=self.run_node().data.evidence_items[0]
+        self.assertEqual(item.context_text,'ABCDE\nFGHIJ\nKLMNO')
+        self.assertTrue(item.context_truncated)
+        self.assertEqual(item.source_refs[0]['source_locator']['pdf_page'],1)
     def test_full_page_anchor(self):
         c=chunk('full',self.blocks,[('b900',0,5),('b002',0,5),('b001',0,5)])
-        r=self.run_node([cand('full')],lookup=build_chunk_lookup([c]));self.assertEqual(r.data.items[0].text,c['text']);self.check_roundtrip(r.data)
-    def test_overlapping_windows_merge_without_losing_candidates(self):
+        r=self.run_node([cand('full')],lookup=build_chunk_lookup([c]));self.assertEqual(r.data.evidence_items[0].context_text,c['text']);self.check_roundtrip(r.data)
+    def test_overlapping_windows_stay_separate(self):
         c=chunk('c2',self.blocks,[('b001',0,2)])
         r=self.run_node([cand(),cand('c2',2)],Config(3,3,100),build_chunk_lookup([self.c1,c]))
-        self.assertEqual(len(r.data.items),1);self.assertEqual(r.data.items[0].text,'E\nFGHIJ\nKLMNO')
-        self.assertEqual([a.chunk_id for a in r.data.items[0].anchors],['c1','c2']);self.assertEqual(r.data.resolved_candidates,2);self.check_roundtrip(r.data)
+        self.assertEqual([i.chunk_id for i in r.data.evidence_items],['c1','c2'])
+        self.assertEqual([i.context_text for i in r.data.evidence_items],['E\nFGHIJ\nK','IJ\nKLMNO'])
+        self.check_roundtrip(r.data)
     def test_duplicate_keeps_best_rank(self):
-        r=self.run_node([cand(rank=3),cand(rank=1)]);self.assertEqual(r.data.resolved_candidates,1)
-        self.assertEqual(r.data.items[0].anchors[0].rank,1);self.assertEqual(r.diagnostics['deduplicate_candidates'].count,1)
+        r=self.run_node([cand(rank=3),cand(rank=1)])
+        self.assertEqual(len(r.data.evidence_items),1)
+        self.assertEqual(r.data.evidence_items[0].retrieval_rank,1)
+        self.assertEqual(r.diagnostics['deduplicate_candidates'].count,1)
     def test_conflicting_duplicate_identity(self):
         r=self.run_node([cand(),cand(version='v2')],scope=[DocumentRef('doc','v1'),DocumentRef('doc','v2')]);self.assertEqual(r.status,'error');self.assertIsNone(r.data)
     def test_all_candidates_scope_checked_before_processing(self):
@@ -74,14 +81,17 @@ class SourceContextTests(unittest.TestCase):
     def test_block_identity_mismatch(self):
         self.blocks['b002']['version_sha256']='v2';r=self.run_node();self.assertEqual(r.status,'error');self.assertIsNone(r.data)
     def test_missing_one_chunk_returns_partial(self):
-        r=self.run_node([cand(),cand('missing',2)]);self.assertEqual(r.status,'partial');self.assertEqual(r.data.resolved_candidates,1)
-        self.assertEqual(r.data.skipped_chunk_ids,['missing']);self.assertEqual(r.diagnostics['candidate_2'].error_code,'CHUNK_NOT_FOUND')
+        r=self.run_node([cand(),cand('missing',2)])
+        self.assertEqual(r.status,'partial');self.assertEqual(len(r.data.evidence_items),1)
+        failed=r.diagnostics['resolve_sources'].failed_items[0]
+        self.assertEqual((failed.ref,failed.error_code),('missing','CHUNK_NOT_FOUND'))
     def test_missing_all_sources_is_error(self):
         r=self.run_node([cand('missing')]);self.assertEqual(r.status,'error');self.assertIsNone(r.data)
     def test_missing_block_preserves_unaffected_candidate(self):
         c=chunk('other',self.blocks,[('b900',0,3)]);del self.blocks['b002']
         r=self.run_node([cand('other'),cand('c1',2)],Config(0,0,100),build_chunk_lookup([c,self.c1]))
-        self.assertEqual(r.status,'partial');self.assertEqual(r.data.resolved_candidates,1);self.assertEqual(r.diagnostics['candidate_2'].error_code,'BLOCK_NOT_FOUND')
+        self.assertEqual(r.status,'partial');self.assertEqual(len(r.data.evidence_items),1)
+        self.assertEqual(r.diagnostics['resolve_sources'].failed_items[0].error_code,'BLOCK_NOT_FOUND')
     def test_corrupt_text_fails_without_raw_text_in_diagnostics(self):
         self.c1['text']='sensitive corrupt body';r=self.run_node();self.assertEqual(r.status,'error');self.assertIsNone(r.data)
         self.assertNotIn('sensitive',json.dumps(asdict(r)))
@@ -102,27 +112,36 @@ class SourceContextTests(unittest.TestCase):
     def test_file_order_not_identifier_order(self):
         self.assertEqual([b['block_id'] for b in group_blocks_by_page(self.blocks)[('doc','v1',1)]],['b900','b002','b001'])
     def test_output_does_not_modify_or_alias_inputs(self):
-        before=deepcopy(self.blocks);r=self.run_node();r.data.items[0].source_spans[0].source_locator['bbox'][0]=77;self.assertEqual(self.blocks,before)
+        before=deepcopy(self.blocks);r=self.run_node()
+        r.data.evidence_items[0].source_refs[0]['source_locator']['bbox'][0]=77
+        self.assertEqual(self.blocks,before)
     def test_optional_expansion_can_fall_back_to_complete_anchor(self):
-        r=self.run_node(config=Config(200,200,3));self.assertEqual(r.status,'success');self.assertEqual(r.data.items[0].text,'GHI')
-        self.assertTrue(r.data.budget_limited);self.assertEqual(r.diagnostics['context_expansion_1'].status,'skipped');self.check_roundtrip(r.data)
+        r=self.run_node(config=Config(200,200,3));self.assertEqual(r.status,'success')
+        self.assertEqual(r.data.evidence_items[0].context_text,'GHI')
+        self.assertTrue(r.data.evidence_items[0].context_truncated);self.check_roundtrip(r.data)
     def test_budget_never_truncates_anchor(self):
-        r=self.run_node(config=Config(0,0,2));self.assertEqual(r.status,'error');self.assertIsNone(r.data)
-        self.assertEqual(r.diagnostics['candidate_1'].error_code,'CONTEXT_BUDGET_EXCEEDED')
+        r=self.run_node(config=Config(0,0,2));self.assertEqual(r.status,'success')
+        self.assertEqual(r.data.evidence_items,[])
+        self.assertEqual(r.diagnostics['context_budget'].excluded_refs,['c1'])
     def test_budget_preserves_higher_rank(self):
         c=chunk('c2',self.blocks,[('p2',0,4)])
-        r=self.run_node([cand('c2',2),cand()],Config(0,0,3),build_chunk_lookup([self.c1,c]));self.assertEqual(r.status,'partial')
-        self.assertEqual(r.data.items[0].anchors[0].chunk_id,'c1');self.check_roundtrip(r.data)
+        r=self.run_node([cand('c2',2),cand()],Config(0,0,3),build_chunk_lookup([self.c1,c]))
+        self.assertEqual(r.status,'success');self.assertEqual(r.data.evidence_items[0].chunk_id,'c1')
+        self.assertEqual(r.diagnostics['context_budget'].excluded_refs,['c2']);self.check_roundtrip(r.data)
     def test_empty_candidates_outcome(self):
-        r=self.run_node([]);self.assertEqual(r.status,'success');self.assertEqual(r.outcome,'no_candidates');self.assertEqual(r.data.items,[])
+        r=self.run_node([]);self.assertEqual(r.status,'success');self.assertIsNone(r.outcome)
+        self.assertEqual(r.data.evidence_items,[])
     def test_multi_page_anchor_without_cross_page_expansion(self):
         c=chunk('multi',self.blocks,[('b001',2,5),('p2',0,2)])
-        r=self.run_node([cand('multi')],lookup=build_chunk_lookup([c]));self.assertEqual([i.pdf_pages for i in r.data.items],[[1],[2]])
-        self.assertEqual([i.anchors[0].text for i in r.data.items],['MNO','PQ']);self.check_roundtrip(r.data)
-    def test_mixed_verification_status_remains_mixed(self):
-        self.blocks['b900']['verification_status']='verified';self.assertEqual(self.run_node().data.items[0].verification_status,'mixed')
-    def test_evidence_id_is_deterministic(self):
-        self.assertEqual(self.run_node().data.items[0].evidence_id,self.run_node().data.items[0].evidence_id)
+        r=self.run_node([cand('multi')],lookup=build_chunk_lookup([c]))
+        self.assertEqual(len(r.data.evidence_items),1)
+        self.assertEqual([r['source_locator']['pdf_page'] for r in r.data.evidence_items[0].source_refs],[1,2])
+        self.check_roundtrip(r.data)
+    def test_extraction_status_is_preserved_in_source_reference(self):
+        self.blocks['b002']['verification_status']='unverified'
+        self.assertEqual(self.run_node().data.evidence_items[0].source_refs[0]['verification_status'],'unverified')
+    def test_chunk_reference_is_deterministic(self):
+        self.assertEqual(self.run_node().data.evidence_items[0].chunk_id,self.run_node().data.evidence_items[0].chunk_id)
     def test_nonfinite_bbox_rejected(self):
         self.blocks['b002']['source_locator']['bbox'][0]=float('nan');self.assertEqual(self.run_node().status,'error')
     def test_config_rejects_bool_negative_and_zero_total(self):
@@ -133,7 +152,7 @@ class SourceContextTests(unittest.TestCase):
             d=Path(d);cp=d/'chunks.jsonl';bp=d/'blocks.jsonl';cp.write_text(json.dumps(self.c1)+'\n');bp.write_text('\n'.join(json.dumps(b) for b in self.blocks.values()))
             cmd=[sys.executable,'-m','rag.nodes.get_source_context','--chunks',str(cp),'--blocks',str(bp),'--chunk-id','c1','--before-chars','3','--after-chars','3']
             p=subprocess.run(cmd,cwd=ROOT,capture_output=True,text=True);self.assertEqual(p.returncode,0,p.stderr)
-            data=json.loads(p.stdout);self.assertEqual(set(data),{'status','data','diagnostics','outcome'});self.assertEqual(data['data']['items'][0]['text'],'E\nFGHIJ\nK')
+            data=json.loads(p.stdout);self.assertEqual(set(data),{'status','data','diagnostics','outcome'});self.assertEqual(data['data']['evidence_items'][0]['context_text'],'E\nFGHIJ\nK')
             p=subprocess.run(cmd+['--scope','other','v1'],cwd=ROOT,capture_output=True,text=True);self.assertEqual(p.returncode,2);self.assertEqual(json.loads(p.stdout)['status'],'error')
     def test_partial_upstream_allowed_error_rejected(self):
         with tempfile.TemporaryDirectory() as d:
@@ -141,15 +160,18 @@ class SourceContextTests(unittest.TestCase):
             p.write_text(json.dumps({'status':'partial','data':data}));self.assertEqual(load_retrieval_result(p).candidates[0].chunk_id,'c1')
             p.write_text(json.dumps({'status':'error','data':None}))
             with self.assertRaises(ValueError):load_retrieval_result(p)
-    def test_context_content_change_changes_evidence_id(self):
-        before=self.run_node().data.items[0].evidence_id
+    def test_context_change_preserves_chunk_id(self):
+        before=self.run_node().data.evidence_items[0]
         self.blocks['b900']['text']='ABCDX'
-        self.assertNotEqual(before,self.run_node().data.items[0].evidence_id)
+        after=self.run_node().data.evidence_items[0]
+        self.assertEqual(before.chunk_id,after.chunk_id)
+        self.assertNotEqual(before.context_text,after.context_text)
     def test_unicode_budget_counts_characters_and_keeps_raw_text(self):
         self.blocks['b002']['text']='가나다라마'
         c=chunk('unicode',self.blocks,[('b002',1,4)])
         r=self.run_node([cand('unicode')],Config(200,200,3),build_chunk_lookup([c]))
-        self.assertEqual(r.data.items[0].text,'나다라');self.assertEqual(r.data.char_count,3)
+        self.assertEqual(r.data.evidence_items[0].context_text,'나다라')
+        self.assertEqual(len(r.data.evidence_items[0].context_text),3)
     def test_malformed_block_row_returns_structured_cli_error(self):
         with tempfile.TemporaryDirectory() as d:
             d=Path(d);cp=d/'c.jsonl';bp=d/'b.jsonl';cp.write_text(json.dumps(self.c1));bp.write_text('[]\n')
