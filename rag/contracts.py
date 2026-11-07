@@ -269,6 +269,66 @@ class NodeResult(Generic[T]):
             raise TypeError("outcome은 문자열 또는 None이어야 합니다.")
         # data의 업무별 타입과 상태 간 정합성은 해당 노드에서 추가 검사한다.
 
+
+
+@dataclass
+class RoutedTask:
+    """N-10에서 범위·권한을 정한 T-01 입력. 질문은 원문 그대로 전달한다."""
+    request_ref: str
+    question: str
+    document_scope: list[DocumentRef]
+    retrieval_profile: str
+    context_profile: str
+
+
+@dataclass
+class EvidenceSource:
+    chunk_id: str
+    document_id: str
+    document_version: str
+    source_refs: list[dict]
+    context_truncated: bool
+
+
+@dataclass
+class VerifiedClaim:
+    claim_id: str
+    claim_text: str
+    verdict: Verdict
+    reason: str
+    evidence_refs: list[str]
+    sources: list[EvidenceSource]
+
+
+@dataclass
+class UnconfirmedItem:
+    origin: str
+    reason_code: str
+    reason: str
+    claim_id: str | None = None
+    claim_text: str | None = None
+    evidence_refs: list[str] = field(default_factory=list)
+
+
+@dataclass
+class WorkflowError:
+    node: str
+    error_code: str
+    retryable: bool
+
+
+@dataclass
+class WorkflowResult:
+    """T-01에서 메인 에이전트로 반환한다. 사용자용 답변 작성은 N-11 책임이다."""
+    request_ref: str
+    status: NodeStatus
+    outcome: str | None
+    verified_claims: list[VerifiedClaim]
+    unconfirmed_items: list[UnconfirmedItem]
+    evidence_incomplete: bool
+    error: WorkflowError | None
+
+
 if __name__ == "__main__":
     document = DocumentRef(
         document_id="example_doc",

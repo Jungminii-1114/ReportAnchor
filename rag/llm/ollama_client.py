@@ -16,12 +16,20 @@ class OllamaClient:
         self.api_key = api_key
         self.timeout = timeout
 
-    def chat(self, messages: list[dict[str, str]]) -> str:
+    def chat(self, messages: list[dict[str, str]], *, response_format: dict | str | None = None) -> str:
         payload = {
             "model": self.model,
             "messages": messages,
             "stream": False,
         }
+        # 구조화 출력은 Ollama local API에서만 지원한다. Cloud는 노드 프롬프트와
+        # 엄격한 응답 검사로 처리하며 지원하지 않는 format 필드를 보내지 않는다.
+        if response_format is not None:
+            if not isinstance(response_format, dict) and response_format != "json":
+                raise ValueError("응답 형식은 JSON Schema 또는 json이어야 합니다.")
+            if self.provider == "local":
+                payload["format"] = response_format
+                payload["options"] = {"temperature": 0}
         # payload를 서버로 전송하기
         url = self.base_url.rstrip("/") + "/api/chat"
 

@@ -1,59 +1,67 @@
 <!doctype html>
 <html lang="ko">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ReportAnchor · Evidence workspace</title><link rel="icon" href="data:,">
-<link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="자료를 모으고, 보고서의 원문 근거로 질문을 검토하는 로컬 작업 공간">
+  <title>ReportAnchor · 나의 문서 작업실</title><link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
 <body>
-<header class="topbar"><a class="brand" href="/"><span class="brand-icon">R<span>↗</span></span><span>ReportAnchor<small>EVIDENCE WORKSPACE</small></span></a>
-<div class="top-tabs"><span class="active">문서 탐색</span><span class="muted">RAG 데모</span></div><span class="local" id="runtime-badge"><i></i><span id="runtime-label">LOCAL WEB</span></span></header>
+<svg class="svg-symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+  <symbol id="i-anchor" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><path d="M12 7.5V21M5 11h14M3 14c0 4 4 7 9 7s9-3 9-7M3 14l-1 3m19-3 1 3"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M13 3H5v18h14V9zM13 3v6h6M8 13h8m-8 4h5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L20 5"/></symbol>
+</defs></svg>
+<header class="topbar">
+  <button id="library-toggle" class="icon-button mobile-only" aria-label="자료함 열기" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+  <a class="brand" href="/"><span class="brand-icon"><svg><use href="#i-anchor"/></svg></span><span>ReportAnchor<small>나의 문서 작업실</small></span></a>
+  <div class="topbar-caption">원문에 닻을 내린 답변.</div>
+  <span id="runtime-badge" class="runtime"><i></i><span id="runtime-label">LOCAL WORKSPACE</span></span>
+</header>
 <main class="workspace">
-<aside class="sidebar">
-  <div class="section-label">WORKSPACE <span>01</span></div><h2>나의 문서</h2>
-  <div class="document selected"><span class="pdf-icon">PDF</span><div><strong id="doc-title">문서 불러오는 중</strong><small id="doc-subtitle">데이터 연결 확인</small></div><span class="checkmark">✓</span></div>
-  <div class="stats"><div><strong id="chunk-count">—</strong><span>검색 청크</span></div><div><strong id="block-count">—</strong><span>원본 블록</span></div></div>
-  <section class="side-section"><h3>검색 설정</h3><label class="field-label" for="top-k">검색 결과 수 <span>Top K</span></label>
-    <select id="top-k"><option value="3">3개 · 빠르게 확인</option><option value="5">5개 · 조금 더 넓게</option><option value="10">10개 · 상세 탐색</option></select>
-    <div class="method"><span class="dot"></span><div><strong>BM25 + Kiwi</strong><small>한국어 형태소 기반 키워드 검색</small></div></div>
+  <aside class="sidebar" aria-label="자료 관리">
+    <div class="sidebar-heading"><h1>나의 자료</h1><button id="close-library" class="icon-button mobile-only" aria-label="자료함 닫기">×</button><span id="document-count" class="subtle-count">0</span></div>
+    <label class="library-search"><svg><use href="#i-search"/></svg><input id="document-filter" type="search" placeholder="자료 검색" aria-label="자료 이름 검색"></label>
+    <input id="upload-input" type="file" accept=".pdf,application/pdf" multiple hidden>
+    <button id="upload-button" class="upload-button"><svg><use href="#i-plus"/></svg>자료 추가<span>PDF</span></button>
+    <div id="upload-state" class="upload-state" role="status" hidden></div>
+    <div class="library-group-label"><span>자료함</span><button id="select-all" class="quiet-button">전체 선택</button></div>
+    <div id="document-list" class="document-list" aria-live="polite"></div>
+    <div id="library-empty" class="library-empty" hidden><svg><use href="#i-file"/></svg><strong>첫 자료를 추가해보세요</strong><p>PDF를 끌어놓거나<br>자료 추가 버튼을 누르세요.</p></div>
+    <div class="scope-caption" id="scope-caption">검색할 자료를 선택하세요.</div>
+    <button id="show-archived" class="archive-toggle" aria-expanded="false">제외한 자료 보기 <span id="archive-count">0</span></button>
+    <div id="archived-list" class="document-list archived-list" hidden></div>
+    <div id="drop-zone" class="drop-zone"><svg><use href="#i-upload"/></svg><p>PDF를 여기에 놓으세요</p><small>파일당 30MB · 최대 300페이지</small></div>
+    <details class="model-settings" id="model-settings"><summary><svg><use href="#i-settings"/></svg>모델 설정<span id="model-summary">검색 전용</span></summary>
+      <form id="model-form"><label for="provider">실행 환경</label><select id="provider"><option value="local">로컬 Ollama</option><option value="cloud">Ollama Cloud</option></select><label for="model-input">모델 이름</label><input id="model-input" placeholder="설치한 모델 이름" maxlength="200" autocomplete="off"><button id="model-apply" class="secondary-button" type="submit">모델 적용</button><p id="model-state" role="status">질의·검증을 사용하려면 모델을 설정하세요.</p></form>
+    </details>
+    <footer class="library-footer"><span class="connection-dot"></span><strong id="library-footer-title">자료함 연결 중</strong><p id="library-footer-detail">자료를 확인하고 있습니다.</p></footer>
+  </aside>
+
+  <section class="evidence-panel" aria-label="PDF 원문과 근거">
+    <header class="document-tabbar"><svg><use href="#i-file"/></svg><strong id="active-document-title">자료를 선택하세요</strong><span id="document-kind" class="document-kind">PDF</span></header>
+    <div class="viewer-toolbar"><div class="tabs" role="tablist" aria-label="원문 보기"><button class="active" role="tab" aria-selected="true" data-tab="pdf">원문</button><button role="tab" aria-selected="false" data-tab="text">추출 텍스트</button><button role="tab" aria-selected="false" data-tab="metadata">상세 정보</button></div><button id="zoom" class="quiet-button" disabled>크게 보기 ↗</button></div>
+    <div id="viewer-scroll" class="viewer-scroll">
+      <div id="viewer-empty" class="viewer-empty"><span class="empty-anchor"><svg><use href="#i-anchor"/></svg></span><span class="eyebrow">YOUR EVIDENCE, IN ONE PLACE</span><h2>문서를 펼치고,<br>근거를 확인하세요.</h2><p>왼쪽에서 자료를 추가하거나 선택하면<br>원문이 이곳에 나타납니다.</p></div>
+      <div id="pdf-pane" class="tab-pane"><div class="source-context-header" id="source-context-header" hidden><span id="source-title"></span><span id="source-page"></span></div><div class="pdf-canvas" id="pdf-canvas"><p id="pdf-status" role="status" hidden></p><img id="pdf-image" alt="선택한 문서의 원본 PDF 페이지" hidden></div><p id="preview-caption" class="caption" hidden>초록색은 근거가 연결된 원문 블록입니다. 추출 정확도를 보증하는 표시는 아닙니다.</p></div>
+      <div id="text-pane" class="tab-pane padded-pane" hidden><div class="source-notice"><strong>추출 원문과 주변 문맥</strong><p>검색 근거를 선택하면 해당 텍스트를 확인할 수 있습니다. 표 구조·OCR 정확도는 별도 확인이 필요합니다.</p></div><pre id="source-text">오른쪽 답변의 근거를 선택하세요.</pre><h3 class="small-title">연결된 원본 블록</h3><div id="source-blocks"></div></div>
+      <div id="metadata-pane" class="tab-pane padded-pane" hidden><dl id="metadata"></dl><details><summary>현재 실행 JSON</summary><pre id="raw-json">질문을 실행하면 표시됩니다.</pre></details></div>
+    </div>
+    <footer class="viewer-footer"><span id="page-caption">자료 미선택</span><div class="page-controls"><button id="previous-page" class="icon-button" aria-label="이전 페이지" disabled>‹</button><label for="page-select" class="sr-only">PDF 페이지</label><input id="page-select" type="number" min="1" value="1" aria-label="PDF 페이지" disabled><button id="next-page" class="icon-button" aria-label="다음 페이지" disabled>›</button></div><label class="highlight-toggle"><input id="highlight" type="checkbox" checked>근거 표시</label></footer>
   </section>
-  <section class="side-section model-section"><h3>답변 모델</h3><strong id="model-name">검색 전용</strong><p id="model-mode" class="model-mode">모델 설정을 확인하고 있습니다.</p></section>
-  <section class="side-section"><h3>시작 질문</h3><button class="sample" data-query="2025년 경상운영비는 얼마인가?">2025년 경상운영비는? <span>↗</span></button><button class="sample" data-query="조달재원 출연금">조달재원 출연금 <span>↗</span></button><button class="sample" data-query="정보시스템 유지보수">정보시스템 유지보수 <span>↗</span></button><button class="sample" data-query="인건비 운영 계획">인건비 운영 계획 <span>↗</span></button></section>
-  <section class="pipeline"><div class="section-label">현재 연결된 단계</div><div><b>01</b><span>관련 청크 검색<small>N-01 · retrieve_evidence</small></span><i>✓</i></div><div><b>02</b><span>원문 연결·복원<small>N-02 · get_source_context</small></span><i>✓</i></div><div id="draft-step"><b>04</b><span>근거 기반 답변 초안<small>N-04 · draft_answer</small></span><i>✓</i></div><div class="pending"><b>03</b><span>주장·근거 의미 검증<small>N-03 · 다음 개발 단계</small></span></div></section>
-  <div class="side-footer" id="data-handling">검색과 원문 조회는 로컬에서 수행합니다.</div>
-</aside>
-<section class="search-panel">
-  <div class="panel-heading"><div><div class="section-label">RETRIEVAL</div><h1>질문에서 답변과 근거까지</h1></div><button id="reset" class="icon-button" title="검색 기록 지우기" aria-label="검색 기록 지우기">↺</button></div>
-  <div class="search-scroll" id="search-scroll">
-    <div class="intro" id="intro"><div class="intro-symbol">⌕</div><h2>보고서에서 근거를 찾아보세요.</h2><p>질문과 관련된 청크를 검색하고,<br>원본 PDF의 어느 부분인지 바로 확인합니다.</p><div class="intro-note">검색 후 선택한 근거로 답변 초안을 생성할 수 있습니다.</div></div>
-    <div id="history" class="history" aria-live="polite"></div>
-    <div id="query-bubble" class="query-bubble" hidden></div>
-    <div id="result-summary" class="result-summary" hidden></div>
-    <div id="query-tokens" class="query-tokens" hidden></div>
-    <div id="notice" class="notice" role="status" hidden></div>
-    <section id="draft-panel" class="draft-panel" aria-label="N-04 답변 초안" hidden>
-      <div class="draft-heading"><div><div class="section-label">GROUNDED DRAFT · N-04</div><h2>답변 초안</h2></div><span class="draft-badge">N-03 의미 검증 전</span></div>
-      <p id="draft-note" class="draft-note"></p>
-      <button id="draft-button" type="button" class="draft-button" disabled>근거로 답변 생성 ↗</button>
-      <p id="draft-state" class="draft-state" role="status" hidden></p>
-      <div id="draft-claims" class="draft-claims"></div>
-      <div id="draft-missing" class="draft-missing" hidden></div>
-      <details id="draft-details" hidden><summary>N-04 응답 JSON 보기</summary><pre id="draft-json"></pre></details>
-    </section>
-    <div class="sources-label" id="sources-label" hidden>검색된 원문 근거</div>
-    <div id="results" class="results"></div>
-  </div>
-  <form id="search-form" class="composer"><label for="query" class="sr-only">문서 검색 질문</label><div class="input-row"><textarea id="query" rows="2" maxlength="4000" placeholder="문서에 대해 궁금한 내용을 입력하세요…"></textarea><button id="search-button" type="submit"><span>검색</span> ↗</button></div><div class="composer-footer"><span>Enter로 검색 · Shift+Enter로 줄바꿈</span><span>원문 기반 탐색</span></div></form>
-</section>
-<section class="evidence-panel">
-  <div class="panel-heading"><div><div class="section-label">SOURCE EVIDENCE</div><h2>원문 확인</h2></div><button id="export" class="text-button" disabled>JSON 저장 ↓</button></div>
-  <div class="evidence-empty" id="evidence-empty"><span>▤</span><h3>검색 결과와 원문을 나란히</h3><p>결과를 선택하면 해당 PDF 영역과<br>추출된 원문을 여기서 확인할 수 있어요.</p></div>
-  <div id="evidence" hidden>
-    <div class="evidence-title"><strong id="source-title"></strong><span id="source-page" class="pill"></span></div>
-    <div class="tabs" role="tablist" aria-label="원문 보기"><button class="active" role="tab" aria-selected="true" data-tab="pdf">PDF 원문</button><button role="tab" aria-selected="false" data-tab="text">추출 텍스트</button><button role="tab" aria-selected="false" data-tab="metadata">상세 정보</button></div>
-    <div id="pdf-pane" class="tab-pane"><div class="pdf-toolbar"><label>페이지 <select id="page-select" aria-label="PDF 페이지"></select></label><label><input id="highlight" type="checkbox" checked> 근거 영역 표시</label><button id="zoom" class="text-button">확대 ↗</button></div><div class="pdf-canvas"><p id="pdf-status" role="status"></p><img id="pdf-image" alt="선택한 근거의 원본 PDF 페이지" hidden></div><p class="caption">초록 영역은 검색 청크가 참조한 블록 전체입니다. 추가 문맥은 추출 텍스트 탭에서 확인할 수 있습니다.</p></div>
-    <div id="text-pane" class="tab-pane" hidden><div class="source-notice"><strong>원문 복원 · 고정 길이 문맥 보강</strong><span>앞뒤 문맥과 겹치는 구간을 원문 참조로 연결했습니다. PDF 인식 정확도나 답변의 사실성을 검증한 결과는 아닙니다.</span></div><pre id="source-text"></pre><h3 class="small-title">문맥 보강에 사용된 원본 블록 구간</h3><div id="source-blocks"></div></div>
-    <div id="metadata-pane" class="tab-pane" hidden><dl id="metadata"></dl><details><summary>N-01 응답 JSON 보기</summary><pre id="raw-json"></pre></details><details><summary>N-02 EvidenceBundle JSON 보기</summary><pre id="context-json"></pre></details></div>
-  </div>
-</section>
+
+  <section class="chat-panel" aria-label="문서 질문 및 검토">
+    <header class="chat-heading"><div><h2>문서와 대화</h2><p id="chat-scope">자료를 선택하고 질문해보세요.</p></div><div class="chat-actions"><button id="export" class="icon-button" title="결과 JSON 저장" aria-label="결과 JSON 저장" disabled>↓</button><button id="reset" class="icon-button" title="대화 지우기" aria-label="대화 지우기">↺</button></div></header>
+    <div class="chat-scroll" id="chat-scroll"><div id="chat-intro" class="chat-intro"><div class="intro-icon"><svg><use href="#i-anchor"/></svg></div><span class="eyebrow">ASK. TRACE. VERIFY.</span><h2>답변 너머의<br>근거까지.</h2><p>선택한 자료에서 답을 찾고,<br>주장을 원문과 대조해 검토합니다.</p><div class="suggestions"><button class="sample" data-query="2025년 경상운영비는 얼마인가?">2025년 경상운영비는 얼마인가? <span>↗</span></button><button class="sample" data-query="조달재원 출연금">출연금 관련 내용을 찾아줘 <span>↗</span></button><button class="sample" data-query="정보시스템 유지보수 계획">정보시스템 유지보수 계획은? <span>↗</span></button></div></div><div id="chat-log" aria-live="polite"></div><div id="notice" class="notice" role="status" hidden></div></div>
+    <form id="search-form" class="composer"><div class="mode-bar" role="group" aria-label="질문 실행 방식"><button id="mode-qa" type="button" class="active" aria-pressed="true">질의·검증</button><button id="mode-search" type="button" aria-pressed="false">검색만</button><label for="top-k" class="sr-only">검색 결과 수</label><select id="top-k" aria-label="검색 결과 수"><option value="3">근거 3개</option><option value="5">근거 5개</option><option value="10">근거 10개</option></select></div><label for="query" class="sr-only">문서에 대한 질문</label><div class="input-row"><textarea id="query" rows="2" maxlength="4000" placeholder="선택한 자료에 대해 질문하세요…"></textarea><button id="search-button" type="submit" aria-label="질문 실행" disabled><svg><use href="#i-arrow"/></svg></button></div><div class="composer-footer"><span id="composer-hint">질문은 선택한 자료에서 새로 검토합니다.</span><span>Enter ↵</span></div></form>
+  </section>
 </main>
-<dialog id="pdf-dialog"><div class="dialog-heading"><strong>PDF 원문 확대</strong><button id="close-dialog" class="text-button">닫기 ×</button></div><img id="large-image" alt="확대한 원본 PDF"></dialog>
+<dialog id="pdf-dialog"><div class="dialog-heading"><strong>원문 크게 보기</strong><button id="close-dialog" class="quiet-button">닫기 ×</button></div><img id="large-image" alt="확대한 PDF 원문"></dialog>
+<dialog id="document-dialog"><form id="document-edit-form"><div class="dialog-heading"><strong>자료 관리</strong><button id="close-document-dialog" type="button" class="quiet-button">닫기 ×</button></div><label for="document-name">자료 이름</label><input id="document-name" maxlength="120" required><p class="manage-description">이름을 바꿔도 문서 ID와 원문은 유지됩니다.</p><div class="manage-actions"><button id="archive-document" type="button" class="danger-button">자료함에서 제외</button><button class="secondary-button" type="submit">이름 저장</button></div><p class="manage-footnote">제외한 자료는 원본을 삭제하지 않으며 다시 복원할 수 있습니다.</p></form></dialog>
 </body></html>

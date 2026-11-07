@@ -57,10 +57,12 @@ class GroundingMessageTests(unittest.TestCase):
         self.assertEqual([i["chunk_id"] for i in data["evidence"]], ["chunk_010"])
         self.assertNotIn("doc_b", self.messages(evidence=selected)[1]["content"])
 
-    def test_source_text_locations_and_versions_are_preserved(self):
+    def test_source_text_and_versions_preserved_with_locators_outside_prompt(self):
+        before = deepcopy(self.first.source_refs)
         data = json.loads(self.messages()[1]["content"])["evidence"][0]
         self.assertEqual(data["context_text"], self.first.context_text)
-        self.assertEqual(data["source_refs"], self.first.source_refs)
+        self.assertNotIn("source_refs", data)
+        self.assertEqual(self.first.source_refs, before)
         self.assertEqual(data["document_version"], "v1")
         self.assertNotIn("retrieval_rank", data)
 
@@ -84,8 +86,9 @@ class GroundingMessageTests(unittest.TestCase):
         before = asdict(self.claim), asdict(self.first), deepcopy(self.hints)
         messages = self.messages()
         self.assertEqual((asdict(self.claim), asdict(self.first), self.hints), before)
-        self.first.source_refs[0]["source_locator"]["bbox"][0] = 99
-        self.assertEqual(json.loads(messages[1]["content"])["evidence"][0]["source_refs"][0]["source_locator"]["bbox"][0], 0)
+        old_text = self.first.context_text
+        self.first.context_text = "나중에 변경한 원문"
+        self.assertEqual(json.loads(messages[1]["content"])["evidence"][0]["context_text"], old_text)
 
     def test_calls_do_not_accumulate_other_claims_or_evidence(self):
         first = self.messages()

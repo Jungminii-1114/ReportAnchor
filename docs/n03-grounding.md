@@ -55,6 +55,6 @@ python -m rag.nodes.verify_grounding --draft outputs/n04_js_demo.json --evidence
 - [x] N-03 단독 실행과 결과 취합
 - [x] 기존 N-02·N-04 JSON 로드
 - [ ] 실제 모델·사람 정답을 이용한 판정 성능 평가
-- [ ] T-01에서 N-01 → N-02 → N-04 → N-03 연결
-- [ ] contradicted 주장만 1회 보정하고 재검증하는 T-01 순환
-- [ ] 웹 데모에서 N-03 실행·판정 표시
+- [x] T-01에서 N-01 → N-02 → N-04 → N-03 연결 — [실행 가이드](t01-document-qa.md)
+- [x] contradicted 주장만 1회 보정하고 재검증하는 T-01 순환
+- [x] 웹 데모에서 T-01을 통한 N-03 실행·판정 표시 — [웹 가이드](web-workspace.md)

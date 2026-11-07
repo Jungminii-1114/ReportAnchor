@@ -15,3 +15,6 @@ outputs/
 *.pt
 *.pth
 *.bin
+
+# 업로드 PDF와 로컬 자료함 메타데이터
+data/local_workspace/

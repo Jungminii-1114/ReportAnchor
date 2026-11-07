@@ -1,6 +1,8 @@
-const $ = (id) => document.getElementById(id);
-let info, response, selected, currentTab = 'pdf', searches = [], searching = false, generating = false;
-let imageVersion = 0;
+const $ = id => document.getElementById(id);
+const SVG = 'http://www.w3.org/2000/svg';
+let library, info, activeDocument, response, selectedSource, currentTab = 'pdf';
+let selectedIds = new Set(), mode = 'search', busy = false, uploadBusy = false, editingDocument;
+let imageVersion = 0, documentVersion = 0, imageUrl;
 
 function element(tag, text, cls) {
   const node = document.createElement(tag);
@@ -8,330 +10,347 @@ function element(tag, text, cls) {
   if (cls) node.className = cls;
   return node;
 }
+function icon(name) {
+  const svg = document.createElementNS(SVG, 'svg');
+  const use = document.createElementNS(SVG, 'use');
+  use.setAttribute('href', '#i-' + name); svg.append(use); svg.setAttribute('aria-hidden', 'true');
+  return svg;
+}
 async function jsonFetch(path, options) {
-  const result = await fetch(path, options);
-  const data = await result.json();
-  if (!result.ok) throw new Error(data.error || '요청에 실패했습니다.');
+  const res = await fetch(path, options);
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || '요청을 처리하지 못했습니다.');
   return data;
 }
+function post(path, body) {
+  return jsonFetch(path, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)});
+}
 function notice(message, error = false) {
-  $('notice').textContent = message;
-  $('notice').classList.toggle('error', error);
-  $('notice').hidden = !message;
+  $('notice').textContent = message; $('notice').classList.toggle('error', error); $('notice').hidden = !message;
 }
-function setBusy(value, task = 'search') {
-  if (task === 'draft') generating = value;
-  else searching = value;
-  const busy = searching || generating;
-  $('search-button').disabled = busy || !info;
-  $('search-button').textContent = searching ? '검색 중…' : '검색 ↗';
-  $('reset').disabled = busy;
-  $('top-k').disabled = busy;
-  $('export').disabled = busy || !response;
-  document.querySelectorAll('.sample').forEach(b => b.disabled = busy || !info);
-  const completed = response?.draft?.status === 'success';
-  $('draft-button').disabled = busy || !info?.generation?.enabled ||
-    !response?.source_context?.data?.evidence_items?.length || completed;
-  $('draft-button').textContent = generating ? '초안 생성 중…' : completed ? '초안 생성 완료' : '근거로 답변 생성 ↗';
+function syncControls() {
+  const blocked = busy || uploadBusy;
+  $('search-button').disabled = blocked || !selectedIds.size || (mode === 'qa' && !library?.generation.enabled);
+  $('export').disabled = blocked || !response;
+  $('upload-button').disabled = blocked || !library?.upload.enabled;
+  $('reset').disabled = blocked;
+  $('top-k').disabled = blocked;
+  $('model-apply').disabled = blocked;
+  $('select-all').disabled = blocked;
+  document.querySelectorAll('.document-row button, .document-row input, .sample').forEach(n => n.disabled = blocked);
+  $('scope-caption').textContent = selectedIds.size ? `${selectedIds.size}개 자료를 검색 범위로 선택했어요.` : '검색할 자료의 체크박스를 선택하세요.';
+  $('chat-scope').textContent = selectedIds.size ? `선택한 자료 ${selectedIds.size}개에서 근거를 확인합니다.` : '자료를 추가하거나 검색 범위를 선택하세요.';
+  $('composer-hint').textContent = mode === 'qa' && !library?.generation.enabled
+    ? '왼쪽 모델 설정에서 Ollama 모델을 적용하세요.' : '질문은 선택한 자료에서 새로 검토합니다.';
+  $('mode-qa').disabled = blocked; $('mode-search').disabled = blocked;
 }
-
-function selectCitation(chunkId) {
-  const index = response?.sources.findIndex(s => s.chunk_id === chunkId);
-  if (index === undefined || index < 0) return;
-  const source = response.sources[index];
-  selectSource(source, $('results').children[index]);
-  showTab('text');
-  const start = source.context_text.indexOf(source.text);
-  if (start >= 0) {
-    $('source-text').replaceChildren(document.createTextNode(source.context_text.slice(0, start)),
-      element('mark', source.text, 'quote-highlight'),
-      document.createTextNode(source.context_text.slice(start + source.text.length)));
-  }
-  document.querySelectorAll('.citation-button').forEach(b => b.classList.remove('active'));
-  if (innerWidth <= 900) $('evidence').scrollIntoView({behavior: 'smooth', block: 'start'});
-}
-
-function renderDraft() {
-  const result = response?.draft;
-  $('draft-panel').hidden = !response?.source_context?.data;
-  $('draft-claims').replaceChildren();
-  $('draft-missing').replaceChildren();
-  $('draft-missing').hidden = true;
-  $('draft-state').hidden = true;
-  $('draft-state').classList.remove('error');
-  $('draft-details').hidden = !result;
-  $('draft-json').textContent = result ? JSON.stringify(result, null, 2) : '';
-  const generation = info?.generation;
-  $('draft-note').textContent = !generation?.enabled
-    ? '답변 생성을 사용하려면 서버 실행 시 --provider와 --model을 지정하세요.'
-    : generation.test_response ? '화면 동작 검사 · 아래 답변은 가짜 모델 응답입니다.'
-    : generation.provider === 'cloud'
-      ? `${generation.model} · 생성 버튼을 누르면 질문과 검색된 원문 근거를 Ollama Cloud로 전송합니다.`
-      : `${generation.model} · 로컬 Ollama 모델로 답변을 생성합니다.`;
-  if (!result) {
-    setBusy(false, 'draft');
-    return;
-  }
-  $('draft-state').hidden = false;
-  if (result.status === 'error') {
-    $('draft-state').classList.add('error');
-    $('draft-state').textContent = Object.values(result.diagnostics)
-      .filter(d => d.status === 'failed').map(d => `${d.error_code}: ${d.reason}`).join('\n');
-  } else {
-    $('draft-state').textContent = result.outcome === 'insufficient_evidence'
-      ? '확보한 근거로는 답변을 작성할 수 없습니다. 아래 부족한 정보를 확인하세요.'
-      : `주장 ${result.data.claims.length}개 · 형식·근거 참조 검사 통과 · 의미 검증 전`;
-    result.data.claims.forEach((claim, number) => {
-      const article = element('article', undefined, 'draft-claim');
-      article.append(element('span', `CLAIM ${String(number + 1).padStart(2, '0')}`, 'claim-label'),
-        element('p', claim.claim_text, 'claim-text'));
-      claim.evidence_refs.forEach((chunkId, citationNumber) => {
-        const source = response.sources.find(s => s.chunk_id === chunkId);
-        const button = element('button', undefined, 'citation-button');
-        button.type = 'button';
-        button.append(element('span', `검색 근거 ${citationNumber + 1} · PDF ${source?.pages.join(', ') || '?'}페이지 ↗`, 'citation-label'),
-          element('blockquote', source?.text.slice(0, 180) || chunkId));
-        button.addEventListener('click', () => { selectCitation(chunkId); button.classList.add('active'); });
-        article.append(button);
-      });
-      $('draft-claims').append(article);
-    });
-    if (result.data.unanswered_items.length) {
-      $('draft-missing').hidden = false;
-      $('draft-missing').append(element('strong', '추가로 필요한 정보'));
-      const list = element('ul');
-      result.data.unanswered_items.forEach(text => list.append(element('li', text)));
-      $('draft-missing').append(list);
-    }
-  }
-  setBusy(false, 'draft');
-}
-
-async function generateDraft() {
-  if (searching || generating || !response?.retrieval?.data) return;
-  const requestRef = response.retrieval.data.request_ref;
-  setBusy(true, 'draft');
-  $('draft-state').hidden = false;
-  $('draft-state').classList.remove('error');
-  $('draft-state').textContent = '선택한 모델이 원문 근거로 초안을 작성하고 있습니다…';
-  try {
-    const data = await jsonFetch('/api/draft', {
-      method: 'POST', headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({request_ref: requestRef}),
-    });
-    if (response?.retrieval?.data?.request_ref !== data.request_ref) return;
-    response.draft = data.draft;
-    response.generation = {provider: data.generation.provider, model: data.generation.model,
-      elapsed_ms: data.elapsed_ms, cached: data.cached, semantic_verification: 'not_implemented'};
-    renderDraft();
-  } catch (error) {
-    $('draft-state').hidden = false;
-    $('draft-state').classList.add('error');
-    $('draft-state').textContent = error.message;
-  } finally { setBusy(false, 'draft'); }
-}
-function showTab(tab) {
-  currentTab = tab;
-  document.querySelectorAll('[data-tab]').forEach(b => {
-    const active = b.dataset.tab === tab;
-    b.classList.toggle('active', active);
-    b.setAttribute('aria-selected', String(active));
+function setMode(value) {
+  mode = value;
+  ['qa','search'].forEach(name => {
+    $('mode-' + name).classList.toggle('active', name === mode);
+    $('mode-' + name).setAttribute('aria-pressed', String(name === mode));
   });
-  ['pdf', 'text', 'metadata'].forEach(name => $(name + '-pane').hidden = name !== tab);
+  if (mode === 'qa' && !library?.generation.enabled) $('model-settings').open = true;
+  syncControls();
 }
-function setMetadata(source) {
+function clearConversation() {
+  response = undefined; $('chat-log').replaceChildren(); $('chat-intro').hidden = false;
+  $('raw-json').textContent = '질문을 실행하면 표시됩니다.'; notice(''); syncControls();
+}
+function renderDocuments() {
+  const filter = $('document-filter').value.trim().toLocaleLowerCase();
+  const active = library.documents.filter(d => d.active);
+  $('document-count').textContent = active.length;
+  $('document-list').replaceChildren(); $('archived-list').replaceChildren();
+  active.filter(d => d.title.toLocaleLowerCase().includes(filter)).forEach(doc => {
+    const row = element('div', undefined, 'document-row');
+    row.classList.toggle('active', doc.id === activeDocument);
+    const check = element('input'); check.type = 'checkbox'; check.checked = selectedIds.has(doc.id);
+    check.setAttribute('aria-label', `${doc.title} 검색 범위에 포함`);
+    check.addEventListener('change', () => {
+      check.checked ? selectedIds.add(doc.id) : selectedIds.delete(doc.id);
+      clearConversation(); syncControls();
+    });
+    const open = element('button', undefined, 'document-open'); open.type = 'button'; open.title = doc.title;
+    const copy = element('span', undefined, 'document-copy');
+    copy.append(element('strong', doc.title), element('small', `${doc.page_count}쪽 · ${doc.chunk_count}개 청크`));
+    open.append(icon('file'), copy);
+    open.addEventListener('click', () => { clearConversation(); showDocument(doc.id); closeLibrary(); });
+    const manage = element('button', '⋯', 'document-manage'); manage.title = '자료 관리'; manage.setAttribute('aria-label', doc.title + ' 관리');
+    manage.addEventListener('click', () => {
+      editingDocument = doc.id; $('document-name').value = doc.title;
+      $('document-dialog').querySelector('.manage-description').textContent = '이름을 바꿔도 문서 ID와 원문은 유지됩니다.';
+      $('document-dialog').showModal();
+    });
+    row.append(check, open, manage); $('document-list').append(row);
+  });
+  const archived = library.documents.filter(d => !d.active);
+  $('archive-count').textContent = archived.length;
+  archived.forEach(doc => {
+    const row = element('div', undefined, 'document-row');
+    const copy = element('span', undefined, 'document-copy'); copy.append(element('strong', doc.title), element('small', `${doc.page_count}쪽`));
+    const restore = element('button', '복원', 'restore-button');
+    restore.setAttribute('aria-label', doc.title + ' 복원');
+    restore.addEventListener('click', async () => {
+      try { await post('/api/documents/update', {document_id:doc.id, active:true}); await refreshLibrary(doc.id); }
+      catch (error) { notice(error.message, true); }
+    });
+    row.append(copy, restore); $('archived-list').append(row);
+  });
+  $('library-empty').hidden = active.length > 0;
+  if (active.length && !$('document-list').children.length) $('document-list').append(element('p', '이름과 일치하는 자료가 없어요.', 'scope-caption'));
+  $('library-footer-title').textContent = active.length ? '자료함 준비 완료' : 'PDF를 추가해보세요';
+  $('library-footer-detail').textContent = `${active.length}개 자료 · ${active.reduce((n,d) => n + d.page_count,0)}쪽 · 로컬 저장`;
+  syncControls();
+}
+function renderModel() {
+  const generation = library.generation;
+  $('model-summary').textContent = generation.enabled ? generation.model : '검색 전용';
+  if (document.activeElement !== $('model-input')) $('model-input').value = generation.model || '';
+  $('provider').value = generation.provider || 'local';
+  $('runtime-label').textContent = generation.test_response ? 'TEST · MOCK MODEL'
+    : generation.enabled && generation.provider === 'cloud' ? 'OLLAMA CLOUD' : 'LOCAL WORKSPACE';
+  $('runtime-badge').classList.toggle('cloud', generation.provider === 'cloud' || generation.test_response);
+  $('model-state').textContent = generation.enabled ? generation.data_handling : '모델 없이 자료 업로드·검색·원문 확인을 사용할 수 있어요.';
+  if (!library.upload.enabled) $('upload-state').textContent = 'PDF 업로드에는 PyMuPDF 환경이 필요합니다.';
+  $('upload-state').hidden = library.upload.enabled && !uploadBusy;
+}
+async function refreshLibrary(selectNew) {
+  library = await jsonFetch('/api/documents');
+  const active = library.documents.filter(d => d.active);
+  selectedIds = new Set([...selectedIds].filter(id => active.some(d => d.id === id)));
+  if (selectNew && active.some(d => d.id === selectNew)) selectedIds = new Set([selectNew]);
+  if (!selectedIds.size && active.length && !activeDocument) selectedIds.add(active[0].id);
+  const next = selectNew || (active.some(d => d.id === activeDocument) ? activeDocument : active[0]?.id);
+  renderDocuments(); renderModel();
+  if (next) await showDocument(next);
+  else {
+    activeDocument = undefined; info = undefined; selectedSource = undefined; imageVersion++; documentVersion++;
+    $('active-document-title').textContent = '자료를 선택하세요'; $('viewer-empty').hidden = false;
+    $('pdf-image').hidden = true; $('pdf-status').hidden = true; $('source-context-header').hidden = true;
+    $('page-caption').textContent = '자료 미선택'; $('page-select').disabled = true;
+    $('previous-page').disabled = true; $('next-page').disabled = true; $('zoom').disabled = true;
+  }
+}
+async function showDocument(id, source = null) {
+  const version = ++documentVersion;
+  imageVersion++; $('pdf-image').hidden = true; $('zoom').disabled = true;
+  try {
+    const data = await jsonFetch('/api/info?' + new URLSearchParams({document_id:id}));
+    if (version !== documentVersion) return;
+    activeDocument = id; info = data; selectedSource = source;
+    $('active-document-title').textContent = data.title;
+    $('viewer-empty').hidden = true; $('source-context-header').hidden = !source;
+    $('source-title').textContent = source?.title || data.title;
+    $('source-page').textContent = source ? '근거 · p.' + source.pages.join(', ') : '';
+    $('page-select').max = data.page_count; $('page-select').value = source?.pages[0] || 1;
+    $('page-select').disabled = !data.pdf_available;
+    $('source-text').textContent = source?.context_text || '오른쪽에서 질문을 실행하고 근거를 선택하세요.';
+    $('source-blocks').replaceChildren();
+    (source?.context_source_spans || []).forEach((span, i) => {
+      const detail = element('details');
+      detail.append(element('summary', `${i + 1}. ${span.block_id} · 문자 ${span.start_char}–${span.end_char}`), element('pre', span.text));
+      $('source-blocks').append(detail);
+    });
+    renderMetadata(source); renderDocuments(); loadPreview();
+  } catch (error) { notice(error.message, true); }
+}
+function renderMetadata(source) {
   $('metadata').replaceChildren();
-  const fields = [
-    ['청크 ID', source.chunk_id], ['문서 ID', source.document_id],
-    ['문서 버전 · SHA-256', source.document_version],
-    ['검색 순위 / BM25 점수', `${source.rank}위 / ${source.score.toFixed(6)} (확률이 아닙니다)`],
-    ['PDF 물리 페이지', source.pages.join(', ') + ' (인쇄 쪽번호와 다를 수 있음)'],
-    ['원문 연결', `블록 구간 ${source.source_spans.length}개 · 복원 일치`],
-    ['문맥 보강', `원래 청크 ${source.text.length}자 → 주변 문맥 포함 ${source.context_text.length}자`],
-    ['근거 항목 ID', source.evidence_refs.join(', ')],
-    ['연결된 검색 청크 수', source.context_chunk_ids.length + '개 (후보 1개당 근거 1개)'],
-    ['문맥 정책', `앞 ${info.context_config.before_chars}자 / 뒤 ${info.context_config.after_chars}자 · 전체 ${info.context_config.max_total_chars}자 상한`],
-    ['해당 페이지 전체 블록', source.page_block_count + '개'],
-    ['추출 정확도 검증 상태', source.verification_status + ' · 인식 정확도 미검증'],
-    ['보강 문맥의 추출 상태', source.context_verification_status + ' · N-02에서 사실 검증하지 않음'],
-    ['검색 방식', info.tokenizer + ' / BM25'],
-  ];
-  for (const [label, value] of fields) {
-    $('metadata').append(element('dt', label), element('dd', String(value)));
-  }
-  $('raw-json').textContent = JSON.stringify(response.retrieval, null, 2);
-  $('context-json').textContent = JSON.stringify(response.source_context, null, 2);
+  const fields = [['자료', info.title], ['문서 ID', info.document_id], ['문서 버전 · SHA-256', info.version],
+    ['페이지 / 청크 / 블록', `${info.page_count} / ${info.chunk_count} / ${info.block_count}`],
+    ['추출 상태', 'PyMuPDF native text · 표 구조·OCR 정확도 미검증']];
+  if (source) fields.push(['검색 청크', source.chunk_id], ['검색 점수', `${source.score.toFixed(4)} · 관련성 점수이며 확률이 아님`],
+    ['원문 연결', `참조 블록 ${source.source_spans.length}개 · 복원 일치`], ['추출 검증 상태', source.verification_status]);
+  fields.forEach(([key,value]) => $('metadata').append(element('dt', key), element('dd', String(value))));
 }
-function loadPreview() {
+async function loadPreview() {
   const version = ++imageVersion;
-  $('pdf-image').hidden = true;
-  $('zoom').disabled = true;
-  $('pdf-status').hidden = false;
-  if (!info.pdf_available) {
-    $('pdf-status').textContent = 'PDF 미연결 · 추출 텍스트 탭에서 원문을 확인하세요.';
-    return;
-  }
-  $('pdf-status').textContent = 'PDF 원문을 불러오고 있습니다…';
-  const url = '/api/preview?' + new URLSearchParams({
-    chunk_id: selected.chunk_id, page: $('page-select').value,
-    highlight: $('highlight').checked ? '1' : '0',
-  });
-  const img = new Image();
-  img.onload = () => {
-    if (version !== imageVersion) return;
-    $('pdf-image').src = url;
-    $('pdf-image').hidden = false;
-    $('pdf-status').hidden = true;
-    $('zoom').disabled = false;
-  };
-  img.onerror = () => {
-    if (version !== imageVersion) return;
-    $('pdf-status').textContent = 'PDF를 표시하지 못했습니다. 추출 텍스트 탭을 확인하세요.';
-  };
-  img.src = url;
-}
-function selectSource(source, card) {
-  selected = source;
-  document.querySelectorAll('.result-card').forEach(b => {
-    const active = b === card;
-    b.classList.toggle('selected', active);
-    b.setAttribute('aria-pressed', String(active));
-  });
-  $('evidence-empty').hidden = true;
-  $('evidence').hidden = false;
-  $('source-title').textContent = source.title;
-  $('source-page').textContent = 'PDF p. ' + source.pages.join(', ');
-  $('page-select').replaceChildren(...source.pages.map(p => {
-    const option = element('option', String(p)); option.value = p; return option;
-  }));
-  $('source-text').textContent = source.context_text;
-  $('source-blocks').replaceChildren();
-  source.context_source_spans.forEach((span, i) => {
-    const details = element('details');
-    details.append(element('summary', `${i + 1}. ${span.block_id.split(':').slice(-2).join(':')} · 문자 ${span.start_char}–${span.end_char}`), element('pre', span.text));
-    $('source-blocks').append(details);
-  });
-  setMetadata(source);
-  showTab(currentTab);
-  loadPreview();
-}
-function renderResults(data) {
-  $('results').replaceChildren();
-  $('evidence').hidden = true;
-  $('evidence-empty').hidden = false;
-  selected = undefined;
-  imageVersion++;
-  $('query-bubble').textContent = data.query;
-  $('query-bubble').hidden = false;
-  $('result-summary').replaceChildren(element('strong', `관련 청크 ${data.sources.length}개`),
-    element('span', `${data.elapsed_ms.toLocaleString()} ms · BM25 검색`));
-  $('result-summary').hidden = false;
-  $('query-tokens').textContent = '질문 토큰  /  ' + (data.query_tokens.join(' · ') || '없음');
-  $('query-tokens').hidden = false;
-  renderDraft();
-  $('sources-label').hidden = !data.sources.length;
-  if (data.retrieval.status === 'error') {
-    const diagnostics = Object.values(data.retrieval.diagnostics);
-    notice(diagnostics.map(d => `${d.error_code}: ${d.reason}`).join('\n'), true);
-    return;
-  }
-  if (data.source_context?.status === 'error') {
-    notice('원문 조회 오류: ' + Object.values(data.source_context.diagnostics)
-      .filter(d => d.status === 'failed').map(d => d.error_code + ': ' + d.reason).join(' / '), true);
-    return;
-  }
-  if (!data.sources.length) {
-    notice('이번 검색에서는 관련 청크를 찾지 못했습니다. 검색어를 바꿔보세요. 문서에 해당 내용이 없다는 뜻은 아닙니다.');
-    return;
-  }
-  notice(data.source_context?.status === 'partial' ? '일부 원문 조회가 누락되었습니다. 확보한 근거만 표시합니다.' : '');
-  data.sources.forEach(source => {
-    const card = element('button', undefined, 'result-card');
-    card.type = 'button'; card.setAttribute('aria-pressed', 'false');
-    const top = element('div', undefined, 'card-top');
-    top.append(element('span', String(source.rank).padStart(2, '0'), 'rank'),
-      element('strong', `PDF ${source.pages.join(', ')}페이지`), element('span', 'BM25 ' + source.score.toFixed(3), 'score'));
-    const lines = source.text.split('\n').filter(s => s.trim());
-    const title = lines.slice(0, 2).join(' ').slice(0, 90);
-    const bottom = element('div', undefined, 'card-bottom');
-    bottom.append(element('span', '복원 일치 ✓', 'tag'), element('span', `블록 구간 ${source.source_spans.length}개`, 'tag'), element('span', '원문 보기 →', 'link'));
-    card.append(top, element('h3', title), element('p', source.text.slice(0, 330)), bottom);
-    card.addEventListener('click', () => selectSource(source, card));
-    $('results').append(card);
-  });
-  selectSource(data.sources[0], $('results').firstElementChild);
-}
-function renderHistory() {
-  $('history').replaceChildren(...searches.slice(0, -1).slice(-4).map(query => {
-    const b = element('button', query); b.type = 'button'; b.title = query;
-    b.addEventListener('click', () => search(query)); return b;
-  }));
-}
-async function search(query) {
-  if (searching || generating) return;
-  setBusy(true); notice('');
-  $('intro').hidden = true;
-  $('export').disabled = true;
-  // 이전 질문의 결과가 새 질문의 결과처럼 보이지 않도록 즉시 비운다.
-  $('results').replaceChildren(); $('evidence').hidden = true; $('evidence-empty').hidden = false;
-  $('draft-panel').hidden = true; $('sources-label').hidden = true;
-  $('result-summary').hidden = true; $('query-tokens').hidden = true;
-  $('query-bubble').textContent = query; $('query-bubble').hidden = false;
-  imageVersion++;
+  $('pdf-image').hidden = true; $('zoom').disabled = true; $('pdf-status').hidden = false;
+  $('previous-page').disabled = !info?.pdf_available || Number($('page-select').value) <= 1;
+  $('next-page').disabled = !info?.pdf_available || Number($('page-select').value) >= info?.page_count;
+  $('page-caption').textContent = info ? `p.${$('page-select').value} / ${info.page_count}` : '자료 미선택';
+  if (!info?.pdf_available) { $('pdf-status').textContent = 'PDF 미연결 · 추출 텍스트에서 원문을 확인하세요.'; return; }
+  $('pdf-status').textContent = '원문을 불러오고 있어요…';
+  const args = {document_id:activeDocument, page:$('page-select').value};
+  const showHighlight = selectedSource?.pages.includes(Number(args.page));
+  if (showHighlight) { args.chunk_id = selectedSource.chunk_id; args.highlight = $('highlight').checked ? '1' : '0'; }
+  $('preview-caption').hidden = !showHighlight;
   try {
-    const data = await jsonFetch('/api/search', {
-      method: 'POST', headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({query, top_k: Number($('top-k').value)}),
-    });
-    response = data;
-    renderResults(data);
-    $('export').disabled = false;
-    if (query.trim() && data.retrieval.status !== 'error') {
-      searches.push(query); renderHistory();
-    }
-    $('query').value = '';
-    $('search-scroll').scrollTop = 0;
-  } catch (error) { response = undefined; notice(error.message, true); }
-  finally { setBusy(false); $('query').focus(); }
+    const result = await fetch('/api/preview?' + new URLSearchParams(args));
+    if (!result.ok) throw new Error('PDF를 표시하지 못했어요. 추출 텍스트를 확인하세요.');
+    const blob = await result.blob();
+    if (version !== imageVersion) return;
+    const next = URL.createObjectURL(blob);
+    if (imageUrl) URL.revokeObjectURL(imageUrl);
+    imageUrl = next; $('pdf-image').src = next; $('pdf-image').hidden = false;
+    $('pdf-status').hidden = true; $('zoom').disabled = false;
+  } catch (error) { if (version === imageVersion) $('pdf-status').textContent = error.message; }
 }
-$('search-form').addEventListener('submit', event => { event.preventDefault(); search($('query').value); });
-$('draft-button').addEventListener('click', generateDraft);
-$('query').addEventListener('keydown', event => {
-  if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
-    event.preventDefault(); search($('query').value);
+function showTab(name) {
+  currentTab = name;
+  document.querySelectorAll('[data-tab]').forEach(button => {
+    const active = button.dataset.tab === name; button.classList.toggle('active', active); button.setAttribute('aria-selected', String(active));
+  });
+  ['pdf','text','metadata'].forEach(tab => $(tab + '-pane').hidden = tab !== name);
+}
+function selectSource(source, data) {
+  response = data; $('raw-json').textContent = JSON.stringify(data, null, 2); syncControls();
+  showDocument(source.document_key, source); showTab('pdf');
+  if (innerWidth <= 580) document.querySelector('.evidence-panel').scrollIntoView({behavior:'smooth', block:'start'});
+}
+function addCitation(container, ref, data) {
+  const source = data.sources.find(item => item.chunk_id === ref);
+  if (!source) return;
+  const button = element('button', undefined, 'citation-button'); button.type = 'button';
+  button.append(icon('file'), element('span', `${source.title} · p.${source.pages.join(', ')}`));
+  button.title = '원문 근거 보기'; button.addEventListener('click', () => selectSource(source, data)); container.append(button);
+}
+function answerHeader(article, label, cls, elapsed) {
+  const heading = element('div', undefined, 'assistant-heading');
+  const avatar = element('span', undefined, 'assistant-avatar'); avatar.append(icon('anchor'));
+  heading.append(avatar, element('strong', '앵커'), element('span', label, 'answer-badge ' + cls),
+    element('span', `${(elapsed / 1000).toFixed(1)}s`, 'answer-time'));
+  article.append(heading);
+}
+function appendAnswer(data) {
+  const article = element('article', undefined, 'assistant-message');
+  if (data.kind === 'workflow') {
+    const result = data.workflow_result;
+    const label = result.status === 'error' ? '실행 오류' : result.outcome === 'partial_answer' ? '부분 답변'
+      : result.outcome === 'insufficient_evidence' ? '확인 보류' : '근거 지지';
+    answerHeader(article, label, result.status === 'error' ? 'error' : result.outcome ? 'partial' : '', data.elapsed_ms);
+    if (result.status === 'error') {
+      const box = element('div', undefined, 'unconfirmed-box contradicted');
+      const formatError = ['INVALID_DRAFT_RESPONSE','INVALID_VERIFICATION_RESPONSE'].includes(result.error.error_code);
+      box.append(element('strong', formatError ? '모델 응답 구조를 확인하지 못했어요.' : '검토를 완료하지 못했어요.'), element('p', formatError ? '모델은 응답했지만 답변 형식이나 근거 참조 검사를 통과하지 못했습니다. 서버를 최신 코드로 재시작한 뒤 다시 시도하세요.' : '선택한 자료와 Ollama 서버·모델 설정을 확인한 뒤 다시 시도하세요.'),
+        element('p', `${result.error.node} · ${result.error.error_code}`)); article.append(box);
+    }
+    result.verified_claims.forEach(claim => {
+      const row = element('div', undefined, 'verified-claim'); row.append(element('p', claim.claim_text));
+      const citations = element('div', undefined, 'citation-row'); claim.evidence_refs.forEach(ref => addCitation(citations, ref, data)); row.append(citations); article.append(row);
+    });
+    if (!result.verified_claims.length && result.status !== 'error') article.append(element('p', '확보한 자료에서는 질문에 답할 내용을 충분히 확인하지 못했어요.', 'verified-claim'));
+    result.unconfirmed_items.forEach(item => {
+      const red = ['contradicted','revision_failed','revision_unavailable'].includes(item.reason_code);
+      const box = element('div', undefined, 'unconfirmed-box' + (red ? ' contradicted' : ''));
+      box.append(element('strong', red ? '원문과 충돌 · 확인되지 않은 항목' : '추가 확인이 필요한 항목'));
+      if (item.claim_text) box.append(element('p', item.claim_text));
+      box.append(element('p', item.reason));
+      const citations = element('div', undefined, 'citation-row'); item.evidence_refs.forEach(ref => addCitation(citations, ref, data)); box.append(citations); article.append(box);
+    });
+    if (result.evidence_incomplete) article.append(element('p', '일부 자료 수집이 누락되었어요. 확보한 근거 범위에서만 검토한 결과입니다.', 'evidence-warning'));
+    article.append(element('p', data.generation.test_response ? '화면 검사에 사용한 모의 모델 응답입니다. 실제 사실 검증 결과가 아닙니다.'
+      : '추출 원문을 기준으로 한 모델 판정입니다. 중요한 판단은 원문 근거를 함께 확인하세요.', 'answer-footnote'));
+  } else {
+    const failed = data.retrieval.status === 'error' || data.source_context?.status === 'error';
+    answerHeader(article, failed ? '실행 오류' : '검색 결과', failed ? 'error' : '', data.elapsed_ms);
+    article.append(element('p', failed ? '검색이나 원문 조회를 완료하지 못했어요. 아래 실행 상세를 확인하세요.'
+      : data.sources.length ? `관련 원문 ${data.sources.length}개를 찾았어요. 근거를 눌러 원문을 확인하세요.`
+      : '이번 검색에서는 관련 근거를 찾지 못했어요. 문서 전체에 정보가 없다는 뜻은 아닙니다.', 'verified-claim'));
+    data.sources.forEach(source => {
+      const button = element('button', undefined, 'search-source');
+      button.append(element('strong', `${source.title} · p.${source.pages.join(', ')}`), element('p', source.text.slice(0,200)));
+      button.addEventListener('click', () => selectSource(source, data)); article.append(button);
+    });
   }
+  const details = element('details', undefined, 'run-details'); details.append(element('summary', '실행 과정과 JSON 보기'));
+  const labels = {n01:'관련 근거 검색',n02:'원문 문맥 연결',n04:'답변 초안',n03:'주장·근거 대조',n04_revision:'모순 주장 1회 보정',n03_recheck:'수정 주장 재검증'};
+  Object.entries(data.trace || {n01:data.retrieval,n02:data.source_context}).forEach(([key,result]) => {
+    if (!result) return; const row = element('div', undefined, 'run-step'); row.classList.toggle('failed', result.status === 'error');
+    row.append(element('span', labels[key] || key), element('span', result.status)); details.append(row);
+  });
+  details.append(element('pre', JSON.stringify(data.kind === 'workflow' ? data.workflow_result : data.retrieval,null,2))); article.append(details);
+  $('chat-log').append(article); $('chat-scroll').scrollTop = $('chat-scroll').scrollHeight;
+}
+async function pollJob(id, update) {
+  while (true) {
+    const job = await jsonFetch('/api/jobs?' + new URLSearchParams({id}));
+    if (update) update(job);
+    if (job.status === 'completed') return job.result;
+    if (job.status === 'error') throw new Error(job.error || '작업을 완료하지 못했어요.');
+    await new Promise(resolve => setTimeout(resolve, 700));
+  }
+}
+async function ask(query) {
+  if (busy || uploadBusy || !query.trim()) return;
+  if (!selectedIds.size) { notice('왼쪽에서 검색할 자료를 선택하세요.'); return; }
+  if (mode === 'qa' && !library.generation.enabled) { $('model-settings').open = true; $('model-input').focus(); return; }
+  busy = true; syncControls(); notice(''); $('chat-intro').hidden = true;
+  $('chat-log').append(element('div', query, 'user-message'));
+  const progress = element('div', undefined, 'status-card'); progress.append(element('span',undefined,'spinner'),element('span','선택한 자료에서 근거를 찾고 있어요…'));
+  $('chat-log').append(progress); $('query').value = ''; $('chat-scroll').scrollTop = $('chat-scroll').scrollHeight;
+  const ids = [...selectedIds]; const topK = Number($('top-k').value);
+  try {
+    let data;
+    if (mode === 'qa') {
+      const job = await post('/api/qa', {query,top_k:topK,document_ids:ids,request_ref:'web_' + crypto.randomUUID().replaceAll('-','')});
+      data = await pollJob(job.id, state => { progress.lastElementChild.textContent = state.stage + '…'; });
+    } else data = await post('/api/search', {query,top_k:topK,document_ids:ids});
+    response = data; $('raw-json').textContent = JSON.stringify(data,null,2); appendAnswer(data);
+    if (data.sources.length) selectSource(data.sources[0], data);
+  } catch (error) { notice(error.message, true); }
+  finally { progress.remove(); busy = false; syncControls(); $('query').focus(); }
+}
+async function uploadFiles(files) {
+  if (busy || uploadBusy || !files.length || !library?.upload.enabled) return;
+  uploadBusy = true; syncControls(); $('upload-state').hidden = false; $('upload-state').classList.remove('error');
+  try {
+    for (const file of files) {
+      if (!file.name.toLowerCase().endsWith('.pdf') || file.size > library.upload.max_bytes) throw new Error('30MB 이하의 PDF 파일을 선택하세요.');
+      $('upload-state').textContent = file.name + ' · 전송 중…';
+      const job = await jsonFetch('/api/documents/upload?' + new URLSearchParams({filename:file.name}),
+        {method:'POST',headers:{'Content-Type':'application/pdf'},body:file});
+      const record = await pollJob(job.id, state => { $('upload-state').textContent = file.name + ' · ' + state.stage; });
+      clearConversation(); await refreshLibrary(record.id);
+      $('upload-state').hidden = false; $('upload-state').textContent = file.name + ' · 자료 추가 완료';
+    }
+  } catch (error) { $('upload-state').hidden = false; $('upload-state').classList.add('error'); $('upload-state').textContent = error.message; }
+  finally { uploadBusy = false; $('upload-input').value = ''; syncControls(); }
+}
+function closeLibrary() { document.body.classList.remove('library-open'); $('library-toggle').setAttribute('aria-expanded','false'); }
+
+$('search-form').addEventListener('submit', event => { event.preventDefault(); ask($('query').value); });
+$('query').addEventListener('keydown', event => { if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) { event.preventDefault(); ask($('query').value); } });
+document.querySelectorAll('.sample').forEach(button => button.addEventListener('click', () => ask(button.dataset.query)));
+document.querySelectorAll('[data-tab]').forEach(button => button.addEventListener('click', () => showTab(button.dataset.tab)));
+$('mode-qa').addEventListener('click', () => setMode('qa')); $('mode-search').addEventListener('click', () => setMode('search'));
+$('document-filter').addEventListener('input', renderDocuments);
+$('select-all').addEventListener('click', () => { const ids = library.documents.filter(d => d.active).map(d => d.id); selectedIds = selectedIds.size === ids.length ? new Set() : new Set(ids); clearConversation(); renderDocuments(); });
+$('upload-button').addEventListener('click', () => $('upload-input').click());
+$('upload-input').addEventListener('change', () => uploadFiles([...$('upload-input').files]));
+['dragenter','dragover'].forEach(type => $('drop-zone').addEventListener(type, event => { event.preventDefault(); $('drop-zone').classList.add('dragover'); }));
+['dragleave','drop'].forEach(type => $('drop-zone').addEventListener(type, event => { event.preventDefault(); $('drop-zone').classList.remove('dragover'); if (type === 'drop') uploadFiles([...event.dataTransfer.files]); }));
+$('show-archived').addEventListener('click', () => { $('archived-list').hidden = !$('archived-list').hidden; $('show-archived').setAttribute('aria-expanded', String(!$('archived-list').hidden)); });
+$('close-document-dialog').addEventListener('click', () => $('document-dialog').close());
+$('document-edit-form').addEventListener('submit', async event => {
+  event.preventDefault();
+  try { await post('/api/documents/update',{document_id:editingDocument,title:$('document-name').value}); $('document-dialog').close(); await refreshLibrary(); }
+  catch (error) { $('document-dialog').querySelector('.manage-description').textContent = error.message; }
 });
-document.querySelectorAll('.sample').forEach(b => b.addEventListener('click', () => search(b.dataset.query)));
-document.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => showTab(b.dataset.tab)));
-$('page-select').addEventListener('change', loadPreview);
+$('archive-document').addEventListener('click', async () => {
+  try { await post('/api/documents/update',{document_id:editingDocument,active:false}); $('document-dialog').close(); clearConversation(); await refreshLibrary(); }
+  catch (error) { $('document-dialog').querySelector('.manage-description').textContent = error.message; }
+});
+$('model-form').addEventListener('submit', async event => {
+  event.preventDefault(); if (busy || uploadBusy) return;
+  busy = true; syncControls(); $('model-state').textContent = '모델 설정을 적용하고 있어요…';
+  try { library.generation = await post('/api/model',{model:$('model-input').value,provider:$('provider').value}); renderModel(); clearConversation(); setMode('qa'); $('model-state').textContent = '설정 저장 완료 · 실제 실행 시 모델 연결을 확인합니다.'; }
+  catch (error) { $('model-state').textContent = error.message; }
+  finally { busy = false; syncControls(); }
+});
+function navigatePage(value) { if (!info) return; $('page-select').value = Math.max(1,Math.min(info.page_count,value)); loadPreview(); }
+$('page-select').addEventListener('change', () => navigatePage(Number($('page-select').value) || 1));
+$('previous-page').addEventListener('click', () => navigatePage(Number($('page-select').value)-1));
+$('next-page').addEventListener('click', () => navigatePage(Number($('page-select').value)+1));
 $('highlight').addEventListener('change', loadPreview);
 $('zoom').addEventListener('click', () => { $('large-image').src = $('pdf-image').src; $('pdf-dialog').showModal(); });
 $('close-dialog').addEventListener('click', () => $('pdf-dialog').close());
+$('reset').addEventListener('click', clearConversation);
 $('export').addEventListener('click', () => {
-  if (!response) return;
-  const url = URL.createObjectURL(new Blob([JSON.stringify(response, null, 2)], {type: 'application/json'}));
-  const a = element('a'); a.href = url; a.download = `reportanchor-${response.retrieval.data?.request_ref || 'error'}.json`;
-  document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  if (!response) return; const url = URL.createObjectURL(new Blob([JSON.stringify(response,null,2)],{type:'application/json'}));
+  const anchor = element('a'); anchor.href = url; anchor.download = `reportanchor-${response.request_ref || 'result'}.json`; document.body.append(anchor); anchor.click(); anchor.remove(); setTimeout(() => URL.revokeObjectURL(url),1000);
 });
-$('reset').addEventListener('click', () => {
-  response = undefined; selected = undefined; searches = []; imageVersion++;
-  $('intro').hidden = false; $('results').replaceChildren(); $('history').replaceChildren();
-  ['query-bubble', 'result-summary', 'query-tokens', 'evidence', 'draft-panel', 'sources-label'].forEach(id => $(id).hidden = true);
-  $('evidence-empty').hidden = false; $('export').disabled = true; notice(''); $('query').value = ''; $('query').focus();
-});
-jsonFetch('/api/info').then(data => {
-  info = data;
-  $('doc-title').textContent = data.pdf_name || data.title;
-  $('doc-subtitle').textContent = `${data.page_count}페이지 · 연결됨`;
-  $('chunk-count').textContent = data.chunk_count.toLocaleString();
-  $('block-count').textContent = data.block_count.toLocaleString();
-  const generation = data.generation;
-  $('model-name').textContent = generation.enabled ? generation.model : '검색 전용';
-  $('model-mode').textContent = !generation.enabled ? '모델 옵션을 지정하면 N-04를 사용할 수 있습니다.'
-    : generation.provider === 'cloud' ? 'Ollama Cloud · 버튼을 눌렀을 때만 호출' : '로컬 Ollama · 버튼을 눌렀을 때만 호출';
-  $('runtime-label').textContent = generation.enabled && generation.provider === 'cloud' ? 'CLOUD GENERATION' : 'LOCAL MODE';
-  $('runtime-badge').classList.toggle('cloud', generation.enabled && generation.provider === 'cloud');
-  $('data-handling').textContent = generation.data_handling;
-  $('draft-step').classList.toggle('pending', !generation.enabled);
-  setBusy(false);
-}).catch(error => { notice('문서 연결 실패: ' + error.message, true); $('search-button').disabled = true; });
+$('library-toggle').addEventListener('click', () => { document.body.classList.toggle('library-open'); $('library-toggle').setAttribute('aria-expanded', String(document.body.classList.contains('library-open'))); });
+$('close-library').addEventListener('click', closeLibrary);
+refreshLibrary().then(() => setMode(library.generation.enabled ? 'qa' : 'search')).catch(error => { notice('자료함 연결 실패: '+error.message,true); });

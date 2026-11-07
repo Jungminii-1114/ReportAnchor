@@ -73,7 +73,7 @@ class DemoDraftTests(unittest.TestCase):
                 self.assertEqual(run.call_args.args[1], result["query"])
         self.assertEqual(answer["draft"]["status"], "success")
         self.assertEqual(asdict(session["context"].data), before)
-        self.assertEqual(answer["generation"]["semantic_verification"], "not_implemented")
+        self.assertEqual(answer["generation"]["semantic_verification"], "not_performed_for_draft")
 
     def test_successful_repeated_request_does_not_bill_again(self):
         result = self.search()

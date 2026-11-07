@@ -41,6 +41,7 @@ from rag.contracts import (
     Verdict,
 )
 from rag.llm.ollama_client import OllamaClient
+from rag.llm.response_schemas import verification_response_schema
 
 
 class VerifyGroundingNode:
@@ -323,6 +324,10 @@ class VerifyGroundingNode:
         - source_refs는 출처 위치 정보다. 출처가 존재하거나 검색 순위가 높다는 사실만으로
         주장이 뒷받침된다고 판단하지 않는다. 원문 추출 정확도를 검증했다고 주장하지 않는다.
 
+        - source_refs 안의 verification_status=unverified는 추출 검수 상태이며,
+        주장에 대한 판정이 아니다. 이 표시만으로 insufficient를 선택하지 않는다.
+        연결된 근거 중 관련 있는 context_text를 찾아 주장과 직접 비교한다.
+
         [판정 기준]
         - supported: 문장에 포함된 모든 사실이 연결된 근거로 뒷받침된다.
         표현이 달라도 의미가 같을 수 있으나 대상·연도·단위·범위·조건을 보존해야 한다.
@@ -353,6 +358,15 @@ class VerifyGroundingNode:
         evidence_refs, 수정된 주장, confidence 점수는 출력하지 않는다.
         """.strip()
 
+        system_message += "\n[응답 JSON Schema]\n" + json.dumps(
+            verification_response_schema(claim.claim_id), ensure_ascii=False,
+        )
+
+        # 출처 계약은 그대로 보존·검사하되 반복 좌표는 모델 입력에서 제외한다.
+        # 판정에 쓰는 원문을 메타데이터가 밀어내지 않도록 한다.
+        for item in evidence_items:
+            json.dumps(item.source_refs, ensure_ascii=False, allow_nan=False)
+
         payload = {
             "claim": {
                 "claim_id": claim.claim_id,
@@ -365,7 +379,6 @@ class VerifyGroundingNode:
                     "document_id": item.document_id,
                     "document_version": item.document_version,
                     "context_text": item.context_text,
-                    "source_refs": item.source_refs,
                     "context_truncated": item.context_truncated,
                 }
                 for item in evidence_items
@@ -393,7 +406,11 @@ class VerifyGroundingNode:
         통신 오류는 run이 항목별 실행 진단으로 분류한다.
         """
         
-        return self.client.chat(messages=messages)
+        payload = json.loads(messages[-1]["content"])
+        claim_id = payload["claim"]["claim_id"]
+        return self.client.chat(
+            messages=messages, response_format=verification_response_schema(claim_id),
+        )
     
 
     def _parse_verification(self, response_text: str, claim: DraftClaim,

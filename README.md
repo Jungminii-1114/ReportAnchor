@@ -8,7 +8,7 @@
 
 > Find the evidence a review needs, inspect it in the original report, and distinguish supported findings from unresolved conditions.
 
-**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, fixed-length source-context expansion, a local source-inspection UI, and N-04 answer drafts with source citations. Generation supports local Ollama or optional Ollama Cloud; cloud mode sends the question and selected evidence to the cloud. N-03 claim verification is available as a standalone Python node and CLI; its UI integration and the complete T-01 workflow remain planned. See the [N-03 guide](docs/n03-grounding.md). Implemented features and MVP designs are distinguished below.
+**Development status:** The current JM working tree supports PDF text extraction, chunking, BM25 retrieval, fixed-length source-context expansion, a local source-inspection UI, and N-04 answer drafts with source citations. Generation supports local Ollama or optional Ollama Cloud; cloud mode sends the question and selected evidence to the cloud. T-01 Document QA now connects N-01/N-02/N-04/N-03 in LangGraph, with one correction/recheck pass for contradicted claims and structured verified/unconfirmed results. The current baseline uses BM25. The local web workspace now runs T-01 and supports PDF uploads, document selection, renaming, and reversible removal. The main-agent harness remains separate work. See the [T-01 guide](docs/t01-document-qa.md). Implemented features and MVP designs are distinguished below.
 
 See the [current JM contracts and migration notes](docs/js-contract-migration.md) for the 2026-11-05 schema and API changes.
 
@@ -36,7 +36,8 @@ ReportAnchor began as an attempt to connect **repeated evidence search, source r
 - **PDF text extraction and chunking:** Extract native text, blocks, page numbers, and coordinates with PyMuPDF, then construct searchable chunks. OCR, table-structure interpretation, and HWP support are not completed in this extraction demo.
 - **Korean BM25 retrieval:** Apply the same Kiwi tokenization policy to documents and queries, returning ranked chunks and retrieval scores.
 - **Traceable source context:** Reconstruct chunks from original blocks, expand nearby text within the same page, and keep one evidence item per chunk while preserving document versions, block IDs, character spans, and PDF locations. Overlapping contexts remain separate. N-02 returns a typed `EvidenceBundle` with scope, integrity, and text-budget checks.
-- **Grounded answer drafts (N-04):** Generate sentence-level claims with chunk references and unanswered items. Validate JSON structure and reference IDs; support a targeted correction call that preserves claim IDs. Semantic verification and the T-01 correction loop remain pending.
+- **Grounded answer drafts (N-04):** Generate sentence-level claims with chunk references and unanswered items. Validate JSON structure and reference IDs; support a targeted correction call that preserves claim IDs. N-03 verification and the bounded T-01 correction loop are implemented; model accuracy evaluation remains pending.
+- **Document QA workflow (T-01):** Return supported claims with document versions and source locations, separate unresolved items, and correct/recheck contradicted claims at most once. Available through Python and CLI. The local web workspace can run the complete T-01 flow.
 - **Local source-inspection UI:** View document settings, ranked results, and the source PDF side by side. Inspect referenced block regions, extracted text, and the N-01 response JSON, or download the result.
 
 ![ReportAnchor retrieval results beside the source PDF](docs/images/rag-demo-source-context.png)
@@ -55,7 +56,7 @@ The latest JS design follows **request intake and routing → one task-specific 
 
 Planned components include **hybrid parser/VLM document processing**, **Dense + BM25 + RRF with optional reranking**, **claim, numerical, and citation checks**, and **harness-managed execution status, budgets, and artifacts**. N-02 fixed-length context expansion is implemented in the current text demo; expansion based on table, header, and footnote relationships remains a later improvement.
 
-The agent follows predefined steps and branches. Retrieval retry conditions and limits remain to be finalized. A failed search must not be treated as proof that the document lacks the information, and insufficient evidence must be distinguished from execution failure. Standalone Claim Verification (T-04) and Document Summary (T-05) remain future candidates outside the three-task MVP.
+The agent follows predefined steps and branches. T-01 performs no retrieval retries and permits at most one targeted correction/recheck pass. A failed search must not be treated as proof that the document lacks the information, and insufficient evidence must be distinguished from execution failure. Standalone Claim Verification (T-04) and Document Summary (T-05) remain future candidates outside the three-task MVP.
 
 Design references: [JS Query Agent MVP](https://github.com/Jungminii-1114/ReportAnchor/blob/9a54b0e687b9bcd993941492151e02bae3b9d656/docs/query-agent-mvp.md) and [document pipeline](https://github.com/Jungminii-1114/ReportAnchor/blob/9a54b0e687b9bcd993941492151e02bae3b9d656/docs/document-pipeline.md). Current code contracts and remaining nodes are documented in the [RAG development guide](rag/retrieval/README.md).
 
@@ -77,7 +78,7 @@ Use **Python 3.13.9 or later**. The following installs the demo dependencies exp
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install pymupdf==1.28.2 kiwipiepy==0.24.1 rank-bm25==0.2.2
+python -m pip install pymupdf==1.28.2 -r requirements-rag.txt
 ```
 
 The activation command above is for macOS/Linux. On Windows, use `.venv\Scripts\Activate.ps1`. Reuse an existing environment if it already contains the required packages. Currently, `pyproject.toml` only declares PyMuPDF; the RAG demo also needs Kiwi and BM25.
@@ -130,7 +131,7 @@ The current sample document produces these results.
 
 For example, compare the contribution-funding row on PDF page 109: **2024: 2,607 / 2025: 2,638 / change: 31 million KRW**. Physical PDF pages may differ from printed page labels. BM25 scores rank relevance; they are not accuracy estimates or probabilities.
 
-**Reconstruction match** means that the stored block spans reproduce the chunk text. It does not establish PDF extraction accuracy, correct table structure, or factual answer generation. Standalone N-03 verification is implemented; actual model judgment accuracy has not been evaluated, and the web demo does not run N-03 yet.
+**Reconstruction match** means that the stored block spans reproduce the chunk text. It does not establish PDF extraction accuracy, correct table structure, or factual answer generation. Standalone N-03 verification is implemented; actual model judgment accuracy has not been evaluated, and the updated web workspace runs N-03 through T-01.
 
 The November 2, 2026 record of 26 web/API checks and 12 existing BM25/contract tests is described in the [demo check record](docs/reports/rag-demo-ui-checks.json) and [source-inspection guide](docs/rag-demo-ui.md). These are functional checks, not retrieval-accuracy evaluations.
 
@@ -141,3 +142,11 @@ For the completed N-02 context contract, CLI options, and node order, see the [s
 Start the server with model options, search for `2025년 경상운영비는 얼마인가?`, and click **근거로 답변 생성**. Each citation opens its source text and highlights the quoted passage. The UI labels the result as a draft pending N-03 semantic verification. JSON download includes the N-01, N-02, and N-04 results.
 
 See the [N-04 implementation and execution guide](docs/n04-draft-answer.md) for contracts, local/cloud modes, error handling, and validation limits.
+
+### Run T-01 Document QA
+
+The [T-01 guide](docs/t01-document-qa.md) provides the complete CLI, explicit document/version scope, Python harness interface, result fields, and execution limits. Run this workflow through the CLI or the updated web workspace QA/verification mode. Model judgment quality is not established by the mocked integration tests.
+
+### Local document library and verified QA
+
+Run `python scripts/run_rag_demo.py`, add PDFs in the left sidebar, select the documents to search, and set an Ollama model to use QA with verification. The [web workspace guide](docs/web-workspace.md) describes persistence, upload limits, model setup, and reversible removal. Search-only mode needs no model.
