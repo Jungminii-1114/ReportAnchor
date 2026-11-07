@@ -57,6 +57,7 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 | v13 | 2026-11-07 | 탭 바 `...`에 PDF 작업 메뉴 추가 · 인쇄/PDF로 내보내기/페이지 설정/문서 정보 · 하단 FAB는 패널 전환 전용 · 메뉴 닫기·Esc·바깥 클릭 | `versions/reportanchor-workspace_v13_2026-11-07.figcraft` |
 | v14 | 2026-11-07 | 상태 라벨 `부분 답변` → `일부 확인` · 클레임/스레드 두 층으로 상태 어휘 정리 · 전 레이아웃 동기화 | `versions/reportanchor-workspace_v14_2026-11-07.figcraft` |
 | v15 | 2026-11-07 | 검토 패널 `⋯`에 대화 메뉴 추가 · 검토 기록/새 질문/공유/대화 내보내기 · 레거시 페이지를 뒤로 이동 | `versions/reportanchor-workspace_v15_2026-11-07.figcraft` |
+| v16 | 2026-11-07 | 03의 레거시 비교 프레임을 세로 스택 맨 아래로 이동 · 페이지 순서 원복 | `versions/reportanchor-workspace_v16_2026-11-07.figcraft` |
 
 ## Material 3 기준
 
@@ -215,7 +216,7 @@ YouTube·Pixel OS처럼 장식적 윤곽선 대신 표면 톤으로 영역을 �
 
 - 현재 핸드오프에 쓰지 않는 페이지·프레임은 이름 앞에 `LEGACY ·`를 붙입니다. 대상: 01 Foundation, 02 Structure v3, 03의 `LEGACY · Before — current (v3)`.
 - `03 · Material 3`, `04 · M3 System`, `05 · States`는 현재 기준이므로 접두사를 붙이지 않습니다.
-- 페이지 순서는 `03` → `04` → `05` → `LEGACY · 01` → `LEGACY · 02`로 두고, 현재 기준 페이지를 앞에 둡니다.
+- `03`의 `LEGACY · Before — current (v3)` 비교 프레임은 현재 레이아웃 세로 스택이 끊기지 않도록 맨 아래(y=8800)에 둡니다. 페이지 순서는 기존대로 `LEGACY · 01` → `LEGACY · 02` → `03` → `04` → `05`입니다.
 - `legacy/panel-modes/` — 우측 패널 확장 모드 보드와 4개 패널, 내보내기 이미지
   - `근거 대조`, `기준 검증`, `노트`, `검토 기록`
   - 2026-11-04 기준 메인 범위에서 제외. 삭제하지 않고 보관만 합니다.
