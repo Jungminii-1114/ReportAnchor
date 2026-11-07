@@ -8,11 +8,13 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 
 | 페이지 | 내용 |
 |---|---|
-| `01 · Foundation — v0.1` | 최초 디자인 언어 보드. 기록용으로만 유지 |
-| `02 · Structure — v3` | HIG식 소스 목록 + 문서 + 인스펙터 구조 (1440×960) |
-| `03 · Material 3` | M3 + 톤 분리 워크스페이스. 우측 검토 패널은 대화 스레드. `Before — current` 프레임은 v3 비교용 |
+| `LEGACY · 01 · Foundation — v0.1` | 최초 디자인 언어 보드. `LEGACY · ReportAnchor — Design Language` 프레임. 기록용 |
+| `LEGACY · 02 · Structure — v3` | HIG식 소스 목록 + 문서 + 인스펙터 구조 (1440×960). `LEGACY · Layout Skeleton — Review Workspace (Lean)` 프레임 |
+| `03 · Material 3` | M3 + 톤 분리 워크스페이스. 우측 검토 패널은 대화 스레드. `LEGACY · Before — current (v3)` 프레임은 v3 비교용 |
 | `04 · M3 System` | M3 토큰 보드 + 컴포넌트 보드(대화 프리미티브 포함) |
 | `05 · States` | 근거 부족 · 색인 중 · 검토 완료 상태 화면 3종. 모두 대화 패널 기준 |
+
+`LEGACY ·` 접두사는 현재 핸드오프에 쓰지 않는 기록용 페이지·프레임입니다.
 
 ## 현재 내보내기
 
@@ -40,7 +42,7 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 | v4 | 2026-11-04 | Material 3 적용 · 중복 크럼/루트 제거 · 검토 패널 단일 스크롤 | `versions/reportanchor-workspace_v4_2026-11-04.figcraft` |
 | v5 | 2026-11-07 | 핸드오프 세트 — M3 토큰/컴포넌트 보드 · 상태 3종 | `versions/reportanchor-workspace_v5_2026-11-07.figcraft` |
 | v6 | 2026-11-07 | 윤곽선·그림자 제거 · 표면 톤 분리 · 보드/상태 동기화 | `versions/reportanchor-workspace_v6_2026-11-07.figcraft` |
-| v7 | 2026-11-07 | 검토 패널을 대화 스레드로 재구성 · 내부 클레임/연결/노트는 `자세히 보기` 뒤로 · 기술 작동 원리 문구 제거 · 상태 3종 동기화 · 컴포넌트 보드 대화 프리미티브 | `versions/reportanchor-workspace_v7_2026-11-07.figcraft` |
+| v7 | 2026-11-07 | 검토 패널을 대화 스레드로 재구성 · 내부 클레임/연결/노트는 `자세히 보기` 뒤로 · 기술 작동 원리 문구 제거 · 상태 3종 동기화 · 컴포넌트 보드 대화 프리미티브 · 레거시 페이지 표기 | `versions/reportanchor-workspace_v7_2026-11-07.figcraft` |
 
 ## Material 3 기준
 
@@ -108,6 +110,8 @@ YouTube·Pixel OS처럼 장식적 윤곽선 대신 표면 톤으로 영역을 �
 
 ## 레거시
 
+- 현재 핸드오프에 쓰지 않는 페이지·프레임은 이름 앞에 `LEGACY ·`를 붙입니다. 대상: 01 Foundation, 02 Structure v3, 03의 `LEGACY · Before — current (v3)`.
+- `03 · Material 3`, `04 · M3 System`, `05 · States`는 현재 기준이므로 접두사를 붙이지 않습니다.
 - `legacy/panel-modes/` — 우측 패널 확장 모드 보드와 4개 패널, 내보내기 이미지
   - `근거 대조`, `기준 검증`, `노트`, `검토 기록`
   - 2026-11-04 기준 메인 범위에서 제외. 삭제하지 않고 보관만 합니다.
