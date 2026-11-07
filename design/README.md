@@ -10,7 +10,7 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 |---|---|
 | `LEGACY · 01 · Foundation — v0.1` | 최초 디자인 언어 보드. `LEGACY · ReportAnchor — Design Language` 프레임. 기록용 |
 | `LEGACY · 02 · Structure — v3` | HIG식 소스 목록 + 문서 + 인스펙터 구조 (1440×960). `LEGACY · Layout Skeleton — Review Workspace (Lean)` 프레임 |
-| `03 · Material 3` | M3 + 톤 분리 워크스페이스. `Layout — Material 3 (탐색기 펼침)`·`(탐색기 접힘)`·`(검토 플로팅)`·`(검토 패널 메뉴)`·`(검토 미리보기)`·`(PDF 작업 메뉴)`·`(대화 메뉴)`·`(근거 펼침)` 여덟 레이아웃. 기본은 우측 검토 패널의 대화 스레드. `LEGACY · Before — current (v3)` 프레임은 v3 비교용 |
+| `03 · Material 3` | M3 + 톤 분리 워크스페이스. `Layout — Material 3 (탐색기 펼침)`·`(탐색기 접힘)`·`(검토 플로팅)`·`(검토 패널 메뉴)`·`(검토 미리보기)`·`(PDF 작업 메뉴)`·`(대화 메뉴)`·`(근거 펼침)` 여덟 레이아웃. 기본은 우측 검토 패널의 대화 스레드. v3 비교 프레임은 `legacy/before-v3/`로 분리 |
 | `04 · M3 System` | M3 토큰 보드 + 컴포넌트 보드(대화 프리미티브 포함) |
 | `05 · States` | 근거 부족 · 색인 중 · 검토 완료 상태 화면 3종. 모두 대화 패널 기준 |
 
@@ -61,6 +61,7 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 | v16 | 2026-11-07 | 03의 레거시 비교 프레임을 세로 스택 맨 아래로 이동 · 페이지 순서 원복 | `versions/reportanchor-workspace_v16_2026-11-07.figcraft` |
 | v17 | 2026-11-07 | `자세히 보기`를 펼침으로 명확화 · 화살표 `⌄`/`⌃` · 근거 펼침 레이아웃(클레임 3·연결 자료 2·노트 1) | `versions/reportanchor-workspace_v17_2026-11-07.figcraft` |
 | v18 | 2026-11-07 | 레거시 비교 프레임을 LAYOUT 08 아래로 다시 이동 | `versions/reportanchor-workspace_v18_2026-11-07.figcraft` |
+| v19 | 2026-11-07 | v3 비교 프레임을 `legacy/before-v3/` 별도 파일로 분리 · 03 페이지에서 제거 | `versions/reportanchor-workspace_v19_2026-11-07.figcraft` |
 
 ## Material 3 기준
 
@@ -228,9 +229,10 @@ YouTube·Pixel OS처럼 장식적 윤곽선 대신 표면 톤으로 영역을 �
 
 ## 레거시
 
-- 현재 핸드오프에 쓰지 않는 페이지·프레임은 이름 앞에 `LEGACY ·`를 붙입니다. 대상: 01 Foundation, 02 Structure v3, 03의 `LEGACY · Before — current (v3)`.
+- 현재 핸드오프에 쓰지 않는 페이지·프레임은 이름 앞에 `LEGACY ·`를 붙입니다. 대상: 01 Foundation, 02 Structure v3.
 - `03 · Material 3`, `04 · M3 System`, `05 · States`는 현재 기준이므로 접두사를 붙이지 않습니다.
-- `03`의 `LEGACY · Before — current (v3)` 비교 프레임은 현재 레이아웃 스택(01–08) 아래, y=10960에 둡니다. 새 레이아웃을 추가하면 그 아래로 다시 내려 순서를 유지합니다. 페이지 순서는 기존대로 `LEGACY · 01` → `LEGACY · 02` → `03` → `04` → `05`입니다.
+- 페이지 순서는 `LEGACY · 01` → `LEGACY · 02` → `03` → `04` → `05`입니다.
+- `legacy/before-v3/` — v3 비교 프레임을 별도 파일로 분리했습니다. `reportanchor-before-v3.figcraft`(프레임 단독)와 `before-v3.png`(1x)를 둡니다. `03` 페이지에는 두지 않습니다.
 - `legacy/panel-modes/` — 우측 패널 확장 모드 보드와 4개 패널, 내보내기 이미지
   - `근거 대조`, `기준 검증`, `노트`, `검토 기록`
   - 2026-11-04 기준 메인 범위에서 제외. 삭제하지 않고 보관만 합니다.
