@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Report Agent Chat",
+  "version": "1.0.0",
+  "description": "PDF 보고서 평가 도우미 — UI 미리보기",
+  "minimum_chrome_version": "141",
+  "permissions": [
+    "sidePanel",
+    "storage"
+  ],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Report Agent 열기"
+  }
+}

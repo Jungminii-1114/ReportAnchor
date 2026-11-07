@@ -136,3 +136,7 @@ The RAG and agent role owns the retrieval and review strategies. The harness rol
 Environment setup, model preparation, indexing, question execution, and evaluation commands will be added after the repository layout and dependencies are finalized.
 
 The initial development interface will be Python functions and command-line execution.
+
+## Frontend UI
+
+The React / Chrome Extension UI prototypes are available in [frontend](./frontend/README.md). The current chat UI and the archived four-step UI each include a downloadable standalone preview. PDF detection and AI analysis remain mocked.

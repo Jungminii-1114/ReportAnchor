@@ -1,0 +1,24 @@
+.expand-button{color:#315e9d;background:#f8fbff;border-color:#d4e1f5}
+.expanded-page{min-height:100vh;background:#f1f4f9;padding:24px}
+.expanded-app{max-width:1220px;min-height:calc(100vh - 48px);border:1px solid #dfe6f0;border-radius:13px;background:#fff;box-shadow:0 8px 32px #18335908;overflow:hidden}
+.expanded-context{display:flex;align-items:center;gap:12px;padding:12px 27px;border-bottom:1px solid #e9eef5;background:#fafcff;font-size:12px;color:#8290a5}
+.expanded-context>span{color:#42668f;font-weight:600;white-space:nowrap}
+.expanded-context p{line-height:1.6}
+.expanded-app .workspace{grid-template-columns:230px minmax(0,1fr)}
+.expanded-app main{padding:32px 40px;min-height:calc(100vh - 190px)}
+.expanded-app .stepper{background:#fafcff;border-right:1px solid #edf1f6}
+.expanded-app .stepper li{padding-left:21px}
+.expanded-app .stepper li:not(:last-child):after{left:41px}
+.expanded-app .review-report .page-title h1{font-size:29px}
+.expanded-app .review-observation{font-size:14px}
+.expanded-app .review-source blockquote{font-size:12px}
+.expanded-app .review-measure,.expanded-app .review-source button{font-size:11px}
+.expanded-app .review-item-heading h2{font-size:16px}
+.expanded-app .detected-document{max-width:650px;min-height:210px}
+.review-loading{padding:30px;color:#74849a;font-size:14px}
+@media(max-width:850px){.expanded-app .header-actions .utility-button span{display:none}.expanded-app main{padding:24px}.expanded-app .workspace{grid-template-columns:200px minmax(0,1fr)}.expanded-app .step-copy strong{font-size:15px}}
+@media(max-width:620px){.expanded-page{padding:0}.expanded-app{border:0;border-radius:0;min-height:100vh}.expanded-app .workspace{display:block}.expanded-app .stepper{border-right:0}.expanded-app .stepper li{padding:8px 1px}.expanded-app .step-copy strong{font-size:11px}.expanded-context{padding:10px 17px;font-size:10px;gap:9px}.expanded-app main{padding:22px 17px;min-height:calc(100vh - 200px)}.expanded-app .review-report .page-title h1{font-size:25px}}
+@media(max-width:420px){.header .avatar{display:none}.header .brand{font-size:19px;gap:7px}.header .header-actions .small{padding:7px}.header .header-actions{gap:4px}.expanded-app .header-actions .expand-button span{display:none}}
+@container reportPanel (max-width:430px){.browser-preview .header .avatar{display:none}.browser-preview .header .brand{font-size:19px;gap:7px}.browser-preview .header .header-actions .small{padding:7px}.browser-preview .header .header-actions{gap:4px}}
+.browser-preview .header-actions .expand-button span{display:inline}
+@container reportPanel (max-width:430px){.browser-preview .header-actions .expand-button span{display:none}}
