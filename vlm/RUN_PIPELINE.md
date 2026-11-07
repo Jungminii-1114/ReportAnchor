@@ -1,3 +1,5 @@
+> **이전 v4 실행 안내입니다. 최신 통합 코드는 [reportanchor_pipeline/README.md](reportanchor_pipeline/README.md)를 확인하세요.**
+
 # PDF 전체 실행
 
 실행 진입점은 `run_pipeline.py`입니다. 문서명·페이지 수를 고정하지 않습니다.
