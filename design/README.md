@@ -10,13 +10,20 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 |---|---|
 | `01 · Foundation — v0.1` | 최초 디자인 언어 보드. 기록용으로만 유지 |
 | `02 · Structure — v3` | HIG식 소스 목록 + 문서 + 인스펙터 구조 (1440×960) |
-| `03 · Material 3` | M3를 적용한 현재 워크스페이스. `Before — current` 프레임은 v3 비교용 |
+| `03 · Material 3` | M3를 적용한 기본 워크스페이스. `Before — current` 프레임은 v3 비교용 |
+| `04 · M3 System` | M3 토큰 보드 + 컴포넌트/상태 시트 |
+| `05 · States` | 근거 부족 · 색인 중 · 검토 완료 상태 화면 3종 |
 
 ## 현재 내보내기
 
 | 파일 | 내용 |
 |---|---|
-| `material3-workspace.png` | M3 워크스페이스 전체 화면 (1x) |
+| `material3-workspace.png` | M3 기본 워크스페이스 (1x) |
+| `m3-system.png` | M3 토큰 보드 — 컬러·타입·간격·형태·표면 |
+| `m3-components.png` | 컴포넌트·상태 시트 — 버튼·칩·탭·입력·트리 |
+| `state-insufficient.png` | 상태 01 — 근거 부족 |
+| `state-indexing.png` | 상태 02 — 색인 중 |
+| `state-complete.png` | 상태 03 — 검토 완료 |
 | `sidebar-explorer.png` | M3 사이드바 2x 크롭 |
 | `structure-skeleton.png` | v3 구조 화면. M3 이전 비교용 |
 | `design-language.png` | v0.1 디자인 언어 보드 |
@@ -31,15 +38,25 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 | v2 | 2026-11-04 | top bar 제거 · 탭 최상단 · 사이드바 아이콘 브랜드 | `versions/reportanchor-workspace_v2_2026-11-04.figcraft` |
 | v3 | 2026-11-04 | 브레드크럼 페이지 · 중복 줌 제거 | `versions/reportanchor-workspace_v3_2026-11-04.figcraft` |
 | v4 | 2026-11-04 | Material 3 적용 · 중복 크럼/루트 제거 · 검토 패널 단일 스크롤 | `versions/reportanchor-workspace_v4_2026-11-04.figcraft` |
+| v5 | 2026-11-07 | 핸드오프 세트 — M3 토큰/컴포넌트 보드 · 상태 3종 | `versions/reportanchor-workspace_v5_2026-11-07.figcraft` |
 
 ## Material 3 기준
 
 - 웹앱이므로 **Material 3**를 기준으로 하고, 문서 도구의 3열 구조는 HIG를 따릅니다.
 - 8dp 그리드, M3 타입 스케일, 3px 탭 인디케이터, tonal surface, 상태 레이어를 사용합니다.
-- 상태 색은 항상 텍스트 라벨과 함께 씁니다: `뒷받침` · `모순` · `근거 부족` · `부분 답변`.
+- 상태 색은 항상 텍스트 라벨과 함께 씁니다: `뒷받침` · `모순` · `근거 부족` · `부분 답변` · `답변 완료`.
 - 서체: UI `Noto Sans KR`, 문서 `Noto Serif KR`, 메타 `JetBrains Mono`.
 - 타입: 라벨 10–13, 본문 14/24, 제목 16, 질문 16, 지면 H1 24, 통계 32.
 - 색 역할: primary `#1F6B54`, primaryContainer `#D5EBE0`, secondaryContainer `#E3F1EA`, tertiary `#9A5B00`, error `#B42318`, surface `#FFFDF8`, outlineVariant `#E4DED1`.
+- 상호작용: hover 8% · focus 12% · pressed 16% · disabled 38%, focus ring 2px + offset 2px.
+
+## 상태 화면
+
+| 상태 | 질문/맥락 | 답변 칩 | 클레임 | 핵심 처리 |
+|---|---|---|---|---|
+| 근거 부족 | 재생에너지 투자 규모 | `근거 부족` | `클레임 1` · 지지 0건 | 관련 언급 1건, 수치 없음 · 다음 시도 버튼 |
+| 색인 중 | 첫 자료 128쪽 | `색인 중` | 없음 | 42% 진행 · 사이드바/카드/우측 패널 3곳 동기화 |
+| 검토 완료 | 2030 감축 목표 | `답변 완료` | `클레임 3` · 모두 뒷받침 | 지면 주석도 `확인`으로 전환 |
 
 ## 중복 정리 원칙
 
@@ -48,6 +65,13 @@ FigCraft 작업 파일과 내보내기 이미지의 버전 규칙입니다.
 - 사이드바에 가상 루트 행을 두지 않습니다. `자료`가 최상위입니다.
 - 우측 패널은 탭 없이 하나의 스크롤 인스펙터로 유지합니다. 섹션 제목이 구조를 담당합니다.
 - 노트 미리보기는 연결 목록에 넣지 않고 노트 섹션에서만 보여줍니다.
+- 같은 수치를 두 곳에 쓰면 역할을 라벨로 구분합니다. `색인 108쪽` vs `p.42 / 128`.
+
+## 핸드오프 범위
+
+- 포함: 기본 워크스페이스, M3 토큰, 컴포넌트 상태, 근거 부족/색인/완료 흐름, 사이드바·리더·검토 패널.
+- 포함하지 않음: 기준 검증(T-02) 전용 화면, 다중 문서 비교, 모바일/좁은 폭 레이아웃, 실제 모션 스펙.
+- 기준 검증 화면은 같은 셸에서 우측 패널만 기준 결과로 바꾸는 방향을 전제로 합니다.
 
 ## 레거시
 
