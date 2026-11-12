@@ -12,6 +12,8 @@
 
 See the [current JM contracts and migration notes](docs/js-contract-migration.md) for the 2026-11-05 schema and API changes.
 
+For a concise overview of the design, implemented tools, validation results, and remaining work, see the [development summary](docs/development-summary.md).
+
 ## Introduction
 
 ReportAnchor is a local document-review agent for **planning, research, and project-review staff in companies and public institutions**. It targets work involving business plans, technology reports, and R&D results, where reviewers need evidence for a specific question, an explicit review criterion, or a comparison.
@@ -38,6 +40,7 @@ ReportAnchor began as an attempt to connect **repeated evidence search, source r
 - **Traceable source context:** Reconstruct chunks from original blocks, expand nearby text within the same page, and keep one evidence item per chunk while preserving document versions, block IDs, character spans, and PDF locations. Overlapping contexts remain separate. N-02 returns a typed `EvidenceBundle` with scope, integrity, and text-budget checks.
 - **Grounded answer drafts (N-04):** Generate sentence-level claims with chunk references and unanswered items. Validate JSON structure and reference IDs; support a targeted correction call that preserves claim IDs. N-03 verification and the bounded T-01 correction loop are implemented; model accuracy evaluation remains pending.
 - **Document QA workflow (T-01):** Return supported claims with document versions and source locations, separate unresolved items, and correct/recheck contradicted claims at most once. Available through Python and CLI. The local web workspace can run the complete T-01 flow.
+- **Criteria Review (T-02):** Structure explicit user criteria with N-05, evaluate conditions with N-06, reuse retrieval/source lookup/N-03, and return grounded met/not_met/undetermined findings. Flat AND/OR and independent partially unsupported criteria are supported through Python/CLI. The existing web QA mode remains T-01. See the [T-02 guide](docs/t02-criteria-review.md).
 - **Local source-inspection UI:** View document settings, ranked results, and the source PDF side by side. Inspect referenced block regions, extracted text, and the N-01 response JSON, or download the result.
 
 ![ReportAnchor retrieval results beside the source PDF](docs/images/rag-demo-source-context.png)

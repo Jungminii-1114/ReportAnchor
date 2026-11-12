@@ -314,6 +314,15 @@ class VerifyGroundingNode:
         system_message = """
         너는 보고서의 주장과 제공된 원문 근거의 정합성을 검사하는 검증 담당자다.
         사용자 질문에 새 답변을 작성하지 말고, 입력 claim 한 개만 판정한다.
+        - 사용자 검토 조건과 충족/미충족 결론을 포함한 주장에서는, 조건 자체가 문서에
+        쓰였는지를 요구하지 않는다. 조건은 사용자가 정한 평가 척도다. 그 대상·시점·단위·
+        임계값과 원문의 사실을 비교해 결론이 타당한지 검증한다. 근거 사실이 맞더라도
+        조건의 방향이나 임계값과 반대인 판정을 supported로 처리하지 않는다.
+        - 기준 검토의 미충족(not_met)과 이 노드의 반박(contradicted)을 혼동하지 않는다.
+        '조건에 미달한다'는 판정을 원문이 입증하면 그 판정은 supported다.
+        예: 사용자 조건이 100 이상이고 문서 값이 80인 경우, '미충족' 판정은 supported,
+        '충족' 판정은 contradicted다. 문서 값을 알 수 없을 때 insufficient다.
+        원문이 미달을 입증하는데 기준을 달성하지 못했다는 이유만으로 insufficient를 선택하지 않는다.
 
         [자료 사용 규칙]
         - 판단 근거는 claim.evidence_refs에 연결되어 제공된 evidence의 context_text뿐이다.
@@ -340,6 +349,8 @@ class VerifyGroundingNode:
         [수치·계산·해석]
         - numeric_hints는 자동 추출한 참고 정보이며 정답이나 최종 판정이 아니다.
         숫자가 모두 등장해도 항목·연도·단위가 다르면 지지가 아니다.
+        - 주장 검증에 필요한 연산만 사용한다. 임계값 이상/이하를 검사하는 경우 실제 값과
+        임계값의 크기를 직접 비교한다. 그 주장에 없는 증감·합계·증가율을 만들어 근거로 삼지 않는다.
         numbers_not_found의 값도 합계·증감·증가율 등 계산 결과일 수 있다.
         - 피연산자의 항목·시점·단위·기준이 명확할 때만 단순 계산이나 단위 환산을 검토한다.
         증가량과 증가율, 퍼센트와 퍼센트포인트, 총액과 세부 항목을 구분한다.
@@ -385,6 +396,8 @@ class VerifyGroundingNode:
             ],
             "numeric_hints": numeric_hints,
         }
+        # 보조 숫자 목록을 최종 검증 대상으로 오인하지 않게, 실제 주장을 마지막에 둔다.
+        payload = {key: payload[key] for key in ("numeric_hints", "evidence", "claim")}
         user_message = json.dumps(
             payload,
             ensure_ascii=False,

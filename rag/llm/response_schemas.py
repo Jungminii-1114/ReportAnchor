@@ -36,3 +36,40 @@ def verification_response_schema(claim_id: str | None = None) -> dict:
         },
         "required": ["claim_id", "verdict", "reason"],
     }
+
+
+def criteria_response_schema(count: int) -> dict:
+    """원문 입력별 정확한 대응은 N-05 Python 검사가 확인한다."""
+    return {
+        "type": "object", "additionalProperties": False, "required": ["items"],
+        "properties": {"items": {"type": "array", "minItems": count, "maxItems": count,
+            "items": {"type": "object", "additionalProperties": False,
+                "required": ["input_index", "status", "operator", "conditions", "reason"],
+                "properties": {
+                    "input_index": {"type": "integer", "enum": list(range(count))},
+                    "status": {"type": "string", "enum": ["structured", "unsupported_structure", "needs_clarification"]},
+                    "operator": {"type": ["string", "null"], "enum": ["all", "any", None]},
+                    "reason": {"type": ["string", "null"]},
+                    "conditions": {"type": "array", "maxItems": 8, "items": {
+                        "type": "object", "additionalProperties": False, "required": ["text", "source_quote"],
+                        "properties": {"text": {"type": "string", "minLength": 1},
+                                       "source_quote": {"type": "string", "minLength": 1}}}},
+                }}}},
+    }
+
+
+def criterion_response_schema(condition_ids: list[str], quote_ids: list[str]) -> dict:
+    return {
+        "type": "object", "additionalProperties": False, "required": ["conditions"],
+        "properties": {"conditions": {"type": "array", "minItems": len(condition_ids),
+            "maxItems": len(condition_ids), "items": {"type": "object", "additionalProperties": False,
+                "required": ["condition_id", "verdict", "claim_text", "reason", "quote_ids"],
+                "properties": {
+                    "condition_id": {"type": "string", "enum": condition_ids},
+                    "verdict": {"type": "string", "enum": ["met", "not_met", "undetermined"]},
+                    "claim_text": {"type": "string", "minLength": 1},
+                    "reason": {"type": "string", "minLength": 1},
+                    "quote_ids": {"type": "array", "uniqueItems": True,
+                                  "items": {"type": "string", "enum": quote_ids}},
+                }}}},
+    }

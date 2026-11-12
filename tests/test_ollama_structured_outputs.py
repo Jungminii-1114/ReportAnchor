@@ -37,8 +37,25 @@ class StructuredOutputTests(unittest.TestCase):
             client.chat(messages=[],response_format=draft_response_schema(["source-id"]))
         request=transport.call_args.args[0];payload=json.loads(request.data)
         self.assertNotIn("format",payload)
+        self.assertNotIn("options",payload)
         self.assertNotIn("mock-secret",json.dumps(payload))
         self.assertEqual(request.get_header("Authorization"),"Bearer mock-secret")
+
+    def test_local_context_is_explicit_and_configurable(self):
+        for size in (8192, 16384):
+            client = OllamaClient("test", "http://localhost:11434", num_ctx=size)
+            with patch("rag.llm.ollama_client.urlopen", return_value=self.fake("응답")) as transport:
+                client.chat(messages=[], response_format="json")
+            payload = json.loads(transport.call_args.args[0].data)
+            self.assertEqual(payload["options"]["num_ctx"], size)
+            self.assertEqual(payload["options"]["temperature"], 0)
+
+    def test_invalid_local_context_is_rejected_before_network(self):
+        for size in (True, 0, 511, "16384"):
+            client = OllamaClient("test", "http://localhost:11434", num_ctx=size)
+            with patch("rag.llm.ollama_client.urlopen") as transport:
+                with self.assertRaises(ValueError): client.chat(messages=[])
+                transport.assert_not_called()
 
     def test_unstructured_client_call_remains_compatible(self):
         with patch("rag.llm.ollama_client.urlopen",return_value=self.fake("일반 응답")) as transport:

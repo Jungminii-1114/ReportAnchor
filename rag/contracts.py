@@ -329,6 +329,127 @@ class WorkflowResult:
     error: WorkflowError | None
 
 
+# T-02: 사용자 기준의 원문/조건과 판정 실행·근거 검증을 분리한다.
+class CriterionVerdict(str, Enum):
+    MET = "met"
+    NOT_MET = "not_met"
+    UNDETERMINED = "undetermined"
+
+
+@dataclass
+class CriterionCondition:
+    condition_id: str
+    text: str
+    source_quote: str
+
+
+@dataclass
+class Criterion:
+    criterion_id: str
+    input_index: int
+    original_text: str
+    operator: Literal["all", "any"]
+    conditions: list[CriterionCondition]
+
+
+@dataclass
+class UnprocessedCriterion:
+    input_index: int
+    original_text: str
+    reason_code: str
+    reason: str
+
+
+@dataclass
+class CriteriaSet:
+    request_ref: str
+    criteria: list[Criterion]
+    unprocessed_criteria: list[UnprocessedCriterion]
+
+
+@dataclass
+class EvidenceQuote:
+    chunk_id: str
+    text: str
+    quote_id: str
+    context_start: int
+    context_end: int
+
+
+@dataclass
+class ConditionFinding:
+    condition_id: str
+    claim_id: str
+    verdict: CriterionVerdict
+    claim_text: str
+    reason: str
+    evidence_refs: list[str]
+    quotes: list[EvidenceQuote]
+
+
+@dataclass
+class CriterionFinding:
+    """N-06의 제안 판정이다. 최종 판정에는 N-03의 근거 검증이 필요하다."""
+    request_ref: str
+    criterion_id: str
+    verdict: CriterionVerdict
+    conditions: list[ConditionFinding]
+
+
+@dataclass
+class CriteriaReviewTask:
+    request_ref: str
+    question: str
+    criteria_texts: list[str]
+    document_scope: list[DocumentRef]
+    retrieval_profile: str = "bm25-baseline-v1"
+    context_profile: str = "fixed-context-v1"
+
+
+@dataclass
+class ReviewedCondition:
+    condition_id: str
+    claim_id: str
+    verdict: CriterionVerdict
+    proposed_verdict: CriterionVerdict
+    reason: str
+    verified_claim_text: str | None
+    evidence_refs: list[str]
+    quotes: list[EvidenceQuote]
+    sources: list[EvidenceSource]
+    verification: ClaimVerification | None
+
+
+@dataclass
+class ReviewedCriterion:
+    criterion_id: str
+    input_index: int
+    original_text: str
+    operator: Literal["all", "any"]
+    verdict: CriterionVerdict
+    conditions: list[ReviewedCondition]
+
+
+@dataclass
+class CriterionExecutionError:
+    criterion_id: str | None
+    node: str
+    error_code: str
+    retryable: bool
+
+
+@dataclass
+class CriteriaReviewResult:
+    """T-02의 tool 결과. 전체 합격/불합격은 임의로 집계하지 않는다."""
+    request_ref: str
+    status: NodeStatus
+    outcome: str | None
+    findings: list[ReviewedCriterion]
+    unprocessed_criteria: list[UnprocessedCriterion]
+    evidence_incomplete: bool
+    errors: list[CriterionExecutionError]
+
+
 if __name__ == "__main__":
     document = DocumentRef(
         document_id="example_doc",

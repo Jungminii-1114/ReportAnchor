@@ -9,12 +9,14 @@ class OllamaClient:
             provider: str = "local",
             api_key: str | None = None,
             timeout: float = 120.0,
+            num_ctx: int = 16384,
     ):
         self.model = model
         self.base_url = base_url
         self.provider = provider
         self.api_key = api_key
         self.timeout = timeout
+        self.num_ctx = num_ctx
 
     def chat(self, messages: list[dict[str, str]], *, response_format: dict | str | None = None) -> str:
         payload = {
@@ -30,6 +32,10 @@ class OllamaClient:
             if self.provider == "local":
                 payload["format"] = response_format
                 payload["options"] = {"temperature": 0}
+        if self.provider == "local":
+            if type(self.num_ctx) is not int or self.num_ctx < 512:
+                raise ValueError("num_ctx는 512 이상 정수여야 합니다.")
+            payload.setdefault("options", {})["num_ctx"] = self.num_ctx
         # payload를 서버로 전송하기
         url = self.base_url.rstrip("/") + "/api/chat"
 

@@ -1,0 +1,208 @@
+{
+  "validation_date": "2026-11-12",
+  "design_ref": "ad430ab123c61332e099765ab3e1a21c81c8dc7e",
+  "automated": {
+    "tests": 267,
+    "failures": 0,
+    "errors": 0,
+    "successful": true
+  },
+  "pdf_tests": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture_tests": "Automated tests use mocked model responses; source retrieval and graph execution are real.",
+  "public_data": {
+    "name": "KISTEP 2025 plan",
+    "doc_id": "doc_0530d100e08517b6",
+    "pages": 117,
+    "blocks": 3105,
+    "chunks": 180
+  },
+  "mock_model_real_data": {
+    "mode": "mock-model-real-data",
+    "status": "success",
+    "outcome": "insufficient_evidence",
+    "findings": [
+      {
+        "criterion": "2025년 경상운영비는 4,000백만원 이상이어야 한다.",
+        "verdict": "met",
+        "conditions": [
+          {
+            "verdict": "met",
+            "reason": "모의 근거 검증",
+            "claim": "2025년 경상운영비는 4,566백만원이다.",
+            "verification": "supported",
+            "pages": [
+              112
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "2025년 경상운영비는 5,000백만원 이상이어야 한다.",
+        "verdict": "not_met",
+        "conditions": [
+          {
+            "verdict": "not_met",
+            "reason": "모의 근거 검증",
+            "claim": "2025년 경상운영비는 4,566백만원이다.",
+            "verification": "supported",
+            "pages": [
+              112
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "오로라 양자센터 인력은 25,000명 이상이어야 한다.",
+        "verdict": "undetermined",
+        "conditions": [
+          {
+            "verdict": "undetermined",
+            "reason": "직접 근거 없음",
+            "claim": null,
+            "verification": null,
+            "pages": []
+          }
+        ]
+      }
+    ],
+    "calls": [
+      {
+        "node": "N-05",
+        "seconds": 0.0
+      },
+      {
+        "node": "N-06",
+        "seconds": 0.0
+      },
+      {
+        "node": "N-06",
+        "seconds": 0.0
+      },
+      {
+        "node": "N-06",
+        "seconds": 0.0
+      },
+      {
+        "node": "N-03",
+        "seconds": 0.0
+      },
+      {
+        "node": "N-03",
+        "seconds": 0.0
+      }
+    ],
+    "elapsed_seconds": 0.1,
+    "errors": [],
+    "cloud_calls": 0,
+    "general_accuracy_evaluated": false
+  },
+  "live_model": {
+    "mode": "real-local-model",
+    "status": "success",
+    "outcome": null,
+    "findings": [
+      {
+        "criterion": "2025년 경상운영비는 4,000백만원 이상이어야 한다.",
+        "verdict": "met",
+        "conditions": [
+          {
+            "verdict": "met",
+            "reason": "2025년 경상운영비는 4,566백만원으로, 4,000백만원 이상의 조건을 충족한다.",
+            "claim": "2025년 경상운영비는 4,566백만원으로, 4,000백만원 이상을 충족한다.",
+            "verification": "supported",
+            "pages": [
+              109,
+              112,
+              114
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "2025년 경상운영비는 5,000백만원 이상이어야 한다.",
+        "verdict": "not_met",
+        "conditions": [
+          {
+            "verdict": "not_met",
+            "reason": "2025년 경상운영비는 4,566백만원으로, 5,000백만원 이상에 미치지 못함을 문서가 명시하고 있어 조건에 미달함을 증명하고 있음.",
+            "claim": "2025년 경상운영비는 4,566백만원으로, 5,000백만원 이상에 미치지 못한다.",
+            "verification": "supported",
+            "pages": [
+              109,
+              112,
+              114
+            ]
+          }
+        ]
+      }
+    ],
+    "calls": [
+      {
+        "node": "N-05",
+        "cached_response": false,
+        "seconds": 44.6
+      },
+      {
+        "node": "N-06",
+        "cached_response": false,
+        "seconds": 30.27
+      },
+      {
+        "node": "N-06",
+        "cached_response": false,
+        "seconds": 25.4
+      },
+      {
+        "node": "N-03",
+        "cached_response": false,
+        "seconds": 28.58
+      },
+      {
+        "node": "N-03",
+        "cached_response": false,
+        "seconds": 42.61
+      }
+    ],
+    "elapsed_seconds": 171.56,
+    "errors": [],
+    "cloud_calls": 0,
+    "general_accuracy_evaluated": false
+  },
+  "context_validation": {
+    "requested_num_ctx": 16384,
+    "observed_num_ctx": 16384,
+    "observed_nonempty_prompt_tokens": [
+      732,
+      3423,
+      3423,
+      5413,
+      5414
+    ],
+    "truncation_warning_count": 0
+  },
+  "findings_during_development": [
+    {
+      "issue": "Model-rewritten quote did not match original text",
+      "resolution": "Model now selects code-issued quote IDs; code restores exact source text and offsets."
+    },
+    {
+      "issue": "Previous server clipped a 5272-token input to 2050 tokens",
+      "resolution": "Local API context is now explicitly 16384; final full run processed complete prompts without truncation warnings."
+    },
+    {
+      "issue": "Earlier small-context run held the not_met finding as insufficient",
+      "resolution": "Preserved in private experiment logs; final full fresh run returned met and not_met, both supported."
+    }
+  ],
+  "limitations": [
+    "Two criteria in one public document do not establish general accuracy.",
+    "N-05 structure validation does not prove complete semantic preservation.",
+    "Generation and verification use the same base model in separate requests.",
+    "T-02 web routing and the main harness are not connected.",
+    "Context size must fit the input/model/device; character and token budgets differ."
+  ]
+}
