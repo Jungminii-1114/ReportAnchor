@@ -139,4 +139,6 @@ The initial development interface will be Python functions and command-line exec
 
 ## Frontend UI
 
-The React / Chrome Extension UI prototypes are available in [frontend](./frontend/README.md). The current chat UI and the archived four-step UI each include a downloadable standalone preview. The chat extension now identifies PDFs from the active tab's URL and response metadata. PDF content parsing and AI analysis remain unimplemented; answers and citations are examples. Standalone previews retain the mock document flow.
+The primary frontend is the React / Chrome Extension [chat UI](./frontend/report-agent-chat/README.md). Current frontend development and future backend integration target this version. It identifies PDFs from the active tab's URL and response metadata; PDF content parsing and AI analysis remain unimplemented, so answers and citations are examples. A standalone preview is available for UI demonstrations.
+
+The earlier four-step UI is archived in [frontend/legacy/report-agent](./frontend/legacy/report-agent) as a design reference. See the [frontend guide](./frontend/README.md) for setup instructions.

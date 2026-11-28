@@ -1,15 +1,15 @@
 # 프론트엔드 UI
 
-Chrome Extension Manifest V3 + React 기반 UI입니다. 현재 채팅형 버전은 열린 탭의 PDF 주소와 응답 정보를 실제로 확인합니다. PDF 본문 파싱과 AI 분석은 아직 연결하지 않았으며, 답변과 근거는 예시 데이터입니다.
+Report Agent의 메인 프론트엔드는 Chrome Extension Manifest V3 + React 기반 채팅형 UI입니다. 열린 탭의 PDF 주소와 응답 정보를 실제로 확인합니다. PDF 본문 파싱과 AI 분석은 아직 연결하지 않았으며, 답변과 근거는 예시 데이터입니다.
 
 | 폴더 | 용도 |
 | --- | --- |
-| [report-agent-chat](./report-agent-chat) | 현재 채팅형 UI. 이후 개발은 이 버전에서 진행합니다. |
-| [legacy/report-agent](./legacy/report-agent) | 보관용 4단계 UI. 문서 확인 → 평가 조건 → 분석 진행 → 결과 확인 형태입니다. |
+| [report-agent-chat](./report-agent-chat) | 메인 채팅형 UI. 현재 개발 및 향후 백엔드 연동 대상입니다. |
+| [legacy/report-agent](./legacy/report-agent) | 이전 4단계 UI. 설계 이력 참고용으로 보관합니다. |
 
 ## 설치 없이 미리보기
 
-각 폴더의 `preview.html`을 다운로드해서 Chrome으로 여세요. GitHub 파일 화면에서는 HTML 코드만 보이며, 파일 하나만 내려받으면 예시 PDF와 UI를 함께 확인할 수 있습니다.
+메인 UI의 미리보기는 `report-agent-chat/preview.html`을 다운로드해서 Chrome으로 여세요. GitHub 파일 화면에서는 HTML 코드만 보이며, 파일 하나만 내려받으면 예시 PDF와 UI를 함께 확인할 수 있습니다.
 
 미리보기의 Chrome 창 모형과 예시 PDF는 실제 확장 화면에 포함되지 않습니다. 실제 확장은 사이드 패널만 표시합니다. 실제 기능의 구현 여부는 [기능 점검 문서](./report-agent-chat/FEATURE-AUDIT.md)를 참고하세요.
 
