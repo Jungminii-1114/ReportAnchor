@@ -127,7 +127,7 @@ PDF·HWP 등에서 본문, 표, 원문 위치, 시각적 요소를 추출한다.
 
 청크의 검색용 텍스트를 로컬 임베딩 모델로 벡터화하고 색인한다. 모델이나 임베딩 설정만 바뀌었다면 기존 파싱·청킹 결과는 재사용한다.
 
-**실행 위치 (2026-11-28):** 임베딩은 GPU 없는 개인 PC CPU에서 **PyTorch 없이** 경량 모델(`EmbeddingGemma 2` 텍스트 270M GGUF/ONNX 또는 `multilingual-e5-small` ONNX INT8)로 실행해, 원문 청크를 임베딩하려고 서버로 보내는 전송을 줄인다. 생성·검증·VLM 추론만 사내망 중앙 OpenAI 호환 서버가 맡는다. 후보 비교는 [로컬 임베딩 비교](local-daemon-and-deployment.md#53-로컬-임베딩-비교-조사-시점-수치)를 따른다.
+**실행 위치 (2026-11-28):** 임베딩은 GPU 없는 개인 PC CPU에서 **PyTorch 없이** 경량 모델(`EmbeddingGemma 2` 텍스트 270M GGUF/ONNX 또는 `multilingual-e5-small` ONNX INT8)로 실행해, 원문 청크를 임베딩하려고 서버로 보내는 전송을 줄인다. 생성·검증·VLM 추론만 사내망 중앙 Ollama 서버(추후 OpenAI 호환 API 확장 가능)가 맡는다. 후보 비교는 [로컬 임베딩 비교](local-daemon-and-deployment.md#53-로컬-임베딩-비교-조사-시점-수치)를 따른다.
 
 **③-B Tokenization → ④-B BM25 Index (어휘 검색 경로)**
 
