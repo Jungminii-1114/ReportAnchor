@@ -22,7 +22,7 @@ The goal is to help reviewers understand which conditions are met, which are not
 
 Internal plans, performance reports, and review materials may contain information that cannot be uploaded to an external service. A workflow that depends on external processing can therefore be unsuitable for these documents.
 
-Report Agent is designed so that review takes place within the organization's own environment. In production, document processing, retrieval, and embedding run on the user's PC, LLM and VLM inference runs on an approved OpenAI-compatible model server inside the organization's network, and no data is sent to the external internet. During development and testing only, public documents may be processed with a cloud model.
+Report Agent is designed so that review takes place within the organization's own environment. In production, document processing, retrieval, and embedding run on the user's PC, LLM and VLM inference runs on an approved central Ollama server inside the organization's network (extensible to OpenAI-compatible APIs later), and no data is sent to the external internet. During development and testing only, public documents may be processed with a cloud model.
 
 ### Figures that lose their meaning during extraction
 
@@ -141,7 +141,7 @@ Design documents are written in Korean.
 |---|---|
 | [Query Agent MVP](docs/query-agent-mvp.md) | Top-level N-10 → Big Node → N-11 execution structure |
 | [Document pipeline](docs/document-pipeline.md) | Parsing, chunking, indexing, retrieval, and stored data per stage |
-| [Local daemon, intranet AI, DB and backup](docs/local-daemon-and-deployment.md) | Web app, single local Python daemon, local embeddings, intranet OpenAI-compatible AI API, personal SQLite and central backup |
+| [Local daemon, intranet AI, DB and backup](docs/local-daemon-and-deployment.md) | Web app, single local Python daemon, local embeddings, intranet Ollama server (OpenAI-compatible APIs later), personal SQLite and central backup |
 | [Idea backlog](docs/idea-backlog.md) | Harness decisions and follow-up work |
 | [Design risks and mitigations](docs/design-risks-and-mitigations.md) | Known weaknesses and how they are handled |
 
