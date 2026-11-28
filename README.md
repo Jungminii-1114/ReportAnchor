@@ -139,4 +139,4 @@ The initial development interface will be Python functions and command-line exec
 
 ## Frontend UI
 
-The React / Chrome Extension UI prototypes are available in [frontend](./frontend/README.md). The current chat UI and the archived four-step UI each include a downloadable standalone preview. PDF detection and AI analysis remain mocked.
+The React / Chrome Extension UI prototypes are available in [frontend](./frontend/README.md). The current chat UI and the archived four-step UI each include a downloadable standalone preview. The chat extension now identifies PDFs from the active tab's URL and response metadata. PDF content parsing and AI analysis remain unimplemented; answers and citations are examples. Standalone previews retain the mock document flow.

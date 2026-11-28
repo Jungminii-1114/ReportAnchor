@@ -1,4 +1,4 @@
-import { extension, flushChat } from './chatState';
+import { extension, flushChat, getChat } from './chatState';
 export function openExpanded() {
   const url = new URL(extension ? chrome.runtime.getURL('index.html') : location.href);
   url.searchParams.set('view', 'expanded');
@@ -8,7 +8,9 @@ export function openExpanded() {
   }
   return (async () => {
     await flushChat();
-    const [source] = await chrome.tabs.query({ active: true, currentWindow: true });
+    const currentSource = getChat().source;
+    const [active] = await chrome.tabs.query({ active: true, currentWindow: true });
+    const source = currentSource?.tabId !== undefined ? { id: currentSource.tabId, windowId: currentSource.windowId } : active;
     if (source?.id !== undefined) url.searchParams.set('sourceTab', source.id);
     if (source?.windowId !== undefined) url.searchParams.set('sourceWindow', source.windowId);
     const tab = await chrome.tabs.create({ url: url.href, active: false });
@@ -19,8 +21,10 @@ export function openExpanded() {
 export function returnToPanel() {
   if (extension) {
     const params = new URLSearchParams(location.search);
-    const source = params.get('sourceTab');
-    if (!source || !Number.isInteger(Number(source))) throw new Error('돌아갈 문서 탭 정보가 없습니다. PDF 탭에서 확장 아이콘으로 사이드 패널을 열어 주세요.');
+    const currentSource = getChat().source;
+    const source = currentSource?.tabId ?? params.get('sourceTab');
+    const sourceWindow = currentSource?.windowId ?? params.get('sourceWindow');
+    if (source === null || source === undefined || !Number.isInteger(Number(source))) throw new Error('돌아갈 문서 탭 정보가 없습니다. PDF 탭에서 확장 아이콘으로 사이드 패널을 열어 주세요.');
     const tabId = Number(source);
     // Start during the user gesture; do not await storage or tab queries first.
     let opening;
@@ -29,7 +33,7 @@ export function returnToPanel() {
     return Promise.resolve(opening).then(async () => {
       try { await chrome.tabs.update(tabId, { active: true }); }
       catch { throw new Error('원래 문서 탭으로 이동하지 못했습니다. PDF 탭을 직접 선택해 주세요.'); }
-      if (params.get('sourceWindow')) await chrome.windows.update(Number(params.get('sourceWindow')), { focused: true }).catch(() => {});
+      if (sourceWindow !== null && sourceWindow !== undefined) await chrome.windows.update(Number(sourceWindow), { focused: true }).catch(() => {});
     }, async () => {
       try { await chrome.tabs.get(tabId); }
       catch { throw new Error('원래 PDF 탭이 닫혔습니다. PDF를 다시 열고 확장 아이콘을 눌러 주세요.'); }

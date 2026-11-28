@@ -3,3 +3,4 @@
 .header-tools .view-button{width:auto;padding:0 8px;font-size:11px;white-space:nowrap}.expanded .chat-header{flex-wrap:wrap}.header-tools .return-button{color:var(--blue);background:#f0f5ff;padding:0 10px}.review-row button{font-size:10px}@media(max-width:380px){.wordmark strong{font-size:16px}.chat-header{gap:4px}.wordmark{gap:6px}.header-tools .view-button{padding:0 5px;font-size:10px}}
 .chat-header{flex-wrap:wrap}.header-tools{margin-left:auto}
 .document-found{color:#258467;background:#f4faf7;border-color:#dfeee6;font-size:12px}.document-found strong{font-weight:500}@media(max-width:760px){.panel-launch span{display:inline}.panel-launch{font-size:10px;padding:8px}.browser-address-row{gap:6px}}
+.document-status>div{min-width:0}.document-status small{line-height:1.6}.document-status .detected-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

@@ -3,14 +3,14 @@ import { ArrowUp, ArrowUpRight, BookOpen, Check, FileText, Loader2, Maximize2, M
 import PreviewShell from './components/PreviewShell';
 import Answer from './components/Answer';
 import { mockResponse, suggestions } from './data/mockResponses';
-import { useChat, setField, patchChat, getChat } from './services/chatState';
+import { useChat, setField, patchChat, getChat, extension, detectDocument, sourceIdentity } from './services/chatState';
 import { openExpanded, returnToPanel, closePanelForPdf } from './services/expandedView';
 
 const expanded = new URLSearchParams(location.search).get('view') === 'expanded';
 
 
 export default function App() {
-  const { messages, draft, criteria, status, pending, ready, error } = useChat();
+  const { messages, draft, criteria, status, pending, ready, error, document: sourceDocument, detectionReason } = useChat();
   const setDraft = value => setField('draft', value);
   const setCriteria = value => setField('criteria', value);
   const [showCriteria, setShowCriteria] = useState(false);
@@ -26,19 +26,20 @@ export default function App() {
   useEffect(() => {
     if (!ready) return;
     const key = 'report-agent-chat.document-notice';
+    const identity = sourceDocument?.url || 'preview';
     if (status !== 'found') {
       setShowFound(false);
       try { sessionStorage.removeItem(key); } catch {}
       return;
     }
-    try { if (sessionStorage.getItem(key)) return; } catch {}
+    try { if (sessionStorage.getItem(key) === identity) return; } catch {}
     setShowFound(true);
     const timer = setTimeout(() => {
       setShowFound(false);
-      try { sessionStorage.setItem(key, 'shown'); } catch {}
+      try { sessionStorage.setItem(key, identity); } catch {}
     }, 2500);
     return () => clearTimeout(timer);
-  }, [status, ready]);
+  }, [status, ready, sourceDocument?.url]);
   useEffect(() => {
     const returnHandler = event => { if (event.data?.type === 'report-agent-return') setPanelOpen(true); };
     window.addEventListener('message', returnHandler);
@@ -46,7 +47,7 @@ export default function App() {
   }, []);
   useEffect(() => { if (error) setNotice(error); }, [error]);
   useEffect(() => {
-    if (status !== 'searching') return;
+    if (extension || status !== 'searching') return;
     const timer = setTimeout(() => setField('status', 'found'), 1400);
     return () => clearTimeout(timer);
   }, [status]);
@@ -58,6 +59,7 @@ export default function App() {
     const finish = setTimeout(() => {
       const current = getChat();
       if (current.pending?.id !== pending.id) return;
+      if (extension && pending.sourceIdentity !== sourceIdentity(current.source)) return;
       const answer = { id: pending.id, role: 'assistant', answer: mockResponse(pending.question) };
       patchChat({ messages: current.messages.some(m => m.id === pending.id) ? current.messages : [...current.messages, answer], pending: null });
     }, Math.max(0, 2300 - age));
@@ -66,14 +68,14 @@ export default function App() {
   useEffect(() => { bottom.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }); }, [messages, busy, phase]);
   useEffect(() => { if (!notice) return; const t = setTimeout(() => setNotice(''), 3500); return () => clearTimeout(t); }, [notice]);
 
-  function findDocument() { setField('status', 'searching'); }
+  function findDocument() { void detectDocument(); }
   function ask(text = draft) {
     const question = text.trim();
     if (!question || getChat().pending || status !== 'found' || !ready) return;
     const fullQuestion = criteria.trim() ? question + '\n평가 기준: ' + criteria.trim() : question;
     patchChat({
       messages: [...getChat().messages, { id: crypto.randomUUID(), role: 'user', text: fullQuestion }],
-      draft: '', pending: { id: crypto.randomUUID(), question: fullQuestion, started: Date.now() },
+      draft: '', pending: { id: crypto.randomUUID(), question: fullQuestion, started: Date.now(), ...(extension ? { sourceIdentity: sourceIdentity() } : {}) },
     });
     setShowCriteria(false);
   }
@@ -81,7 +83,7 @@ export default function App() {
     patchChat({ pending: null, messages: [...getChat().messages, { id: crypto.randomUUID(), role: 'system', text: '답변 생성을 중단했습니다. 질문을 다시 보내 이어갈 수 있습니다.' }] });
   }
   function newChat() {
-    patchChat({ pending: null, messages: [], draft: '', criteria: '', ...(status === 'searching' ? { status: 'error' } : {}) });
+    patchChat({ pending: null, messages: [], draft: '', criteria: '' });
     setShowCriteria(false); input.current?.focus();
   }
   async function enlarge() {
@@ -97,14 +99,14 @@ export default function App() {
   }
   function viewSource(page) {
     if (__BROWSER_PREVIEW__ && !expanded) { setSourcePage(page); setPanelOpen(false); }
-    else setNotice(`원문 ${page}페이지 이동은 실제 PDF 연결 후 사용할 수 있습니다.`);
+    else setNotice(`현재 근거와 ${page}페이지는 예시입니다. 실제 문서 분석 연결 후 원문으로 이동할 수 있습니다.`);
   }
 
   const content = <div className={`chat-app ${expanded ? 'expanded' : ''}`}>
     <header className="chat-header"><div className="wordmark"><span className="brand-icon"><BookOpen size={20}/></span><strong>Report Agent</strong></div><div className="header-tools"><button className="view-button" title="새 대화" aria-label="새 대화" onClick={newChat} disabled={!ready}><MessageSquarePlus size={18}/><span>새 대화</span></button>{!expanded && <button className="view-button" title="패널을 닫고 PDF 크게 보기 · 다시 열려면 Chrome의 Report Agent 아이콘을 누르세요" aria-label="PDF 크게 보기" onClick={showPdf} disabled={!ready}><PanelRightClose size={17}/><span>PDF 크게 보기</span></button>}{!expanded && <button title="전체화면" aria-label="전체화면" className="view-button" onClick={enlarge} disabled={!ready}><Maximize2 size={17}/><span>전체화면</span></button>}{expanded && <button className="view-button return-button" title="사이드 패널로 돌아가기" aria-label="사이드 패널로 돌아가기" onClick={goBack}><PanelRightOpen size={17}/><span>사이드 패널로 돌아가기</span></button>}</div></header>
     {ready && (status !== 'found' || showFound) && <div className="document-area">
-      {status === 'found' ? <div className="document-status document-found" role="status"><Check size={18}/><strong>문서를 찾았습니다</strong></div>
-      : <div className="document-status" role="status">{status === 'searching' ? <Loader2 className="spin" size={19}/> : <FileText size={19}/>}<div><strong>{status === 'searching' ? '열려 있는 PDF를 찾고 있어요' : '연결된 문서가 없어요'}</strong><small>{status === 'searching' ? '잠시만 기다려 주세요.' : 'PDF를 연 뒤 문서를 연결해 주세요.'}</small></div>{status === 'error' && <button onClick={findDocument}><RotateCw size={13}/>다시 찾기</button>}</div>}
+      {status === 'found' ? <div className="document-status document-found" role="status"><Check size={18}/><div><strong>문서를 찾았습니다</strong>{sourceDocument && <small className="detected-name" title={sourceDocument.name}>{sourceDocument.name}</small>}</div></div>
+      : <div className="document-status" role="status">{status === 'searching' ? <Loader2 className="spin" size={19}/> : <FileText size={19}/>}<div><strong>{status === 'searching' ? '열려 있는 PDF를 찾고 있어요' : '연결된 문서가 없어요'}</strong><small>{status === 'searching' ? '잠시만 기다려 주세요.' : (detectionReason || 'PDF를 연 뒤 문서를 연결해 주세요.')}</small></div>{status === 'error' && <button onClick={findDocument}><RotateCw size={13}/>다시 찾기</button>}</div>}
     </div>}
     <main className="conversation" aria-label="문서와 대화">
       {!messages.length ? <div className="welcome"><span className="welcome-eyebrow">문서를 읽는 새로운 방법</span><h1>궁금한 점을<br/>물어보세요</h1><p>보고서에서 궁금한 내용을 질문해 보세요.<br/>관련 내용이 있는 페이지도 함께 알려드려요.</p><div className="suggestions">{suggestions.map((s, i) => <button key={s.label} onClick={() => ask(s.text)} disabled={status !== 'found' || !ready}><span className="suggestion-icon">{i === 0 ? <FileText size={18}/> : i === 1 ? <BookOpen size={18}/> : <SlidersHorizontal size={18}/>}</span><span><strong>{s.label}</strong><small>{s.text}</small></span><ArrowUpRight size={15}/></button>)}</div><span className="welcome-note">질문은 자연스럽게, 기준은 구체적으로.</span></div>
@@ -114,7 +116,7 @@ export default function App() {
     <footer className="composer-area">
       {showCriteria && <div className="criteria-editor"><label htmlFor="criteria">평가 기준 <span>선택 사항</span></label><button aria-label="평가 기준 닫기" onClick={() => setShowCriteria(false)}><X size={15}/></button><textarea id="criteria" value={criteria} maxLength={1000} onChange={e => setCriteria(e.target.value)} placeholder="예: 예산 증가율 10% 이상, 핵심 과제 3개 이상"/><small>입력한 기준을 질문과 함께 검토합니다.</small></div>}
       <form className="composer" onSubmit={e => { e.preventDefault(); ask(); }}><label className="sr-only" htmlFor="question">문서에 질문하기</label><textarea ref={input} id="question" value={draft} maxLength={3000} disabled={status !== 'found' || !ready} onChange={e => setDraft(e.target.value)} onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); ask(); } }} placeholder={status === 'found' ? '이 문서에 대해 무엇이 궁금하세요?' : '문서를 연결하면 대화를 시작할 수 있어요'}/><div className="composer-tools"><button type="button" className={`criteria-toggle ${criteria ? 'active' : ''}`} onClick={() => setShowCriteria(!showCriteria)} aria-expanded={showCriteria}><Plus size={15}/>{criteria ? '평가 기준 적용됨' : '평가 기준'}</button>{busy ? <button type="button" className="send" aria-label="답변 중단" onClick={stop}><Square size={14} fill="currentColor"/></button> : <button type="submit" className="send" aria-label="질문 보내기" disabled={!draft.trim() || status !== 'found' || !ready}><ArrowUp size={19}/></button>}</div></form>
-      <p className="disclaimer">UI 미리보기 · 실제 PDF 분석 없이 예시 답변을 표시합니다.</p>
+      <p className="disclaimer">{extension ? 'PDF 인식만 연결되어 있습니다. 답변과 근거는 이 문서의 분석 결과가 아닌 예시입니다.' : 'UI 미리보기 · 실제 PDF 분석 없이 예시 답변을 표시합니다.'}</p>
     </footer>
     {notice && <div className="toast" role="status">{notice}</div>}
   </div>;
