@@ -2,9 +2,9 @@
 
 **A local AI agent for evidence-based report review and decision support**
 
-〖English | [한국어](readme/README-korean.md)〗
+〖English | [한국어](README/readme/README-korean.md)〗
 
-〖[Overview](#overview) | [Why Report Agent?](#why-report-agent) | [Workflow](#workflow) | [Roadmap](#roadmap)〗
+〖[Overview](#overview) | [Why Report Agent?](#why-report-agent) | [Workflow](#workflow) | [Roadmap](#roadmap) | [Documentation](#documentation)〗
 
 > Analyze PDF and HWP reports locally, check user-defined review criteria, and provide feedback supported by traceable source evidence.
 
@@ -22,7 +22,7 @@ The goal is to help reviewers understand which conditions are met, which are not
 
 Internal plans, performance reports, and review materials may contain information that cannot be uploaded to an external service. A workflow that depends on external processing can therefore be unsuitable for these documents.
 
-Report Agent is designed to perform document processing, retrieval, and model inference locally so that review can take place within the user's own environment.
+Report Agent is designed so that review takes place within the organization's own environment. In production, document processing, retrieval, and embedding run on the user's PC, LLM and VLM inference runs on an approved OpenAI-compatible model server inside the organization's network, and no data is sent to the external internet. During development and testing only, public documents may be processed with a cloud model.
 
 ### Figures that lose their meaning during extraction
 
@@ -131,7 +131,19 @@ The RAG and agent role owns the retrieval and review strategies. The harness rol
 2. **Build the retrieval pipeline:** implement chunking and indexes; compare dense, keyword, hybrid, and reranked retrieval.
 3. **Implement review behavior:** connect question analysis, tools, calculations, citation checks, and abstention.
 4. **Integrate the harness and evaluate:** collect traces, analyze failures, and automate reproducible comparisons.
-5. **Build the interface:** connect local FastAPI services and a Chrome Extension for reviewing results and source evidence.
+5. **Build the interface:** connect a local web app (React, TypeScript, and Vite) to a single local Python daemon (FastAPI) for reviewing results and source evidence.
+
+## Documentation
+
+Design documents are written in Korean.
+
+| Document | Contents |
+|---|---|
+| [Query Agent MVP](docs/query-agent-mvp.md) | Top-level N-10 → Big Node → N-11 execution structure |
+| [Document pipeline](docs/document-pipeline.md) | Parsing, chunking, indexing, retrieval, and stored data per stage |
+| [Local daemon, intranet AI, DB and backup](docs/local-daemon-and-deployment.md) | Web app, single local Python daemon, local embeddings, intranet OpenAI-compatible AI API, personal SQLite and central backup |
+| [Idea backlog](docs/idea-backlog.md) | Harness decisions and follow-up work |
+| [Design risks and mitigations](docs/design-risks-and-mitigations.md) | Known weaknesses and how they are handled |
 
 ## Getting started
 

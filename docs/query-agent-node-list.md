@@ -18,7 +18,7 @@ N-10과 N-11은 메인 에이전트의 역할이다. 메인 에이전트는 Big 
 | ID / 상세 문서 | 표준 이름 | 단일 책임 | 최소 입력 → 출력 |
 |---|---|---|---|
 | **[N-01](small-nodes/N-01.md)** | `retrieve_evidence` | 검색 후보 탐색 | 검색 텍스트·문서/버전 범위·검색 설정 → `RetrievalCandidates` |
-| **[N-02](small-nodes/N-02.md)** | `get_source_context` | 후보와 원문·표·헤더·각주·위치 연결 | 후보 참조·문서 버전 → `EvidenceBundle` |
+| **[N-02](small-nodes/N-02.md)** | `get_source_context` | 후보와 원문·위치 연결, 고정 길이 문맥 확장, 표 청크의 사전 보존 `table_context` 전달 | 후보 참조·문서 버전 → `EvidenceBundle` (`context_text`·`source_refs[]`·`expanded_source_refs[]`·`table_context`) |
 | **[N-03](small-nodes/N-03.md)** | `verify_grounding` | 주장·판정·비교 결과와 원문 근거의 정합성 검사 | 결과 초안·EvidenceBundle → `VerificationReport` |
 
 ## 3. 내부 전용 Small Node
@@ -28,9 +28,9 @@ N-10과 N-11은 메인 에이전트의 역할이다. 메인 에이전트는 Big 
 | **[N-04](small-nodes/N-04.md)** | `draft_answer` | 원문 근거를 이용한 질문 답변 초안 작성 | 질문·EvidenceBundle → `ReviewDraft` |
 | **[N-05](small-nodes/N-05.md)** | `structure_criteria` | 명시된 검토 기준을 판정 항목으로 구조화 | 사용자 기준 원문 → `CriteriaSet` |
 | **[N-06](small-nodes/N-06.md)** | `evaluate_criterion` | 기준별 충족·미충족·확인 불가 판정 | CriteriaSet 항목·EvidenceBundle → `CriterionFinding` |
-| **[N-07](small-nodes/N-07.md)** | `define_comparison` | 문서·기간·지표·범위 및 비교 축 정의 | 비교 요청·허용 문서 범위 → `ComparisonSpec` |
-| **[N-08](small-nodes/N-08.md)** | `check_comparability` | 기간·단위·집계 조건과 정성 비교 범위 검사 | ComparisonSpec·대상별 EvidenceBundle → `비교 가능성·사유(타입 미정)` |
-| **[N-09](small-nodes/N-09.md)** | `build_comparison` | 정량 계산 또는 정성 비교 결과 구성 | 비교 가능성·대상별 확인된 값/내용 → `ComparisonFinding` |
+| **[N-07](small-nodes/N-07.md)** | `define_comparison` | 단일 문서·정량 지표 1개·서로 다른 기간 2개의 비교 축 정의 (MVP 개념 계약 확정 2026-11-28) | 질문 원문·허용 문서 범위 → `ComparisonDefinition`(`spec: ComparisonSpec` 또는 `missing_fields[]`/`unsupported_reasons[]`; `outcome`=`null`/`needs_clarification`/`unsupported_comparison`) |
+| **[N-08](small-nodes/N-08.md)** | `check_comparability` | 두 대상의 값·연도·부호·단위·수치 성격·집계 범위·각주 대조와 비교 가능성 판정 (MVP 개념 계약 확정 2026-11-28) | ComparisonSpec·대상별 EvidenceBundle → `ComparabilityReport`(`comparable`/`not_comparable`/`insufficient_evidence`, `target_extractions[]`, `conversion_plan`) |
+| **[N-09](small-nodes/N-09.md)** | `build_comparison` | 정량 비교 결과 구성과 N-03 검증용 값 주장 생성 — **순수 Python, LLM 0회** (MVP 개념 계약 확정 2026-11-28) | ComparisonSpec·ComparabilityReport → `ComparisonFinding`(`calculated`/`side_by_side`/`values_only_hold`, `calculations[]`, `claims_for_verification[]`) |
 
 ## 4. Small Node로 분리하지 않는 내부 기능
 

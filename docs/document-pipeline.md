@@ -55,7 +55,7 @@ flowchart TD
 
 **사용자 질문 처리 (⑤부터 ⑥까지)**
 
-질문이 들어오면 Dense와 BM25에서 후보를 검색한다. **RRF**로 두 검색 결과의 순위를 통합한 후, 필요하면 **Reranker**로 후보의 관련성을 다시 평가한다. N-01은 어느 구성에서나 `RetrievalCandidates`를 만들고, N-02가 **원문 위치 범위(`source_spans[]`)를 조회하고 고정 길이 문맥을 확장**해 `EvidenceBundle`로 전달한다.
+질문이 들어오면 Dense와 BM25에서 후보를 검색한다. **RRF**로 두 검색 결과의 순위를 통합한 후, 필요하면 **Reranker**로 후보의 관련성을 다시 평가한다. N-01은 어느 구성에서나 `RetrievalCandidates`를 만들고, N-02가 **원문 위치 범위(`source_spans[]`)를 조회하고 고정 길이 문맥을 확장**해 원래·확장 출처(`source_refs[]`·`expanded_source_refs[]`)와 표 청크의 `table_context`를 함께 `EvidenceBundle`로 전달한다.
 
 **비교할 실행 구성**
 
@@ -97,10 +97,11 @@ flowchart TD
 | ④-B BM25 Index | `BM25IndexManifest` 및 실제 색인 | 색인 버전·저장 위치, 토큰화된 코퍼스 해시, `chunk_id` 매핑, BM25 구현·파라미터(`k1`, `b` 등), 색인 건수 | 문서별 TF·길이, 토큰별 DF/IDF, 평균 문서 길이 등 통계(엔진이 관리할 수도 있음) |
 | ⑤ Hybrid + RRF (공통) | `FusionResult` / `RetrievalCandidates` | 질의 ID·해시, 대상 문서/색인 버전, 후보 `chunk_id`, Dense·BM25 개별 순위·점수, RRF 순위·설정, 후보 집합 해시 | 검색 엔진·질의 처리 시간, 후보별 원문 위치 |
 | ⑥ Reranker (선택) | `RerankResult` | 입력 후보 집합의 해시·순서, 구현/모델 ID·버전, 재평가 점수·최종 순위, `chunk_id`, 실행·오류·건너뜀 상태 | 규칙·지시문·입력 표현 버전, 토큰·지연·비용, 외부 API 여부 |
-| N-02 원문 근거 조회 | `NodeResult[EvidenceBundle]` | `request_ref`, `context_profile_ref`, `evidence_items[]`의 `chunk_id`·문서 ID/버전·검색 순위·`context_text`·`source_refs[]`·`context_truncated`, 실행 진단 | 구조 기반 제목·표 헤더·각주 연결(추후 개선), 사실성·근거 충분성 검증(후속 노드) |
+| N-02 원문 근거 조회 | `NodeResult[EvidenceBundle]` | `request_ref`, `context_profile_ref`, `evidence_items[]`의 `chunk_id`·문서 ID/버전·검색 순위·`context_text`·`source_refs[]`(원래 검색 범위)·**`expanded_source_refs[]`(고정 길이 확장으로 추가된 앞뒤 범위, 2026-11-28)**·`context_truncated`, **표 청크의 `table_context`(② Chunking에서 사전 보존한 표 제목·행/열 헤더·단위를 그대로 전달, 표가 아니면 생략/`null`)**, 실행 진단 | 실행 시점의 동적 구조 기반 확장(상위 제목·각주 탐색 등, 추후 개선 — 사전 보존 `table_context` 전달과 별개), 사실성·근거 충분성 검증(후속 노드) |
 
 **공통 저장 규칙:**
 - 데이터가 큰 원문·이미지·벡터·색인 본체는 별도 로컬 저장소에 보관하고, 하네스 실행 상태에는 **아티팩트 ID/버전/해시/위치 참조**를 기록한다.
+- **물리 저장 구성 (2026-11-28):** 개인 PC의 단일 `SQLite WAL`(문서 메타·청크·오프셋 등) + 파일시스템(원본 PDF·H-02 JSON) + `NumPy`(규모가 커지면 `FAISS`) 벡터 색인에 둔다. BM25/FAISS 파생 색인은 `ChunkSet`에서 다시 만들 수 있으므로 사내 중앙 백업에서 기본 제외한다. [로컬 데몬 · 사내망 AI · DB·백업 아키텍처](local-daemon-and-deployment.md)
 - **MVP에 구현할 저장 기능은 H-02 단계별 아티팩트 캡처**다. **체크포인트/중단 후 재개(H-03)는 미정(미구현 가능)**이고, 아티팩트의 필수 의존성이 아니다. Trace는 별도의 관측 개념이다. [H-02 구현 범위](artifact-capture.md)
 - `chunk_id`는 양쪽 색인에서 동일한 원본 청크를 가리킨다. `ChunkSet.source_spans[]`는 청킹에 사용한 **`ExtractedBlock.raw_content`의 블록별 위치**를 나타내며, **0부터 시작하는 유니코드 코드 포인트 인덱스**와 **시작 포함·끝 제외 `[start_offset, end_offset)`**를 MVP 기준으로 확정한다. 청크가 여러 블록에 걸치면 범위를 원문 순서대로 기록한다. 정규화한 검색 텍스트의 위치와 혼용하지 않는다. N-02는 청킹 당시와 **동일한 파싱 결과 스냅샷(원문 블록·파서/설정 버전·해시/아티팩트 참조)**을 조회해야 하며, 불일치 시 임의로 재매핑하지 않는다. 페이지·좌표 등 `source_locator`는 문자열 오프셋과 별도로 보존한다.
 - RRF 결과를 기준선으로 항상 보존하고, Reranker 결과는 별도 아티팩트로 관리한다. **리랭커가 첫 검색에서 누락된 문서를 새로 발견하는 것은 아니므로** 최초 후보 집합과 최종 순위를 구별한다.
@@ -126,6 +127,8 @@ PDF·HWP 등에서 본문, 표, 원문 위치, 시각적 요소를 추출한다.
 
 청크의 검색용 텍스트를 로컬 임베딩 모델로 벡터화하고 색인한다. 모델이나 임베딩 설정만 바뀌었다면 기존 파싱·청킹 결과는 재사용한다.
 
+**실행 위치 (2026-11-28):** 임베딩은 GPU 없는 개인 PC CPU에서 **PyTorch 없이** 경량 모델(`EmbeddingGemma 2` 텍스트 270M GGUF/ONNX 또는 `multilingual-e5-small` ONNX INT8)로 실행해, 원문 청크를 임베딩하려고 서버로 보내는 전송을 줄인다. 생성·검증·VLM 추론만 사내망 중앙 OpenAI 호환 서버가 맡는다. 후보 비교는 [로컬 임베딩 비교](local-daemon-and-deployment.md#53-로컬-임베딩-비교-조사-시점-수치)를 따른다.
+
 **③-B Tokenization → ④-B BM25 Index (어휘 검색 경로)**
 
 청크를 토큰화해 BM25 색인을 만든다. 한국어 형태소 분석기를 사용할 수 있지만, 숫자·영문 약어·부정 표현이 소실되지 않는지도 확인해야 한다. 분석기만 교체하면 Dense 벡터는 다시 만들지 않는다.
@@ -142,7 +145,7 @@ RRF 상위 후보의 텍스트와 사용자 질문을 비교해 관련성 순위
 
 **EvidenceBundle — Agent에 근거 전달**
 
-N-01은 검색·재순위화한 후보를 `RetrievalCandidates`로 반환하고, N-02 `get_source_context`가 원문 문맥을 조회하여 `EvidenceBundle`을 구성한다. **N-02의 MVP 문맥 확장은 고정 길이 방식**으로 확정했다. 가능한 원문 위치·기존 메타데이터는 보존하되, 표·헤더·각주 간 구조적 관계를 이용한 확장은 추후 개선 후보로 남긴다([N-02 상세](small-nodes/N-02.md)). RRF 결과와 리랭커 결과의 참조는 구별해 보존한다.
+N-01은 검색·재순위화한 후보를 `RetrievalCandidates`로 반환하고, N-02 `get_source_context`가 원문 문맥을 조회하여 `EvidenceBundle`을 구성한다. **N-02의 MVP 문맥 확장은 고정 길이 방식**으로 확정했다. 원래 검색 범위는 `source_refs[]`, 확장으로 추가된 앞뒤 범위는 `expanded_source_refs[]`로 구분해 보존하며(두 목록의 합이 `context_text` 전체 위치), 표 청크는 청킹 단계에서 사전 보존한 `table_context`(표 제목·행/열 헤더·단위)를 **추측·재구성 없이 그대로 전달**한다. 실행 시점에 표·헤더·각주 간 구조적 관계를 탐색하는 동적 확장은 추후 개선 후보로 남긴다([N-02 상세](small-nodes/N-02.md)). RRF 결과와 리랭커 결과의 참조는 구별해 보존한다.
 
 ## 5. 변경 시 재사용·무효화 범위
 
