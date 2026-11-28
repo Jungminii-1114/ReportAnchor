@@ -26,13 +26,13 @@
 | 2 | **단일 Python 데몬** | `FastAPI + uvicorn`, 정적 UI 서빙 + REST API + `SQLite WAL` 잡 큐 + PDF 파싱 자식 프로세스 + `N-01`~`N-11` / `T-01`~`T-03` 워크플로 ([Query Agent MVP](query-agent-mvp.md)) |
 | 3 | **로컬 파싱·경량 색인** | `PyMuPDF` + `Kiwi BM25` + 경량 로컬 임베딩(`EmbeddingGemma 2` / `multilingual-e5-small`) + `NumPy`/`FAISS` ([문서 처리 파이프라인](document-pipeline.md)) |
 | 4 | **단일 AI 연결 모듈 (MVP: Ollama)** | 기존 JM Ollama 클라이언트 재사용 · 허용 주소 목록(Allowlist) 강제 · 사내 인증서(사설 CA) 기반 암호화 통신(TLS) · OS 키체인 연동 · 요청 과다(429)·시간 초과·장애 격리. 추후 OpenAI 호환 API 연결 추가 ([§6](#6-보안운영-체크포인트)) |
-| 5 | **1단계 스냅샷 백업 클라이언트** | `SQLite Online Backup API` + SHA-256 파일 업로드·복원 절차 ([§3](#3-시각화-2--개인-db--사내-중앙-백업-경계-및-2단계-로드맵)) |
+| 5 | **1단계 스냅샷 백업 클라이언트** | [`SQLite Online Backup API`](https://sqlite.org/backup.html) + [SHA-256](https://csrc.nist.gov/pubs/fips/180-4/upd1/final) 파일 업로드·복원 절차 ([§3](#3-시각화-2--개인-db--사내-중앙-백업-경계-및-2단계-로드맵)) |
 
 **사내 인프라 전제 범위 (회사가 제공·운영, 우리 팀은 표준 인터페이스로 연동)**
 
 | # | 구성 요소 | 우리 팀이 기대하는 인터페이스 |
 |---|---|---|
-| 1 | **사내 중앙 Ollama 서버** | 자체 오픈웨이트 LLM/VLM 호스팅, **MVP: Ollama API(`/api/chat`)**. 추후 OpenAI 호환 API(`/v1/chat/completions`, 예: `vLLM`·`SGLang`)로 확장 가능 |
+| 1 | **사내 중앙 Ollama 서버** | 자체 오픈웨이트 LLM/VLM 호스팅, **MVP: [Ollama API](https://docs.ollama.com/api/chat)(`/api/chat`)**. 추후 OpenAI 호환 API(`/v1/chat/completions`, 예: [`vLLM`](https://docs.vllm.ai/en/stable/serving/online_serving/openai_compatible_server/)·[`SGLang`](https://github.com/sgl-project/sglang/blob/main/docs/docs/basic_usage/openai_api.mdx))로 확장 가능 |
 | 2 | **사내 백업 저장소** | 1단계 MinIO/S3 호환 API·파일 서버, 2단계 중앙 PostgreSQL 서버 |
 | 3 | **사내 인증·보안 인프라** | 사설 CA 발급, 개인별 API 키/토큰 발급·회수, 외부 인터넷 방화벽 차단 |
 
@@ -146,7 +146,7 @@ flowchart TD
 | **기본 제외** | BM25/FAISS 파생 색인, 미리보기 PNG·임시 파일 | `ChunkSet`과 원본에서 다시 만들 수 있다 |
 | **백업 금지** | API 키·토큰 | **OS 키체인에만** 둔다. DB·파일·백업에 넣지 않는다 |
 
-- **1단계 (MVP 재해 복구·기기 교체):** `SQLite Online Backup API`로 일관된 스냅샷을 만들고, 참조 파일과 함께 사내 오브젝트 스토리지나 파일 서버에 사용자·기기별 경로로 나눠 올린다. 연속 복제가 필요하면 `Litestream`을 검토한다.
+- **1단계 (MVP 재해 복구·기기 교체):** `SQLite Online Backup API`로 일관된 스냅샷을 만들고, 참조 파일과 함께 사내 오브젝트 스토리지나 파일 서버에 사용자·기기별 경로로 나눠 올린다. 연속 복제가 필요하면 [`Litestream`](https://litestream.io/)을 검토한다.
 - **2단계 (다기기 동기화·팀 공유·감사):** 동기화 API가 중앙 `PostgreSQL`(사용자별 행 분리(RLS): 각 사용자가 자기 데이터 행만 읽고 쓰도록 DB가 강제)과 사내 오브젝트 스토리지를 관리한다. 동시 수정은 버전으로 충돌을 감지하고, 삭제는 삭제 기록(`tombstone`)을 남겨 다른 기기에도 전파한다.
 
 ## 4. 시각화 3 — 업로드·색인 및 질의 실행 시퀀스
@@ -205,29 +205,29 @@ sequenceDiagram
 
 | 선택 | 이유 |
 |---|---|
-| `React 19 + TypeScript + Vite` | 팀이 익숙한 생태계, 빠른 개발 서버, 정적 빌드 결과를 데몬이 그대로 제공 가능. `Tauri v2`가 Vite 프런트엔드를 공식 지원해 추후 설치형 전환이 쉽다 |
-| 순수 CSS Variables (M3 토큰) | [디자인 가이드](../design/README.md)의 Material 3 토큰을 변수로 옮겨 쓰고, 무거운 UI 프레임워크 의존을 피한다 |
-| PDF 뷰어: 1차 JM PNG 호환 → 2차 `pdf.js` | 1차는 기존 JM 서버의 페이지 PNG 렌더링과 호환해 빠르게 연결하고, 2차에서 `pdf.js`로 텍스트 레이어·정밀 하이라이트([백로그 4.8](idea-backlog.md#48-후속-확장--원문-구절표-셀-정밀-추적-및-원문-바로가기-2026-11-28))를 지원한다 |
-| React hooks + 타입 있는 `api.ts` | 별도 상태 관리 라이브러리 없이 시작하고, API 호출은 한 파일의 타입 있는 함수로 모은다 |
+| [`React 19`](https://react.dev/blog/2024/12/05/react-19) + [`TypeScript`](https://www.typescriptlang.org/docs/) + [`Vite`](https://vite.dev/guide/) | 팀이 익숙한 생태계, 빠른 개발 서버, 정적 빌드 결과를 데몬이 그대로 제공 가능. [`Tauri v2`](https://v2.tauri.app/start/frontend/vite/)가 Vite 프런트엔드를 공식 지원해 추후 설치형 전환이 쉽다 |
+| 순수 CSS Variables (M3 토큰) | [디자인 가이드](../design/README.md)의 [Material 3](https://m3.material.io/) 토큰을 변수로 옮겨 쓰고, 무거운 UI 프레임워크 의존을 피한다 |
+| PDF 뷰어: 1차 JM PNG 호환 → 2차 [`pdf.js`](https://mozilla.github.io/pdf.js/) | 1차는 기존 JM 서버의 페이지 PNG 렌더링과 호환해 빠르게 연결하고, 2차에서 `pdf.js`로 텍스트 레이어·정밀 하이라이트([백로그 4.8](idea-backlog.md#48-후속-확장--원문-구절표-셀-정밀-추적-및-원문-바로가기-2026-11-28))를 지원한다 |
+| [React hooks](https://react.dev/reference/react) + 타입 있는 `api.ts` | 별도 상태 관리 라이브러리 없이 시작하고, API 호출은 한 파일의 타입 있는 함수로 모은다 |
 | 추후 `Tauri v2` 호환 | 트레이 아이콘·자동 시작·데몬 사이드카 관리가 필요해지면 같은 프런트엔드를 감싼다 |
 
 ### 5.2 백엔드
 
 | 선택 | 이유 |
 |---|---|
-| `FastAPI + uvicorn` | Python 파이프라인(파싱·검색·LangGraph)과 같은 프로세스에서 API를 제공하고 OpenAPI 스키마를 자동 생성한다. **단기 데모는 JM 서버 프록시**로 연결하고, 제품 경계는 FastAPI + **OpenAPI → TypeScript 타입 생성**으로 고정한다 |
-| `PyMuPDF` | 빠른 텍스트·좌표 추출. **AGPL 라이선스이므로 배포 형태에 맞는지 확인**하고, 맞지 않으면 대안 `pypdfium2`를 쓴다 |
-| `Kiwi + rank_bm25` | 한국어 형태소 기반 BM25를 GPU 없이 가볍게 실행 |
-| `LangGraph + Pydantic + Python Decimal` | 고정 워크플로 그래프, `NodeResult` 계약 검증, 정량 비교의 결정적 10진 계산([N-06](small-nodes/N-06.md) · [N-09](small-nodes/N-09.md)) |
-| `SQLite WAL + 파일시스템 + NumPy/FAISS` | 설치가 필요 없는 단일 파일 DB, 동시 읽기에 강한 WAL 모드, 개인 문서 규모에서는 NumPy 전수 비교로 충분하고 커지면 FAISS로 교체 |
+| [`FastAPI`](https://fastapi.tiangolo.com/features/) + [`uvicorn`](https://uvicorn.dev/) | Python 파이프라인(파싱·검색·LangGraph)과 같은 프로세스에서 API를 제공하고 [OpenAPI](https://spec.openapis.org/oas/latest.html) 스키마를 자동 생성한다. **단기 데모는 JM 서버 프록시**로 연결하고, 제품 경계는 FastAPI + **OpenAPI → TypeScript 타입 생성**으로 고정한다 |
+| [`PyMuPDF`](https://pymupdf.readthedocs.io/en/latest/) | 빠른 텍스트·좌표 추출. **AGPL 라이선스이므로 배포 형태에 맞는지 확인**하고, 맞지 않으면 대안 [`pypdfium2`](https://pypdfium2.readthedocs.io/en/stable/)를 쓴다 |
+| [`Kiwi`](https://github.com/bab2min/kiwipiepy) + [`rank_bm25`](https://github.com/dorianbrown/rank_bm25) | 한국어 형태소 기반 BM25를 GPU 없이 가볍게 실행 |
+| [`LangGraph`](https://docs.langchain.com/oss/python/langgraph/graph-api) + [`Pydantic`](https://pydantic.dev/docs/validation/latest/get-started/) + [`Python Decimal`](https://docs.python.org/3/library/decimal.html) | 고정 워크플로 그래프, `NodeResult` 계약 검증, 정량 비교의 결정적 10진 계산([N-06](small-nodes/N-06.md) · [N-09](small-nodes/N-09.md)) |
+| [`SQLite WAL`](https://sqlite.org/wal.html) + `파일시스템` + [`NumPy`](https://numpy.org/doc/stable/)/[`FAISS`](https://faiss.ai/) | 설치가 필요 없는 단일 파일 DB, 동시 읽기에 강한 WAL 모드, 개인 문서 규모에서는 NumPy 전수 비교로 충분하고 커지면 FAISS로 교체 |
 
 ### 5.3 로컬 임베딩 비교 (조사 시점 수치)
 
 | 모델 | 크기 | 특징 | 용도 |
 |---|---|---|---|
-| `EmbeddingGemma 2` (텍스트) | 270M | 입력 8,192토큰, Matryoshka 768~128차원, GGUF Q8_0 약 310MB, LiteRT CPU 기준 71.7ms·211MB | 1순위 후보 (긴 청크·차원 축소 유연성) |
-| `multilingual-e5-small` | 118M | ONNX INT8 약 118MB, `onnxruntime`(약 16.7MB)만으로 실행해 **PyTorch 제거** | 1순위 후보 (가장 가벼운 설치) |
-| `BGE-M3` | 568M | 다국어 고품질, 개인 PC 상시 실행에는 무거움 | **품질 비교 기준용** |
+| [`EmbeddingGemma 2`](https://gemma.ai/models/embeddinggemma/model-card-v2/) (텍스트) | 270M | 입력 8,192토큰, Matryoshka 768~128차원, GGUF Q8_0 약 310MB, LiteRT CPU 기준 71.7ms·211MB | 1순위 후보 (긴 청크·차원 축소 유연성) |
+| [`multilingual-e5-small`](https://huggingface.co/intfloat/multilingual-e5-small) | 118M | ONNX INT8 약 118MB, [`onnxruntime`](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html)(약 16.7MB)만으로 실행해 **PyTorch 제거** | 1순위 후보 (가장 가벼운 설치) |
+| [`BGE-M3`](https://huggingface.co/BAAI/bge-m3) | 568M | 다국어 고품질, 개인 PC 상시 실행에는 무거움 | **품질 비교 기준용** |
 
 - 두 1순위 후보를 평가셋 Recall@k·지연·메모리로 비교해 기본 모델을 고른다. 선택한 모델 ID·버전·차원·전처리 설정은 `EmbeddingArtifact`에 기록한다([문서 처리 파이프라인](document-pipeline.md#3-출력-및-저장-저장할-데이터)).
 
@@ -238,18 +238,18 @@ sequenceDiagram
 | 개인 PC | `SQLite WAL` | 문서 메타·청크·오프셋·대화·노트·기준·잡 큐의 정본 |
 | 개인 PC | 파일시스템 | 원본 PDF, H-02 JSON, 미리보기 PNG |
 | 개인 PC | `NumPy` → `FAISS` | 벡터 검색(규모에 따라 교체) |
-| 사내망 1단계 | MinIO/S3 호환 오브젝트 스토리지 또는 파일 서버 | 스냅샷·참조 파일 백업 |
-| 사내망 2단계 | 중앙 `PostgreSQL`(사용자별 행 분리(RLS)) + 오브젝트 스토리지 | 다기기 동기화·팀 공유·감사 |
+| 사내망 1단계 | [MinIO](https://docs.min.io/aistor/developers/s3-api-compatibility/)/[S3](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html) 호환 오브젝트 스토리지 또는 파일 서버 | 스냅샷·참조 파일 백업 |
+| 사내망 2단계 | 중앙 `PostgreSQL`([사용자별 행 분리(RLS)](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)) + 오브젝트 스토리지 | 다기기 동기화·팀 공유·감사 |
 
 ### 5.5 로컬 데몬 운영 로드맵
 
 | 순위 | 형태 | 설명 |
 |---|---|---|
 | 1순위 | **단일 Python 데몬** | `127.0.0.1`에서 정적 UI + API + 잡 큐를 한 프로세스로 실행. 파싱만 자식 프로세스 |
-| 2순위 | OS 네이티브 자동 시작 | Windows `Task Scheduler`, macOS `launchd`, Linux `systemd --user`로 로그인 시 시작 |
-| 3순위 | `Tauri v2` 트레이/설치형 셸 | 데몬을 사이드카로 관리하고 설치·업데이트를 제공 |
+| 2순위 | OS 네이티브 자동 시작 | Windows [`Task Scheduler`](https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page), macOS [`launchd`](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html), Linux [`systemd --user`](https://www.freedesktop.org/software/systemd/man/latest/systemd.html)로 로그인 시 시작 |
+| 3순위 | [`Tauri v2`](https://v2.tauri.app/learn/system-tray/) 트레이/설치형 셸 | 데몬을 사이드카로 관리하고 설치·업데이트를 제공 |
 
-*Docker Compose는 개발·재현 환경 전용이며 사용자 PC 배포 형태로 쓰지 않는다.*
+*[Docker Compose](https://docs.docker.com/compose/)는 개발·재현 환경 전용이며 사용자 PC 배포 형태로 쓰지 않는다.*
 
 ## 6. 보안·운영 체크포인트
 
@@ -257,17 +257,17 @@ sequenceDiagram
 |---|---|
 | **단일 AI 연결 모듈 · 허용 주소 목록(Allowlist)** | 모든 LLM·VLM 호출은 **단일 AI 연결 모듈 하나를 거치고, 이 모듈이 허용 주소 목록을 강제**한다. **제품 프로필의 연결 모듈은 승인된 사내 Ollama 서버만, 백업 경로는 승인된 사내 저장소만 허용한다. 개발·테스트 프로필은 공개 자료에 한해 Ollama Cloud를 허용한다.** JM의 기존 Ollama 클라이언트(`base_url` 전환 가능)는 그대로 살려 이 모듈의 기본 구현으로 쓰고, **코드에 고정된 주소(특히 NW의 `ollama.com` 직접 호출)는 설정으로 분리**해 모든 호출이 이 모듈을 거치도록 정리한다. OpenAI 호환 API 연결은 추후 같은 모듈에 추가한다([백로그 4.11](idea-backlog.md#411-하네스-모델-실행-경계--로컬-전용-강제-및-개발-클라우드-공개-자료-검증-정책-2026-11-28)) |
 | **사설 CA TLS** | 사내 AI 서버·백업 저장소와는 사내 사설 CA로 검증한 TLS로만 통신한다 |
-| **OS 키체인** | 개인별 API 키·토큰은 `keyring`(Windows Credential Manager, macOS Keychain 등)에만 저장한다 |
+| **OS 키체인** | 개인별 API 키·토큰은 [`keyring`](https://keyring.readthedocs.io/en/stable/)(Windows Credential Manager, macOS Keychain 등)에만 저장한다 |
 | **로컬 API 보호** | `127.0.0.1`에만 바인딩하고, `Host`/`Origin` 헤더 검사와 세션 토큰(Bearer)으로 다른 웹사이트·프로세스의 접근을 막는다 |
 | **장애 격리** | 사내 AI 서버의 요청 과다(`429`) 응답은 재시도 대기 시간(`Retry-After`)을 따르고, 호출마다 타임아웃을 둔다. **AI 서버가 멈춰도 로컬 검색(BM25·로컬 임베딩 Dense)·원문 열람은 계속 동작**한다 |
-| **저장 암호화** | 개인 PC는 BitLocker/FileVault 전체 디스크 암호화를 기본으로 하고, 필요하면 `SQLCipher`로 DB를 추가 암호화한다 |
+| **저장 암호화** | 개인 PC는 [BitLocker](https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/)/[FileVault](https://support.apple.com/guide/security/volume-encryption-with-filevault-sec4c6dc1b6e/1/web/1) 전체 디스크 암호화를 기본으로 하고, 필요하면 [`SQLCipher`](https://www.zetetic.net/sqlcipher/)로 DB를 추가 암호화한다 |
 | **퇴사·권한 회수** | 퇴사·이동 시 키·토큰을 회수하고 중앙 백업은 보존 정책에 따라 보관·삭제한다 |
 
 > **설계 근거 주석 (참고 문헌·실무 기준)**
-> - **경량 로컬 임베딩:** *Google EmbeddingGemma 2* (2026) 모델 카드와 *intfloat/multilingual-e5-small* 모델 카드의 크기·차원·입력 길이, *ONNX Runtime*의 CPU 추론·INT8 양자화 문서를 근거로 PyTorch 없는 CPU 실행 구성을 잡았다.
-> - **사내 추론 서버 (MVP: Ollama, 추후 OpenAI 호환):** *Ollama API* 문서의 `/api/chat`을 MVP 기준으로 삼아 주소·모델명만 바꿔 사내 Ollama 서버와 개발용 Ollama Cloud를 오가게 한다. 추후 확장 대상은 *vLLM / SGLang OpenAI-Compatible Server* 문서의 `/v1/chat/completions` 호환 엔드포인트다.
-> - **개인 DB와 백업:** *SQLite Write-Ahead Logging* 및 *Online Backup API* 문서에 따라 WAL 모드로 동시 읽기를 유지하면서 실행 중에도 일관된 스냅샷을 만든다. 2단계 사용자별 행 격리는 *PostgreSQL Row Security Policies*를 따른다.
-> - **경계·인증·장애 처리:** 네트워크 위치만으로 신뢰하지 않고 요청마다 인증·허용 목록을 확인하는 *NIST SP 800-207* (Zero Trust Architecture), 로컬 API 세션 토큰 전달의 *RFC 6750* (Bearer Token), 요청 과다 응답(`429`)의 *RFC 6585*를 참고했다.
-> - **설치형 확장:** *Tauri v2* 공식 문서의 Sidecar(외부 바이너리 관리)와 Vite 프런트엔드 통합 가이드를 3순위 운영 형태의 근거로 삼았다.
+> - **경량 로컬 임베딩:** [*Google EmbeddingGemma 2*](https://gemma.ai/models/embeddinggemma/model-card-v2/) (2026) 모델 카드와 [*intfloat/multilingual-e5-small*](https://huggingface.co/intfloat/multilingual-e5-small) 모델 카드의 크기·차원·입력 길이, [*ONNX Runtime*](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html)의 CPU 추론·INT8 양자화 문서를 근거로 PyTorch 없는 CPU 실행 구성을 잡았다.
+> - **사내 추론 서버 (MVP: Ollama, 추후 OpenAI 호환):** [*Ollama API*](https://docs.ollama.com/api/chat) 문서의 `/api/chat`을 MVP 기준으로 삼아 주소·모델명만 바꿔 사내 Ollama 서버와 개발용 Ollama Cloud를 오가게 한다. 추후 확장 대상은 [*vLLM*](https://docs.vllm.ai/en/stable/serving/online_serving/openai_compatible_server/) / [*SGLang OpenAI-Compatible Server*](https://github.com/sgl-project/sglang/blob/main/docs/docs/basic_usage/openai_api.mdx) 문서의 `/v1/chat/completions` 호환 엔드포인트다.
+> - **개인 DB와 백업:** [*SQLite Write-Ahead Logging*](https://sqlite.org/wal.html) 및 [*Online Backup API*](https://sqlite.org/backup.html) 문서에 따라 WAL 모드로 동시 읽기를 유지하면서 실행 중에도 일관된 스냅샷을 만든다. 2단계 사용자별 행 격리는 [*PostgreSQL Row Security Policies*](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)를 따른다.
+> - **경계·인증·장애 처리:** 네트워크 위치만으로 신뢰하지 않고 요청마다 인증·허용 목록을 확인하는 [*NIST SP 800-207*](https://csrc.nist.gov/pubs/sp/800/207/final) (Zero Trust Architecture), 로컬 API 세션 토큰 전달의 [*RFC 6750*](https://datatracker.ietf.org/doc/html/rfc6750) (Bearer Token), 요청 과다 응답(`429`)의 [*RFC 6585*](https://datatracker.ietf.org/doc/html/rfc6585)를 참고했다.
+> - **설치형 확장:** *Tauri v2* 공식 문서의 [Sidecar](https://v2.tauri.app/develop/sidecar/)(외부 바이너리 관리)와 [Vite 프런트엔드 통합 가이드](https://v2.tauri.app/start/frontend/vite/)를 3순위 운영 형태의 근거로 삼았다.
 
 [아이디어 백로그](idea-backlog.md) · [Query Agent MVP](query-agent-mvp.md) · [문서 처리 파이프라인](document-pipeline.md) · [설계 취약점 정리](design-risks-and-mitigations.md)
