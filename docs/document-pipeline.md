@@ -90,7 +90,7 @@ flowchart TD
 | 단계 | 산출물(개념명) | 저장할 필수 데이터 | 선택적·후속 데이터 |
 |---|---|---|---|
 | ① Parsing | `DocumentManifest`, `ParsedDocument` | `document_id`, 원문 해시·형식·버전, `block_id`, 요소 종류·순서·추출 내용, 원문 위치, 파서·설정 버전, 추출 상태 | TableIR(셀·병합·헤더 추정), 이미지/도형 영역 참조, OCR·VLM 보완 결과·검증 상태 |
-| ② Chunking | `ChunkSet` | `chunk_id`, `document_id`, 문서 버전, 원문 블록별 `source_spans[]`(`block_id`, `start_offset`, `end_offset`), 청크 원문/검색용 표현, 청킹 설정·버전, 입력·출력 해시 | 표의 행 라벨·상위 열 헤더·각주 연결, 색인용/LLM용/검증용 표현 구분 |
+| ② Chunking | `ChunkSet` | `chunk_id`, `document_id`, 문서 버전, 원문 블록별 `source_spans[]`(`block_id`, `start_offset`, `end_offset`), 청크 원문/검색용 표현, **표 청크의 `table_context`(표 제목·행/열 헤더·단위 표기, 2026-11-28 필수 계약 추가)**, 청킹 설정·버전, 입력·출력 해시 | 표 각주 연결, 색인용/LLM용/검증용 표현 구분 |
 | ③-A Embedding | `EmbeddingArtifact` | `chunk_id`, 벡터 데이터 또는 `vector_ref`, 임베딩 모델 ID·정확한 버전, 차원, 입력 텍스트 해시, 전처리·정규화·지시문 설정 | 배치 ID, 연산 장치, 생성 시간 및 자원 사용량 |
 | ④-A Vector Index | `VectorIndexManifest` | 색인 버전·저장 위치, 임베딩 집합 해시, 벡터 차원, 거리 함수/인덱스 설정, `chunk_id` 대응 관계 | 인덱스별 성능·메모리 측정 |
 | ③-B Tokenization | `LexicalCorpus` | `chunk_id`, 원본 검색 텍스트 참조, 분석·정규화된 토큰 목록, 토큰화 규칙·분석기/사전 버전, 입력 해시 | 품사 정보, 토큰 위치, 숫자·영문·기호 보존 관련 진단 |

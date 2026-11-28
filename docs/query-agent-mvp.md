@@ -104,7 +104,7 @@ flowchart TD
 | 문서 | 상태 | 내부 Small Node 기본 순서 |
 |---|---|---|
 | [T-01 Document QA](big-nodes/T-01.md) | MVP · 개념 계약 확정 | N-01 → N-02 → N-04 → N-03 (자료 충돌 시 N-04 → N-03 1회 추가) |
-| [T-02 Criteria Review](big-nodes/T-02.md) | MVP · 1차 설계 | N-05 → (기준별 N-01 → N-02 → N-06) → N-03 |
+| [T-02 Criteria Review](big-nodes/T-02.md) | MVP · 개념 계약 확정 | N-05 → (기준별 N-01 → N-02 → N-06) → N-03 → 3값 논리 집계 |
 | [T-03 Comparative Analysis](big-nodes/T-03.md) | MVP · 1차 설계 | N-07 → (대상별 N-01 → N-02) → N-08 → N-09 → N-03 |
 | [T-04 Claim Verification](big-nodes/T-04.md) | 후속 계획 | 미정 |
 | [T-05 Document Summary](big-nodes/T-05.md) | 후속 계획 | 미정 |

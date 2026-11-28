@@ -9,7 +9,7 @@
 | Big Node | 목적 | 상태 | 연결된 Small Node 문서 |
 |---|---|---|---|
 | [T-01 · Document QA](T-01.md) | 문서 근거 질의응답 | MVP · 개념 계약 확정 / 구현 미착수 | [N-01](../small-nodes/N-01.md) · [N-02](../small-nodes/N-02.md) · [N-04](../small-nodes/N-04.md) · [N-03](../small-nodes/N-03.md) |
-| [T-02 · Criteria Review](T-02.md) | 명시적 기준 충족 검토 | MVP · 1차 설계 | [N-05](../small-nodes/N-05.md) · [N-01](../small-nodes/N-01.md) · [N-02](../small-nodes/N-02.md) · [N-06](../small-nodes/N-06.md) · [N-03](../small-nodes/N-03.md) |
+| [T-02 · Criteria Review](T-02.md) | 명시적 기준 충족 검토 | MVP · 개념 계약 확정 / 구현 미착수 | [N-05](../small-nodes/N-05.md) · [N-01](../small-nodes/N-01.md) · [N-02](../small-nodes/N-02.md) · [N-06](../small-nodes/N-06.md) · [N-03](../small-nodes/N-03.md) |
 | [T-03 · Comparative Analysis](T-03.md) | 문서·기간·지표 비교 | MVP · 1차 설계 | [N-07](../small-nodes/N-07.md) · [N-01](../small-nodes/N-01.md) · [N-02](../small-nodes/N-02.md) · [N-08](../small-nodes/N-08.md) · [N-09](../small-nodes/N-09.md) · [N-03](../small-nodes/N-03.md) |
 | [T-04 · Claim Verification](T-04.md) | 개별 주장 검증 | 후속 계획 · 미정 | 미정 |
 | [T-05 · Document Summary](T-05.md) | 문서 전체 요약 | 후속 계획 · 미정 | 미정 |
